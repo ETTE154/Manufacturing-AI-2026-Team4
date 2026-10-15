@@ -1,0 +1,270 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "diagnosis_exact5second_interval_not_hour_floored",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "raw_values_match_immutable_source",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "explicit_archive_can_be_after_global_cursor",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "raw_counts_units_and_recorded_scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "all_module_raw_sum_and_actual_source_row_count",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "raw_energy_is5second_integral_not_hour_energy",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "last_original_single_endpoint_is_available",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "no_grid_points_returns_empty_without_fake_zero",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "whole_retained_period_aggregates_without30day_truncation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "partial_April_and_aggregation_basis_preserved",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "monthly_energy_conserves_completed_hour_sum",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "incomplete_hour_boundaries_excluded_not_filled",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "weekly_end_label_does_not_extend_query_coverage",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "stored_alarm_module_source_and_exclusive_end_applied",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "alarm_count_not_misreported_as_sensor_observation_count",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "explicit_short_window_does_not_run_forecast_model",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "explicit_module_list_respects_selected_identity",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "default_replay_seven_day_daily_behavior_preserved",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "default_replay_forecast_metrics_behavior_preserved",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "GPT_receives_only_previously_approved_question_module_cursor",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "GPT_day_plan_applied_locally",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "explicit_scopes_always_local_no_key_or_GPT_call",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "400_unknown_scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "400_unknown_module",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "400_unknown_grain",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "400_diagnosis_nonraw",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "400_synthetic",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "400_reversed",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "400_equal",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "400_before_source",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "400_after_source",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "400_missing_start",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "400_missing_end",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "400_invalid_time",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "400_epoch_number",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "400_timezone",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "400_fractional_seconds",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "400_raw_over24h",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "400_aggregate_final_raw_endpoint",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "400_future_replay_cursor",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "400_invalid_cursor",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "400_context_not_object",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "400_GPT_unknown_module",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "400_GPT_unallowed_sensor",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "400_GPT_noninteger_days",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "production_source_and_index_preserved",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "read_only_engine_and_no_DB_write",
+      "passed": true,
+      "details": null
+    }
+  ],
+  "production_HTTP_or_server_restart": false,
+  "external_transport_calls": 0,
+  "example_query_scope": {
+    "module_id": "17",
+    "start": "2025-03-13 19:45:05",
+    "end_exclusive": "2025-03-13 19:45:20",
+    "scope": "diagnosis",
+    "grain": "raw",
+    "source_kind": "recorded"
+  },
+  "monthly_statistics": {
+    "source_observation_count": 33696000,
+    "record_unit": "completed_hour",
+    "observed_start": "2024-12-01 00:00:00",
+    "observed_end_exclusive": "2025-04-30 00:00:00",
+    "partial_period_count": 1,
+    "aggregation": "기간 전력량 합계",
+    "mean_display_value": 28173152.464480557,
+    "sum_energy_kwh": 140865762.32240278,
+    "row_count": 5,
+    "unit": "kWh · 잠정"
+  },
+  "external_payload_fields": [
+    "question",
+    "context.module_id",
+    "context.cursor_time"
+  ],
+  "production_DB_used": false,
+  "model_or_report_generation": false,
+  "source_index_sha256": "fbdd751248720f561bf07192991d07cf452db9ca47d6d3e1afe0bfac89325b55"
+}

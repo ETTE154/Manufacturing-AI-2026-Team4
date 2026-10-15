@@ -1,0 +1,55 @@
+{
+  "mode": "diagnostic_not_hyperparameter_selection",
+  "history_start": "2024-12-01 00:00:00",
+  "history_end": "2025-03-31 23:00:00",
+  "hours": 2904,
+  "mean_kwh": 39129.67971053815,
+  "std_kwh": 95.23581554075827,
+  "cv_percent": 0.24338511392187548,
+  "acf_selected": {
+    "1": -0.012912563246254422,
+    "2": 0.002896712346828105,
+    "6": 0.01980597951803821,
+    "12": 0.007268827485437253,
+    "24": 0.024916471353986457,
+    "48": -0.0014919387158409964,
+    "72": -0.0018192237933291563,
+    "168": -0.02375001883884499
+  },
+  "acf_max_abs_lag1_168": 0.050226609139625636,
+  "ljung_box": [
+    {
+      "lag": 1,
+      "lb_stat": 0.48469675213932917,
+      "lb_pvalue": 0.4863025479055457
+    },
+    {
+      "lag": 24,
+      "lb_stat": 24.879538425152454,
+      "lb_pvalue": 0.41233036247882915
+    },
+    {
+      "lag": 168,
+      "lb_stat": 160.79181084590357,
+      "lb_pvalue": 0.6415094822799166
+    }
+  ],
+  "signal_interpretation": "Failure to reject a white-noise null is not proof of independence. Small effect sizes and held-out baseline comparisons assess available predictive structure.",
+  "phase_power_diagnostic": {
+    "sample_rows": 16849,
+    "sample_type": "Previous systematic descriptive sensor sample; not a full raw-row audit",
+    "assumptions": "Same circuit/time; phase voltage is line-to-neutral V, phase current A, PF percent",
+    "formula": "sum(V_phase * I_phase * PF_phase / 100) / 1000 => kW",
+    "reported_activePower_if_guide_kw_ratio_quantiles": {
+      "q01": 271.31453783266164,
+      "median": 288.2913559692898,
+      "q99": 307.33676789445445
+    },
+    "reported_activePower_if_w_ratio_quantiles": {
+      "q01": 0.27131453783266163,
+      "median": 0.2882913559692898,
+      "q99": 0.3073367678944544
+    },
+    "interpretation": "Recorded scale and conditional electrical identity need provider confirmation. Changing the guide unit from kW to W alone may not reconcile phase channels. No unit correction is applied."
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "verified_date": "2026-10-13",
+  "sources": [
+    {
+      "title": "scikit-learn: Permutation feature importance",
+      "url": "https://scikit-learn.org/stable/modules/permutation_importance.html",
+      "supports": "학습 중요도와 별도로 시간 순서 검증 자료에서 피처를 섞어 성능 변화를 평가한다. 낮은 성능 모델의 중요도는 피처 자체의 정보량을 확정하는 지표가 아니다.",
+      "adaptation": "시계열의 같은 원점·피처 묶음과 날짜 블록을 고려한다. 미래 센서값을 사용하지 않는다."
+    },
+    {
+      "title": "scikit-learn: Permutation Importance with Multicollinear or Correlated Features",
+      "url": "https://scikit-learn.org/stable/auto_examples/inspection/plot_permutation_importance_multicollinear.html",
+      "supports": "서로 상관된 피처가 대체 정보를 제공하면 개별 중요도가 낮게 나올 수 있다. 중복 피처와 그룹별 제외 실험을 함께 검토한다.",
+      "adaptation": "설비 전력량·activePower 평균·counter delta의 관계와 물리 센서 집합의 그룹 중요도를 분리한다."
+    },
+    {
+      "title": "scikit-learn: TimeSeriesSplit",
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.TimeSeriesSplit.html",
+      "supports": "시간 순서의 학습과 평가 분리, 과거 학습 구간의 확장 검증",
+      "adaptation": "이 프로젝트는 명시한 5개 expanding fit 원점과 14개 일일 예측으로 직접 구현하며, 각 prefix 내에서 피처 선택과 정규화를 적합한다."
+    }
+  ]
+}

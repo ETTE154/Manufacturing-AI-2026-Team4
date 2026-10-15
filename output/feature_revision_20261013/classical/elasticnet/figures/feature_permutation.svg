@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="792pt" height="504pt" viewBox="0 0 792 504" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-13T11:06:01.866685</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 504 
+L 792 504 
+L 792 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 195.128365 469.584526 
+L 788.99976 469.584526 
+L 788.99976 18.597896 
+L 195.128365 18.597896 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 499.502975 449.085133 
+L 222.122519 449.085133 
+L 222.122519 432.519968 
+L 499.502975 432.519968 
+z
+" clip-path="url(#p9a3482ed5e)" style="fill: #0d9488"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 499.502975 428.378677 
+L 321.528156 428.378677 
+L 321.528156 411.813511 
+L 499.502975 411.813511 
+z
+" clip-path="url(#p9a3482ed5e)" style="fill: #0d9488"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 499.502975 407.67222 
+L 324.263403 407.67222 
+L 324.263403 391.107054 
+L 499.502975 391.107054 
+z
+" clip-path="url(#p9a3482ed5e)" style="fill: #0d9488"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 499.502975 386.965763 
+L 368.352462 386.965763 
+L 368.352462 370.400597 
+L 499.502975 370.400597 
+z
+" clip-path="url(#p9a3482ed5e)" style="fill: #0d9488"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 499.502975 366.259306 
+L 414.183405 366.259306 
+L 414.183405 349.694141 
+L 499.502975 349.694141 
+z
+" clip-path="url(#p9a3482ed5e)" style="fill: #0d9488"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 499.502975 345.552849 
+L 414.307196 345.552849 
+L 414.307196 328.987684 
+L 499.502975 328.987684 
+z
+" clip-path="url(#p9a3482ed5e)" style="fill: #0d9488"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 499.502975 324.846393 
+L 423.091246 324.846393 
+L 423.091246 308.281227 
+L 499.502975 308.281227 
+z
+" clip-path="url(#p9a3482ed5e)" style="fill: #0d9488"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 499.502975 304.139936 
+L 481.692756 304.139936 
+L 481.692756 287.57477 
+L 499.502975 287.57477 
+z
+" clip-path="url(#p9a3482ed5e)" style="fill: #0d9488"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 499.502975 283.433479 
+L 505.577807 283.433479 
+L 505.577807 266.868313 
+L 499.502975 266.868313 
+z
+" clip-path="url(#p9a3482ed5e)" style="fill: #0d9488"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 499.502975 262.727022 
+L 521.176993 262.727022 
+L 521.176993 246.161857 
+L 499.502975 246.161857 
+z
+" clip-path="url(#p9a3482ed5e)" style="fill: #0d9488"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 499.502975 242.020565 
+L 525.777536 242.020565 
+L 525.777536 225.4554 
+L 499.502975 225.4554 
+z
+" clip-path="url(#p9a3482ed5e)" style="fill: #0d9488"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 499.502975 221.314108 
+L 527.951503 221.314108 
+L 527.951503 204.748943 
+L 499.502975 204.748943 
+z
+" clip-path="url(#p9a3482ed5e)" style="fill: #0d9488"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 499.502975 200.607652 
+L 533.6761 200.607652 
+L 533.6761 184.042486 
+L 499.502975 184.042486 
+z
+" clip-path="url(#p9a3482ed5e)" style="fill: #0d9488"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 499.502975 179.901195 
+L 534.342814 179.901195 
+L 534.342814 163.336029 
+L 499.502975 163.336029 
+z
+" clip-path="url(#p9a3482ed5e)" style="fill: #0d9488"/>
+   </g>
+   <g id="patch_17">
+    <path d="M 499.502975 159.194738 
+L 534.739786 159.194738 
+L 534.739786 142.629573 
+L 499.502975 142.629573 
+z
+" clip-path="url(#p9a3482ed5e)" style="fill: #0d9488"/>
+   </g>
+   <g id="patch_18">
+    <path d="M 499.502975 138.488281 
+L 560.133048 138.488281 
+L 560.133048 121.923116 
+L 499.502975 121.923116 
+z
+" clip-path="url(#p9a3482ed5e)" style="fill: #0d9488"/>
+   </g>
+   <g id="patch_19">
+    <path d="M 499.502975 117.781824 
+L 576.514422 117.781824 
+L 576.514422 101.216659 
+L 499.502975 101.216659 
+z
+" clip-path="url(#p9a3482ed5e)" style="fill: #0d9488"/>
+   </g>
+   <g id="patch_20">
+    <path d="M 499.502975 97.075368 
+L 603.015396 97.075368 
+L 603.015396 80.510202 
+L 499.502975 80.510202 
+z
+" clip-path="url(#p9a3482ed5e)" style="fill: #0d9488"/>
+   </g>
+   <g id="patch_21">
+    <path d="M 499.502975 76.368911 
+L 731.503999 76.368911 
+L 731.503999 59.803745 
+L 499.502975 59.803745 
+z
+" clip-path="url(#p9a3482ed5e)" style="fill: #0d9488"/>
+   </g>
+   <g id="patch_22">
+    <path d="M 499.502975 55.662454 
+L 762.005606 55.662454 
+L 762.005606 39.097288 
+L 499.502975 39.097288 
+z
+" clip-path="url(#p9a3482ed5e)" style="fill: #0d9488"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="m5390cb2dbf" d="M 0 0 
+L 0 3.5 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m5390cb2dbf" x="259.557017" y="469.584526" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: middle" x="259.557017" y="484.582572" transform="rotate(-0 259.557017 484.582572)">-0.15</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#m5390cb2dbf" x="339.539003" y="469.584526" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: middle" x="339.539003" y="484.582572" transform="rotate(-0 339.539003 484.582572)">-0.10</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#m5390cb2dbf" x="419.520989" y="469.584526" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: middle" x="419.520989" y="484.582572" transform="rotate(-0 419.520989 484.582572)">-0.05</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m5390cb2dbf" x="499.502975" y="469.584526" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: middle" x="499.502975" y="484.582572" transform="rotate(-0 499.502975 484.582572)">0.00</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5">
+      <g>
+       <use xlink:href="#m5390cb2dbf" x="579.484961" y="469.584526" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: middle" x="579.484961" y="484.582572" transform="rotate(-0 579.484961 484.582572)">0.05</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m5390cb2dbf" x="659.466946" y="469.584526" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: middle" x="659.466946" y="484.582572" transform="rotate(-0 659.466946 484.582572)">0.10</text>
+     </g>
+    </g>
+    <g id="xtick_7">
+     <g id="line2d_7">
+      <g>
+       <use xlink:href="#m5390cb2dbf" x="739.448932" y="469.584526" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: middle" x="739.448932" y="484.582572" transform="rotate(-0 739.448932 484.582572)">0.15</text>
+     </g>
+    </g>
+    <g id="text_8">
+     <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: middle" x="492.064062" y="498.582572" transform="rotate(-0 492.064062 498.582572)">March chronological inner-holdout MAE change (kWh)</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_8">
+      <defs>
+       <path id="m8e6efe6868" d="M 0 0 
+L -3.5 0 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m8e6efe6868" x="195.128365" y="440.802551" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: end" x="188.128365" y="444.801574" transform="rotate(-0 188.128365 444.801574)">m14__energy_kwh::target_aligned_daily</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_9">
+      <g>
+       <use xlink:href="#m8e6efe6868" x="195.128365" y="420.096094" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: end" x="188.128365" y="424.095117" transform="rotate(-0 188.128365 424.095117)">target_weekend</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#m8e6efe6868" x="195.128365" y="399.389637" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: end" x="188.128365" y="403.38866" transform="rotate(-0 188.128365 403.38866)">m5__energy_kwh::target_aligned_weekly</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_11">
+      <g>
+       <use xlink:href="#m8e6efe6868" x="195.128365" y="378.68318" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_12">
+      <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: end" x="188.128365" y="382.682204" transform="rotate(-0 188.128365 382.682204)">m2__energy_kwh::origin_mean24</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#m8e6efe6868" x="195.128365" y="357.976723" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_13">
+      <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: end" x="188.128365" y="361.975747" transform="rotate(-0 188.128365 361.975747)">target_dow_sin</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_13">
+      <g>
+       <use xlink:href="#m8e6efe6868" x="195.128365" y="337.270267" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_14">
+      <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: end" x="188.128365" y="341.26929" transform="rotate(-0 188.128365 341.26929)">m1__energy_kwh::target_aligned_weekly</text>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_14">
+      <g>
+       <use xlink:href="#m8e6efe6868" x="195.128365" y="316.56381" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_15">
+      <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: end" x="188.128365" y="320.562833" transform="rotate(-0 188.128365 320.562833)">m15__energy_kwh::target_aligned_weekly</text>
+     </g>
+    </g>
+    <g id="ytick_8">
+     <g id="line2d_15">
+      <g>
+       <use xlink:href="#m8e6efe6868" x="195.128365" y="295.857353" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_16">
+      <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: end" x="188.128365" y="299.856376" transform="rotate(-0 188.128365 299.856376)">m18__energy_kwh::target_aligned_weekly</text>
+     </g>
+    </g>
+    <g id="ytick_9">
+     <g id="line2d_16">
+      <g>
+       <use xlink:href="#m8e6efe6868" x="195.128365" y="275.150896" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_17">
+      <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: end" x="188.128365" y="279.14992" transform="rotate(-0 188.128365 279.14992)">m15__energy_kwh::target_aligned_daily</text>
+     </g>
+    </g>
+    <g id="ytick_10">
+     <g id="line2d_17">
+      <g>
+       <use xlink:href="#m8e6efe6868" x="195.128365" y="254.444439" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_18">
+      <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: end" x="188.128365" y="258.443463" transform="rotate(-0 188.128365 258.443463)">m11__energy_kwh::target_aligned_daily</text>
+     </g>
+    </g>
+    <g id="ytick_11">
+     <g id="line2d_18">
+      <g>
+       <use xlink:href="#m8e6efe6868" x="195.128365" y="233.737983" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_19">
+      <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: end" x="188.128365" y="237.737006" transform="rotate(-0 188.128365 237.737006)">target_aligned_weekly</text>
+     </g>
+    </g>
+    <g id="ytick_12">
+     <g id="line2d_19">
+      <g>
+       <use xlink:href="#m8e6efe6868" x="195.128365" y="213.031526" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_20">
+      <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: end" x="188.128365" y="217.030549" transform="rotate(-0 188.128365 217.030549)">m4__energy_kwh::target_aligned_daily</text>
+     </g>
+    </g>
+    <g id="ytick_13">
+     <g id="line2d_20">
+      <g>
+       <use xlink:href="#m8e6efe6868" x="195.128365" y="192.325069" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_21">
+      <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: end" x="188.128365" y="196.324092" transform="rotate(-0 188.128365 196.324092)">m1__energy_kwh::origin_mean24</text>
+     </g>
+    </g>
+    <g id="ytick_14">
+     <g id="line2d_21">
+      <g>
+       <use xlink:href="#m8e6efe6868" x="195.128365" y="171.618612" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_22">
+      <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: end" x="188.128365" y="175.617636" transform="rotate(-0 188.128365 175.617636)">m12__energy_kwh::origin_mean24</text>
+     </g>
+    </g>
+    <g id="ytick_15">
+     <g id="line2d_22">
+      <g>
+       <use xlink:href="#m8e6efe6868" x="195.128365" y="150.912155" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_23">
+      <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: end" x="188.128365" y="154.911179" transform="rotate(-0 188.128365 154.911179)">m14__energy_kwh::origin_lag1</text>
+     </g>
+    </g>
+    <g id="ytick_16">
+     <g id="line2d_23">
+      <g>
+       <use xlink:href="#m8e6efe6868" x="195.128365" y="130.205698" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_24">
+      <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: end" x="188.128365" y="134.204722" transform="rotate(-0 188.128365 134.204722)">std168</text>
+     </g>
+    </g>
+    <g id="ytick_17">
+     <g id="line2d_24">
+      <g>
+       <use xlink:href="#m8e6efe6868" x="195.128365" y="109.499242" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_25">
+      <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: end" x="188.128365" y="113.498265" transform="rotate(-0 188.128365 113.498265)">m3__energy_kwh::target_aligned_weekly</text>
+     </g>
+    </g>
+    <g id="ytick_18">
+     <g id="line2d_25">
+      <g>
+       <use xlink:href="#m8e6efe6868" x="195.128365" y="88.792785" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_26">
+      <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: end" x="188.128365" y="92.791808" transform="rotate(-0 188.128365 92.791808)">m11__energy_kwh::target_aligned_weekly</text>
+     </g>
+    </g>
+    <g id="ytick_19">
+     <g id="line2d_26">
+      <g>
+       <use xlink:href="#m8e6efe6868" x="195.128365" y="68.086328" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_27">
+      <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: end" x="188.128365" y="72.085351" transform="rotate(-0 188.128365 72.085351)">m4__energy_kwh::target_aligned_weekly</text>
+     </g>
+    </g>
+    <g id="ytick_20">
+     <g id="line2d_27">
+      <g>
+       <use xlink:href="#m8e6efe6868" x="195.128365" y="47.379871" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_28">
+      <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: end" x="188.128365" y="51.378895" transform="rotate(-0 188.128365 51.378895)">m16__energy_kwh::target_aligned_weekly</text>
+     </g>
+    </g>
+   </g>
+   <g id="line2d_28">
+    <path d="M 499.502975 469.584526 
+L 499.502975 18.597896 
+" clip-path="url(#p9a3482ed5e)" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="patch_23">
+    <path d="M 195.128365 469.584526 
+L 195.128365 18.597896 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_24">
+    <path d="M 788.99976 469.584526 
+L 788.99976 18.597896 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_25">
+    <path d="M 195.128365 469.584526 
+L 788.99976 469.584526 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_26">
+    <path d="M 195.128365 18.597896 
+L 788.99976 18.597896 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_29">
+    <text style="font-size: 12px; font-family: 'Malgun Gothic'; text-anchor: middle" x="492.064062" y="12.597896" transform="rotate(-0 492.064062 12.597896)">elasticnet: training-ranked top20,5 day-block permutations</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p9a3482ed5e">
+   <rect x="195.128365" y="18.597896" width="593.871395" height="450.986629"/>
+  </clipPath>
+ </defs>
+</svg>

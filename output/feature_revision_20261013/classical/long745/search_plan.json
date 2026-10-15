@@ -1,0 +1,42 @@
+{
+  "candidates": [
+    {
+      "model": "xgboost",
+      "group": "target_aligned_calendar",
+      "objective": "reg:absoluteerror",
+      "max_depth": 2,
+      "n_estimators": 80,
+      "learning_rate": 0.02,
+      "min_child_weight": 100,
+      "reg_lambda": 100.0,
+      "residual_shrinkage": 0.5
+    },
+    {
+      "model": "xgboost",
+      "group": "selected_sensor_calendar",
+      "objective": "reg:absoluteerror",
+      "max_depth": 2,
+      "n_estimators": 80,
+      "learning_rate": 0.02,
+      "min_child_weight": 100,
+      "reg_lambda": 100.0,
+      "residual_shrinkage": 0.5
+    },
+    {
+      "model": "ridge",
+      "group": "target_aligned_calendar",
+      "alpha": 100000.0
+    },
+    {
+      "model": "ridge",
+      "group": "selected_sensor_calendar",
+      "alpha": 1000000.0
+    }
+  ],
+  "count": 4,
+  "forecast_points": 745,
+  "selection": "SingleFeb25P745MAE only; March29 internal and May excluded.",
+  "sensor_availability": "All inputs are static past context plus known future calendar. Daily/weekly analogues phase-wrap the last observed day/week, not future raw lags.",
+  "sparse_training_leads": "Offsets0..24 and48..744 by24; terminal origins may have partial labels, all strictly inside fitting prefix.",
+  "data_sha256": "1ad0a14f29f7ffad521918817315c95889f82adef7335709ce386fd057b1ba9b"
+}

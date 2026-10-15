@@ -1,0 +1,744 @@
+{
+  "selected_config": {
+    "model": "elasticnet",
+    "group": "selected_sensor_calendar",
+    "alpha": 1.0,
+    "l1_ratio": 0.2
+  },
+  "selected_candidate": 17,
+  "trials_count": 2,
+  "validation_metrics": {
+    "path_24_values": {
+      "count": 1680,
+      "mae_kwh": 75.57068619986335,
+      "rmse_kwh": 95.74341334308639,
+      "mape_percent": 0.19308875708175036,
+      "bias_pred_minus_actual_kwh": -7.7115450659971865,
+      "r2": -0.018920741794325124
+    },
+    "origin_count": 70,
+    "lead_1": {
+      "count": 70,
+      "mae_kwh": 74.9196896613061,
+      "rmse_kwh": 97.14090318185283,
+      "mape_percent": 0.19139022736763223,
+      "bias_pred_minus_actual_kwh": -15.927837847469968,
+      "r2": -0.061092753543441125
+    },
+    "lead_6": {
+      "count": 70,
+      "mae_kwh": 75.00360669189737,
+      "rmse_kwh": 94.60134596649053,
+      "mape_percent": 0.19155522956769303,
+      "bias_pred_minus_actual_kwh": -13.810568616150809,
+      "r2": -0.09085834358595668
+    },
+    "lead_24": {
+      "count": 70,
+      "mae_kwh": 80.25488533909541,
+      "rmse_kwh": 96.89451983361485,
+      "mape_percent": 0.20512451818340666,
+      "bias_pred_minus_actual_kwh": -8.879952042454638,
+      "r2": -0.00481356344658268
+    }
+  },
+  "test_metrics": {
+    "path_24_values": {
+      "count": 696,
+      "mae_kwh": 79.50513496518704,
+      "rmse_kwh": 98.2461169415573,
+      "mape_percent": 0.20320787966979548,
+      "bias_pred_minus_actual_kwh": 1.549372924372891,
+      "r2": -0.00651894052677493
+    },
+    "origin_count": 29,
+    "lead_1": {
+      "count": 29,
+      "mae_kwh": 83.44301889277794,
+      "rmse_kwh": 97.5771552802223,
+      "mape_percent": 0.21326458006547966,
+      "bias_pred_minus_actual_kwh": 5.0330350908655515,
+      "r2": 0.03350947743034105
+    },
+    "lead_6": {
+      "count": 29,
+      "mae_kwh": 71.47089972381694,
+      "rmse_kwh": 91.97012842942723,
+      "mape_percent": 0.18296001045819038,
+      "bias_pred_minus_actual_kwh": 37.135565931938395,
+      "r2": -0.17471921464547946
+    },
+    "lead_24": {
+      "count": 29,
+      "mae_kwh": 74.57366284318388,
+      "rmse_kwh": 96.0447734191913,
+      "mape_percent": 0.19049456002391474,
+      "bias_pred_minus_actual_kwh": -11.716214721108654,
+      "r2": 0.01179613964029158
+    }
+  },
+  "feature_selection": {
+    "fold1": {
+      "columns": [],
+      "audit_path": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\classical\\feature_selection\\fold1.json",
+      "sha256": "51c5598de135d6e74858970c812a9da0815d45fadf68d01c7afc8441287a9ff8",
+      "fit_origin": "2025-01-10 00:00:00"
+    },
+    "fold2": {
+      "columns": [
+        "m12__voltageTR_mean",
+        "m12__voltageR_mean"
+      ],
+      "audit_path": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\classical\\feature_selection\\fold2.json",
+      "sha256": "ba9d84e92ba10107e821ecf876a81165ca40473cebb207718a2af7c946c0ad53",
+      "fit_origin": "2025-01-24 00:00:00"
+    },
+    "fold3": {
+      "columns": [],
+      "audit_path": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\classical\\feature_selection\\fold3.json",
+      "sha256": "5ca758cf35cd46c2ccbd22ce4dc0fc6e209eddcd734d2dbbdf6530800caed842",
+      "fit_origin": "2025-02-07 00:00:00"
+    },
+    "fold4": {
+      "columns": [
+        "m3__voltageRS_mean"
+      ],
+      "audit_path": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\classical\\feature_selection\\fold4.json",
+      "sha256": "3b07bf118653859d64a302d8cc8825e98d1b280ec468147d85828f29e63e10e2",
+      "fit_origin": "2025-02-21 00:00:00"
+    },
+    "fold5": {
+      "columns": [],
+      "audit_path": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\classical\\feature_selection\\fold5.json",
+      "sha256": "6678cfe789a372d50f58d6ac11748aa45b5b33312fa44c673a48cd5e28047788",
+      "fit_origin": "2025-03-07 00:00:00"
+    },
+    "pre_April": {
+      "columns": [],
+      "audit_path": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\classical\\feature_selection\\pre_April.json",
+      "sha256": "bc708edb8075d84661bac24331c9fc564fd3a8e7aedb2b6d61df23eab325410f",
+      "fit_origin": "2025-04-01 00:00:00"
+    }
+  },
+  "frozen_test_and_final_sensor_columns": [],
+  "final_feature_schema": [
+    [
+      "target_history",
+      "lag1"
+    ],
+    [
+      "target_history",
+      "lag24"
+    ],
+    [
+      "target_history",
+      "lag168"
+    ],
+    [
+      "target_history",
+      "mean24"
+    ],
+    [
+      "target_history",
+      "mean168"
+    ],
+    [
+      "target_history",
+      "mean720"
+    ],
+    [
+      "target_history",
+      "std24"
+    ],
+    [
+      "target_history",
+      "std168"
+    ],
+    [
+      "target_history",
+      "target_aligned_daily"
+    ],
+    [
+      "target_history",
+      "target_aligned_weekly"
+    ],
+    [
+      "calendar",
+      "lead_fraction"
+    ],
+    [
+      "calendar",
+      "target_hour_sin"
+    ],
+    [
+      "calendar",
+      "target_hour_cos"
+    ],
+    [
+      "calendar",
+      "target_dow_sin"
+    ],
+    [
+      "calendar",
+      "target_dow_cos"
+    ],
+    [
+      "calendar",
+      "target_weekend"
+    ],
+    [
+      "module_energy13_history",
+      "m1__energy_kwh::origin_lag1"
+    ],
+    [
+      "module_energy13_history",
+      "m1__energy_kwh::origin_mean24"
+    ],
+    [
+      "module_energy13_history",
+      "m1__energy_kwh::target_aligned_daily"
+    ],
+    [
+      "module_energy13_history",
+      "m1__energy_kwh::target_aligned_weekly"
+    ],
+    [
+      "module_energy13_history",
+      "m2__energy_kwh::origin_lag1"
+    ],
+    [
+      "module_energy13_history",
+      "m2__energy_kwh::origin_mean24"
+    ],
+    [
+      "module_energy13_history",
+      "m2__energy_kwh::target_aligned_daily"
+    ],
+    [
+      "module_energy13_history",
+      "m2__energy_kwh::target_aligned_weekly"
+    ],
+    [
+      "module_energy13_history",
+      "m3__energy_kwh::origin_lag1"
+    ],
+    [
+      "module_energy13_history",
+      "m3__energy_kwh::origin_mean24"
+    ],
+    [
+      "module_energy13_history",
+      "m3__energy_kwh::target_aligned_daily"
+    ],
+    [
+      "module_energy13_history",
+      "m3__energy_kwh::target_aligned_weekly"
+    ],
+    [
+      "module_energy13_history",
+      "m4__energy_kwh::origin_lag1"
+    ],
+    [
+      "module_energy13_history",
+      "m4__energy_kwh::origin_mean24"
+    ],
+    [
+      "module_energy13_history",
+      "m4__energy_kwh::target_aligned_daily"
+    ],
+    [
+      "module_energy13_history",
+      "m4__energy_kwh::target_aligned_weekly"
+    ],
+    [
+      "module_energy13_history",
+      "m5__energy_kwh::origin_lag1"
+    ],
+    [
+      "module_energy13_history",
+      "m5__energy_kwh::origin_mean24"
+    ],
+    [
+      "module_energy13_history",
+      "m5__energy_kwh::target_aligned_daily"
+    ],
+    [
+      "module_energy13_history",
+      "m5__energy_kwh::target_aligned_weekly"
+    ],
+    [
+      "module_energy13_history",
+      "m11__energy_kwh::origin_lag1"
+    ],
+    [
+      "module_energy13_history",
+      "m11__energy_kwh::origin_mean24"
+    ],
+    [
+      "module_energy13_history",
+      "m11__energy_kwh::target_aligned_daily"
+    ],
+    [
+      "module_energy13_history",
+      "m11__energy_kwh::target_aligned_weekly"
+    ],
+    [
+      "module_energy13_history",
+      "m12__energy_kwh::origin_lag1"
+    ],
+    [
+      "module_energy13_history",
+      "m12__energy_kwh::origin_mean24"
+    ],
+    [
+      "module_energy13_history",
+      "m12__energy_kwh::target_aligned_daily"
+    ],
+    [
+      "module_energy13_history",
+      "m12__energy_kwh::target_aligned_weekly"
+    ],
+    [
+      "module_energy13_history",
+      "m13__energy_kwh::origin_lag1"
+    ],
+    [
+      "module_energy13_history",
+      "m13__energy_kwh::origin_mean24"
+    ],
+    [
+      "module_energy13_history",
+      "m13__energy_kwh::target_aligned_daily"
+    ],
+    [
+      "module_energy13_history",
+      "m13__energy_kwh::target_aligned_weekly"
+    ],
+    [
+      "module_energy13_history",
+      "m14__energy_kwh::origin_lag1"
+    ],
+    [
+      "module_energy13_history",
+      "m14__energy_kwh::origin_mean24"
+    ],
+    [
+      "module_energy13_history",
+      "m14__energy_kwh::target_aligned_daily"
+    ],
+    [
+      "module_energy13_history",
+      "m14__energy_kwh::target_aligned_weekly"
+    ],
+    [
+      "module_energy13_history",
+      "m15__energy_kwh::origin_lag1"
+    ],
+    [
+      "module_energy13_history",
+      "m15__energy_kwh::origin_mean24"
+    ],
+    [
+      "module_energy13_history",
+      "m15__energy_kwh::target_aligned_daily"
+    ],
+    [
+      "module_energy13_history",
+      "m15__energy_kwh::target_aligned_weekly"
+    ],
+    [
+      "module_energy13_history",
+      "m16__energy_kwh::origin_lag1"
+    ],
+    [
+      "module_energy13_history",
+      "m16__energy_kwh::origin_mean24"
+    ],
+    [
+      "module_energy13_history",
+      "m16__energy_kwh::target_aligned_daily"
+    ],
+    [
+      "module_energy13_history",
+      "m16__energy_kwh::target_aligned_weekly"
+    ],
+    [
+      "module_energy13_history",
+      "m17__energy_kwh::origin_lag1"
+    ],
+    [
+      "module_energy13_history",
+      "m17__energy_kwh::origin_mean24"
+    ],
+    [
+      "module_energy13_history",
+      "m17__energy_kwh::target_aligned_daily"
+    ],
+    [
+      "module_energy13_history",
+      "m17__energy_kwh::target_aligned_weekly"
+    ],
+    [
+      "module_energy13_history",
+      "m18__energy_kwh::origin_lag1"
+    ],
+    [
+      "module_energy13_history",
+      "m18__energy_kwh::origin_mean24"
+    ],
+    [
+      "module_energy13_history",
+      "m18__energy_kwh::target_aligned_daily"
+    ],
+    [
+      "module_energy13_history",
+      "m18__energy_kwh::target_aligned_weekly"
+    ]
+  ],
+  "saved_model": {
+    "model_path": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\classical\\elasticnet\\saved_model\\model.joblib",
+    "sha256": "96224afae748a88745b3f5219ba9399d6792c8b99a90f81c3dce3001e218082f",
+    "config": {
+      "model": "elasticnet",
+      "group": "selected_sensor_calendar",
+      "alpha": 1.0,
+      "l1_ratio": 0.2
+    },
+    "selected_sensor_columns": [],
+    "feature_schema": [
+      [
+        "target_history",
+        "lag1"
+      ],
+      [
+        "target_history",
+        "lag24"
+      ],
+      [
+        "target_history",
+        "lag168"
+      ],
+      [
+        "target_history",
+        "mean24"
+      ],
+      [
+        "target_history",
+        "mean168"
+      ],
+      [
+        "target_history",
+        "mean720"
+      ],
+      [
+        "target_history",
+        "std24"
+      ],
+      [
+        "target_history",
+        "std168"
+      ],
+      [
+        "target_history",
+        "target_aligned_daily"
+      ],
+      [
+        "target_history",
+        "target_aligned_weekly"
+      ],
+      [
+        "calendar",
+        "lead_fraction"
+      ],
+      [
+        "calendar",
+        "target_hour_sin"
+      ],
+      [
+        "calendar",
+        "target_hour_cos"
+      ],
+      [
+        "calendar",
+        "target_dow_sin"
+      ],
+      [
+        "calendar",
+        "target_dow_cos"
+      ],
+      [
+        "calendar",
+        "target_weekend"
+      ],
+      [
+        "module_energy13_history",
+        "m1__energy_kwh::origin_lag1"
+      ],
+      [
+        "module_energy13_history",
+        "m1__energy_kwh::origin_mean24"
+      ],
+      [
+        "module_energy13_history",
+        "m1__energy_kwh::target_aligned_daily"
+      ],
+      [
+        "module_energy13_history",
+        "m1__energy_kwh::target_aligned_weekly"
+      ],
+      [
+        "module_energy13_history",
+        "m2__energy_kwh::origin_lag1"
+      ],
+      [
+        "module_energy13_history",
+        "m2__energy_kwh::origin_mean24"
+      ],
+      [
+        "module_energy13_history",
+        "m2__energy_kwh::target_aligned_daily"
+      ],
+      [
+        "module_energy13_history",
+        "m2__energy_kwh::target_aligned_weekly"
+      ],
+      [
+        "module_energy13_history",
+        "m3__energy_kwh::origin_lag1"
+      ],
+      [
+        "module_energy13_history",
+        "m3__energy_kwh::origin_mean24"
+      ],
+      [
+        "module_energy13_history",
+        "m3__energy_kwh::target_aligned_daily"
+      ],
+      [
+        "module_energy13_history",
+        "m3__energy_kwh::target_aligned_weekly"
+      ],
+      [
+        "module_energy13_history",
+        "m4__energy_kwh::origin_lag1"
+      ],
+      [
+        "module_energy13_history",
+        "m4__energy_kwh::origin_mean24"
+      ],
+      [
+        "module_energy13_history",
+        "m4__energy_kwh::target_aligned_daily"
+      ],
+      [
+        "module_energy13_history",
+        "m4__energy_kwh::target_aligned_weekly"
+      ],
+      [
+        "module_energy13_history",
+        "m5__energy_kwh::origin_lag1"
+      ],
+      [
+        "module_energy13_history",
+        "m5__energy_kwh::origin_mean24"
+      ],
+      [
+        "module_energy13_history",
+        "m5__energy_kwh::target_aligned_daily"
+      ],
+      [
+        "module_energy13_history",
+        "m5__energy_kwh::target_aligned_weekly"
+      ],
+      [
+        "module_energy13_history",
+        "m11__energy_kwh::origin_lag1"
+      ],
+      [
+        "module_energy13_history",
+        "m11__energy_kwh::origin_mean24"
+      ],
+      [
+        "module_energy13_history",
+        "m11__energy_kwh::target_aligned_daily"
+      ],
+      [
+        "module_energy13_history",
+        "m11__energy_kwh::target_aligned_weekly"
+      ],
+      [
+        "module_energy13_history",
+        "m12__energy_kwh::origin_lag1"
+      ],
+      [
+        "module_energy13_history",
+        "m12__energy_kwh::origin_mean24"
+      ],
+      [
+        "module_energy13_history",
+        "m12__energy_kwh::target_aligned_daily"
+      ],
+      [
+        "module_energy13_history",
+        "m12__energy_kwh::target_aligned_weekly"
+      ],
+      [
+        "module_energy13_history",
+        "m13__energy_kwh::origin_lag1"
+      ],
+      [
+        "module_energy13_history",
+        "m13__energy_kwh::origin_mean24"
+      ],
+      [
+        "module_energy13_history",
+        "m13__energy_kwh::target_aligned_daily"
+      ],
+      [
+        "module_energy13_history",
+        "m13__energy_kwh::target_aligned_weekly"
+      ],
+      [
+        "module_energy13_history",
+        "m14__energy_kwh::origin_lag1"
+      ],
+      [
+        "module_energy13_history",
+        "m14__energy_kwh::origin_mean24"
+      ],
+      [
+        "module_energy13_history",
+        "m14__energy_kwh::target_aligned_daily"
+      ],
+      [
+        "module_energy13_history",
+        "m14__energy_kwh::target_aligned_weekly"
+      ],
+      [
+        "module_energy13_history",
+        "m15__energy_kwh::origin_lag1"
+      ],
+      [
+        "module_energy13_history",
+        "m15__energy_kwh::origin_mean24"
+      ],
+      [
+        "module_energy13_history",
+        "m15__energy_kwh::target_aligned_daily"
+      ],
+      [
+        "module_energy13_history",
+        "m15__energy_kwh::target_aligned_weekly"
+      ],
+      [
+        "module_energy13_history",
+        "m16__energy_kwh::origin_lag1"
+      ],
+      [
+        "module_energy13_history",
+        "m16__energy_kwh::origin_mean24"
+      ],
+      [
+        "module_energy13_history",
+        "m16__energy_kwh::target_aligned_daily"
+      ],
+      [
+        "module_energy13_history",
+        "m16__energy_kwh::target_aligned_weekly"
+      ],
+      [
+        "module_energy13_history",
+        "m17__energy_kwh::origin_lag1"
+      ],
+      [
+        "module_energy13_history",
+        "m17__energy_kwh::origin_mean24"
+      ],
+      [
+        "module_energy13_history",
+        "m17__energy_kwh::target_aligned_daily"
+      ],
+      [
+        "module_energy13_history",
+        "m17__energy_kwh::target_aligned_weekly"
+      ],
+      [
+        "module_energy13_history",
+        "m18__energy_kwh::origin_lag1"
+      ],
+      [
+        "module_energy13_history",
+        "m18__energy_kwh::origin_mean24"
+      ],
+      [
+        "module_energy13_history",
+        "m18__energy_kwh::target_aligned_daily"
+      ],
+      [
+        "module_energy13_history",
+        "m18__energy_kwh::target_aligned_weekly"
+      ]
+    ],
+    "history_end": "2025-04-29 23:00:00",
+    "history_count": 3600,
+    "target_center": 39128.76472472368,
+    "forecast_points": 24,
+    "reload_max_absdiff_kwh": 0.0,
+    "native_reload_max_absdiff_kwh": null,
+    "scaler_fit": "Training prefix only for Ridge/ElasticNet and ARIMAX exog; no global scaling for XGB.",
+    "context_storage": "Last720 completed hourly rows saved for standalone fixed-origin prediction; operational new-history input is not implemented."
+  },
+  "paths": {
+    "validation_csv": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\classical\\elasticnet\\validation_predictions.csv",
+    "test_csv": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\classical\\elasticnet\\test_predictions.csv",
+    "future_csv": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\classical\\elasticnet\\future_path.csv"
+  },
+  "importance": {
+    "inner_fit_end": "2025-03-24 23:00:00",
+    "diagnostic_target_start": "2025-03-25 00:00:00",
+    "diagnostic_target_end": "2025-03-31 23:00:00",
+    "not_used_for_config_selection": true,
+    "sensor_selection": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\classical\\elasticnet\\importance_inner_selection.json",
+    "permutation": "Shuffle whole24-hour feature blocks across seven chronological holdout days, preserving hour phase; five repeats per group.",
+    "base_mae_kwh": 76.77912020622733,
+    "groups": [
+      {
+        "group": "calendar",
+        "columns": 6,
+        "baseline_inner_mae_kwh": 76.77912020622733,
+        "permuted_delta_mae_kwh_mean": -0.1818473413878877,
+        "permuted_delta_mae_kwh_std": 0.1421589855016094,
+        "repeats": 5
+      },
+      {
+        "group": "module_energy13_history",
+        "columns": 52,
+        "baseline_inner_mae_kwh": 76.77912020622733,
+        "permuted_delta_mae_kwh_mean": 0.2978791230981443,
+        "permuted_delta_mae_kwh_std": 0.15961289667528747,
+        "repeats": 5
+      },
+      {
+        "group": "target_history",
+        "columns": 10,
+        "baseline_inner_mae_kwh": 76.77912020622733,
+        "permuted_delta_mae_kwh_mean": -0.017362418999488226,
+        "permuted_delta_mae_kwh_std": 0.17307047633221226,
+        "repeats": 5
+      }
+    ],
+    "caution": "Correlated groups can substitute; negative differences indicate noise/harm in this diagnostic. This is association and conditional predictive reliance, not causality."
+  },
+  "input_scope": "Past aggregate, known calendar, optional module/sensor history according to selected group. Future sensor readings unavailable.",
+  "plots": {
+    "april_day_png": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\classical\\elasticnet\\figures\\april_day24.png",
+    "april_day_svg": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\classical\\elasticnet\\figures\\april_day24.svg",
+    "importance_png": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\classical\\elasticnet\\figures\\importance.png",
+    "importance_svg": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\classical\\elasticnet\\figures\\importance.svg",
+    "feature_permutation_png": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\classical\\elasticnet\\figures\\feature_permutation.png",
+    "feature_permutation_svg": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\classical\\elasticnet\\figures\\feature_permutation.svg"
+  },
+  "final_coefficients_csv": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\classical\\elasticnet\\coefficients_final.csv",
+  "chronological_feature_permutation_csv": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\classical\\elasticnet\\chronological_feature_permutation.csv",
+  "importance_note": "Top20 chosen only by training gain/absolute standardized coefficient; seven later March days diagnose permutation reliance. No HPO/config changes. Weak/negative deltas do not establish causal sensor effects."
+}

@@ -1,0 +1,194 @@
+{
+  "models": {
+    "xgboost": {
+      "candidate": 2,
+      "config": {
+        "model": "xgboost",
+        "group": "selected_sensor_calendar",
+        "objective": "reg:absoluteerror",
+        "max_depth": 2,
+        "n_estimators": 80,
+        "learning_rate": 0.02,
+        "min_child_weight": 100,
+        "reg_lambda": 100.0,
+        "residual_shrinkage": 0.5
+      },
+      "validation_metrics": {
+        "path_P745": {
+          "count": 745,
+          "mae_kwh": 76.08909634306875,
+          "rmse_kwh": 96.69618699788936,
+          "mape_percent": 0.19447379060032782,
+          "bias_pred_minus_actual_kwh": 0.5009463654752042,
+          "r2": 0.0001943781041187087
+        },
+        "late_P505": {
+          "count": 505,
+          "mae_kwh": 77.45066923779255,
+          "rmse_kwh": 97.63744192294973,
+          "mape_percent": 0.19792723555725278,
+          "bias_pred_minus_actual_kwh": -0.2985933668176513,
+          "r2": 0.0001848855408568273
+        }
+      },
+      "objective_mae_kwh": 76.08909634306875
+    },
+    "ridge": {
+      "candidate": 4,
+      "config": {
+        "model": "ridge",
+        "group": "selected_sensor_calendar",
+        "alpha": 1000000.0
+      },
+      "validation_metrics": {
+        "path_P745": {
+          "count": 745,
+          "mae_kwh": 76.05256664091466,
+          "rmse_kwh": 96.71329598944162,
+          "mape_percent": 0.19437979362708374,
+          "bias_pred_minus_actual_kwh": 0.44337930813471393,
+          "r2": -0.00015945548064011383
+        },
+        "late_P505": {
+          "count": 505,
+          "mae_kwh": 77.43782776361523,
+          "rmse_kwh": 97.65286602036153,
+          "mape_percent": 0.19789356515059067,
+          "bias_pred_minus_actual_kwh": -0.3778400485057039,
+          "r2": -0.00013102736073267174
+        }
+      },
+      "objective_mae_kwh": 76.05256664091466
+    }
+  },
+  "records": [
+    {
+      "candidate": 1,
+      "config": {
+        "model": "xgboost",
+        "group": "target_aligned_calendar",
+        "objective": "reg:absoluteerror",
+        "max_depth": 2,
+        "n_estimators": 80,
+        "learning_rate": 0.02,
+        "min_child_weight": 100,
+        "reg_lambda": 100.0,
+        "residual_shrinkage": 0.5
+      },
+      "validation_metrics": {
+        "path_P745": {
+          "count": 745,
+          "mae_kwh": 76.14144040051877,
+          "rmse_kwh": 96.7796500442423,
+          "mape_percent": 0.19460376339803862,
+          "bias_pred_minus_actual_kwh": -0.2724316747313082,
+          "r2": -0.0015323256885193537
+        },
+        "late_P505": {
+          "count": 505,
+          "mae_kwh": 77.5460070131394,
+          "rmse_kwh": 97.71526995056719,
+          "mape_percent": 0.19816702223073085,
+          "bias_pred_minus_actual_kwh": -1.0599259099049816,
+          "r2": -0.0014096800257967779
+        }
+      },
+      "objective_mae_kwh": 76.14144040051877
+    },
+    {
+      "candidate": 2,
+      "config": {
+        "model": "xgboost",
+        "group": "selected_sensor_calendar",
+        "objective": "reg:absoluteerror",
+        "max_depth": 2,
+        "n_estimators": 80,
+        "learning_rate": 0.02,
+        "min_child_weight": 100,
+        "reg_lambda": 100.0,
+        "residual_shrinkage": 0.5
+      },
+      "validation_metrics": {
+        "path_P745": {
+          "count": 745,
+          "mae_kwh": 76.08909634306875,
+          "rmse_kwh": 96.69618699788936,
+          "mape_percent": 0.19447379060032782,
+          "bias_pred_minus_actual_kwh": 0.5009463654752042,
+          "r2": 0.0001943781041187087
+        },
+        "late_P505": {
+          "count": 505,
+          "mae_kwh": 77.45066923779255,
+          "rmse_kwh": 97.63744192294973,
+          "mape_percent": 0.19792723555725278,
+          "bias_pred_minus_actual_kwh": -0.2985933668176513,
+          "r2": 0.0001848855408568273
+        }
+      },
+      "objective_mae_kwh": 76.08909634306875
+    },
+    {
+      "candidate": 3,
+      "config": {
+        "model": "ridge",
+        "group": "target_aligned_calendar",
+        "alpha": 100000.0
+      },
+      "validation_metrics": {
+        "path_P745": {
+          "count": 745,
+          "mae_kwh": 76.13532915206684,
+          "rmse_kwh": 96.75595491574315,
+          "mape_percent": 0.1945840243651576,
+          "bias_pred_minus_actual_kwh": -1.091869548026956,
+          "r2": -0.0010419636756577866
+        },
+        "late_P505": {
+          "count": 505,
+          "mae_kwh": 77.4997555588307,
+          "rmse_kwh": 97.69801552755598,
+          "mape_percent": 0.19804579793376986,
+          "bias_pred_minus_actual_kwh": -1.6626750316448962,
+          "r2": -0.0010560562634671644
+        }
+      },
+      "objective_mae_kwh": 76.13532915206684
+    },
+    {
+      "candidate": 4,
+      "config": {
+        "model": "ridge",
+        "group": "selected_sensor_calendar",
+        "alpha": 1000000.0
+      },
+      "validation_metrics": {
+        "path_P745": {
+          "count": 745,
+          "mae_kwh": 76.05256664091466,
+          "rmse_kwh": 96.71329598944162,
+          "mape_percent": 0.19437979362708374,
+          "bias_pred_minus_actual_kwh": 0.44337930813471393,
+          "r2": -0.00015945548064011383
+        },
+        "late_P505": {
+          "count": 505,
+          "mae_kwh": 77.43782776361523,
+          "rmse_kwh": 97.65286602036153,
+          "mape_percent": 0.19789356515059067,
+          "bias_pred_minus_actual_kwh": -0.3778400485057039,
+          "r2": -0.00013102736073267174
+        }
+      },
+      "objective_mae_kwh": 76.05256664091466
+    }
+  ],
+  "validation_origin": "2025-02-25 00:00:00",
+  "selected_model": "ridge",
+  "feature_selection_validation": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\classical\\long745\\feature_selection_validation.json",
+  "configuration_count": 4,
+  "data_sha256": "1ad0a14f29f7ffad521918817315c95889f82adef7335709ce386fd057b1ba9b",
+  "selector_sha256": "1235dd065cfa9b964984840f7e592320425ed1ffa77a012594571060aca8e95d",
+  "May_labels_read": false,
+  "internal_test_used_for_selection": false
+}

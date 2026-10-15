@@ -1,0 +1,25 @@
+{
+  "pdf": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\pdf\\basic_data_report.pdf",
+  "html": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\data_report.html",
+  "section_count": 18,
+  "figure_paths": [
+    "raw_views/dataset_timeline.png",
+    "visuals/figures/module_energy_distribution.png",
+    "raw_views/raw_5second_example.png",
+    "visuals/figures/hourly_energy_rate.png",
+    "visuals/figures/daily_energy_rate.png",
+    "visuals/figures/hourly_72h.png",
+    "visuals/figures/weekly_energy_rate.png",
+    "visuals/figures/monthly_energy_rate.png",
+    "visuals/figures/weekday_hour_pattern.png",
+    "visuals/figures/resolution_variability.png",
+    "visuals/figures/sensor_distribution_correlation.png",
+    "decomposition/hourly_stl24.png",
+    "decomposition/hourly_stl168.png",
+    "decomposition/daily_stl7.png",
+    "decomposition/hourly_mstl24_168.png",
+    "decomposition/H_raw_periodicity.png"
+  ],
+  "report_scope": "Descriptive data overview, multi-resolution EDA and decomposition",
+  "report_generated": "2026-10-13T03:57:58.591979+00:00"
+}

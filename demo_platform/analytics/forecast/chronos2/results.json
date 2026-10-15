@@ -1,0 +1,93 @@
+{
+  "family": "chronos2",
+  "selected_config": {
+    "resolution": "daily",
+    "context": 28,
+    "alpha": 0.25,
+    "level": "median"
+  },
+  "validation": {
+    "full745": {
+      "count": 2235,
+      "mae_kwh": 76.4919656367489,
+      "rmse_kwh": 97.4263696646248,
+      "mape_percent": 0.1954991047420927,
+      "r2": 0.00010897739336712675,
+      "bias_pred_minus_actual_kwh": 0.07241068009211397
+    },
+    "late505": {
+      "count": 1515,
+      "mae_kwh": 76.22619850124337,
+      "rmse_kwh": 96.80818663412526,
+      "mape_percent": 0.19480118119583573,
+      "r2": -0.0003404838926939213,
+      "bias_pred_minus_actual_kwh": -1.4411332793317397
+    },
+    "mean_origin_late505_mae_kwh": 76.22619850124339,
+    "per_origin_late505_mae": {
+      "2025-02-15 00:00:00": 76.54095077179602,
+      "2025-02-22 00:00:00": 74.72517010794829,
+      "2025-02-25 00:00:00": 77.41247462398583
+    },
+    "origin_count": 3,
+    "late_unique_target_hours": 745
+  },
+  "internal_test": {
+    "full745": {
+      "count": 745,
+      "mae_kwh": 78.22686046647799,
+      "rmse_kwh": 97.06626175728142,
+      "mape_percent": 0.19995338775571936,
+      "r2": -0.0012489429051361078,
+      "bias_pred_minus_actual_kwh": 3.4720071189319492
+    },
+    "late505": {
+      "count": 505,
+      "mae_kwh": 77.99677977731359,
+      "rmse_kwh": 96.5708945262612,
+      "mape_percent": 0.19934229963819722,
+      "r2": -7.009913807065615e-05,
+      "bias_pred_minus_actual_kwh": -0.717460723061937
+    },
+    "mean_origin_late505_mae_kwh": 77.99677977731359,
+    "per_origin_late505_mae": {
+      "2025-03-29 00:00:00": 77.99677977731359
+    },
+    "origin_count": 1,
+    "late_unique_target_hours": 505
+  },
+  "fits": {
+    "internal_test": {
+      "saved_model": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\forecast\\chronos2\\internal_test.json",
+      "prediction_csv": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\forecast\\chronos2\\test_predictions.csv",
+      "history_end": "2025-03-28 23:00:00",
+      "official_forward_raw_replay_max_error": 0.0
+    },
+    "future_unlabelled": {
+      "saved_model": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\forecast\\chronos2\\future_unlabelled.json",
+      "prediction_csv": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\forecast\\chronos2\\future_path.csv",
+      "history_end": "2025-04-29 23:00:00",
+      "official_forward_raw_replay_max_error": 0.0
+    }
+  },
+  "candidate_count": 76,
+  "selection_lock": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\forecast\\chronos2\\selection_lock.json",
+  "validation_prediction_csv": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\forecast\\chronos2\\validation_predictions.csv",
+  "weights_frozen": true,
+  "alpha0_baseline_equivalent": false,
+  "May_read": false,
+  "provenance": {
+    "model_id": "amazon/chronos-2",
+    "revision": "29ec3766d36d6f73f0696f85560a422f50e8498c",
+    "local_snapshot": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\.model_cache\\models--amazon--chronos-2\\snapshots\\29ec3766d36d6f73f0696f85560a422f50e8498c",
+    "license": "Apache-2.0",
+    "mode": "Frozen zero-shot univariate, no finetuning",
+    "files": {
+      "config.json": "ef1143bfdc9c0376d9a056eefca46cb4b1ec3d0ffacd541ff56feb40fb708031",
+      "model.safetensors": "ddcda3c7508bf2528087723e98a20707cc04b7f370ae275a9fd88078ddba4f42",
+      "README.md": "c7b29bc88f5bc3ebc6e7213b6353be80090d671fefa4aa74ed20498838c16558"
+    },
+    "data_transfer": "Only public model files downloaded. Input observations processed locally."
+  },
+  "seconds": 2.613193000001047
+}

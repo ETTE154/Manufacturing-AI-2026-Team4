@@ -1,0 +1,101 @@
+{
+  "title": "피처 재검증과 예측 모델 재학습",
+  "imageCount": 11,
+  "brokenImages": 0,
+  "overflow": false,
+  "replacementCharacters": false,
+  "compactOverflow": false,
+  "errors": [],
+  "interactions": [
+    {
+      "value": "classical_xgboost_day",
+      "caption": "새 XGBoost · 4월 24시간",
+      "naturalWidth": 2100,
+      "svgHref": "classical/xgboost/figures/april_day24.svg"
+    },
+    {
+      "value": "classical_ridge_day",
+      "caption": "새 Ridge · 4월 24시간",
+      "naturalWidth": 2100,
+      "svgHref": "classical/ridge/figures/april_day24.svg"
+    },
+    {
+      "value": "classical_elasticnet_day",
+      "caption": "새 ElasticNet · 4월 24시간",
+      "naturalWidth": 2100,
+      "svgHref": "classical/elasticnet/figures/april_day24.svg"
+    },
+    {
+      "value": "classical_arimax_day",
+      "caption": "새 ARIMAX · 4월 24시간",
+      "naturalWidth": 2100,
+      "svgHref": "classical/arimax/figures/april_day24.svg"
+    },
+    {
+      "value": "classical_baseline_day",
+      "caption": "EMA720 기준선 · 4월 24시간",
+      "naturalWidth": 2100,
+      "svgHref": "classical/baseline/figures/april_day24.svg"
+    },
+    {
+      "value": "neural_itransformer_day",
+      "caption": "새 iTransformer 다변량 · 4월 24시간",
+      "naturalWidth": 1905,
+      "svgHref": "neural/dayahead24/itransformer/figures/test_forecast.svg"
+    },
+    {
+      "value": "neural_patchtst_day",
+      "caption": "새 PatchTST 설비별 합산 · 4월 24시간",
+      "naturalWidth": 1905,
+      "svgHref": "neural/dayahead24/patchtst/figures/test_forecast.svg"
+    },
+    {
+      "value": "previous_chronos2_day",
+      "caption": "기존 Chronos-2 혼합 · 4월 24시간",
+      "naturalWidth": 2160,
+      "svgHref": "../optimization_20261013/forecast/figures/chronos2_april_day.svg"
+    },
+    {
+      "value": "classical_xgboost_may",
+      "caption": "새 XGBoost · 5월 장기",
+      "naturalWidth": 2175,
+      "svgHref": "figures/classical_xgboost_may.svg"
+    },
+    {
+      "value": "classical_ridge_may",
+      "caption": "새 Ridge · 5월 장기",
+      "naturalWidth": 2175,
+      "svgHref": "figures/classical_ridge_may.svg"
+    },
+    {
+      "value": "neural_itransformer_may",
+      "caption": "새 iTransformer 다변량 · 5월 장기",
+      "naturalWidth": 2175,
+      "svgHref": "figures/neural_itransformer_may.svg"
+    },
+    {
+      "value": "neural_patchtst_may",
+      "caption": "새 PatchTST 설비별 합산 · 5월 장기",
+      "naturalWidth": 2175,
+      "svgHref": "figures/neural_patchtst_may.svg"
+    },
+    {
+      "value": "previous_chronos2_may",
+      "caption": "기존 Chronos-2 · 5월 장기",
+      "naturalWidth": 2175,
+      "svgHref": "figures/previous_chronos2_may.svg"
+    },
+    {
+      "value": "previous_baseline_may",
+      "caption": "과거 평균 기준선 · 5월 장기",
+      "naturalWidth": 2175,
+      "svgHref": "figures/previous_baseline_may.svg"
+    }
+  ],
+  "all14ModelGraphsLoaded": true,
+  "screenshots": [
+    "tmp/report_qa/report_top.png",
+    "tmp/report_qa/report_metrics.png",
+    "tmp/report_qa/report_gallery.png"
+  ]
+}

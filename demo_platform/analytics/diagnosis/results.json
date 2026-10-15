@@ -1,0 +1,670 @@
+{
+  "status": "complete",
+  "source_sample": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\diagnosis\\uniform_raw_sample.csv.gz",
+  "sample_sha256": "97f2d648c4e0e32db400b0e43beedba0b42621cf5b1fa4d88e07f547fad2f3c1",
+  "sample_rows": 187200,
+  "chronological_splits": {
+    "baseline_training": {
+      "start": "2024-12-01 00:01:00",
+      "end": "2024-12-31 23:58:40",
+      "rows": 38688
+    },
+    "threshold_and_AE_validation": {
+      "start": "2025-01-01 00:00:00",
+      "end": "2025-01-31 23:58:15",
+      "rows": 38688
+    },
+    "unlabeled_original_and_synthetic_test_bases": {
+      "start": "2025-02-01 00:01:25",
+      "end": "2025-04-29 23:57:25",
+      "rows": 109824
+    }
+  },
+  "six_types": {
+    "load_imbalance": "부하 불균형",
+    "reactive_power_surge": "무효전력 급증",
+    "power_factor_drop": "역률 급감",
+    "abnormal_pattern": "비정상 패턴",
+    "night_operation": "야간 이상가동",
+    "current_only_increase": "전류만 증가"
+  },
+  "rule_definition": "Module-specific empirical robust deviations plus completed January-tail thresholds; physical ratio is calibrated from December. Night requires unusual load relative to its module/hour baseline, not operation==1.",
+  "threshold_design": "99.9th percentile of January original scores per module/rule; night quantile uses night rows only. Unknown fault contamination can influence baselines/thresholds.",
+  "autoencoder": {
+    "architecture": [
+      24,
+      32,
+      12,
+      32,
+      24
+    ],
+    "epochs_run": 99,
+    "best_epoch": 79,
+    "January_best_loss": 0.023215677589178085,
+    "stop": "January validation plateau patience20,min_delta1e-4; max2000 safety guard",
+    "guard_reached": false
+  },
+  "synthetic_classification": {
+    "random_forest": {
+      "validation": {
+        "unmodified_reference": {
+          "precision": 0.9587362991618311,
+          "recall": 0.9913333333333333,
+          "f1-score": 0.9747623729924615,
+          "support": 1500.0
+        },
+        "load_imbalance": {
+          "precision": 0.9338046272493573,
+          "recall": 0.9686666666666667,
+          "f1-score": 0.9509162303664922,
+          "support": 1500.0
+        },
+        "reactive_power_surge": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 1500.0
+        },
+        "power_factor_drop": {
+          "precision": 0.998003992015968,
+          "recall": 1.0,
+          "f1-score": 0.999000999000999,
+          "support": 1500.0
+        },
+        "abnormal_pattern": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 1500.0
+        },
+        "night_operation": {
+          "precision": 0.9589928057553957,
+          "recall": 0.8886666666666667,
+          "f1-score": 0.9224913494809689,
+          "support": 1500.0
+        },
+        "current_only_increase": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 1500.0
+        },
+        "accuracy": 0.9783809523809524,
+        "macro avg": {
+          "precision": 0.9785053891689361,
+          "recall": 0.9783809523809524,
+          "f1-score": 0.9781672788344172,
+          "support": 10500.0
+        },
+        "weighted avg": {
+          "precision": 0.9785053891689359,
+          "recall": 0.9783809523809524,
+          "f1-score": 0.9781672788344173,
+          "support": 10500.0
+        }
+      },
+      "test": {
+        "unmodified_reference": {
+          "precision": 0.9662591687041565,
+          "recall": 0.988,
+          "f1-score": 0.977008652657602,
+          "support": 2000.0
+        },
+        "load_imbalance": {
+          "precision": 0.9326876513317192,
+          "recall": 0.963,
+          "f1-score": 0.9476014760147602,
+          "support": 2000.0
+        },
+        "reactive_power_surge": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 2000.0
+        },
+        "power_factor_drop": {
+          "precision": 0.9985022466300549,
+          "recall": 1.0,
+          "f1-score": 0.9992505620784412,
+          "support": 2000.0
+        },
+        "abnormal_pattern": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 2000.0
+        },
+        "night_operation": {
+          "precision": 0.9501854795972443,
+          "recall": 0.8965,
+          "f1-score": 0.9225623874453306,
+          "support": 2000.0
+        },
+        "current_only_increase": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 2000.0
+        },
+        "accuracy": 0.9782142857142857,
+        "macro avg": {
+          "precision": 0.978233506609025,
+          "recall": 0.9782142857142857,
+          "f1-score": 0.9780604397423048,
+          "support": 14000.0
+        },
+        "weighted avg": {
+          "precision": 0.9782335066090249,
+          "recall": 0.9782142857142857,
+          "f1-score": 0.9780604397423048,
+          "support": 14000.0
+        }
+      },
+      "test_confusion_matrix": [
+        [
+          1976,
+          1,
+          0,
+          3,
+          0,
+          20,
+          0
+        ],
+        [
+          0,
+          1926,
+          0,
+          0,
+          0,
+          74,
+          0
+        ],
+        [
+          0,
+          0,
+          2000,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          2000,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          2000,
+          0,
+          0
+        ],
+        [
+          69,
+          138,
+          0,
+          0,
+          0,
+          1793,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2000
+        ]
+      ]
+    },
+    "xgboost": {
+      "validation": {
+        "unmodified_reference": {
+          "precision": 0.9655620532813515,
+          "recall": 0.9906666666666667,
+          "f1-score": 0.9779532741033234,
+          "support": 1500.0
+        },
+        "load_imbalance": {
+          "precision": 0.9402597402597402,
+          "recall": 0.9653333333333334,
+          "f1-score": 0.9526315789473684,
+          "support": 1500.0
+        },
+        "reactive_power_surge": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 1500.0
+        },
+        "power_factor_drop": {
+          "precision": 0.9973386560212908,
+          "recall": 0.9993333333333333,
+          "f1-score": 0.9983349983349983,
+          "support": 1500.0
+        },
+        "abnormal_pattern": {
+          "precision": 0.9993337774816788,
+          "recall": 1.0,
+          "f1-score": 0.9996667777407531,
+          "support": 1500.0
+        },
+        "night_operation": {
+          "precision": 0.9562455892731122,
+          "recall": 0.9033333333333333,
+          "f1-score": 0.9290366815221117,
+          "support": 1500.0
+        },
+        "current_only_increase": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 1500.0
+        },
+        "accuracy": 0.9798095238095238,
+        "macro avg": {
+          "precision": 0.9798199737595963,
+          "recall": 0.9798095238095239,
+          "f1-score": 0.9796604729497936,
+          "support": 10500.0
+        },
+        "weighted avg": {
+          "precision": 0.9798199737595962,
+          "recall": 0.9798095238095238,
+          "f1-score": 0.9796604729497935,
+          "support": 10500.0
+        }
+      },
+      "test": {
+        "unmodified_reference": {
+          "precision": 0.972318339100346,
+          "recall": 0.9835,
+          "f1-score": 0.9778772060651255,
+          "support": 2000.0
+        },
+        "load_imbalance": {
+          "precision": 0.9452122408687068,
+          "recall": 0.9575,
+          "f1-score": 0.9513164431197219,
+          "support": 2000.0
+        },
+        "reactive_power_surge": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 2000.0
+        },
+        "power_factor_drop": {
+          "precision": 0.9980029955067399,
+          "recall": 0.9995,
+          "f1-score": 0.9987509367974019,
+          "support": 2000.0
+        },
+        "abnormal_pattern": {
+          "precision": 0.999000999000999,
+          "recall": 1.0,
+          "f1-score": 0.9995002498750625,
+          "support": 2000.0
+        },
+        "night_operation": {
+          "precision": 0.9414784394250514,
+          "recall": 0.917,
+          "f1-score": 0.9290780141843972,
+          "support": 2000.0
+        },
+        "current_only_increase": {
+          "precision": 1.0,
+          "recall": 0.999,
+          "f1-score": 0.9994997498749375,
+          "support": 2000.0
+        },
+        "accuracy": 0.9795,
+        "macro avg": {
+          "precision": 0.9794304305574062,
+          "recall": 0.9794999999999999,
+          "f1-score": 0.9794317999880924,
+          "support": 14000.0
+        },
+        "weighted avg": {
+          "precision": 0.9794304305574063,
+          "recall": 0.9795,
+          "f1-score": 0.9794317999880923,
+          "support": 14000.0
+        }
+      },
+      "test_confusion_matrix": [
+        [
+          1967,
+          0,
+          0,
+          3,
+          2,
+          28,
+          0
+        ],
+        [
+          0,
+          1915,
+          0,
+          0,
+          0,
+          85,
+          0
+        ],
+        [
+          0,
+          0,
+          2000,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1999,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          2000,
+          0,
+          0
+        ],
+        [
+          55,
+          111,
+          0,
+          0,
+          0,
+          1834,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1998
+        ]
+      ]
+    }
+  },
+  "selected_classifier": "xgboost",
+  "selected_on": "January synthetic validation macroF1 only",
+  "synthetic_detection": {
+    "rules": {
+      "count": 14000,
+      "positive_count": 12000,
+      "threshold": 1.0,
+      "precision": 0.9992983687072443,
+      "recall": 0.9495,
+      "f1": 0.97376292624562,
+      "roc_auc": 0.9896967083333333,
+      "average_precision": 0.9983998577498698,
+      "meaning": "Only explicit six-form synthetic transformations versus unmodified reference rows; not real-fault accuracy."
+    },
+    "isolation_forest": {
+      "count": 14000,
+      "positive_count": 12000,
+      "threshold": 0.6073029326631353,
+      "precision": 0.9930394431554525,
+      "recall": 0.035666666666666666,
+      "f1": 0.06886010779502856,
+      "roc_auc": 0.9552018333333334,
+      "average_precision": 0.9902117028147414,
+      "meaning": "Only explicit six-form synthetic transformations versus unmodified reference rows; not real-fault accuracy."
+    },
+    "autoencoder": {
+      "count": 14000,
+      "positive_count": 12000,
+      "threshold": 0.16612977623941366,
+      "precision": 0.9997669269315931,
+      "recall": 0.7149166666666666,
+      "f1": 0.8336815509450464,
+      "roc_auc": 0.9762619583333332,
+      "average_precision": 0.9960945345514985,
+      "meaning": "Only explicit six-form synthetic transformations versus unmodified reference rows; not real-fault accuracy."
+    }
+  },
+  "synthetic_design": {
+    "train_bases": 3000,
+    "validation_bases": 1500,
+    "test_bases": 2000,
+    "classes": [
+      "unmodified_reference",
+      "load_imbalance",
+      "reactive_power_surge",
+      "power_factor_drop",
+      "abnormal_pattern",
+      "night_operation",
+      "current_only_increase"
+    ],
+    "source_base_split_disjoint": true,
+    "same_base_repeated_across7classes": true,
+    "severity": "1.5..2.8 multiplicative broad transformations; classifier transfer to actual unknown injected forms is unverified."
+  },
+  "original_test_alarm_rates": {
+    "rule_any_fraction": 0.00641025641025641,
+    "AE_alarm_fraction": 0.0010835518648018648,
+    "IF_alarm_fraction": 0.000883231351981352,
+    "meaning": "Alarm rates on unlabeled original sample, not false-positive rates."
+  },
+  "model_files": {
+    "bundle": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\models.joblib",
+    "ae": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\ae.pt",
+    "xgb_native": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\synthetic_xgb.json"
+  },
+  "reload": {
+    "ae_max_absdiff": 0.0,
+    "IF_max_absdiff": 0.0,
+    "classifier_max_absdiff": 0.0
+  },
+  "model_sha256": {
+    "models.joblib": "f7d29618d3eaafea049fa05fb644f96ff6e3970e1e1c0142140886e1b61e58f9",
+    "ae.pt": "81549dee053d0201e4485492dc2433370fcbf5a6143b9a0a085798678680a7fe",
+    "synthetic_xgb.json": "89281cbbc252435ea5713233cc6bb5de82987f5a51a7451a372507ad5a1e85a4"
+  },
+  "limitations": [
+    "No actual fault type/timestamps; natural candidate numbers are not ground truth.",
+    "Synthetic precision/recall does not estimate real precision/recall.",
+    "Background current imbalance is large; use module-relative context and manual review.",
+    "Raw power/Q numeric units and meter hierarchy remain uncertain.",
+    "Autoencoder and IF are pointwise multivariate detectors, not a validated temporal fault classifier.",
+    "Unmodified reference class is not verified healthy."
+  ],
+  "references": [
+    {
+      "title": "IsolationForest API",
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.IsolationForest.html"
+    },
+    {
+      "title": "RandomForestClassifier API",
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html"
+    },
+    {
+      "title": "XGBClassifier API",
+      "url": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.XGBClassifier"
+    }
+  ],
+  "prior_models_policy": "Reviewed existing diagnosis/anomaly code, but their weak electrical-quality binary labels differ from this6form task; kept all old artifacts unchanged.",
+  "runtime_seconds": 30.670999999998457,
+  "full_scan": {
+    "source": "E:\\AI work\\AWS_프로젝트\\traing-dataset\\rtu_data_full.csv",
+    "rows_read": 33696013,
+    "columns_read": [
+      "voltageR",
+      "voltageS",
+      "voltageT",
+      "voltageRS",
+      "voltageST",
+      "voltageTR",
+      "currentR",
+      "currentS",
+      "currentT",
+      "activePower",
+      "powerFactorR",
+      "powerFactorS",
+      "powerFactorT",
+      "reactivePowerLagging",
+      "module(equipment)",
+      "timestamp",
+      "localtime",
+      "operation",
+      "accumActiveEnergy"
+    ],
+    "explicit_dtype": {
+      "voltageR": "float64",
+      "voltageS": "float64",
+      "voltageT": "float64",
+      "voltageRS": "float64",
+      "voltageST": "float64",
+      "voltageTR": "float64",
+      "currentR": "float64",
+      "currentS": "float64",
+      "currentT": "float64",
+      "activePower": "float64",
+      "powerFactorR": "float64",
+      "powerFactorS": "float64",
+      "powerFactorT": "float64",
+      "reactivePowerLagging": "float64",
+      "module(equipment)": "string",
+      "timestamp": "int64",
+      "localtime": "int64",
+      "operation": "int8",
+      "accumActiveEnergy": "int64"
+    },
+    "module_rows": {
+      "1": 2592001,
+      "2": 2592001,
+      "3": 2592001,
+      "4": 2592001,
+      "5": 2592001,
+      "11": 2592001,
+      "12": 2592001,
+      "13": 2592001,
+      "14": 2592001,
+      "15": 2592001,
+      "16": 2592001,
+      "17": 2592001,
+      "18": 2592001
+    },
+    "source_sha256": "3b4e1ff2125ca64612837530a8612fa7f044f398e508e00026097fc788d0dce5",
+    "source_bytes": 4909245995,
+    "source_size_mtime_preserved": true,
+    "localtime_format": "%Y%m%d%H%M%S,naive recordedtime; Unix offset key ignored",
+    "per_module_non5s_diffs": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0,
+      "16": 0,
+      "17": 0,
+      "18": 0
+    },
+    "missing_values": {
+      "module(equipment)": 0,
+      "timestamp": 0,
+      "localtime": 0,
+      "operation": 0,
+      "voltageR": 0,
+      "voltageS": 0,
+      "voltageT": 0,
+      "voltageRS": 0,
+      "voltageST": 0,
+      "voltageTR": 0,
+      "currentR": 0,
+      "currentS": 0,
+      "currentT": 0,
+      "activePower": 0,
+      "powerFactorR": 0,
+      "powerFactorS": 0,
+      "powerFactorT": 0,
+      "reactivePowerLagging": 0,
+      "accumActiveEnergy": 0
+    },
+    "all_six_rules_scored_on_all_rows": true,
+    "AE_scored_on_all_rows": true,
+    "IF_and_classifier_coverage": "187200stratified original sample for calibration/comparison and exact peak rows of up to180frontend candidates; not all33.7M rows.",
+    "AE_alarm_rows": 35102,
+    "point_and_event_counts": {
+      "load_imbalance": {
+        "raw_alarm_points": 63044,
+        "all_contiguous_events": 62908,
+        "sustained_3point_events": 0,
+        "frontend_review_candidates": 30,
+        "status": "no_sustained_candidate_found",
+        "coverage_note": "Single-point candidates, if present, are not a found fault; unmatched forms use separately tagged synthetic demonstrations."
+      },
+      "reactive_power_surge": {
+        "raw_alarm_points": 40810,
+        "all_contiguous_events": 40762,
+        "sustained_3point_events": 0,
+        "frontend_review_candidates": 30,
+        "status": "no_sustained_candidate_found",
+        "coverage_note": "Single-point candidates, if present, are not a found fault; unmatched forms use separately tagged synthetic demonstrations."
+      },
+      "power_factor_drop": {
+        "raw_alarm_points": 44193,
+        "all_contiguous_events": 44119,
+        "sustained_3point_events": 1,
+        "frontend_review_candidates": 30,
+        "status": "unconfirmed_natural_candidates",
+        "coverage_note": "Single-point candidates, if present, are not a found fault; unmatched forms use separately tagged synthetic demonstrations."
+      },
+      "abnormal_pattern": {
+        "raw_alarm_points": 71400,
+        "all_contiguous_events": 71085,
+        "sustained_3point_events": 3,
+        "frontend_review_candidates": 30,
+        "status": "unconfirmed_natural_candidates",
+        "coverage_note": "Single-point candidates, if present, are not a found fault; unmatched forms use separately tagged synthetic demonstrations."
+      },
+      "night_operation": {
+        "raw_alarm_points": 13038,
+        "all_contiguous_events": 12984,
+        "sustained_3point_events": 0,
+        "frontend_review_candidates": 30,
+        "status": "no_sustained_candidate_found",
+        "coverage_note": "Single-point candidates, if present, are not a found fault; unmatched forms use separately tagged synthetic demonstrations."
+      },
+      "current_only_increase": {
+        "raw_alarm_points": 45126,
+        "all_contiguous_events": 45066,
+        "sustained_3point_events": 0,
+        "frontend_review_candidates": 30,
+        "status": "no_sustained_candidate_found",
+        "coverage_note": "Single-point candidates, if present, are not a found fault; unmatched forms use separately tagged synthetic demonstrations."
+      }
+    },
+    "all_events_csv": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\all_rule_events.csv.gz",
+    "candidates_json": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\candidates.json",
+    "candidates_csv": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\candidates.csv",
+    "elapsed_seconds": 461.0779999999977,
+    "no_actual_precision_recall": "Unknown inserted type/timestamps. Neither rawalarm count nor synthetic score reveals actual precision, recall or number of real faults."
+  }
+}

@@ -1,0 +1,1350 @@
+{
+  "cells": [
+    {
+      "weekday": 0,
+      "hour": 0,
+      "n": 22,
+      "mean_kwh": 39166.097971590905,
+      "relative_deviation_percent": 0.09384138000967379,
+      "std_kwh": 105.88989320388552
+    },
+    {
+      "weekday": 0,
+      "hour": 1,
+      "n": 22,
+      "mean_kwh": 39127.70433017676,
+      "relative_deviation_percent": -0.004278352430764354,
+      "std_kwh": 110.2464101678658
+    },
+    {
+      "weekday": 0,
+      "hour": 2,
+      "n": 22,
+      "mean_kwh": 39106.344864267674,
+      "relative_deviation_percent": -0.058865127815355134,
+      "std_kwh": 73.23306723172449
+    },
+    {
+      "weekday": 0,
+      "hour": 3,
+      "n": 22,
+      "mean_kwh": 39115.18540782828,
+      "relative_deviation_percent": -0.03627201768450217,
+      "std_kwh": 84.94852485098735
+    },
+    {
+      "weekday": 0,
+      "hour": 4,
+      "n": 22,
+      "mean_kwh": 39120.03159911616,
+      "relative_deviation_percent": -0.02388697227051484,
+      "std_kwh": 99.5213345952984
+    },
+    {
+      "weekday": 0,
+      "hour": 5,
+      "n": 22,
+      "mean_kwh": 39165.71524305555,
+      "relative_deviation_percent": 0.09286326956994273,
+      "std_kwh": 101.5447182648302
+    },
+    {
+      "weekday": 0,
+      "hour": 6,
+      "n": 22,
+      "mean_kwh": 39120.15434154041,
+      "relative_deviation_percent": -0.02357328871817055,
+      "std_kwh": 102.10246015951633
+    },
+    {
+      "weekday": 0,
+      "hour": 7,
+      "n": 22,
+      "mean_kwh": 39150.90203724748,
+      "relative_deviation_percent": 0.055006277189484365,
+      "std_kwh": 78.29261618332795
+    },
+    {
+      "weekday": 0,
+      "hour": 8,
+      "n": 22,
+      "mean_kwh": 39146.81337815656,
+      "relative_deviation_percent": 0.04455719965308358,
+      "std_kwh": 124.998413492674
+    },
+    {
+      "weekday": 0,
+      "hour": 9,
+      "n": 22,
+      "mean_kwh": 39130.62720517677,
+      "relative_deviation_percent": 0.003191418666581569,
+      "std_kwh": 105.5088017126572
+    },
+    {
+      "weekday": 0,
+      "hour": 10,
+      "n": 22,
+      "mean_kwh": 39122.55595012626,
+      "relative_deviation_percent": -0.017435678864274884,
+      "std_kwh": 84.32775427766761
+    },
+    {
+      "weekday": 0,
+      "hour": 11,
+      "n": 22,
+      "mean_kwh": 39102.42052020202,
+      "relative_deviation_percent": -0.06889427783978164,
+      "std_kwh": 117.98319617114747
+    },
+    {
+      "weekday": 0,
+      "hour": 12,
+      "n": 22,
+      "mean_kwh": 39106.11363573233,
+      "relative_deviation_percent": -0.059456061136220484,
+      "std_kwh": 109.56400325231024
+    },
+    {
+      "weekday": 0,
+      "hour": 13,
+      "n": 22,
+      "mean_kwh": 39114.22238320707,
+      "relative_deviation_percent": -0.03873314704566644,
+      "std_kwh": 90.87300648642287
+    },
+    {
+      "weekday": 0,
+      "hour": 14,
+      "n": 22,
+      "mean_kwh": 39118.40947032828,
+      "relative_deviation_percent": -0.028032524418952764,
+      "std_kwh": 99.83873299045116
+    },
+    {
+      "weekday": 0,
+      "hour": 15,
+      "n": 22,
+      "mean_kwh": 39111.40009785353,
+      "relative_deviation_percent": -0.04594584877334329,
+      "std_kwh": 94.31311893792713
+    },
+    {
+      "weekday": 0,
+      "hour": 16,
+      "n": 22,
+      "mean_kwh": 39154.53269570707,
+      "relative_deviation_percent": 0.06428487706999775,
+      "std_kwh": 89.54286145555348
+    },
+    {
+      "weekday": 0,
+      "hour": 17,
+      "n": 22,
+      "mean_kwh": 39137.57635290404,
+      "relative_deviation_percent": 0.02095083117799046,
+      "std_kwh": 96.98542267565156
+    },
+    {
+      "weekday": 0,
+      "hour": 18,
+      "n": 22,
+      "mean_kwh": 39133.08592613636,
+      "relative_deviation_percent": 0.009474986304724986,
+      "std_kwh": 71.48605123544672
+    },
+    {
+      "weekday": 0,
+      "hour": 19,
+      "n": 22,
+      "mean_kwh": 39125.60469760101,
+      "relative_deviation_percent": -0.00964422498069828,
+      "std_kwh": 73.87799557879802
+    },
+    {
+      "weekday": 0,
+      "hour": 20,
+      "n": 22,
+      "mean_kwh": 39143.52861111111,
+      "relative_deviation_percent": 0.03616256836109777,
+      "std_kwh": 102.23094529298292
+    },
+    {
+      "weekday": 0,
+      "hour": 21,
+      "n": 22,
+      "mean_kwh": 39113.184813131316,
+      "relative_deviation_percent": -0.04138478660031808,
+      "std_kwh": 101.10210032616696
+    },
+    {
+      "weekday": 0,
+      "hour": 22,
+      "n": 22,
+      "mean_kwh": 39100.82634911616,
+      "relative_deviation_percent": -0.07296838059864807,
+      "std_kwh": 73.39402280486527
+    },
+    {
+      "weekday": 0,
+      "hour": 23,
+      "n": 22,
+      "mean_kwh": 39121.14712373738,
+      "relative_deviation_percent": -0.021036110165939537,
+      "std_kwh": 121.31632152913278
+    },
+    {
+      "weekday": 1,
+      "hour": 0,
+      "n": 22,
+      "mean_kwh": 39101.46548800505,
+      "relative_deviation_percent": -0.071334981565363,
+      "std_kwh": 112.32231100568647
+    },
+    {
+      "weekday": 1,
+      "hour": 1,
+      "n": 22,
+      "mean_kwh": 39114.87908712121,
+      "relative_deviation_percent": -0.0370548584026853,
+      "std_kwh": 110.70346005335777
+    },
+    {
+      "weekday": 1,
+      "hour": 2,
+      "n": 22,
+      "mean_kwh": 39166.91331691919,
+      "relative_deviation_percent": 0.09592509654479109,
+      "std_kwh": 64.60921261170925
+    },
+    {
+      "weekday": 1,
+      "hour": 3,
+      "n": 22,
+      "mean_kwh": 39099.77142929293,
+      "relative_deviation_percent": -0.0756643595938411,
+      "std_kwh": 87.80929216438572
+    },
+    {
+      "weekday": 1,
+      "hour": 4,
+      "n": 22,
+      "mean_kwh": 39122.230458964645,
+      "relative_deviation_percent": -0.01826751206668309,
+      "std_kwh": 91.88970139537032
+    },
+    {
+      "weekday": 1,
+      "hour": 5,
+      "n": 22,
+      "mean_kwh": 39144.78433396464,
+      "relative_deviation_percent": 0.03937172450960702,
+      "std_kwh": 101.3332069134912
+    },
+    {
+      "weekday": 1,
+      "hour": 6,
+      "n": 22,
+      "mean_kwh": 39116.39635921717,
+      "relative_deviation_percent": -0.033177280590013236,
+      "std_kwh": 81.94366880523475
+    },
+    {
+      "weekday": 1,
+      "hour": 7,
+      "n": 22,
+      "mean_kwh": 39102.7559614899,
+      "relative_deviation_percent": -0.06803701585044175,
+      "std_kwh": 114.75224351992267
+    },
+    {
+      "weekday": 1,
+      "hour": 8,
+      "n": 22,
+      "mean_kwh": 39114.40669633839,
+      "relative_deviation_percent": -0.03826211188295847,
+      "std_kwh": 90.90607730346028
+    },
+    {
+      "weekday": 1,
+      "hour": 9,
+      "n": 22,
+      "mean_kwh": 39134.63511237373,
+      "relative_deviation_percent": 0.013434124680600235,
+      "std_kwh": 82.67398962914174
+    },
+    {
+      "weekday": 1,
+      "hour": 10,
+      "n": 22,
+      "mean_kwh": 39125.55092992424,
+      "relative_deviation_percent": -0.009781634975281062,
+      "std_kwh": 83.03179245803997
+    },
+    {
+      "weekday": 1,
+      "hour": 11,
+      "n": 22,
+      "mean_kwh": 39162.15254734849,
+      "relative_deviation_percent": 0.08375835696805556,
+      "std_kwh": 81.05994380502796
+    },
+    {
+      "weekday": 1,
+      "hour": 12,
+      "n": 22,
+      "mean_kwh": 39122.233965909094,
+      "relative_deviation_percent": -0.01825854963335427,
+      "std_kwh": 92.65871518180167
+    },
+    {
+      "weekday": 1,
+      "hour": 13,
+      "n": 22,
+      "mean_kwh": 39129.287437499996,
+      "relative_deviation_percent": -0.0002325244952361416,
+      "std_kwh": 62.766609066763415
+    },
+    {
+      "weekday": 1,
+      "hour": 14,
+      "n": 22,
+      "mean_kwh": 39136.34610542929,
+      "relative_deviation_percent": 0.017806780532847455,
+      "std_kwh": 88.88424940180784
+    },
+    {
+      "weekday": 1,
+      "hour": 15,
+      "n": 22,
+      "mean_kwh": 39125.8993655303,
+      "relative_deviation_percent": -0.008891164387447859,
+      "std_kwh": 122.53902414597891
+    },
+    {
+      "weekday": 1,
+      "hour": 16,
+      "n": 22,
+      "mean_kwh": 39118.93604229798,
+      "relative_deviation_percent": -0.02668680416750835,
+      "std_kwh": 64.97452532378182
+    },
+    {
+      "weekday": 1,
+      "hour": 17,
+      "n": 22,
+      "mean_kwh": 39109.447351641415,
+      "relative_deviation_percent": -0.05093633492677663,
+      "std_kwh": 92.66515898244765
+    },
+    {
+      "weekday": 1,
+      "hour": 18,
+      "n": 22,
+      "mean_kwh": 39155.15430997475,
+      "relative_deviation_percent": 0.06587348975113372,
+      "std_kwh": 91.71168049854084
+    },
+    {
+      "weekday": 1,
+      "hour": 19,
+      "n": 22,
+      "mean_kwh": 39129.668224747475,
+      "relative_deviation_percent": 0.0007406247415353562,
+      "std_kwh": 92.50230321463125
+    },
+    {
+      "weekday": 1,
+      "hour": 20,
+      "n": 22,
+      "mean_kwh": 39097.16393560606,
+      "relative_deviation_percent": -0.08232813446572562,
+      "std_kwh": 120.7380350662838
+    },
+    {
+      "weekday": 1,
+      "hour": 21,
+      "n": 22,
+      "mean_kwh": 39148.79626767677,
+      "relative_deviation_percent": 0.04962472078460234,
+      "std_kwh": 83.25945383524555
+    },
+    {
+      "weekday": 1,
+      "hour": 22,
+      "n": 22,
+      "mean_kwh": 39086.04726010101,
+      "relative_deviation_percent": -0.11073818326565732,
+      "std_kwh": 82.4094755476923
+    },
+    {
+      "weekday": 1,
+      "hour": 23,
+      "n": 22,
+      "mean_kwh": 39141.34355618687,
+      "relative_deviation_percent": 0.030578388360513742,
+      "std_kwh": 94.34026414233368
+    },
+    {
+      "weekday": 2,
+      "hour": 0,
+      "n": 21,
+      "mean_kwh": 39104.18464087301,
+      "relative_deviation_percent": -0.06438584774940415,
+      "std_kwh": 74.45384671156765
+    },
+    {
+      "weekday": 2,
+      "hour": 1,
+      "n": 21,
+      "mean_kwh": 39120.34815410053,
+      "relative_deviation_percent": -0.023077976582031035,
+      "std_kwh": 105.35055915877587
+    },
+    {
+      "weekday": 2,
+      "hour": 2,
+      "n": 21,
+      "mean_kwh": 39099.815003306874,
+      "relative_deviation_percent": -0.0755530007742089,
+      "std_kwh": 70.72574199925751
+    },
+    {
+      "weekday": 2,
+      "hour": 3,
+      "n": 21,
+      "mean_kwh": 39147.55809920635,
+      "relative_deviation_percent": 0.04646042704847808,
+      "std_kwh": 75.91990937425223
+    },
+    {
+      "weekday": 2,
+      "hour": 4,
+      "n": 21,
+      "mean_kwh": 39140.96061507937,
+      "relative_deviation_percent": 0.029599734666208022,
+      "std_kwh": 141.42550451862414
+    },
+    {
+      "weekday": 2,
+      "hour": 5,
+      "n": 21,
+      "mean_kwh": 39102.18068055556,
+      "relative_deviation_percent": -0.06950721792756687,
+      "std_kwh": 107.6344375158384
+    },
+    {
+      "weekday": 2,
+      "hour": 6,
+      "n": 21,
+      "mean_kwh": 39133.60720701058,
+      "relative_deviation_percent": 0.010807184502681366,
+      "std_kwh": 82.39818257404654
+    },
+    {
+      "weekday": 2,
+      "hour": 7,
+      "n": 21,
+      "mean_kwh": 39114.19431812169,
+      "relative_deviation_percent": -0.03880487086675988,
+      "std_kwh": 80.17740495789226
+    },
+    {
+      "weekday": 2,
+      "hour": 8,
+      "n": 21,
+      "mean_kwh": 39095.13791203704,
+      "relative_deviation_percent": -0.08750589003119202,
+      "std_kwh": 122.79674422835019
+    },
+    {
+      "weekday": 2,
+      "hour": 9,
+      "n": 21,
+      "mean_kwh": 39162.063574074076,
+      "relative_deviation_percent": 0.0835309746839652,
+      "std_kwh": 77.07741737840706
+    },
+    {
+      "weekday": 2,
+      "hour": 10,
+      "n": 21,
+      "mean_kwh": 39137.81498346561,
+      "relative_deviation_percent": 0.021560681298748996,
+      "std_kwh": 90.41028688202856
+    },
+    {
+      "weekday": 2,
+      "hour": 11,
+      "n": 21,
+      "mean_kwh": 39139.14635251323,
+      "relative_deviation_percent": 0.02496316071776139,
+      "std_kwh": 86.61714722264813
+    },
+    {
+      "weekday": 2,
+      "hour": 12,
+      "n": 21,
+      "mean_kwh": 39137.790023809524,
+      "relative_deviation_percent": 0.021496893788985894,
+      "std_kwh": 96.67854496673603
+    },
+    {
+      "weekday": 2,
+      "hour": 13,
+      "n": 21,
+      "mean_kwh": 39126.95965476191,
+      "relative_deviation_percent": -0.006181463200394255,
+      "std_kwh": 81.64601262465597
+    },
+    {
+      "weekday": 2,
+      "hour": 14,
+      "n": 21,
+      "mean_kwh": 39098.871324074076,
+      "relative_deviation_percent": -0.07796469058588551,
+      "std_kwh": 89.90569388492673
+    },
+    {
+      "weekday": 2,
+      "hour": 15,
+      "n": 21,
+      "mean_kwh": 39125.19840277778,
+      "relative_deviation_percent": -0.01068256200419393,
+      "std_kwh": 78.13022098142038
+    },
+    {
+      "weekday": 2,
+      "hour": 16,
+      "n": 21,
+      "mean_kwh": 39142.955201719575,
+      "relative_deviation_percent": 0.03469714924468903,
+      "std_kwh": 104.59216274357452
+    },
+    {
+      "weekday": 2,
+      "hour": 17,
+      "n": 21,
+      "mean_kwh": 39130.89009920635,
+      "relative_deviation_percent": 0.0038632771018010104,
+      "std_kwh": 93.44398452175122
+    },
+    {
+      "weekday": 2,
+      "hour": 18,
+      "n": 21,
+      "mean_kwh": 39131.319671296296,
+      "relative_deviation_percent": 0.004961102079503732,
+      "std_kwh": 68.1420288916049
+    },
+    {
+      "weekday": 2,
+      "hour": 19,
+      "n": 21,
+      "mean_kwh": 39159.992380291005,
+      "relative_deviation_percent": 0.07823778101068157,
+      "std_kwh": 94.54345306221987
+    },
+    {
+      "weekday": 2,
+      "hour": 20,
+      "n": 21,
+      "mean_kwh": 39122.32888690477,
+      "relative_deviation_percent": -0.018015967206808092,
+      "std_kwh": 107.98146199047117
+    },
+    {
+      "weekday": 2,
+      "hour": 21,
+      "n": 21,
+      "mean_kwh": 39136.56583134921,
+      "relative_deviation_percent": 0.018368317487360564,
+      "std_kwh": 81.53554088893729
+    },
+    {
+      "weekday": 2,
+      "hour": 22,
+      "n": 21,
+      "mean_kwh": 39153.21337632275,
+      "relative_deviation_percent": 0.06091319206629198,
+      "std_kwh": 83.50065079846912
+    },
+    {
+      "weekday": 2,
+      "hour": 23,
+      "n": 21,
+      "mean_kwh": 39149.7986957672,
+      "relative_deviation_percent": 0.052186550618937844,
+      "std_kwh": 105.36087153608416
+    },
+    {
+      "weekday": 3,
+      "hour": 0,
+      "n": 21,
+      "mean_kwh": 39116.998001984124,
+      "relative_deviation_percent": -0.03163970756636658,
+      "std_kwh": 103.70733763455895
+    },
+    {
+      "weekday": 3,
+      "hour": 1,
+      "n": 21,
+      "mean_kwh": 39118.638598544974,
+      "relative_deviation_percent": -0.027446958723997827,
+      "std_kwh": 108.55059075157908
+    },
+    {
+      "weekday": 3,
+      "hour": 2,
+      "n": 21,
+      "mean_kwh": 39134.5885681217,
+      "relative_deviation_percent": 0.013315175047567962,
+      "std_kwh": 105.69540241220926
+    },
+    {
+      "weekday": 3,
+      "hour": 3,
+      "n": 21,
+      "mean_kwh": 39130.43889087302,
+      "relative_deviation_percent": 0.0027101580093891187,
+      "std_kwh": 109.15606045862181
+    },
+    {
+      "weekday": 3,
+      "hour": 4,
+      "n": 21,
+      "mean_kwh": 39131.207575396824,
+      "relative_deviation_percent": 0.004674627047207558,
+      "std_kwh": 81.31545362813533
+    },
+    {
+      "weekday": 3,
+      "hour": 5,
+      "n": 21,
+      "mean_kwh": 39124.38758928572,
+      "relative_deviation_percent": -0.012754696867423032,
+      "std_kwh": 82.8281972778538
+    },
+    {
+      "weekday": 3,
+      "hour": 6,
+      "n": 21,
+      "mean_kwh": 39142.16634589947,
+      "relative_deviation_percent": 0.032681129946943166,
+      "std_kwh": 106.92607803362233
+    },
+    {
+      "weekday": 3,
+      "hour": 7,
+      "n": 21,
+      "mean_kwh": 39113.59766931217,
+      "relative_deviation_percent": -0.04032968121021607,
+      "std_kwh": 82.03975843350659
+    },
+    {
+      "weekday": 3,
+      "hour": 8,
+      "n": 21,
+      "mean_kwh": 39131.32495502645,
+      "relative_deviation_percent": 0.004974605309993052,
+      "std_kwh": 115.8637884710929
+    },
+    {
+      "weekday": 3,
+      "hour": 9,
+      "n": 21,
+      "mean_kwh": 39107.278402777774,
+      "relative_deviation_percent": -0.056479353883520655,
+      "std_kwh": 116.42901753024377
+    },
+    {
+      "weekday": 3,
+      "hour": 10,
+      "n": 21,
+      "mean_kwh": 39146.119271164025,
+      "relative_deviation_percent": 0.042783322784822886,
+      "std_kwh": 112.63857465572501
+    },
+    {
+      "weekday": 3,
+      "hour": 11,
+      "n": 21,
+      "mean_kwh": 39144.706812830686,
+      "relative_deviation_percent": 0.03917360959675431,
+      "std_kwh": 107.44579302940434
+    },
+    {
+      "weekday": 3,
+      "hour": 12,
+      "n": 21,
+      "mean_kwh": 39148.74419444444,
+      "relative_deviation_percent": 0.049491641153842636,
+      "std_kwh": 101.4494223564339
+    },
+    {
+      "weekday": 3,
+      "hour": 13,
+      "n": 21,
+      "mean_kwh": 39125.001170634925,
+      "relative_deviation_percent": -0.01118661330989923,
+      "std_kwh": 110.55288355107166
+    },
+    {
+      "weekday": 3,
+      "hour": 14,
+      "n": 21,
+      "mean_kwh": 39103.272090608465,
+      "relative_deviation_percent": -0.06671798360570191,
+      "std_kwh": 89.57434772423416
+    },
+    {
+      "weekday": 3,
+      "hour": 15,
+      "n": 21,
+      "mean_kwh": 39152.45437566138,
+      "relative_deviation_percent": 0.05897347134504738,
+      "std_kwh": 106.0223453999846
+    },
+    {
+      "weekday": 3,
+      "hour": 16,
+      "n": 21,
+      "mean_kwh": 39111.451291666664,
+      "relative_deviation_percent": -0.04581501660785303,
+      "std_kwh": 96.71304907355939
+    },
+    {
+      "weekday": 3,
+      "hour": 17,
+      "n": 21,
+      "mean_kwh": 39117.03154497355,
+      "relative_deviation_percent": -0.03155398427920897,
+      "std_kwh": 89.6669237553436
+    },
+    {
+      "weekday": 3,
+      "hour": 18,
+      "n": 21,
+      "mean_kwh": 39135.524068783074,
+      "relative_deviation_percent": 0.015705963501377873,
+      "std_kwh": 79.5806672129638
+    },
+    {
+      "weekday": 3,
+      "hour": 19,
+      "n": 21,
+      "mean_kwh": 39097.05645502646,
+      "relative_deviation_percent": -0.0826028144732649,
+      "std_kwh": 107.1170616906368
+    },
+    {
+      "weekday": 3,
+      "hour": 20,
+      "n": 21,
+      "mean_kwh": 39109.287699735454,
+      "relative_deviation_percent": -0.0513443452565987,
+      "std_kwh": 73.02009202965104
+    },
+    {
+      "weekday": 3,
+      "hour": 21,
+      "n": 21,
+      "mean_kwh": 39098.64225727513,
+      "relative_deviation_percent": -0.07855009932012935,
+      "std_kwh": 105.04749109596948
+    },
+    {
+      "weekday": 3,
+      "hour": 22,
+      "n": 21,
+      "mean_kwh": 39171.21484325397,
+      "relative_deviation_percent": 0.10691818283479204,
+      "std_kwh": 91.09936937457348
+    },
+    {
+      "weekday": 3,
+      "hour": 23,
+      "n": 21,
+      "mean_kwh": 39130.40923015873,
+      "relative_deviation_percent": 0.0026343563598763,
+      "std_kwh": 94.38376318896258
+    },
+    {
+      "weekday": 4,
+      "hour": 0,
+      "n": 21,
+      "mean_kwh": 39120.602779100525,
+      "relative_deviation_percent": -0.022427250681811284,
+      "std_kwh": 84.10439404774371
+    },
+    {
+      "weekday": 4,
+      "hour": 1,
+      "n": 21,
+      "mean_kwh": 39147.6784457672,
+      "relative_deviation_percent": 0.04676798767349055,
+      "std_kwh": 104.9767192494505
+    },
+    {
+      "weekday": 4,
+      "hour": 2,
+      "n": 21,
+      "mean_kwh": 39121.658476190474,
+      "relative_deviation_percent": -0.019729285284719733,
+      "std_kwh": 68.86591422951365
+    },
+    {
+      "weekday": 4,
+      "hour": 3,
+      "n": 21,
+      "mean_kwh": 39122.548482142854,
+      "relative_deviation_percent": -0.017454764225977026,
+      "std_kwh": 98.27487137952788
+    },
+    {
+      "weekday": 4,
+      "hour": 4,
+      "n": 21,
+      "mean_kwh": 39119.82877843915,
+      "relative_deviation_percent": -0.024405305771291186,
+      "std_kwh": 98.40445737690834
+    },
+    {
+      "weekday": 4,
+      "hour": 5,
+      "n": 21,
+      "mean_kwh": 39119.86329100529,
+      "relative_deviation_percent": -0.024317104610083184,
+      "std_kwh": 86.97485357512029
+    },
+    {
+      "weekday": 4,
+      "hour": 6,
+      "n": 21,
+      "mean_kwh": 39112.64838029101,
+      "relative_deviation_percent": -0.042755707534747334,
+      "std_kwh": 95.64050176735408
+    },
+    {
+      "weekday": 4,
+      "hour": 7,
+      "n": 21,
+      "mean_kwh": 39146.04617063492,
+      "relative_deviation_percent": 0.042596505278269525,
+      "std_kwh": 86.94356764458928
+    },
+    {
+      "weekday": 4,
+      "hour": 8,
+      "n": 21,
+      "mean_kwh": 39139.309220238094,
+      "relative_deviation_percent": 0.025379389473312308,
+      "std_kwh": 105.54636012519393
+    },
+    {
+      "weekday": 4,
+      "hour": 9,
+      "n": 21,
+      "mean_kwh": 39104.85000198412,
+      "relative_deviation_percent": -0.06268543456133813,
+      "std_kwh": 90.54399528309054
+    },
+    {
+      "weekday": 4,
+      "hour": 10,
+      "n": 21,
+      "mean_kwh": 39158.76232738095,
+      "relative_deviation_percent": 0.07509422759983675,
+      "std_kwh": 121.66224480645197
+    },
+    {
+      "weekday": 4,
+      "hour": 11,
+      "n": 21,
+      "mean_kwh": 39120.57136507936,
+      "relative_deviation_percent": -0.022507533125415424,
+      "std_kwh": 83.17485803118564
+    },
+    {
+      "weekday": 4,
+      "hour": 12,
+      "n": 21,
+      "mean_kwh": 39112.41826653439,
+      "relative_deviation_percent": -0.043343791899719264,
+      "std_kwh": 120.12254823880164
+    },
+    {
+      "weekday": 4,
+      "hour": 13,
+      "n": 21,
+      "mean_kwh": 39151.2823207672,
+      "relative_deviation_percent": 0.055978139087242695,
+      "std_kwh": 110.33192276472118
+    },
+    {
+      "weekday": 4,
+      "hour": 14,
+      "n": 21,
+      "mean_kwh": 39117.95003902116,
+      "relative_deviation_percent": -0.02920665834501568,
+      "std_kwh": 83.13197943319243
+    },
+    {
+      "weekday": 4,
+      "hour": 15,
+      "n": 21,
+      "mean_kwh": 39174.079933862435,
+      "relative_deviation_percent": 0.11424027872271036,
+      "std_kwh": 104.31572970257093
+    },
+    {
+      "weekday": 4,
+      "hour": 16,
+      "n": 21,
+      "mean_kwh": 39153.63855621693,
+      "relative_deviation_percent": 0.06199979224070784,
+      "std_kwh": 98.2113228323158
+    },
+    {
+      "weekday": 4,
+      "hour": 17,
+      "n": 21,
+      "mean_kwh": 39158.63125793651,
+      "relative_deviation_percent": 0.0747592633102867,
+      "std_kwh": 110.20731433829846
+    },
+    {
+      "weekday": 4,
+      "hour": 18,
+      "n": 21,
+      "mean_kwh": 39108.0366058201,
+      "relative_deviation_percent": -0.05454167157705747,
+      "std_kwh": 129.83304850289448
+    },
+    {
+      "weekday": 4,
+      "hour": 19,
+      "n": 21,
+      "mean_kwh": 39133.02454431217,
+      "relative_deviation_percent": 0.00931811740809696,
+      "std_kwh": 90.85036452177614
+    },
+    {
+      "weekday": 4,
+      "hour": 20,
+      "n": 21,
+      "mean_kwh": 39149.100299603175,
+      "relative_deviation_percent": 0.050401712238734575,
+      "std_kwh": 118.69215902777844
+    },
+    {
+      "weekday": 4,
+      "hour": 21,
+      "n": 21,
+      "mean_kwh": 39144.869240079366,
+      "relative_deviation_percent": 0.039588712660565406,
+      "std_kwh": 75.00214325041283
+    },
+    {
+      "weekday": 4,
+      "hour": 22,
+      "n": 21,
+      "mean_kwh": 39132.78213095238,
+      "relative_deviation_percent": 0.008698599875334168,
+      "std_kwh": 118.36702113356202
+    },
+    {
+      "weekday": 4,
+      "hour": 23,
+      "n": 21,
+      "mean_kwh": 39115.555026455026,
+      "relative_deviation_percent": -0.03532741124900873,
+      "std_kwh": 74.88202093165356
+    },
+    {
+      "weekday": 5,
+      "hour": 0,
+      "n": 21,
+      "mean_kwh": 39135.924828703704,
+      "relative_deviation_percent": 0.016730155391919688,
+      "std_kwh": 75.89434976872371
+    },
+    {
+      "weekday": 5,
+      "hour": 1,
+      "n": 21,
+      "mean_kwh": 39139.08334589947,
+      "relative_deviation_percent": 0.024802139469026763,
+      "std_kwh": 77.36584733794594
+    },
+    {
+      "weekday": 5,
+      "hour": 2,
+      "n": 21,
+      "mean_kwh": 39085.4238941799,
+      "relative_deviation_percent": -0.11233127251530917,
+      "std_kwh": 70.0265664922804
+    },
+    {
+      "weekday": 5,
+      "hour": 3,
+      "n": 21,
+      "mean_kwh": 39110.6818042328,
+      "relative_deviation_percent": -0.04778153758231429,
+      "std_kwh": 99.57314379132931
+    },
+    {
+      "weekday": 5,
+      "hour": 4,
+      "n": 21,
+      "mean_kwh": 39205.811372354496,
+      "relative_deviation_percent": 0.19533392183945786,
+      "std_kwh": 117.94772013372422
+    },
+    {
+      "weekday": 5,
+      "hour": 5,
+      "n": 21,
+      "mean_kwh": 39121.55131812169,
+      "relative_deviation_percent": -0.02000314107569734,
+      "std_kwh": 69.80006516631548
+    },
+    {
+      "weekday": 5,
+      "hour": 6,
+      "n": 21,
+      "mean_kwh": 39147.46189748677,
+      "relative_deviation_percent": 0.046214571572478214,
+      "std_kwh": 90.29263516604647
+    },
+    {
+      "weekday": 5,
+      "hour": 7,
+      "n": 21,
+      "mean_kwh": 39140.80371494709,
+      "relative_deviation_percent": 0.029198756836734674,
+      "std_kwh": 95.59193154059865
+    },
+    {
+      "weekday": 5,
+      "hour": 8,
+      "n": 21,
+      "mean_kwh": 39150.72583531746,
+      "relative_deviation_percent": 0.054555971211933674,
+      "std_kwh": 71.76115569358106
+    },
+    {
+      "weekday": 5,
+      "hour": 9,
+      "n": 21,
+      "mean_kwh": 39168.08602579365,
+      "relative_deviation_percent": 0.0989221001306495,
+      "std_kwh": 99.27963320898888
+    },
+    {
+      "weekday": 5,
+      "hour": 10,
+      "n": 21,
+      "mean_kwh": 39101.9580244709,
+      "relative_deviation_percent": -0.07007624328303486,
+      "std_kwh": 117.02294702061151
+    },
+    {
+      "weekday": 5,
+      "hour": 11,
+      "n": 21,
+      "mean_kwh": 39124.83136243386,
+      "relative_deviation_percent": -0.01162057931679561,
+      "std_kwh": 104.62837659181157
+    },
+    {
+      "weekday": 5,
+      "hour": 12,
+      "n": 21,
+      "mean_kwh": 39154.22898148148,
+      "relative_deviation_percent": 0.06350869753986021,
+      "std_kwh": 125.44743295818355
+    },
+    {
+      "weekday": 5,
+      "hour": 13,
+      "n": 21,
+      "mean_kwh": 39127.68593121693,
+      "relative_deviation_percent": -0.004325373264146837,
+      "std_kwh": 101.05602267666558
+    },
+    {
+      "weekday": 5,
+      "hour": 14,
+      "n": 21,
+      "mean_kwh": 39097.32926058201,
+      "relative_deviation_percent": -0.08190562589899253,
+      "std_kwh": 90.27443946939161
+    },
+    {
+      "weekday": 5,
+      "hour": 15,
+      "n": 21,
+      "mean_kwh": 39109.55286441799,
+      "relative_deviation_percent": -0.050666683884958985,
+      "std_kwh": 81.1015654542201
+    },
+    {
+      "weekday": 5,
+      "hour": 16,
+      "n": 21,
+      "mean_kwh": 39081.69028042328,
+      "relative_deviation_percent": -0.12187298748013164,
+      "std_kwh": 87.75756631707596
+    },
+    {
+      "weekday": 5,
+      "hour": 17,
+      "n": 21,
+      "mean_kwh": 39128.677096560845,
+      "relative_deviation_percent": -0.0017923267812691712,
+      "std_kwh": 92.49682260018972
+    },
+    {
+      "weekday": 5,
+      "hour": 18,
+      "n": 21,
+      "mean_kwh": 39139.698174603174,
+      "relative_deviation_percent": 0.02637341079632094,
+      "std_kwh": 96.86393245036689
+    },
+    {
+      "weekday": 5,
+      "hour": 19,
+      "n": 21,
+      "mean_kwh": 39152.15567989418,
+      "relative_deviation_percent": 0.05821011711035773,
+      "std_kwh": 111.13778579008512
+    },
+    {
+      "weekday": 5,
+      "hour": 20,
+      "n": 21,
+      "mean_kwh": 39144.22321362434,
+      "relative_deviation_percent": 0.03793771159419368,
+      "std_kwh": 95.99297024422756
+    },
+    {
+      "weekday": 5,
+      "hour": 21,
+      "n": 21,
+      "mean_kwh": 39166.47649801587,
+      "relative_deviation_percent": 0.09480875143292877,
+      "std_kwh": 80.45722516736076
+    },
+    {
+      "weekday": 5,
+      "hour": 22,
+      "n": 21,
+      "mean_kwh": 39109.16933465608,
+      "relative_deviation_percent": -0.05164684195892999,
+      "std_kwh": 82.24827489130651
+    },
+    {
+      "weekday": 5,
+      "hour": 23,
+      "n": 21,
+      "mean_kwh": 39140.6251984127,
+      "relative_deviation_percent": 0.028742535599435293,
+      "std_kwh": 111.18715130343067
+    },
+    {
+      "weekday": 6,
+      "hour": 0,
+      "n": 22,
+      "mean_kwh": 39137.45612121212,
+      "relative_deviation_percent": 0.02064356411481949,
+      "std_kwh": 71.34184219687045
+    },
+    {
+      "weekday": 6,
+      "hour": 1,
+      "n": 22,
+      "mean_kwh": 39141.47344002525,
+      "relative_deviation_percent": 0.030910322686117375,
+      "std_kwh": 71.57992430913758
+    },
+    {
+      "weekday": 6,
+      "hour": 2,
+      "n": 22,
+      "mean_kwh": 39119.57940277778,
+      "relative_deviation_percent": -0.02504261633287097,
+      "std_kwh": 116.63561794047409
+    },
+    {
+      "weekday": 6,
+      "hour": 3,
+      "n": 22,
+      "mean_kwh": 39156.43773358586,
+      "relative_deviation_percent": 0.0691534386356718,
+      "std_kwh": 120.0037928532673
+    },
+    {
+      "weekday": 6,
+      "hour": 4,
+      "n": 22,
+      "mean_kwh": 39137.71734785353,
+      "relative_deviation_percent": 0.021311161331905026,
+      "std_kwh": 61.73362173438875
+    },
+    {
+      "weekday": 6,
+      "hour": 5,
+      "n": 22,
+      "mean_kwh": 39105.21256565657,
+      "relative_deviation_percent": -0.06175885794024172,
+      "std_kwh": 94.53170074598007
+    },
+    {
+      "weekday": 6,
+      "hour": 6,
+      "n": 22,
+      "mean_kwh": 39119.497950126264,
+      "relative_deviation_percent": -0.025250778728491685,
+      "std_kwh": 83.87996342910516
+    },
+    {
+      "weekday": 6,
+      "hour": 7,
+      "n": 22,
+      "mean_kwh": 39137.05100883838,
+      "relative_deviation_percent": 0.019608248988256527,
+      "std_kwh": 107.28167720047428
+    },
+    {
+      "weekday": 6,
+      "hour": 8,
+      "n": 22,
+      "mean_kwh": 39127.39309659091,
+      "relative_deviation_percent": -0.005073748622574925,
+      "std_kwh": 99.94911015556788
+    },
+    {
+      "weekday": 6,
+      "hour": 9,
+      "n": 22,
+      "mean_kwh": 39155.41179229798,
+      "relative_deviation_percent": 0.06653151789677292,
+      "std_kwh": 95.80102291786442
+    },
+    {
+      "weekday": 6,
+      "hour": 10,
+      "n": 22,
+      "mean_kwh": 39134.941979166666,
+      "relative_deviation_percent": 0.014218360989226575,
+      "std_kwh": 100.99910806905312
+    },
+    {
+      "weekday": 6,
+      "hour": 11,
+      "n": 22,
+      "mean_kwh": 39169.00272032828,
+      "relative_deviation_percent": 0.10126482718528784,
+      "std_kwh": 79.33298903824989
+    },
+    {
+      "weekday": 6,
+      "hour": 12,
+      "n": 22,
+      "mean_kwh": 39123.85731123738,
+      "relative_deviation_percent": -0.014109888464408638,
+      "std_kwh": 98.23016069707151
+    },
+    {
+      "weekday": 6,
+      "hour": 13,
+      "n": 22,
+      "mean_kwh": 39134.01740214647,
+      "relative_deviation_percent": 0.011855489260970131,
+      "std_kwh": 90.46677593435001
+    },
+    {
+      "weekday": 6,
+      "hour": 14,
+      "n": 22,
+      "mean_kwh": 39135.12400126262,
+      "relative_deviation_percent": 0.014683541125704025,
+      "std_kwh": 90.78694210542984
+    },
+    {
+      "weekday": 6,
+      "hour": 15,
+      "n": 22,
+      "mean_kwh": 39128.26432386364,
+      "relative_deviation_percent": -0.002847218818513575,
+      "std_kwh": 72.86243866011544
+    },
+    {
+      "weekday": 6,
+      "hour": 16,
+      "n": 22,
+      "mean_kwh": 39108.809561868686,
+      "relative_deviation_percent": -0.05256628612567704,
+      "std_kwh": 108.1904147544524
+    },
+    {
+      "weekday": 6,
+      "hour": 17,
+      "n": 22,
+      "mean_kwh": 39101.10594507575,
+      "relative_deviation_percent": -0.07225383830111731,
+      "std_kwh": 78.0312195698581
+    },
+    {
+      "weekday": 6,
+      "hour": 18,
+      "n": 22,
+      "mean_kwh": 39140.816898358586,
+      "relative_deviation_percent": 0.02923244868677788,
+      "std_kwh": 94.23283528989411
+    },
+    {
+      "weekday": 6,
+      "hour": 19,
+      "n": 22,
+      "mean_kwh": 39127.392549242424,
+      "relative_deviation_percent": -0.005075147439792538,
+      "std_kwh": 108.20484192214057
+    },
+    {
+      "weekday": 6,
+      "hour": 20,
+      "n": 22,
+      "mean_kwh": 39159.9184135101,
+      "relative_deviation_percent": 0.07804874968975195,
+      "std_kwh": 85.62555207703286
+    },
+    {
+      "weekday": 6,
+      "hour": 21,
+      "n": 22,
+      "mean_kwh": 39107.44370391414,
+      "relative_deviation_percent": -0.056056906241808147,
+      "std_kwh": 84.40500629638144
+    },
+    {
+      "weekday": 6,
+      "hour": 22,
+      "n": 22,
+      "mean_kwh": 39127.82954040404,
+      "relative_deviation_percent": -0.003958362100420221,
+      "std_kwh": 94.2542614137966
+    },
+    {
+      "weekday": 6,
+      "hour": 23,
+      "n": 22,
+      "mean_kwh": 39120.05446654041,
+      "relative_deviation_percent": -0.02382853171978283,
+      "std_kwh": 94.39750903980085
+    }
+  ],
+  "global_mean_kwh": 39129.37842288966,
+  "uses_training": false
+}

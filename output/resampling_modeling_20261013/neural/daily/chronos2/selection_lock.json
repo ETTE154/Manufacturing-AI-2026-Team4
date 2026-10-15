@@ -1,0 +1,249 @@
+{
+  "model": "chronos2",
+  "scenario": "daily",
+  "selected_candidate": 4,
+  "selected_config": {
+    "context": 28,
+    "mean_blend_alpha": 0.25,
+    "mapping_profile": "uniform"
+  },
+  "candidate_results": [
+    {
+      "candidate": 0,
+      "config": {
+        "context": "full",
+        "mean_blend_alpha": 0.0,
+        "mapping_profile": "uniform"
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.52011723377744,
+          "rmse_kwh": 97.43525756990498,
+          "mape_percent": 0.19557415750162838,
+          "r2": -7.346483646952784e-05,
+          "bias_pred_minus_actual_kwh": 0.7046562820007833
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.23714267496443,
+          "rmse_kwh": 96.79524154217242,
+          "mape_percent": 0.19483174403241388,
+          "r2": -7.29727616335385e-05,
+          "bias_pred_minus_actual_kwh": -0.9129734970788614
+        },
+        "origin_count": 3,
+        "unique_target_hours": 985,
+        "late_unique_target_hours": 745,
+        "origin_late505_mae_kwh": {
+          "2025-02-15 00:00:00": 76.52858250181252,
+          "2025-02-22 00:00:00": 74.75841607095316,
+          "2025-02-25 00:00:00": 77.42442945212761
+        },
+        "mean_origin_late505_mae_kwh": 76.23714267496443
+      },
+      "selection_objective_mae_kwh": 76.23714267496443,
+      "prediction_csv": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\daily\\chronos2\\candidate0_validation_predictions.csv"
+    },
+    {
+      "candidate": 1,
+      "config": {
+        "context": "full",
+        "mean_blend_alpha": 0.25,
+        "mapping_profile": "uniform"
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.5478418102845,
+          "rmse_kwh": 97.45575108000315,
+          "mape_percent": 0.1956499268221096,
+          "r2": -0.0004941990042659494,
+          "bias_pred_minus_actual_kwh": 1.649162276595051
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.25143240212317,
+          "rmse_kwh": 96.79891478144201,
+          "mape_percent": 0.19487340603373574,
+          "r2": -0.0001488768445121469,
+          "bias_pred_minus_actual_kwh": 0.07608695296095104
+        },
+        "origin_count": 3,
+        "unique_target_hours": 985,
+        "late_unique_target_hours": 745,
+        "origin_late505_mae_kwh": {
+          "2025-02-15 00:00:00": 76.56840949205646,
+          "2025-02-22 00:00:00": 74.76447062728009,
+          "2025-02-25 00:00:00": 77.42141708703299
+        },
+        "mean_origin_late505_mae_kwh": 76.25143240212317
+      },
+      "selection_objective_mae_kwh": 76.25143240212317,
+      "prediction_csv": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\daily\\chronos2\\candidate1_validation_predictions.csv"
+    },
+    {
+      "candidate": 2,
+      "config": {
+        "context": "full",
+        "mean_blend_alpha": 1.0,
+        "mapping_profile": "uniform"
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.75656711409405,
+          "rmse_kwh": 97.66235060075556,
+          "mape_percent": 0.19619805833209922,
+          "r2": -0.004740653756930779,
+          "bias_pred_minus_actual_kwh": 4.482680260377855
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.38510016960032,
+          "rmse_kwh": 96.94477240330909,
+          "mape_percent": 0.19523040947305859,
+          "r2": -0.0031652173329945743,
+          "bias_pred_minus_actual_kwh": 3.043268303080388
+        },
+        "origin_count": 3,
+        "unique_target_hours": 985,
+        "late_unique_target_hours": 745,
+        "origin_late505_mae_kwh": {
+          "2025-02-15 00:00:00": 76.92889182480761,
+          "2025-02-22 00:00:00": 74.81246821369633,
+          "2025-02-25 00:00:00": 77.41394047029702
+        },
+        "mean_origin_late505_mae_kwh": 76.38510016960032
+      },
+      "selection_objective_mae_kwh": 76.38510016960032,
+      "prediction_csv": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\daily\\chronos2\\candidate2_validation_predictions.csv"
+    },
+    {
+      "candidate": 3,
+      "config": {
+        "context": 28,
+        "mean_blend_alpha": 0.0,
+        "mapping_profile": "uniform"
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.52011723377744,
+          "rmse_kwh": 97.43525756990498,
+          "mape_percent": 0.19557415750162838,
+          "r2": -7.346483646952784e-05,
+          "bias_pred_minus_actual_kwh": 0.7046562820007833
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.23714267496443,
+          "rmse_kwh": 96.79524154217242,
+          "mape_percent": 0.19483174403241388,
+          "r2": -7.29727616335385e-05,
+          "bias_pred_minus_actual_kwh": -0.9129734970788614
+        },
+        "origin_count": 3,
+        "unique_target_hours": 985,
+        "late_unique_target_hours": 745,
+        "origin_late505_mae_kwh": {
+          "2025-02-15 00:00:00": 76.52858250181252,
+          "2025-02-22 00:00:00": 74.75841607095316,
+          "2025-02-25 00:00:00": 77.42442945212761
+        },
+        "mean_origin_late505_mae_kwh": 76.23714267496443
+      },
+      "selection_objective_mae_kwh": 76.23714267496443,
+      "prediction_csv": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\daily\\chronos2\\candidate3_validation_predictions.csv"
+    },
+    {
+      "candidate": 4,
+      "config": {
+        "context": 28,
+        "mean_blend_alpha": 0.25,
+        "mapping_profile": "uniform"
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.5062460122927,
+          "rmse_kwh": 97.4347446838095,
+          "mape_percent": 0.19554150180495197,
+          "r2": -6.293635966558853e-05,
+          "bias_pred_minus_actual_kwh": 1.2528767096207782
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.22743939013054,
+          "rmse_kwh": 96.80159996097544,
+          "mape_percent": 0.19481025138244873,
+          "r2": -0.00020436541169743805,
+          "bias_pred_minus_actual_kwh": -0.2606672498030754
+        },
+        "origin_count": 3,
+        "unique_target_hours": 985,
+        "late_unique_target_hours": 745,
+        "origin_late505_mae_kwh": {
+          "2025-02-15 00:00:00": 76.57129159595351,
+          "2025-02-22 00:00:00": 74.712324189404,
+          "2025-02-25 00:00:00": 77.3987023850341
+        },
+        "mean_origin_late505_mae_kwh": 76.22743939013054
+      },
+      "selection_objective_mae_kwh": 76.22743939013054,
+      "prediction_csv": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\daily\\chronos2\\candidate4_validation_predictions.csv"
+    },
+    {
+      "candidate": 5,
+      "config": {
+        "context": 28,
+        "mean_blend_alpha": 1.0,
+        "mapping_profile": "uniform"
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.66829501771075,
+          "rmse_kwh": 97.64746771898797,
+          "mape_percent": 0.1959639727413494,
+          "r2": -0.004434449843569999,
+          "bias_pred_minus_actual_kwh": 2.897537992480763
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.37570838604698,
+          "rmse_kwh": 97.02333993079837,
+          "mape_percent": 0.19519904263454482,
+          "r2": -0.004791878504695646,
+          "bias_pred_minus_actual_kwh": 1.6962514920242828
+        },
+        "origin_count": 3,
+        "unique_target_hours": 985,
+        "late_unique_target_hours": 745,
+        "origin_late505_mae_kwh": {
+          "2025-02-15 00:00:00": 77.08948841446654,
+          "2025-02-22 00:00:00": 74.66509179042903,
+          "2025-02-25 00:00:00": 77.37254495324534
+        },
+        "mean_origin_late505_mae_kwh": 76.37570838604698
+      },
+      "selection_objective_mae_kwh": 76.37570838604698,
+      "prediction_csv": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\daily\\chronos2\\candidate5_validation_predictions.csv"
+    }
+  ],
+  "selection_objective": "Mean three validation-origin Late505 MAE only",
+  "validation_origins": [
+    "2025-02-15 00:00:00",
+    "2025-02-22 00:00:00",
+    "2025-02-25 00:00:00"
+  ],
+  "latest_validation_label": "2025-03-28 00:00:00",
+  "test_labels_used_for_selection": false,
+  "May_labels_read": false,
+  "weights_frozen": true,
+  "checkpoint_revision": "29ec3766d36d6f73f0696f85560a422f50e8498c",
+  "mean_blend_fit_scope": "Each origin historical native series mean only; no later-origin joint-series attention",
+  "alpha0_warning": "Exactly mean baseline if alpha0; no learned foundation-model improvement",
+  "daily_mapping_locked": "Uniform repeat24 crop745",
+  "locked_before_internal_test": true
+}

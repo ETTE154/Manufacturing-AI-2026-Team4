@@ -1,0 +1,178 @@
+{
+  "candidate": 1,
+  "config": {
+    "context": 24,
+    "d_model": 32,
+    "layers": 1,
+    "dropout": 0.0
+  },
+  "architecture": {
+    "enc_in": 1,
+    "seq_len": 24,
+    "pred_len": 745,
+    "d_model": 32,
+    "d_ff": 64,
+    "e_layers": 1,
+    "n_heads": 4,
+    "dropout": 0.0,
+    "fc_dropout": 0.0,
+    "head_dropout": 0.0,
+    "individual": false,
+    "patch_len": 16,
+    "stride": 8,
+    "padding_patch": "end",
+    "revin": true,
+    "affine": true,
+    "subtract_last": false,
+    "decomposition": false,
+    "kernel_size": 25,
+    "training_loss": "MSE"
+  },
+  "validation": {
+    "P745": {
+      "count": 745,
+      "mae_kwh": 78.96145532929027,
+      "rmse_kwh": 99.93731019788395,
+      "mape_percent": 0.20169741895913953,
+      "bias_pred_minus_actual_kwh": -22.994944410749188,
+      "r2": -0.06795312049997548
+    },
+    "LateP505": {
+      "count": 505,
+      "mae_kwh": 79.62766368577523,
+      "rmse_kwh": 100.6233588476664,
+      "mape_percent": 0.20337824256710255,
+      "bias_pred_minus_actual_kwh": -22.423500977402224,
+      "r2": -0.06190223078515755
+    }
+  },
+  "fold_fits": [
+    {
+      "fold": 1,
+      "fit_origin": "2025-02-25 00:00:00",
+      "epochs": 6,
+      "inner": {
+        "inner_fitting_hours": 1319,
+        "inner_fitting_end": "2025-01-24 22:00:00",
+        "inner_tail_origin": "2025-01-24 23:00:00",
+        "inner_tail_end": "2025-02-24 23:00:00",
+        "inner_holdout_hours": 745,
+        "inner_origins": 1,
+        "training_windows": 551,
+        "training_tail_target_overlap": false,
+        "best_epoch": 6,
+        "best_mae_kwh": 78.96886103708208,
+        "epochs_run": 10,
+        "logs": [
+          {
+            "epoch": 1,
+            "training_loss_standardized": 1.2646004952449763,
+            "training_loss_name": "MSE",
+            "inner_chronological_mae_kwh": 83.48693368455059
+          },
+          {
+            "epoch": 2,
+            "training_loss_standardized": 1.1110342784282732,
+            "training_loss_name": "MSE",
+            "inner_chronological_mae_kwh": 82.73825157137654
+          },
+          {
+            "epoch": 3,
+            "training_loss_standardized": 1.0670697810212844,
+            "training_loss_name": "MSE",
+            "inner_chronological_mae_kwh": 80.68236405536369
+          },
+          {
+            "epoch": 4,
+            "training_loss_standardized": 1.0529392444935988,
+            "training_loss_name": "MSE",
+            "inner_chronological_mae_kwh": 80.25210141436486
+          },
+          {
+            "epoch": 5,
+            "training_loss_standardized": 1.0476778598532703,
+            "training_loss_name": "MSE",
+            "inner_chronological_mae_kwh": 79.97447931786661
+          },
+          {
+            "epoch": 6,
+            "training_loss_standardized": 1.0445537733728787,
+            "training_loss_name": "MSE",
+            "inner_chronological_mae_kwh": 78.96886103708208
+          },
+          {
+            "epoch": 7,
+            "training_loss_standardized": 1.0417673375775292,
+            "training_loss_name": "MSE",
+            "inner_chronological_mae_kwh": 79.27578796230296
+          },
+          {
+            "epoch": 8,
+            "training_loss_standardized": 1.0390703725728279,
+            "training_loss_name": "MSE",
+            "inner_chronological_mae_kwh": 79.5910579099062
+          },
+          {
+            "epoch": 9,
+            "training_loss_standardized": 1.0371297431295017,
+            "training_loss_name": "MSE",
+            "inner_chronological_mae_kwh": 79.83396531314415
+          },
+          {
+            "epoch": 10,
+            "training_loss_standardized": 1.0348528965415194,
+            "training_loss_name": "MSE",
+            "inner_chronological_mae_kwh": 79.25932767741
+          }
+        ],
+        "seconds": 0.9066770999925211
+      },
+      "refit": {
+        "path": "E:\\AI work\\AWS_프로젝트\\output\\optimization_20261013\\forecast\\long745\\patchtst\\checkpoints\\candidate1_fold1.pt",
+        "sha256": "5ceddc4b6a0bd370161a155c4d7db6f2fcbd399a111dead0880d2a5f044505ec",
+        "parameter_count": 81452,
+        "epochs": 6,
+        "family": "patchtst",
+        "architecture": {
+          "enc_in": 1,
+          "seq_len": 24,
+          "pred_len": 745,
+          "d_model": 32,
+          "d_ff": 64,
+          "e_layers": 1,
+          "n_heads": 4,
+          "dropout": 0.0,
+          "fc_dropout": 0.0,
+          "head_dropout": 0.0,
+          "individual": false,
+          "patch_len": 16,
+          "stride": 8,
+          "padding_patch": "end",
+          "revin": true,
+          "affine": true,
+          "subtract_last": false,
+          "decomposition": false,
+          "kernel_size": 25,
+          "training_loss": "MSE"
+        },
+        "normalization_mean": 39129.81282000295,
+        "normalization_scale": 94.45265436998334,
+        "forecast_context_in_checkpoint": true,
+        "history_hours": 2064,
+        "history_end": "2025-02-24 23:00:00",
+        "fit_seconds": 1.2067056000232697,
+        "training_windows": 1296,
+        "maximum_supervised_label": "2025-02-24 23:00:00",
+        "training_loss_logs": [
+          1.1595591556878737,
+          1.045381963988881,
+          1.0354626885166875,
+          1.0332567471045035,
+          1.0312488461718148,
+          1.0305857776123801
+        ],
+        "training_loss_name": "MSE"
+      }
+    }
+  ]
+}

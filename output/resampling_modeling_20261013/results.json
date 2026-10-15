@@ -1,0 +1,1073 @@
+{
+  "created_utc": "2026-10-13T03:27:37.878525+00:00",
+  "evaluation_started_utc": "2026-10-13T03:27:37.181372+00:00",
+  "global_selection_lock_sha256": "7e634c2bce3164b98a8b16082dd6aceffc3e614dd130465be2619154093300a8",
+  "may_source_sha256": "a0e44dc6481fba7d78a2c5b60f0f5e0c2bcc69a8f732c9229bbbdaa38dee04bf",
+  "selected_model": "daily_chronos2",
+  "observed_best_may_model": "hourly_ridge",
+  "selection_changed_after_may": false,
+  "may_points": 505,
+  "forecast_points": 745,
+  "may_leads": "241..745h from last completed observation",
+  "native_evaluation_coverage": {
+    "daily_complete": 21,
+    "weekly_complete": 2,
+    "monthly_complete": 0
+  },
+  "mean_actual_may_kwh": 39071.38393652529,
+  "mean_train_kwh": 39129.37842288966,
+  "models": [
+    {
+      "key": "daily_level",
+      "label": "Daily Level",
+      "grain": "daily",
+      "val": {
+        "count": 1515,
+        "mae_kwh": 76.2371426749644,
+        "rmse_kwh": 96.7952415421724,
+        "mape_percent": 0.19483174403241382,
+        "r2": -7.297276163309441e-05,
+        "bias_pred_minus_actual_kwh": -0.912973497076436
+      },
+      "test": {
+        "count": 505,
+        "mae_kwh": 77.99724622179032,
+        "rmse_kwh": 96.57032107593479,
+        "mape_percent": 0.1993433883384926,
+        "r2": -5.822208495076531e-05,
+        "bias_pred_minus_actual_kwh": -0.7368429112078975
+      },
+      "config": {
+        "family": "daily_level",
+        "resolution": "daily",
+        "profile": "uniform",
+        "profile_alpha": 0.5,
+        "kind": "prefix_mean"
+      },
+      "paths": {
+        "validation": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\coarse\\daily_level\\validation_predictions.csv",
+        "test": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\coarse\\daily_level\\test_predictions.csv",
+        "future": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\coarse\\daily_level\\future_path.csv"
+      },
+      "lock": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\coarse\\selection_lock.json",
+      "source": "coarse/daily_level/results.json",
+      "trials": null,
+      "reload": 0.0,
+      "scope": "완료된 과거 기간의 부하율 + 과거 시간 배분 패턴",
+      "may": {
+        "count": 505,
+        "mae_kwh": 89.03148762769126,
+        "rmse_kwh": 109.49506161496271,
+        "mape_percent": 0.22811254130837927,
+        "bias_pred_minus_actual_kwh": 57.99448636437206,
+        "r2": -0.3899183034920459
+      },
+      "may_csv": "evaluation/daily_level_may_predictions.csv",
+      "figures": {
+        "validation": "figures/daily_level_validation.png",
+        "test": "figures/daily_level_test.png",
+        "may": "figures/daily_level_may.png"
+      }
+    },
+    {
+      "key": "daily_arima",
+      "label": "Daily Arima",
+      "grain": "daily",
+      "val": {
+        "count": 1515,
+        "mae_kwh": 76.23714271849295,
+        "rmse_kwh": 96.79524158976812,
+        "mape_percent": 0.19483174411914816,
+        "r2": -7.297374513570709e-05,
+        "bias_pred_minus_actual_kwh": -0.9129784204331912
+      },
+      "test": {
+        "count": 505,
+        "mae_kwh": 77.99724634465905,
+        "rmse_kwh": 96.57032111235327,
+        "mape_percent": 0.19934338862817855,
+        "r2": -5.822283923251348e-05,
+        "bias_pred_minus_actual_kwh": -0.7368476841851607
+      },
+      "config": {
+        "family": "daily_arima",
+        "resolution": "daily",
+        "kind": "arima",
+        "order": [
+          0,
+          0,
+          0
+        ],
+        "profile": "uniform",
+        "profile_alpha": 0.5
+      },
+      "paths": {
+        "validation": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\coarse\\daily_arima\\validation_predictions.csv",
+        "test": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\coarse\\daily_arima\\test_predictions.csv",
+        "future": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\coarse\\daily_arima\\future_path.csv"
+      },
+      "lock": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\coarse\\selection_lock.json",
+      "source": "coarse/daily_arima/results.json",
+      "trials": null,
+      "reload": 0.0,
+      "scope": "완료된 과거 기간의 부하율 + 과거 시간 배분 패턴",
+      "may": {
+        "count": 505,
+        "mae_kwh": 89.03148517359908,
+        "rmse_kwh": 109.49505893574302,
+        "mape_percent": 0.22811253500715184,
+        "bias_pred_minus_actual_kwh": 57.99448130593715,
+        "r2": -0.3899182354726052
+      },
+      "may_csv": "evaluation/daily_arima_may_predictions.csv",
+      "figures": {
+        "validation": "figures/daily_arima_validation.png",
+        "test": "figures/daily_arima_test.png",
+        "may": "figures/daily_arima_may.png"
+      }
+    },
+    {
+      "key": "weekly_level",
+      "label": "Weekly Level",
+      "grain": "weekly",
+      "val": {
+        "count": 1515,
+        "mae_kwh": 76.2363342942925,
+        "rmse_kwh": 96.79436201028261,
+        "mape_percent": 0.19482866771203874,
+        "r2": -5.4798478239970194e-05,
+        "bias_pred_minus_actual_kwh": -1.110730878927697
+      },
+      "test": {
+        "count": 505,
+        "mae_kwh": 77.9890528269717,
+        "rmse_kwh": 96.56841703462798,
+        "mape_percent": 0.19932407088038745,
+        "r2": -1.8786917476809606e-05,
+        "bias_pred_minus_actual_kwh": -0.4185610355611079
+      },
+      "config": {
+        "family": "weekly_level",
+        "resolution": "weekly",
+        "profile": "uniform",
+        "profile_alpha": 0.5,
+        "kind": "median"
+      },
+      "paths": {
+        "validation": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\coarse\\weekly_level\\validation_predictions.csv",
+        "test": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\coarse\\weekly_level\\test_predictions.csv",
+        "future": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\coarse\\weekly_level\\future_path.csv"
+      },
+      "lock": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\coarse\\selection_lock.json",
+      "source": "coarse/weekly_level/results.json",
+      "trials": null,
+      "reload": 0.0,
+      "scope": "완료된 과거 기간의 부하율 + 과거 시간 배분 패턴",
+      "may": {
+        "count": 505,
+        "mae_kwh": 89.30397497115571,
+        "rmse_kwh": 109.7920361030515,
+        "mape_percent": 0.22881217405955734,
+        "bias_pred_minus_actual_kwh": 58.55325031333974,
+        "r2": -0.3974680510710964
+      },
+      "may_csv": "evaluation/weekly_level_may_predictions.csv",
+      "figures": {
+        "validation": "figures/weekly_level_validation.png",
+        "test": "figures/weekly_level_test.png",
+        "may": "figures/weekly_level_may.png"
+      }
+    },
+    {
+      "key": "weekly_arima",
+      "label": "Weekly Arima",
+      "grain": "weekly",
+      "val": {
+        "count": 1515,
+        "mae_kwh": 76.2315652105475,
+        "rmse_kwh": 96.78813300155608,
+        "mape_percent": 0.1948187488442879,
+        "r2": 7.391045683924347e-05,
+        "bias_pred_minus_actual_kwh": -0.6518779675949694
+      },
+      "test": {
+        "count": 505,
+        "mae_kwh": 77.99945645147129,
+        "rmse_kwh": 96.57101466428102,
+        "mape_percent": 0.19934859914219344,
+        "r2": -7.258739328896979e-05,
+        "bias_pred_minus_actual_kwh": -0.8227455314057176
+      },
+      "config": {
+        "family": "weekly_arima",
+        "resolution": "weekly",
+        "kind": "arima",
+        "order": [
+          1,
+          0,
+          0
+        ],
+        "profile": "uniform",
+        "profile_alpha": 0.5
+      },
+      "paths": {
+        "validation": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\coarse\\weekly_arima\\validation_predictions.csv",
+        "test": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\coarse\\weekly_arima\\test_predictions.csv",
+        "future": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\coarse\\weekly_arima\\future_path.csv"
+      },
+      "lock": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\coarse\\selection_lock.json",
+      "source": "coarse/weekly_arima/results.json",
+      "trials": null,
+      "reload": 0.0,
+      "scope": "완료된 과거 기간의 부하율 + 과거 시간 배분 패턴",
+      "may": {
+        "count": 505,
+        "mae_kwh": 88.9726166489597,
+        "rmse_kwh": 109.43079299291783,
+        "mape_percent": 0.22796138345399256,
+        "bias_pred_minus_actual_kwh": 57.873941473998485,
+        "r2": -0.38828714466119263
+      },
+      "may_csv": "evaluation/weekly_arima_may_predictions.csv",
+      "figures": {
+        "validation": "figures/weekly_arima_validation.png",
+        "test": "figures/weekly_arima_test.png",
+        "may": "figures/weekly_arima_may.png"
+      }
+    },
+    {
+      "key": "monthly_level",
+      "label": "Monthly Level",
+      "grain": "monthly",
+      "val": {
+        "count": 1515,
+        "mae_kwh": 76.23640653568604,
+        "rmse_kwh": 96.79363112649155,
+        "mape_percent": 0.19483138585748455,
+        "r2": -3.969592334662764e-05,
+        "bias_pred_minus_actual_kwh": -0.6098332739240439
+      },
+      "test": {
+        "count": 505,
+        "mae_kwh": 77.9353924900302,
+        "rmse_kwh": 96.5968020582829,
+        "mape_percent": 0.1992011860414365,
+        "r2": -0.0006067582144178019,
+        "bias_pred_minus_actual_kwh": 2.3786955782003116
+      },
+      "config": {
+        "family": "monthly_level",
+        "resolution": "monthly",
+        "profile": "uniform",
+        "profile_alpha": 0.5,
+        "kind": "recent",
+        "window": 1
+      },
+      "paths": {
+        "validation": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\coarse\\monthly_level\\validation_predictions.csv",
+        "test": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\coarse\\monthly_level\\test_predictions.csv",
+        "future": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\coarse\\monthly_level\\future_path.csv"
+      },
+      "lock": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\coarse\\selection_lock.json",
+      "source": "coarse/monthly_level/results.json",
+      "trials": null,
+      "reload": 0.0,
+      "scope": "완료된 과거 기간의 부하율 + 과거 시간 배분 패턴",
+      "may": {
+        "count": 505,
+        "mae_kwh": 89.40033038009693,
+        "rmse_kwh": 109.8972256717117,
+        "mape_percent": 0.22905957075974231,
+        "bias_pred_minus_actual_kwh": 58.750252262794454,
+        "r2": -0.400147106586759
+      },
+      "may_csv": "evaluation/monthly_level_may_predictions.csv",
+      "figures": {
+        "validation": "figures/monthly_level_validation.png",
+        "test": "figures/monthly_level_test.png",
+        "may": "figures/monthly_level_may.png"
+      }
+    },
+    {
+      "key": "daily_xgboost",
+      "label": "Daily Xgboost",
+      "grain": "daily",
+      "val": {
+        "count": 1515,
+        "mae_kwh": 76.2852932248361,
+        "rmse_kwh": 96.82034068838065,
+        "mape_percent": 0.19496751775459215,
+        "r2": -0.0005916807419474868,
+        "bias_pred_minus_actual_kwh": 1.5407318512758936
+      },
+      "test": {
+        "count": 505,
+        "mae_kwh": 77.97935624322602,
+        "rmse_kwh": 96.57066439881255,
+        "mape_percent": 0.19930264845744472,
+        "r2": -6.533283022425174e-05,
+        "bias_pred_minus_actual_kwh": 0.27922321045608434
+      },
+      "config": {
+        "family": "daily_xgboost",
+        "resolution": "daily",
+        "kind": "xgboost",
+        "depth": 1,
+        "trees": 50,
+        "lambda": 100.0,
+        "loss": "reg:squarederror",
+        "shrink": 0.5,
+        "profile": "uniform",
+        "profile_alpha": 0.5
+      },
+      "paths": {
+        "validation": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\coarse\\daily_xgboost\\validation_predictions.csv",
+        "test": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\coarse\\daily_xgboost\\test_predictions.csv",
+        "future": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\coarse\\daily_xgboost\\future_path.csv"
+      },
+      "lock": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\coarse\\selection_lock.json",
+      "source": "coarse/daily_xgboost/results.json",
+      "trials": null,
+      "reload": 0.0,
+      "scope": "완료된 과거 기간의 부하율 + 과거 시간 배분 패턴",
+      "may": {
+        "count": 505,
+        "mae_kwh": 89.11376970465909,
+        "rmse_kwh": 109.58714223748719,
+        "mape_percent": 0.22832395611063874,
+        "bias_pred_minus_actual_kwh": 58.16542414801935,
+        "r2": -0.3922570091011286
+      },
+      "may_csv": "evaluation/daily_xgboost_may_predictions.csv",
+      "figures": {
+        "validation": "figures/daily_xgboost_validation.png",
+        "test": "figures/daily_xgboost_test.png",
+        "may": "figures/daily_xgboost_may.png"
+      }
+    },
+    {
+      "key": "daily_ridge",
+      "label": "Daily Ridge",
+      "grain": "daily",
+      "val": {
+        "count": 1515,
+        "mae_kwh": 76.30012651243938,
+        "rmse_kwh": 96.85862286553697,
+        "mape_percent": 0.1950145537589236,
+        "r2": -0.0013830929691625027,
+        "bias_pred_minus_actual_kwh": 3.479577556965365
+      },
+      "test": {
+        "count": 505,
+        "mae_kwh": 77.9496160912773,
+        "rmse_kwh": 96.57814360801359,
+        "mape_percent": 0.19923268287571497,
+        "r2": -0.0002202450394235278,
+        "bias_pred_minus_actual_kwh": 1.4261147322252625
+      },
+      "config": {
+        "family": "daily_ridge",
+        "resolution": "daily",
+        "kind": "ridge",
+        "alpha": 1000000.0,
+        "profile": "uniform",
+        "profile_alpha": 0.5
+      },
+      "paths": {
+        "validation": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\coarse\\daily_ridge\\validation_predictions.csv",
+        "test": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\coarse\\daily_ridge\\test_predictions.csv",
+        "future": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\coarse\\daily_ridge\\future_path.csv"
+      },
+      "lock": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\coarse\\selection_lock.json",
+      "source": "coarse/daily_ridge/results.json",
+      "trials": null,
+      "reload": 0.0,
+      "scope": "완료된 과거 기간의 부하율 + 과거 시간 배분 패턴",
+      "may": {
+        "count": 505,
+        "mae_kwh": 89.64562869933123,
+        "rmse_kwh": 110.16618767538264,
+        "mape_percent": 0.22968938734783811,
+        "bias_pred_minus_actual_kwh": 59.25199512812081,
+        "r2": -0.40700892128427046
+      },
+      "may_csv": "evaluation/daily_ridge_may_predictions.csv",
+      "figures": {
+        "validation": "figures/daily_ridge_validation.png",
+        "test": "figures/daily_ridge_test.png",
+        "may": "figures/daily_ridge_may.png"
+      }
+    },
+    {
+      "key": "hourly_xgboost",
+      "label": "Hourly Xgboost",
+      "grain": "hourly",
+      "val": {
+        "mean_origin_mae_kwh": 76.23593561182763,
+        "by_origin": [
+          {
+            "origin": "2025-02-15 00:00:00",
+            "count": 505,
+            "mae_kwh": 76.5301543415564,
+            "rmse_kwh": 98.40371421657137,
+            "mape_percent": 0.195604969867575,
+            "bias_pred_minus_actual_kwh": 0.6096465829934027,
+            "r2": -3.838397744915234e-05
+          },
+          {
+            "origin": "2025-02-22 00:00:00",
+            "count": 505,
+            "mae_kwh": 74.75448024547386,
+            "rmse_kwh": 94.26810118315025,
+            "mape_percent": 0.19103573274456678,
+            "bias_pred_minus_actual_kwh": -0.799928067797002,
+            "r2": -0.00014406931552790603
+          },
+          {
+            "origin": "2025-02-25 00:00:00",
+            "count": 505,
+            "mae_kwh": 77.42317224845259,
+            "rmse_kwh": 97.65303954105455,
+            "mape_percent": 0.19785289795953218,
+            "bias_pred_minus_actual_kwh": -0.9941623900088425,
+            "r2": -0.00013458165647906029
+          }
+        ],
+        "count": 1515,
+        "mae_kwh": 76.23593561182761,
+        "rmse_kwh": 96.7916697584733,
+        "mape_percent": 0.194831200190558,
+        "bias_pred_minus_actual_kwh": -0.3948146249374806,
+        "r2": 8.320738147382656e-07,
+        "origin_count": 3,
+        "unique_label_hours": 745,
+        "repeated_label_observations": 770
+      },
+      "test": {
+        "count": 505,
+        "mae_kwh": 78.00688552209257,
+        "rmse_kwh": 96.57388509744814,
+        "mape_percent": 0.1993661623037067,
+        "bias_pred_minus_actual_kwh": -1.1022054382389248,
+        "r2": -0.00013203968748287664
+      },
+      "config": {
+        "model": "xgboost",
+        "group": "H_previous_history_only",
+        "n_estimators": 50,
+        "max_depth": 2,
+        "learning_rate": 0.01,
+        "min_child_weight": 100,
+        "reg_lambda": 100.0,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "objective": "reg:absoluteerror",
+        "residual_shrinkage": 0.5
+      },
+      "paths": {
+        "validation": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\hourly\\xgboost\\validation_predictions.csv",
+        "test": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\hourly\\xgboost\\test_predictions.csv",
+        "future": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\hourly\\xgboost\\future_path.csv"
+      },
+      "lock": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\hourly\\selection_lock.json",
+      "source": "hourly/xgboost/results.json",
+      "trials": 13,
+      "reload": 0.0,
+      "scope": "과거 시간 부하 + 선택된 H/D/W/M 요약 + 미래 달력",
+      "may": {
+        "count": 505,
+        "mae_kwh": 88.41735047397368,
+        "rmse_kwh": 108.82158801838963,
+        "mape_percent": 0.22653556508806677,
+        "bias_pred_minus_actual_kwh": 56.71269654536787,
+        "r2": -0.372872886061302
+      },
+      "may_csv": "evaluation/hourly_xgboost_may_predictions.csv",
+      "figures": {
+        "validation": "figures/hourly_xgboost_validation.png",
+        "test": "figures/hourly_xgboost_test.png",
+        "may": "figures/hourly_xgboost_may.png"
+      }
+    },
+    {
+      "key": "hourly_ridge",
+      "label": "Hourly Ridge",
+      "grain": "hourly",
+      "val": {
+        "mean_origin_mae_kwh": 76.29280679064968,
+        "by_origin": [
+          {
+            "origin": "2025-02-15 00:00:00",
+            "count": 505,
+            "mae_kwh": 76.59362808243472,
+            "rmse_kwh": 98.43315614931927,
+            "mape_percent": 0.19577026860041385,
+            "bias_pred_minus_actual_kwh": 1.1814954119477141,
+            "r2": -0.0006368871476682969
+          },
+          {
+            "origin": "2025-02-22 00:00:00",
+            "count": 505,
+            "mae_kwh": 74.80955601535493,
+            "rmse_kwh": 94.28057097344103,
+            "mape_percent": 0.19118148436888166,
+            "bias_pred_minus_actual_kwh": 0.09192298033084816,
+            "r2": -0.00040868505551916456
+          },
+          {
+            "origin": "2025-02-25 00:00:00",
+            "count": 505,
+            "mae_kwh": 77.47523627415939,
+            "rmse_kwh": 97.67770871545115,
+            "mape_percent": 0.197982622957178,
+            "bias_pred_minus_actual_kwh": -1.7596929034032476,
+            "r2": -0.0006399547799726957
+          }
+        ],
+        "count": 1515,
+        "mae_kwh": 76.29280679064968,
+        "rmse_kwh": 96.81399188219102,
+        "mape_percent": 0.1949781253088245,
+        "bias_pred_minus_actual_kwh": -0.1620915037082284,
+        "r2": -0.00046046132395449746,
+        "origin_count": 3,
+        "unique_label_hours": 745,
+        "repeated_label_observations": 770
+      },
+      "test": {
+        "count": 505,
+        "mae_kwh": 78.05606952482427,
+        "rmse_kwh": 96.62351935949305,
+        "mape_percent": 0.19949246600210474,
+        "bias_pred_minus_actual_kwh": -0.9025211173590212,
+        "r2": -0.0011603419488057654
+      },
+      "config": {
+        "model": "ridge",
+        "group": "HD",
+        "alpha": 100000.0
+      },
+      "paths": {
+        "validation": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\hourly\\ridge\\validation_predictions.csv",
+        "test": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\hourly\\ridge\\test_predictions.csv",
+        "future": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\hourly\\ridge\\future_path.csv"
+      },
+      "lock": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\hourly\\selection_lock.json",
+      "source": "hourly/ridge/results.json",
+      "trials": 4,
+      "reload": 0.0,
+      "scope": "과거 시간 부하 + 선택된 H/D/W/M 요약 + 미래 달력",
+      "may": {
+        "count": 505,
+        "mae_kwh": 87.93437260472214,
+        "rmse_kwh": 108.34577321413767,
+        "mape_percent": 0.22529591738357715,
+        "bias_pred_minus_actual_kwh": 55.74564170446721,
+        "r2": -0.36089355094934006
+      },
+      "may_csv": "evaluation/hourly_ridge_may_predictions.csv",
+      "figures": {
+        "validation": "figures/hourly_ridge_validation.png",
+        "test": "figures/hourly_ridge_test.png",
+        "may": "figures/hourly_ridge_may.png"
+      }
+    },
+    {
+      "key": "hourly_arima",
+      "label": "Hourly Arima",
+      "grain": "hourly",
+      "val": {
+        "mean_origin_mae_kwh": 76.23714199487794,
+        "by_origin": [
+          {
+            "origin": "2025-02-15 00:00:00",
+            "count": 505,
+            "mae_kwh": 76.52858045086624,
+            "rmse_kwh": 98.40214769385358,
+            "mape_percent": 0.1955991585718066,
+            "bias_pred_minus_actual_kwh": 0.25173021764490155,
+            "r2": -6.5443179371182936e-06
+          },
+          {
+            "origin": "2025-02-22 00:00:00",
+            "count": 505,
+            "mae_kwh": 74.7584160810492,
+            "rmse_kwh": 94.28212089780912,
+            "mape_percent": 0.1910400275639562,
+            "bias_pred_minus_actual_kwh": -1.9807837459001123,
+            "r2": -0.00044157774015585183
+          },
+          {
+            "origin": "2025-02-25 00:00:00",
+            "count": 505,
+            "mae_kwh": 77.42442945271834,
+            "rmse_kwh": 97.65170169222317,
+            "mape_percent": 0.1978560355673959,
+            "bias_pred_minus_actual_kwh": -1.0109032537956004,
+            "r2": -0.00010717811180582792
+          }
+        ],
+        "count": 1515,
+        "mae_kwh": 76.23714199487793,
+        "rmse_kwh": 96.79524064597909,
+        "mape_percent": 0.19483174056771957,
+        "bias_pred_minus_actual_kwh": -0.9133189273502704,
+        "r2": -7.295424298070508e-05,
+        "origin_count": 3,
+        "unique_label_hours": 745,
+        "repeated_label_observations": 770
+      },
+      "test": {
+        "count": 505,
+        "mae_kwh": 77.9972462220679,
+        "rmse_kwh": 96.57032107601705,
+        "mape_percent": 0.19934338833914708,
+        "bias_pred_minus_actual_kwh": -0.7368429219908667,
+        "r2": -5.8222086654735605e-05
+      },
+      "config": {
+        "model": "arima",
+        "order": [
+          2,
+          0,
+          1
+        ]
+      },
+      "paths": {
+        "validation": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\hourly\\arima\\validation_predictions.csv",
+        "test": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\hourly\\arima\\test_predictions.csv",
+        "future": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\hourly\\arima\\future_path.csv"
+      },
+      "lock": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\hourly\\selection_lock.json",
+      "source": "hourly/arima/results.json",
+      "trials": 13,
+      "reload": 0.0,
+      "scope": "과거 시간 부하 + 선택된 H/D/W/M 요약 + 미래 달력",
+      "may": {
+        "count": 505,
+        "mae_kwh": 89.03148759430175,
+        "rmse_kwh": 109.49506157851019,
+        "mape_percent": 0.22811254122264696,
+        "bias_pred_minus_actual_kwh": 57.994486295548775,
+        "r2": -0.38991830256659754
+      },
+      "may_csv": "evaluation/hourly_arima_may_predictions.csv",
+      "figures": {
+        "validation": "figures/hourly_arima_validation.png",
+        "test": "figures/hourly_arima_test.png",
+        "may": "figures/hourly_arima_may.png"
+      }
+    },
+    {
+      "key": "hourly_baseline",
+      "label": "Hourly Baseline",
+      "grain": "hourly",
+      "val": {
+        "mean_origin_mae_kwh": 76.2346379582837,
+        "by_origin": [
+          {
+            "origin": "2025-02-15 00:00:00",
+            "count": 505,
+            "mae_kwh": 76.5300857065916,
+            "rmse_kwh": 98.40367151367171,
+            "mape_percent": 0.1956047598150281,
+            "bias_pred_minus_actual_kwh": 0.6027144515493569,
+            "r2": -3.7516031968776176e-05
+          },
+          {
+            "origin": "2025-02-22 00:00:00",
+            "count": 505,
+            "mae_kwh": 74.7480615439929,
+            "rmse_kwh": 94.26355135988578,
+            "mape_percent": 0.1910200635434729,
+            "bias_pred_minus_actual_kwh": -0.6498447789698505,
+            "r2": -4.752830359522342e-05
+          },
+          {
+            "origin": "2025-02-25 00:00:00",
+            "count": 505,
+            "mae_kwh": 77.42576662426656,
+            "rmse_kwh": 97.6467317680453,
+            "mape_percent": 0.19786570948877624,
+            "bias_pred_minus_actual_kwh": 0.22651044607404816,
+            "r2": -5.3810048503688535e-06
+          }
+        ],
+        "count": 1515,
+        "mae_kwh": 76.23463795828368,
+        "rmse_kwh": 96.78805695492431,
+        "mape_percent": 0.19483017761575908,
+        "bias_pred_minus_actual_kwh": 0.059793372884518185,
+        "r2": 7.548174412175257e-05,
+        "origin_count": 3,
+        "unique_label_hours": 745,
+        "repeated_label_observations": 770
+      },
+      "test": {
+        "count": 505,
+        "mae_kwh": 77.94936073380777,
+        "rmse_kwh": 96.57799457304415,
+        "mape_percent": 0.19923201566912951,
+        "bias_pred_minus_actual_kwh": 1.4230462106375834,
+        "r2": -0.00021715805363009544
+      },
+      "config": {
+        "model": "baseline",
+        "kind": "recent_mean",
+        "window": 1440
+      },
+      "paths": {
+        "validation": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\hourly\\baseline\\validation_predictions.csv",
+        "test": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\hourly\\baseline\\test_predictions.csv",
+        "future": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\hourly\\baseline\\future_path.csv"
+      },
+      "lock": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\hourly\\selection_lock.json",
+      "source": "hourly/baseline/results.json",
+      "trials": 10,
+      "reload": 0.0,
+      "scope": "과거 시간 부하 + 선택된 H/D/W/M 요약 + 미래 달력",
+      "may": {
+        "count": 505,
+        "mae_kwh": 88.92619365200252,
+        "rmse_kwh": 109.38021940913168,
+        "mape_percent": 0.22784218370888323,
+        "bias_pred_minus_actual_kwh": 57.777368654107484,
+        "r2": -0.3870042437457051
+      },
+      "may_csv": "evaluation/hourly_baseline_may_predictions.csv",
+      "figures": {
+        "validation": "figures/hourly_baseline_validation.png",
+        "test": "figures/hourly_baseline_test.png",
+        "may": "figures/hourly_baseline_may.png"
+      }
+    },
+    {
+      "key": "hourly_patchtst",
+      "label": "Hourly PatchTST",
+      "grain": "hourly",
+      "val": {
+        "count": 1515,
+        "mae_kwh": 79.90464576042987,
+        "rmse_kwh": 102.50412937475544,
+        "mape_percent": 0.20420893757758177,
+        "r2": -0.12151838480699895,
+        "bias_pred_minus_actual_kwh": -0.5792398933621785
+      },
+      "test": {
+        "count": 505,
+        "mae_kwh": 82.23088347521711,
+        "rmse_kwh": 101.96513825695968,
+        "mape_percent": 0.21014226459040566,
+        "r2": -0.11491397445628482,
+        "bias_pred_minus_actual_kwh": -1.4211035094259648
+      },
+      "config": {
+        "group": "target_only",
+        "context": 72,
+        "loss": "L1",
+        "dropout": 0.2,
+        "instance_norm": false,
+        "output_penalty": 0.05
+      },
+      "paths": {
+        "validation": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\hourly\\patchtst\\validation_predictions.csv",
+        "test": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\hourly\\patchtst\\test_predictions.csv",
+        "future": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\hourly\\patchtst\\future_path.csv"
+      },
+      "lock": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\hourly\\patchtst\\selection_lock.json",
+      "source": "neural/hourly/patchtst/results.json",
+      "trials": 2,
+      "reload": 0.0,
+      "scope": "Aggregate hourly target only",
+      "may": {
+        "count": 505,
+        "mae_kwh": 94.27650140048517,
+        "rmse_kwh": 116.14217427292745,
+        "mape_percent": 0.24150083401888148,
+        "bias_pred_minus_actual_kwh": 55.320563274127274,
+        "r2": -0.5637960567079712
+      },
+      "may_csv": "evaluation/hourly_patchtst_may_predictions.csv",
+      "figures": {
+        "validation": "figures/hourly_patchtst_validation.png",
+        "test": "figures/hourly_patchtst_test.png",
+        "may": "figures/hourly_patchtst_may.png"
+      }
+    },
+    {
+      "key": "hourly_itransformer",
+      "label": "Hourly iTransformer",
+      "grain": "hourly",
+      "val": {
+        "count": 1515,
+        "mae_kwh": 80.12556871662377,
+        "rmse_kwh": 101.47013970699554,
+        "mape_percent": 0.20477111901125808,
+        "r2": -0.09900632368046547,
+        "bias_pred_minus_actual_kwh": -1.2557015065622308
+      },
+      "test": {
+        "count": 505,
+        "mae_kwh": 80.27523074778324,
+        "rmse_kwh": 99.02274631575274,
+        "mape_percent": 0.2051642974027187,
+        "r2": -0.05149658862464479,
+        "bias_pred_minus_actual_kwh": 0.07123537385880331
+      },
+      "config": {
+        "group": "completed_multires",
+        "context": 24,
+        "loss": "MSE",
+        "dropout": 0.1,
+        "instance_norm": false,
+        "output_penalty": 0.03
+      },
+      "paths": {
+        "validation": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\hourly\\itransformer\\validation_predictions.csv",
+        "test": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\hourly\\itransformer\\test_predictions.csv",
+        "future": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\hourly\\itransformer\\future_path.csv"
+      },
+      "lock": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\hourly\\itransformer\\selection_lock.json",
+      "source": "neural/hourly/itransformer/results.json",
+      "trials": 3,
+      "reload": 0.0,
+      "scope": "Aggregate target + only already completed D/W/MS rates and availability flags; cross-variate attention",
+      "may": {
+        "count": 505,
+        "mae_kwh": 89.28571303958762,
+        "rmse_kwh": 109.80916212503723,
+        "mape_percent": 0.2287603414372163,
+        "bias_pred_minus_actual_kwh": 57.69249666338619,
+        "r2": -0.39790405601332224
+      },
+      "may_csv": "evaluation/hourly_itransformer_may_predictions.csv",
+      "figures": {
+        "validation": "figures/hourly_itransformer_validation.png",
+        "test": "figures/hourly_itransformer_test.png",
+        "may": "figures/hourly_itransformer_may.png"
+      }
+    },
+    {
+      "key": "hourly_chronos2",
+      "label": "Hourly Chronos-2",
+      "grain": "hourly",
+      "val": {
+        "count": 1515,
+        "mae_kwh": 76.2371426749644,
+        "rmse_kwh": 96.7952415421724,
+        "mape_percent": 0.19483174403241382,
+        "r2": -7.297276163309441e-05,
+        "bias_pred_minus_actual_kwh": -0.912973497076436
+      },
+      "test": {
+        "count": 505,
+        "mae_kwh": 77.99724622179032,
+        "rmse_kwh": 96.57032107593479,
+        "mape_percent": 0.1993433883384926,
+        "r2": -5.822208495076531e-05,
+        "bias_pred_minus_actual_kwh": -0.7368429112078975
+      },
+      "config": {
+        "context": "full",
+        "mean_blend_alpha": 0.0,
+        "mapping_profile": "uniform"
+      },
+      "paths": {
+        "validation": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\hourly\\chronos2\\validation_predictions.csv",
+        "test": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\hourly\\chronos2\\test_predictions.csv",
+        "future": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\hourly\\chronos2\\future_path.csv"
+      },
+      "lock": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\hourly\\chronos2\\selection_lock.json",
+      "source": "neural/hourly/chronos2/results.json",
+      "trials": 6,
+      "reload": 0.0,
+      "scope": "Aggregate hourly target only",
+      "may": {
+        "count": 505,
+        "mae_kwh": 89.03148762769126,
+        "rmse_kwh": 109.49506161496271,
+        "mape_percent": 0.22811254130837927,
+        "bias_pred_minus_actual_kwh": 57.99448636437206,
+        "r2": -0.3899183034920459
+      },
+      "may_csv": "evaluation/hourly_chronos2_may_predictions.csv",
+      "figures": {
+        "validation": "figures/hourly_chronos2_validation.png",
+        "test": "figures/hourly_chronos2_test.png",
+        "may": "figures/hourly_chronos2_may.png"
+      }
+    },
+    {
+      "key": "daily_patchtst",
+      "label": "Daily PatchTST",
+      "grain": "daily",
+      "val": {
+        "count": 1515,
+        "mae_kwh": 76.40504609799349,
+        "rmse_kwh": 96.92037381086813,
+        "mape_percent": 0.19526312195413512,
+        "r2": -0.0026603373130840158,
+        "bias_pred_minus_actual_kwh": -0.21638199745465328
+      },
+      "test": {
+        "count": 505,
+        "mae_kwh": 77.94597640415762,
+        "rmse_kwh": 96.54091778371938,
+        "mape_percent": 0.19921081581605926,
+        "r2": 0.0005506715639020943,
+        "bias_pred_minus_actual_kwh": -0.7532327102468405
+      },
+      "config": {
+        "group": "target_only",
+        "context": 7,
+        "loss": "MSE",
+        "dropout": 0.1,
+        "instance_norm": false,
+        "output_penalty": 0.03
+      },
+      "paths": {
+        "validation": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\daily\\patchtst\\validation_predictions.csv",
+        "test": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\daily\\patchtst\\test_predictions.csv",
+        "future": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\daily\\patchtst\\future_path.csv"
+      },
+      "lock": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\daily\\patchtst\\selection_lock.json",
+      "source": "neural/daily/patchtst/results.json",
+      "trials": 2,
+      "reload": 0.0,
+      "scope": "Completed-day hourly-average aggregate energy rate",
+      "may": {
+        "count": 505,
+        "mae_kwh": 89.40466767716119,
+        "rmse_kwh": 110.02910452816069,
+        "mape_percent": 0.229067271267076,
+        "bias_pred_minus_actual_kwh": 57.93737936754853,
+        "r2": -0.40350953161365966
+      },
+      "may_csv": "evaluation/daily_patchtst_may_predictions.csv",
+      "figures": {
+        "validation": "figures/daily_patchtst_validation.png",
+        "test": "figures/daily_patchtst_test.png",
+        "may": "figures/daily_patchtst_may.png"
+      }
+    },
+    {
+      "key": "daily_itransformer",
+      "label": "Daily iTransformer",
+      "grain": "daily",
+      "val": {
+        "count": 1515,
+        "mae_kwh": 76.57295820438335,
+        "rmse_kwh": 97.07674563223506,
+        "mape_percent": 0.1956943262045699,
+        "r2": -0.005898341834150056,
+        "bias_pred_minus_actual_kwh": 0.21193864991587377
+      },
+      "test": {
+        "count": 505,
+        "mae_kwh": 77.85724990058615,
+        "rmse_kwh": 96.39008572123522,
+        "mape_percent": 0.19898662627546382,
+        "r2": 0.0036712393935869336,
+        "bias_pred_minus_actual_kwh": -0.3532033215647611
+      },
+      "config": {
+        "group": "target_only",
+        "context": 7,
+        "loss": "MSE",
+        "dropout": 0.1,
+        "instance_norm": false,
+        "output_penalty": 0.03
+      },
+      "paths": {
+        "validation": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\daily\\itransformer\\validation_predictions.csv",
+        "test": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\daily\\itransformer\\test_predictions.csv",
+        "future": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\daily\\itransformer\\future_path.csv"
+      },
+      "lock": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\daily\\itransformer\\selection_lock.json",
+      "source": "neural/daily/itransformer/results.json",
+      "trials": 2,
+      "reload": 0.0,
+      "scope": "Completed-day hourly-average aggregate energy rate",
+      "may": {
+        "count": 505,
+        "mae_kwh": 89.33233015023465,
+        "rmse_kwh": 110.00056909477445,
+        "mape_percent": 0.22888382294536316,
+        "bias_pred_minus_actual_kwh": 58.34144955232639,
+        "r2": -0.4027816413053955
+      },
+      "may_csv": "evaluation/daily_itransformer_may_predictions.csv",
+      "figures": {
+        "validation": "figures/daily_itransformer_validation.png",
+        "test": "figures/daily_itransformer_test.png",
+        "may": "figures/daily_itransformer_may.png"
+      }
+    },
+    {
+      "key": "daily_chronos2",
+      "label": "Daily Chronos-2",
+      "grain": "daily",
+      "val": {
+        "count": 1515,
+        "mae_kwh": 76.22743939013054,
+        "rmse_kwh": 96.80159996097544,
+        "mape_percent": 0.19481025138244873,
+        "r2": -0.00020436541169743805,
+        "bias_pred_minus_actual_kwh": -0.2606672498030754
+      },
+      "test": {
+        "count": 505,
+        "mae_kwh": 77.98527971412858,
+        "rmse_kwh": 96.5686088389598,
+        "mape_percent": 0.19931518609201748,
+        "r2": -2.2759398990102042e-05,
+        "bias_pred_minus_actual_kwh": -0.2707274993364774
+      },
+      "config": {
+        "context": 28,
+        "mean_blend_alpha": 0.25,
+        "mapping_profile": "uniform"
+      },
+      "paths": {
+        "validation": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\daily\\chronos2\\validation_predictions.csv",
+        "test": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\daily\\chronos2\\test_predictions.csv",
+        "future": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\daily\\chronos2\\future_path.csv"
+      },
+      "lock": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\daily\\chronos2\\selection_lock.json",
+      "source": "neural/daily/chronos2/results.json",
+      "trials": 6,
+      "reload": 0.0,
+      "scope": "Completed-day hourly-average aggregate energy rate",
+      "may": {
+        "count": 505,
+        "mae_kwh": 89.03117661827216,
+        "rmse_kwh": 109.49366468811527,
+        "mape_percent": 0.22811172364581278,
+        "bias_pred_minus_actual_kwh": 57.97835372364153,
+        "r2": -0.3898828388458824
+      },
+      "may_csv": "evaluation/daily_chronos2_may_predictions.csv",
+      "figures": {
+        "validation": "figures/daily_chronos2_validation.png",
+        "test": "figures/daily_chronos2_test.png",
+        "may": "figures/daily_chronos2_may.png"
+      }
+    }
+  ],
+  "paired_uncertainty": [
+    {
+      "model": "daily_chronos2",
+      "baseline": "hourly_baseline",
+      "split": "may",
+      "mae_difference_kwh": 0.10498296626962232,
+      "circular_block_hours": 24,
+      "bootstrap_resamples": 2000,
+      "ci95_kwh": [
+        0.019637038527195033,
+        0.19410983525648812
+      ],
+      "interpretation": "Descriptive uncertainty of locked predictions only; not proof of prospective superiority or a tuning criterion"
+    }
+  ],
+  "target_limit": "Guide provisional kWh; unresolved meter hierarchy/units; fixed origin without May target/sensor updates"
+}

@@ -1,0 +1,13 @@
+.type-counts{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:9px;padding:0 22px 22px}
+.type-counts button{text-align:left;border:1px solid #e5ecdf;background:#fbfdf7;border-radius:7px;padding:13px 11px;color:#819477}
+.type-counts button span{display:block;font-size:10px;margin-bottom:9px}.type-counts button strong{font-size:16px;color:#668867;font-weight:650}.type-counts button.selected{background:#eef6e8;border-color:#9abd88}
+.synthetic-evaluation{margin-top:20px;margin-bottom:22px}.evaluation-note{margin:16px 22px 20px}
+.detail-panel{margin-top:22px}.detail-meta{display:flex;align-items:center;gap:15px;font-size:10px;color:#8ca17d;padding:0 22px 20px;flex-wrap:wrap}
+.integration-setup-note{padding:12px 14px;background:#faf0e5;border:1px solid #ebddc9;border-radius:7px;font-size:11px;color:#9a805d;line-height:1.9;margin-bottom:20px;overflow-wrap:anywhere}
+.transfer-consent{border:1px solid #dfe8d6;border-radius:8px;padding:15px;background:#f3f7ec;margin-bottom:23px}.transfer-consent h4{font-size:11px;color:#718b62;margin:0 0 9px}.transfer-consent p{font-size:10px;line-height:1.9;color:#8b9c79;margin:9px 0 14px}.transfer-consent .badge{margin-bottom:7px}
+.detail-sensor-grid,.detail-score-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid #ecf0e6;gap:0}
+.diagnostic-chart{padding:20px 15px 10px;min-width:0;border-right:1px solid #eef2e8}.diagnostic-chart:last-child{border:0}.diagnostic-chart h3{font-size:12px;margin-left:9px}.diagnostic-chart p{font-size:9px;color:#91a283;margin:7px 9px 12px;line-height:1.8}
+.rule-selection{display:flex;justify-content:space-between;align-items:center;gap:12px;background:#f5f8ee;padding:13px 22px;font-size:10px;color:#8fa47d}.rule-selection label{display:flex;align-items:center;gap:9px}.rule-selection select{font-size:10px;padding:7px}.rule-selection>span{font-size:9px}
+@media(max-width:1000px){.detail-sensor-grid,.detail-score-grid{grid-template-columns:1fr}.diagnostic-chart{border-right:0;border-bottom:1px solid #eef2e8}.rule-selection{flex-wrap:wrap}}
+@media(max-width:1100px){.type-counts{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:760px){.type-counts{grid-template-columns:repeat(2,minmax(0,1fr));padding:0 18px 18px}}

@@ -1,0 +1,680 @@
+{
+  "configs": [
+    {
+      "family": "daily_level",
+      "resolution": "daily",
+      "profile": "uniform",
+      "profile_alpha": 0.5,
+      "kind": "mean"
+    },
+    {
+      "family": "daily_level",
+      "resolution": "daily",
+      "profile": "hour",
+      "profile_alpha": 0.5,
+      "kind": "mean"
+    },
+    {
+      "family": "daily_level",
+      "resolution": "daily",
+      "profile": "weekday_hour",
+      "profile_alpha": 0.5,
+      "kind": "mean"
+    },
+    {
+      "family": "daily_level",
+      "resolution": "daily",
+      "profile": "uniform",
+      "profile_alpha": 0.5,
+      "kind": "median"
+    },
+    {
+      "family": "daily_level",
+      "resolution": "daily",
+      "profile": "hour",
+      "profile_alpha": 0.5,
+      "kind": "median"
+    },
+    {
+      "family": "daily_level",
+      "resolution": "daily",
+      "profile": "weekday_hour",
+      "profile_alpha": 0.5,
+      "kind": "median"
+    },
+    {
+      "family": "daily_level",
+      "resolution": "daily",
+      "profile": "uniform",
+      "profile_alpha": 0.5,
+      "kind": "prefix_mean"
+    },
+    {
+      "family": "daily_level",
+      "resolution": "daily",
+      "profile": "hour",
+      "profile_alpha": 0.5,
+      "kind": "prefix_mean"
+    },
+    {
+      "family": "daily_level",
+      "resolution": "daily",
+      "profile": "weekday_hour",
+      "profile_alpha": 0.5,
+      "kind": "prefix_mean"
+    },
+    {
+      "family": "daily_level",
+      "resolution": "daily",
+      "profile": "uniform",
+      "profile_alpha": 0.5,
+      "kind": "recent",
+      "window": 1
+    },
+    {
+      "family": "daily_level",
+      "resolution": "daily",
+      "profile": "hour",
+      "profile_alpha": 0.5,
+      "kind": "recent",
+      "window": 1
+    },
+    {
+      "family": "daily_level",
+      "resolution": "daily",
+      "profile": "weekday_hour",
+      "profile_alpha": 0.5,
+      "kind": "recent",
+      "window": 1
+    },
+    {
+      "family": "daily_level",
+      "resolution": "daily",
+      "profile": "uniform",
+      "profile_alpha": 0.5,
+      "kind": "recent",
+      "window": 7
+    },
+    {
+      "family": "daily_level",
+      "resolution": "daily",
+      "profile": "hour",
+      "profile_alpha": 0.5,
+      "kind": "recent",
+      "window": 7
+    },
+    {
+      "family": "daily_level",
+      "resolution": "daily",
+      "profile": "weekday_hour",
+      "profile_alpha": 0.5,
+      "kind": "recent",
+      "window": 7
+    },
+    {
+      "family": "daily_level",
+      "resolution": "daily",
+      "profile": "uniform",
+      "profile_alpha": 0.5,
+      "kind": "recent",
+      "window": 28
+    },
+    {
+      "family": "daily_level",
+      "resolution": "daily",
+      "profile": "hour",
+      "profile_alpha": 0.5,
+      "kind": "recent",
+      "window": 28
+    },
+    {
+      "family": "daily_level",
+      "resolution": "daily",
+      "profile": "weekday_hour",
+      "profile_alpha": 0.5,
+      "kind": "recent",
+      "window": 28
+    },
+    {
+      "family": "daily_level",
+      "resolution": "daily",
+      "profile": "uniform",
+      "profile_alpha": 0.5,
+      "kind": "recent",
+      "window": 56
+    },
+    {
+      "family": "daily_level",
+      "resolution": "daily",
+      "profile": "hour",
+      "profile_alpha": 0.5,
+      "kind": "recent",
+      "window": 56
+    },
+    {
+      "family": "daily_level",
+      "resolution": "daily",
+      "profile": "weekday_hour",
+      "profile_alpha": 0.5,
+      "kind": "recent",
+      "window": 56
+    },
+    {
+      "family": "daily_arima",
+      "resolution": "daily",
+      "kind": "arima",
+      "order": [
+        0,
+        0,
+        0
+      ],
+      "profile": "uniform",
+      "profile_alpha": 0.5
+    },
+    {
+      "family": "daily_arima",
+      "resolution": "daily",
+      "kind": "arima",
+      "order": [
+        0,
+        0,
+        0
+      ],
+      "profile": "hour",
+      "profile_alpha": 0.5
+    },
+    {
+      "family": "daily_arima",
+      "resolution": "daily",
+      "kind": "arima",
+      "order": [
+        1,
+        0,
+        0
+      ],
+      "profile": "uniform",
+      "profile_alpha": 0.5
+    },
+    {
+      "family": "daily_arima",
+      "resolution": "daily",
+      "kind": "arima",
+      "order": [
+        1,
+        0,
+        0
+      ],
+      "profile": "hour",
+      "profile_alpha": 0.5
+    },
+    {
+      "family": "daily_arima",
+      "resolution": "daily",
+      "kind": "arima",
+      "order": [
+        0,
+        1,
+        0
+      ],
+      "profile": "uniform",
+      "profile_alpha": 0.5
+    },
+    {
+      "family": "daily_arima",
+      "resolution": "daily",
+      "kind": "arima",
+      "order": [
+        0,
+        1,
+        0
+      ],
+      "profile": "hour",
+      "profile_alpha": 0.5
+    },
+    {
+      "family": "daily_arima",
+      "resolution": "daily",
+      "kind": "arima",
+      "order": [
+        0,
+        1,
+        1
+      ],
+      "profile": "uniform",
+      "profile_alpha": 0.5
+    },
+    {
+      "family": "daily_arima",
+      "resolution": "daily",
+      "kind": "arima",
+      "order": [
+        0,
+        1,
+        1
+      ],
+      "profile": "hour",
+      "profile_alpha": 0.5
+    },
+    {
+      "family": "weekly_level",
+      "resolution": "weekly",
+      "profile": "uniform",
+      "profile_alpha": 0.5,
+      "kind": "mean"
+    },
+    {
+      "family": "weekly_level",
+      "resolution": "weekly",
+      "profile": "hour",
+      "profile_alpha": 0.5,
+      "kind": "mean"
+    },
+    {
+      "family": "weekly_level",
+      "resolution": "weekly",
+      "profile": "weekday_hour",
+      "profile_alpha": 0.5,
+      "kind": "mean"
+    },
+    {
+      "family": "weekly_level",
+      "resolution": "weekly",
+      "profile": "uniform",
+      "profile_alpha": 0.5,
+      "kind": "median"
+    },
+    {
+      "family": "weekly_level",
+      "resolution": "weekly",
+      "profile": "hour",
+      "profile_alpha": 0.5,
+      "kind": "median"
+    },
+    {
+      "family": "weekly_level",
+      "resolution": "weekly",
+      "profile": "weekday_hour",
+      "profile_alpha": 0.5,
+      "kind": "median"
+    },
+    {
+      "family": "weekly_level",
+      "resolution": "weekly",
+      "profile": "uniform",
+      "profile_alpha": 0.5,
+      "kind": "prefix_mean"
+    },
+    {
+      "family": "weekly_level",
+      "resolution": "weekly",
+      "profile": "hour",
+      "profile_alpha": 0.5,
+      "kind": "prefix_mean"
+    },
+    {
+      "family": "weekly_level",
+      "resolution": "weekly",
+      "profile": "weekday_hour",
+      "profile_alpha": 0.5,
+      "kind": "prefix_mean"
+    },
+    {
+      "family": "weekly_level",
+      "resolution": "weekly",
+      "profile": "uniform",
+      "profile_alpha": 0.5,
+      "kind": "recent",
+      "window": 1
+    },
+    {
+      "family": "weekly_level",
+      "resolution": "weekly",
+      "profile": "hour",
+      "profile_alpha": 0.5,
+      "kind": "recent",
+      "window": 1
+    },
+    {
+      "family": "weekly_level",
+      "resolution": "weekly",
+      "profile": "weekday_hour",
+      "profile_alpha": 0.5,
+      "kind": "recent",
+      "window": 1
+    },
+    {
+      "family": "weekly_level",
+      "resolution": "weekly",
+      "profile": "uniform",
+      "profile_alpha": 0.5,
+      "kind": "recent",
+      "window": 4
+    },
+    {
+      "family": "weekly_level",
+      "resolution": "weekly",
+      "profile": "hour",
+      "profile_alpha": 0.5,
+      "kind": "recent",
+      "window": 4
+    },
+    {
+      "family": "weekly_level",
+      "resolution": "weekly",
+      "profile": "weekday_hour",
+      "profile_alpha": 0.5,
+      "kind": "recent",
+      "window": 4
+    },
+    {
+      "family": "weekly_arima",
+      "resolution": "weekly",
+      "kind": "arima",
+      "order": [
+        0,
+        0,
+        0
+      ],
+      "profile": "uniform",
+      "profile_alpha": 0.5
+    },
+    {
+      "family": "weekly_arima",
+      "resolution": "weekly",
+      "kind": "arima",
+      "order": [
+        0,
+        0,
+        0
+      ],
+      "profile": "hour",
+      "profile_alpha": 0.5
+    },
+    {
+      "family": "weekly_arima",
+      "resolution": "weekly",
+      "kind": "arima",
+      "order": [
+        1,
+        0,
+        0
+      ],
+      "profile": "uniform",
+      "profile_alpha": 0.5
+    },
+    {
+      "family": "weekly_arima",
+      "resolution": "weekly",
+      "kind": "arima",
+      "order": [
+        1,
+        0,
+        0
+      ],
+      "profile": "hour",
+      "profile_alpha": 0.5
+    },
+    {
+      "family": "weekly_arima",
+      "resolution": "weekly",
+      "kind": "arima",
+      "order": [
+        0,
+        1,
+        0
+      ],
+      "profile": "uniform",
+      "profile_alpha": 0.5
+    },
+    {
+      "family": "weekly_arima",
+      "resolution": "weekly",
+      "kind": "arima",
+      "order": [
+        0,
+        1,
+        0
+      ],
+      "profile": "hour",
+      "profile_alpha": 0.5
+    },
+    {
+      "family": "weekly_arima",
+      "resolution": "weekly",
+      "kind": "arima",
+      "order": [
+        0,
+        1,
+        1
+      ],
+      "profile": "uniform",
+      "profile_alpha": 0.5
+    },
+    {
+      "family": "weekly_arima",
+      "resolution": "weekly",
+      "kind": "arima",
+      "order": [
+        0,
+        1,
+        1
+      ],
+      "profile": "hour",
+      "profile_alpha": 0.5
+    },
+    {
+      "family": "monthly_level",
+      "resolution": "monthly",
+      "profile": "uniform",
+      "profile_alpha": 0.5,
+      "kind": "mean"
+    },
+    {
+      "family": "monthly_level",
+      "resolution": "monthly",
+      "profile": "hour",
+      "profile_alpha": 0.5,
+      "kind": "mean"
+    },
+    {
+      "family": "monthly_level",
+      "resolution": "monthly",
+      "profile": "weekday_hour",
+      "profile_alpha": 0.5,
+      "kind": "mean"
+    },
+    {
+      "family": "monthly_level",
+      "resolution": "monthly",
+      "profile": "uniform",
+      "profile_alpha": 0.5,
+      "kind": "median"
+    },
+    {
+      "family": "monthly_level",
+      "resolution": "monthly",
+      "profile": "hour",
+      "profile_alpha": 0.5,
+      "kind": "median"
+    },
+    {
+      "family": "monthly_level",
+      "resolution": "monthly",
+      "profile": "weekday_hour",
+      "profile_alpha": 0.5,
+      "kind": "median"
+    },
+    {
+      "family": "monthly_level",
+      "resolution": "monthly",
+      "profile": "uniform",
+      "profile_alpha": 0.5,
+      "kind": "prefix_mean"
+    },
+    {
+      "family": "monthly_level",
+      "resolution": "monthly",
+      "profile": "hour",
+      "profile_alpha": 0.5,
+      "kind": "prefix_mean"
+    },
+    {
+      "family": "monthly_level",
+      "resolution": "monthly",
+      "profile": "weekday_hour",
+      "profile_alpha": 0.5,
+      "kind": "prefix_mean"
+    },
+    {
+      "family": "monthly_level",
+      "resolution": "monthly",
+      "profile": "uniform",
+      "profile_alpha": 0.5,
+      "kind": "recent",
+      "window": 1
+    },
+    {
+      "family": "monthly_level",
+      "resolution": "monthly",
+      "profile": "hour",
+      "profile_alpha": 0.5,
+      "kind": "recent",
+      "window": 1
+    },
+    {
+      "family": "monthly_level",
+      "resolution": "monthly",
+      "profile": "weekday_hour",
+      "profile_alpha": 0.5,
+      "kind": "recent",
+      "window": 1
+    },
+    {
+      "family": "daily_xgboost",
+      "resolution": "daily",
+      "kind": "xgboost",
+      "depth": 1,
+      "trees": 50,
+      "lambda": 100.0,
+      "loss": "reg:squarederror",
+      "shrink": 0.5,
+      "profile": "uniform",
+      "profile_alpha": 0.5
+    },
+    {
+      "family": "daily_xgboost",
+      "resolution": "daily",
+      "kind": "xgboost",
+      "depth": 1,
+      "trees": 50,
+      "lambda": 100.0,
+      "loss": "reg:squarederror",
+      "shrink": 0.5,
+      "profile": "hour",
+      "profile_alpha": 0.5
+    },
+    {
+      "family": "daily_xgboost",
+      "resolution": "daily",
+      "kind": "xgboost",
+      "depth": 2,
+      "trees": 100,
+      "lambda": 100.0,
+      "loss": "reg:squarederror",
+      "shrink": 0.5,
+      "profile": "uniform",
+      "profile_alpha": 0.5
+    },
+    {
+      "family": "daily_xgboost",
+      "resolution": "daily",
+      "kind": "xgboost",
+      "depth": 2,
+      "trees": 100,
+      "lambda": 100.0,
+      "loss": "reg:squarederror",
+      "shrink": 0.5,
+      "profile": "hour",
+      "profile_alpha": 0.5
+    },
+    {
+      "family": "daily_xgboost",
+      "resolution": "daily",
+      "kind": "xgboost",
+      "depth": 1,
+      "trees": 100,
+      "lambda": 100.0,
+      "loss": "reg:absoluteerror",
+      "shrink": 0.5,
+      "profile": "uniform",
+      "profile_alpha": 0.5
+    },
+    {
+      "family": "daily_xgboost",
+      "resolution": "daily",
+      "kind": "xgboost",
+      "depth": 1,
+      "trees": 100,
+      "lambda": 100.0,
+      "loss": "reg:absoluteerror",
+      "shrink": 0.5,
+      "profile": "hour",
+      "profile_alpha": 0.5
+    },
+    {
+      "family": "daily_ridge",
+      "resolution": "daily",
+      "kind": "ridge",
+      "alpha": 100.0,
+      "profile": "uniform",
+      "profile_alpha": 0.5
+    },
+    {
+      "family": "daily_ridge",
+      "resolution": "daily",
+      "kind": "ridge",
+      "alpha": 100.0,
+      "profile": "hour",
+      "profile_alpha": 0.5
+    },
+    {
+      "family": "daily_ridge",
+      "resolution": "daily",
+      "kind": "ridge",
+      "alpha": 10000.0,
+      "profile": "uniform",
+      "profile_alpha": 0.5
+    },
+    {
+      "family": "daily_ridge",
+      "resolution": "daily",
+      "kind": "ridge",
+      "alpha": 10000.0,
+      "profile": "hour",
+      "profile_alpha": 0.5
+    },
+    {
+      "family": "daily_ridge",
+      "resolution": "daily",
+      "kind": "ridge",
+      "alpha": 1000000.0,
+      "profile": "uniform",
+      "profile_alpha": 0.5
+    },
+    {
+      "family": "daily_ridge",
+      "resolution": "daily",
+      "kind": "ridge",
+      "alpha": 1000000.0,
+      "profile": "hour",
+      "profile_alpha": 0.5
+    }
+  ],
+  "selection": "Mean validation505 MAE only",
+  "validation_origins": [
+    "2025-02-15 00:00:00",
+    "2025-02-22 00:00:00",
+    "2025-02-25 00:00:00"
+  ],
+  "monthly_warning": "Only2 completed months per validation fitting prefix; level baselines only"
+}

@@ -1,0 +1,37 @@
+{
+  "rows_read": 17280,
+  "scope": "Original firstPM-3 day, bounded prefix only, not full-population sensor inference",
+  "first": "2024-12-01 00:00:00",
+  "last": "2024-12-01 23:59:55",
+  "cadence_seconds": 5,
+  "unique_modules": 1,
+  "inferred_parser_dtypes_from_prefix": {
+    "module(equipment)": "str",
+    "timestamp": "int64",
+    "localtime": "int64",
+    "operation": "int64",
+    "voltageR": "float64",
+    "voltageS": "float64",
+    "voltageT": "float64",
+    "voltageRS": "float64",
+    "voltageST": "float64",
+    "voltageTR": "float64",
+    "currentR": "float64",
+    "currentS": "float64",
+    "currentT": "float64",
+    "activePower": "float64",
+    "powerFactorR": "float64",
+    "powerFactorS": "float64",
+    "powerFactorT": "float64",
+    "reactivePowerLagging": "float64",
+    "accumActiveEnergy": "int64"
+  },
+  "localtime_parser": "String conversion followed by explicitformat %Y%m%d%H%M%S",
+  "figures": {
+    "raw": "raw_views/raw_5second_example.png",
+    "timeline": "raw_views/dataset_timeline.png"
+  },
+  "original_modified": false,
+  "no_imputation": true,
+  "no_anomaly_removal": true
+}

@@ -1,0 +1,197 @@
+{
+  "status": "ready",
+  "model_name": "historical_prefix_mean_baseline",
+  "model_display_name": "해당 시점까지의 과거 평균 기준선",
+  "forecast_quality": "recent_past_replay_only",
+  "quality_note": "각 호출의 완료된 과거 구간으로 독립 재적합합니다. 향후 정확도와 모듈별 예측 성능은 보장되지 않습니다.",
+  "deployment_role": "Replay-safe online baseline; separate from guide745 selected experimental model",
+  "guide_selected_experiment_model": null,
+  "origin": "2025-03-13 19:00:00",
+  "requested_origin": "2025-03-13 19:00:00",
+  "points": 24,
+  "unit": "provisional_kWh",
+  "clock": "Recorded source naive hourly clock; no implicit timezone conversion",
+  "history_end": "2025-03-13 18:00:00",
+  "history_count": 2467,
+  "training_cutoff": "2025-03-13 18:00:00",
+  "uses_only_origin_history": true,
+  "module_id": "all",
+  "scope": "aggregate_13_module_sum_hierarchy_unconfirmed",
+  "module_model_is_total_proportional_allocation": false,
+  "physical_unit_rescaling": false,
+  "metrics": {
+    "count": 168,
+    "mae_kwh": 75.33310781532951,
+    "rmse_kwh": 98.49267977304531,
+    "r2": -0.0005718879765634899,
+    "bias_pred_minus_actual_kwh": -1.791917696667042,
+    "scope": "Recent already-observed24h replay, prefix-only refit per origin",
+    "origin_count": 7,
+    "origins": [
+      "2025-03-06 19:00:00",
+      "2025-03-07 19:00:00",
+      "2025-03-08 19:00:00",
+      "2025-03-09 19:00:00",
+      "2025-03-10 19:00:00",
+      "2025-03-11 19:00:00",
+      "2025-03-12 19:00:00"
+    ],
+    "forecast_horizon_hours": 24,
+    "uses_current_future_labels": false,
+    "guarantees_next_path_accuracy": false
+  },
+  "normalizer": {
+    "center_kwh": 39129.79570568167,
+    "fit_count": 2467,
+    "fit_end": "2025-03-13 18:00:00",
+    "kind": "prefix mean, no target rescale"
+  },
+  "interval": null,
+  "interval_note": "검증된 미래 예측구간을 제공하지 않습니다.",
+  "forecast": [
+    {
+      "timestamp": "2025-03-13 19:00:00",
+      "predicted_kwh": 39129.79570568167,
+      "lower_kwh": null,
+      "upper_kwh": null
+    },
+    {
+      "timestamp": "2025-03-13 20:00:00",
+      "predicted_kwh": 39129.79570568167,
+      "lower_kwh": null,
+      "upper_kwh": null
+    },
+    {
+      "timestamp": "2025-03-13 21:00:00",
+      "predicted_kwh": 39129.79570568167,
+      "lower_kwh": null,
+      "upper_kwh": null
+    },
+    {
+      "timestamp": "2025-03-13 22:00:00",
+      "predicted_kwh": 39129.79570568167,
+      "lower_kwh": null,
+      "upper_kwh": null
+    },
+    {
+      "timestamp": "2025-03-13 23:00:00",
+      "predicted_kwh": 39129.79570568167,
+      "lower_kwh": null,
+      "upper_kwh": null
+    },
+    {
+      "timestamp": "2025-03-14 00:00:00",
+      "predicted_kwh": 39129.79570568167,
+      "lower_kwh": null,
+      "upper_kwh": null
+    },
+    {
+      "timestamp": "2025-03-14 01:00:00",
+      "predicted_kwh": 39129.79570568167,
+      "lower_kwh": null,
+      "upper_kwh": null
+    },
+    {
+      "timestamp": "2025-03-14 02:00:00",
+      "predicted_kwh": 39129.79570568167,
+      "lower_kwh": null,
+      "upper_kwh": null
+    },
+    {
+      "timestamp": "2025-03-14 03:00:00",
+      "predicted_kwh": 39129.79570568167,
+      "lower_kwh": null,
+      "upper_kwh": null
+    },
+    {
+      "timestamp": "2025-03-14 04:00:00",
+      "predicted_kwh": 39129.79570568167,
+      "lower_kwh": null,
+      "upper_kwh": null
+    },
+    {
+      "timestamp": "2025-03-14 05:00:00",
+      "predicted_kwh": 39129.79570568167,
+      "lower_kwh": null,
+      "upper_kwh": null
+    },
+    {
+      "timestamp": "2025-03-14 06:00:00",
+      "predicted_kwh": 39129.79570568167,
+      "lower_kwh": null,
+      "upper_kwh": null
+    },
+    {
+      "timestamp": "2025-03-14 07:00:00",
+      "predicted_kwh": 39129.79570568167,
+      "lower_kwh": null,
+      "upper_kwh": null
+    },
+    {
+      "timestamp": "2025-03-14 08:00:00",
+      "predicted_kwh": 39129.79570568167,
+      "lower_kwh": null,
+      "upper_kwh": null
+    },
+    {
+      "timestamp": "2025-03-14 09:00:00",
+      "predicted_kwh": 39129.79570568167,
+      "lower_kwh": null,
+      "upper_kwh": null
+    },
+    {
+      "timestamp": "2025-03-14 10:00:00",
+      "predicted_kwh": 39129.79570568167,
+      "lower_kwh": null,
+      "upper_kwh": null
+    },
+    {
+      "timestamp": "2025-03-14 11:00:00",
+      "predicted_kwh": 39129.79570568167,
+      "lower_kwh": null,
+      "upper_kwh": null
+    },
+    {
+      "timestamp": "2025-03-14 12:00:00",
+      "predicted_kwh": 39129.79570568167,
+      "lower_kwh": null,
+      "upper_kwh": null
+    },
+    {
+      "timestamp": "2025-03-14 13:00:00",
+      "predicted_kwh": 39129.79570568167,
+      "lower_kwh": null,
+      "upper_kwh": null
+    },
+    {
+      "timestamp": "2025-03-14 14:00:00",
+      "predicted_kwh": 39129.79570568167,
+      "lower_kwh": null,
+      "upper_kwh": null
+    },
+    {
+      "timestamp": "2025-03-14 15:00:00",
+      "predicted_kwh": 39129.79570568167,
+      "lower_kwh": null,
+      "upper_kwh": null
+    },
+    {
+      "timestamp": "2025-03-14 16:00:00",
+      "predicted_kwh": 39129.79570568167,
+      "lower_kwh": null,
+      "upper_kwh": null
+    },
+    {
+      "timestamp": "2025-03-14 17:00:00",
+      "predicted_kwh": 39129.79570568167,
+      "lower_kwh": null,
+      "upper_kwh": null
+    },
+    {
+      "timestamp": "2025-03-14 18:00:00",
+      "predicted_kwh": 39129.79570568167,
+      "lower_kwh": null,
+      "upper_kwh": null
+    }
+  ]
+}

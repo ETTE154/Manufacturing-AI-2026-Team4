@@ -1,0 +1,44 @@
+FactoryLens local demo API v1
+Backend http://127.0.0.1:8099; frontend Vite /api proxy to backend, production same origin.
+All module IDs are strings: 1,2,3,4,5,11,12,13,14,15,16,17,18.
+All sensor time is recorded naive localtime, displayed as dataset time, not verified KST.
+Fields: voltageR/S/T,voltageRS/ST/TR,currentR/S/T,activePower,powerFactorR/S/T,reactivePowerLagging,accumActiveEnergy,operation.
+Raw source power unit follows guide; no unverified physical scale correction.
+
+GET /api/health -> {status,product,version,data_ready,diagnosis_ready,forecast_ready}
+GET /api/bootstrap -> {
+ meta:{product:'FactoryLens',project_title,team_name,source_mode:'recorded_replay',data_range,scope_note,timezone_note},
+ modules:[{id,name,source_tag}],sensors:[{key,label,unit}],scenarios:[{id,name,start,end,source_kind,fault_type?,module_id?}],
+ replay:{playing,speed,scenario_id,cursor_time,start,end,session_id,sequence},
+ snapshot:{timestamp,received_at,points:[row],kpis,alarms,log_count},
+ history:[row],integrations:{openai:{configured,model,status,source},slack:{configured,enabled,status}},
+ forecast_summary:{selected_model,quality_note,metrics?,models?},diagnosis_summary:{status,coverage?,validation?,limits?}
+}
+row={module_id,equipment,time,received_at?,...sensorFields,pf_mean,current_unbalance_pct,rule_score,ai_score,status}
+kpis={power_kw,energy_today_kwh,bill_today_won,carbon_today_kg,connected_modules,active_alerts,logged_records}
+GET /api/stream -> SSE default message events, each data is JSON:
+ {type:'telemetry',sequence,replay,snapshot:{timestamp,received_at,points:[row],kpis,alarms,log_count}}
+ initial type='connected', data same object. Additional type='state' for replay transitions.
+POST /api/replay -> body {action:'play'|'pause'|'seek'|'scenario'|'speed',speed?:1|5|20|60,scenario_id?,timestamp?}
+ response {replay,snapshot,history}. Real source step5s, wall tick interval5/speed seconds.
+ All events persist as telemetry_log in SQLite with source_time and received_at.
+GET /api/series?module_id=13&sensor=activePower&start=...&end=...&grain=raw|hour|day|week|month
+ -> {module_id,sensor,unit,grain,source_kind,series:[{timestamp,value,minimum?,maximum?,records?,complete?}],coverage_note}
+ raw window max24hours; aggregate queries support whole150days.
+GET /api/logs?limit=100 -> {rows:[{id,module_id,equipment,source_time,received_at,activePower,status}],total}
+GET /api/alarms?limit=100 -> {rows:[{id,module_id,equipment,time,type,title,severity,score,source_kind,status,evidence,slack_status}],total}
+POST /api/alarms/{id}/ack -> {alarm}
+GET /api/diagnosis -> {candidates:[event],types:[{id,label}],models,metrics,coverage,limits}
+GET /api/diagnosis/{event_id} -> {event,series:[row],algorithm,ai}
+GET /api/forecast?module_id=all&horizon=24 -> {origin,model_name,unit,history:[{timestamp,actual_kwh}],forecast:[{timestamp,predicted_kwh,lower_kwh?,upper_kwh?}],metrics,quality_note,uses_only_origin_history}
+GET /api/forecast/evaluation -> {models:[{id,name,mae,rmse,r2,validation_mae,...}],selected_model,series:[{timestamp,actual_kwh,...model_key_predictions}],horizon_note,scale_audit,quality_note}
+GET /api/reports -> {rows:[{id,week_start,week_end,status,model,generated_at,title,summary,sections,facts,source_mode}],schedule}
+POST /api/reports/generate -> {module_id?:'all',end?:timestamp}; grounded actual7day data + forecast/diagnosis; returns report.
+POST /api/reports/schedule -> {enabled:boolean,weekday:0..6,hour:0..23}; persistent server schedule, Asia/Seoul walltime, deduplicated weekly runs, server must stay running.
+POST /api/chat -> {question,context:{module_id?,cursor_time?}} -> {answer,source:'gpt-5-mini'|'local_data_search',query,rows,citations:[{label,...}],chart?}
+ GPT intent only chooses allowed read queries; no arbitrary SQL or Python.
+GET /api/integrations -> {openai:{configured,model:'gpt-5-mini',status,source},slack:{configured,enabled,status}}
+POST /api/integrations/slack -> {webhook_url?,enabled}; blankURL preserves configured value, never returns secret.
+POST /api/integrations/slack/test -> sends explicit test only if configured, {status,message}.
+ No fabricated API/Slack success; unconfigured integrations retain truthful status.
+GET /api/export/logs.csv or /api/export/alarms.csv -> CSV current logging data.

@@ -1,0 +1,216 @@
+{
+  "family": "itransformer",
+  "scenario": "dayahead24",
+  "selected_candidate": 2,
+  "frozen_config": {
+    "context": 72,
+    "d_model": 32,
+    "layers": 1,
+    "dropout": 0.1
+  },
+  "architecture": {
+    "seq_len": 72,
+    "pred_len": 24,
+    "d_model": 32,
+    "d_ff": 64,
+    "e_layers": 1,
+    "n_heads": 4,
+    "dropout": 0.1,
+    "output_attention": false,
+    "use_norm": true,
+    "embed": "timeF",
+    "freq": "h",
+    "class_strategy": "projection",
+    "factor": 5,
+    "activation": "gelu",
+    "training_loss": "MSE"
+  },
+  "selection": "Lowest70-origin mean path MAE",
+  "selection_uses_internal_test_labels": false,
+  "selection_uses_may_labels": false,
+  "validation": {
+    "path_24_values": {
+      "count": 1680,
+      "mae_kwh": 76.09752960852663,
+      "rmse_kwh": 96.65306966604896,
+      "mape_percent": 0.1944695048264417,
+      "bias_pred_minus_actual_kwh": -0.4123246308875466,
+      "r2": -0.03837421099704774
+    },
+    "endpoint_lead_24": {
+      "count": 70,
+      "mae_kwh": 80.60671116080734,
+      "rmse_kwh": 99.4392941690601,
+      "mape_percent": 0.20606005417001658,
+      "bias_pred_minus_actual_kwh": 2.01477564173235,
+      "r2": -0.05828618033059252
+    },
+    "origin_count": 70,
+    "mean_origin_path_mae_kwh": 76.09752960852661,
+    "origin_path_mae_std_kwh": 13.672152556811396,
+    "origin_start": "2025-01-10 00:00:00",
+    "origin_end": "2025-03-20 00:00:00"
+  },
+  "validation_reload_max_absdiff": 0.0,
+  "validation_reload_origins": 70,
+  "budget": {
+    "configs": 7,
+    "MSE_candidates": 6,
+    "extra_L1_candidate": 1,
+    "seed": 20261013,
+    "threads": 4,
+    "maximum_epochs": 24,
+    "early_stop_patience": 4,
+    "batch_size": 32,
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "loss": "Six MSE and one L1 candidate; same train-only global normalization and validation selection",
+    "context_candidates": [
+      24,
+      72,
+      168,
+      336,
+      720,
+      168,
+      168
+    ],
+    "versions": {
+      "torch": "2.14.1",
+      "numpy": "2.3.5",
+      "pandas": "3.0.1"
+    },
+    "claim": "Budgeted local validation search; not a guarantee of global optimality. No internal-test or May tuning."
+  },
+  "provenance": {
+    "source": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\itransformer\\vendor\\provenance.json",
+    "source_sha256": "82b2f4036b2f4cfc70fe02a84c62a822432b1105ff1ac044a129a7ede2073980",
+    "record": {
+      "repository": "https://github.com/thuml/iTransformer",
+      "revision": "c2426e68ca13f74aaec08045c5c724d8ad328124",
+      "files": [
+        {
+          "upstream_url": "https://raw.githubusercontent.com/thuml/iTransformer/c2426e68ca13f74aaec08045c5c724d8ad328124/model/iTransformer.py",
+          "path": "model/iTransformer.py",
+          "upstream_sha256": "6f34777a5a12c253a293f79e7e1fd5b6f79ac100b443951e051e269e7e2542db",
+          "local_sha256": "61aaa7d4caa71d1e1381b193fd012243c68b27c564af0a9e14cb474099507bfc"
+        },
+        {
+          "upstream_url": "https://raw.githubusercontent.com/thuml/iTransformer/c2426e68ca13f74aaec08045c5c724d8ad328124/layers/Embed.py",
+          "path": "layers/Embed.py",
+          "upstream_sha256": "2de7e5049a696d320a23a8bdb6e08e823cf7fa3f246a0a49555fcd729c5c8398",
+          "local_sha256": "cb1b8934d87659e656e6c92ba6290c4a76fbfb88389527ce43766c5b8cfd46ed"
+        },
+        {
+          "upstream_url": "https://raw.githubusercontent.com/thuml/iTransformer/c2426e68ca13f74aaec08045c5c724d8ad328124/layers/SelfAttention_Family.py",
+          "path": "layers/SelfAttention_Family.py",
+          "upstream_sha256": "38ac67428d528b8e145e4944ca059b40629a8446c891142602d5aaadc38dfd9e",
+          "local_sha256": "3d9f29c895a47335e670289f504ceaa95ded44047fba6bfbd96f01173ba88b6c"
+        },
+        {
+          "upstream_url": "https://raw.githubusercontent.com/thuml/iTransformer/c2426e68ca13f74aaec08045c5c724d8ad328124/layers/Transformer_EncDec.py",
+          "path": "layers/Transformer_EncDec.py",
+          "upstream_sha256": "985c31f4ae187b08afaa9663dc960a40544b2ec33ab55389ceab3930edc1ce02",
+          "local_sha256": "eed892a31468b1142777420f4b7ecb8cdbae020d835bbdd59a045c99bbe986df"
+        },
+        {
+          "upstream_url": "https://raw.githubusercontent.com/thuml/iTransformer/c2426e68ca13f74aaec08045c5c724d8ad328124/utils/masking.py",
+          "path": "utils/masking.py",
+          "upstream_sha256": "02f453e52cfaec65e34132923add80e7132f188706680fa86d7bd884976e09ef",
+          "local_sha256": "c22de70ad076f4eeecc857aba984741da05da54375333399ff2742b041544986"
+        },
+        {
+          "upstream_url": "https://raw.githubusercontent.com/thuml/iTransformer/c2426e68ca13f74aaec08045c5c724d8ad328124/LICENSE",
+          "path": "LICENSE",
+          "upstream_sha256": "29d2a4c09fa577780522219dc248466977f77cd420354c5e9a0e86550be2b849",
+          "local_sha256": "29d2a4c09fa577780522219dc248466977f77cd420354c5e9a0e86550be2b849"
+        }
+      ],
+      "changes": [
+        "Namespace-only import isolation",
+        "Reformer dependency moved into unused ReformerLayer constructor; selected FullAttention unchanged"
+      ]
+    },
+    "scope": "Pinned official core, compact local retraining. Namespace-only import changes; unused iTransformer Reformer import is lazy. No published benchmark reproduction.",
+    "iTransformer_univariate_limit": "One variate token: no cross-channel attention advantage is demonstrated."
+  },
+  "target_sha256": "729b149a3e3165dfb339f0386249bfbda0326657f9e722d86da8138db36117de",
+  "frozen_epochs": 6,
+  "pretest_epoch_choice": {
+    "inner_fitting_hours": 2736,
+    "inner_fitting_end": "2025-03-24 23:00:00",
+    "inner_tail_origin": "2025-03-25 00:00:00",
+    "inner_tail_end": "2025-03-31 23:00:00",
+    "inner_holdout_hours": 168,
+    "inner_origins": 7,
+    "training_windows": 2641,
+    "training_tail_target_overlap": false,
+    "best_epoch": 6,
+    "best_mae_kwh": 76.58373102652955,
+    "epochs_run": 10,
+    "logs": [
+      {
+        "epoch": 1,
+        "training_loss_standardized": 1.154854138797542,
+        "training_loss_name": "MSE",
+        "inner_chronological_mae_kwh": 77.64466471386481
+      },
+      {
+        "epoch": 2,
+        "training_loss_standardized": 1.0462136933046144,
+        "training_loss_name": "MSE",
+        "inner_chronological_mae_kwh": 77.06350830321762
+      },
+      {
+        "epoch": 3,
+        "training_loss_standardized": 1.029507967388481,
+        "training_loss_name": "MSE",
+        "inner_chronological_mae_kwh": 76.88183307225196
+      },
+      {
+        "epoch": 4,
+        "training_loss_standardized": 1.0239299539813758,
+        "training_loss_name": "MSE",
+        "inner_chronological_mae_kwh": 76.74837113114837
+      },
+      {
+        "epoch": 5,
+        "training_loss_standardized": 1.019852932656818,
+        "training_loss_name": "MSE",
+        "inner_chronological_mae_kwh": 76.90878207865002
+      },
+      {
+        "epoch": 6,
+        "training_loss_standardized": 1.0194199996570528,
+        "training_loss_name": "MSE",
+        "inner_chronological_mae_kwh": 76.58373102652955
+      },
+      {
+        "epoch": 7,
+        "training_loss_standardized": 1.0165452118490466,
+        "training_loss_name": "MSE",
+        "inner_chronological_mae_kwh": 76.90667033606336
+      },
+      {
+        "epoch": 8,
+        "training_loss_standardized": 1.0146269466063598,
+        "training_loss_name": "MSE",
+        "inner_chronological_mae_kwh": 77.00067956497301
+      },
+      {
+        "epoch": 9,
+        "training_loss_standardized": 1.013077237668339,
+        "training_loss_name": "MSE",
+        "inner_chronological_mae_kwh": 76.64761989195298
+      },
+      {
+        "epoch": 10,
+        "training_loss_standardized": 1.011135383836702,
+        "training_loss_name": "MSE",
+        "inner_chronological_mae_kwh": 76.67986881270414
+      }
+    ],
+    "seconds": 3.946624099975452
+  },
+  "final_epoch_policy": "March training-only inner tail selects test epochs; the same epoch count is frozen for full3600 refit. April test scores never select an epoch."
+}

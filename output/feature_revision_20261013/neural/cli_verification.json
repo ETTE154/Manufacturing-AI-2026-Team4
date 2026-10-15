@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "actual_CLI_runs": [
+    {
+      "family": "itransformer",
+      "scenario": "dayahead24",
+      "rows": 24,
+      "max_absdiff_kwh": 0.0,
+      "chosen_CV_folds_at_cap": 4
+    },
+    {
+      "family": "patchtst",
+      "scenario": "dayahead24",
+      "rows": 24,
+      "max_absdiff_kwh": 0.0,
+      "chosen_CV_folds_at_cap": 1
+    },
+    {
+      "family": "itransformer",
+      "scenario": "long745",
+      "rows": 745,
+      "max_absdiff_kwh": 0.0,
+      "chosen_CV_folds_at_cap": 1
+    },
+    {
+      "family": "patchtst",
+      "scenario": "long745",
+      "rows": 745,
+      "max_absdiff_kwh": 0.0,
+      "chosen_CV_folds_at_cap": 0
+    }
+  ],
+  "May_labels_read": false
+}

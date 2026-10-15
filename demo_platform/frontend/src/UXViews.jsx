@@ -1,0 +1,64 @@
+import React,{useEffect,useRef,useState} from 'react';
+import {Activity,ArrowRight,Bot,Check,Clock3,FileText,MessageSquare,Play,Radio,RefreshCw,Search,Send,Settings2,ShieldCheck,Sparkles,TriangleAlert,X} from 'lucide-react';
+import {api} from './api.js';
+import {moduleTitle} from './uiScope.js';
+import {recordedMillis,recordedFromMillis} from './data.js';
+import {useDialogFocus} from './useDialogFocus.js';
+
+export function UXTabs({label,value,onChange,items}){
+  const keydown=event=>{
+    const keys=['ArrowLeft','ArrowRight','Home','End'];if(!keys.includes(event.key))return;
+    event.preventDefault();const index=items.findIndex(item=>item.id===value),next=event.key==='Home'?0:event.key==='End'?items.length-1:(index+(event.key==='ArrowRight'?1:-1)+items.length)%items.length;
+    onChange(items[next].id);event.currentTarget.querySelectorAll('[role="tab"]')[next]?.focus();
+  };
+  return <div className="ux-page-tabs" role="tablist" aria-label={label} onKeyDown={keydown}>{items.map(item=><button key={item.id} type="button" role="tab" aria-selected={item.id===value} tabIndex={item.id===value?0:-1} onClick={()=>onChange(item.id)}>{item.label}</button>)}</div>;
+}
+function scopeName(scope){return scope==='diagnosis'?'이상 검토 구간':scope==='archive'?'조회 구간':'최근 관측';}
+export function SearchChat({context,replayContext,modules,ui}){
+  const {Badge,time}=ui;
+  const [query,setQuery]=useState(''),[messages,setMessages]=useState([]),[busy,setBusy]=useState(false),[mode,setMode]=useState('visible');
+  useEffect(()=>setMode('visible'),[context.scope,context.module,context.start,context.end]);
+  const selected=mode==='replay'?replayContext:context;
+  const submit=async event=>{
+    event?.preventDefault();if(!query.trim()||busy)return;
+    const question=query.trim(),snapshot={...selected};setQuery('');setBusy(true);setMessages(old=>[...old,{role:'user',text:question,scope:snapshot}]);
+    try{const result=await api.search(question,snapshot);setMessages(old=>[...old,{role:'assistant',text:result.answer,method:result.source,scope:result.query_scope||{...snapshot,module_id:snapshot.module,end_exclusive:snapshot.end},sources:result.citations||[],count:result.row_count,observations:result.source_observation_count,unit:result.unit}]);}
+    catch(error){setMessages(old=>[...old,{role:'error',text:error.message,scope:{...snapshot,module_id:snapshot.module,end_exclusive:snapshot.end}}]);setQuery(question);}
+    finally{setBusy(false);}
+  };
+  return <section id="data-search" className="search-chat" aria-labelledby="data-search-title"><div className="chat-heading"><div><span className="chat-icon"><MessageSquare size={18}/></span><h2 id="data-search-title">데이터 질문</h2></div>{context.scope!=='replay'&&<label>검색 기준<select aria-label="검색 기준 선택" value={mode} onChange={e=>setMode(e.target.value)}><option value="visible">현재 검토·조회 구간</option><option value="replay">최근 관측 기준</option></select></label>}</div>
+    <div className="ux-scope-chips" data-search-scope={selected.scope} data-search-module={selected.module} data-search-start={selected.start||''} data-search-end={selected.end||''}><Badge tone="teal">{scopeName(selected.scope)}</Badge><strong>{moduleTitle(modules,selected.module)}</strong><span>{selected.start?`${time(selected.start,true)} ~ ${time(selected.end,true)} 미만`:`${time(selected.cursor_time,true)} 이전 · 최근 7일 가용 기록`}</span>{selected.origin_source_kind==='synthetic'&&<small>합성 변형이 적용되기 전의 원본 관측을 검색합니다.</small>}</div>
+    {messages.length>0&&<div className="chat-messages" aria-live="polite">{messages.slice(-6).map((message,index)=><div key={index} className={`chat-message ${message.role}`}><span>{message.role==='user'?<Search size={15}/>:<Bot size={16}/>}</span><div><p>{message.text}</p>{message.role!=='user'&&<small>답변 기준: {moduleTitle(modules,String(message.scope?.module_id||message.scope?.module||'all'))} · {scopeName(message.scope?.scope)}{message.scope?.start?` · ${time(message.scope.start,true)} ~ ${time(message.scope.end_exclusive,true)} 미만`:''}</small>}{message.role==='assistant'&&Number.isFinite(message.count)&&<small>조회 결과 {message.count}개{message.observations!=null?` · 원본 관측 ${message.observations}행`:''}{message.unit?` · ${message.unit}`:''}</small>}{message.method&&<small>처리 방식: {message.method==='local_data_search'?'서버 로컬 기록 조회':message.method}</small>}{message.sources?.length>0&&<div className="chat-sources">{message.sources.map((source,i)=><span key={i}>{source.title||source.reference||'원본 관측 근거'}</span>)}</div>}</div></div>)}</div>}
+    <form className="chat-input" onSubmit={submit}><Search size={18}/><input id="data-search-input" aria-label="데이터 검색 질문" value={query} onChange={e=>setQuery(e.target.value)} placeholder="예: 이 구간의 평균 역률을 확인해 줘"/><button type="submit" disabled={busy||!query.trim()} aria-label={busy?'데이터 검색 처리 중':'데이터 검색 실행'}>{busy?<RefreshCw size={17} className="spin"/>:<Send size={17}/>}<span>{busy?'검색 중':'검색'}</span></button></form></section>;
+}
+export function SettingsDrawer({integrations,close,update,error,notify,ui}){
+  const {Badge}=ui,dialog=useRef(null);
+  useDialogFocus(dialog,true,close,'button[aria-label="메뉴 열기"]');
+  const slack=integrations?.slack||{},gpt=integrations?.gpt||integrations?.openai||{};
+  const [webhook,setWebhook]=useState(''),[enabled,setEnabled]=useState(!!slack.enabled),[saving,setSaving]=useState(false);
+  const save=async event=>{event.preventDefault();setSaving(true);try{await api.slack({enabled,...(webhook?{webhook_url:webhook}:{})});update(await api.integrations());setWebhook('');notify('Slack 알림 설정을 저장했습니다.');}catch(e){error(e.message);}finally{setSaving(false);}};
+  return <div className="drawer-layer"><button className="drawer-scrim" tabIndex={-1} aria-label="설정 배경 닫기" onClick={close}/><aside ref={dialog} className="drawer ux-drawer-focus" role="dialog" aria-modal="true" aria-labelledby="settings-title" tabIndex={-1}><div className="drawer-header"><div><span className="eyebrow">서비스 연결</span><h2 id="settings-title">알림·서비스 설정</h2></div><button className="icon-button" onClick={close} aria-label="설정 닫기"><X size={21}/></button></div><div className="drawer-body">
+    <div className="integration-title"><span className="slack-icon">#</span><div><h3>Slack 후보 알림</h3><p>담당자에게 의심 시각과 근거 전달</p></div><Badge tone={slack.configured?'green':'amber'}>{slack.configured?'연결 설정됨':'관리자 연결 필요'}</Badge></div><p className="ux-state-note">{slack.configured?'알림 사용 여부와 실제 전송 상태를 확인하세요.':'대시보드 알림과 센서 검토는 지금 사용할 수 있습니다. Slack 수신이 필요하면 관리자에게 연결 설정을 요청하세요.'}</p>
+    <details className="ux-admin-details"><summary>관리자용 Slack 연결·전송 설정</summary><form onSubmit={save}><label className="toggle-row"><span><strong>후보 알림 사용</strong><small>연결된 경우 담당자에게 전송</small></span><input type="checkbox" checked={enabled} onChange={e=>setEnabled(e.target.checked)}/></label><label className="field-label">Incoming Webhook URL<input type="password" autoComplete="off" value={webhook} onChange={e=>setWebhook(e.target.value)} placeholder={slack.configured?'연결을 변경할 때만 입력':'관리자가 발급한 Webhook URL'}/></label><p className="data-note">채널은 Slack Webhook에서 지정합니다. 비밀 값은 서버에만 전달합니다.</p><button className="button primary full" disabled={saving}><Check size={15}/>{saving?'설정 저장 중…':'Slack 설정 저장'}</button></form><button className="button secondary full" disabled={!slack.configured} onClick={async()=>{try{const result=await api.slackTest();notify(result.message||result.status);}catch(e){error(e.message);}}}>Slack 테스트 알림 전송</button></details>
+    <div className="drawer-divider"/><div className="integration-title"><span className="algorithm-icon purple"><Bot size={22}/></span><div><h3>GPT-5 mini 리포트</h3><p>검증된 통계를 바탕으로 주간 요약</p></div><Badge tone={gpt.configured?'green':'amber'}>{gpt.configured?'서버 키 설정됨':'관리자 연결 필요'}</Badge></div><p className="ux-state-note">{gpt.configured?'외부 전송 승인 상태를 별도로 확인하세요.':'현재는 로컬 통계 요약과 데이터 검색을 사용할 수 있습니다. GPT 리포트 연결은 관리자가 설정합니다.'}</p>
+    <div className="transfer-consent"><h4>통계·질문 외부 전송</h4><Badge tone={gpt.data_transfer_approved?'green':'amber'}>{gpt.data_transfer_approved?'전송 승인됨':'전송 승인 대기'}</Badge><p>리포트: 최근7일 통계·알람 근거·24시간 예측 품질.<br/>검색: 질문·선택 모듈·재생 시각. 과거 조회·후보 구간 검색은 로컬에서 처리합니다.</p><button className="button secondary full" onClick={async()=>{try{update(await api.openaiConsent(!gpt.data_transfer_approved));notify(gpt.data_transfer_approved?'외부 전송 승인을 철회했습니다.':'통계·질문 전송 승인을 저장했습니다.');}catch(e){error(e.message);}}}>{gpt.data_transfer_approved?'전송 승인 철회':'통계·질문 전송 승인'}</button></div>
+    <details className="ux-admin-details"><summary>관리자용 GPT 연결 진단</summary><p>{gpt.setup_note||'서버의 OPENAI_API_KEY 설정과 모델 접근 권한을 확인하세요. 키는 화면이나 파일에 복사하지 않고 서버 메모리에서 사용합니다.'}</p><p className="data-note">연결 상태와 전송 승인 상태는 별개입니다. 원본 CSV와 인증정보는 외부 전송하지 않습니다.</p></details>
+    <div className="drawer-divider"/><div className="integration-title"><Radio size={22}/><div><h3>데이터 수집 시연</h3><p>기록된 원본 CSV의 스트리밍 재생</p></div><Badge tone="teal">원본 재생</Badge></div><p className="drawer-explainer">실제 설비의 현재 가동 상태를 나타내는 화면은 아닙니다.</p></div><div className="drawer-footer"><ShieldCheck size={16}/>연결 상태는 서버 응답 기준입니다.</div></aside></div>;
+}
+
+export function ReportPage({data,integrations,module,modules,cursorTime,completedHours=0,onUpdate,notify,error,ui}){
+  const {Panel,Badge,Empty,time}=ui;
+  const reports=Array.isArray(data)?data:data?.rows||[],gpt=integrations?.gpt||integrations?.openai||{};
+  const [view,setView]=useState('recent'),[generated,setGenerated]=useState(null),[selected,setSelected]=useState(null),[loading,setLoading]=useState(false);
+  const generationTicket=useRef(0);
+  useEffect(()=>{generationTicket.current+=1;setGenerated(null);setSelected(null);setView('recent');setLoading(false);return()=>{generationTicket.current+=1;};},[module]);
+  const end=recordedFromMillis(Math.floor(recordedMillis(cursorTime)/3600000)*3600000),start=recordedFromMillis(recordedMillis(end)-7*86400000);
+  const scoped=reports.filter(report=>String(report.facts?.module_id||'all')===String(module));
+  const active=view==='recent'?(generated||scoped[0]):selected,content=active?.content||active?.summary;
+  const generate=async()=>{const ticket=++generationTicket.current;setLoading(true);try{const result=await api.report({module,local_only:!(gpt.configured&&gpt.data_transfer_approved)});onUpdate(await api.reports());if(ticket!==generationTicket.current)return;setGenerated(result);setView('recent');notify('주간 리포트를 저장했습니다.');}catch(e){if(ticket===generationTicket.current)error(e.message);}finally{if(ticket===generationTicket.current)setLoading(false);}};
+  return <><div className="op-report-bar"><UXTabs label="리포트 보기" value={view} onChange={setView} items={[{id:'recent',label:'최근 리포트'},{id:'saved',label:`보관함 (${reports.length})`}]}/><button className="button primary" onClick={generate} disabled={loading||completedHours===0} title={completedHours===0?'완료된 1시간 관측 후 생성할 수 있습니다.':undefined}><Sparkles size={16}/>{loading?'생성 중…':'새 리포트 생성'}</button></div>
+    <details className="op-details op-report-conditions"><summary>새 리포트 생성 기준</summary><p>{moduleTitle(modules,module)} · {time(start,true)} ~ {time(end,true)} 미만 · 완료 관측 {Math.min(completedHours,168)}/168시간 · {gpt.configured&&gpt.data_transfer_approved?'GPT-5 mini':'로컬 통계 요약'}</p></details>
+    {view==='saved'&&<Panel title="리포트 보관함"><div className="report-history">{reports.map(report=><button key={report.id} className="report-history-item" onClick={()=>setSelected(report)} aria-pressed={active?.id===report.id}><span className="module-icon"><FileText size={18}/></span><div><strong>{moduleTitle(modules,String(report.facts?.module_id||'all'))}</strong><p>{time(report.week_start||report.facts?.week_start,true)} ~ {time(report.week_end||report.facts?.week_end,true)} 미만</p></div><Badge>{report.status==='local_summary'?'통계 요약':report.status==='generated'?'GPT 요약':report.status}</Badge></button>)}{!reports.length&&<Empty title="저장된 리포트가 없습니다" text="완료 관측을 확보한 뒤 리포트를 생성할 수 있습니다."/>}</div></Panel>}
+    {active?<Panel title="주간 운영 요약" subtitle={null}><div className="ux-scope-chips"><Badge tone="teal">{moduleTitle(modules,String(active.facts?.module_id||'all'))}</Badge><span>{time(active.week_start||active.facts?.week_start,true)} ~ {time(active.week_end||active.facts?.week_end,true)} 미만</span>{active.facts?.observed_hours<168&&<Badge>부분 기간 · {active.facts.observed_hours}/168시간</Badge>}</div><div className="report-content">{content||'저장된 본문이 없습니다.'}</div><details className="op-details"><summary>리포트 정보</summary><p>생성 {time(active.created_at||active.generated_at,true)} · {active.title}</p><p>생성 당시의 저장 결과입니다. 관측 시점이 바뀌어도 자동 갱신되지 않습니다.</p></details></Panel>:view==='recent'&&<Panel title="주간 운영 요약"><Empty icon={FileText} title="선택한 설비의 리포트가 없습니다" text={completedHours===0?'첫 완료 시간 이후 생성할 수 있습니다. 기존 리포트는 보관함에서 확인하세요.':'새 리포트를 생성하거나 보관함을 확인하세요.'}/></Panel>}
+  </>;
+}

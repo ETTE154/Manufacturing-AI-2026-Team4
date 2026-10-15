@@ -1,0 +1,17 @@
+{
+  "selected_model": "itransformer",
+  "model_name": "재학습 iTransformer",
+  "metrics": {
+    "count": 505,
+    "mae_kwh": 89.11463866420716,
+    "rmse_kwh": 109.62762718653703,
+    "mape_percent": 0.22832598486762926,
+    "r2": -0.3932858864769877,
+    "bias_pred_minus_actual_kwh": 58.1465092752654
+  },
+  "validation_mae_kwh": 76.20750877920149,
+  "quality_note": "검증상 차이는 매우 작으며 변동 예측력이 확인되었다고 단정할 수 없습니다. 잠정 단위와 계측 계층 불확실성을 유지합니다.",
+  "horizon_note": "4/30 고정 원점 · 745시간 경로 · 5/10~5/31 00시 정답505시간 평가(앞240시간 정답 미제공)",
+  "operational_forecast_model": "historical_prefix_mean_baseline",
+  "replay_uses_April_checkpoint": false
+}

@@ -1,0 +1,216 @@
+{
+  "pass": true,
+  "created_utc": "2026-10-13T04:02:59.048136+00:00",
+  "checks": {
+    "evidence_audit_passed": true,
+    "visuals_QA_passed": true,
+    "decomposition_QA_passed": true,
+    "full_scope_reconciled": true,
+    "full_period_cadence_reconciled": true,
+    "May_scope_reconciled": true,
+    "raw_5second_prefix_verified": true,
+    "feature_dictionary24_rows": true,
+    "full15_sensor_population_statistics_reconciled": true,
+    "all_resolution_energy_coverage_and_rate_consistency": true,
+    "all4_decompositions_additive_reconstruction": true,
+    "no_annual_week_month_decomposition": true,
+    "no_decomposition_May_fit_or_settings_search": true,
+    "pdf18pages_text_and_unicode": true,
+    "pdf_contains_expected_topics": true,
+    "pdf_font_embedding": true,
+    "pdf18pages_rendered": true,
+    "archive_integrity": true,
+    "html_QA_passed": true,
+    "PDF_visual_QA_record_exists": true,
+    "original_data_preserved": true
+  },
+  "details": {
+    "sensor_statistic_max_absolute_errors": {
+      "mean": 9.313225746154785e-10,
+      "std": 8.881784197001252e-16,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "resampling": [
+      {
+        "grain": "hourly",
+        "rows": 3600,
+        "complete": 3600,
+        "sum_error": 0.0,
+        "rate_error": 0.0
+      },
+      {
+        "grain": "daily",
+        "rows": 150,
+        "complete": 150,
+        "sum_error": 0.0,
+        "rate_error": 0.0
+      },
+      {
+        "grain": "weekly",
+        "rows": 23,
+        "complete": 21,
+        "sum_error": 0.0,
+        "rate_error": 0.0
+      },
+      {
+        "grain": "monthly",
+        "rows": 5,
+        "complete": 4,
+        "sum_error": 0.0,
+        "rate_error": 0.0
+      }
+    ],
+    "browser": {
+      "pass": true,
+      "images": 16,
+      "layouts": [
+        {
+          "width": 1280,
+          "scrollWidth": 1280,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "scrollWidth": 768,
+          "overflow": false
+        },
+        {
+          "width": 390,
+          "scrollWidth": 390,
+          "overflow": false
+        }
+      ],
+      "errors": [],
+      "missing_local_links": [],
+      "styles": {
+        "headerBackground": "rgb(18, 61, 102)",
+        "bodyTextColor": "rgb(23, 43, 66)",
+        "sections": 19
+      }
+    },
+    "PDF_visual_QA": {
+      "status": "pass_with_minor_legibility_notes",
+      "inspection_method": "Direct view_image inspection of all five requested page PNGs at original resolution",
+      "source_pdf": "E:/AI work/AWS_프로젝트/output/data_overview_20261013/pdf/basic_data_report.pdf",
+      "render_dpi": 110,
+      "inspected_pages": [
+        2,
+        4,
+        8,
+        10,
+        15
+      ],
+      "scope": "Visual QA only. PDF, report source, datasets and model files were not edited. No model training or May-label read.",
+      "blocking_visual_defects_found": false,
+      "findings": [
+        {
+          "page": 2,
+          "rendered_png": "E:/AI work/AWS_프로젝트/output/data_overview_20261013/tmp/pdfs/page-02.png",
+          "result": "pass",
+          "table_clipping": false,
+          "broken_Korean_glyphs": false,
+          "overlapping_elements": false,
+          "caption_or_footnote_clipping": false,
+          "chart_readability": "not_applicable",
+          "observations": "19개 피처 표의 헤더·19행·복수 줄 설명·단위·dtype 열과 하단 설명이 페이지 안에 들어갑니다. 긴 원본 컬럼명도 잘리지 않았습니다. 머리말과 페이지 번호가 정상입니다.",
+          "rendered_png_sha256": "c672ded6a9962ff8adc1855d0eeac0211d4ff37250779a52bed20c6efe6a6e29"
+        },
+        {
+          "page": 4,
+          "rendered_png": "E:/AI work/AWS_프로젝트/output/data_overview_20261013/tmp/pdfs/page-04.png",
+          "result": "pass_with_minor_note",
+          "table_clipping": false,
+          "broken_Korean_glyphs": false,
+          "overlapping_elements": false,
+          "caption_or_footnote_clipping": false,
+          "chart_readability": "Distribution shapes and comparison are clear; small module-axis labels and embedded chart footer benefit from zooming",
+          "observations": "13모듈 표·수치·헤더가 정상이고 상자그림·그림2 캡션·아래 관측량 설명이 겹치지 않습니다. 상자그림의 작은 모듈 축 문자와 자체 그림 주석은110dpi 전체쪽 보기에서 작지만, 모듈명과 핵심 의미는 표 및 페이지 캡션에서도 제공됩니다.",
+          "minor_note": "필요하면 PDF 확대 또는 함께 제공된 원본 고해상도 PNG/SVG로 세부 축 문자를 확인할 수 있습니다.",
+          "rendered_png_sha256": "eb2d318416a1edd581ba62086d697991d5b9a79a747cb957af7b25288513b4b3"
+        },
+        {
+          "page": 8,
+          "rendered_png": "E:/AI work/AWS_프로젝트/output/data_overview_20261013/tmp/pdfs/page-08.png",
+          "result": "pass_with_minor_note",
+          "table_clipping": false,
+          "broken_Korean_glyphs": false,
+          "overlapping_elements": false,
+          "caption_or_footnote_clipping": false,
+          "chart_readability": "Energy/rate panels, hollow partial markers and partial-period hatching are distinguishable; fine axis/legend text benefits from zooming",
+          "observations": "주·월 각2패널이 온전히 보입니다. 부분 주24/168h·48/168h와4월29/30일 표시, 중공 마커·빗금, 그림7/8 캡션이 정상입니다. 마지막 설명이 페이지 번호와 겹치지 않습니다.",
+          "minor_note": "차트 내부의 작은 축·범례·내장 각주는110dpi 전체쪽 보기에서 작습니다. 페이지 캡션과 본문은 정상 크기로 읽힙니다.",
+          "rendered_png_sha256": "8eb22954a960581f6c3d4f39d5b753f571138f59cbc89a9addce2907f6cc4164"
+        },
+        {
+          "page": 10,
+          "rendered_png": "E:/AI work/AWS_프로젝트/output/data_overview_20261013/tmp/pdfs/page-10.png",
+          "result": "pass_with_minor_note",
+          "table_clipping": false,
+          "broken_Korean_glyphs": false,
+          "overlapping_elements": false,
+          "caption_or_footnote_clipping": false,
+          "chart_readability": "Histograms, threshold lines, scatter and correlation matrix are clear; fine tick labels and matrix feature names benefit from zooming",
+          "observations": "센서6패널의 차트 제목·좌표축·임계값 선·상관행렬이 잘리지 않습니다. 그림11 캡션과187,200행/모듈×시간4개 층화 추출 설명이 정상이며 동시 상관과 미래 예측을 구분한 문장이 읽힙니다.",
+          "minor_note": "센서 다중패널의 작은 눈금과 행렬 피처명은 원본 고해상도 그림 또는 PDF 확대가 세부 확인에 더 적합합니다.",
+          "rendered_png_sha256": "20a4c77cfb9061f11b1da845b7af9c715c7a9ae536ae3d1509e48b3bad76c541"
+        },
+        {
+          "page": 15,
+          "rendered_png": "E:/AI work/AWS_프로젝트/output/data_overview_20261013/tmp/pdfs/page-15.png",
+          "result": "pass",
+          "table_clipping": false,
+          "broken_Korean_glyphs": false,
+          "overlapping_elements": false,
+          "caption_or_footnote_clipping": false,
+          "chart_readability": "All four MSTL panels, axis boundaries, title, caption and explanatory text are visible",
+          "observations": "관측·추세·계절 합·잔차의4패널 경계가 겹치지 않습니다. 그림15 캡션과계절성·추세 강도/표준편차, 기술적 분해이며 미래 예측이 아니라는 설명이 페이지 안에 들어갑니다. 하단 설명·머리말·페이지 번호가 정상입니다.",
+          "rendered_png_sha256": "6325f57227280a1f1e8c10dd3315815184ba1512faf46006c35d7beb24db61e0"
+        }
+      ],
+      "overall": {
+        "tables_complete": true,
+        "Korean_glyphs_render_normally": true,
+        "captions_and_page_numbers_visible": true,
+        "no_element_overlap_observed": true,
+        "critical_chart_information_visible": true,
+        "minor_legibility_note_pages": [
+          4,
+          8,
+          10
+        ],
+        "other_pages_reviewed": false,
+        "other_pages_reviewer": "Parent agent reviews contact sheets and remaining pages",
+        "numeric_values_reaudited": false
+      },
+      "source_pdf_sha256": "26d428a732a7a6c077aa8b0e2b415ca888482fa40a7e6981b7f21579e21aa36d"
+    },
+    "originals": [
+      {
+        "path": "E:\\AI work\\AWS_프로젝트\\may-dataset\\rtu_ground_truth_may.csv",
+        "bytes": 46000,
+        "mtime_ns": 1791713832569742300,
+        "preserved_size_and_mtime": true,
+        "prior_full_sha256": "a0e44dc6481fba7d78a2c5b60f0f5e0c2bcc69a8f732c9229bbbdaa38dee04bf"
+      },
+      {
+        "path": "E:\\AI work\\AWS_프로젝트\\traing-dataset\\rtu_data_full.csv",
+        "bytes": 4909245995,
+        "mtime_ns": 1791713915683441400,
+        "preserved_size_and_mtime": true,
+        "prior_full_sha256": "3b4e1ff2125ca64612837530a8612fa7f044f398e508e00026097fc788d0dce5"
+      }
+    ]
+  },
+  "limitations": [
+    "Physical target units and meter hierarchy unresolved",
+    "Recorded localtime is not independently confirmed Korea timezone",
+    "Month4 and week21 cannot support annual seasonal decomposition",
+    "Descriptive full-history decomposition contains future smoothing and is not a historical forecast input"
+  ],
+  "original_copies_created": 0,
+  "original_moves": 0,
+  "original_deletes": 0,
+  "source_registry_modified": false,
+  "model_training_performed": false
+}

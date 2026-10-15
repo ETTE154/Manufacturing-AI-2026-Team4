@@ -1,0 +1,29 @@
+{
+  "configs": [
+    {
+      "group": "target_only",
+      "context": 7,
+      "loss": "MSE",
+      "dropout": 0.1,
+      "instance_norm": false,
+      "output_penalty": 0.03
+    },
+    {
+      "group": "target_only",
+      "context": 7,
+      "loss": "L1",
+      "dropout": 0.2,
+      "instance_norm": false,
+      "output_penalty": 0.05
+    }
+  ],
+  "valid_origins": [
+    "2025-02-15 00:00:00",
+    "2025-02-22 00:00:00",
+    "2025-02-25 00:00:00"
+  ],
+  "objective": "Mean three origin late505 MAE only",
+  "daily_context14_excluded": "First origin76days minus32day inner holdout=44days < context14+P32=46",
+  "epoch_policy": "Nested prefix-only early stopping max24,patience4; final epoch median of selected CV epochs, no April tuning",
+  "coarse_partial_policy": "Complete training days only. Native32days to hourly745 includes last forecast day first hour only."
+}

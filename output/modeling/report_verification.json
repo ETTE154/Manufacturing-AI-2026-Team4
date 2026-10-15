@@ -1,0 +1,33 @@
+{
+  "title": "전력 예측·이상 후보 진단 비교",
+  "headings": [
+    "전력 예측 모델 비교와 현재 이상 후보 진단",
+    "연구에서 가져온 비교 기준",
+    "시간 경계와 모델 선택을 먼저 고정",
+    "예측 결과 · 동일 목표와 평가 시점으로 비교",
+    "입력 정보와 학습 조건의 차이",
+    "평균 기준선과의 차이 · 경로 내부의 조건부 불확실성",
+    "5월 실측·예측과 잔차",
+    "모델을 선택해 같은 5월 구간 확인",
+    "진단 실험 · 현재 전기품질 후보와 실제 고장을 구분",
+    "프로젝트 판단과 다음 실행",
+    "재현과 결과 파일",
+    "학습된 모델로 추론만 실행"
+  ],
+  "brokenImages": 0,
+  "imageCount": 4,
+  "overflow": false,
+  "selects": [
+    {
+      "id": "forecastModel",
+      "options": 8
+    }
+  ],
+  "replacementCharacters": false,
+  "interaction": {
+    "selected": "xgboost",
+    "svgUpdated": true
+  },
+  "compactOverflow": false,
+  "errors": []
+}

@@ -1,0 +1,34 @@
+{
+  "title": "RTU 프로젝트 기초 분석",
+  "headings": [
+    "RTU 데이터에서 출발하는 예측·이상탐지",
+    "목표와 분석 기준",
+    "1. 전체 수준은 안정적이며 큰 생산 주기는 확인되지 않음",
+    "설비를 선택해 일평균 확인",
+    "2. 설비 간 규모 차이가 매우 작음",
+    "3. 요일·시간 효과는 작음",
+    "4. 원시 변동과 집계 변동을 구분",
+    "5. 5월 정답은 작은 변동과 선형 환산 구조",
+    "6. 단순 기준선으로도 작은 오차 · 복잡화 근거는 약함",
+    "7. 이상 후보는 3개 설비의 전압·역률에 집중",
+    "품질 이슈와 프로젝트 해석의 한계",
+    "프로젝트를 위한 인사이트와 실행 순서"
+  ],
+  "brokenImages": 0,
+  "imageCount": 8,
+  "overflow": false,
+  "selects": [
+    {
+      "id": "equipment",
+      "options": 14
+    }
+  ],
+  "pending": false,
+  "replacementCharacters": false,
+  "interaction": {
+    "selected": "1(PM-3)",
+    "svgUpdated": true
+  },
+  "compactOverflow": false,
+  "errors": []
+}

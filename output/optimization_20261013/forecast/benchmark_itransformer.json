@@ -1,0 +1,12 @@
+{
+  "family": "itransformer",
+  "context": 168,
+  "points": 24,
+  "windows": 1945,
+  "parameters": 14808,
+  "epoch_seconds": 0.2963743999134749,
+  "mse_standardized": 1.1766909254240805,
+  "threads": 4,
+  "maximum_epochs": 24,
+  "patience": 4
+}

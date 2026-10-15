@@ -1,0 +1,186 @@
+{
+  "completed_candidates": 103,
+  "total_candidates": 103,
+  "last": {
+    "candidate": 102,
+    "config": {
+      "family": "xgboost",
+      "resolution": "daily",
+      "scaler": "minmax",
+      "depth": 2,
+      "max_estimators_protection": 10000
+    },
+    "validation": {
+      "full745": {
+        "count": 2235,
+        "mae_kwh": 76.60386948934118,
+        "rmse_kwh": 97.4893975963508,
+        "mape_percent": 0.19578469466765128,
+        "r2": -0.0011851578268207152,
+        "bias_pred_minus_actual_kwh": -0.06202341477597347
+      },
+      "late505": {
+        "count": 1515,
+        "mae_kwh": 76.3761812926504,
+        "rmse_kwh": 96.89395873579038,
+        "mape_percent": 0.19518392672697593,
+        "r2": -0.002113873492654239,
+        "bias_pred_minus_actual_kwh": -1.6519381799704151
+      },
+      "mean_origin_late505_mae_kwh": 76.3761812926504,
+      "per_origin_late505_mae": {
+        "2025-02-15 00:00:00": 76.91821979132307,
+        "2025-02-22 00:00:00": 74.78503399206942,
+        "2025-02-25 00:00:00": 77.42529009455872
+      },
+      "origin_count": 3,
+      "late_unique_target_hours": 745
+    },
+    "objective_mae_kwh": 76.3761812926504,
+    "origin_fit_audits": [
+      {
+        "origin": "2025-02-15 00:00:00",
+        "history_end": "2025-02-14 23:00:00",
+        "early_stopping": {
+          "fit_native_rows": 44,
+          "fit_end": "2025-01-13 00:00:00",
+          "holdout_periods": 32,
+          "best_iteration": 42,
+          "epochs_evaluated": 117,
+          "early_stopping_objective": "Native-hourly Late505 MAE, affine-standardized positive scale, same ordering",
+          "normalizer": {
+            "kind": "minmax",
+            "center": [
+              39126.02677075442
+            ],
+            "offset": [
+              -27.48174008312344
+            ],
+            "scale": [
+              58.952910300926305
+            ],
+            "fit_rows": 44,
+            "residual_centering": "Train-prefix arithmetic mean before numerical scaling",
+            "native_unit": "provisional guide kWh per hour",
+            "physical_unit_conversion": false
+          },
+          "training_windows": 6,
+          "test_or_May_used": false
+        },
+        "normalizer": {
+          "kind": "minmax",
+          "center": [
+            39130.117663415265
+          ],
+          "offset": [
+            -32.95806735044607
+          ],
+          "scale": [
+            89.63390567128954
+          ],
+          "fit_rows": 76,
+          "residual_centering": "Train-prefix arithmetic mean before numerical scaling",
+          "native_unit": "provisional guide kWh per hour",
+          "physical_unit_conversion": false,
+          "fit_end": "2025-02-14 00:00:00"
+        }
+      },
+      {
+        "origin": "2025-02-22 00:00:00",
+        "history_end": "2025-02-21 23:00:00",
+        "early_stopping": {
+          "fit_native_rows": 51,
+          "fit_end": "2025-01-20 00:00:00",
+          "holdout_periods": 32,
+          "best_iteration": 1,
+          "epochs_evaluated": 76,
+          "early_stopping_objective": "Native-hourly Late505 MAE, affine-standardized positive scale, same ordering",
+          "normalizer": {
+            "kind": "minmax",
+            "center": [
+              39126.4161558415
+            ],
+            "offset": [
+              -29.25655977668066
+            ],
+            "scale": [
+              72.89320428240171
+            ],
+            "fit_rows": 51,
+            "residual_centering": "Train-prefix arithmetic mean before numerical scaling",
+            "native_unit": "provisional guide kWh per hour",
+            "physical_unit_conversion": false
+          },
+          "training_windows": 13,
+          "test_or_May_used": false
+        },
+        "normalizer": {
+          "kind": "minmax",
+          "center": [
+            39130.29950714664
+          ],
+          "offset": [
+            -33.13991108182381
+          ],
+          "scale": [
+            89.63390567128954
+          ],
+          "fit_rows": 83,
+          "residual_centering": "Train-prefix arithmetic mean before numerical scaling",
+          "native_unit": "provisional guide kWh per hour",
+          "physical_unit_conversion": false,
+          "fit_end": "2025-02-21 00:00:00"
+        }
+      },
+      {
+        "origin": "2025-02-25 00:00:00",
+        "history_end": "2025-02-24 23:00:00",
+        "early_stopping": {
+          "fit_native_rows": 54,
+          "fit_end": "2025-01-23 00:00:00",
+          "holdout_periods": 32,
+          "best_iteration": 1,
+          "epochs_evaluated": 76,
+          "early_stopping_objective": "Native-hourly Late505 MAE, affine-standardized positive scale, same ordering",
+          "normalizer": {
+            "kind": "minmax",
+            "center": [
+              39126.1559034315
+            ],
+            "offset": [
+              -28.996307366680412
+            ],
+            "scale": [
+              72.89320428240171
+            ],
+            "fit_rows": 54,
+            "residual_centering": "Train-prefix arithmetic mean before numerical scaling",
+            "native_unit": "provisional guide kWh per hour",
+            "physical_unit_conversion": false
+          },
+          "training_windows": 16,
+          "test_or_May_used": false
+        },
+        "normalizer": {
+          "kind": "minmax",
+          "center": [
+            39129.81282000296
+          ],
+          "offset": [
+            -32.65322393814131
+          ],
+          "scale": [
+            89.63390567128954
+          ],
+          "fit_rows": 86,
+          "residual_centering": "Train-prefix arithmetic mean before numerical scaling",
+          "native_unit": "provisional guide kWh per hour",
+          "physical_unit_conversion": false,
+          "fit_end": "2025-02-24 00:00:00"
+        }
+      }
+    ],
+    "status": "completed"
+  },
+  "seconds": 36.93612420000136
+}

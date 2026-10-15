@@ -1,0 +1,204 @@
+{
+  "status": "passed",
+  "models": {
+    "arima": {
+      "reload_max_absolute_difference_kwh": 0.0,
+      "prediction_count": 745,
+      "finite_predictions": true,
+      "verification_seconds": 3.3357206999789923
+    },
+    "xgboost": {
+      "reload_max_absolute_difference_kwh": 7.275957614183426e-12,
+      "prediction_count": 745,
+      "finite_predictions": true,
+      "verification_seconds": 0.5070680000353605
+    },
+    "patchtst": {
+      "reload_max_absolute_difference_kwh": 7.275957614183426e-12,
+      "prediction_count": 745,
+      "finite_predictions": true,
+      "verification_seconds": 0.02291439997497946
+    },
+    "itransformer": {
+      "reload_max_absolute_difference_kwh": 7.275957614183426e-12,
+      "prediction_count": 745,
+      "finite_predictions": true,
+      "verification_seconds": 0.21442600002046674
+    },
+    "chronos2": {
+      "reload_max_absolute_difference_kwh": 0.0,
+      "prediction_count": 745,
+      "finite_predictions": true,
+      "verification_seconds": 7.843207800062373
+    }
+  },
+  "metric_reconciliation": "All 8 models across validation/internal test/May reconciled to stored prediction CSV",
+  "chronological_boundaries": "Complete future P745, nonoverlapping outer targets, XGB supervised labels before each training cutoff",
+  "locked_selection_sha256_verified": true,
+  "original_read_only_inventory": {
+    "E:\\AI work\\AWS_프로젝트\\프로젝트가이드.pdf": {
+      "bytes": 626976,
+      "mtime_ns": 1791713088104000000
+    },
+    "E:\\AI work\\AWS_프로젝트\\traing-dataset\\rtu_data_full.csv": {
+      "bytes": 4909245995,
+      "mtime_ns": 1791713915683441400
+    },
+    "E:\\AI work\\AWS_프로젝트\\may-dataset\\rtu_ground_truth_may.csv": {
+      "bytes": 46000,
+      "mtime_ns": 1791713832569742300
+    }
+  },
+  "paired_difference_window_counts_and_metrics": "passed, internal test P745 and May P505 separately",
+  "report_verification": {
+    "title": "전력 예측·이상 후보 진단 비교",
+    "headings": [
+      "전력 예측 모델 비교와 현재 이상 후보 진단",
+      "연구에서 가져온 비교 기준",
+      "시간 경계와 모델 선택을 먼저 고정",
+      "예측 결과 · 동일 목표와 평가 시점으로 비교",
+      "입력 정보와 학습 조건의 차이",
+      "평균 기준선과의 차이 · 경로 내부의 조건부 불확실성",
+      "5월 실측·예측과 잔차",
+      "모델을 선택해 같은 5월 구간 확인",
+      "진단 실험 · 현재 전기품질 후보와 실제 고장을 구분",
+      "프로젝트 판단과 다음 실행",
+      "재현과 결과 파일",
+      "학습된 모델로 추론만 실행"
+    ],
+    "brokenImages": 0,
+    "imageCount": 4,
+    "overflow": false,
+    "selects": [
+      {
+        "id": "forecastModel",
+        "options": 8
+      }
+    ],
+    "replacementCharacters": false,
+    "interaction": {
+      "selected": "xgboost",
+      "svgUpdated": true
+    },
+    "compactOverflow": false,
+    "errors": []
+  },
+  "diagnosis_reload_and_cli": {
+    "full_test_reload_repair": [
+      {
+        "model": "xgb_rule_distillation",
+        "old_saved_flag_count": 36192,
+        "new_saved_flag_count": 219,
+        "metadata_alarm_count": 219,
+        "recomputed_vs_prior_metrics_max_absdiff": 0.0,
+        "threshold": 0.47502279281616216
+      },
+      {
+        "model": "xgb_rule_sensor_excluded_transfer",
+        "old_saved_flag_count": 139,
+        "new_saved_flag_count": 125,
+        "metadata_alarm_count": 125,
+        "recomputed_vs_prior_metrics_max_absdiff": 0.0,
+        "threshold": 0.521167278289795
+      },
+      {
+        "model": "ae_unsupervised_all_training",
+        "old_saved_flag_count": 219,
+        "new_saved_flag_count": 219,
+        "metadata_alarm_count": 219,
+        "recomputed_vs_prior_metrics_max_absdiff": 0.0,
+        "threshold": 0.30083799362182617
+      },
+      {
+        "model": "ae_weak_normal_proxy",
+        "old_saved_flag_count": 243,
+        "new_saved_flag_count": 243,
+        "metadata_alarm_count": 243,
+        "recomputed_vs_prior_metrics_max_absdiff": 0.0,
+        "threshold": 0.3080447018146515
+      }
+    ],
+    "fixed_test_row_positions": [
+      0,
+      1,
+      100,
+      1000,
+      36191
+    ],
+    "five_row_cli_summary": {
+      "input": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\diagnosis\\cli_verification\\input_5rows.csv",
+      "output": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\diagnosis\\cli_verification\\scores_5rows.csv",
+      "input_observations": 5,
+      "output_rows": 20,
+      "models": [
+        "xgb_rule_distillation",
+        "xgb_rule_sensor_excluded_transfer",
+        "ae_unsupervised_all_training",
+        "ae_weak_normal_proxy"
+      ],
+      "label_type": {
+        "xgb_rule_distillation": "weak_electrical_quality_candidate",
+        "xgb_rule_sensor_excluded_transfer": "weak_electrical_quality_candidate",
+        "ae_unsupervised_all_training": "weak_electrical_quality_candidate",
+        "ae_weak_normal_proxy": "weak_electrical_quality_candidate"
+      },
+      "interpretation": "Current electrical-quality candidate / reconstruction scores, not verified fault probabilities"
+    },
+    "five_row_checks": [
+      {
+        "model": "xgb_rule_distillation",
+        "rows": 5,
+        "score_max_absdiff": 0.0,
+        "alarms_match": true,
+        "identity_preserved": true
+      },
+      {
+        "model": "xgb_rule_sensor_excluded_transfer",
+        "rows": 5,
+        "score_max_absdiff": 0.0,
+        "alarms_match": true,
+        "identity_preserved": true
+      },
+      {
+        "model": "ae_unsupervised_all_training",
+        "rows": 5,
+        "score_max_absdiff": 7.450580596923828e-09,
+        "alarms_match": true,
+        "identity_preserved": true
+      },
+      {
+        "model": "ae_weak_normal_proxy",
+        "rows": 5,
+        "score_max_absdiff": 2.9802322387695312e-08,
+        "alarms_match": true,
+        "identity_preserved": true
+      }
+    ],
+    "no_retraining": true,
+    "original_data_unchanged": true,
+    "csv_sha256": "27685ef0e1b9a9f889d663f25482175b6f4dadcb0c5bfe8a565831bde0c889dd",
+    "invalid_input_checks": {
+      "missing_sensor": {
+        "rejected": true,
+        "message": "Input is missing required columns: voltageR"
+      },
+      "missing_identity": {
+        "rejected": true,
+        "message": "Input is missing required columns: localtime"
+      },
+      "nan_sensor": {
+        "rejected": true,
+        "message": "Missing/non-numeric/non-finite sensor currentR at input row 0"
+      },
+      "infinite_sensor": {
+        "rejected": true,
+        "message": "Missing/non-numeric/non-finite sensor activePower at input row 0"
+      },
+      "reserved_collision": {
+        "rejected": true,
+        "message": "Input has reserved output columns: score"
+      }
+    }
+  },
+  "final_artifact_links_present": true
+}

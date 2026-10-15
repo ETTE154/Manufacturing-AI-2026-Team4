@@ -1,0 +1,99 @@
+{
+  "status": "pass",
+  "requested_default_cursor": "2025-03-13 19:43",
+  "forecast_origin": "2025-03-13 19:00:00",
+  "history_end": "2025-03-13 18:00:00",
+  "future_poison_forecast_unchanged": true,
+  "modules": [
+    {
+      "module_id": "1",
+      "predicted_kwh": 3010.1089679941897,
+      "independent_prefix_fit": true
+    },
+    {
+      "module_id": "11",
+      "predicted_kwh": 3009.5740418918617,
+      "independent_prefix_fit": true
+    },
+    {
+      "module_id": "12",
+      "predicted_kwh": 3010.6207537720134,
+      "independent_prefix_fit": true
+    },
+    {
+      "module_id": "13",
+      "predicted_kwh": 3009.0063976208166,
+      "independent_prefix_fit": true
+    },
+    {
+      "module_id": "14",
+      "predicted_kwh": 3009.7222646432915,
+      "independent_prefix_fit": true
+    },
+    {
+      "module_id": "15",
+      "predicted_kwh": 3010.682026685583,
+      "independent_prefix_fit": true
+    },
+    {
+      "module_id": "16",
+      "predicted_kwh": 3009.8406813043284,
+      "independent_prefix_fit": true
+    },
+    {
+      "module_id": "17",
+      "predicted_kwh": 3010.370544340855,
+      "independent_prefix_fit": true
+    },
+    {
+      "module_id": "18",
+      "predicted_kwh": 3010.2792684603432,
+      "independent_prefix_fit": true
+    },
+    {
+      "module_id": "2",
+      "predicted_kwh": 3009.672214751385,
+      "independent_prefix_fit": true
+    },
+    {
+      "module_id": "3",
+      "predicted_kwh": 3009.352791739855,
+      "independent_prefix_fit": true
+    },
+    {
+      "module_id": "4",
+      "predicted_kwh": 3010.243788142368,
+      "independent_prefix_fit": true
+    },
+    {
+      "module_id": "5",
+      "predicted_kwh": 3010.3219643347743,
+      "independent_prefix_fit": true
+    }
+  ],
+  "cold_start_correctly_labeled": true,
+  "invalid_incomplete_or_gapped_history_rejected": true,
+  "recent_replay_metrics": {
+    "count": 168,
+    "mae_kwh": 75.33310781532951,
+    "rmse_kwh": 98.49267977304531,
+    "r2": -0.0005718879765634899,
+    "bias_pred_minus_actual_kwh": -1.791917696667042,
+    "scope": "Recent already-observed24h replay, prefix-only refit per origin",
+    "origin_count": 7,
+    "origins": [
+      "2025-03-06 19:00:00",
+      "2025-03-07 19:00:00",
+      "2025-03-08 19:00:00",
+      "2025-03-09 19:00:00",
+      "2025-03-10 19:00:00",
+      "2025-03-11 19:00:00",
+      "2025-03-12 19:00:00"
+    ],
+    "forecast_horizon_hours": 24,
+    "uses_current_future_labels": false,
+    "guarantees_next_path_accuracy": false
+  },
+  "no_April_model_loaded_for_March_replay": true,
+  "May_labels_read": false
+}

@@ -1,0 +1,20 @@
+{
+  "status": "pass",
+  "model_prediction_files_unchanged_after_May": 35,
+  "selected_model_unchanged": true,
+  "May_scoring_passes": 1,
+  "models": [
+    "baseline",
+    "arima",
+    "ridge",
+    "xgboost",
+    "patchtst",
+    "itransformer",
+    "chronos2"
+  ],
+  "PNG_visual_QA_all7": true,
+  "no_broken_Korean_or_clipped_legends": true,
+  "source_labels_not_rescaled": true,
+  "dashboard_models": 7,
+  "dashboard_series_rows": 505
+}

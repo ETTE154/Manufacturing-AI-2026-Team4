@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "exact_user_selected_gpt5mini",
+      "passed": true
+    },
+    {
+      "name": "responses_store_false",
+      "passed": true
+    },
+    {
+      "name": "strict_json_schema",
+      "passed": true
+    },
+    {
+      "name": "structured_response_parse",
+      "passed": true
+    },
+    {
+      "name": "slack_synthetic_provenance_in_message",
+      "passed": true
+    },
+    {
+      "name": "slack_no_confirmed_fault_claim",
+      "passed": true
+    },
+    {
+      "name": "slack_block_kit_payload",
+      "passed": true
+    },
+    {
+      "name": "openai_401_error_redacted",
+      "passed": true
+    }
+  ],
+  "network_requests": 0,
+  "real_openai_generation_verified": false,
+  "real_slack_delivery_verified": false,
+  "credentials": "synthetic placeholders only"
+}

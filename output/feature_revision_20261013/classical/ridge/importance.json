@@ -1,0 +1,44 @@
+{
+  "inner_fit_end": "2025-03-24 23:00:00",
+  "diagnostic_target_start": "2025-03-25 00:00:00",
+  "diagnostic_target_end": "2025-03-31 23:00:00",
+  "not_used_for_config_selection": true,
+  "sensor_selection": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\classical\\ridge\\importance_inner_selection.json",
+  "permutation": "Shuffle whole24-hour feature blocks across seven chronological holdout days, preserving hour phase; five repeats per group.",
+  "base_mae_kwh": 76.61176229622131,
+  "groups": [
+    {
+      "group": "all_sensor_lags",
+      "columns": 806,
+      "baseline_inner_mae_kwh": 76.61176229622131,
+      "permuted_delta_mae_kwh_mean": 0.08272332508472288,
+      "permuted_delta_mae_kwh_std": 0.0331589407027113,
+      "repeats": 5
+    },
+    {
+      "group": "calendar",
+      "columns": 6,
+      "baseline_inner_mae_kwh": 76.61176229622131,
+      "permuted_delta_mae_kwh_mean": -0.010152348800565392,
+      "permuted_delta_mae_kwh_std": 0.0046165434933464625,
+      "repeats": 5
+    },
+    {
+      "group": "module_energy13_history",
+      "columns": 52,
+      "baseline_inner_mae_kwh": 76.61176229622131,
+      "permuted_delta_mae_kwh_mean": -0.0006457563535974487,
+      "permuted_delta_mae_kwh_std": 0.010640148253092547,
+      "repeats": 5
+    },
+    {
+      "group": "target_history",
+      "columns": 10,
+      "baseline_inner_mae_kwh": 76.61176229622131,
+      "permuted_delta_mae_kwh_mean": 0.0021447418187364063,
+      "permuted_delta_mae_kwh_std": 0.004079834959049973,
+      "repeats": 5
+    }
+  ],
+  "caution": "Correlated groups can substitute; negative differences indicate noise/harm in this diagnostic. This is association and conditional predictive reliance, not causality."
+}

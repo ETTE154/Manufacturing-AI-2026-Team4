@@ -1,0 +1,276 @@
+{
+  "source": "E:\\AI work\\AWS_프로젝트\\traing-dataset\\rtu_data_full.csv",
+  "source_rows_read": 33696013,
+  "sample_rows": 187200,
+  "seed": 20261011,
+  "sampling": "Each module x complete localtime hour: four unique 5-second slots selected uniformly without replacement with deterministic stratum seed; no candidate oversampling",
+  "inclusion_probability_per_full_hour": 0.005555555555555556,
+  "complete_strata": 46800,
+  "partial_2025_04_30_endpoint_excluded": true,
+  "timezone": "Guide localtime; Unix timestamp mismatches audited previously",
+  "splits": [
+    {
+      "split": "train",
+      "rows": 112320,
+      "candidate_rows": 232,
+      "first": "2024-12-01 00:01:00",
+      "last": "2025-02-28 23:59:05",
+      "candidate_rate": 0.0020655270655270657
+    },
+    {
+      "split": "validation",
+      "rows": 38688,
+      "candidate_rows": 66,
+      "first": "2025-03-01 00:02:40",
+      "last": "2025-03-31 23:58:30",
+      "candidate_rate": 0.001705955334987593
+    },
+    {
+      "split": "test",
+      "rows": 36192,
+      "candidate_rows": 55,
+      "first": "2025-04-01 00:02:25",
+      "last": "2025-04-29 23:57:25",
+      "candidate_rate": 0.0015196728558797524
+    }
+  ],
+  "candidate_by_module_split": [
+    {
+      "split": "test",
+      "module(equipment)": "1(PM-3)",
+      "size": 2784,
+      "sum": 0
+    },
+    {
+      "split": "test",
+      "module(equipment)": "11(우측분전반1)",
+      "size": 2784,
+      "sum": 0
+    },
+    {
+      "split": "test",
+      "module(equipment)": "12(4호기)",
+      "size": 2784,
+      "sum": 0
+    },
+    {
+      "split": "test",
+      "module(equipment)": "13(3호기)",
+      "size": 2784,
+      "sum": 12
+    },
+    {
+      "split": "test",
+      "module(equipment)": "14(2호기)",
+      "size": 2784,
+      "sum": 0
+    },
+    {
+      "split": "test",
+      "module(equipment)": "15(예비건조기)",
+      "size": 2784,
+      "sum": 23
+    },
+    {
+      "split": "test",
+      "module(equipment)": "16(호이스트)",
+      "size": 2784,
+      "sum": 0
+    },
+    {
+      "split": "test",
+      "module(equipment)": "17(6호기)",
+      "size": 2784,
+      "sum": 20
+    },
+    {
+      "split": "test",
+      "module(equipment)": "18(우측분전반2)",
+      "size": 2784,
+      "sum": 0
+    },
+    {
+      "split": "test",
+      "module(equipment)": "2(L-1전등)",
+      "size": 2784,
+      "sum": 0
+    },
+    {
+      "split": "test",
+      "module(equipment)": "3(분쇄기(2))",
+      "size": 2784,
+      "sum": 0
+    },
+    {
+      "split": "test",
+      "module(equipment)": "4(분쇄기(1))",
+      "size": 2784,
+      "sum": 0
+    },
+    {
+      "split": "test",
+      "module(equipment)": "5(좌측분전반)",
+      "size": 2784,
+      "sum": 0
+    },
+    {
+      "split": "train",
+      "module(equipment)": "1(PM-3)",
+      "size": 8640,
+      "sum": 0
+    },
+    {
+      "split": "train",
+      "module(equipment)": "11(우측분전반1)",
+      "size": 8640,
+      "sum": 0
+    },
+    {
+      "split": "train",
+      "module(equipment)": "12(4호기)",
+      "size": 8640,
+      "sum": 0
+    },
+    {
+      "split": "train",
+      "module(equipment)": "13(3호기)",
+      "size": 8640,
+      "sum": 40
+    },
+    {
+      "split": "train",
+      "module(equipment)": "14(2호기)",
+      "size": 8640,
+      "sum": 0
+    },
+    {
+      "split": "train",
+      "module(equipment)": "15(예비건조기)",
+      "size": 8640,
+      "sum": 102
+    },
+    {
+      "split": "train",
+      "module(equipment)": "16(호이스트)",
+      "size": 8640,
+      "sum": 0
+    },
+    {
+      "split": "train",
+      "module(equipment)": "17(6호기)",
+      "size": 8640,
+      "sum": 90
+    },
+    {
+      "split": "train",
+      "module(equipment)": "18(우측분전반2)",
+      "size": 8640,
+      "sum": 0
+    },
+    {
+      "split": "train",
+      "module(equipment)": "2(L-1전등)",
+      "size": 8640,
+      "sum": 0
+    },
+    {
+      "split": "train",
+      "module(equipment)": "3(분쇄기(2))",
+      "size": 8640,
+      "sum": 0
+    },
+    {
+      "split": "train",
+      "module(equipment)": "4(분쇄기(1))",
+      "size": 8640,
+      "sum": 0
+    },
+    {
+      "split": "train",
+      "module(equipment)": "5(좌측분전반)",
+      "size": 8640,
+      "sum": 0
+    },
+    {
+      "split": "validation",
+      "module(equipment)": "1(PM-3)",
+      "size": 2976,
+      "sum": 0
+    },
+    {
+      "split": "validation",
+      "module(equipment)": "11(우측분전반1)",
+      "size": 2976,
+      "sum": 0
+    },
+    {
+      "split": "validation",
+      "module(equipment)": "12(4호기)",
+      "size": 2976,
+      "sum": 0
+    },
+    {
+      "split": "validation",
+      "module(equipment)": "13(3호기)",
+      "size": 2976,
+      "sum": 8
+    },
+    {
+      "split": "validation",
+      "module(equipment)": "14(2호기)",
+      "size": 2976,
+      "sum": 0
+    },
+    {
+      "split": "validation",
+      "module(equipment)": "15(예비건조기)",
+      "size": 2976,
+      "sum": 26
+    },
+    {
+      "split": "validation",
+      "module(equipment)": "16(호이스트)",
+      "size": 2976,
+      "sum": 0
+    },
+    {
+      "split": "validation",
+      "module(equipment)": "17(6호기)",
+      "size": 2976,
+      "sum": 32
+    },
+    {
+      "split": "validation",
+      "module(equipment)": "18(우측분전반2)",
+      "size": 2976,
+      "sum": 0
+    },
+    {
+      "split": "validation",
+      "module(equipment)": "2(L-1전등)",
+      "size": 2976,
+      "sum": 0
+    },
+    {
+      "split": "validation",
+      "module(equipment)": "3(분쇄기(2))",
+      "size": 2976,
+      "sum": 0
+    },
+    {
+      "split": "validation",
+      "module(equipment)": "4(분쇄기(1))",
+      "size": 2976,
+      "sum": 0
+    },
+    {
+      "split": "validation",
+      "module(equipment)": "5(좌측분전반)",
+      "size": 2976,
+      "sum": 0
+    }
+  ],
+  "weak_rule": "phase voltage outside [205,225] V; phase PF outside [80,100]%; negative current/power or operation outside {0,1}",
+  "label_limit": "Weak electrical-quality candidate, not verified fault or true injected-anomaly label",
+  "elapsed_seconds": 64.06299999996554
+}

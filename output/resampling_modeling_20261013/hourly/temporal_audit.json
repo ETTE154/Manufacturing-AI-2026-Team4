@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "group": "H",
+      "future_poison_max_absdiff": 0.0,
+      "features": 18
+    },
+    {
+      "group": "HD",
+      "future_poison_max_absdiff": 0.0,
+      "features": 23
+    },
+    {
+      "group": "HDW",
+      "future_poison_max_absdiff": 0.0,
+      "features": 27
+    },
+    {
+      "group": "HDWM",
+      "future_poison_max_absdiff": 0.0,
+      "features": 34
+    },
+    {
+      "group": "H_previous_history_only",
+      "future_poison_max_absdiff": 0.0,
+      "features": 11
+    }
+  ],
+  "source_step_seconds": 5,
+  "model_step_hours": 1,
+  "available_at_rule": "Completed hour/day/week/month has endexclusive<=forecast origin; partial boundary periods are excluded.",
+  "training_label_rule": "Historical direct origins use only pos+offset<len(fitting_prefix); no forecast label crosses prefix end.",
+  "fallback": "Early missing complete month/week replaced with this prefix mean and explicitmissing/support flags.",
+  "global_resampling_used_for_predictor_fit": false,
+  "future_period_measurements_used": false
+}

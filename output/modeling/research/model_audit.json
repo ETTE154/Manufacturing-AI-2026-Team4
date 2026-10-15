@@ -1,0 +1,878 @@
+{
+  "reviewed_at": "2026-10-11T13:40:16.310023+00:00",
+  "scope": "Read-only code and small-artifact audit. No raw 4.9GB CSV reread, no re-training, no model-code changes by auditor.",
+  "status": "complete",
+  "source_code_snapshots": [
+    {
+      "path": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\common.py",
+      "sha256": "f09ae3a1a1babcbf285081b6ec789fff9ec1921d104705a0c27226f61e327ca4"
+    },
+    {
+      "path": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\arima_xgb.py",
+      "sha256": "008ac97dd29af0033dffc8ea69994f79092ed9ecaa69d3599f083e0f7aafd370"
+    },
+    {
+      "path": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\run_forecasts.py",
+      "sha256": "21d4214d8fd3269dcc36a8bb7d325921a4b0ed9cc94819c659a826cc0f142ca9"
+    },
+    {
+      "path": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\evaluate_may_from_lock.py",
+      "sha256": "08cbcccfb64c3fb87780c3dec6cceb5dca418f98900fef7e0b1ee19708e201a2"
+    },
+    {
+      "path": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\itransformer_experiment.py",
+      "sha256": "7979ba8812ad7980a69fd9084d383dbfc3e962788a9e66ce78e6753a9642d25d"
+    },
+    {
+      "path": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\chronos2_experiment.py",
+      "sha256": "5b1da3081c8a973236e11cbb231fd0682f2d6dde6989e63222f3faf82e4035a6"
+    },
+    {
+      "path": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\patchtst\\train_patchtst.py",
+      "sha256": "15eb4d3d8b6e2c22d1043e9ef766d5f182a875b8ebb5c09078195f1ec9386574"
+    }
+  ],
+  "findings": [
+    {
+      "id": "architecture",
+      "status": "pass",
+      "evidence": "PatchTST pinned official supervised core, namespace-only changes; compact univariate aggregate L168/1 layer/d_model32 selected. iTransformer pinned official model + FullAttention, namespace and unused Reformer lazy import changes, past13 module variates L168/1 layer/d_model32. Both locally retrained compact architectures, not published benchmark-score reproductions.",
+      "itransformer_source_hashes": [
+        {
+          "path": "model/iTransformer.py",
+          "matches_recorded_local_hash": true
+        },
+        {
+          "path": "layers/Embed.py",
+          "matches_recorded_local_hash": true
+        },
+        {
+          "path": "layers/SelfAttention_Family.py",
+          "matches_recorded_local_hash": true
+        },
+        {
+          "path": "layers/Transformer_EncDec.py",
+          "matches_recorded_local_hash": true
+        },
+        {
+          "path": "utils/masking.py",
+          "matches_recorded_local_hash": true
+        },
+        {
+          "path": "LICENSE",
+          "matches_recorded_local_hash": true
+        }
+      ]
+    },
+    {
+      "id": "blocked_selection",
+      "status": "pass",
+      "evidence": "Feb25 validation, Mar29 internal test. Config/epoch selected only on validation; neural epoch uses pre-validation inner P745 tail with fitting labels ending before its first label. Scalers fit only supplied fitting history. May labels read only after concrete full-path forecasts. Prior May EDA disclosure is present."
+    },
+    {
+      "id": "future_features",
+      "status": "pass",
+      "evidence": "XGBoost pooled direct origin-frozen lag/rolling features and future calendar. Every historical target remains inside current history. iTransformer and PatchTST consume past observations only; Chronos univariate input only. No future sensor/actual energy values appear in future feature construction."
+    },
+    {
+      "id": "horizon",
+      "status": "pass",
+      "evidence": "P745 future_index uses origin firstunobserved offset0..744; conventional H96 is prefix0..95. May Apr30 00 origin includes 240-hour unlabelled bridge and final labelsMay10~May31 offsets240..744. All reviewed internal CSV paths are745 unique aligned rows with leads1..745."
+    },
+    {
+      "id": "forecast_clock",
+      "status": "pass",
+      "evidence": "Forecast index is derived from fixed origins/last observed hour plus1h. Wall clock only used for runtime timing(monotonic/perf_counter), not date features or target boundaries. Torch training seed2026 and deterministic_algorithms true for both locallytrained neural models; XGB random_state42."
+    },
+    {
+      "id": "reload",
+      "status": "pass_for_neural_internal_checkpoints",
+      "evidence": [
+        {
+          "model": "iTransformer",
+          "split": "validation",
+          "reload_csv_max_absdiff": 7.275957614183426e-12,
+          "repeat_inference_max_absdiff": 0.0,
+          "seed": 2026,
+          "history_end": "2025-02-24 23:00:00"
+        },
+        {
+          "model": "PatchTST",
+          "split": "validation",
+          "reload_csv_max_absdiff": 7.275957614183426e-12,
+          "repeat_inference_max_absdiff": 0.0,
+          "seed": 2026,
+          "history_end": "2025-02-24 23:00:00"
+        },
+        {
+          "model": "iTransformer",
+          "split": "internal_test",
+          "reload_csv_max_absdiff": 7.275957614183426e-12,
+          "repeat_inference_max_absdiff": 0.0,
+          "seed": 2026,
+          "history_end": "2025-03-28 23:00:00"
+        },
+        {
+          "model": "PatchTST",
+          "split": "internal_test",
+          "reload_csv_max_absdiff": 7.275957614183426e-12,
+          "repeat_inference_max_absdiff": 0.0,
+          "seed": 2026,
+          "history_end": "2025-03-28 23:00:00"
+        }
+      ],
+      "limitation": "Final native ARIMA/XGB reload checks are recorded in native_reload_metadata and are separately verified by the implementing team. This auditor directly reloaded validation/internal-test iTransformer and PatchTST checkpoints."
+    },
+    {
+      "id": "chronos_point",
+      "status": "pass",
+      "package": "chronos-forecasting==2.3.2",
+      "installed_source": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\.venv\\Lib\\site-packages\\chronos\\chronos2\\pipeline.py",
+      "source_lines": {
+        "predict_quantiles_median_note": 817,
+        "median_quantile_selection": 818,
+        "predict_df_predictions_assignment": 956
+      },
+      "definition": "predict_df predictions are 0.5 quantile median. Local variable is named mean but actual arithmetic mean is not returned. predictions and q05 columns have max absolute difference0 in reviewed CSV.",
+      "immutable_revision": "29ec3766d36d6f73f0696f85560a422f50e8498c"
+    },
+    {
+      "id": "late505_reporting",
+      "status": "recommendation_implemented_in_parent_comparison",
+      "evidence": "Internal P745 full scores include near-term offsets0..239 absent from final May scoring. Also report LateP505 offsets240..744, preserving current P745 selection lock. Do not re-select on internal test/May tail."
+    },
+    {
+      "id": "comparability",
+      "status": "pass_with_disclosure",
+      "evidence": "iTransformer uses13 module histories while others are aggregate univariate or origin calendar. Same target but different past input scope; preserve explicit disclosure. SOTA-era source papers do not imply newest2026 universal superiority."
+    }
+  ],
+  "independently_recomputed_internal_metrics": [
+    {
+      "model": "arima",
+      "split": "internal_test",
+      "source": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\internal_predictions.csv",
+      "source_sha256": "9510891f2cb5cedede46a811b0a1c03191e1e4787c0173ef51c7a76cb4d822f2",
+      "full_P745": {
+        "count": 745,
+        "mae_kwh": 78.2290976452165,
+        "rmse_kwh": 97.06757568504624
+      },
+      "late_P505": {
+        "count": 505,
+        "offsets": "240..744",
+        "mae_kwh": 77.99724632337082
+      },
+      "finite": true
+    },
+    {
+      "model": "arima",
+      "split": "validation",
+      "source": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\internal_predictions.csv",
+      "source_sha256": "9510891f2cb5cedede46a811b0a1c03191e1e4787c0173ef51c7a76cb4d822f2",
+      "full_P745": {
+        "count": 745,
+        "mae_kwh": 76.03288894159851,
+        "rmse_kwh": 96.70571032200458
+      },
+      "late_P505": {
+        "count": 505,
+        "offsets": "240..744",
+        "mae_kwh": 77.42442948559966
+      },
+      "finite": true
+    },
+    {
+      "model": "baseline_hour_mean",
+      "split": "internal_test",
+      "source": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\internal_predictions.csv",
+      "source_sha256": "9510891f2cb5cedede46a811b0a1c03191e1e4787c0173ef51c7a76cb4d822f2",
+      "full_P745": {
+        "count": 745,
+        "mae_kwh": 78.69151230030086,
+        "rmse_kwh": 97.72872959706915
+      },
+      "late_P505": {
+        "count": 505,
+        "offsets": "240..744",
+        "mae_kwh": 78.86717341859196
+      },
+      "finite": true
+    },
+    {
+      "model": "baseline_hour_mean",
+      "split": "validation",
+      "source": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\internal_predictions.csv",
+      "source_sha256": "9510891f2cb5cedede46a811b0a1c03191e1e4787c0173ef51c7a76cb4d822f2",
+      "full_P745": {
+        "count": 745,
+        "mae_kwh": 76.31152954754344,
+        "rmse_kwh": 97.04244119486681
+      },
+      "late_P505": {
+        "count": 505,
+        "offsets": "240..744",
+        "mae_kwh": 77.64655140583804
+      },
+      "finite": true
+    },
+    {
+      "model": "baseline_last_week_mean",
+      "split": "internal_test",
+      "source": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\internal_predictions.csv",
+      "source_sha256": "9510891f2cb5cedede46a811b0a1c03191e1e4787c0173ef51c7a76cb4d822f2",
+      "full_P745": {
+        "count": 745,
+        "mae_kwh": 78.31302272058409,
+        "rmse_kwh": 97.19923853277385
+      },
+      "late_P505": {
+        "count": 505,
+        "offsets": "240..744",
+        "mae_kwh": 77.94163100362114
+      },
+      "finite": true
+    },
+    {
+      "model": "baseline_last_week_mean",
+      "split": "validation",
+      "source": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\internal_predictions.csv",
+      "source_sha256": "9510891f2cb5cedede46a811b0a1c03191e1e4787c0173ef51c7a76cb4d822f2",
+      "full_P745": {
+        "count": 745,
+        "mae_kwh": 76.21042641119314,
+        "rmse_kwh": 96.91697521547931
+      },
+      "late_P505": {
+        "count": 505,
+        "offsets": "240..744",
+        "mae_kwh": 77.5754444285644
+      },
+      "finite": true
+    },
+    {
+      "model": "baseline_mean",
+      "split": "internal_test",
+      "source": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\internal_predictions.csv",
+      "source_sha256": "9510891f2cb5cedede46a811b0a1c03191e1e4787c0173ef51c7a76cb4d822f2",
+      "full_P745": {
+        "count": 745,
+        "mae_kwh": 78.2290977458531,
+        "rmse_kwh": 97.06757582591533
+      },
+      "late_P505": {
+        "count": 505,
+        "offsets": "240..744",
+        "mae_kwh": 77.99724622179026
+      },
+      "finite": true
+    },
+    {
+      "model": "baseline_mean",
+      "split": "validation",
+      "source": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\internal_predictions.csv",
+      "source_sha256": "9510891f2cb5cedede46a811b0a1c03191e1e4787c0173ef51c7a76cb4d822f2",
+      "full_P745": {
+        "count": 745,
+        "mae_kwh": 76.03288890378326,
+        "rmse_kwh": 96.70571031297649
+      },
+      "late_P505": {
+        "count": 505,
+        "offsets": "240..744",
+        "mae_kwh": 77.42442945212755
+      },
+      "finite": true
+    },
+    {
+      "model": "baseline_median",
+      "split": "internal_test",
+      "source": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\internal_predictions.csv",
+      "source_sha256": "9510891f2cb5cedede46a811b0a1c03191e1e4787c0173ef51c7a76cb4d822f2",
+      "full_P745": {
+        "count": 745,
+        "mae_kwh": 78.21243928038771,
+        "rmse_kwh": 97.04482463863368
+      },
+      "late_P505": {
+        "count": 505,
+        "offsets": "240..744",
+        "mae_kwh": 78.01765827832762
+      },
+      "finite": true
+    },
+    {
+      "model": "baseline_median",
+      "split": "validation",
+      "source": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\internal_predictions.csv",
+      "source_sha256": "9510891f2cb5cedede46a811b0a1c03191e1e4787c0173ef51c7a76cb4d822f2",
+      "full_P745": {
+        "count": 745,
+        "mae_kwh": 76.03986672259501,
+        "rmse_kwh": 96.71068172257685
+      },
+      "late_P505": {
+        "count": 505,
+        "offsets": "240..744",
+        "mae_kwh": 77.42940651815168
+      },
+      "finite": true
+    },
+    {
+      "model": "baseline_seasonal_168",
+      "split": "internal_test",
+      "source": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\internal_predictions.csv",
+      "source_sha256": "9510891f2cb5cedede46a811b0a1c03191e1e4787c0173ef51c7a76cb4d822f2",
+      "full_P745": {
+        "count": 745,
+        "mae_kwh": 110.2957831655479,
+        "rmse_kwh": 141.18474391246482
+      },
+      "late_P505": {
+        "count": 505,
+        "offsets": "240..744",
+        "mae_kwh": 110.65923932893264
+      },
+      "finite": true
+    },
+    {
+      "model": "baseline_seasonal_168",
+      "split": "validation",
+      "source": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\internal_predictions.csv",
+      "source_sha256": "9510891f2cb5cedede46a811b0a1c03191e1e4787c0173ef51c7a76cb4d822f2",
+      "full_P745": {
+        "count": 745,
+        "mae_kwh": 108.26143178598068,
+        "rmse_kwh": 138.89715133102303
+      },
+      "late_P505": {
+        "count": 505,
+        "offsets": "240..744",
+        "mae_kwh": 107.09025866336626
+      },
+      "finite": true
+    },
+    {
+      "model": "baseline_seasonal_24",
+      "split": "internal_test",
+      "source": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\internal_predictions.csv",
+      "source_sha256": "9510891f2cb5cedede46a811b0a1c03191e1e4787c0173ef51c7a76cb4d822f2",
+      "full_P745": {
+        "count": 745,
+        "mae_kwh": 111.9074159768826,
+        "rmse_kwh": 141.92640361672778
+      },
+      "late_P505": {
+        "count": 505,
+        "offsets": "240..744",
+        "mae_kwh": 111.0071938118808
+      },
+      "finite": true
+    },
+    {
+      "model": "baseline_seasonal_24",
+      "split": "validation",
+      "source": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\internal_predictions.csv",
+      "source_sha256": "9510891f2cb5cedede46a811b0a1c03191e1e4787c0173ef51c7a76cb4d822f2",
+      "full_P745": {
+        "count": 745,
+        "mae_kwh": 125.07380764354927,
+        "rmse_kwh": 154.7980411915652
+      },
+      "late_P505": {
+        "count": 505,
+        "offsets": "240..744",
+        "mae_kwh": 128.79555154015372
+      },
+      "finite": true
+    },
+    {
+      "model": "baseline_weekday_hour_mean",
+      "split": "internal_test",
+      "source": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\internal_predictions.csv",
+      "source_sha256": "9510891f2cb5cedede46a811b0a1c03191e1e4787c0173ef51c7a76cb4d822f2",
+      "full_P745": {
+        "count": 745,
+        "mae_kwh": 80.12431032475486,
+        "rmse_kwh": 99.79905800737717
+      },
+      "late_P505": {
+        "count": 505,
+        "offsets": "240..744",
+        "mae_kwh": 79.80302825998594
+      },
+      "finite": true
+    },
+    {
+      "model": "baseline_weekday_hour_mean",
+      "split": "validation",
+      "source": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\internal_predictions.csv",
+      "source_sha256": "9510891f2cb5cedede46a811b0a1c03191e1e4787c0173ef51c7a76cb4d822f2",
+      "full_P745": {
+        "count": 745,
+        "mae_kwh": 78.73614749230389,
+        "rmse_kwh": 100.37015841557402
+      },
+      "late_P505": {
+        "count": 505,
+        "offsets": "240..744",
+        "mae_kwh": 79.46895310587159
+      },
+      "finite": true
+    },
+    {
+      "model": "xgboost",
+      "split": "internal_test",
+      "source": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\internal_predictions.csv",
+      "source_sha256": "9510891f2cb5cedede46a811b0a1c03191e1e4787c0173ef51c7a76cb4d822f2",
+      "full_P745": {
+        "count": 745,
+        "mae_kwh": 78.87987699762503,
+        "rmse_kwh": 97.74894511783965
+      },
+      "late_P505": {
+        "count": 505,
+        "offsets": "240..744",
+        "mae_kwh": 78.6719900375643
+      },
+      "finite": true
+    },
+    {
+      "model": "xgboost",
+      "split": "validation",
+      "source": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\internal_predictions.csv",
+      "source_sha256": "9510891f2cb5cedede46a811b0a1c03191e1e4787c0173ef51c7a76cb4d822f2",
+      "full_P745": {
+        "count": 745,
+        "mae_kwh": 76.4007505745958,
+        "rmse_kwh": 97.24047359171897
+      },
+      "late_P505": {
+        "count": 505,
+        "offsets": "240..744",
+        "mae_kwh": 77.72185285460326
+      },
+      "finite": true
+    },
+    {
+      "model": "iTransformer",
+      "split": "internal_test",
+      "source": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\itransformer\\internal_predictions.csv",
+      "source_sha256": "da2435d59ecefe5ea11ec127fe2369e49993b4b8c28dcf6f532f58d36a0cbc16",
+      "full_P745": {
+        "count": 745,
+        "mae_kwh": 78.68854036578583,
+        "rmse_kwh": 97.43240951996297
+      },
+      "late_P505": {
+        "count": 505,
+        "offsets": "240..744",
+        "mae_kwh": 78.617437694958
+      },
+      "finite": true
+    },
+    {
+      "model": "iTransformer",
+      "split": "validation",
+      "source": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\itransformer\\internal_predictions.csv",
+      "source_sha256": "da2435d59ecefe5ea11ec127fe2369e49993b4b8c28dcf6f532f58d36a0cbc16",
+      "full_P745": {
+        "count": 745,
+        "mae_kwh": 76.42929912844771,
+        "rmse_kwh": 97.13155234102905
+      },
+      "late_P505": {
+        "count": 505,
+        "offsets": "240..744",
+        "mae_kwh": 78.1332252126748
+      },
+      "finite": true
+    },
+    {
+      "model": "Chronos-2",
+      "split": "internal_test",
+      "source": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\chronos2\\internal_predictions.csv",
+      "source_sha256": "64e886d48fd4e814b5ddc6c6dfd47c6be2543a8a3f9362323015afc108a8fbe7",
+      "full_P745": {
+        "count": 745,
+        "mae_kwh": 78.27075179436974,
+        "rmse_kwh": 97.13325947349067
+      },
+      "late_P505": {
+        "count": 505,
+        "offsets": "240..744",
+        "mae_kwh": 77.90460094884482
+      },
+      "finite": true,
+      "prediction_q05_max_absdiff": 0.0
+    },
+    {
+      "model": "Chronos-2",
+      "split": "validation",
+      "source": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\chronos2\\internal_predictions.csv",
+      "source_sha256": "64e886d48fd4e814b5ddc6c6dfd47c6be2543a8a3f9362323015afc108a8fbe7",
+      "full_P745": {
+        "count": 745,
+        "mae_kwh": 76.01094547912001,
+        "rmse_kwh": 96.70013344097195
+      },
+      "late_P505": {
+        "count": 505,
+        "offsets": "240..744",
+        "mae_kwh": 77.41589690594049
+      },
+      "finite": true,
+      "prediction_q05_max_absdiff": 0.0
+    },
+    {
+      "model": "patchtst",
+      "split": "internal_test",
+      "source": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\patchtst\\internal_predictions.csv",
+      "source_sha256": "12390c298d6503af1a52e43c6c507a832f9f99e2721d4a203b05cd43663c4340",
+      "full_P745": {
+        "count": 745,
+        "mae_kwh": 80.88516937667835,
+        "rmse_kwh": 101.32876307128234
+      },
+      "late_P505": {
+        "count": 505,
+        "offsets": "240..744",
+        "mae_kwh": 80.63686661219471
+      },
+      "finite": true
+    },
+    {
+      "model": "patchtst",
+      "split": "validation",
+      "source": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\patchtst\\internal_predictions.csv",
+      "source_sha256": "12390c298d6503af1a52e43c6c507a832f9f99e2721d4a203b05cd43663c4340",
+      "full_P745": {
+        "count": 745,
+        "mae_kwh": 78.92861618814514,
+        "rmse_kwh": 99.72256947984424
+      },
+      "late_P505": {
+        "count": 505,
+        "offsets": "240..744",
+        "mae_kwh": 80.26825175877185
+      },
+      "finite": true
+    }
+  ],
+  "selected_iTransformer": {
+    "seq_len": 168,
+    "epochs": 18,
+    "seed": 2026,
+    "input": "Past13 module hourly energy, outputs summed"
+  },
+  "recommendations": [
+    "Include internal late505 appendix and keep selected model frozen.",
+    "Record native save-reload checks for ARIMA/XGB and final neural artifacts.",
+    "Preserve exact point-forecast median definition and float64 output serialization for Chronos.",
+    "Enforce saved source SHA/protocol in final pipeline so later edited aggregates do not silently drift."
+  ],
+  "comparison_consistency_checks": [
+    {
+      "model": "arima",
+      "split": "internal_test",
+      "full_mae_delta": 0.0,
+      "tail_mae_delta": 0.0
+    },
+    {
+      "model": "arima",
+      "split": "validation",
+      "full_mae_delta": 0.0,
+      "tail_mae_delta": 0.0
+    },
+    {
+      "model": "baseline_mean",
+      "split": "internal_test",
+      "full_mae_delta": 0.0,
+      "tail_mae_delta": 0.0
+    },
+    {
+      "model": "baseline_mean",
+      "split": "validation",
+      "full_mae_delta": 0.0,
+      "tail_mae_delta": 0.0
+    },
+    {
+      "model": "baseline_median",
+      "split": "internal_test",
+      "full_mae_delta": 0.0,
+      "tail_mae_delta": 0.0
+    },
+    {
+      "model": "baseline_median",
+      "split": "validation",
+      "full_mae_delta": 0.0,
+      "tail_mae_delta": 0.0
+    },
+    {
+      "model": "baseline_weekday_hour_mean",
+      "split": "internal_test",
+      "full_mae_delta": 2.4158453015843406e-13,
+      "tail_mae_delta": 0.0
+    },
+    {
+      "model": "baseline_weekday_hour_mean",
+      "split": "validation",
+      "full_mae_delta": 8.526512829121202e-14,
+      "tail_mae_delta": 0.0
+    },
+    {
+      "model": "xgboost",
+      "split": "internal_test",
+      "full_mae_delta": 1.4210854715202004e-14,
+      "tail_mae_delta": 0.0
+    },
+    {
+      "model": "xgboost",
+      "split": "validation",
+      "full_mae_delta": 7.105427357601002e-14,
+      "tail_mae_delta": 0.0
+    },
+    {
+      "model": "patchtst",
+      "split": "internal_test",
+      "full_mae_delta": 0.0,
+      "tail_mae_delta": 0.0
+    },
+    {
+      "model": "patchtst",
+      "split": "validation",
+      "full_mae_delta": 2.1316282072803006e-13,
+      "tail_mae_delta": 0.0
+    },
+    {
+      "model": "iTransformer",
+      "split": "internal_test",
+      "full_mae_delta": 9.947598300641403e-14,
+      "tail_mae_delta": 0.0
+    },
+    {
+      "model": "iTransformer",
+      "split": "validation",
+      "full_mae_delta": 1.1368683772161603e-13,
+      "tail_mae_delta": 0.0
+    },
+    {
+      "model": "Chronos-2",
+      "split": "internal_test",
+      "full_mae_delta": 0.0,
+      "tail_mae_delta": 0.0
+    },
+    {
+      "model": "Chronos-2",
+      "split": "validation",
+      "full_mae_delta": 0.0,
+      "tail_mae_delta": 0.0
+    }
+  ],
+  "native_reload_metadata": [
+    {
+      "metadata": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\saved_models\\final_arima_metadata.json",
+      "reported_reload_max_absdiff": 0.0,
+      "reported_rows": 745,
+      "independently_executed_by_this_auditor": false
+    },
+    {
+      "metadata": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\saved_models\\final_xgboost_metadata.json",
+      "reported_reload_max_absdiff": 0.0,
+      "reported_rows": 745,
+      "independently_executed_by_this_auditor": false
+    }
+  ],
+  "diagnosis_cli_and_precision_repair": {
+    "full_test_reload_repair": [
+      {
+        "model": "xgb_rule_distillation",
+        "old_saved_flag_count": 36192,
+        "new_saved_flag_count": 219,
+        "metadata_alarm_count": 219,
+        "recomputed_vs_prior_metrics_max_absdiff": 0.0,
+        "threshold": 0.47502279281616216
+      },
+      {
+        "model": "xgb_rule_sensor_excluded_transfer",
+        "old_saved_flag_count": 139,
+        "new_saved_flag_count": 125,
+        "metadata_alarm_count": 125,
+        "recomputed_vs_prior_metrics_max_absdiff": 0.0,
+        "threshold": 0.521167278289795
+      },
+      {
+        "model": "ae_unsupervised_all_training",
+        "old_saved_flag_count": 219,
+        "new_saved_flag_count": 219,
+        "metadata_alarm_count": 219,
+        "recomputed_vs_prior_metrics_max_absdiff": 0.0,
+        "threshold": 0.30083799362182617
+      },
+      {
+        "model": "ae_weak_normal_proxy",
+        "old_saved_flag_count": 243,
+        "new_saved_flag_count": 243,
+        "metadata_alarm_count": 243,
+        "recomputed_vs_prior_metrics_max_absdiff": 0.0,
+        "threshold": 0.3080447018146515
+      }
+    ],
+    "fixed_test_row_positions": [
+      0,
+      1,
+      100,
+      1000,
+      36191
+    ],
+    "five_row_cli_summary": {
+      "input": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\diagnosis\\cli_verification\\input_5rows.csv",
+      "output": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\diagnosis\\cli_verification\\scores_5rows.csv",
+      "input_observations": 5,
+      "output_rows": 20,
+      "models": [
+        "xgb_rule_distillation",
+        "xgb_rule_sensor_excluded_transfer",
+        "ae_unsupervised_all_training",
+        "ae_weak_normal_proxy"
+      ],
+      "label_type": {
+        "xgb_rule_distillation": "weak_electrical_quality_candidate",
+        "xgb_rule_sensor_excluded_transfer": "weak_electrical_quality_candidate",
+        "ae_unsupervised_all_training": "weak_electrical_quality_candidate",
+        "ae_weak_normal_proxy": "weak_electrical_quality_candidate"
+      },
+      "interpretation": "Current electrical-quality candidate / reconstruction scores, not verified fault probabilities"
+    },
+    "five_row_checks": [
+      {
+        "model": "xgb_rule_distillation",
+        "rows": 5,
+        "score_max_absdiff": 0.0,
+        "alarms_match": true,
+        "identity_preserved": true
+      },
+      {
+        "model": "xgb_rule_sensor_excluded_transfer",
+        "rows": 5,
+        "score_max_absdiff": 0.0,
+        "alarms_match": true,
+        "identity_preserved": true
+      },
+      {
+        "model": "ae_unsupervised_all_training",
+        "rows": 5,
+        "score_max_absdiff": 7.450580596923828e-09,
+        "alarms_match": true,
+        "identity_preserved": true
+      },
+      {
+        "model": "ae_weak_normal_proxy",
+        "rows": 5,
+        "score_max_absdiff": 2.9802322387695312e-08,
+        "alarms_match": true,
+        "identity_preserved": true
+      }
+    ],
+    "no_retraining": true,
+    "original_data_unchanged": true,
+    "csv_sha256": "27685ef0e1b9a9f889d663f25482175b6f4dadcb0c5bfe8a565831bde0c889dd",
+    "invalid_input_checks": {
+      "missing_sensor": {
+        "rejected": true,
+        "message": "Input is missing required columns: voltageR"
+      },
+      "missing_identity": {
+        "rejected": true,
+        "message": "Input is missing required columns: localtime"
+      },
+      "nan_sensor": {
+        "rejected": true,
+        "message": "Missing/non-numeric/non-finite sensor currentR at input row 0"
+      },
+      "infinite_sensor": {
+        "rejected": true,
+        "message": "Missing/non-numeric/non-finite sensor activePower at input row 0"
+      },
+      "reserved_collision": {
+        "rejected": true,
+        "message": "Input has reserved output columns: score"
+      }
+    }
+  },
+  "final_comparison_snapshot": {
+    "source": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\comparison_results.json",
+    "sha256": "b3499ba27004447f76a2e22c614393c8cdf002fd12321dcacfb231f43d13dfd7",
+    "deployment": {
+      "selected_model": "chronos2",
+      "selected_model_id": "chronos2",
+      "selection_metric": "validation.P745.mae_kwh",
+      "validation_metric": 76.01094547912001,
+      "selection_uses_may_labels": false,
+      "selection_uses_internal_test_labels": false,
+      "candidate_validation_mae_kwh": {
+        "arima": 76.03288894159851,
+        "xgboost": 76.40075057459573,
+        "baseline_mean": 76.03288890378326,
+        "baseline_median": 76.03986672259501,
+        "baseline_weekday_hour_mean": 78.73614749230397,
+        "patchtst": 78.92861618814536,
+        "itransformer": 76.42929912844782,
+        "chronos2": 76.01094547912001
+      },
+      "config": {
+        "model": "Chronos-2",
+        "model_id": "amazon/chronos-2",
+        "revision": "29ec3766d36d6f73f0696f85560a422f50e8498c",
+        "context_length": 8192,
+        "prediction_length": 745,
+        "quantile_levels": [
+          0.1,
+          0.5,
+          0.9
+        ],
+        "selection_basis": "Predeclared official frozen model; no tuning",
+        "mode": "zero-shot",
+        "status": "frozen_before_May_labels"
+      },
+      "model_lock_sha256": {
+        "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\arima_xgb_selection_lock.json": "8078dded3df0dfbbf84812ce9d6072767510e138597cf3f9165550b879a3679c",
+        "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\patchtst\\selection_lock.json": "f7dce2511a1eccea9b27a8cb5d00d36db85e534256ee331c851c7164f7570e7d",
+        "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\itransformer\\selection_lock.json": "762076524ebc486643fd00db0fd9b9e97541ddca4ae0e27fe82423b3b2adb453",
+        "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\chronos2\\selection_lock.json": "a00b5a510f6a29dd16d9d60e30d01a2ce6dd4f9eee73e251348850285d188a58"
+      },
+      "baseline_fallback": "baseline_mean",
+      "practical_note": "Tiny validation improvement is not evidence of superiority; deployment choice follows predeclared lowest validation MAE, mean remains a simple fallback.",
+      "holdout_disclosure": "May labels were previously inspected in descriptive EDA; no model or parameter selection here uses them."
+    },
+    "may_descriptive_best_not_selected": "xgboost"
+  },
+  "updated_at": "2026-10-11T13:49:33.434410+00:00",
+  "completion_summary": "Future-label boundaries, fixed-origin745 path and late505 scoring, compact official architecture provenance, internal neural reloads, final comparison numerical consistency, and diagnosis native reload/CLI input handling verified. Parent final verification covers all5 saved forecasting models.",
+  "final_verification_source": {
+    "path": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\verification_results.json",
+    "sha256": "33c6e26e79cbafcfebc2591d570f51f111ca50ecfe234f4bda2984a266a84ee8",
+    "top_level_keys": [
+      "status",
+      "models",
+      "metric_reconciliation",
+      "chronological_boundaries",
+      "locked_selection_sha256_verified",
+      "original_read_only_inventory",
+      "paired_difference_window_counts_and_metrics",
+      "report_verification",
+      "diagnosis_reload_and_cli",
+      "final_artifact_links_present"
+    ]
+  },
+  "material_limitations": [
+    "Forecast comparison uses one validation origin and one internal-test origin on a short, low-variation series; small model differences do not establish general superiority.",
+    "May labels were already inspected in earlier EDA. Selection is an explicitly declared post-EDA lock rather than an unseen prospective test.",
+    "Aggregate13-module energy and May hourly_pow are provisionally treated as the same unit/scope; meter hierarchy and target-unit certification remain unconfirmed.",
+    "iTransformer receives13 module histories while other models use univariate aggregate/context/calendar; preserve this input-scope distinction.",
+    "Actual fault labels are absent. Diagnosis metrics assess agreement with weak electrical-quality rules, and AE thresholds are calibrated with weak-normal validation labels.",
+    "Uniform4/720 diagnosis sampling may miss rare transient events and known-equipment monthly tests do not demonstrate unseen-equipment generalization.",
+    "AE five-row reload differences up to2.98e-8 reflect floating-point batch computation; alarms and row identities match. Final forecasting saved reload differences were0..7.3e-12 in parent verification."
+  ],
+  "completed_at": "2026-10-11T13:50:50.253329+00:00"
+}

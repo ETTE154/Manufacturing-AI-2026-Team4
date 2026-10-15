@@ -1,0 +1,134 @@
+{
+  "family": "itransformer",
+  "scenario": "long745",
+  "selected_candidate": 3,
+  "frozen_config": {
+    "context": 168,
+    "d_model": 32,
+    "layers": 1,
+    "dropout": 0.1
+  },
+  "architecture": {
+    "seq_len": 168,
+    "pred_len": 745,
+    "d_model": 32,
+    "d_ff": 64,
+    "e_layers": 1,
+    "n_heads": 4,
+    "dropout": 0.1,
+    "output_attention": false,
+    "use_norm": true,
+    "embed": "timeF",
+    "freq": "h",
+    "class_strategy": "projection",
+    "factor": 5,
+    "activation": "gelu",
+    "training_loss": "MSE"
+  },
+  "selection": "LowestFeb25 P745 validation MAE",
+  "selection_uses_internal_test_labels": false,
+  "selection_uses_may_labels": false,
+  "validation": {
+    "P745": {
+      "count": 745,
+      "mae_kwh": 76.17896253866736,
+      "rmse_kwh": 96.66258733460168,
+      "mape_percent": 0.1946921287269732,
+      "bias_pred_minus_actual_kwh": -1.208243459067239,
+      "r2": 0.0008890755245164472
+    },
+    "LateP505": {
+      "count": 505,
+      "mae_kwh": 77.76848452625181,
+      "rmse_kwh": 97.94115442185797,
+      "mape_percent": 0.19873594981962917,
+      "bias_pred_minus_actual_kwh": -0.49379682059313046,
+      "r2": -0.006044868534512471
+    }
+  },
+  "validation_reload_max_absdiff": 0.0,
+  "validation_reload_origins": 1,
+  "budget": {
+    "configs": 7,
+    "MSE_candidates": 6,
+    "extra_L1_candidate": 1,
+    "seed": 20261013,
+    "threads": 4,
+    "maximum_epochs": 24,
+    "early_stop_patience": 4,
+    "batch_size": 32,
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "loss": "Six MSE and one L1 candidate; same train-only global normalization and validation selection",
+    "context_candidates": [
+      24,
+      72,
+      168,
+      336,
+      512,
+      168,
+      168
+    ],
+    "versions": {
+      "torch": "2.14.1",
+      "numpy": "2.3.5",
+      "pandas": "3.0.1"
+    },
+    "claim": "Budgeted local validation search; not a guarantee of global optimality. No internal-test or May tuning."
+  },
+  "provenance": {
+    "source": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\itransformer\\vendor\\provenance.json",
+    "source_sha256": "82b2f4036b2f4cfc70fe02a84c62a822432b1105ff1ac044a129a7ede2073980",
+    "record": {
+      "repository": "https://github.com/thuml/iTransformer",
+      "revision": "c2426e68ca13f74aaec08045c5c724d8ad328124",
+      "files": [
+        {
+          "upstream_url": "https://raw.githubusercontent.com/thuml/iTransformer/c2426e68ca13f74aaec08045c5c724d8ad328124/model/iTransformer.py",
+          "path": "model/iTransformer.py",
+          "upstream_sha256": "6f34777a5a12c253a293f79e7e1fd5b6f79ac100b443951e051e269e7e2542db",
+          "local_sha256": "61aaa7d4caa71d1e1381b193fd012243c68b27c564af0a9e14cb474099507bfc"
+        },
+        {
+          "upstream_url": "https://raw.githubusercontent.com/thuml/iTransformer/c2426e68ca13f74aaec08045c5c724d8ad328124/layers/Embed.py",
+          "path": "layers/Embed.py",
+          "upstream_sha256": "2de7e5049a696d320a23a8bdb6e08e823cf7fa3f246a0a49555fcd729c5c8398",
+          "local_sha256": "cb1b8934d87659e656e6c92ba6290c4a76fbfb88389527ce43766c5b8cfd46ed"
+        },
+        {
+          "upstream_url": "https://raw.githubusercontent.com/thuml/iTransformer/c2426e68ca13f74aaec08045c5c724d8ad328124/layers/SelfAttention_Family.py",
+          "path": "layers/SelfAttention_Family.py",
+          "upstream_sha256": "38ac67428d528b8e145e4944ca059b40629a8446c891142602d5aaadc38dfd9e",
+          "local_sha256": "3d9f29c895a47335e670289f504ceaa95ded44047fba6bfbd96f01173ba88b6c"
+        },
+        {
+          "upstream_url": "https://raw.githubusercontent.com/thuml/iTransformer/c2426e68ca13f74aaec08045c5c724d8ad328124/layers/Transformer_EncDec.py",
+          "path": "layers/Transformer_EncDec.py",
+          "upstream_sha256": "985c31f4ae187b08afaa9663dc960a40544b2ec33ab55389ceab3930edc1ce02",
+          "local_sha256": "eed892a31468b1142777420f4b7ecb8cdbae020d835bbdd59a045c99bbe986df"
+        },
+        {
+          "upstream_url": "https://raw.githubusercontent.com/thuml/iTransformer/c2426e68ca13f74aaec08045c5c724d8ad328124/utils/masking.py",
+          "path": "utils/masking.py",
+          "upstream_sha256": "02f453e52cfaec65e34132923add80e7132f188706680fa86d7bd884976e09ef",
+          "local_sha256": "c22de70ad076f4eeecc857aba984741da05da54375333399ff2742b041544986"
+        },
+        {
+          "upstream_url": "https://raw.githubusercontent.com/thuml/iTransformer/c2426e68ca13f74aaec08045c5c724d8ad328124/LICENSE",
+          "path": "LICENSE",
+          "upstream_sha256": "29d2a4c09fa577780522219dc248466977f77cd420354c5e9a0e86550be2b849",
+          "local_sha256": "29d2a4c09fa577780522219dc248466977f77cd420354c5e9a0e86550be2b849"
+        }
+      ],
+      "changes": [
+        "Namespace-only import isolation",
+        "Reformer dependency moved into unused ReformerLayer constructor; selected FullAttention unchanged"
+      ]
+    },
+    "scope": "Pinned official core, compact local retraining. Namespace-only import changes; unused iTransformer Reformer import is lazy. No published benchmark reproduction.",
+    "iTransformer_univariate_limit": "One variate token: no cross-channel attention advantage is demonstrated."
+  },
+  "target_sha256": "729b149a3e3165dfb339f0386249bfbda0326657f9e722d86da8138db36117de",
+  "frozen_epochs": 12
+}

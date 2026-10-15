@@ -1,0 +1,99 @@
+{
+  "family": "daily_xgboost",
+  "selected_config": {
+    "family": "daily_xgboost",
+    "resolution": "daily",
+    "kind": "xgboost",
+    "depth": 1,
+    "trees": 50,
+    "lambda": 100.0,
+    "loss": "reg:squarederror",
+    "shrink": 0.5,
+    "profile": "uniform",
+    "profile_alpha": 0.5
+  },
+  "validation": {
+    "full745": {
+      "count": 2235,
+      "mae_kwh": 76.63176899584877,
+      "rmse_kwh": 97.52124470897608,
+      "mape_percent": 0.19587254011000071,
+      "r2": -0.0018393841369723773,
+      "bias_pred_minus_actual_kwh": 3.240872322586448
+    },
+    "late505": {
+      "count": 1515,
+      "mae_kwh": 76.2852932248361,
+      "rmse_kwh": 96.82034068838065,
+      "mape_percent": 0.19496751775459215,
+      "r2": -0.0005916807419474868,
+      "bias_pred_minus_actual_kwh": 1.5407318512758936
+    },
+    "origin_count": 3,
+    "mean_origin_late505_mae_kwh": 76.2852932248361
+  },
+  "test": {
+    "full745": {
+      "count": 745,
+      "mae_kwh": 78.28749298480678,
+      "rmse_kwh": 97.11394545671394,
+      "mape_percent": 0.20011355346102,
+      "r2": -0.002232909521295623,
+      "bias_pred_minus_actual_kwh": 4.5369251611887185
+    },
+    "late505": {
+      "count": 505,
+      "mae_kwh": 77.97935624322602,
+      "rmse_kwh": 96.57066439881255,
+      "mape_percent": 0.19930264845744472,
+      "r2": -6.533283022425174e-05,
+      "bias_pred_minus_actual_kwh": 0.27922321045608434
+    },
+    "origin_count": 1,
+    "mean_origin_late505_mae_kwh": 77.97935624322602
+  },
+  "validation_period_metadata": [
+    {
+      "complete_periods": 76,
+      "last_period_label": "2025-02-14 00:00:00",
+      "last_period_available_at": "2025-02-15 00:00:00",
+      "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+      "history_end": "2025-02-14 23:00:00",
+      "partial_periods_excluded": 0
+    },
+    {
+      "complete_periods": 83,
+      "last_period_label": "2025-02-21 00:00:00",
+      "last_period_available_at": "2025-02-22 00:00:00",
+      "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+      "history_end": "2025-02-21 23:00:00",
+      "partial_periods_excluded": 0
+    },
+    {
+      "complete_periods": 86,
+      "last_period_label": "2025-02-24 00:00:00",
+      "last_period_available_at": "2025-02-25 00:00:00",
+      "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+      "history_end": "2025-02-24 23:00:00",
+      "partial_periods_excluded": 0
+    }
+  ],
+  "final_period_metadata": {
+    "complete_periods": 150,
+    "last_period_label": "2025-04-29 00:00:00",
+    "last_period_available_at": "2025-04-30 00:00:00",
+    "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+    "history_end": "2025-04-29 23:00:00",
+    "partial_periods_excluded": 0
+  },
+  "saved_model": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\coarse\\daily_xgboost\\saved_model.joblib",
+  "reload_max_abs_diff": 0.0,
+  "prediction_csv": {
+    "validation": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\coarse\\daily_xgboost\\validation_predictions.csv",
+    "test": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\coarse\\daily_xgboost\\test_predictions.csv",
+    "future": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\coarse\\daily_xgboost\\future_path.csv"
+  },
+  "allocation": "Historical-only hourly multipliers; each learned day shape has sum24. Weekly/monthly rate mapping is not joint hierarchical reconciliation of already-known partial observations.",
+  "May_labels_read": false,
+  "monthly_limit": false
+}

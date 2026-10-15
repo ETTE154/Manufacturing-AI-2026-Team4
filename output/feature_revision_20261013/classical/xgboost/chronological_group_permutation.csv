@@ -1,0 +1,5 @@
+﻿group,columns,baseline_inner_mae_kwh,permuted_delta_mae_kwh_mean,permuted_delta_mae_kwh_std,repeats
+all_sensor_lags,806,76.546090885332191,0.18242769914477322,0.1817602606717944,5
+calendar,6,76.546090885332191,0,0,5
+module_energy13_history,52,76.546090885332191,0,0,5
+target_history,10,76.546090885332191,0,0,5

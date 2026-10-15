@@ -1,0 +1,208 @@
+{
+  "predeclared_candidates": [
+    {
+      "model": "xgboost",
+      "group": "target_fixed_calendar",
+      "objective": "reg:squarederror",
+      "max_depth": 1,
+      "n_estimators": 80,
+      "learning_rate": 0.02,
+      "min_child_weight": 50,
+      "reg_lambda": 100.0,
+      "residual_shrinkage": 0.5
+    },
+    {
+      "model": "xgboost",
+      "group": "target_fixed_calendar",
+      "objective": "reg:absoluteerror",
+      "max_depth": 2,
+      "n_estimators": 100,
+      "learning_rate": 0.02,
+      "min_child_weight": 100,
+      "reg_lambda": 100.0,
+      "residual_shrinkage": 0.5
+    },
+    {
+      "model": "xgboost",
+      "group": "target_aligned_calendar",
+      "objective": "reg:squarederror",
+      "max_depth": 1,
+      "n_estimators": 80,
+      "learning_rate": 0.02,
+      "min_child_weight": 50,
+      "reg_lambda": 100.0,
+      "residual_shrinkage": 0.5
+    },
+    {
+      "model": "xgboost",
+      "group": "target_aligned_calendar",
+      "objective": "reg:absoluteerror",
+      "max_depth": 2,
+      "n_estimators": 100,
+      "learning_rate": 0.02,
+      "min_child_weight": 100,
+      "reg_lambda": 100.0,
+      "residual_shrinkage": 0.5
+    },
+    {
+      "model": "xgboost",
+      "group": "module_aligned_calendar",
+      "objective": "reg:squarederror",
+      "max_depth": 1,
+      "n_estimators": 80,
+      "learning_rate": 0.02,
+      "min_child_weight": 50,
+      "reg_lambda": 100.0,
+      "residual_shrinkage": 0.5
+    },
+    {
+      "model": "xgboost",
+      "group": "module_aligned_calendar",
+      "objective": "reg:absoluteerror",
+      "max_depth": 2,
+      "n_estimators": 100,
+      "learning_rate": 0.02,
+      "min_child_weight": 100,
+      "reg_lambda": 100.0,
+      "residual_shrinkage": 0.5
+    },
+    {
+      "model": "xgboost",
+      "group": "selected_sensor_calendar",
+      "objective": "reg:squarederror",
+      "max_depth": 1,
+      "n_estimators": 80,
+      "learning_rate": 0.02,
+      "min_child_weight": 50,
+      "reg_lambda": 100.0,
+      "residual_shrinkage": 0.5
+    },
+    {
+      "model": "xgboost",
+      "group": "selected_sensor_calendar",
+      "objective": "reg:absoluteerror",
+      "max_depth": 2,
+      "n_estimators": 100,
+      "learning_rate": 0.02,
+      "min_child_weight": 100,
+      "reg_lambda": 100.0,
+      "residual_shrinkage": 0.5
+    },
+    {
+      "model": "xgboost",
+      "group": "all_sensor_calendar",
+      "objective": "reg:squarederror",
+      "max_depth": 1,
+      "n_estimators": 80,
+      "learning_rate": 0.02,
+      "min_child_weight": 50,
+      "reg_lambda": 100.0,
+      "residual_shrinkage": 0.5
+    },
+    {
+      "model": "xgboost",
+      "group": "all_sensor_calendar",
+      "objective": "reg:absoluteerror",
+      "max_depth": 2,
+      "n_estimators": 100,
+      "learning_rate": 0.02,
+      "min_child_weight": 100,
+      "reg_lambda": 100.0,
+      "residual_shrinkage": 0.5
+    },
+    {
+      "model": "ridge",
+      "group": "target_aligned_calendar",
+      "alpha": 1000.0
+    },
+    {
+      "model": "ridge",
+      "group": "target_aligned_calendar",
+      "alpha": 100000.0
+    },
+    {
+      "model": "ridge",
+      "group": "module_aligned_calendar",
+      "alpha": 10000.0
+    },
+    {
+      "model": "ridge",
+      "group": "selected_sensor_calendar",
+      "alpha": 10000.0
+    },
+    {
+      "model": "ridge",
+      "group": "all_sensor_calendar",
+      "alpha": 10000.0
+    },
+    {
+      "model": "ridge",
+      "group": "all_sensor_calendar",
+      "alpha": 1000000.0
+    },
+    {
+      "model": "elasticnet",
+      "group": "selected_sensor_calendar",
+      "alpha": 1.0,
+      "l1_ratio": 0.2
+    },
+    {
+      "model": "elasticnet",
+      "group": "all_sensor_calendar",
+      "alpha": 1.0,
+      "l1_ratio": 0.2
+    },
+    {
+      "model": "arimax",
+      "order": [
+        0,
+        0,
+        0
+      ],
+      "exog": "calendar"
+    },
+    {
+      "model": "arimax",
+      "order": [
+        0,
+        0,
+        0
+      ],
+      "exog": "target_history"
+    },
+    {
+      "model": "arimax",
+      "order": [
+        1,
+        0,
+        0
+      ],
+      "exog": "selected"
+    },
+    {
+      "model": "baseline",
+      "kind": "train_mean"
+    },
+    {
+      "model": "baseline",
+      "kind": "train_median"
+    },
+    {
+      "model": "baseline",
+      "kind": "ema720"
+    }
+  ],
+  "count": 24,
+  "groups": [
+    "target_fixed_calendar",
+    "target_aligned_calendar",
+    "module_aligned_calendar",
+    "selected_sensor_calendar",
+    "all_sensor_calendar"
+  ],
+  "target_aligned_past_values": "For offset0..23, y/module/sensor[origin+offset-24] and y/module[origin+offset-168] are strictly pre-origin.",
+  "all_sensor_limit": "403 completed-hour sensor summaries; origin-lag1 and target-hour-aligned daily analogues. No raw target/future-hour measurements.",
+  "selection": "Lowest70-origin mean24path MAE; separate family winners and strongest baseline; no April/May tuning.",
+  "data_sha256": "1ad0a14f29f7ffad521918817315c95889f82adef7335709ce386fd057b1ba9b",
+  "selector_sha256": "1235dd065cfa9b964984840f7e592320425ed1ffa77a012594571060aca8e95d"
+}

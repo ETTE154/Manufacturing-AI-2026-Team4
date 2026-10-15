@@ -1,0 +1,76 @@
+{
+  "status": "passed",
+  "temporal_alignment_bug_found": false,
+  "source": "E:\\AI work\\AWS_프로젝트\\output\\optimization_20261013\\forecast\\classical_opt.py",
+  "source_sha256": "17f244e8e20de6f339fcc304a8b6e81fee8d792f5a47f9749c10299768547f91",
+  "checks": [
+    {
+      "feature_set": "history",
+      "historical_training_vs_inference_max_absdiff": 0.0,
+      "all_training_target_indices_within_prefix": true,
+      "training_rows_checked": 3132
+    },
+    {
+      "feature_set": "history_calendar",
+      "historical_training_vs_inference_max_absdiff": 0.0,
+      "all_training_target_indices_within_prefix": true,
+      "training_rows_checked": 3132
+    }
+  ],
+  "future_target_mutation_leaves_origin_features_unchanged": true,
+  "fixed_origin_lag24_is_constant_across_24_predictions": true,
+  "interpretation": "Constant origin lag24 is an intentional fixed-origin feature, not an indexing bug. New candidates additionally use target-hour-aligned past daily/weekly values.",
+  "lead_examples": [
+    {
+      "lead_hours": 1,
+      "origin": "2024-12-26 00:00:00",
+      "last_observed": "2024-12-25 23:00:00",
+      "target_hour": "2024-12-26 00:00:00",
+      "fixed_origin_lag24_hour": "2024-12-25 00:00:00",
+      "new_target_aligned_daily_lag_hour": "2024-12-25 00:00:00",
+      "new_target_aligned_weekly_lag_hour": "2024-12-19 00:00:00"
+    },
+    {
+      "lead_hours": 6,
+      "origin": "2024-12-26 00:00:00",
+      "last_observed": "2024-12-25 23:00:00",
+      "target_hour": "2024-12-26 05:00:00",
+      "fixed_origin_lag24_hour": "2024-12-25 00:00:00",
+      "new_target_aligned_daily_lag_hour": "2024-12-25 05:00:00",
+      "new_target_aligned_weekly_lag_hour": "2024-12-19 05:00:00"
+    },
+    {
+      "lead_hours": 24,
+      "origin": "2024-12-26 00:00:00",
+      "last_observed": "2024-12-25 23:00:00",
+      "target_hour": "2024-12-26 23:00:00",
+      "fixed_origin_lag24_hour": "2024-12-25 00:00:00",
+      "new_target_aligned_daily_lag_hour": "2024-12-25 23:00:00",
+      "new_target_aligned_weekly_lag_hour": "2024-12-19 23:00:00"
+    }
+  ],
+  "long745_limit": "Naive target-offset-minus24 sensor/target values leak beyond offset23. The new long runner uses explicit last-observed-week phase wrapping or omits these columns.",
+  "feature_names": [
+    "lag1",
+    "lag24",
+    "lag168",
+    "mean24",
+    "mean168",
+    "mean720",
+    "std24",
+    "std168",
+    "origin_hour_sin",
+    "origin_hour_cos",
+    "lead_days",
+    "target_hour_sin",
+    "target_hour_cos",
+    "target_weekday_sin",
+    "target_weekday_cos",
+    "target_month_sin",
+    "target_month_cos",
+    "target_weekend"
+  ],
+  "previous_training_notes": "Direct examples used stride6, repeated labels and partial last-origin horizons. Residual center was the mean of those training labels. These are modeling/weighting choices, not future-label leakage.",
+  "previous_inputs": "Only past aggregate target and deterministic calendar; no past module or physical-sensor features.",
+  "old_outputs_modified": false
+}

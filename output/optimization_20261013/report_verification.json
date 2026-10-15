@@ -1,0 +1,67 @@
+{
+  "optimization_report.html": {
+    "title": "공개 원본 감사와 모델 최적화",
+    "imageCount": 13,
+    "brokenImages": 0,
+    "overflow": false,
+    "replacementCharacters": false,
+    "selects": [],
+    "interactions": [],
+    "compactOverflow": false,
+    "errors": []
+  },
+  "anomaly/anomaly_report.html": {
+    "title": "이상 후보 확인과 합성 증강 비교",
+    "imageCount": 7,
+    "brokenImages": 0,
+    "overflow": false,
+    "replacementCharacters": false,
+    "selects": [
+      {
+        "id": "model",
+        "options": 8,
+        "values": [
+          "xgb_rule_distillation",
+          "xgb_rule_sensor_excluded_transfer",
+          "ae_unsupervised_all_training",
+          "ae_weak_normal_proxy",
+          "isolation_forest",
+          "robust_z",
+          "xgb_synthetic_augmented",
+          "ae_synthetic_denoising"
+        ]
+      },
+      {
+        "id": "window",
+        "options": 6,
+        "values": [
+          "candidate_1",
+          "normal_1",
+          "candidate_2",
+          "normal_2",
+          "candidate_3",
+          "normal_3"
+        ]
+      }
+    ],
+    "interactions": [
+      {
+        "select": "model",
+        "value": "ae_synthetic_denoising",
+        "updated": true
+      },
+      {
+        "select": "window",
+        "value": "candidate_2",
+        "updated": true
+      },
+      {
+        "select": "window",
+        "value": "normal_3",
+        "updated": true
+      }
+    ],
+    "compactOverflow": false,
+    "errors": []
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "model": "Chronos-2",
+  "splits": {
+    "validation": {
+      "metrics": {
+        "H96": {
+          "count": 96,
+          "mae_kwh": 76.54359223090266,
+          "rmse_kwh": 101.46781156842951,
+          "mape_percent": 0.1957801029616101,
+          "bias_pred_minus_actual_kwh": 7.356286241318837
+        },
+        "H192": {
+          "count": 192,
+          "mae_kwh": 76.99344757306153,
+          "rmse_kwh": 99.90134081085861,
+          "mape_percent": 0.19686623917220497,
+          "bias_pred_minus_actual_kwh": 6.677566786023514
+        },
+        "H336": {
+          "count": 336,
+          "mae_kwh": 76.91599313822759,
+          "rmse_kwh": 98.84171471212412,
+          "mape_percent": 0.19661137417860416,
+          "bias_pred_minus_actual_kwh": 0.8133008639212589
+        },
+        "H720": {
+          "count": 720,
+          "mae_kwh": 75.38270312017744,
+          "rmse_kwh": 95.90794542961785,
+          "mape_percent": 0.1926612415098844,
+          "bias_pred_minus_actual_kwh": -0.16792368344954917
+        },
+        "P745": {
+          "count": 745,
+          "mae_kwh": 76.01094547912001,
+          "rmse_kwh": 96.70013344097195,
+          "mape_percent": 0.19427397857168482,
+          "bias_pred_minus_actual_kwh": 0.5640271439219668
+        }
+      },
+      "inference_seconds": 0.2924055999610573,
+      "context_hours": 2064,
+      "interval": {
+        "nominal_coverage": 0.8,
+        "empirical_coverage": 0.7919463087248322,
+        "mean_width_kwh": 239.2010955810547,
+        "calibrated_on_this_project": false
+      }
+    },
+    "internal_test": {
+      "metrics": {
+        "H96": {
+          "count": 96,
+          "mae_kwh": 70.47366670283554,
+          "rmse_kwh": 91.5735032532805,
+          "mape_percent": 0.18024557772409272,
+          "bias_pred_minus_actual_kwh": 20.305753436052782
+        },
+        "H192": {
+          "count": 192,
+          "mae_kwh": 77.11294744646982,
+          "rmse_kwh": 96.90497675633573,
+          "mape_percent": 0.19720372509674602,
+          "bias_pred_minus_actual_kwh": 15.497606481480943
+        },
+        "H336": {
+          "count": 336,
+          "mae_kwh": 81.12944792700024,
+          "rmse_kwh": 99.48724057928192,
+          "mape_percent": 0.20741925707567005,
+          "bias_pred_minus_actual_kwh": 10.354332165591565
+        },
+        "H720": {
+          "count": 720,
+          "mae_kwh": 77.9002406491125,
+          "rmse_kwh": 97.00045802077925,
+          "mape_percent": 0.1991296178602317,
+          "bias_pred_minus_actual_kwh": 5.7949489824456375
+        },
+        "P745": {
+          "count": 745,
+          "mae_kwh": 78.27075179436974,
+          "rmse_kwh": 97.13325947349067,
+          "mape_percent": 0.20007715292566486,
+          "bias_pred_minus_actual_kwh": 5.734191223899733
+        }
+      },
+      "inference_seconds": 0.26753369998186827,
+      "context_hours": 2832,
+      "interval": {
+        "nominal_coverage": 0.8,
+        "empirical_coverage": 0.8040268456375839,
+        "mean_width_kwh": 248.3333282470703,
+        "calibrated_on_this_project": false
+      }
+    }
+  }
+}

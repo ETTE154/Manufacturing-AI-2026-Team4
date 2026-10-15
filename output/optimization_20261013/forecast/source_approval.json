@@ -1,0 +1,8 @@
+{
+  "approved_for_training": true,
+  "approval_basis": "Parent root SOURCE GO: official train and May downloaded bytes match original SHA completely; raw originals are not read again by this optimization.",
+  "target_sha256": "729b149a3e3165dfb339f0386249bfbda0326657f9e722d86da8138db36117de",
+  "byte_comparison": "E:/AI work/AWS_프로젝트/output/optimization_20261013/source_audit/byte_comparison.json",
+  "source_manifest": "E:/AI work/AWS_프로젝트/output/optimization_20261013/source_audit/source_manifest.json",
+  "new_outputs_only": "E:/AI work/AWS_프로젝트/output/optimization_20261013/forecast"
+}

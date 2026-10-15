@@ -1,0 +1,24 @@
+{
+  "model": "arima",
+  "format": "statsmodels ARIMAResults trusted local pickle",
+  "frozen_config": {
+    "order": [
+      0,
+      0,
+      0
+    ],
+    "trend": "c"
+  },
+  "history_start": "2024-12-01 00:00:00",
+  "history_end": "2025-04-29 23:00:00",
+  "history_count": 3600,
+  "feature_names": [
+    "past_provisional_sum_kwh"
+  ],
+  "target_center": null,
+  "forecast_origin": "2025-04-30 00:00:00",
+  "model_path": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\saved_models\\final_arima.pkl",
+  "model_sha256": "f9df2778605e3d1b81d90dec09862add538e437d7bf0519df258145f49c116b1",
+  "reload_forecast_max_abs_diff_kwh": 0.0,
+  "reload_forecast_rows": 745
+}

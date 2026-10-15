@@ -1,0 +1,110 @@
+{
+  "rules": {
+    "14": {
+      "load_imbalance": 4.264458054973335,
+      "reactive_power_surge": 4.379806893857343,
+      "power_factor_drop": 3.584381979552889,
+      "abnormal_pattern": 2.9022538773195774,
+      "night_operation": 6.543415886938436,
+      "current_only_increase": 2.9353369424892173
+    },
+    "3": {
+      "load_imbalance": 3.8429589702594655,
+      "reactive_power_surge": 4.462603570801964,
+      "power_factor_drop": 3.5206017915445567,
+      "abnormal_pattern": 3.048140341801456,
+      "night_operation": 5.526039382019904,
+      "current_only_increase": 2.815736133891579
+    },
+    "1": {
+      "load_imbalance": 3.929528055714637,
+      "reactive_power_surge": 4.466997502847498,
+      "power_factor_drop": 3.5047601902153476,
+      "abnormal_pattern": 3.192454651573311,
+      "night_operation": 5.260685513780053,
+      "current_only_increase": 2.8097969661031357
+    },
+    "2": {
+      "load_imbalance": 3.9459762505384797,
+      "reactive_power_surge": 4.491935375219989,
+      "power_factor_drop": 3.339839732810993,
+      "abnormal_pattern": 3.120839794580098,
+      "night_operation": 4.794285942542335,
+      "current_only_increase": 2.707423800279919
+    },
+    "12": {
+      "load_imbalance": 4.104602396996909,
+      "reactive_power_surge": 4.774830950226704,
+      "power_factor_drop": 3.638730182134226,
+      "abnormal_pattern": 3.5192719815905074,
+      "night_operation": 5.534432612423542,
+      "current_only_increase": 2.7234251387163204
+    },
+    "17": {
+      "load_imbalance": 3.864201581907107,
+      "reactive_power_surge": 4.882797337337188,
+      "power_factor_drop": 12.087915400181455,
+      "abnormal_pattern": 6.763708545077553,
+      "night_operation": 5.791899971339053,
+      "current_only_increase": 2.7499950488096134
+    },
+    "15": {
+      "load_imbalance": 4.063378530785133,
+      "reactive_power_surge": 4.684896210077223,
+      "power_factor_drop": 19.422128746907656,
+      "abnormal_pattern": 12.080027974915488,
+      "night_operation": 5.169040235145048,
+      "current_only_increase": 2.5899824526726496
+    },
+    "16": {
+      "load_imbalance": 3.9937793434062905,
+      "reactive_power_surge": 4.4448783391838695,
+      "power_factor_drop": 3.3760506365428133,
+      "abnormal_pattern": 2.9432878507376423,
+      "night_operation": 5.295886501323961,
+      "current_only_increase": 2.5443217260088096
+    },
+    "5": {
+      "load_imbalance": 3.9792442693104446,
+      "reactive_power_surge": 4.365588549217947,
+      "power_factor_drop": 3.321140375569206,
+      "abnormal_pattern": 3.1075155561033516,
+      "night_operation": 4.871263868006717,
+      "current_only_increase": 2.670088486876138
+    },
+    "18": {
+      "load_imbalance": 3.9248792208865924,
+      "reactive_power_surge": 4.435791242240477,
+      "power_factor_drop": 3.6433073841500767,
+      "abnormal_pattern": 3.161077207688974,
+      "night_operation": 5.664546060288416,
+      "current_only_increase": 2.739423011311191
+    },
+    "11": {
+      "load_imbalance": 4.341100251772442,
+      "reactive_power_surge": 4.3378515113036755,
+      "power_factor_drop": 3.5432466320371336,
+      "abnormal_pattern": 3.0838521115391684,
+      "night_operation": 5.927429787150794,
+      "current_only_increase": 2.7850425766152376
+    },
+    "4": {
+      "load_imbalance": 4.019210320458387,
+      "reactive_power_surge": 4.587286882346634,
+      "power_factor_drop": 3.4742773132926374,
+      "abnormal_pattern": 3.2279418409916536,
+      "night_operation": 4.626492073923615,
+      "current_only_increase": 2.797557690145525
+    },
+    "13": {
+      "load_imbalance": 3.971841213210011,
+      "reactive_power_surge": 4.299509086964132,
+      "power_factor_drop": 3.6324679200389176,
+      "abnormal_pattern": 8.66334558965683,
+      "night_operation": 5.191215195488318,
+      "current_only_increase": 2.7540481326334163
+    }
+  },
+  "iforest": 0.6073029326631353,
+  "ae": 0.16612977623941366
+}

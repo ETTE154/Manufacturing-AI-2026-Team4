@@ -1,0 +1,341 @@
+{
+  "status": "passed",
+  "png_count": 16,
+  "svg_count": 16,
+  "original_rows_scored_all_models": 292,
+  "finite_score_csvs": 4,
+  "source_index_models_thresholds_preserved": true,
+  "source_and_model_preservation_basis": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\plot_manifest.json",
+  "representative_visual_QA": {
+    "status": "passed",
+    "images": [
+      "abnormal_pattern_0093_sensors.png",
+      "abnormal_pattern_0091_rules.png",
+      "abnormal_pattern_0092_ae.png",
+      "power_factor_drop_0061_iforest.png"
+    ],
+    "checks": "Korean glyphs, readable axes/titles/legend, candidate shading, threshold1 and explicit unconfirmed labels."
+  },
+  "images": [
+    {
+      "event_id": "power_factor_drop_0061",
+      "figure_kind": "sensors",
+      "format": "png",
+      "path": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\power_factor_drop_0061_sensors.png",
+      "bytes": 612928,
+      "width": 2412,
+      "height": 1548,
+      "sha256": "dc6ed3632922077ad0c722c98b549dac9278a00cf2555b5bc7b184439c5f0b62"
+    },
+    {
+      "event_id": "power_factor_drop_0061",
+      "figure_kind": "sensors",
+      "format": "svg",
+      "path": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\power_factor_drop_0061_sensors.svg",
+      "bytes": 177641,
+      "width": "964.8pt",
+      "height": "619.2pt",
+      "sha256": "e689f2987dfed05d7d8140cf8a531f74ac2a9190438ab157d75270dc5bc6fe3c"
+    },
+    {
+      "event_id": "power_factor_drop_0061",
+      "figure_kind": "rules",
+      "format": "png",
+      "path": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\power_factor_drop_0061_rules.png",
+      "bytes": 327053,
+      "width": 2412,
+      "height": 1548,
+      "sha256": "13bb3f8658329339734ad5c449c946deb9a3cc130a51c1212eb9d1fbd7a4f332"
+    },
+    {
+      "event_id": "power_factor_drop_0061",
+      "figure_kind": "rules",
+      "format": "svg",
+      "path": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\power_factor_drop_0061_rules.svg",
+      "bytes": 198267,
+      "width": "964.8pt",
+      "height": "619.2pt",
+      "sha256": "280c5c53c66f128596b22ec483f4f6830dfd4cbe442f3532018f34712672acb4"
+    },
+    {
+      "event_id": "power_factor_drop_0061",
+      "figure_kind": "autoencoder",
+      "format": "png",
+      "path": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\power_factor_drop_0061_ae.png",
+      "bytes": 114974,
+      "width": 2412,
+      "height": 720,
+      "sha256": "da7fb555f5dc31103607237c054444b9021e7399bd54200927db9c70db6740ad"
+    },
+    {
+      "event_id": "power_factor_drop_0061",
+      "figure_kind": "autoencoder",
+      "format": "svg",
+      "path": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\power_factor_drop_0061_ae.svg",
+      "bytes": 91709,
+      "width": "964.8pt",
+      "height": "288pt",
+      "sha256": "737e69f2055d3da55a60ea714bd37a21c4eae46804d2b4842a05778e62e334cd"
+    },
+    {
+      "event_id": "power_factor_drop_0061",
+      "figure_kind": "isolation_forest",
+      "format": "png",
+      "path": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\power_factor_drop_0061_iforest.png",
+      "bytes": 105206,
+      "width": 2412,
+      "height": 720,
+      "sha256": "db8a23c49050dd157bdf0541058268982f53bbea0a4e7d53d7402b9f42c87bd3"
+    },
+    {
+      "event_id": "power_factor_drop_0061",
+      "figure_kind": "isolation_forest",
+      "format": "svg",
+      "path": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\power_factor_drop_0061_iforest.svg",
+      "bytes": 92832,
+      "width": "964.8pt",
+      "height": "288pt",
+      "sha256": "f5170fd9513fae81e902c1323c032686703f36d6b6fda0514d1c20881641672d"
+    },
+    {
+      "event_id": "abnormal_pattern_0091",
+      "figure_kind": "sensors",
+      "format": "png",
+      "path": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0091_sensors.png",
+      "bytes": 546719,
+      "width": 2412,
+      "height": 1548,
+      "sha256": "d624be7c20af7e4e22e31ace319025ef1f361d1a69ba89775bc3dd8420f673ce"
+    },
+    {
+      "event_id": "abnormal_pattern_0091",
+      "figure_kind": "sensors",
+      "format": "svg",
+      "path": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0091_sensors.svg",
+      "bytes": 177211,
+      "width": "964.8pt",
+      "height": "619.2pt",
+      "sha256": "312037d10bfd1a6eb3d2b94315443919bd44075ea20a453d4eaaa5a3066a598f"
+    },
+    {
+      "event_id": "abnormal_pattern_0091",
+      "figure_kind": "rules",
+      "format": "png",
+      "path": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0091_rules.png",
+      "bytes": 337320,
+      "width": 2412,
+      "height": 1548,
+      "sha256": "2e805b691257289f932ff98e7aa14b86efc7ca5ea7ac4c848d0d426e70fb8a94"
+    },
+    {
+      "event_id": "abnormal_pattern_0091",
+      "figure_kind": "rules",
+      "format": "svg",
+      "path": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0091_rules.svg",
+      "bytes": 195203,
+      "width": "964.8pt",
+      "height": "619.2pt",
+      "sha256": "fb10df4115a26584e3dcad2c4ca09f6c1b7e5fa57c5c8fcf634103648ddea2ed"
+    },
+    {
+      "event_id": "abnormal_pattern_0091",
+      "figure_kind": "autoencoder",
+      "format": "png",
+      "path": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0091_ae.png",
+      "bytes": 113142,
+      "width": 2412,
+      "height": 720,
+      "sha256": "f9fb2062a85aa018d5c6bee369644c1a8e41ea39934ddc907168799635fcf08a"
+    },
+    {
+      "event_id": "abnormal_pattern_0091",
+      "figure_kind": "autoencoder",
+      "format": "svg",
+      "path": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0091_ae.svg",
+      "bytes": 90158,
+      "width": "964.8pt",
+      "height": "288pt",
+      "sha256": "de541652827391ec6b7423901c12bb1efda80d6be3647d2952826fdacfceca48"
+    },
+    {
+      "event_id": "abnormal_pattern_0091",
+      "figure_kind": "isolation_forest",
+      "format": "png",
+      "path": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0091_iforest.png",
+      "bytes": 112632,
+      "width": 2412,
+      "height": 720,
+      "sha256": "029baa194f72cdf627ec2488ce393de32cb0e81ddfc118f9eb51490aac09e1ab"
+    },
+    {
+      "event_id": "abnormal_pattern_0091",
+      "figure_kind": "isolation_forest",
+      "format": "svg",
+      "path": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0091_iforest.svg",
+      "bytes": 91525,
+      "width": "964.8pt",
+      "height": "288pt",
+      "sha256": "f6a46c39fa8043d42d9b0b47945b49734b60bb39eb925d4d92f4edc9fdb6a1db"
+    },
+    {
+      "event_id": "abnormal_pattern_0092",
+      "figure_kind": "sensors",
+      "format": "png",
+      "path": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0092_sensors.png",
+      "bytes": 560250,
+      "width": 2412,
+      "height": 1548,
+      "sha256": "3d46d491a43334b9bc65968159e277e2fb088e70be8a863a8db3ff93bbdef2cd"
+    },
+    {
+      "event_id": "abnormal_pattern_0092",
+      "figure_kind": "sensors",
+      "format": "svg",
+      "path": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0092_sensors.svg",
+      "bytes": 174364,
+      "width": "964.8pt",
+      "height": "619.2pt",
+      "sha256": "0ec29b02503db47045a1d3a0867312f0933c06e43f99bdc34cf540143a8dea38"
+    },
+    {
+      "event_id": "abnormal_pattern_0092",
+      "figure_kind": "rules",
+      "format": "png",
+      "path": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0092_rules.png",
+      "bytes": 352312,
+      "width": 2412,
+      "height": 1548,
+      "sha256": "f58b1cb25b585ab41c3393904a8de6ab54e4a48d6a71a2fa9f6002c8e6045377"
+    },
+    {
+      "event_id": "abnormal_pattern_0092",
+      "figure_kind": "rules",
+      "format": "svg",
+      "path": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0092_rules.svg",
+      "bytes": 195147,
+      "width": "964.8pt",
+      "height": "619.2pt",
+      "sha256": "19e6cfc9793b5a0f982fbf1999266866c77f6b5d65030f7acd67d7199e036eb1"
+    },
+    {
+      "event_id": "abnormal_pattern_0092",
+      "figure_kind": "autoencoder",
+      "format": "png",
+      "path": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0092_ae.png",
+      "bytes": 105463,
+      "width": 2412,
+      "height": 720,
+      "sha256": "49102215019e6184477147573915d7faf19c018ca30f683805939a3e45e5cc83"
+    },
+    {
+      "event_id": "abnormal_pattern_0092",
+      "figure_kind": "autoencoder",
+      "format": "svg",
+      "path": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0092_ae.svg",
+      "bytes": 87154,
+      "width": "964.8pt",
+      "height": "288pt",
+      "sha256": "4fd19ef175ff1b52944cb8ef13992922477254c69d409541358d6698aa709c71"
+    },
+    {
+      "event_id": "abnormal_pattern_0092",
+      "figure_kind": "isolation_forest",
+      "format": "png",
+      "path": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0092_iforest.png",
+      "bytes": 110729,
+      "width": 2412,
+      "height": 720,
+      "sha256": "d3d0a85b0ad9d95cb8d958fed2f8e7d95934df9aec8172551f842e8039667793"
+    },
+    {
+      "event_id": "abnormal_pattern_0092",
+      "figure_kind": "isolation_forest",
+      "format": "svg",
+      "path": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0092_iforest.svg",
+      "bytes": 89467,
+      "width": "964.8pt",
+      "height": "288pt",
+      "sha256": "542f46a548befa53d05013d297273815bc35cd599f4df73e938721eec243fc1b"
+    },
+    {
+      "event_id": "abnormal_pattern_0093",
+      "figure_kind": "sensors",
+      "format": "png",
+      "path": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0093_sensors.png",
+      "bytes": 571630,
+      "width": 2412,
+      "height": 1548,
+      "sha256": "7c28dc9d73df4c5dc5155b15b0a9e8b046bdac19ae3a226e0f0b6e97d1898a79"
+    },
+    {
+      "event_id": "abnormal_pattern_0093",
+      "figure_kind": "sensors",
+      "format": "svg",
+      "path": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0093_sensors.svg",
+      "bytes": 174240,
+      "width": "964.8pt",
+      "height": "619.2pt",
+      "sha256": "5277984a4ee93449c86b4bec3de59976abdda28724d8dc64c666eeace2b07569"
+    },
+    {
+      "event_id": "abnormal_pattern_0093",
+      "figure_kind": "rules",
+      "format": "png",
+      "path": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0093_rules.png",
+      "bytes": 326807,
+      "width": 2412,
+      "height": 1548,
+      "sha256": "f10a3f362164b55bade3905f135b393ddea9979dadd1b3acae87382f1c2f5857"
+    },
+    {
+      "event_id": "abnormal_pattern_0093",
+      "figure_kind": "rules",
+      "format": "svg",
+      "path": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0093_rules.svg",
+      "bytes": 195065,
+      "width": "964.8pt",
+      "height": "619.2pt",
+      "sha256": "6b2c0347f20332f01bf848b6153035399443440ee65ed52638ee0f7b91c9b2cd"
+    },
+    {
+      "event_id": "abnormal_pattern_0093",
+      "figure_kind": "autoencoder",
+      "format": "png",
+      "path": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0093_ae.png",
+      "bytes": 110358,
+      "width": 2412,
+      "height": 720,
+      "sha256": "78c57aef347a117e25701febc57e9e6f940d9fcf9630b1f4d41a216f14b4c74c"
+    },
+    {
+      "event_id": "abnormal_pattern_0093",
+      "figure_kind": "autoencoder",
+      "format": "svg",
+      "path": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0093_ae.svg",
+      "bytes": 89552,
+      "width": "964.8pt",
+      "height": "288pt",
+      "sha256": "4ec4a8247e3aa5a14fc316b3fd18cfcc92bb81b718f4cfc9b00d74d7781b4627"
+    },
+    {
+      "event_id": "abnormal_pattern_0093",
+      "figure_kind": "isolation_forest",
+      "format": "png",
+      "path": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0093_iforest.png",
+      "bytes": 107282,
+      "width": 2412,
+      "height": 720,
+      "sha256": "fe2004631102cf6bd2a7de8a35ad4c4ec2fa84bbe109c49239b805060a117f32"
+    },
+    {
+      "event_id": "abnormal_pattern_0093",
+      "figure_kind": "isolation_forest",
+      "format": "svg",
+      "path": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0093_iforest.svg",
+      "bytes": 89375,
+      "width": "964.8pt",
+      "height": "288pt",
+      "sha256": "91e6ff0908fcc9e4b71498cf567365e8606639a277f9e0cad98f470349a99ecb"
+    }
+  ]
+}

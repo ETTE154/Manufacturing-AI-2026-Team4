@@ -1,0 +1,58 @@
+{
+  "weekly_report_fields": [
+    "module_id",
+    "week_start",
+    "week_end",
+    "observed_hours",
+    "expected_hours",
+    "energy_kwh",
+    "mean_hourly_kwh",
+    "minimum_hourly_kwh",
+    "maximum_hourly_kwh",
+    "project_bill_won",
+    "project_carbon_kg",
+    "logged_alarm_candidates",
+    "alarm_archive_limit",
+    "forecast_origin",
+    "forecast_next_24h_sum_kwh",
+    "forecast_quality",
+    "source_mode",
+    "scope",
+    "unit",
+    "coefficients",
+    "fault_labels_available"
+  ],
+  "weekly_example": {
+    "module_id": "17",
+    "week_start": "2025-03-06 19:00:00",
+    "week_end": "2025-03-13 19:00:00",
+    "observed_hours": 168,
+    "expected_hours": 168,
+    "energy_kwh": 505790.2922361111,
+    "mean_hourly_kwh": 3010.6565014054236,
+    "minimum_hourly_kwh": 2948.082166666667,
+    "maximum_hourly_kwh": 3082.856625,
+    "project_bill_won": 91042252.6025,
+    "project_carbon_kg": 214455.08390811112,
+    "alarm_archive_limit": "재생되어 로그에 저장된 후보만 집계; 전체 원본 고장 개수가 아님",
+    "forecast_origin": "2025-03-13 19:00:00",
+    "forecast_next_24h_sum_kwh": 72248.89306418052,
+    "forecast_quality": "각 호출의 완료된 과거 구간으로 독립 재적합합니다. 향후 정확도와 모듈별 예측 성능은 보장되지 않습니다.",
+    "source_mode": "recorded_replay",
+    "scope": "단일 모듈",
+    "unit": "가이드 단위의 잠정 kWh",
+    "coefficients": {
+      "won_per_kwh": 180,
+      "kgCO2_per_kwh": 0.424
+    },
+    "fault_labels_available": false
+  },
+  "chat_fields": [
+    "사용자가 입력한 질문",
+    "선택 module_id",
+    "재생 cursor_time"
+  ],
+  "raw_sensor_rows_transmitted": false,
+  "credentials_transmitted_as_report_data": false,
+  "model": "gpt-5-mini"
+}

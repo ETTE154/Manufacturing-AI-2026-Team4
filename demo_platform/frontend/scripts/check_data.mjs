@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+import {normalizeRow,appendRows,recordedClock} from '../src/data.js';
+const a=normalizeRow({module_id:'17',localtime:20250313194300,activePower:4000});
+const b=normalizeRow({module:'17(6호기)',time:'2025-03-13T19:43:00',activePower:4000});
+const merged=appendRows([a],[b]);
+assert.equal(merged.length,1);assert.equal(merged[0].activePower,4000);assert.equal(merged[0].recorded_at,'2025-03-13 19:43:00');
+assert.equal(recordedClock('2025-03-13 19:43:00'),'2025-03-13 19:43:00');
+assert.equal(appendRows(merged,[normalizeRow({module_id:'17',time:'2025-03-13 19:43:05',activePower:4100})]).length,2);
+assert.equal(appendRows(merged,[normalizeRow({module_id:'15',time:'2025-03-13 19:43:00',activePower:2000})]).length,2);
+console.log('Source clock canonicalization, bootstrap/SSE identity deduplication, module/time separation: passed');

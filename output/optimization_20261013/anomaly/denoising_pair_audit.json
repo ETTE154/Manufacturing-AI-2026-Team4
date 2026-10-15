@@ -1,0 +1,10 @@
+{
+  "model": "ae_synthetic_denoising",
+  "clean_source_teacher_exact_keys_verified": true,
+  "unmodified_mask_false_rows_verified": true,
+  "training_only_clean_proxy_scaler_fit": true,
+  "march_original_only_early_stop_threshold": true,
+  "test_usage": "Only final evaluation; no model/checkpoint/threshold selection",
+  "training_pairs": 336728,
+  "elapsed_seconds": 99.40600000007544
+}

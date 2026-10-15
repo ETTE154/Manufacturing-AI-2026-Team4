@@ -1,0 +1,120 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "test_has_no_external_slack_destination",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "four_original_candidates_available",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "exact_30_second_lead_abnormal_pattern_0091",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "jump_autoplays_new_session_abnormal_pattern_0091",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "highlight_matches_detected_interval_abnormal_pattern_0091",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "exact_30_second_lead_abnormal_pattern_0092",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "jump_autoplays_new_session_abnormal_pattern_0092",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "highlight_matches_detected_interval_abnormal_pattern_0092",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "exact_30_second_lead_abnormal_pattern_0093",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "jump_autoplays_new_session_abnormal_pattern_0093",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "highlight_matches_detected_interval_abnormal_pattern_0093",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "exact_30_second_lead_power_factor_drop_0061",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "jump_autoplays_new_session_power_factor_drop_0061",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "highlight_matches_detected_interval_power_factor_drop_0061",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "unknown_event_404",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "invalid_jump_preserves_active_window",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "synthetic_jump_retains_cause_and_original_anchor",
+      "passed": true,
+      "details": {
+        "source_time": "2025-03-14 13:02:40"
+      }
+    },
+    {
+      "name": "synthetic_highlight_keeps_provenance",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "stream_crossed_sixty_intervals",
+      "passed": true,
+      "details": {
+        "observed_ticks": 72
+      }
+    },
+    {
+      "name": "server_bootstrap_keeps_61_endpoints",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "visible_history_spans_exactly_300_seconds",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "all_modules_share_same_five_second_grid",
+      "passed": true,
+      "details": null
+    }
+  ],
+  "external_gpt_or_slack_calls": 0
+}

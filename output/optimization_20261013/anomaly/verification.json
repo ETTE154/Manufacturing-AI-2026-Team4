@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "models": 8,
+  "source_candidate_rows": 63963,
+  "continuous_windows": 318,
+  "synthetic_events": 1248,
+  "synthetic_test_events": 312,
+  "all_split_masks_seed_and_flag_checks_passed": true,
+  "unchanged_legacy_native_artifact_hashes": true,
+  "saved_inference_replay_observations": 2160,
+  "saved_inference_replay_alarm_matches": true,
+  "previous_seven_score_arrays_exactly_preserved": true,
+  "numeric_replay_tolerance": "rtol 3e-7, atol 1e-10 for score CSV round trip; alarms exact"
+}

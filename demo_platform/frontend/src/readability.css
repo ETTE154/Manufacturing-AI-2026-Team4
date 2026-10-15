@@ -1,0 +1,19 @@
+/* Legible secondary content in the manufacturing proposal demo. */
+.page-heading p{font-size:12px;color:#71827a}.eyebrow{font-size:9px;color:#75877c}
+.panel-heading p{font-size:10px;color:#7a8c81}.panel-heading h2{font-size:16px}
+.stat-label{font-size:11px;color:#698271}.stat-detail{font-size:10px;color:#7b8e7e;line-height:1.7}.stat-value small{color:#7e9685}
+.filter-label,.filter-bar>select{font-size:11px}.filter-info{font-size:10px;color:#809384}
+.checkpoint strong{font-size:12px}.checkpoint p{font-size:11px;color:#7c8c7c}
+.chart-foot{font-size:10px;color:#81947f}.data-note{font-size:10px;color:#7c8e79}
+table{font-size:11px}th{font-size:10px;color:#82977e}td{color:#52745c}.log strong{font-size:11px}.log span,.log time{font-size:10px;color:#8a9c85}
+.empty strong{font-size:13px;color:#728c79}.empty span{font-size:11px;color:#8a9e83}
+.insight-note{font-size:11px;color:#819274}.insight-note strong{font-size:12px}.algorithm h3{font-size:13px}.algorithm p{font-size:11px;color:#85957a}
+.algorithm-metrics{font-size:10px}.algorithm-metrics b{font-size:11px}.cell-note{font-size:10px;color:#8b9a7e}.diagnosis-intro p{font-size:11px;color:#958b73}
+.integration-card p{font-size:11px;color:#829673}.report-hero p{font-size:11px;color:#7e936c}.field-label{font-size:11px;color:#6f8864}.toggle-row small{font-size:10px;color:#839977}
+.chat-heading h2{font-size:14px}.chat-heading>span{font-size:10px;color:#8b9e79}.chat-input input{font-size:12px}.chat-foot{font-size:10px;color:#8d9e79}.chat-input button{background:#57896a}
+.chat-heading .badge{font-size:9px;color:#719560}.badge{font-size:10px}.online-forecast{margin-bottom:22px}
+.drawer-explainer{font-size:11px;color:#829570}.drawer-footer{font-size:10px;color:#839b6e}
+@media(max-width:760px){.page-heading p{font-size:11px}.panel-heading h2{font-size:15px}.stat-detail{font-size:9px}.stat-label{font-size:10px}.filter-label,.filter-bar>select{font-size:10px}.checkpoint p{font-size:11px}.chat-heading h2{font-size:12px}.chat-input input{font-size:11px}.chat-foot{font-size:9px}.chat-heading .badge{font-size:8px}.badge{font-size:9px}.chart-foot{font-size:9px}}
+@media(max-width:1200px){.replay-bar{flex-wrap:wrap}.replay-clock{flex-wrap:wrap}.received-clock{display:block}.replay-actions{margin-left:auto}}
+@media(max-width:760px){.received-clock{flex-basis:100%;border-left:0;padding-left:0;margin-top:1px}.received-clock strong{font-size:10px}.replay-clock{gap:10px 17px}.replay-actions{margin-left:0}}
+.report-scope{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin:0 24px 17px;font-size:10px;color:#829375}.report-scope span:last-child{font-size:9px;line-height:1.8}

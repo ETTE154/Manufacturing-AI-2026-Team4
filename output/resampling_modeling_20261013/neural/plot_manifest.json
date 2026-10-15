@@ -1,0 +1,38 @@
+{
+  "figures": {
+    "hourly_patchtst": {
+      "png": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\figures\\hourly_patchtst_internal_path.png",
+      "svg": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\figures\\hourly_patchtst_internal_path.svg"
+    },
+    "hourly_itransformer": {
+      "png": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\figures\\hourly_itransformer_internal_path.png",
+      "svg": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\figures\\hourly_itransformer_internal_path.svg"
+    },
+    "hourly_chronos2": {
+      "png": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\figures\\hourly_chronos2_internal_path.png",
+      "svg": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\figures\\hourly_chronos2_internal_path.svg"
+    },
+    "daily_patchtst": {
+      "png": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\figures\\daily_patchtst_internal_path.png",
+      "svg": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\figures\\daily_patchtst_internal_path.svg"
+    },
+    "daily_itransformer": {
+      "png": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\figures\\daily_itransformer_internal_path.png",
+      "svg": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\figures\\daily_itransformer_internal_path.svg"
+    },
+    "daily_chronos2": {
+      "png": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\figures\\daily_chronos2_internal_path.png",
+      "svg": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\figures\\daily_chronos2_internal_path.svg"
+    },
+    "resolution_comparison": {
+      "png": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\figures\\resolution_comparison.png",
+      "svg": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\figures\\resolution_comparison.svg"
+    },
+    "nested_training": {
+      "png": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\figures\\nested_training.png",
+      "svg": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\figures\\nested_training.svg"
+    }
+  },
+  "May_labels_used": false,
+  "source": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\results.json"
+}

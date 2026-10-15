@@ -1,0 +1,381 @@
+{
+  "family": "patchtst",
+  "scenario": "dayahead24",
+  "configs": [
+    {
+      "context": 24,
+      "d_model": 32,
+      "layers": 1,
+      "dropout": 0.0
+    },
+    {
+      "context": 72,
+      "d_model": 32,
+      "layers": 1,
+      "dropout": 0.1
+    },
+    {
+      "context": 168,
+      "d_model": 32,
+      "layers": 1,
+      "dropout": 0.1
+    },
+    {
+      "context": 336,
+      "d_model": 64,
+      "layers": 1,
+      "dropout": 0.1
+    },
+    {
+      "context": 720,
+      "d_model": 32,
+      "layers": 1,
+      "dropout": 0.3
+    },
+    {
+      "context": 168,
+      "d_model": 64,
+      "layers": 2,
+      "dropout": 0.1
+    },
+    {
+      "context": 168,
+      "d_model": 32,
+      "layers": 1,
+      "dropout": 0.1,
+      "loss": "L1"
+    }
+  ],
+  "budget": {
+    "configs": 7,
+    "MSE_candidates": 6,
+    "extra_L1_candidate": 1,
+    "seed": 20261013,
+    "threads": 4,
+    "maximum_epochs": 24,
+    "early_stop_patience": 4,
+    "batch_size": 32,
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "loss": "Six MSE and one L1 candidate; same train-only global normalization and validation selection",
+    "context_candidates": [
+      24,
+      72,
+      168,
+      336,
+      720,
+      168,
+      168
+    ],
+    "versions": {
+      "torch": "2.14.1",
+      "numpy": "2.3.5",
+      "pandas": "3.0.1"
+    },
+    "claim": "Budgeted local validation search; not a guarantee of global optimality. No internal-test or May tuning."
+  },
+  "source_approval": {
+    "approved_for_training": true,
+    "approval_basis": "Parent root SOURCE GO: official train and May downloaded bytes match original SHA completely; raw originals are not read again by this optimization.",
+    "target_sha256": "729b149a3e3165dfb339f0386249bfbda0326657f9e722d86da8138db36117de",
+    "byte_comparison": "E:/AI work/AWS_프로젝트/output/optimization_20261013/source_audit/byte_comparison.json",
+    "source_manifest": "E:/AI work/AWS_프로젝트/output/optimization_20261013/source_audit/source_manifest.json",
+    "new_outputs_only": "E:/AI work/AWS_프로젝트/output/optimization_20261013/forecast"
+  },
+  "protocol": {
+    "status": "source_approved_training_enabled",
+    "assumed_presentation_scenario": "24-value hourly day-ahead curve, plus lead24 endpoint; user clarification was pending and 24h is the declared assumption",
+    "target_source": "E:\\AI work\\AWS_프로젝트\\output\\analysis\\baseline_audit\\complete_hour_module_sum.csv",
+    "target_sha256": "729b149a3e3165dfb339f0386249bfbda0326657f9e722d86da8138db36117de",
+    "old_outputs_policy": "Read existing analysis/modeling; all new code/models/metrics/predictions/figures only under this forecast directory",
+    "target": "13-module provisional hourly energy sum, kWh; unknown meter hierarchy can double count; not certified facility consumption",
+    "source_resolution_seconds": 5,
+    "model_step_hours": 1,
+    "aggregation": "sum(activePower_kW)*5/3600 over 720 unique five-second values per module; all 13 modules must be complete at the same hour",
+    "data_start": "2024-12-01 00:00:00",
+    "data_end": "2025-04-29 23:00:00",
+    "target_hours": 3600,
+    "time_key": "Recorded localtime: continuous audited grid; supplied Unix key has March9 offset transition inconsistent with Korean-time guide",
+    "dayahead": {
+      "points": 24,
+      "offsets_from_origin": "0..23",
+      "leads_from_last_observed": "1..24",
+      "endpoint_definition": "lead24 is origin+23h, not origin+24h; relative to last observed origin-1h it is exactly 24h later",
+      "validation_folds": [
+        {
+          "fold": 1,
+          "fit_origin": "2025-01-10 00:00:00",
+          "history_hours": 960,
+          "origins": [
+            "2025-01-10 00:00:00",
+            "2025-01-11 00:00:00",
+            "2025-01-12 00:00:00",
+            "2025-01-13 00:00:00",
+            "2025-01-14 00:00:00",
+            "2025-01-15 00:00:00",
+            "2025-01-16 00:00:00",
+            "2025-01-17 00:00:00",
+            "2025-01-18 00:00:00",
+            "2025-01-19 00:00:00",
+            "2025-01-20 00:00:00",
+            "2025-01-21 00:00:00",
+            "2025-01-22 00:00:00",
+            "2025-01-23 00:00:00"
+          ],
+          "target_start": "2025-01-10 00:00:00",
+          "target_end": "2025-01-23 23:00:00",
+          "target_rows": 336,
+          "origins_count": 14
+        },
+        {
+          "fold": 2,
+          "fit_origin": "2025-01-24 00:00:00",
+          "history_hours": 1296,
+          "origins": [
+            "2025-01-24 00:00:00",
+            "2025-01-25 00:00:00",
+            "2025-01-26 00:00:00",
+            "2025-01-27 00:00:00",
+            "2025-01-28 00:00:00",
+            "2025-01-29 00:00:00",
+            "2025-01-30 00:00:00",
+            "2025-01-31 00:00:00",
+            "2025-02-01 00:00:00",
+            "2025-02-02 00:00:00",
+            "2025-02-03 00:00:00",
+            "2025-02-04 00:00:00",
+            "2025-02-05 00:00:00",
+            "2025-02-06 00:00:00"
+          ],
+          "target_start": "2025-01-24 00:00:00",
+          "target_end": "2025-02-06 23:00:00",
+          "target_rows": 336,
+          "origins_count": 14
+        },
+        {
+          "fold": 3,
+          "fit_origin": "2025-02-07 00:00:00",
+          "history_hours": 1632,
+          "origins": [
+            "2025-02-07 00:00:00",
+            "2025-02-08 00:00:00",
+            "2025-02-09 00:00:00",
+            "2025-02-10 00:00:00",
+            "2025-02-11 00:00:00",
+            "2025-02-12 00:00:00",
+            "2025-02-13 00:00:00",
+            "2025-02-14 00:00:00",
+            "2025-02-15 00:00:00",
+            "2025-02-16 00:00:00",
+            "2025-02-17 00:00:00",
+            "2025-02-18 00:00:00",
+            "2025-02-19 00:00:00",
+            "2025-02-20 00:00:00"
+          ],
+          "target_start": "2025-02-07 00:00:00",
+          "target_end": "2025-02-20 23:00:00",
+          "target_rows": 336,
+          "origins_count": 14
+        },
+        {
+          "fold": 4,
+          "fit_origin": "2025-02-21 00:00:00",
+          "history_hours": 1968,
+          "origins": [
+            "2025-02-21 00:00:00",
+            "2025-02-22 00:00:00",
+            "2025-02-23 00:00:00",
+            "2025-02-24 00:00:00",
+            "2025-02-25 00:00:00",
+            "2025-02-26 00:00:00",
+            "2025-02-27 00:00:00",
+            "2025-02-28 00:00:00",
+            "2025-03-01 00:00:00",
+            "2025-03-02 00:00:00",
+            "2025-03-03 00:00:00",
+            "2025-03-04 00:00:00",
+            "2025-03-05 00:00:00",
+            "2025-03-06 00:00:00"
+          ],
+          "target_start": "2025-02-21 00:00:00",
+          "target_end": "2025-03-06 23:00:00",
+          "target_rows": 336,
+          "origins_count": 14
+        },
+        {
+          "fold": 5,
+          "fit_origin": "2025-03-07 00:00:00",
+          "history_hours": 2304,
+          "origins": [
+            "2025-03-07 00:00:00",
+            "2025-03-08 00:00:00",
+            "2025-03-09 00:00:00",
+            "2025-03-10 00:00:00",
+            "2025-03-11 00:00:00",
+            "2025-03-12 00:00:00",
+            "2025-03-13 00:00:00",
+            "2025-03-14 00:00:00",
+            "2025-03-15 00:00:00",
+            "2025-03-16 00:00:00",
+            "2025-03-17 00:00:00",
+            "2025-03-18 00:00:00",
+            "2025-03-19 00:00:00",
+            "2025-03-20 00:00:00"
+          ],
+          "target_start": "2025-03-07 00:00:00",
+          "target_end": "2025-03-20 23:00:00",
+          "target_rows": 336,
+          "origins_count": 14
+        }
+      ],
+      "validation_total_origins": 70,
+      "validation_target_rows": 1680,
+      "training_updates": "Expand fitted history at each fold start. Weights fixed within each 14-day block; input context updates daily using only observations before that origin. ARIMA filtering/state may update on newly past observations without refitting coefficients.",
+      "selection": "Lowest mean 70-origin path MAE; 24h endpoint MAE is separately reported, not used opportunistically for winner selection",
+      "test_fit_origin": "2025-04-01 00:00:00",
+      "test_origins": [
+        "2025-04-01 00:00:00",
+        "2025-04-02 00:00:00",
+        "2025-04-03 00:00:00",
+        "2025-04-04 00:00:00",
+        "2025-04-05 00:00:00",
+        "2025-04-06 00:00:00",
+        "2025-04-07 00:00:00",
+        "2025-04-08 00:00:00",
+        "2025-04-09 00:00:00",
+        "2025-04-10 00:00:00",
+        "2025-04-11 00:00:00",
+        "2025-04-12 00:00:00",
+        "2025-04-13 00:00:00",
+        "2025-04-14 00:00:00",
+        "2025-04-15 00:00:00",
+        "2025-04-16 00:00:00",
+        "2025-04-17 00:00:00",
+        "2025-04-18 00:00:00",
+        "2025-04-19 00:00:00",
+        "2025-04-20 00:00:00",
+        "2025-04-21 00:00:00",
+        "2025-04-22 00:00:00",
+        "2025-04-23 00:00:00",
+        "2025-04-24 00:00:00",
+        "2025-04-25 00:00:00",
+        "2025-04-26 00:00:00",
+        "2025-04-27 00:00:00",
+        "2025-04-28 00:00:00",
+        "2025-04-29 00:00:00"
+      ],
+      "test_origin_count": 29,
+      "test_target_rows": 696,
+      "test_target_start": "2025-04-01 00:00:00",
+      "test_target_end": "2025-04-29 23:00:00",
+      "test_usage": "April labels excluded from new HPO. Existing project EDA/evaluations already saw April, so this is post-EDA locking, not a pristine prospective holdout."
+    },
+    "long": {
+      "points": 745,
+      "offsets_from_origin": "0..744",
+      "leads_from_last_observed": "1..745",
+      "validation_origin": "2025-02-25 00:00:00",
+      "validation_history_hours": 2064,
+      "validation_end": "2025-03-28 00:00:00",
+      "test_origin": "2025-03-29 00:00:00",
+      "test_history_hours": 2832,
+      "test_end": "2025-04-29 00:00:00",
+      "selection": "Blocked Feb25 fixed-origin P745 validation only; March29 internal test does not tune",
+      "independent_origin_limitation": "Only one long validation origin and one long test origin; 150 days of data cannot support many nonoverlapping 31-day horizons with sufficient expanding history.",
+      "may_origin": "2025-04-30 00:00:00",
+      "may_path_end": "2025-05-31 00:00:00",
+      "may_score_start": "2025-05-10 00:00:00",
+      "may_score_end": "2025-05-31 00:00:00",
+      "may_score_rows": 505,
+      "may_score_offsets": "240..744",
+      "may_score_leads": "241..745",
+      "may_no_tuning": "May values were seen in prior EDA/evaluation. No additional HPO, calibration, preprocessing, or model selection may use May labels.",
+      "may_day_ahead_limitation": "May sensor/context observations are unavailable. Public May505 labels are not used as rolling model inputs. April demonstrates day-ahead; May remains the separate single-origin long-forecast task."
+    },
+    "neural_input_policy": "All newly optimized neural models are aggregate univariate; iTransformer consequently has one variate token and cannot demonstrate its multivariate cross-channel attention advantage. XGBoost/calendar Ridge additionally use deterministically known calendar.",
+    "optimization_claim": "Budgeted local search and validation selection; no guarantee of global optimum or superiority over strong simple baselines",
+    "planned_search_budget": {
+      "xgboost_configs": 30,
+      "arima_small_grid": true,
+      "patchtst_configs_per_scenario": 6,
+      "itransformer_configs_per_scenario": 6,
+      "day_neural_contexts": [
+        24,
+        72,
+        168,
+        336,
+        720
+      ],
+      "long_neural_contexts": [
+        24,
+        72,
+        168,
+        336,
+        512
+      ],
+      "long_context_constraint": "Inner fitting history has1319points after holding out745; context720+output745 exceeds it, so context512 is the largest predeclared feasible candidate.",
+      "chronos_contexts": [
+        168,
+        720,
+        "full"
+      ],
+      "cpu_threads": 4
+    },
+    "seed": 20261013
+  },
+  "vendor": {
+    "source": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\patchtst\\provenance.json",
+    "source_sha256": "036f4ed7fd8dd6054224f7dd1780391ff6da8f501d09dcdb8727625ef9b7b4ad",
+    "record": {
+      "repository": "https://github.com/yuqinie98/PatchTST",
+      "commit": "204c21efe0b39603ad6e2ca640ef5896646ab1a9",
+      "files": [
+        {
+          "upstream_path": "PatchTST_supervised/models/PatchTST.py",
+          "source_url": "https://raw.githubusercontent.com/yuqinie98/PatchTST/204c21efe0b39603ad6e2ca640ef5896646ab1a9/PatchTST_supervised/models/PatchTST.py",
+          "original_sha256": "49d8bb865e1226d6338842f4b33c4bc6992cefb048dc2a4a5a8c410ca708586b",
+          "vendored_path": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\patchtst\\patchtst_vendor\\models\\PatchTST.py",
+          "vendored_sha256": "1a6f8e081addbec8522389e9cbf6eb3674be1d24d7af64c1582e36079055a879",
+          "modification": "Only from/import layers namespace changed to patchtst_vendor.layers"
+        },
+        {
+          "upstream_path": "PatchTST_supervised/layers/PatchTST_backbone.py",
+          "source_url": "https://raw.githubusercontent.com/yuqinie98/PatchTST/204c21efe0b39603ad6e2ca640ef5896646ab1a9/PatchTST_supervised/layers/PatchTST_backbone.py",
+          "original_sha256": "df67173153787c2356bdfb6491159cd754332ef7382986efe879e1fbea8ebf26",
+          "vendored_path": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\patchtst\\patchtst_vendor\\layers\\PatchTST_backbone.py",
+          "vendored_sha256": "3d9fc0d88a36e61dcbb20bdd628a60236c6946fa335885157f2725934fc689b3",
+          "modification": "Only from/import layers namespace changed to patchtst_vendor.layers"
+        },
+        {
+          "upstream_path": "PatchTST_supervised/layers/PatchTST_layers.py",
+          "source_url": "https://raw.githubusercontent.com/yuqinie98/PatchTST/204c21efe0b39603ad6e2ca640ef5896646ab1a9/PatchTST_supervised/layers/PatchTST_layers.py",
+          "original_sha256": "21c06c70a90c60ee2a269b5c600c702834dea22cdfd72915e6b0f8b4a28db3f6",
+          "vendored_path": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\patchtst\\patchtst_vendor\\layers\\PatchTST_layers.py",
+          "vendored_sha256": "21c06c70a90c60ee2a269b5c600c702834dea22cdfd72915e6b0f8b4a28db3f6",
+          "modification": "Only from/import layers namespace changed to patchtst_vendor.layers"
+        },
+        {
+          "upstream_path": "PatchTST_supervised/layers/RevIN.py",
+          "source_url": "https://raw.githubusercontent.com/yuqinie98/PatchTST/204c21efe0b39603ad6e2ca640ef5896646ab1a9/PatchTST_supervised/layers/RevIN.py",
+          "original_sha256": "e64c0ccded9228b347134e7368420d3fb10f70c75145b5ff2d8bdd8c3af59df6",
+          "vendored_path": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\patchtst\\patchtst_vendor\\layers\\RevIN.py",
+          "vendored_sha256": "e64c0ccded9228b347134e7368420d3fb10f70c75145b5ff2d8bdd8c3af59df6",
+          "modification": "Only from/import layers namespace changed to patchtst_vendor.layers"
+        },
+        {
+          "upstream_path": "LICENSE",
+          "source_url": "https://raw.githubusercontent.com/yuqinie98/PatchTST/204c21efe0b39603ad6e2ca640ef5896646ab1a9/LICENSE",
+          "original_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "vendored_path": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\patchtst\\patchtst_vendor\\LICENSE",
+          "vendored_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "modification": "Unmodified license"
+        }
+      ],
+      "architecture_scope": "Official supervised PatchTST core with namespace-only import changes; compact univariate config, not original-paper benchmark reproduction",
+      "algorithmic_modifications": false
+    },
+    "scope": "Pinned official core, compact local retraining. Namespace-only import changes; unused iTransformer Reformer import is lazy. No published benchmark reproduction.",
+    "iTransformer_univariate_limit": null
+  }
+}

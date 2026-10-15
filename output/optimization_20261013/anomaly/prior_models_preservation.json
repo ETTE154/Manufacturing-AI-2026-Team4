@@ -1,0 +1,11 @@
+{
+  "pre_extension_seven_score_arrays_exactly_restored": true,
+  "roundtrip_values_corrected": {
+    "original_test_scores.csv.gz": 148199,
+    "continuous_window_scores.csv.gz": 467618,
+    "full_candidate_scores.csv.gz": 185294,
+    "synthetic_test_scores.csv.gz": 916271
+  },
+  "seven_original_and_synthetic_metrics_and_thresholds_unchanged": true,
+  "new_model_only": "ae_synthetic_denoising"
+}

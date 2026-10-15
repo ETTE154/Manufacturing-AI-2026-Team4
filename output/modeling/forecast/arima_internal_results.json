@@ -1,0 +1,95 @@
+{
+  "frozen_config": {
+    "order": [
+      0,
+      0,
+      0
+    ],
+    "trend": "c"
+  },
+  "validation": {
+    "H96": {
+      "count": 96,
+      "mae_kwh": 76.56858250420434,
+      "rmse_kwh": 101.42911471081156,
+      "mape_percent": 0.19583984869972745,
+      "bias_pred_minus_actual_kwh": 6.517163760841261
+    },
+    "H192": {
+      "count": 192,
+      "mae_kwh": 77.01264933053449,
+      "rmse_kwh": 99.87807583966799,
+      "mape_percent": 0.19691158130992667,
+      "bias_pred_minus_actual_kwh": 5.940393361535523
+    },
+    "H336": {
+      "count": 336,
+      "mae_kwh": 76.9839047174172,
+      "rmse_kwh": 98.85920815776396,
+      "mape_percent": 0.1967810885407696,
+      "bias_pred_minus_actual_kwh": 0.040154480913921965
+    },
+    "H720": {
+      "count": 720,
+      "mae_kwh": 75.41147903535521,
+      "rmse_kwh": 95.91956511701734,
+      "mape_percent": 0.1927312385282617,
+      "bias_pred_minus_actual_kwh": -0.888144254204902
+    },
+    "P745": {
+      "count": 745,
+      "mae_kwh": 76.03288894159851,
+      "rmse_kwh": 96.70571032200458,
+      "mape_percent": 0.1943264757318577,
+      "bias_pred_minus_actual_kwh": -0.15495378961069775
+    }
+  },
+  "internal_test": {
+    "H96": {
+      "count": 96,
+      "mae_kwh": 70.02872540821106,
+      "rmse_kwh": 91.17530213123875,
+      "mape_percent": 0.17909849113250367,
+      "bias_pred_minus_actual_kwh": 18.095480051354116
+    },
+    "H192": {
+      "count": 192,
+      "mae_kwh": 76.85444174573286,
+      "rmse_kwh": 96.62653373634687,
+      "mape_percent": 0.19653180719501917,
+      "bias_pred_minus_actual_kwh": 13.250508552511443
+    },
+    "H336": {
+      "count": 336,
+      "mae_kwh": 80.98662695755928,
+      "rmse_kwh": 99.32372126611139,
+      "mape_percent": 0.2070423534482248,
+      "bias_pred_minus_actual_kwh": 8.099456613854207
+    },
+    "H720": {
+      "count": 720,
+      "mae_kwh": 77.86078898575518,
+      "rmse_kwh": 96.93477832984082,
+      "mape_percent": 0.199017243554449,
+      "bias_pred_minus_actual_kwh": 3.5283686316011376
+    },
+    "P745": {
+      "count": 745,
+      "mae_kwh": 78.2290976452165,
+      "rmse_kwh": 97.06757568504624,
+      "mape_percent": 0.19995907008274805,
+      "bias_pred_minus_actual_kwh": 3.4652220089263173
+    }
+  },
+  "internal_test_fit": {
+    "order": [
+      0,
+      0,
+      0
+    ],
+    "aic_training_only": 33845.21870955241,
+    "converged": true,
+    "warnings": []
+  },
+  "internal_runtime_seconds": 2.5
+}

@@ -1,0 +1,25 @@
+{
+  "model": "iTransformer",
+  "config": {
+    "seq_len": 168,
+    "pred_len": 745,
+    "d_model": 32,
+    "d_ff": 64,
+    "e_layers": 1,
+    "n_heads": 4,
+    "dropout": 0.1,
+    "output_attention": false,
+    "use_norm": true,
+    "embed": "timeF",
+    "freq": "h",
+    "class_strategy": "projection",
+    "factor": 5,
+    "activation": "gelu"
+  },
+  "epochs": 18,
+  "selection_basis": "Lowest aggregate P745 MAE on blocked Feb25 outer validation only",
+  "seed": 2026,
+  "input": "Past 13 module hourly energy variates; output module forecasts summed; extra multivariate history compared with univariate competitors",
+  "status": "frozen_before_May_labels",
+  "method_note": "Official compact architecture, not published benchmark reproduction"
+}

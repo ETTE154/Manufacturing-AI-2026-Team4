@@ -1,0 +1,55 @@
+[
+  {
+    "fold": "fold1",
+    "origin": "2025-01-10",
+    "training_rows": 960,
+    "selected_count": 0,
+    "selected_columns": [],
+    "selection_uses_April_or_May": false
+  },
+  {
+    "fold": "fold2",
+    "origin": "2025-01-24",
+    "training_rows": 1296,
+    "selected_count": 2,
+    "selected_columns": [
+      "m12__voltageTR_mean",
+      "m12__voltageR_mean"
+    ],
+    "selection_uses_April_or_May": false
+  },
+  {
+    "fold": "fold3",
+    "origin": "2025-02-07",
+    "training_rows": 1632,
+    "selected_count": 0,
+    "selected_columns": [],
+    "selection_uses_April_or_May": false
+  },
+  {
+    "fold": "fold4",
+    "origin": "2025-02-21",
+    "training_rows": 1968,
+    "selected_count": 1,
+    "selected_columns": [
+      "m3__voltageRS_mean"
+    ],
+    "selection_uses_April_or_May": false
+  },
+  {
+    "fold": "fold5",
+    "origin": "2025-03-07",
+    "training_rows": 2304,
+    "selected_count": 0,
+    "selected_columns": [],
+    "selection_uses_April_or_May": false
+  },
+  {
+    "fold": "April_schema_lock",
+    "origin": "2025-04-01",
+    "training_rows": 2904,
+    "selected_count": 0,
+    "selected_columns": [],
+    "selection_uses_April_or_May": false
+  }
+]

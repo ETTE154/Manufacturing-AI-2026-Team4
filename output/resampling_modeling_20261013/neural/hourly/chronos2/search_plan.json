@@ -1,0 +1,44 @@
+{
+  "configs": [
+    {
+      "context": "full",
+      "mean_blend_alpha": 0.0,
+      "mapping_profile": "uniform"
+    },
+    {
+      "context": "full",
+      "mean_blend_alpha": 0.25,
+      "mapping_profile": "uniform"
+    },
+    {
+      "context": "full",
+      "mean_blend_alpha": 1.0,
+      "mapping_profile": "uniform"
+    },
+    {
+      "context": 720,
+      "mean_blend_alpha": 0.0,
+      "mapping_profile": "uniform"
+    },
+    {
+      "context": 720,
+      "mean_blend_alpha": 0.25,
+      "mapping_profile": "uniform"
+    },
+    {
+      "context": 720,
+      "mean_blend_alpha": 1.0,
+      "mapping_profile": "uniform"
+    }
+  ],
+  "validation_origins": [
+    "2025-02-15 00:00:00",
+    "2025-02-22 00:00:00",
+    "2025-02-25 00:00:00"
+  ],
+  "selection": "Mean validation-origin Late505 MAE only",
+  "weights_frozen": true,
+  "checkpoint_revision": "29ec3766d36d6f73f0696f85560a422f50e8498c",
+  "point": "official median0.5",
+  "May_labels_read": false
+}

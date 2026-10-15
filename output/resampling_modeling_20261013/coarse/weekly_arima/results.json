@@ -1,0 +1,99 @@
+{
+  "family": "weekly_arima",
+  "selected_config": {
+    "family": "weekly_arima",
+    "resolution": "weekly",
+    "kind": "arima",
+    "order": [
+      1,
+      0,
+      0
+    ],
+    "profile": "uniform",
+    "profile_alpha": 0.5
+  },
+  "validation": {
+    "full745": {
+      "count": 2235,
+      "mae_kwh": 76.5380175131077,
+      "rmse_kwh": 97.45466753851191,
+      "mape_percent": 0.1956220067554359,
+      "r2": -0.00047195155477619544,
+      "bias_pred_minus_actual_kwh": 1.1269502195535273
+    },
+    "late505": {
+      "count": 1515,
+      "mae_kwh": 76.2315652105475,
+      "rmse_kwh": 96.78813300155608,
+      "mape_percent": 0.1948187488442879,
+      "r2": 7.391045683924347e-05,
+      "bias_pred_minus_actual_kwh": -0.6518779675949694
+    },
+    "origin_count": 3,
+    "mean_origin_late505_mae_kwh": 76.2315652105475
+  },
+  "test": {
+    "full745": {
+      "count": 745,
+      "mae_kwh": 78.22697631132485,
+      "rmse_kwh": 97.064605730033,
+      "mape_percent": 0.19995321131989174,
+      "r2": -0.0012147789977661194,
+      "bias_pred_minus_actual_kwh": 3.3796316395528168
+    },
+    "late505": {
+      "count": 505,
+      "mae_kwh": 77.99945645147129,
+      "rmse_kwh": 96.57101466428102,
+      "mape_percent": 0.19934859914219344,
+      "r2": -7.258739328896979e-05,
+      "bias_pred_minus_actual_kwh": -0.8227455314057176
+    },
+    "origin_count": 1,
+    "mean_origin_late505_mae_kwh": 77.99945645147129
+  },
+  "validation_period_metadata": [
+    {
+      "complete_periods": 10,
+      "last_period_label": "2025-02-09 00:00:00",
+      "last_period_available_at": "2025-02-10 00:00:00",
+      "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+      "history_end": "2025-02-14 23:00:00",
+      "partial_periods_excluded": 2
+    },
+    {
+      "complete_periods": 11,
+      "last_period_label": "2025-02-16 00:00:00",
+      "last_period_available_at": "2025-02-17 00:00:00",
+      "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+      "history_end": "2025-02-21 23:00:00",
+      "partial_periods_excluded": 2
+    },
+    {
+      "complete_periods": 12,
+      "last_period_label": "2025-02-23 00:00:00",
+      "last_period_available_at": "2025-02-24 00:00:00",
+      "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+      "history_end": "2025-02-24 23:00:00",
+      "partial_periods_excluded": 2
+    }
+  ],
+  "final_period_metadata": {
+    "complete_periods": 21,
+    "last_period_label": "2025-04-27 00:00:00",
+    "last_period_available_at": "2025-04-28 00:00:00",
+    "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+    "history_end": "2025-04-29 23:00:00",
+    "partial_periods_excluded": 2
+  },
+  "saved_model": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\coarse\\weekly_arima\\saved_model.joblib",
+  "reload_max_abs_diff": 0.0,
+  "prediction_csv": {
+    "validation": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\coarse\\weekly_arima\\validation_predictions.csv",
+    "test": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\coarse\\weekly_arima\\test_predictions.csv",
+    "future": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\coarse\\weekly_arima\\future_path.csv"
+  },
+  "allocation": "Historical-only hourly multipliers; each learned day shape has sum24. Weekly/monthly rate mapping is not joint hierarchical reconciliation of already-known partial observations.",
+  "May_labels_read": false,
+  "monthly_limit": false
+}

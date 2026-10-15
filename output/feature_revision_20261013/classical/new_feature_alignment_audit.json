@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "groups_checked": [
+    "target_fixed_calendar",
+    "target_aligned_calendar",
+    "module_aligned_calendar",
+    "selected_sensor_calendar",
+    "all_sensor_calendar"
+  ],
+  "future_mutation_changes_features": false,
+  "full_frame_vs_prefix_features_max_absdiff": 0.0,
+  "long_future_mutation_max_absdiff": 0.0,
+  "daily_lag_indices_offset0_23": [
+    936,
+    959
+  ],
+  "weekly_lag_indices_offset0_23": [
+    792,
+    815
+  ],
+  "long_phase_wrap": "daily=origin-24+(offset%24); weekly=origin-168+(offset%168); always strictly earlier than origin",
+  "train_matrix_boundaries": "Offsets are filtered with origin_position+offset<len(fitting_prefix); no target outside prefix admitted.",
+  "known_future_covariates": [
+    "calendar",
+    "horizon_offset"
+  ],
+  "future_sensor_measurements_used": false
+}

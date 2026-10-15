@@ -1,0 +1,87 @@
+{
+  "status": "pass",
+  "tests": [
+    {
+      "scaler": "zscore",
+      "roundtrip_max_error_kwh": 0.0,
+      "normalizer": {
+        "kind": "zscore",
+        "center": [
+          39130.11766341527
+        ],
+        "offset": [
+          0.0
+        ],
+        "scale": [
+          93.82245782939587
+        ],
+        "fit_rows": 1824,
+        "residual_centering": "Train-prefix arithmetic mean before numerical scaling",
+        "native_unit": "provisional guide kWh per hour",
+        "physical_unit_conversion": false
+      },
+      "fit_end": "2025-02-14 23:00:00",
+      "R2_both_truth_and_prediction_unit_change_errors": {
+        "0.003472222222222222": 0.0,
+        "0.001": 0.0,
+        "1000.0": 0.0
+      }
+    },
+    {
+      "scaler": "robust",
+      "roundtrip_max_error_kwh": 0.0,
+      "normalizer": {
+        "kind": "robust",
+        "center": [
+          39130.11766341527
+        ],
+        "offset": [
+          -1.1168995263833494
+        ],
+        "scale": [
+          123.45599305555152
+        ],
+        "fit_rows": 1824,
+        "residual_centering": "Train-prefix arithmetic mean before numerical scaling",
+        "native_unit": "provisional guide kWh per hour",
+        "physical_unit_conversion": false
+      },
+      "fit_end": "2025-02-14 23:00:00",
+      "R2_both_truth_and_prediction_unit_change_errors": {
+        "0.003472222222222222": 0.0,
+        "0.001": 0.0,
+        "1000.0": 0.0
+      }
+    },
+    {
+      "scaler": "minmax",
+      "roundtrip_max_error_kwh": 0.0,
+      "normalizer": {
+        "kind": "minmax",
+        "center": [
+          39130.11766341527
+        ],
+        "offset": [
+          -313.39744119305396
+        ],
+        "scale": [
+          626.4430972222253
+        ],
+        "fit_rows": 1824,
+        "residual_centering": "Train-prefix arithmetic mean before numerical scaling",
+        "native_unit": "provisional guide kWh per hour",
+        "physical_unit_conversion": false
+      },
+      "fit_end": "2025-02-14 23:00:00",
+      "R2_both_truth_and_prediction_unit_change_errors": {
+        "0.003472222222222222": 0.0,
+        "0.001": 0.0,
+        "1000.0": 0.0
+      }
+    }
+  ],
+  "physical_unit_status": "Guide kW/kWh provisional; no evidence authorizes a divide288 or divide1000 correction",
+  "conclusion": "Correct reversible normalization improves conditioning. Scaling truth and prediction together cannot repair R2 or forecast direction.",
+  "target_sha256": "729b149a3e3165dfb339f0386249bfbda0326657f9e722d86da8138db36117de",
+  "guide_target_retained": true
+}

@@ -1,0 +1,1906 @@
+{
+  "status": "complete",
+  "family": "itransformer",
+  "scenario": "long745",
+  "selected_config": {
+    "group": "module_energy",
+    "context": 24,
+    "d_model": 32,
+    "layers": 1,
+    "loss": "MSE",
+    "instance_norm": false,
+    "dropout": 0.1,
+    "output_penalty": 0.03
+  },
+  "selected_candidate": 1,
+  "validation": {
+    "path_metrics": {
+      "count": 745,
+      "mae_kwh": 82.86946288395912,
+      "rmse_kwh": 105.88342778414936,
+      "mape_percent": 0.2118039538066018,
+      "bias_pred_minus_actual_kwh": -0.5769692443174192,
+      "r2": -0.19881691258038803
+    },
+    "origin_count": 1,
+    "mean_origin_path_mae_kwh": 82.86946288395912,
+    "endpoint_metrics": {
+      "lead1": {
+        "count": 1,
+        "mae_kwh": 177.4171456002441,
+        "rmse_kwh": 177.4171456002441,
+        "mape_percent": 0.4555017385502196,
+        "bias_pred_minus_actual_kwh": 177.4171456002441,
+        "r2": null
+      },
+      "lead6": {
+        "count": 1,
+        "mae_kwh": 110.32829613850481,
+        "rmse_kwh": 110.32829613850481,
+        "mape_percent": 0.2809979981095819,
+        "bias_pred_minus_actual_kwh": -110.32829613850481,
+        "r2": null
+      },
+      "lead24": {
+        "count": 1,
+        "mae_kwh": 197.7102400924632,
+        "rmse_kwh": 197.7102400924632,
+        "mape_percent": 0.5078106381019534,
+        "bias_pred_minus_actual_kwh": 197.7102400924632,
+        "r2": null
+      }
+    },
+    "LateP505": {
+      "count": 505,
+      "mae_kwh": 84.81874358527385,
+      "rmse_kwh": 108.12920149319842,
+      "mape_percent": 0.21675750937039906,
+      "bias_pred_minus_actual_kwh": -0.1540554174295388,
+      "r2": -0.22623273172269953
+    }
+  },
+  "test": {
+    "path_metrics": {
+      "count": 745,
+      "mae_kwh": 83.9204524451965,
+      "rmse_kwh": 104.37051336044294,
+      "mape_percent": 0.21449945412412322,
+      "bias_pred_minus_actual_kwh": 4.144692219147818,
+      "r2": -0.15760688527374178
+    },
+    "origin_count": 1,
+    "mean_origin_path_mae_kwh": 83.9204524451965,
+    "endpoint_metrics": {
+      "lead1": {
+        "count": 1,
+        "mae_kwh": 11.362620576117479,
+        "rmse_kwh": 11.362620576117479,
+        "mape_percent": 0.02902570199525953,
+        "bias_pred_minus_actual_kwh": -11.362620576117479,
+        "r2": null
+      },
+      "lead6": {
+        "count": 1,
+        "mae_kwh": 64.34875575158367,
+        "rmse_kwh": 64.34875575158367,
+        "mape_percent": 0.16459099048606332,
+        "bias_pred_minus_actual_kwh": 64.34875575158367,
+        "r2": null
+      },
+      "lead24": {
+        "count": 1,
+        "mae_kwh": 71.51296594952873,
+        "rmse_kwh": 71.51296594952873,
+        "mape_percent": 0.18313584013433162,
+        "bias_pred_minus_actual_kwh": 71.51296594952873,
+        "r2": null
+      }
+    },
+    "LateP505": {
+      "count": 505,
+      "mae_kwh": 84.725730341057,
+      "rmse_kwh": 105.29574906446283,
+      "mape_percent": 0.21653655859604198,
+      "bias_pred_minus_actual_kwh": 0.30408584614035655,
+      "r2": -0.18893910367688282
+    }
+  },
+  "validation_metrics": {
+    "count": 745,
+    "mae_kwh": 82.86946288395912,
+    "rmse_kwh": 105.88342778414936,
+    "mape_percent": 0.2118039538066018,
+    "bias_pred_minus_actual_kwh": -0.5769692443174192,
+    "r2": -0.19881691258038803
+  },
+  "test_metrics": {
+    "count": 745,
+    "mae_kwh": 83.9204524451965,
+    "rmse_kwh": 104.37051336044294,
+    "mape_percent": 0.21449945412412322,
+    "bias_pred_minus_actual_kwh": 4.144692219147818,
+    "r2": -0.15760688527374178
+  },
+  "validation_lead_metrics": {
+    "lead1": {
+      "count": 1,
+      "mae_kwh": 177.4171456002441,
+      "rmse_kwh": 177.4171456002441,
+      "mape_percent": 0.4555017385502196,
+      "bias_pred_minus_actual_kwh": 177.4171456002441,
+      "r2": null
+    },
+    "lead6": {
+      "count": 1,
+      "mae_kwh": 110.32829613850481,
+      "rmse_kwh": 110.32829613850481,
+      "mape_percent": 0.2809979981095819,
+      "bias_pred_minus_actual_kwh": -110.32829613850481,
+      "r2": null
+    },
+    "lead24": {
+      "count": 1,
+      "mae_kwh": 197.7102400924632,
+      "rmse_kwh": 197.7102400924632,
+      "mape_percent": 0.5078106381019534,
+      "bias_pred_minus_actual_kwh": 197.7102400924632,
+      "r2": null
+    }
+  },
+  "test_lead_metrics": {
+    "lead1": {
+      "count": 1,
+      "mae_kwh": 11.362620576117479,
+      "rmse_kwh": 11.362620576117479,
+      "mape_percent": 0.02902570199525953,
+      "bias_pred_minus_actual_kwh": -11.362620576117479,
+      "r2": null
+    },
+    "lead6": {
+      "count": 1,
+      "mae_kwh": 64.34875575158367,
+      "rmse_kwh": 64.34875575158367,
+      "mape_percent": 0.16459099048606332,
+      "bias_pred_minus_actual_kwh": 64.34875575158367,
+      "r2": null
+    },
+    "lead24": {
+      "count": 1,
+      "mae_kwh": 71.51296594952873,
+      "rmse_kwh": 71.51296594952873,
+      "mape_percent": 0.18313584013433162,
+      "bias_pred_minus_actual_kwh": 71.51296594952873,
+      "r2": null
+    }
+  },
+  "input_features": [
+    "m1__energy_kwh",
+    "m2__energy_kwh",
+    "m3__energy_kwh",
+    "m4__energy_kwh",
+    "m5__energy_kwh",
+    "m11__energy_kwh",
+    "m12__energy_kwh",
+    "m13__energy_kwh",
+    "m14__energy_kwh",
+    "m15__energy_kwh",
+    "m16__energy_kwh",
+    "m17__energy_kwh",
+    "m18__energy_kwh",
+    "target_energy_kwh"
+  ],
+  "input_feature_count": 14,
+  "selected_sensor_count": 0,
+  "target_index": 13,
+  "target_mode": "aggregate channel selected by explicit target_index",
+  "cross_channel_or_auxiliary": "iTransformer attention across named variate tokens; aggregate target supervised",
+  "loss_definition": "aggregate target only, other variables are input covariates",
+  "candidate_results": [
+    {
+      "candidate": 1,
+      "config": {
+        "group": "module_energy",
+        "context": 24,
+        "d_model": 32,
+        "layers": 1,
+        "loss": "MSE",
+        "instance_norm": false,
+        "dropout": 0.1,
+        "output_penalty": 0.03
+      },
+      "validation": {
+        "path_metrics": {
+          "count": 745,
+          "mae_kwh": 82.86946288395912,
+          "rmse_kwh": 105.88342778414936,
+          "mape_percent": 0.2118039538066018,
+          "bias_pred_minus_actual_kwh": -0.5769692443174192,
+          "r2": -0.19881691258038803
+        },
+        "origin_count": 1,
+        "mean_origin_path_mae_kwh": 82.86946288395912,
+        "endpoint_metrics": {
+          "lead1": {
+            "count": 1,
+            "mae_kwh": 177.4171456002441,
+            "rmse_kwh": 177.4171456002441,
+            "mape_percent": 0.4555017385502196,
+            "bias_pred_minus_actual_kwh": 177.4171456002441,
+            "r2": null
+          },
+          "lead6": {
+            "count": 1,
+            "mae_kwh": 110.32829613850481,
+            "rmse_kwh": 110.32829613850481,
+            "mape_percent": 0.2809979981095819,
+            "bias_pred_minus_actual_kwh": -110.32829613850481,
+            "r2": null
+          },
+          "lead24": {
+            "count": 1,
+            "mae_kwh": 197.7102400924632,
+            "rmse_kwh": 197.7102400924632,
+            "mape_percent": 0.5078106381019534,
+            "bias_pred_minus_actual_kwh": 197.7102400924632,
+            "r2": null
+          }
+        },
+        "LateP505": {
+          "count": 505,
+          "mae_kwh": 84.81874358527385,
+          "rmse_kwh": 108.12920149319842,
+          "mape_percent": 0.21675750937039906,
+          "bias_pred_minus_actual_kwh": -0.1540554174295388,
+          "r2": -0.22623273172269953
+        }
+      },
+      "fold_fits": [
+        {
+          "fold": 1,
+          "origin": "2025-02-25 00:00:00",
+          "epochs": 16,
+          "inner": {
+            "inner_fit_end": "2025-01-24 22:00:00",
+            "inner_fit_rows": 1319,
+            "inner_tail_start": "2025-01-24 23:00:00",
+            "inner_tail_end": "2025-02-24 23:00:00",
+            "inner_holdout_rows": 745,
+            "schema": {
+              "input_features": [
+                "m1__energy_kwh",
+                "m2__energy_kwh",
+                "m3__energy_kwh",
+                "m4__energy_kwh",
+                "m5__energy_kwh",
+                "m11__energy_kwh",
+                "m12__energy_kwh",
+                "m13__energy_kwh",
+                "m14__energy_kwh",
+                "m15__energy_kwh",
+                "m16__energy_kwh",
+                "m17__energy_kwh",
+                "m18__energy_kwh",
+                "target_energy_kwh"
+              ],
+              "input_feature_count": 14,
+              "target_column": "target_energy_kwh",
+              "target_index": 13,
+              "module_energy_columns": [
+                "m1__energy_kwh",
+                "m2__energy_kwh",
+                "m3__energy_kwh",
+                "m4__energy_kwh",
+                "m5__energy_kwh",
+                "m11__energy_kwh",
+                "m12__energy_kwh",
+                "m13__energy_kwh",
+                "m14__energy_kwh",
+                "m15__energy_kwh",
+                "m16__energy_kwh",
+                "m17__energy_kwh",
+                "m18__energy_kwh"
+              ],
+              "module_energy_indices": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+              ],
+              "selected_sensor_columns": [],
+              "selected_sensor_count": 0,
+              "feature_group": "module_energy",
+              "selection_audit": {
+                "method": "Fixed known 13-module energy group, no label-based feature selection",
+                "training_end": "2025-01-24 22:00:00",
+                "selected_columns": [],
+                "selected_count": 0,
+                "selection_uses_April_or_May": false
+              },
+              "selection_fit_end": "2025-01-24 22:00:00",
+              "prediction_input": "Completed rows origin-context through origin-1h only"
+            },
+            "normalizer": {
+              "mean": [
+                3010.110479056103,
+                3009.605691569792,
+                3009.127561125853,
+                3009.0326406368463,
+                3010.033604140342,
+                3009.0016730372336,
+                3011.0112462724287,
+                3008.412800922416,
+                3010.4307471990564,
+                3010.363882476203,
+                3009.141707575183,
+                3009.7623978498023,
+                3010.089368724202,
+                39126.12380058546
+              ],
+              "scale": [
+                26.54902970856866,
+                26.899273713086966,
+                26.348943771589127,
+                26.68716003762577,
+                27.518207950257118,
+                26.889195053114214,
+                26.246211450523926,
+                27.167289274291623,
+                26.29354887608906,
+                26.234490613711525,
+                27.240866334127226,
+                26.674271599294492,
+                26.94669773010825,
+                94.14065028401218
+              ],
+              "features": [
+                "m1__energy_kwh",
+                "m2__energy_kwh",
+                "m3__energy_kwh",
+                "m4__energy_kwh",
+                "m5__energy_kwh",
+                "m11__energy_kwh",
+                "m12__energy_kwh",
+                "m13__energy_kwh",
+                "m14__energy_kwh",
+                "m15__energy_kwh",
+                "m16__energy_kwh",
+                "m17__energy_kwh",
+                "m18__energy_kwh",
+                "target_energy_kwh"
+              ],
+              "fit_start": "2024-12-01 00:00:00",
+              "fit_end": "2025-01-24 22:00:00",
+              "fit_rows": 1319,
+              "fit_scope": "Training prefix only",
+              "near_constant_scale_fallback_count": 0
+            },
+            "maximum_supervised_label": "2025-01-24 22:00:00",
+            "training_windows": 24,
+            "best_epoch": 16,
+            "best_inner_mae_kwh": 87.28046971445434,
+            "epochs_run": 16,
+            "logs": [
+              {
+                "epoch": 1,
+                "data_loss_standardized": 1.3542773723602295,
+                "regularized_objective": 1.364603877067566,
+                "loss": "MSE",
+                "inner_tail_mae_kwh": 90.17135494851426
+              },
+              {
+                "epoch": 2,
+                "data_loss_standardized": 1.3404520750045776,
+                "regularized_objective": 1.3506096601486206,
+                "loss": "MSE",
+                "inner_tail_mae_kwh": 89.91825487092488
+              },
+              {
+                "epoch": 3,
+                "data_loss_standardized": 1.3150684833526611,
+                "regularized_objective": 1.3248831033706665,
+                "loss": "MSE",
+                "inner_tail_mae_kwh": 89.67442470113883
+              },
+              {
+                "epoch": 4,
+                "data_loss_standardized": 1.3026212453842163,
+                "regularized_objective": 1.3122073411941528,
+                "loss": "MSE",
+                "inner_tail_mae_kwh": 89.44416753372654
+              },
+              {
+                "epoch": 5,
+                "data_loss_standardized": 1.28083336353302,
+                "regularized_objective": 1.2902580499649048,
+                "loss": "MSE",
+                "inner_tail_mae_kwh": 89.23232072024206
+              },
+              {
+                "epoch": 6,
+                "data_loss_standardized": 1.2666208744049072,
+                "regularized_objective": 1.2757951021194458,
+                "loss": "MSE",
+                "inner_tail_mae_kwh": 89.03381701117702
+              },
+              {
+                "epoch": 7,
+                "data_loss_standardized": 1.2493306398391724,
+                "regularized_objective": 1.258280873298645,
+                "loss": "MSE",
+                "inner_tail_mae_kwh": 88.84313309280485
+              },
+              {
+                "epoch": 8,
+                "data_loss_standardized": 1.2387731075286865,
+                "regularized_objective": 1.2475967407226562,
+                "loss": "MSE",
+                "inner_tail_mae_kwh": 88.6482411238895
+              },
+              {
+                "epoch": 9,
+                "data_loss_standardized": 1.2209240198135376,
+                "regularized_objective": 1.229515790939331,
+                "loss": "MSE",
+                "inner_tail_mae_kwh": 88.46040485235174
+              },
+              {
+                "epoch": 10,
+                "data_loss_standardized": 1.2052874565124512,
+                "regularized_objective": 1.2136268615722656,
+                "loss": "MSE",
+                "inner_tail_mae_kwh": 88.27837124064595
+              },
+              {
+                "epoch": 11,
+                "data_loss_standardized": 1.1882537603378296,
+                "regularized_objective": 1.1964558362960815,
+                "loss": "MSE",
+                "inner_tail_mae_kwh": 88.10520045346371
+              },
+              {
+                "epoch": 12,
+                "data_loss_standardized": 1.172669768333435,
+                "regularized_objective": 1.1806094646453857,
+                "loss": "MSE",
+                "inner_tail_mae_kwh": 87.93467461666621
+              },
+              {
+                "epoch": 13,
+                "data_loss_standardized": 1.1651899814605713,
+                "regularized_objective": 1.1729978322982788,
+                "loss": "MSE",
+                "inner_tail_mae_kwh": 87.75958866572785
+              },
+              {
+                "epoch": 14,
+                "data_loss_standardized": 1.1497811079025269,
+                "regularized_objective": 1.1575168371200562,
+                "loss": "MSE",
+                "inner_tail_mae_kwh": 87.59778520336373
+              },
+              {
+                "epoch": 15,
+                "data_loss_standardized": 1.1385561227798462,
+                "regularized_objective": 1.1461323499679565,
+                "loss": "MSE",
+                "inner_tail_mae_kwh": 87.43641086398051
+              },
+              {
+                "epoch": 16,
+                "data_loss_standardized": 1.1206488609313965,
+                "regularized_objective": 1.1279560327529907,
+                "loss": "MSE",
+                "inner_tail_mae_kwh": 87.28046971445434
+              }
+            ],
+            "seconds": 0.2572123999707401,
+            "future_label_overlap": false,
+            "feature_selection_and_scaler_exclude_inner_tail": true
+          },
+          "refit": {
+            "path": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\long745\\itransformer\\checkpoints\\candidate1_fold1.pt",
+            "sha256": "0cc8179857e9b3a7e6656fa8df0200ca1026f5703e71fba6eed4526ec7b1d906",
+            "parameters": 33993,
+            "epochs": 16,
+            "history_end": "2025-02-24 23:00:00",
+            "history_rows": 2064,
+            "input_features": [
+              "m1__energy_kwh",
+              "m2__energy_kwh",
+              "m3__energy_kwh",
+              "m4__energy_kwh",
+              "m5__energy_kwh",
+              "m11__energy_kwh",
+              "m12__energy_kwh",
+              "m13__energy_kwh",
+              "m14__energy_kwh",
+              "m15__energy_kwh",
+              "m16__energy_kwh",
+              "m17__energy_kwh",
+              "m18__energy_kwh",
+              "target_energy_kwh"
+            ],
+            "input_feature_count": 14,
+            "target_index": 13,
+            "schema": {
+              "input_features": [
+                "m1__energy_kwh",
+                "m2__energy_kwh",
+                "m3__energy_kwh",
+                "m4__energy_kwh",
+                "m5__energy_kwh",
+                "m11__energy_kwh",
+                "m12__energy_kwh",
+                "m13__energy_kwh",
+                "m14__energy_kwh",
+                "m15__energy_kwh",
+                "m16__energy_kwh",
+                "m17__energy_kwh",
+                "m18__energy_kwh",
+                "target_energy_kwh"
+              ],
+              "input_feature_count": 14,
+              "target_column": "target_energy_kwh",
+              "target_index": 13,
+              "module_energy_columns": [
+                "m1__energy_kwh",
+                "m2__energy_kwh",
+                "m3__energy_kwh",
+                "m4__energy_kwh",
+                "m5__energy_kwh",
+                "m11__energy_kwh",
+                "m12__energy_kwh",
+                "m13__energy_kwh",
+                "m14__energy_kwh",
+                "m15__energy_kwh",
+                "m16__energy_kwh",
+                "m17__energy_kwh",
+                "m18__energy_kwh"
+              ],
+              "module_energy_indices": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+              ],
+              "selected_sensor_columns": [],
+              "selected_sensor_count": 0,
+              "feature_group": "module_energy",
+              "selection_audit": {
+                "method": "Fixed known 13-module energy group, no label-based feature selection",
+                "training_end": "2025-02-24 23:00:00",
+                "selected_columns": [],
+                "selected_count": 0,
+                "selection_uses_April_or_May": false
+              },
+              "selection_fit_end": "2025-02-24 23:00:00",
+              "prediction_input": "Completed rows origin-context through origin-1h only"
+            },
+            "normalizer": {
+              "mean": [
+                3010.3759816766255,
+                3009.5354327963505,
+                3009.369740659991,
+                3010.162115336994,
+                3010.307865545596,
+                3009.4051976744186,
+                3010.7278817694873,
+                3009.0931281290377,
+                3009.929064612941,
+                3010.900523915267,
+                3009.5388527468235,
+                3010.202629225883,
+                3010.2644059135446,
+                39129.81282000295
+              ],
+              "scale": [
+                26.652921657569514,
+                27.034104864631143,
+                26.85541365036558,
+                26.28259507948013,
+                27.431236047327292,
+                26.613119506082437,
+                26.068703045643478,
+                26.888111255008546,
+                26.459080809434955,
+                26.48442469321249,
+                27.182526490137267,
+                26.32644177490942,
+                26.732525325009842,
+                94.45265436998339
+              ],
+              "features": [
+                "m1__energy_kwh",
+                "m2__energy_kwh",
+                "m3__energy_kwh",
+                "m4__energy_kwh",
+                "m5__energy_kwh",
+                "m11__energy_kwh",
+                "m12__energy_kwh",
+                "m13__energy_kwh",
+                "m14__energy_kwh",
+                "m15__energy_kwh",
+                "m16__energy_kwh",
+                "m17__energy_kwh",
+                "m18__energy_kwh",
+                "target_energy_kwh"
+              ],
+              "fit_start": "2024-12-01 00:00:00",
+              "fit_end": "2025-02-24 23:00:00",
+              "fit_rows": 2064,
+              "fit_scope": "Training prefix only",
+              "near_constant_scale_fallback_count": 0
+            },
+            "target_mode": "aggregate channel selected by explicit target_index",
+            "forecast_context_stored": true,
+            "fit_seconds": 0.18497790000401437,
+            "training_loss_logs": [
+              {
+                "data_loss_standardized": 1.33768892288208,
+                "regularized_objective": 1.348106861114502,
+                "loss": "MSE"
+              },
+              {
+                "data_loss_standardized": 1.3191356658935547,
+                "regularized_objective": 1.329203724861145,
+                "loss": "MSE"
+              },
+              {
+                "data_loss_standardized": 1.307068943977356,
+                "regularized_objective": 1.3168878555297852,
+                "loss": "MSE"
+              },
+              {
+                "data_loss_standardized": 1.292786955833435,
+                "regularized_objective": 1.3023093938827515,
+                "loss": "MSE"
+              },
+              {
+                "data_loss_standardized": 1.281359076499939,
+                "regularized_objective": 1.2906934022903442,
+                "loss": "MSE"
+              },
+              {
+                "data_loss_standardized": 1.2622530460357666,
+                "regularized_objective": 1.2712500095367432,
+                "loss": "MSE"
+              },
+              {
+                "data_loss_standardized": 1.2530717849731445,
+                "regularized_objective": 1.261862874031067,
+                "loss": "MSE"
+              },
+              {
+                "data_loss_standardized": 1.2404403686523438,
+                "regularized_objective": 1.2490277290344238,
+                "loss": "MSE"
+              },
+              {
+                "data_loss_standardized": 1.22813880443573,
+                "regularized_objective": 1.2364401817321777,
+                "loss": "MSE"
+              },
+              {
+                "data_loss_standardized": 1.2148590087890625,
+                "regularized_objective": 1.2229115962982178,
+                "loss": "MSE"
+              },
+              {
+                "data_loss_standardized": 1.2034225463867188,
+                "regularized_objective": 1.211300015449524,
+                "loss": "MSE"
+              },
+              {
+                "data_loss_standardized": 1.1911776065826416,
+                "regularized_objective": 1.1988664865493774,
+                "loss": "MSE"
+              },
+              {
+                "data_loss_standardized": 1.1841583251953125,
+                "regularized_objective": 1.191590428352356,
+                "loss": "MSE"
+              },
+              {
+                "data_loss_standardized": 1.1681193113327026,
+                "regularized_objective": 1.1753063201904297,
+                "loss": "MSE"
+              },
+              {
+                "data_loss_standardized": 1.156859040260315,
+                "regularized_objective": 1.1638846397399902,
+                "loss": "MSE"
+              },
+              {
+                "data_loss_standardized": 1.1476112604141235,
+                "regularized_objective": 1.1544053554534912,
+                "loss": "MSE"
+              }
+            ],
+            "training_windows": 55,
+            "maximum_supervised_label": "2025-02-24 23:00:00",
+            "normalizer_fit_matches_training_prefix": true,
+            "target_loss": "aggregate target only, other variables are input covariates",
+            "schema_frozen_before_April": true
+          },
+          "input_features": [
+            "m1__energy_kwh",
+            "m2__energy_kwh",
+            "m3__energy_kwh",
+            "m4__energy_kwh",
+            "m5__energy_kwh",
+            "m11__energy_kwh",
+            "m12__energy_kwh",
+            "m13__energy_kwh",
+            "m14__energy_kwh",
+            "m15__energy_kwh",
+            "m16__energy_kwh",
+            "m17__energy_kwh",
+            "m18__energy_kwh",
+            "target_energy_kwh"
+          ]
+        }
+      ],
+      "data_sha256": "1ad0a14f29f7ffad521918817315c95889f82adef7335709ce386fd057b1ba9b"
+    },
+    {
+      "candidate": 2,
+      "config": {
+        "group": "module_energy",
+        "context": 72,
+        "d_model": 32,
+        "layers": 1,
+        "loss": "L1",
+        "instance_norm": false,
+        "dropout": 0.2,
+        "output_penalty": 0.05
+      },
+      "validation": {
+        "path_metrics": {
+          "count": 745,
+          "mae_kwh": 85.65146817967013,
+          "rmse_kwh": 106.820423638636,
+          "mape_percent": 0.2189008812219682,
+          "bias_pred_minus_actual_kwh": -0.31691817610876966,
+          "r2": -0.22012821047058573
+        },
+        "origin_count": 1,
+        "mean_origin_path_mae_kwh": 85.65146817967013,
+        "endpoint_metrics": {
+          "lead1": {
+            "count": 1,
+            "mae_kwh": 141.0257381473275,
+            "rmse_kwh": 141.0257381473275,
+            "mape_percent": 0.362070242360766,
+            "bias_pred_minus_actual_kwh": 141.0257381473275,
+            "r2": null
+          },
+          "lead6": {
+            "count": 1,
+            "mae_kwh": 160.32657064654632,
+            "rmse_kwh": 160.32657064654632,
+            "mape_percent": 0.4083398998466987,
+            "bias_pred_minus_actual_kwh": -160.32657064654632,
+            "r2": null
+          },
+          "lead24": {
+            "count": 1,
+            "mae_kwh": 218.2733887968643,
+            "rmse_kwh": 218.2733887968643,
+            "mape_percent": 0.56062624168467,
+            "bias_pred_minus_actual_kwh": 218.2733887968643,
+            "r2": null
+          }
+        },
+        "LateP505": {
+          "count": 505,
+          "mae_kwh": 87.11164935880416,
+          "rmse_kwh": 108.68182963141626,
+          "mape_percent": 0.22259580498604298,
+          "bias_pred_minus_actual_kwh": -2.731322287516262,
+          "r2": -0.23879885401408374
+        }
+      },
+      "fold_fits": [
+        {
+          "fold": 1,
+          "origin": "2025-02-25 00:00:00",
+          "epochs": 16,
+          "inner": {
+            "inner_fit_end": "2025-01-24 22:00:00",
+            "inner_fit_rows": 1319,
+            "inner_tail_start": "2025-01-24 23:00:00",
+            "inner_tail_end": "2025-02-24 23:00:00",
+            "inner_holdout_rows": 745,
+            "schema": {
+              "input_features": [
+                "m1__energy_kwh",
+                "m2__energy_kwh",
+                "m3__energy_kwh",
+                "m4__energy_kwh",
+                "m5__energy_kwh",
+                "m11__energy_kwh",
+                "m12__energy_kwh",
+                "m13__energy_kwh",
+                "m14__energy_kwh",
+                "m15__energy_kwh",
+                "m16__energy_kwh",
+                "m17__energy_kwh",
+                "m18__energy_kwh",
+                "target_energy_kwh"
+              ],
+              "input_feature_count": 14,
+              "target_column": "target_energy_kwh",
+              "target_index": 13,
+              "module_energy_columns": [
+                "m1__energy_kwh",
+                "m2__energy_kwh",
+                "m3__energy_kwh",
+                "m4__energy_kwh",
+                "m5__energy_kwh",
+                "m11__energy_kwh",
+                "m12__energy_kwh",
+                "m13__energy_kwh",
+                "m14__energy_kwh",
+                "m15__energy_kwh",
+                "m16__energy_kwh",
+                "m17__energy_kwh",
+                "m18__energy_kwh"
+              ],
+              "module_energy_indices": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+              ],
+              "selected_sensor_columns": [],
+              "selected_sensor_count": 0,
+              "feature_group": "module_energy",
+              "selection_audit": {
+                "method": "Fixed known 13-module energy group, no label-based feature selection",
+                "training_end": "2025-01-24 22:00:00",
+                "selected_columns": [],
+                "selected_count": 0,
+                "selection_uses_April_or_May": false
+              },
+              "selection_fit_end": "2025-01-24 22:00:00",
+              "prediction_input": "Completed rows origin-context through origin-1h only"
+            },
+            "normalizer": {
+              "mean": [
+                3010.110479056103,
+                3009.605691569792,
+                3009.127561125853,
+                3009.0326406368463,
+                3010.033604140342,
+                3009.0016730372336,
+                3011.0112462724287,
+                3008.412800922416,
+                3010.4307471990564,
+                3010.363882476203,
+                3009.141707575183,
+                3009.7623978498023,
+                3010.089368724202,
+                39126.12380058546
+              ],
+              "scale": [
+                26.54902970856866,
+                26.899273713086966,
+                26.348943771589127,
+                26.68716003762577,
+                27.518207950257118,
+                26.889195053114214,
+                26.246211450523926,
+                27.167289274291623,
+                26.29354887608906,
+                26.234490613711525,
+                27.240866334127226,
+                26.674271599294492,
+                26.94669773010825,
+                94.14065028401218
+              ],
+              "features": [
+                "m1__energy_kwh",
+                "m2__energy_kwh",
+                "m3__energy_kwh",
+                "m4__energy_kwh",
+                "m5__energy_kwh",
+                "m11__energy_kwh",
+                "m12__energy_kwh",
+                "m13__energy_kwh",
+                "m14__energy_kwh",
+                "m15__energy_kwh",
+                "m16__energy_kwh",
+                "m17__energy_kwh",
+                "m18__energy_kwh",
+                "target_energy_kwh"
+              ],
+              "fit_start": "2024-12-01 00:00:00",
+              "fit_end": "2025-01-24 22:00:00",
+              "fit_rows": 1319,
+              "fit_scope": "Training prefix only",
+              "near_constant_scale_fallback_count": 0
+            },
+            "maximum_supervised_label": "2025-01-24 22:00:00",
+            "training_windows": 22,
+            "best_epoch": 16,
+            "best_inner_mae_kwh": 88.39030012212287,
+            "epochs_run": 16,
+            "logs": [
+              {
+                "epoch": 1,
+                "data_loss_standardized": 0.9288330078125,
+                "regularized_objective": 0.9463359713554382,
+                "loss": "L1",
+                "inner_tail_mae_kwh": 89.54561190634148
+              },
+              {
+                "epoch": 2,
+                "data_loss_standardized": 0.9226735830307007,
+                "regularized_objective": 0.9397785663604736,
+                "loss": "L1",
+                "inner_tail_mae_kwh": 89.39692871421632
+              },
+              {
+                "epoch": 3,
+                "data_loss_standardized": 0.9200828671455383,
+                "regularized_objective": 0.9368662238121033,
+                "loss": "L1",
+                "inner_tail_mae_kwh": 89.28530227090666
+              },
+              {
+                "epoch": 4,
+                "data_loss_standardized": 0.9123488664627075,
+                "regularized_objective": 0.9288274049758911,
+                "loss": "L1",
+                "inner_tail_mae_kwh": 89.17115891688697
+              },
+              {
+                "epoch": 5,
+                "data_loss_standardized": 0.9097328782081604,
+                "regularized_objective": 0.9261457920074463,
+                "loss": "L1",
+                "inner_tail_mae_kwh": 89.0669205786361
+              },
+              {
+                "epoch": 6,
+                "data_loss_standardized": 0.9031389951705933,
+                "regularized_objective": 0.9192756414413452,
+                "loss": "L1",
+                "inner_tail_mae_kwh": 88.97880260572923
+              },
+              {
+                "epoch": 7,
+                "data_loss_standardized": 0.8927145600318909,
+                "regularized_objective": 0.9085090160369873,
+                "loss": "L1",
+                "inner_tail_mae_kwh": 88.89997987001524
+              },
+              {
+                "epoch": 8,
+                "data_loss_standardized": 0.8884092569351196,
+                "regularized_objective": 0.9040590524673462,
+                "loss": "L1",
+                "inner_tail_mae_kwh": 88.82486319732624
+              },
+              {
+                "epoch": 9,
+                "data_loss_standardized": 0.884321391582489,
+                "regularized_objective": 0.8996185660362244,
+                "loss": "L1",
+                "inner_tail_mae_kwh": 88.74162626875047
+              },
+              {
+                "epoch": 10,
+                "data_loss_standardized": 0.8742443919181824,
+                "regularized_objective": 0.8893362879753113,
+                "loss": "L1",
+                "inner_tail_mae_kwh": 88.66774952101233
+              },
+              {
+                "epoch": 11,
+                "data_loss_standardized": 0.8700960874557495,
+                "regularized_objective": 0.8850005865097046,
+                "loss": "L1",
+                "inner_tail_mae_kwh": 88.60598444766234
+              },
+              {
+                "epoch": 12,
+                "data_loss_standardized": 0.8616780638694763,
+                "regularized_objective": 0.8763838410377502,
+                "loss": "L1",
+                "inner_tail_mae_kwh": 88.54191135951562
+              },
+              {
+                "epoch": 13,
+                "data_loss_standardized": 0.8617432713508606,
+                "regularized_objective": 0.8760783076286316,
+                "loss": "L1",
+                "inner_tail_mae_kwh": 88.48929557741916
+              },
+              {
+                "epoch": 14,
+                "data_loss_standardized": 0.8533395528793335,
+                "regularized_objective": 0.867843508720398,
+                "loss": "L1",
+                "inner_tail_mae_kwh": 88.45158904328827
+              },
+              {
+                "epoch": 15,
+                "data_loss_standardized": 0.8507038950920105,
+                "regularized_objective": 0.864993691444397,
+                "loss": "L1",
+                "inner_tail_mae_kwh": 88.42501574690638
+              },
+              {
+                "epoch": 16,
+                "data_loss_standardized": 0.8441430330276489,
+                "regularized_objective": 0.8580449223518372,
+                "loss": "L1",
+                "inner_tail_mae_kwh": 88.39030012212287
+              }
+            ],
+            "seconds": 0.25540769996587187,
+            "future_label_overlap": false,
+            "feature_selection_and_scaler_exclude_inner_tail": true
+          },
+          "refit": {
+            "path": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\long745\\itransformer\\checkpoints\\candidate2_fold1.pt",
+            "sha256": "fd04c403dfaddea9da068209bb89102dd57af557fdb57c6ca0403c8cd3a938bc",
+            "parameters": 35529,
+            "epochs": 16,
+            "history_end": "2025-02-24 23:00:00",
+            "history_rows": 2064,
+            "input_features": [
+              "m1__energy_kwh",
+              "m2__energy_kwh",
+              "m3__energy_kwh",
+              "m4__energy_kwh",
+              "m5__energy_kwh",
+              "m11__energy_kwh",
+              "m12__energy_kwh",
+              "m13__energy_kwh",
+              "m14__energy_kwh",
+              "m15__energy_kwh",
+              "m16__energy_kwh",
+              "m17__energy_kwh",
+              "m18__energy_kwh",
+              "target_energy_kwh"
+            ],
+            "input_feature_count": 14,
+            "target_index": 13,
+            "schema": {
+              "input_features": [
+                "m1__energy_kwh",
+                "m2__energy_kwh",
+                "m3__energy_kwh",
+                "m4__energy_kwh",
+                "m5__energy_kwh",
+                "m11__energy_kwh",
+                "m12__energy_kwh",
+                "m13__energy_kwh",
+                "m14__energy_kwh",
+                "m15__energy_kwh",
+                "m16__energy_kwh",
+                "m17__energy_kwh",
+                "m18__energy_kwh",
+                "target_energy_kwh"
+              ],
+              "input_feature_count": 14,
+              "target_column": "target_energy_kwh",
+              "target_index": 13,
+              "module_energy_columns": [
+                "m1__energy_kwh",
+                "m2__energy_kwh",
+                "m3__energy_kwh",
+                "m4__energy_kwh",
+                "m5__energy_kwh",
+                "m11__energy_kwh",
+                "m12__energy_kwh",
+                "m13__energy_kwh",
+                "m14__energy_kwh",
+                "m15__energy_kwh",
+                "m16__energy_kwh",
+                "m17__energy_kwh",
+                "m18__energy_kwh"
+              ],
+              "module_energy_indices": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+              ],
+              "selected_sensor_columns": [],
+              "selected_sensor_count": 0,
+              "feature_group": "module_energy",
+              "selection_audit": {
+                "method": "Fixed known 13-module energy group, no label-based feature selection",
+                "training_end": "2025-02-24 23:00:00",
+                "selected_columns": [],
+                "selected_count": 0,
+                "selection_uses_April_or_May": false
+              },
+              "selection_fit_end": "2025-02-24 23:00:00",
+              "prediction_input": "Completed rows origin-context through origin-1h only"
+            },
+            "normalizer": {
+              "mean": [
+                3010.3759816766255,
+                3009.5354327963505,
+                3009.369740659991,
+                3010.162115336994,
+                3010.307865545596,
+                3009.4051976744186,
+                3010.7278817694873,
+                3009.0931281290377,
+                3009.929064612941,
+                3010.900523915267,
+                3009.5388527468235,
+                3010.202629225883,
+                3010.2644059135446,
+                39129.81282000295
+              ],
+              "scale": [
+                26.652921657569514,
+                27.034104864631143,
+                26.85541365036558,
+                26.28259507948013,
+                27.431236047327292,
+                26.613119506082437,
+                26.068703045643478,
+                26.888111255008546,
+                26.459080809434955,
+                26.48442469321249,
+                27.182526490137267,
+                26.32644177490942,
+                26.732525325009842,
+                94.45265436998339
+              ],
+              "features": [
+                "m1__energy_kwh",
+                "m2__energy_kwh",
+                "m3__energy_kwh",
+                "m4__energy_kwh",
+                "m5__energy_kwh",
+                "m11__energy_kwh",
+                "m12__energy_kwh",
+                "m13__energy_kwh",
+                "m14__energy_kwh",
+                "m15__energy_kwh",
+                "m16__energy_kwh",
+                "m17__energy_kwh",
+                "m18__energy_kwh",
+                "target_energy_kwh"
+              ],
+              "fit_start": "2024-12-01 00:00:00",
+              "fit_end": "2025-02-24 23:00:00",
+              "fit_rows": 2064,
+              "fit_scope": "Training prefix only",
+              "near_constant_scale_fallback_count": 0
+            },
+            "target_mode": "aggregate channel selected by explicit target_index",
+            "forecast_context_stored": true,
+            "fit_seconds": 0.17606669990345836,
+            "training_loss_logs": [
+              {
+                "data_loss_standardized": 0.9201098680496216,
+                "regularized_objective": 0.9375708699226379,
+                "loss": "L1"
+              },
+              {
+                "data_loss_standardized": 0.9197475910186768,
+                "regularized_objective": 0.936901330947876,
+                "loss": "L1"
+              },
+              {
+                "data_loss_standardized": 0.9127278327941895,
+                "regularized_objective": 0.9295729994773865,
+                "loss": "L1"
+              },
+              {
+                "data_loss_standardized": 0.9037359952926636,
+                "regularized_objective": 0.9200928807258606,
+                "loss": "L1"
+              },
+              {
+                "data_loss_standardized": 0.9033980369567871,
+                "regularized_objective": 0.9195650815963745,
+                "loss": "L1"
+              },
+              {
+                "data_loss_standardized": 0.8988924026489258,
+                "regularized_objective": 0.9149025678634644,
+                "loss": "L1"
+              },
+              {
+                "data_loss_standardized": 0.8945246338844299,
+                "regularized_objective": 0.910118043422699,
+                "loss": "L1"
+              },
+              {
+                "data_loss_standardized": 0.8890753388404846,
+                "regularized_objective": 0.9043254852294922,
+                "loss": "L1"
+              },
+              {
+                "data_loss_standardized": 0.8836226463317871,
+                "regularized_objective": 0.8986251354217529,
+                "loss": "L1"
+              },
+              {
+                "data_loss_standardized": 0.8792704343795776,
+                "regularized_objective": 0.8940626978874207,
+                "loss": "L1"
+              },
+              {
+                "data_loss_standardized": 0.8755765557289124,
+                "regularized_objective": 0.8901388645172119,
+                "loss": "L1"
+              },
+              {
+                "data_loss_standardized": 0.8715018630027771,
+                "regularized_objective": 0.885778546333313,
+                "loss": "L1"
+              },
+              {
+                "data_loss_standardized": 0.8682240843772888,
+                "regularized_objective": 0.8821878433227539,
+                "loss": "L1"
+              },
+              {
+                "data_loss_standardized": 0.863542914390564,
+                "regularized_objective": 0.8773348331451416,
+                "loss": "L1"
+              },
+              {
+                "data_loss_standardized": 0.8617441654205322,
+                "regularized_objective": 0.8752988576889038,
+                "loss": "L1"
+              },
+              {
+                "data_loss_standardized": 0.8566002249717712,
+                "regularized_objective": 0.8699410557746887,
+                "loss": "L1"
+              }
+            ],
+            "training_windows": 53,
+            "maximum_supervised_label": "2025-02-24 23:00:00",
+            "normalizer_fit_matches_training_prefix": true,
+            "target_loss": "aggregate target only, other variables are input covariates",
+            "schema_frozen_before_April": true
+          },
+          "input_features": [
+            "m1__energy_kwh",
+            "m2__energy_kwh",
+            "m3__energy_kwh",
+            "m4__energy_kwh",
+            "m5__energy_kwh",
+            "m11__energy_kwh",
+            "m12__energy_kwh",
+            "m13__energy_kwh",
+            "m14__energy_kwh",
+            "m15__energy_kwh",
+            "m16__energy_kwh",
+            "m17__energy_kwh",
+            "m18__energy_kwh",
+            "target_energy_kwh"
+          ]
+        }
+      ],
+      "data_sha256": "1ad0a14f29f7ffad521918817315c95889f82adef7335709ce386fd057b1ba9b"
+    }
+  ],
+  "test_fit": {
+    "path": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\long745\\itransformer\\checkpoints\\internal_test.pt",
+    "sha256": "93164e787a5c0030e84b5574096c305ec82637534b2a1c5bf9eca798a72914e0",
+    "parameters": 33993,
+    "epochs": 16,
+    "history_end": "2025-03-28 23:00:00",
+    "history_rows": 2832,
+    "input_features": [
+      "m1__energy_kwh",
+      "m2__energy_kwh",
+      "m3__energy_kwh",
+      "m4__energy_kwh",
+      "m5__energy_kwh",
+      "m11__energy_kwh",
+      "m12__energy_kwh",
+      "m13__energy_kwh",
+      "m14__energy_kwh",
+      "m15__energy_kwh",
+      "m16__energy_kwh",
+      "m17__energy_kwh",
+      "m18__energy_kwh",
+      "target_energy_kwh"
+    ],
+    "input_feature_count": 14,
+    "target_index": 13,
+    "schema": {
+      "input_features": [
+        "m1__energy_kwh",
+        "m2__energy_kwh",
+        "m3__energy_kwh",
+        "m4__energy_kwh",
+        "m5__energy_kwh",
+        "m11__energy_kwh",
+        "m12__energy_kwh",
+        "m13__energy_kwh",
+        "m14__energy_kwh",
+        "m15__energy_kwh",
+        "m16__energy_kwh",
+        "m17__energy_kwh",
+        "m18__energy_kwh",
+        "target_energy_kwh"
+      ],
+      "input_feature_count": 14,
+      "target_column": "target_energy_kwh",
+      "target_index": 13,
+      "module_energy_columns": [
+        "m1__energy_kwh",
+        "m2__energy_kwh",
+        "m3__energy_kwh",
+        "m4__energy_kwh",
+        "m5__energy_kwh",
+        "m11__energy_kwh",
+        "m12__energy_kwh",
+        "m13__energy_kwh",
+        "m14__energy_kwh",
+        "m15__energy_kwh",
+        "m16__energy_kwh",
+        "m17__energy_kwh",
+        "m18__energy_kwh"
+      ],
+      "module_energy_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "selected_sensor_columns": [],
+      "selected_sensor_count": 0,
+      "feature_group": "module_energy",
+      "selection_audit": {
+        "method": "Fixed known 13-module energy group, no label-based feature selection",
+        "training_end": "2025-03-28 23:00:00",
+        "selected_columns": [],
+        "selected_count": 0,
+        "selection_uses_April_or_May": false
+      },
+      "selection_fit_end": "2025-03-28 23:00:00",
+      "prediction_input": "Completed rows origin-context through origin-1h only"
+    },
+    "normalizer": {
+      "mean": [
+        3010.230431482463,
+        3009.862550670903,
+        3009.5217649433066,
+        3010.281539543119,
+        3010.2863409055244,
+        3009.781782034683,
+        3010.456419481717,
+        3009.080480495723,
+        3009.634068424357,
+        3010.787360571642,
+        3009.701826864603,
+        3010.2202645901993,
+        3010.1530304358917,
+        39129.99786044413
+      ],
+      "scale": [
+        26.738958806145245,
+        27.091356294953798,
+        26.61294723334977,
+        26.608825119890998,
+        27.061807674471563,
+        26.764597317021053,
+        26.598710428852634,
+        27.016761331681533,
+        26.564754444592392,
+        26.398283123480287,
+        27.389824929396138,
+        26.216348796380387,
+        26.693177990326937,
+        95.187906259565
+      ],
+      "features": [
+        "m1__energy_kwh",
+        "m2__energy_kwh",
+        "m3__energy_kwh",
+        "m4__energy_kwh",
+        "m5__energy_kwh",
+        "m11__energy_kwh",
+        "m12__energy_kwh",
+        "m13__energy_kwh",
+        "m14__energy_kwh",
+        "m15__energy_kwh",
+        "m16__energy_kwh",
+        "m17__energy_kwh",
+        "m18__energy_kwh",
+        "target_energy_kwh"
+      ],
+      "fit_start": "2024-12-01 00:00:00",
+      "fit_end": "2025-03-28 23:00:00",
+      "fit_rows": 2832,
+      "fit_scope": "Training prefix only",
+      "near_constant_scale_fallback_count": 0
+    },
+    "target_mode": "aggregate channel selected by explicit target_index",
+    "forecast_context_stored": true,
+    "fit_seconds": 0.3100380999967456,
+    "training_loss_logs": [
+      {
+        "data_loss_standardized": 1.33652829027724,
+        "regularized_objective": 1.3468565831239196,
+        "loss": "MSE"
+      },
+      {
+        "data_loss_standardized": 1.3110348917972083,
+        "regularized_objective": 1.3208849005315495,
+        "loss": "MSE"
+      },
+      {
+        "data_loss_standardized": 1.2891836837790478,
+        "regularized_objective": 1.2985171915470868,
+        "loss": "MSE"
+      },
+      {
+        "data_loss_standardized": 1.2709580632461899,
+        "regularized_objective": 1.279874465931421,
+        "loss": "MSE"
+      },
+      {
+        "data_loss_standardized": 1.2528901237180863,
+        "regularized_objective": 1.2614126890555195,
+        "loss": "MSE"
+      },
+      {
+        "data_loss_standardized": 1.234952786873127,
+        "regularized_objective": 1.2430878946150856,
+        "loss": "MSE"
+      },
+      {
+        "data_loss_standardized": 1.216756249296254,
+        "regularized_objective": 1.224518173042385,
+        "loss": "MSE"
+      },
+      {
+        "data_loss_standardized": 1.1977644994341095,
+        "regularized_objective": 1.2051108280817668,
+        "loss": "MSE"
+      },
+      {
+        "data_loss_standardized": 1.1798965519872204,
+        "regularized_objective": 1.186859447380592,
+        "loss": "MSE"
+      },
+      {
+        "data_loss_standardized": 1.1644343192549957,
+        "regularized_objective": 1.1709565938204185,
+        "loss": "MSE"
+      },
+      {
+        "data_loss_standardized": 1.1504536305350819,
+        "regularized_objective": 1.156683302473748,
+        "loss": "MSE"
+      },
+      {
+        "data_loss_standardized": 1.1319574062851654,
+        "regularized_objective": 1.1377732191962757,
+        "loss": "MSE"
+      },
+      {
+        "data_loss_standardized": 1.1179973558447827,
+        "regularized_objective": 1.123407204945882,
+        "loss": "MSE"
+      },
+      {
+        "data_loss_standardized": 1.100870357162651,
+        "regularized_objective": 1.105858989145564,
+        "loss": "MSE"
+      },
+      {
+        "data_loss_standardized": 1.085588189377182,
+        "regularized_objective": 1.0901924878701397,
+        "loss": "MSE"
+      },
+      {
+        "data_loss_standardized": 1.0728120050211063,
+        "regularized_objective": 1.0769520175868068,
+        "loss": "MSE"
+      }
+    ],
+    "training_windows": 87,
+    "maximum_supervised_label": "2025-03-28 23:00:00",
+    "normalizer_fit_matches_training_prefix": true,
+    "target_loss": "aggregate target only, other variables are input covariates",
+    "schema_frozen_before_April": true
+  },
+  "final_fit": {
+    "path": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\long745\\itransformer\\saved_model.pt",
+    "sha256": "c12797a430f38b68209744f544761dac34f90451731eaa36078762981c254f01",
+    "parameters": 33993,
+    "epochs": 16,
+    "history_end": "2025-04-29 23:00:00",
+    "history_rows": 3600,
+    "input_features": [
+      "m1__energy_kwh",
+      "m2__energy_kwh",
+      "m3__energy_kwh",
+      "m4__energy_kwh",
+      "m5__energy_kwh",
+      "m11__energy_kwh",
+      "m12__energy_kwh",
+      "m13__energy_kwh",
+      "m14__energy_kwh",
+      "m15__energy_kwh",
+      "m16__energy_kwh",
+      "m17__energy_kwh",
+      "m18__energy_kwh",
+      "target_energy_kwh"
+    ],
+    "input_feature_count": 14,
+    "target_index": 13,
+    "schema": {
+      "input_features": [
+        "m1__energy_kwh",
+        "m2__energy_kwh",
+        "m3__energy_kwh",
+        "m4__energy_kwh",
+        "m5__energy_kwh",
+        "m11__energy_kwh",
+        "m12__energy_kwh",
+        "m13__energy_kwh",
+        "m14__energy_kwh",
+        "m15__energy_kwh",
+        "m16__energy_kwh",
+        "m17__energy_kwh",
+        "m18__energy_kwh",
+        "target_energy_kwh"
+      ],
+      "input_feature_count": 14,
+      "target_column": "target_energy_kwh",
+      "target_index": 13,
+      "module_energy_columns": [
+        "m1__energy_kwh",
+        "m2__energy_kwh",
+        "m3__energy_kwh",
+        "m4__energy_kwh",
+        "m5__energy_kwh",
+        "m11__energy_kwh",
+        "m12__energy_kwh",
+        "m13__energy_kwh",
+        "m14__energy_kwh",
+        "m15__energy_kwh",
+        "m16__energy_kwh",
+        "m17__energy_kwh",
+        "m18__energy_kwh"
+      ],
+      "module_energy_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "selected_sensor_columns": [],
+      "selected_sensor_count": 0,
+      "feature_group": "module_energy",
+      "selection_audit": {
+        "method": "Fixed known 13-module energy group, no label-based feature selection",
+        "training_end": "2025-03-28 23:00:00",
+        "selected_columns": [],
+        "selected_count": 0,
+        "selection_uses_April_or_May": false
+      },
+      "selection_fit_end": "2025-03-28 23:00:00",
+      "prediction_input": "Completed rows origin-context through origin-1h only",
+      "final_schema_policy": "Reuse pre-April schema; do not reselect sensors with April test labels"
+    },
+    "normalizer": {
+      "mean": [
+        3010.413103406636,
+        3009.914430887345,
+        3009.5695841010806,
+        3010.7297792708337,
+        3010.2601822029324,
+        3009.911821905864,
+        3010.0324357137342,
+        3008.683254853395,
+        3009.700144386574,
+        3010.4093030401236,
+        3009.7649494212965,
+        3009.9428950462966,
+        3010.0465386535498,
+        39129.37842288966
+      ],
+      "scale": [
+        26.624692741732478,
+        26.865126664604276,
+        26.60675209314108,
+        26.740886848495084,
+        26.832603256061233,
+        27.01410213740788,
+        26.684453998999683,
+        26.888305331315053,
+        26.701790525389704,
+        26.326640471335853,
+        27.48604449105597,
+        26.618144702452415,
+        26.575786315340608,
+        95.75091898019765
+      ],
+      "features": [
+        "m1__energy_kwh",
+        "m2__energy_kwh",
+        "m3__energy_kwh",
+        "m4__energy_kwh",
+        "m5__energy_kwh",
+        "m11__energy_kwh",
+        "m12__energy_kwh",
+        "m13__energy_kwh",
+        "m14__energy_kwh",
+        "m15__energy_kwh",
+        "m16__energy_kwh",
+        "m17__energy_kwh",
+        "m18__energy_kwh",
+        "target_energy_kwh"
+      ],
+      "fit_start": "2024-12-01 00:00:00",
+      "fit_end": "2025-04-29 23:00:00",
+      "fit_rows": 3600,
+      "fit_scope": "Training prefix only",
+      "near_constant_scale_fallback_count": 0
+    },
+    "target_mode": "aggregate channel selected by explicit target_index",
+    "forecast_context_stored": true,
+    "fit_seconds": 0.3577690999954939,
+    "training_loss_logs": [
+      {
+        "data_loss_standardized": 1.3355969561248267,
+        "regularized_objective": 1.345876773866285,
+        "loss": "MSE"
+      },
+      {
+        "data_loss_standardized": 1.308829578031011,
+        "regularized_objective": 1.3185326832683146,
+        "loss": "MSE"
+      },
+      {
+        "data_loss_standardized": 1.290106026064448,
+        "regularized_objective": 1.2993604926502003,
+        "loss": "MSE"
+      },
+      {
+        "data_loss_standardized": 1.2711336622719003,
+        "regularized_objective": 1.2799342890747456,
+        "loss": "MSE"
+      },
+      {
+        "data_loss_standardized": 1.2507330990639054,
+        "regularized_objective": 1.2590256678957898,
+        "loss": "MSE"
+      },
+      {
+        "data_loss_standardized": 1.2310933395594108,
+        "regularized_objective": 1.238991974782543,
+        "loss": "MSE"
+      },
+      {
+        "data_loss_standardized": 1.2148294849556034,
+        "regularized_objective": 1.2222678030238432,
+        "loss": "MSE"
+      },
+      {
+        "data_loss_standardized": 1.194910389034688,
+        "regularized_objective": 1.2019089420302576,
+        "loss": "MSE"
+      },
+      {
+        "data_loss_standardized": 1.1769617475381418,
+        "regularized_objective": 1.1835115056077974,
+        "loss": "MSE"
+      },
+      {
+        "data_loss_standardized": 1.1582506564484925,
+        "regularized_objective": 1.164299048295542,
+        "loss": "MSE"
+      },
+      {
+        "data_loss_standardized": 1.1415253266566943,
+        "regularized_objective": 1.1471312476807283,
+        "loss": "MSE"
+      },
+      {
+        "data_loss_standardized": 1.1227407305180526,
+        "regularized_objective": 1.1279005874104862,
+        "loss": "MSE"
+      },
+      {
+        "data_loss_standardized": 1.108692079031167,
+        "regularized_objective": 1.113389253616333,
+        "loss": "MSE"
+      },
+      {
+        "data_loss_standardized": 1.091387307944418,
+        "regularized_objective": 1.0956429703896786,
+        "loss": "MSE"
+      },
+      {
+        "data_loss_standardized": 1.0751197828966028,
+        "regularized_objective": 1.0789245176716011,
+        "loss": "MSE"
+      },
+      {
+        "data_loss_standardized": 1.0633230469807857,
+        "regularized_objective": 1.0667498522445935,
+        "loss": "MSE"
+      }
+    ],
+    "training_windows": 119,
+    "maximum_supervised_label": "2025-04-29 23:00:00",
+    "normalizer_fit_matches_training_prefix": true,
+    "target_loss": "aggregate target only, other variables are input covariates",
+    "schema_frozen_before_April": true
+  },
+  "saved_model": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\long745\\itransformer\\saved_model.pt",
+  "selection_lock": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\long745\\itransformer\\selection_lock.json",
+  "prediction_csv": {
+    "validation": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\long745\\itransformer\\validation_predictions.csv",
+    "test": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\long745\\itransformer\\test_predictions.csv",
+    "future": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\long745\\itransformer\\future_path.csv"
+  },
+  "reload_evidence": {
+    "validation_origins": 1,
+    "validation_max_absdiff_kwh": 0.0,
+    "test_origins": 1,
+    "test_max_absdiff_kwh": 0.0,
+    "final_max_absdiff_kwh": 0.0,
+    "future_poison_max_absdiff_kwh": 0.0,
+    "tensor_checks": {
+      "output_shape": [
+        1,
+        745,
+        14
+      ],
+      "target_index": 13,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 3.5730274055313203,
+      "other_output_channels_max_change_kwh": 3.5730274055313203,
+      "patch_channel_independence_verified": false,
+      "input_only_instance_norm_enabled": false,
+      "per_channel_shift_inverse_max_error_kwh": null
+    },
+    "actual_cli_output_rows": 745,
+    "actual_cli_max_absdiff_kwh": 0.0,
+    "actual_cli_path": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\cli_verification\\long745_itransformer.csv"
+  },
+  "runtime_seconds": 4.446791599970311,
+  "may_labels_read": false,
+  "data_sha256": "1ad0a14f29f7ffad521918817315c95889f82adef7335709ce386fd057b1ba9b",
+  "vendor": {
+    "provenance_file": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\itransformer\\vendor\\provenance.json",
+    "sha256": "82b2f4036b2f4cfc70fe02a84c62a822432b1105ff1ac044a129a7ede2073980",
+    "official_core_hashes_verified": true,
+    "record": {
+      "repository": "https://github.com/thuml/iTransformer",
+      "revision": "c2426e68ca13f74aaec08045c5c724d8ad328124",
+      "files": [
+        {
+          "upstream_url": "https://raw.githubusercontent.com/thuml/iTransformer/c2426e68ca13f74aaec08045c5c724d8ad328124/model/iTransformer.py",
+          "path": "model/iTransformer.py",
+          "upstream_sha256": "6f34777a5a12c253a293f79e7e1fd5b6f79ac100b443951e051e269e7e2542db",
+          "local_sha256": "61aaa7d4caa71d1e1381b193fd012243c68b27c564af0a9e14cb474099507bfc"
+        },
+        {
+          "upstream_url": "https://raw.githubusercontent.com/thuml/iTransformer/c2426e68ca13f74aaec08045c5c724d8ad328124/layers/Embed.py",
+          "path": "layers/Embed.py",
+          "upstream_sha256": "2de7e5049a696d320a23a8bdb6e08e823cf7fa3f246a0a49555fcd729c5c8398",
+          "local_sha256": "cb1b8934d87659e656e6c92ba6290c4a76fbfb88389527ce43766c5b8cfd46ed"
+        },
+        {
+          "upstream_url": "https://raw.githubusercontent.com/thuml/iTransformer/c2426e68ca13f74aaec08045c5c724d8ad328124/layers/SelfAttention_Family.py",
+          "path": "layers/SelfAttention_Family.py",
+          "upstream_sha256": "38ac67428d528b8e145e4944ca059b40629a8446c891142602d5aaadc38dfd9e",
+          "local_sha256": "3d9f29c895a47335e670289f504ceaa95ded44047fba6bfbd96f01173ba88b6c"
+        },
+        {
+          "upstream_url": "https://raw.githubusercontent.com/thuml/iTransformer/c2426e68ca13f74aaec08045c5c724d8ad328124/layers/Transformer_EncDec.py",
+          "path": "layers/Transformer_EncDec.py",
+          "upstream_sha256": "985c31f4ae187b08afaa9663dc960a40544b2ec33ab55389ceab3930edc1ce02",
+          "local_sha256": "eed892a31468b1142777420f4b7ecb8cdbae020d835bbdd59a045c99bbe986df"
+        },
+        {
+          "upstream_url": "https://raw.githubusercontent.com/thuml/iTransformer/c2426e68ca13f74aaec08045c5c724d8ad328124/utils/masking.py",
+          "path": "utils/masking.py",
+          "upstream_sha256": "02f453e52cfaec65e34132923add80e7132f188706680fa86d7bd884976e09ef",
+          "local_sha256": "c22de70ad076f4eeecc857aba984741da05da54375333399ff2742b041544986"
+        },
+        {
+          "upstream_url": "https://raw.githubusercontent.com/thuml/iTransformer/c2426e68ca13f74aaec08045c5c724d8ad328124/LICENSE",
+          "path": "LICENSE",
+          "upstream_sha256": "29d2a4c09fa577780522219dc248466977f77cd420354c5e9a0e86550be2b849",
+          "local_sha256": "29d2a4c09fa577780522219dc248466977f77cd420354c5e9a0e86550be2b849"
+        }
+      ],
+      "changes": [
+        "Namespace-only import isolation",
+        "Reformer dependency moved into unused ReformerLayer constructor; selected FullAttention unchanged"
+      ]
+    },
+    "claim": "Pinned official core with existing namespace/lazy unused-import changes only; compact local retraining"
+  },
+  "limitations": [
+    "Post-EDA chronological revision, not pristine prospective holdout",
+    "Budgeted compact local search, no guaranteed improvement or global optimum",
+    "13-module provisional energy sum may double count meter hierarchy",
+    "May forecast uses direct path and no unavailable future sensor context",
+    "Empty stable sensor selection is allowed; identical input/architecture fits are reused and documented",
+    "More input variables do not guarantee effective cross-channel skill; PatchTST input roles differ from iTransformer"
+  ],
+  "plots": {
+    "test_forecast_png": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\long745\\itransformer\\figures\\test_forecast.png",
+    "test_forecast_svg": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\long745\\itransformer\\figures\\test_forecast.svg",
+    "training_validation_png": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\long745\\itransformer\\figures\\training_validation_loss.png",
+    "training_validation_svg": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\long745\\itransformer\\figures\\training_validation_loss.svg"
+  },
+  "convergence_budget": {
+    "max_epochs": 16,
+    "chosen_config_CV_folds_at_epoch_cap": 1,
+    "CV_folds": 1,
+    "limit": "Small declared local budget, not a convergence/global-optimum guarantee. At-cap minima can still improve with more training; no test-driven budget expansion performed."
+  }
+}

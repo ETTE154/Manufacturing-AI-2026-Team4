@@ -1,0 +1,71 @@
+{
+  "status": "pass",
+  "method": "read-only source AST isolation; no backend imports, real DB, server or integration calls",
+  "checked_at": "2026-10-14T15:10:34.554553+00:00",
+  "source_sha256": {
+    "app.py": "0a76d50a61f94182274f7c486a6b199b3b057af73bdbc49bec7bb2b8b2bffcf7",
+    "engine.py": "fcdd73cdd8a93522c6681dc7e6535beacf0f5a87267ed0d7625e6f94373cddea",
+    "data_source.py": "b9d4b44d42a7940bd7ca9198e0b050414c08fc92b407d55cbb21147bce625bcf",
+    "services.py": "279e702920619def794e264f0aba88a7e50f6cf7b7c253715eb7d3fa6fda19a4",
+    "store.py": "8d7a7d0ef05e1e30c756deafe7cf2b491f27956b18a9a30349b8ddc19d946548",
+    "config.py": "49d89b91dd1e0b2697b5bb2ac566053d612c0a9634dc81c092160616719d42dd"
+  },
+  "checks": [
+    {
+      "check": "pure_synthetic_transform",
+      "status": "pass",
+      "scope": "module17 only; [120,300) seconds; input immutable; deterministic"
+    },
+    {
+      "check": "alarm_identity_and_total_count",
+      "status": "pass",
+      "distinct_synthetic_scenarios": 2,
+      "same_event_inserted_once": true,
+      "open_count_before_ack": 27,
+      "display_limit": 20,
+      "open_count_after_ack": 26,
+      "storage": "in-memory SQLite fixture; real DB never opened"
+    },
+    {
+      "check": "sql_scope_before_limit_and_exact_total",
+      "status": "pass",
+      "module": "17",
+      "source_kind": "recorded",
+      "eligible_total": 35,
+      "returned_rows": 3,
+      "newer_outside_rows": 50,
+      "excluded_synthetic": 6,
+      "excluded_other_module": 10,
+      "invalid_source_kind_rejected": true
+    },
+    {
+      "check": "hourly_bucket_availability",
+      "status": "pass",
+      "end": "2025-03-13 19:43:00",
+      "included_bucket": "18:00-19:00",
+      "excluded_incomplete_bucket": "19:00-20:00"
+    },
+    {
+      "check": "report_requested_origin_and_future_rejection",
+      "status": "pass",
+      "historical_report_forecast_origin": "2025-03-12 13:00:00"
+    },
+    {
+      "check": "weekly_report_source_scope_and_untruncated_count",
+      "status": "pass",
+      "recorded_total": 35,
+      "evidence_rows": 30,
+      "synthetic_excluded": true
+    },
+    {
+      "check": "chat_fault_events_cursor_scope",
+      "status": "pass",
+      "as_of": "2025-02-18 13:00:00",
+      "returned_event_times": [
+        "2025-02-18 12:58:00"
+      ],
+      "expected_start": "2025-02-11 13:00:00",
+      "expected_end_exclusive": "2025-02-18 13:00:00"
+    }
+  ]
+}

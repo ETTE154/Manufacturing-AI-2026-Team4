@@ -1,0 +1,48 @@
+{
+  "acf_selected": {
+    "1": -0.012912563246255039,
+    "6": 0.019805979518038818,
+    "24": 0.02491647135398605,
+    "48": -0.0014919387158398773,
+    "168": -0.023750018838844835
+  },
+  "acf_max_abs_lag1_168": 0.050226609139625844,
+  "pacf_max_abs_lag1_168": 0.05131108505512765,
+  "naive_white_noise_95_bound": 0.036371211332235066,
+  "ljung_box": [
+    {
+      "lag": 1,
+      "lb_stat": 0.4846967521393768,
+      "lb_pvalue": 0.4863025479055242
+    },
+    {
+      "lag": 24,
+      "lb_stat": 24.87953842515282,
+      "lb_pvalue": 0.41233036247880944
+    },
+    {
+      "lag": 168,
+      "lb_stat": 160.79181084590465,
+      "lb_pvalue": 0.641509482279894
+    }
+  ],
+  "calendar_holdout": {
+    "train": "Dec-Feb",
+    "holdout": "March",
+    "model": "Fixed calendar sine/cosine Ridge alpha100; no search",
+    "calendar_model": {
+      "count": 744,
+      "mae_kwh": 76.13231214516263,
+      "r2": -0.0029039060917004367
+    },
+    "training_mean_baseline": {
+      "count": 744,
+      "mae_kwh": 75.88747669117,
+      "r2": -4.0090459969777115e-05
+    }
+  },
+  "mean_kwh": 39129.67971053815,
+  "std_kwh": 95.2358155407583,
+  "cv_percent": 0.24338511392187553,
+  "limits": "Failure to reject or small ACF does not prove independence; hour/weekday effects are descriptive and must earn held-out improvement."
+}

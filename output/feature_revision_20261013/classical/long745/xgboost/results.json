@@ -1,0 +1,373 @@
+{
+  "selected_config": {
+    "model": "xgboost",
+    "group": "selected_sensor_calendar",
+    "objective": "reg:absoluteerror",
+    "max_depth": 2,
+    "n_estimators": 80,
+    "learning_rate": 0.02,
+    "min_child_weight": 100,
+    "reg_lambda": 100.0,
+    "residual_shrinkage": 0.5
+  },
+  "trials_count": 2,
+  "validation_metrics": {
+    "path_P745": {
+      "count": 745,
+      "mae_kwh": 76.08909634306875,
+      "rmse_kwh": 96.69618699788936,
+      "mape_percent": 0.19447379060032782,
+      "bias_pred_minus_actual_kwh": 0.5009463654752042,
+      "r2": 0.0001943781041187087
+    },
+    "late_P505": {
+      "count": 505,
+      "mae_kwh": 77.45066923779255,
+      "rmse_kwh": 97.63744192294973,
+      "mape_percent": 0.19792723555725278,
+      "bias_pred_minus_actual_kwh": -0.2985933668176513,
+      "r2": 0.0001848855408568273
+    }
+  },
+  "internal_test_metrics": {
+    "path_P745": {
+      "count": 745,
+      "mae_kwh": 78.30807993632826,
+      "rmse_kwh": 97.13231804305006,
+      "mape_percent": 0.20016031871174858,
+      "bias_pred_minus_actual_kwh": 3.4532359239332777,
+      "r2": -0.002612162003932772
+    },
+    "late_P505": {
+      "count": 505,
+      "mae_kwh": 78.0314615736443,
+      "rmse_kwh": 96.59575274150008,
+      "mape_percent": 0.19942996510394373,
+      "bias_pred_minus_actual_kwh": -0.8019593211482475,
+      "r2": -0.0005850194458605351
+    }
+  },
+  "saved_model": {
+    "model_path": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\classical\\long745\\xgboost\\saved_model\\model.joblib",
+    "sha256": "6c26840cd363fa5fac3f97e2f38fe8242203d29efbd9f5b9524757a86382bd2f",
+    "config": {
+      "model": "xgboost",
+      "group": "selected_sensor_calendar",
+      "objective": "reg:absoluteerror",
+      "max_depth": 2,
+      "n_estimators": 80,
+      "learning_rate": 0.02,
+      "min_child_weight": 100,
+      "reg_lambda": 100.0,
+      "residual_shrinkage": 0.5
+    },
+    "selected_sensor_columns": [],
+    "feature_schema": [
+      [
+        "target_history",
+        "lag1"
+      ],
+      [
+        "target_history",
+        "lag24"
+      ],
+      [
+        "target_history",
+        "lag168"
+      ],
+      [
+        "target_history",
+        "mean24"
+      ],
+      [
+        "target_history",
+        "mean168"
+      ],
+      [
+        "target_history",
+        "mean720"
+      ],
+      [
+        "target_history",
+        "std24"
+      ],
+      [
+        "target_history",
+        "std168"
+      ],
+      [
+        "target_history",
+        "target_aligned_daily"
+      ],
+      [
+        "target_history",
+        "target_aligned_weekly"
+      ],
+      [
+        "calendar",
+        "lead_fraction"
+      ],
+      [
+        "calendar",
+        "target_hour_sin"
+      ],
+      [
+        "calendar",
+        "target_hour_cos"
+      ],
+      [
+        "calendar",
+        "target_dow_sin"
+      ],
+      [
+        "calendar",
+        "target_dow_cos"
+      ],
+      [
+        "calendar",
+        "target_weekend"
+      ],
+      [
+        "module_energy13_history",
+        "m1__energy_kwh::origin_lag1"
+      ],
+      [
+        "module_energy13_history",
+        "m1__energy_kwh::origin_mean24"
+      ],
+      [
+        "module_energy13_history",
+        "m1__energy_kwh::target_aligned_daily"
+      ],
+      [
+        "module_energy13_history",
+        "m1__energy_kwh::target_aligned_weekly"
+      ],
+      [
+        "module_energy13_history",
+        "m2__energy_kwh::origin_lag1"
+      ],
+      [
+        "module_energy13_history",
+        "m2__energy_kwh::origin_mean24"
+      ],
+      [
+        "module_energy13_history",
+        "m2__energy_kwh::target_aligned_daily"
+      ],
+      [
+        "module_energy13_history",
+        "m2__energy_kwh::target_aligned_weekly"
+      ],
+      [
+        "module_energy13_history",
+        "m3__energy_kwh::origin_lag1"
+      ],
+      [
+        "module_energy13_history",
+        "m3__energy_kwh::origin_mean24"
+      ],
+      [
+        "module_energy13_history",
+        "m3__energy_kwh::target_aligned_daily"
+      ],
+      [
+        "module_energy13_history",
+        "m3__energy_kwh::target_aligned_weekly"
+      ],
+      [
+        "module_energy13_history",
+        "m4__energy_kwh::origin_lag1"
+      ],
+      [
+        "module_energy13_history",
+        "m4__energy_kwh::origin_mean24"
+      ],
+      [
+        "module_energy13_history",
+        "m4__energy_kwh::target_aligned_daily"
+      ],
+      [
+        "module_energy13_history",
+        "m4__energy_kwh::target_aligned_weekly"
+      ],
+      [
+        "module_energy13_history",
+        "m5__energy_kwh::origin_lag1"
+      ],
+      [
+        "module_energy13_history",
+        "m5__energy_kwh::origin_mean24"
+      ],
+      [
+        "module_energy13_history",
+        "m5__energy_kwh::target_aligned_daily"
+      ],
+      [
+        "module_energy13_history",
+        "m5__energy_kwh::target_aligned_weekly"
+      ],
+      [
+        "module_energy13_history",
+        "m11__energy_kwh::origin_lag1"
+      ],
+      [
+        "module_energy13_history",
+        "m11__energy_kwh::origin_mean24"
+      ],
+      [
+        "module_energy13_history",
+        "m11__energy_kwh::target_aligned_daily"
+      ],
+      [
+        "module_energy13_history",
+        "m11__energy_kwh::target_aligned_weekly"
+      ],
+      [
+        "module_energy13_history",
+        "m12__energy_kwh::origin_lag1"
+      ],
+      [
+        "module_energy13_history",
+        "m12__energy_kwh::origin_mean24"
+      ],
+      [
+        "module_energy13_history",
+        "m12__energy_kwh::target_aligned_daily"
+      ],
+      [
+        "module_energy13_history",
+        "m12__energy_kwh::target_aligned_weekly"
+      ],
+      [
+        "module_energy13_history",
+        "m13__energy_kwh::origin_lag1"
+      ],
+      [
+        "module_energy13_history",
+        "m13__energy_kwh::origin_mean24"
+      ],
+      [
+        "module_energy13_history",
+        "m13__energy_kwh::target_aligned_daily"
+      ],
+      [
+        "module_energy13_history",
+        "m13__energy_kwh::target_aligned_weekly"
+      ],
+      [
+        "module_energy13_history",
+        "m14__energy_kwh::origin_lag1"
+      ],
+      [
+        "module_energy13_history",
+        "m14__energy_kwh::origin_mean24"
+      ],
+      [
+        "module_energy13_history",
+        "m14__energy_kwh::target_aligned_daily"
+      ],
+      [
+        "module_energy13_history",
+        "m14__energy_kwh::target_aligned_weekly"
+      ],
+      [
+        "module_energy13_history",
+        "m15__energy_kwh::origin_lag1"
+      ],
+      [
+        "module_energy13_history",
+        "m15__energy_kwh::origin_mean24"
+      ],
+      [
+        "module_energy13_history",
+        "m15__energy_kwh::target_aligned_daily"
+      ],
+      [
+        "module_energy13_history",
+        "m15__energy_kwh::target_aligned_weekly"
+      ],
+      [
+        "module_energy13_history",
+        "m16__energy_kwh::origin_lag1"
+      ],
+      [
+        "module_energy13_history",
+        "m16__energy_kwh::origin_mean24"
+      ],
+      [
+        "module_energy13_history",
+        "m16__energy_kwh::target_aligned_daily"
+      ],
+      [
+        "module_energy13_history",
+        "m16__energy_kwh::target_aligned_weekly"
+      ],
+      [
+        "module_energy13_history",
+        "m17__energy_kwh::origin_lag1"
+      ],
+      [
+        "module_energy13_history",
+        "m17__energy_kwh::origin_mean24"
+      ],
+      [
+        "module_energy13_history",
+        "m17__energy_kwh::target_aligned_daily"
+      ],
+      [
+        "module_energy13_history",
+        "m17__energy_kwh::target_aligned_weekly"
+      ],
+      [
+        "module_energy13_history",
+        "m18__energy_kwh::origin_lag1"
+      ],
+      [
+        "module_energy13_history",
+        "m18__energy_kwh::origin_mean24"
+      ],
+      [
+        "module_energy13_history",
+        "m18__energy_kwh::target_aligned_daily"
+      ],
+      [
+        "module_energy13_history",
+        "m18__energy_kwh::target_aligned_weekly"
+      ]
+    ],
+    "history_end": "2025-04-29 23:00:00",
+    "history_count": 3600,
+    "target_center": 39128.433133238505,
+    "forecast_points": 745,
+    "reload_max_absdiff_kwh": 0.0,
+    "native_reload_max_absdiff_kwh": 0.0,
+    "scaler_fit": "Training prefix only for Ridge/ElasticNet and ARIMAX exog; no global scaling for XGB.",
+    "context_storage": "Last720 completed hourly rows saved for standalone fixed-origin prediction; operational new-history input is not implemented."
+  },
+  "paths": {
+    "validation_csv": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\classical\\long745\\xgboost\\validation_predictions.csv",
+    "test_csv": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\classical\\long745\\xgboost\\test_predictions.csv",
+    "future_csv": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\classical\\long745\\xgboost\\future_path.csv",
+    "may_csv": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\may_predictions\\classical_xgboost.csv"
+  },
+  "input_scope": "Aggregate/module history, optional training-screened sensor history; known calendar. Historical analogues phase-wrap at fixed origin; no future raw observations.",
+  "feature_selection_paths": {
+    "validation": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\classical\\long745\\feature_selection_validation.json",
+    "internal_test": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\classical\\long745\\feature_selection_internal_test.json",
+    "final_frozen_preApril": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\classical\\long745\\feature_selection_final_preApril.json"
+  },
+  "final_sensor_columns": [],
+  "may_metrics": {
+    "count": 505,
+    "mae_kwh": 88.26876366253978,
+    "rmse_kwh": 108.75888972541745,
+    "mape_percent": 0.22615550192546177,
+    "r2": -0.3712913618227751,
+    "bias_pred_minus_actual_kwh": 56.571464294839885
+  },
+  "plots": {
+    "may_long_png": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\figures\\classical_xgboost_may.png",
+    "may_long_svg": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\figures\\classical_xgboost_may.svg"
+  }
+}

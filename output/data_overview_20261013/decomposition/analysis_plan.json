@@ -1,0 +1,32 @@
+{
+  "source": "E:\\AI work\\AWS_프로젝트\\output\\analysis\\baseline_audit\\complete_hour_module_sum.csv",
+  "source_sha256": "729b149a3e3165dfb339f0386249bfbda0326657f9e722d86da8138db36117de",
+  "seed": 20261013,
+  "full_history_descriptive_only": true,
+  "settings_search": false,
+  "STL": {
+    "seasonal": 13,
+    "robust": true,
+    "trend": "Documented library default",
+    "low_pass": "Documented library default",
+    "fit_iterations": "Library defaults"
+  },
+  "MSTL": {
+    "periods": [
+      24,
+      168
+    ],
+    "windows": [
+      11,
+      15
+    ],
+    "iterate": 2,
+    "lmbda": null,
+    "stl_kwargs": {
+      "robust": true
+    }
+  },
+  "raw_permutation_tests": 1999,
+  "same_setting_STL_null_calibrations": 19,
+  "null_calibration_limit": "19 shuffled-reference decompositions are an illustrative forced-pattern comparison, not a precise tail probability or optimized smoother."
+}

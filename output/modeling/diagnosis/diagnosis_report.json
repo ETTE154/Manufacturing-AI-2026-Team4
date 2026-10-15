@@ -1,0 +1,1199 @@
+{
+  "title": "전기품질 이상 후보 분류와 재구성 이상탐지",
+  "seed": 20261011,
+  "versions": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.3.5",
+    "pandas": "3.0.1",
+    "torch": "2.14.1+cpu",
+    "xgboost": "3.4.1",
+    "sklearn": "1.9.1"
+  },
+  "label_info": {
+    "type": "weak_electrical_quality_candidate",
+    "ground_truth_fault_labels_available": false,
+    "scope": "Current 5-second observation, not future failure prediction"
+  },
+  "sample_summary": {
+    "source": "E:\\AI work\\AWS_프로젝트\\traing-dataset\\rtu_data_full.csv",
+    "source_rows_read": 33696013,
+    "sample_rows": 187200,
+    "seed": 20261011,
+    "sampling": "Each module x complete localtime hour: four unique 5-second slots selected uniformly without replacement with deterministic stratum seed; no candidate oversampling",
+    "inclusion_probability_per_full_hour": 0.005555555555555556,
+    "complete_strata": 46800,
+    "partial_2025_04_30_endpoint_excluded": true,
+    "timezone": "Guide localtime; Unix timestamp mismatches audited previously",
+    "splits": [
+      {
+        "split": "train",
+        "rows": 112320,
+        "candidate_rows": 232,
+        "first": "2024-12-01 00:01:00",
+        "last": "2025-02-28 23:59:05",
+        "candidate_rate": 0.0020655270655270657
+      },
+      {
+        "split": "validation",
+        "rows": 38688,
+        "candidate_rows": 66,
+        "first": "2025-03-01 00:02:40",
+        "last": "2025-03-31 23:58:30",
+        "candidate_rate": 0.001705955334987593
+      },
+      {
+        "split": "test",
+        "rows": 36192,
+        "candidate_rows": 55,
+        "first": "2025-04-01 00:02:25",
+        "last": "2025-04-29 23:57:25",
+        "candidate_rate": 0.0015196728558797524
+      }
+    ],
+    "candidate_by_module_split": [
+      {
+        "split": "test",
+        "module(equipment)": "1(PM-3)",
+        "size": 2784,
+        "sum": 0
+      },
+      {
+        "split": "test",
+        "module(equipment)": "11(우측분전반1)",
+        "size": 2784,
+        "sum": 0
+      },
+      {
+        "split": "test",
+        "module(equipment)": "12(4호기)",
+        "size": 2784,
+        "sum": 0
+      },
+      {
+        "split": "test",
+        "module(equipment)": "13(3호기)",
+        "size": 2784,
+        "sum": 12
+      },
+      {
+        "split": "test",
+        "module(equipment)": "14(2호기)",
+        "size": 2784,
+        "sum": 0
+      },
+      {
+        "split": "test",
+        "module(equipment)": "15(예비건조기)",
+        "size": 2784,
+        "sum": 23
+      },
+      {
+        "split": "test",
+        "module(equipment)": "16(호이스트)",
+        "size": 2784,
+        "sum": 0
+      },
+      {
+        "split": "test",
+        "module(equipment)": "17(6호기)",
+        "size": 2784,
+        "sum": 20
+      },
+      {
+        "split": "test",
+        "module(equipment)": "18(우측분전반2)",
+        "size": 2784,
+        "sum": 0
+      },
+      {
+        "split": "test",
+        "module(equipment)": "2(L-1전등)",
+        "size": 2784,
+        "sum": 0
+      },
+      {
+        "split": "test",
+        "module(equipment)": "3(분쇄기(2))",
+        "size": 2784,
+        "sum": 0
+      },
+      {
+        "split": "test",
+        "module(equipment)": "4(분쇄기(1))",
+        "size": 2784,
+        "sum": 0
+      },
+      {
+        "split": "test",
+        "module(equipment)": "5(좌측분전반)",
+        "size": 2784,
+        "sum": 0
+      },
+      {
+        "split": "train",
+        "module(equipment)": "1(PM-3)",
+        "size": 8640,
+        "sum": 0
+      },
+      {
+        "split": "train",
+        "module(equipment)": "11(우측분전반1)",
+        "size": 8640,
+        "sum": 0
+      },
+      {
+        "split": "train",
+        "module(equipment)": "12(4호기)",
+        "size": 8640,
+        "sum": 0
+      },
+      {
+        "split": "train",
+        "module(equipment)": "13(3호기)",
+        "size": 8640,
+        "sum": 40
+      },
+      {
+        "split": "train",
+        "module(equipment)": "14(2호기)",
+        "size": 8640,
+        "sum": 0
+      },
+      {
+        "split": "train",
+        "module(equipment)": "15(예비건조기)",
+        "size": 8640,
+        "sum": 102
+      },
+      {
+        "split": "train",
+        "module(equipment)": "16(호이스트)",
+        "size": 8640,
+        "sum": 0
+      },
+      {
+        "split": "train",
+        "module(equipment)": "17(6호기)",
+        "size": 8640,
+        "sum": 90
+      },
+      {
+        "split": "train",
+        "module(equipment)": "18(우측분전반2)",
+        "size": 8640,
+        "sum": 0
+      },
+      {
+        "split": "train",
+        "module(equipment)": "2(L-1전등)",
+        "size": 8640,
+        "sum": 0
+      },
+      {
+        "split": "train",
+        "module(equipment)": "3(분쇄기(2))",
+        "size": 8640,
+        "sum": 0
+      },
+      {
+        "split": "train",
+        "module(equipment)": "4(분쇄기(1))",
+        "size": 8640,
+        "sum": 0
+      },
+      {
+        "split": "train",
+        "module(equipment)": "5(좌측분전반)",
+        "size": 8640,
+        "sum": 0
+      },
+      {
+        "split": "validation",
+        "module(equipment)": "1(PM-3)",
+        "size": 2976,
+        "sum": 0
+      },
+      {
+        "split": "validation",
+        "module(equipment)": "11(우측분전반1)",
+        "size": 2976,
+        "sum": 0
+      },
+      {
+        "split": "validation",
+        "module(equipment)": "12(4호기)",
+        "size": 2976,
+        "sum": 0
+      },
+      {
+        "split": "validation",
+        "module(equipment)": "13(3호기)",
+        "size": 2976,
+        "sum": 8
+      },
+      {
+        "split": "validation",
+        "module(equipment)": "14(2호기)",
+        "size": 2976,
+        "sum": 0
+      },
+      {
+        "split": "validation",
+        "module(equipment)": "15(예비건조기)",
+        "size": 2976,
+        "sum": 26
+      },
+      {
+        "split": "validation",
+        "module(equipment)": "16(호이스트)",
+        "size": 2976,
+        "sum": 0
+      },
+      {
+        "split": "validation",
+        "module(equipment)": "17(6호기)",
+        "size": 2976,
+        "sum": 32
+      },
+      {
+        "split": "validation",
+        "module(equipment)": "18(우측분전반2)",
+        "size": 2976,
+        "sum": 0
+      },
+      {
+        "split": "validation",
+        "module(equipment)": "2(L-1전등)",
+        "size": 2976,
+        "sum": 0
+      },
+      {
+        "split": "validation",
+        "module(equipment)": "3(분쇄기(2))",
+        "size": 2976,
+        "sum": 0
+      },
+      {
+        "split": "validation",
+        "module(equipment)": "4(분쇄기(1))",
+        "size": 2976,
+        "sum": 0
+      },
+      {
+        "split": "validation",
+        "module(equipment)": "5(좌측분전반)",
+        "size": 2976,
+        "sum": 0
+      }
+    ],
+    "weak_rule": "phase voltage outside [205,225] V; phase PF outside [80,100]%; negative current/power or operation outside {0,1}",
+    "label_limit": "Weak electrical-quality candidate, not verified fault or true injected-anomaly label",
+    "elapsed_seconds": 64.06299999996554
+  },
+  "protocol": "Train Dec 2024–Feb 2025; validation March; final untouched test April 1–29. Current 5-second observation diagnosis. No May electricity target used.",
+  "research_reference_status": "Reference rationale is documented in the root modeling report; the tabular MLP AE is an implementation of reconstruction anomaly scoring, not a claimed state-of-the-art fault system.",
+  "results": {
+    "xgb_rule_distillation": {
+      "purpose": "Reproduces label-defining sensor rule; high scores are circular and not fault evidence",
+      "features": [
+        "voltageR",
+        "voltageS",
+        "voltageT",
+        "voltageRS",
+        "voltageST",
+        "voltageTR",
+        "currentR",
+        "currentS",
+        "currentT",
+        "activePower",
+        "powerFactorR",
+        "powerFactorS",
+        "powerFactorT",
+        "reactivePowerLagging"
+      ],
+      "label_info": {
+        "type": "weak_electrical_quality_candidate",
+        "ground_truth_fault_labels_available": false,
+        "scope": "Current 5-second observation, not future failure prediction"
+      },
+      "threshold_selection": "99.5th percentile of validation weak-normal probability scores (strictly greater than the quantile), frozen for April; positive validation labels not used to optimize alarm threshold",
+      "best_iteration": 0,
+      "scale_pos_weight": 483.13793103448273,
+      "validation": {
+        "rows": 38688,
+        "positive_rows": 66,
+        "positive_rate": 0.001705955334987593,
+        "auroc": 0.9999854847998393,
+        "average_precision": 0.9832961540525417,
+        "precision": 0.2832618025751073,
+        "recall": 1.0,
+        "f1": 0.4414715719063545,
+        "threshold": 0.47502279281616216,
+        "true_negative": 38455,
+        "false_positive": 167,
+        "false_negative": 0,
+        "true_positive": 66,
+        "false_positive_rate": 0.0043239604370566,
+        "alarm_rate": 0.0060225392886683205
+      },
+      "test": {
+        "rows": 36192,
+        "positive_rows": 55,
+        "positive_rate": 0.0015196728558797524,
+        "auroc": 0.9999494348527196,
+        "average_precision": 0.9377265912498297,
+        "precision": 0.2511415525114155,
+        "recall": 1.0,
+        "f1": 0.40145985401459855,
+        "threshold": 0.47502279281616216,
+        "true_negative": 35973,
+        "false_positive": 164,
+        "false_negative": 0,
+        "true_positive": 55,
+        "false_positive_rate": 0.004538284860392395,
+        "alarm_rate": 0.00605106100795756
+      },
+      "feature_importance": {
+        "voltageR": 0.023269549012184143,
+        "voltageS": 0.20208840072155,
+        "voltageT": 0.033259544521570206,
+        "voltageRS": 0.006489700172096491,
+        "voltageST": 0.004328411538153887,
+        "voltageTR": 0.0980793908238411,
+        "currentR": 0.0,
+        "currentS": 0.0,
+        "currentT": 0.0,
+        "activePower": 0.0,
+        "powerFactorR": 0.5227524638175964,
+        "powerFactorS": 0.08824405074119568,
+        "powerFactorT": 0.021488508209586143,
+        "reactivePowerLagging": 0.0
+      }
+    },
+    "xgb_rule_sensor_excluded_transfer": {
+      "purpose": "Transfer test excluding voltage, PF, operation, timestamp, counter and module ID",
+      "features": [
+        "currentR",
+        "currentS",
+        "currentT",
+        "activePower",
+        "reactivePowerLagging"
+      ],
+      "label_info": {
+        "type": "weak_electrical_quality_candidate",
+        "ground_truth_fault_labels_available": false,
+        "scope": "Current 5-second observation, not future failure prediction"
+      },
+      "threshold_selection": "99.5th percentile of validation weak-normal probability scores (strictly greater than the quantile), frozen for April; positive validation labels not used to optimize alarm threshold",
+      "best_iteration": 2,
+      "scale_pos_weight": 483.13793103448273,
+      "validation": {
+        "rows": 38688,
+        "positive_rows": 66,
+        "positive_rate": 0.001705955334987593,
+        "auroc": 0.5132918041687655,
+        "average_precision": 0.0021029657423107303,
+        "precision": 0.005649717514124294,
+        "recall": 0.015151515151515152,
+        "f1": 0.00823045267489712,
+        "threshold": 0.521167278289795,
+        "true_negative": 38446,
+        "false_positive": 176,
+        "false_negative": 65,
+        "true_positive": 1,
+        "false_positive_rate": 0.004556988245041686,
+        "alarm_rate": 0.004575062034739454
+      },
+      "test": {
+        "rows": 36192,
+        "positive_rows": 55,
+        "positive_rate": 0.0015196728558797524,
+        "auroc": 0.4986689542574093,
+        "average_precision": 0.0014882804970684674,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "threshold": 0.521167278289795,
+        "true_negative": 36012,
+        "false_positive": 125,
+        "false_negative": 55,
+        "true_positive": 0,
+        "false_positive_rate": 0.003459058582616155,
+        "alarm_rate": 0.0034538019451812556
+      },
+      "feature_importance": {
+        "currentR": 0.20119284093379974,
+        "currentS": 0.2323448210954666,
+        "currentT": 0.1938442587852478,
+        "activePower": 0.203190416097641,
+        "reactivePowerLagging": 0.16942761838436127
+      }
+    },
+    "ae_unsupervised_all_training": {
+      "learning_type": "unsupervised AE fit on all training observations; semi-supervised weak-normal threshold calibration",
+      "features": [
+        "voltageR",
+        "voltageS",
+        "voltageT",
+        "voltageRS",
+        "voltageST",
+        "voltageTR",
+        "currentR",
+        "currentS",
+        "currentT",
+        "activePower",
+        "powerFactorR",
+        "powerFactorS",
+        "powerFactorT",
+        "reactivePowerLagging"
+      ],
+      "excluded_features": [
+        "timestamp",
+        "localtime",
+        "accumActiveEnergy",
+        "module(equipment)",
+        "operation"
+      ],
+      "fit_train_rows": 112320,
+      "scaler_fit": "Training only; RobustScaler median/IQR",
+      "architecture": [
+        14,
+        32,
+        12,
+        4,
+        12,
+        32,
+        14
+      ],
+      "loss": "Mean squared standardized reconstruction error",
+      "best_validation_reconstruction_mse": 0.12826010584831238,
+      "epochs_run": 50,
+      "history": [
+        {
+          "epoch": 1,
+          "train_mse": 0.36301612381921533,
+          "validation_mse": 0.27488988637924194
+        },
+        {
+          "epoch": 2,
+          "train_mse": 0.21352320878933637,
+          "validation_mse": 0.18172912299633026
+        },
+        {
+          "epoch": 3,
+          "train_mse": 0.1630025773306518,
+          "validation_mse": 0.1500435620546341
+        },
+        {
+          "epoch": 4,
+          "train_mse": 0.14513623875770135,
+          "validation_mse": 0.1409953087568283
+        },
+        {
+          "epoch": 5,
+          "train_mse": 0.1396984710737511,
+          "validation_mse": 0.138169065117836
+        },
+        {
+          "epoch": 6,
+          "train_mse": 0.13810089026760852,
+          "validation_mse": 0.13712270557880402
+        },
+        {
+          "epoch": 7,
+          "train_mse": 0.1376068466494226,
+          "validation_mse": 0.13683417439460754
+        },
+        {
+          "epoch": 8,
+          "train_mse": 0.1372797525081879,
+          "validation_mse": 0.13651779294013977
+        },
+        {
+          "epoch": 9,
+          "train_mse": 0.13711935277508194,
+          "validation_mse": 0.13639849424362183
+        },
+        {
+          "epoch": 10,
+          "train_mse": 0.13704601752961804,
+          "validation_mse": 0.13637492060661316
+        },
+        {
+          "epoch": 11,
+          "train_mse": 0.13690144944394755,
+          "validation_mse": 0.13645444810390472
+        },
+        {
+          "epoch": 12,
+          "train_mse": 0.13687510323999955,
+          "validation_mse": 0.13625308871269226
+        },
+        {
+          "epoch": 13,
+          "train_mse": 0.13679645464800702,
+          "validation_mse": 0.13615602254867554
+        },
+        {
+          "epoch": 14,
+          "train_mse": 0.13668774850348123,
+          "validation_mse": 0.1360163390636444
+        },
+        {
+          "epoch": 15,
+          "train_mse": 0.13662943540305494,
+          "validation_mse": 0.13601703941822052
+        },
+        {
+          "epoch": 16,
+          "train_mse": 0.13660289826046706,
+          "validation_mse": 0.13605888187885284
+        },
+        {
+          "epoch": 17,
+          "train_mse": 0.13653251986388126,
+          "validation_mse": 0.13593336939811707
+        },
+        {
+          "epoch": 18,
+          "train_mse": 0.1365245586616701,
+          "validation_mse": 0.13593082129955292
+        },
+        {
+          "epoch": 19,
+          "train_mse": 0.13649185130908617,
+          "validation_mse": 0.13598473370075226
+        },
+        {
+          "epoch": 20,
+          "train_mse": 0.136460195774706,
+          "validation_mse": 0.13594143092632294
+        },
+        {
+          "epoch": 21,
+          "train_mse": 0.13641250659088125,
+          "validation_mse": 0.13577581942081451
+        },
+        {
+          "epoch": 22,
+          "train_mse": 0.13638006042890738,
+          "validation_mse": 0.13591405749320984
+        },
+        {
+          "epoch": 23,
+          "train_mse": 0.13635346128730014,
+          "validation_mse": 0.13570928573608398
+        },
+        {
+          "epoch": 24,
+          "train_mse": 0.13632464344345266,
+          "validation_mse": 0.13580603897571564
+        },
+        {
+          "epoch": 25,
+          "train_mse": 0.13633013929736582,
+          "validation_mse": 0.13577982783317566
+        },
+        {
+          "epoch": 26,
+          "train_mse": 0.13624805884483532,
+          "validation_mse": 0.13564367592334747
+        },
+        {
+          "epoch": 27,
+          "train_mse": 0.1362510179692184,
+          "validation_mse": 0.1355554312467575
+        },
+        {
+          "epoch": 28,
+          "train_mse": 0.13612625906270454,
+          "validation_mse": 0.1356348991394043
+        },
+        {
+          "epoch": 29,
+          "train_mse": 0.136053959477661,
+          "validation_mse": 0.13548386096954346
+        },
+        {
+          "epoch": 30,
+          "train_mse": 0.13586483984930903,
+          "validation_mse": 0.13520370423793793
+        },
+        {
+          "epoch": 31,
+          "train_mse": 0.13560470879247724,
+          "validation_mse": 0.13495847582817078
+        },
+        {
+          "epoch": 32,
+          "train_mse": 0.1350687899990299,
+          "validation_mse": 0.13406984508037567
+        },
+        {
+          "epoch": 33,
+          "train_mse": 0.13441526384604963,
+          "validation_mse": 0.13345667719841003
+        },
+        {
+          "epoch": 34,
+          "train_mse": 0.13388427191989713,
+          "validation_mse": 0.1330118179321289
+        },
+        {
+          "epoch": 35,
+          "train_mse": 0.1335020357302451,
+          "validation_mse": 0.13272686302661896
+        },
+        {
+          "epoch": 36,
+          "train_mse": 0.13318857497129685,
+          "validation_mse": 0.1325376033782959
+        },
+        {
+          "epoch": 37,
+          "train_mse": 0.1329621920643369,
+          "validation_mse": 0.13213121891021729
+        },
+        {
+          "epoch": 38,
+          "train_mse": 0.1326747038680264,
+          "validation_mse": 0.13190065324306488
+        },
+        {
+          "epoch": 39,
+          "train_mse": 0.1324698506257473,
+          "validation_mse": 0.13183654844760895
+        },
+        {
+          "epoch": 40,
+          "train_mse": 0.13223302073118692,
+          "validation_mse": 0.13146020472049713
+        },
+        {
+          "epoch": 41,
+          "train_mse": 0.13199600600279293,
+          "validation_mse": 0.1311652809381485
+        },
+        {
+          "epoch": 42,
+          "train_mse": 0.13169956641998726,
+          "validation_mse": 0.13090123236179352
+        },
+        {
+          "epoch": 43,
+          "train_mse": 0.13139093317876854,
+          "validation_mse": 0.13080886006355286
+        },
+        {
+          "epoch": 44,
+          "train_mse": 0.13101712396511664,
+          "validation_mse": 0.13037247955799103
+        },
+        {
+          "epoch": 45,
+          "train_mse": 0.13062653228258475,
+          "validation_mse": 0.12995801866054535
+        },
+        {
+          "epoch": 46,
+          "train_mse": 0.13017736502692231,
+          "validation_mse": 0.12980060279369354
+        },
+        {
+          "epoch": 47,
+          "train_mse": 0.129731190433869,
+          "validation_mse": 0.1292443573474884
+        },
+        {
+          "epoch": 48,
+          "train_mse": 0.12927876155600587,
+          "validation_mse": 0.1288343369960785
+        },
+        {
+          "epoch": 49,
+          "train_mse": 0.12882985513858985,
+          "validation_mse": 0.12851807475090027
+        },
+        {
+          "epoch": 50,
+          "train_mse": 0.12847747404521007,
+          "validation_mse": 0.12826010584831238
+        }
+      ],
+      "threshold_selection": "99.5th percentile of validation weak-normal proxy scores, frozen for April; threshold calibration is semi-supervised, including when the AE fit itself is unsupervised",
+      "label_info": {
+        "type": "weak_electrical_quality_candidate",
+        "ground_truth_fault_labels_available": false,
+        "scope": "Current 5-second observation, not future failure prediction"
+      },
+      "validation_weak_proxy_agreement": {
+        "rows": 38688,
+        "positive_rows": 66,
+        "positive_rate": 0.001705955334987593,
+        "auroc": 0.981564518887806,
+        "average_precision": 0.9148416628166052,
+        "precision": 0.23921568627450981,
+        "recall": 0.9242424242424242,
+        "f1": 0.38006230529595014,
+        "threshold": 0.30083799362182617,
+        "true_negative": 38428,
+        "false_positive": 194,
+        "false_negative": 5,
+        "true_positive": 61,
+        "false_positive_rate": 0.005023043861011859,
+        "alarm_rate": 0.006591191066997518
+      },
+      "test_weak_proxy_agreement": {
+        "rows": 36192,
+        "positive_rows": 55,
+        "positive_rate": 0.0015196728558797524,
+        "auroc": 0.9757961495017697,
+        "average_precision": 0.8751413052687292,
+        "precision": 0.228310502283105,
+        "recall": 0.9090909090909091,
+        "f1": 0.36496350364963503,
+        "threshold": 0.30083799362182617,
+        "true_negative": 35968,
+        "false_positive": 169,
+        "false_negative": 5,
+        "true_positive": 50,
+        "false_positive_rate": 0.004676647203697042,
+        "alarm_rate": 0.00605106100795756
+      },
+      "metric_limit": "Agreement with a weak sensor rule does not estimate verified fault precision/recall",
+      "test_mean_error_by_feature": {
+        "voltageR": 0.009455548599362373,
+        "voltageS": 0.043664414435625076,
+        "voltageT": 0.0044570681639015675,
+        "voltageRS": 0.017561044543981552,
+        "voltageST": 0.01626206748187542,
+        "voltageTR": 0.01390586793422699,
+        "currentR": 0.13552436232566833,
+        "currentS": 0.1723012775182724,
+        "currentT": 0.21224041283130646,
+        "activePower": 0.04404039680957794,
+        "powerFactorR": 0.3372083008289337,
+        "powerFactorS": 0.344151109457016,
+        "powerFactorT": 0.30694228410720825,
+        "reactivePowerLagging": 0.13162894546985626
+      },
+      "fully_unsupervised_threshold_secondary": {
+        "selection": "99.5th percentile of all validation scores; labels used only for post-hoc agreement assessment",
+        "threshold": 0.31527799367904663,
+        "test_weak_proxy_agreement": {
+          "rows": 36192,
+          "positive_rows": 55,
+          "positive_rate": 0.0015196728558797524,
+          "auroc": 0.9757961495017697,
+          "average_precision": 0.8751413052687292,
+          "precision": 0.28994082840236685,
+          "recall": 0.8909090909090909,
+          "f1": 0.4375,
+          "threshold": 0.31527799367904663,
+          "true_negative": 36017,
+          "false_positive": 120,
+          "false_negative": 6,
+          "true_positive": 49,
+          "false_positive_rate": 0.003320696239311509,
+          "alarm_rate": 0.004669540229885058
+        }
+      }
+    },
+    "ae_weak_normal_proxy": {
+      "learning_type": "semi-supervised training and calibration with weak-normal proxy",
+      "features": [
+        "voltageR",
+        "voltageS",
+        "voltageT",
+        "voltageRS",
+        "voltageST",
+        "voltageTR",
+        "currentR",
+        "currentS",
+        "currentT",
+        "activePower",
+        "powerFactorR",
+        "powerFactorS",
+        "powerFactorT",
+        "reactivePowerLagging"
+      ],
+      "excluded_features": [
+        "timestamp",
+        "localtime",
+        "accumActiveEnergy",
+        "module(equipment)",
+        "operation"
+      ],
+      "fit_train_rows": 112088,
+      "scaler_fit": "Training only; RobustScaler median/IQR",
+      "architecture": [
+        14,
+        32,
+        12,
+        4,
+        12,
+        32,
+        14
+      ],
+      "loss": "Mean squared standardized reconstruction error",
+      "best_validation_reconstruction_mse": 0.11861864477396011,
+      "epochs_run": 50,
+      "history": [
+        {
+          "epoch": 1,
+          "train_mse": 0.3624467853219834,
+          "validation_mse": 0.2943858504295349
+        },
+        {
+          "epoch": 2,
+          "train_mse": 0.22505355995337464,
+          "validation_mse": 0.1885681301355362
+        },
+        {
+          "epoch": 3,
+          "train_mse": 0.16678756966056393,
+          "validation_mse": 0.15134234726428986
+        },
+        {
+          "epoch": 4,
+          "train_mse": 0.14410797396122912,
+          "validation_mse": 0.1388152539730072
+        },
+        {
+          "epoch": 5,
+          "train_mse": 0.13689635612347612,
+          "validation_mse": 0.13558785617351532
+        },
+        {
+          "epoch": 6,
+          "train_mse": 0.13524767312968827,
+          "validation_mse": 0.134830504655838
+        },
+        {
+          "epoch": 7,
+          "train_mse": 0.13470433009495258,
+          "validation_mse": 0.13446302711963654
+        },
+        {
+          "epoch": 8,
+          "train_mse": 0.1344989255292965,
+          "validation_mse": 0.13442951440811157
+        },
+        {
+          "epoch": 9,
+          "train_mse": 0.13428269626922232,
+          "validation_mse": 0.13406279683113098
+        },
+        {
+          "epoch": 10,
+          "train_mse": 0.13412999482304933,
+          "validation_mse": 0.13399246335029602
+        },
+        {
+          "epoch": 11,
+          "train_mse": 0.1340392897010964,
+          "validation_mse": 0.13406984508037567
+        },
+        {
+          "epoch": 12,
+          "train_mse": 0.133984890161358,
+          "validation_mse": 0.13384415209293365
+        },
+        {
+          "epoch": 13,
+          "train_mse": 0.13393127035511,
+          "validation_mse": 0.13370482623577118
+        },
+        {
+          "epoch": 14,
+          "train_mse": 0.13385570550848064,
+          "validation_mse": 0.13363811373710632
+        },
+        {
+          "epoch": 15,
+          "train_mse": 0.13376325015894616,
+          "validation_mse": 0.133503258228302
+        },
+        {
+          "epoch": 16,
+          "train_mse": 0.13365718778285282,
+          "validation_mse": 0.13345593214035034
+        },
+        {
+          "epoch": 17,
+          "train_mse": 0.13349640770367233,
+          "validation_mse": 0.13339827954769135
+        },
+        {
+          "epoch": 18,
+          "train_mse": 0.13324192523356465,
+          "validation_mse": 0.13307572901248932
+        },
+        {
+          "epoch": 19,
+          "train_mse": 0.13285609641589713,
+          "validation_mse": 0.13236115872859955
+        },
+        {
+          "epoch": 20,
+          "train_mse": 0.1322112404015818,
+          "validation_mse": 0.13181860744953156
+        },
+        {
+          "epoch": 21,
+          "train_mse": 0.13162400826347026,
+          "validation_mse": 0.13115622103214264
+        },
+        {
+          "epoch": 22,
+          "train_mse": 0.1310969314303101,
+          "validation_mse": 0.13093721866607666
+        },
+        {
+          "epoch": 23,
+          "train_mse": 0.13063836063152462,
+          "validation_mse": 0.13023628294467926
+        },
+        {
+          "epoch": 24,
+          "train_mse": 0.1301128350165831,
+          "validation_mse": 0.1296362578868866
+        },
+        {
+          "epoch": 25,
+          "train_mse": 0.12953539250426388,
+          "validation_mse": 0.12898705899715424
+        },
+        {
+          "epoch": 26,
+          "train_mse": 0.12887570939106738,
+          "validation_mse": 0.12828458845615387
+        },
+        {
+          "epoch": 27,
+          "train_mse": 0.12812308337395592,
+          "validation_mse": 0.12772342562675476
+        },
+        {
+          "epoch": 28,
+          "train_mse": 0.12734386653088797,
+          "validation_mse": 0.12693554162979126
+        },
+        {
+          "epoch": 29,
+          "train_mse": 0.12660462668175004,
+          "validation_mse": 0.12594598531723022
+        },
+        {
+          "epoch": 30,
+          "train_mse": 0.12600352158490122,
+          "validation_mse": 0.1254197657108307
+        },
+        {
+          "epoch": 31,
+          "train_mse": 0.1254466349638833,
+          "validation_mse": 0.12511438131332397
+        },
+        {
+          "epoch": 32,
+          "train_mse": 0.12505414939889833,
+          "validation_mse": 0.124509297311306
+        },
+        {
+          "epoch": 33,
+          "train_mse": 0.12455441958919922,
+          "validation_mse": 0.12407124042510986
+        },
+        {
+          "epoch": 34,
+          "train_mse": 0.12417089042346387,
+          "validation_mse": 0.12379374355077744
+        },
+        {
+          "epoch": 35,
+          "train_mse": 0.12380747430557766,
+          "validation_mse": 0.12329263240098953
+        },
+        {
+          "epoch": 36,
+          "train_mse": 0.12347570150382309,
+          "validation_mse": 0.1230459213256836
+        },
+        {
+          "epoch": 37,
+          "train_mse": 0.1231465538525367,
+          "validation_mse": 0.12267440557479858
+        },
+        {
+          "epoch": 38,
+          "train_mse": 0.12279978327718488,
+          "validation_mse": 0.12233570963144302
+        },
+        {
+          "epoch": 39,
+          "train_mse": 0.12251657122578205,
+          "validation_mse": 0.12198115885257721
+        },
+        {
+          "epoch": 40,
+          "train_mse": 0.12229098631243883,
+          "validation_mse": 0.12163951992988586
+        },
+        {
+          "epoch": 41,
+          "train_mse": 0.12193889772366187,
+          "validation_mse": 0.1213812455534935
+        },
+        {
+          "epoch": 42,
+          "train_mse": 0.1216013765540983,
+          "validation_mse": 0.12105836719274521
+        },
+        {
+          "epoch": 43,
+          "train_mse": 0.12122390260831523,
+          "validation_mse": 0.12093253433704376
+        },
+        {
+          "epoch": 44,
+          "train_mse": 0.12100652703831516,
+          "validation_mse": 0.12045365571975708
+        },
+        {
+          "epoch": 45,
+          "train_mse": 0.12065709046485057,
+          "validation_mse": 0.12026343494653702
+        },
+        {
+          "epoch": 46,
+          "train_mse": 0.12024509578083918,
+          "validation_mse": 0.12014474719762802
+        },
+        {
+          "epoch": 47,
+          "train_mse": 0.12000523355403486,
+          "validation_mse": 0.11944466084241867
+        },
+        {
+          "epoch": 48,
+          "train_mse": 0.11958720592896098,
+          "validation_mse": 0.11925435066223145
+        },
+        {
+          "epoch": 49,
+          "train_mse": 0.11933165986308125,
+          "validation_mse": 0.11889686435461044
+        },
+        {
+          "epoch": 50,
+          "train_mse": 0.11894609701056168,
+          "validation_mse": 0.11861864477396011
+        }
+      ],
+      "threshold_selection": "99.5th percentile of validation weak-normal proxy scores, frozen for April; threshold calibration is semi-supervised, including when the AE fit itself is unsupervised",
+      "label_info": {
+        "type": "weak_electrical_quality_candidate",
+        "ground_truth_fault_labels_available": false,
+        "scope": "Current 5-second observation, not future failure prediction"
+      },
+      "validation_weak_proxy_agreement": {
+        "rows": 38688,
+        "positive_rows": 66,
+        "positive_rate": 0.001705955334987593,
+        "auroc": 0.999992938551273,
+        "average_precision": 0.9962367652837433,
+        "precision": 0.25384615384615383,
+        "recall": 1.0,
+        "f1": 0.4049079754601227,
+        "threshold": 0.3080447018146515,
+        "true_negative": 38428,
+        "false_positive": 194,
+        "false_negative": 0,
+        "true_positive": 66,
+        "false_positive_rate": 0.005023043861011859,
+        "alarm_rate": 0.006720430107526882
+      },
+      "test_weak_proxy_agreement": {
+        "rows": 36192,
+        "positive_rows": 55,
+        "positive_rate": 0.0015196728558797524,
+        "auroc": 1.0,
+        "average_precision": 1.0,
+        "precision": 0.22633744855967078,
+        "recall": 1.0,
+        "f1": 0.3691275167785235,
+        "threshold": 0.3080447018146515,
+        "true_negative": 35949,
+        "false_positive": 188,
+        "false_negative": 0,
+        "true_positive": 55,
+        "false_positive_rate": 0.0052024241082546975,
+        "alarm_rate": 0.006714190981432361
+      },
+      "metric_limit": "Agreement with a weak sensor rule does not estimate verified fault precision/recall",
+      "test_mean_error_by_feature": {
+        "voltageR": 0.047711081802845,
+        "voltageS": 0.02456626668572426,
+        "voltageT": 0.01708286441862583,
+        "voltageRS": 0.038006581366062164,
+        "voltageST": 0.025150468572974205,
+        "voltageTR": 0.033595144748687744,
+        "currentR": 0.1514471024274826,
+        "currentS": 0.13850820064544678,
+        "currentT": 0.09692251682281494,
+        "activePower": 0.04424102604389191,
+        "powerFactorR": 0.29829588532447815,
+        "powerFactorS": 0.3446952700614929,
+        "powerFactorT": 0.3122839629650116,
+        "reactivePowerLagging": 0.13339269161224365
+      }
+    }
+  },
+  "limitations": [
+    "No verified real-fault or injected-anomaly labels supplied",
+    "Rule distillation can trivially learn the rule and is not independent diagnostic evidence",
+    "Transfer model excludes rule variables; failure to generalize is informative",
+    "Balanced per-hour subsample preserves equal inclusion probability but can miss rare transient events",
+    "Monthly block splits test time generalization on known modules, not unseen equipment",
+    "AE fitting on weak-normal proxy is semi-supervised and can still include unknown faults",
+    "Alarm counts concern sampled observations, not full-data incident counts"
+  ],
+  "saved_prediction_precision_audit": {
+    "method": "Native saved-model reload without retraining; exact float64 score serialization and comparison to unchanged fixed thresholds",
+    "rows": 36192,
+    "recomputed_results": [
+      {
+        "model": "xgb_rule_distillation",
+        "old_saved_flag_count": 36192,
+        "new_saved_flag_count": 219,
+        "metadata_alarm_count": 219,
+        "recomputed_vs_prior_metrics_max_absdiff": 0.0,
+        "threshold": 0.47502279281616216
+      },
+      {
+        "model": "xgb_rule_sensor_excluded_transfer",
+        "old_saved_flag_count": 139,
+        "new_saved_flag_count": 125,
+        "metadata_alarm_count": 125,
+        "recomputed_vs_prior_metrics_max_absdiff": 0.0,
+        "threshold": 0.521167278289795
+      },
+      {
+        "model": "ae_unsupervised_all_training",
+        "old_saved_flag_count": 219,
+        "new_saved_flag_count": 219,
+        "metadata_alarm_count": 219,
+        "recomputed_vs_prior_metrics_max_absdiff": 0.0,
+        "threshold": 0.30083799362182617
+      },
+      {
+        "model": "ae_weak_normal_proxy",
+        "old_saved_flag_count": 243,
+        "new_saved_flag_count": 243,
+        "metadata_alarm_count": 243,
+        "recomputed_vs_prior_metrics_max_absdiff": 0.0,
+        "threshold": 0.3080447018146515
+      }
+    ]
+  }
+}

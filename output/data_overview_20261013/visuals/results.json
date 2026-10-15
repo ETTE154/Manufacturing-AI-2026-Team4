@@ -1,0 +1,270 @@
+{
+  "status": "complete",
+  "script": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\visuals\\build_data_overview_visuals.py",
+  "figure_count": 10,
+  "caption_file": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\visuals\\chart_caption.json",
+  "figures": {
+    "hourly_energy_rate": {
+      "png": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\visuals\\figures\\hourly_energy_rate.png",
+      "svg": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\visuals\\figures\\hourly_energy_rate.svg"
+    },
+    "daily_energy_rate": {
+      "png": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\visuals\\figures\\daily_energy_rate.png",
+      "svg": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\visuals\\figures\\daily_energy_rate.svg"
+    },
+    "weekly_energy_rate": {
+      "png": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\visuals\\figures\\weekly_energy_rate.png",
+      "svg": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\visuals\\figures\\weekly_energy_rate.svg"
+    },
+    "monthly_energy_rate": {
+      "png": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\visuals\\figures\\monthly_energy_rate.png",
+      "svg": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\visuals\\figures\\monthly_energy_rate.svg"
+    },
+    "hourly_72h": {
+      "png": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\visuals\\figures\\hourly_72h.png",
+      "svg": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\visuals\\figures\\hourly_72h.svg"
+    },
+    "weekday_hour_pattern": {
+      "png": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\visuals\\figures\\weekday_hour_pattern.png",
+      "svg": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\visuals\\figures\\weekday_hour_pattern.svg"
+    },
+    "module_energy_distribution": {
+      "png": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\visuals\\figures\\module_energy_distribution.png",
+      "svg": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\visuals\\figures\\module_energy_distribution.svg"
+    },
+    "module_energy_comparison": {
+      "png": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\visuals\\figures\\module_energy_comparison.png",
+      "svg": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\visuals\\figures\\module_energy_comparison.svg"
+    },
+    "resolution_variability": {
+      "png": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\visuals\\figures\\resolution_variability.png",
+      "svg": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\visuals\\figures\\resolution_variability.svg"
+    },
+    "sensor_distribution_correlation": {
+      "png": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\visuals\\figures\\sensor_distribution_correlation.png",
+      "svg": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\visuals\\figures\\sensor_distribution_correlation.svg"
+    }
+  },
+  "sources": [
+    {
+      "path": "E:\\AI work\\AWS_프로젝트\\output\\analysis\\baseline_audit\\complete_hour_module_sum.csv",
+      "sha256": "729b149a3e3165dfb339f0386249bfbda0326657f9e722d86da8138db36117de",
+      "bytes": 139165
+    },
+    {
+      "path": "E:\\AI work\\AWS_프로젝트\\output\\analysis\\hourly_by_equipment.csv",
+      "sha256": "8df1c2a3f3cac80c44a9761a0a308e78ca683bd8197d18bc42a3c56d57b8c022",
+      "bytes": 12796379
+    },
+    {
+      "path": "E:\\AI work\\AWS_프로젝트\\output\\analysis\\equipment_summary.csv",
+      "sha256": "d73e02a9b3cc30479bcbb3f10647db585f6bc2c4707fd6e7216434d43a6b3bc2",
+      "bytes": 15876
+    },
+    {
+      "path": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\diagnosis\\uniform_raw_sample.csv.gz",
+      "sha256": "97f2d648c4e0e32db400b0e43beedba0b42621cf5b1fa4d88e07f547fad2f3c1",
+      "bytes": 9994841
+    },
+    {
+      "path": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\diagnosis\\sample_summary.json",
+      "sha256": "969354bb40e91404fecbc3d293b21b1c2f771f6164eef9530723aa6231d605b2",
+      "bytes": 6426
+    },
+    {
+      "path": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\data\\hourly_dataset.csv",
+      "sha256": "45936a4c060e0d2911b070c3144cb623f2b99379632bd58a845cdc8e21a20024",
+      "bytes": 886799
+    },
+    {
+      "path": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\data\\daily_dataset.csv",
+      "sha256": "c287d614095ac287b81615f10c279435b1a5998b0633074873460e387ce9dcf1",
+      "bytes": 29443
+    },
+    {
+      "path": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\data\\weekly_dataset.csv",
+      "sha256": "c7791630dd2a86f3dd127b9788e22fd57d3e886ccf4ac890eac6d8788e4e0337",
+      "bytes": 4956
+    },
+    {
+      "path": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\data\\monthly_dataset.csv",
+      "sha256": "a56580b7e62e74efcd8fb680da1c896f7bfbdf07bd6f045457e8e08fef1ef37e",
+      "bytes": 1308
+    }
+  ],
+  "source_first_hour": "2024-12-01 00:00:00",
+  "source_last_hour": "2025-04-29 23:00:00",
+  "source_last_hour_available_at": "2025-04-30 00:00:00",
+  "complete_hour_count": 3600,
+  "complete_day_count": 150,
+  "complete_module_hour_count": 46800,
+  "module_count": 13,
+  "total_complete_hour_module_sum_energy_kwh": 140865762.32240278,
+  "hourly_statistics": {
+    "n": 3600,
+    "mean": 39129.37842288966,
+    "std_ddof1": 95.76422049015697,
+    "cv_percent": 0.24473739259332933,
+    "minimum": 38783.49736111111,
+    "maximum": 39443.163319444444
+  },
+  "period_summaries": {
+    "hourly": {
+      "period_count": 3600,
+      "complete_count": 3600,
+      "partial_count": 0,
+      "observed_hours": 3600,
+      "total_energy_kwh": 140865762.32240278,
+      "weighted_rate_kwh_per_hour": 39129.37842288966,
+      "complete_rate_statistics": {
+        "n": 3600,
+        "mean": 39129.37842288966,
+        "std_ddof1": 95.76422049015697,
+        "cv_percent": 0.24473739259332933,
+        "minimum": 38783.49736111111,
+        "maximum": 39443.163319444444
+      },
+      "partial_periods": []
+    },
+    "daily": {
+      "period_count": 150,
+      "complete_count": 150,
+      "partial_count": 0,
+      "observed_hours": 3600,
+      "total_energy_kwh": 140865762.32240278,
+      "weighted_rate_kwh_per_hour": 39129.37842288966,
+      "complete_rate_statistics": {
+        "n": 150,
+        "mean": 39129.37842288966,
+        "std_ddof1": 18.025937200824487,
+        "cv_percent": 0.04606752759016428,
+        "minimum": 39090.42348553241,
+        "maximum": 39186.79350173611
+      },
+      "partial_periods": []
+    },
+    "weekly": {
+      "period_count": 23,
+      "complete_count": 21,
+      "partial_count": 2,
+      "observed_hours": 3600,
+      "total_energy_kwh": 140865762.32240278,
+      "weighted_rate_kwh_per_hour": 39129.37842288966,
+      "complete_rate_statistics": {
+        "n": 21,
+        "mean": 39129.211341025766,
+        "std_ddof1": 7.54918411375833,
+        "cv_percent": 0.019292962610374016,
+        "minimum": 39118.32178984788,
+        "maximum": 39141.85171312831
+      },
+      "partial_periods": [
+        {
+          "period_start": "2024-11-25 00:00:00",
+          "period_end_exclusive": "2024-12-02 00:00:00",
+          "first_observed": "2024-12-01 00:00:00",
+          "last_observed": "2024-12-01 23:00:00",
+          "observed_hours": 24,
+          "expected_hours": 168,
+          "coverage": 0.14285714285714285,
+          "energy_kwh": 939354.3609027778,
+          "rate_kwh_per_hour": 39139.76503761574
+        },
+        {
+          "period_start": "2025-04-28 00:00:00",
+          "period_end_exclusive": "2025-05-05 00:00:00",
+          "first_observed": "2025-04-28 00:00:00",
+          "last_observed": "2025-04-29 23:00:00",
+          "observed_hours": 48,
+          "expected_hours": 168,
+          "coverage": 0.2857142857142857,
+          "energy_kwh": 1878550.350361111,
+          "rate_kwh_per_hour": 39136.46563252315
+        }
+      ]
+    },
+    "monthly": {
+      "period_count": 5,
+      "complete_count": 4,
+      "partial_count": 1,
+      "observed_hours": 3600,
+      "total_energy_kwh": 140865762.32240278,
+      "weighted_rate_kwh_per_hour": 39129.37842288966,
+      "complete_rate_statistics": {
+        "n": 4,
+        "mean": 39129.76278364449,
+        "std_ddof1": 3.1923111349247333,
+        "cv_percent": 0.008158268560368222,
+        "minimum": 39125.423743111554,
+        "maximum": 39133.113398933536
+      },
+      "partial_periods": [
+        {
+          "period_start": "2025-04-01 00:00:00",
+          "period_end_exclusive": "2025-05-01 00:00:00",
+          "first_observed": "2025-04-01 00:00:00",
+          "last_observed": "2025-04-29 23:00:00",
+          "observed_hours": 696,
+          "expected_hours": 720,
+          "coverage": 0.9666666666666667,
+          "energy_kwh": 27233172.443,
+          "rate_kwh_per_hour": 39128.12132614943
+        }
+      ]
+    }
+  },
+  "monthly_calendar_effect": {
+    "january_energy_kwh": 29113002.573986113,
+    "february_energy_kwh": 26297452.204083335,
+    "february_vs_january_energy_change_percent": -9.67110954202508,
+    "february_vs_january_mean_rate_change_percent": 0.006985864186526136,
+    "february_vs_january_duration_ratio": 0.9032258064516129,
+    "interpretation": "Observed total energy difference is predominantly28-vs31day duration; rate difference is small; not an efficiency improvement claim"
+  },
+  "weekday_hour_pattern": {
+    "cell_count": 168,
+    "cell_observation_n_min": 21,
+    "cell_observation_n_max": 22,
+    "mean_cell_observation_n": 21.428571428571427,
+    "relative_min_percent": -0.12187298748013164,
+    "relative_max_percent": 0.19533392183945786,
+    "color_scale_absolute_limit_percent": 0.19533392183945786,
+    "cell_data": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\visuals\\weekday_hour_cells.json"
+  },
+  "sensor_sample": {
+    "rows": 187200,
+    "method": "Each module x complete localtime hour: four unique 5-second slots selected uniformly without replacement with deterministic stratum seed; no candidate oversampling",
+    "seed": 20261011,
+    "no_candidate_oversampling": true
+  },
+  "verification": {
+    "hourly": {
+      "energy_sum_vs3600h_error_kwh": 0.0,
+      "energy_per_observed_hour_vs_rate_max_error": 0.0
+    },
+    "daily": {
+      "energy_sum_vs3600h_error_kwh": 0.0,
+      "energy_per_observed_hour_vs_rate_max_error": 0.0
+    },
+    "weekly": {
+      "energy_sum_vs3600h_error_kwh": 0.0,
+      "energy_per_observed_hour_vs_rate_max_error": 0.0
+    },
+    "monthly": {
+      "energy_sum_vs3600h_error_kwh": 0.0,
+      "energy_per_observed_hour_vs_rate_max_error": 0.0
+    }
+  },
+  "original_files_modified": false,
+  "May_labels_read": false,
+  "model_training_performed": false,
+  "limits": [
+    "Guide unit kWh assumption remains provisional",
+    "13-module sum has unresolved meter hierarchy and potential overlap",
+    "Recorded localtime is used; Unix-key timezone inconsistency was audited in prior work",
+    "Rate energy/observed-hour is average load, not a rated-capacity utilization ratio",
+    "Partial weeks/month are shown explicitly; excluded from complete-period CV statistics",
+    "Aggregation suppresses variability but is not evidence of forecast skill",
+    "Sample histograms do not establish full-data fault ground truth"
+  ]
+}

@@ -1,0 +1,46 @@
+2026-10-15 · 스트리밍/고장 재생 개선 API
+
+POST /api/replay
+  {"action":"jump_event","event_id":"abnormal_pattern_0093"}
+
+기존 재생 범위와 무관하게 서버의 원본 후보/저장 알람에서 event_id를 조회합니다.
+외부에서 임의의 원본 파일 경로·센서값·고장 판정을 주입하지 않습니다.
+감지 구간 첫 관측(start/start_time 우선, 없으면time)30초 전으로 시작 시각을 설정하고
+기본10분 구간을 새 세션으로 열어 playing=true로 자동 재생합니다.
+종료는 후보 끝2분 뒤까지 포함하되 원본 마지막5초 관측 범위로 제한합니다.
+원본 시작점 때문에30초를 확보할 수 없는 경우 actual_lead_in_seconds로 실제 길이를 반환합니다.
+현재 제공된4개 연속 후보는 모두 정확히30초 전부터 재생할 수 있습니다.
+
+응답:
+  replay: 기존 상태 + highlight/display_intervals/display_window_seconds
+  snapshot: 첫 관측 시각의13모듈 원본 또는 명시적 증강 관측
+  history: 새 세션 초기 이력
+  event: id/module_id/title/detected_at/start/end/source_kind,
+         requested_lead_in_seconds/actual_lead_in_seconds
+
+replay.highlight:
+  start: 첫 이상 관측 시각(inclusive)
+  end: 마지막 이상 관측+5초(exclusive)
+  module_id/event_id/type/source_kind
+
+예: 17(6호기) abnormal_pattern_0093
+  감지2025-03-13 19:45:05~19:45:15
+  재생 시작2025-03-13 19:44:35
+  붉은 강조[19:45:05,19:45:20)
+
+부수 규칙:
+  - 숫자 X축은 원본 naive localtime을 시간대 변환 없이 표현합니다.
+  - 현재 원본 sampling5초×60간격=300초(5분)의 이동 범위입니다.
+  - 왼쪽=최신 관측−300초, 오른쪽=최신 관측. 양끝 포함 최대61관측 시각입니다.
+  - 초기60간격이 아직 수집되지 않아도 축 길이는300초를 유지하고 과거는 빈 영역으로 남깁니다.
+  - 명시적인 과거 기간 조회는 실시간 이동 범위와 구분합니다.
+  - 서버 bootstrap history는 최대61관측×13모듈을 제공합니다.
+  - 새 session_id에서는 이전 재생 이력을 이어 붙이지 않습니다. SQLite 영속 로그는 보존합니다.
+  - 증강 후보 재생은 원래 augmentation_origin_start와 고장 원인을 유지합니다.
+    단순히 시작 시각을 옮겨 증강이2분 늦어지는 문제를 방지합니다.
+  - 증강 알람의 원래 scenario_id를 보존하여 재생 이동마다 다른 고장처럼 중복 발행하지 않습니다.
+  - 붉은 표시는 미확정 이상 후보이며 실제 고장 라벨을 새로 만들지 않습니다.
+
+검증:
+  tests/replay_revision_verification.json
+  frontend/qa/ui_revision_20261015 (브라우저·화면 검증 자료)

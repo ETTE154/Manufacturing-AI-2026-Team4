@@ -1,0 +1,7 @@
+{
+  "initial_no_successful_fit": true,
+  "failed_candidates": 76,
+  "error": "ambiguous named hour index and hour column",
+  "resolved_by": "Rename derived profile index observed_time; predictions unchanged because none existed",
+  "validation_design_change_before_scores": "Feb28 replaced by Feb25 to precede internal test"
+}

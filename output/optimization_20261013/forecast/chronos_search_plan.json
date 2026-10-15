@@ -1,0 +1,140 @@
+{
+  "configs": [
+    {
+      "context": 168,
+      "calibration": "none",
+      "alpha": 1.0
+    },
+    {
+      "context": 168,
+      "calibration": "historical_mean",
+      "alpha": 0.0
+    },
+    {
+      "context": 168,
+      "calibration": "historical_mean",
+      "alpha": 0.25
+    },
+    {
+      "context": 168,
+      "calibration": "historical_mean",
+      "alpha": 0.5
+    },
+    {
+      "context": 168,
+      "calibration": "historical_mean",
+      "alpha": 0.75
+    },
+    {
+      "context": 168,
+      "calibration": "ema720",
+      "alpha": 0.0
+    },
+    {
+      "context": 168,
+      "calibration": "ema720",
+      "alpha": 0.25
+    },
+    {
+      "context": 168,
+      "calibration": "ema720",
+      "alpha": 0.5
+    },
+    {
+      "context": 168,
+      "calibration": "ema720",
+      "alpha": 0.75
+    },
+    {
+      "context": 720,
+      "calibration": "none",
+      "alpha": 1.0
+    },
+    {
+      "context": 720,
+      "calibration": "historical_mean",
+      "alpha": 0.0
+    },
+    {
+      "context": 720,
+      "calibration": "historical_mean",
+      "alpha": 0.25
+    },
+    {
+      "context": 720,
+      "calibration": "historical_mean",
+      "alpha": 0.5
+    },
+    {
+      "context": 720,
+      "calibration": "historical_mean",
+      "alpha": 0.75
+    },
+    {
+      "context": 720,
+      "calibration": "ema720",
+      "alpha": 0.0
+    },
+    {
+      "context": 720,
+      "calibration": "ema720",
+      "alpha": 0.25
+    },
+    {
+      "context": 720,
+      "calibration": "ema720",
+      "alpha": 0.5
+    },
+    {
+      "context": 720,
+      "calibration": "ema720",
+      "alpha": 0.75
+    },
+    {
+      "context": "full",
+      "calibration": "none",
+      "alpha": 1.0
+    },
+    {
+      "context": "full",
+      "calibration": "historical_mean",
+      "alpha": 0.0
+    },
+    {
+      "context": "full",
+      "calibration": "historical_mean",
+      "alpha": 0.25
+    },
+    {
+      "context": "full",
+      "calibration": "historical_mean",
+      "alpha": 0.5
+    },
+    {
+      "context": "full",
+      "calibration": "historical_mean",
+      "alpha": 0.75
+    },
+    {
+      "context": "full",
+      "calibration": "ema720",
+      "alpha": 0.0
+    },
+    {
+      "context": "full",
+      "calibration": "ema720",
+      "alpha": 0.25
+    },
+    {
+      "context": "full",
+      "calibration": "ema720",
+      "alpha": 0.5
+    },
+    {
+      "context": "full",
+      "calibration": "ema720",
+      "alpha": 0.75
+    }
+  ],
+  "weight_finetuning": false
+}

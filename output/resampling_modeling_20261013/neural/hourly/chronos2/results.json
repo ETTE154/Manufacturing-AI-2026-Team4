@@ -1,0 +1,126 @@
+{
+  "family": "chronos2",
+  "scenario": "hourly",
+  "selected_candidate": 0,
+  "selected_config": {
+    "context": "full",
+    "mean_blend_alpha": 0.0,
+    "mapping_profile": "uniform"
+  },
+  "validation": {
+    "full745": {
+      "count": 2235,
+      "mae_kwh": 76.52011723377751,
+      "rmse_kwh": 97.43525756990505,
+      "mape_percent": 0.19557415750162854,
+      "r2": -7.34648364708601e-05,
+      "bias_pred_minus_actual_kwh": 0.7046562820032086
+    },
+    "late505": {
+      "count": 1515,
+      "mae_kwh": 76.2371426749644,
+      "rmse_kwh": 96.7952415421724,
+      "mape_percent": 0.19483174403241382,
+      "r2": -7.297276163309441e-05,
+      "bias_pred_minus_actual_kwh": -0.912973497076436
+    },
+    "origin_count": 3,
+    "unique_target_hours": 985,
+    "late_unique_target_hours": 745,
+    "origin_late505_mae_kwh": {
+      "2025-02-15 00:00:00": 76.52858250181254,
+      "2025-02-22 00:00:00": 74.758416070953,
+      "2025-02-25 00:00:00": 77.42442945212765
+    },
+    "mean_origin_late505_mae_kwh": 76.23714267496439
+  },
+  "internal_test": {
+    "full745": {
+      "count": 745,
+      "mae_kwh": 78.22909774585322,
+      "rmse_kwh": 97.06757582591548,
+      "mape_percent": 0.1999590703600983,
+      "r2": -0.0012760526075779044,
+      "bias_pred_minus_actual_kwh": 3.4652259549404176
+    },
+    "late505": {
+      "count": 505,
+      "mae_kwh": 77.99724622179032,
+      "rmse_kwh": 96.57032107593479,
+      "mape_percent": 0.1993433883384926,
+      "r2": -5.822208495076531e-05,
+      "bias_pred_minus_actual_kwh": -0.7368429112078975
+    },
+    "origin_count": 1,
+    "unique_target_hours": 745,
+    "late_unique_target_hours": 505,
+    "origin_late505_mae_kwh": {
+      "2025-03-29 00:00:00": 77.99724622179032
+    },
+    "mean_origin_late505_mae_kwh": 77.99724622179032
+  },
+  "fits": {
+    "internal_test": {
+      "saved_model": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\hourly\\chronos2\\saved_models\\internal_test.json",
+      "prediction_csv": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\hourly\\chronos2\\test_predictions.csv",
+      "native_prediction_csv": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\hourly\\chronos2\\internal_test_native_predictions.csv",
+      "history_end": "2025-03-28 23:00:00",
+      "native_history_count": 2832,
+      "mean_blend_level": 39129.99786044413,
+      "trainable_weights": false
+    },
+    "future_unlabelled": {
+      "saved_model": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\hourly\\chronos2\\saved_models\\future_unlabelled.json",
+      "prediction_csv": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\hourly\\chronos2\\future_path.csv",
+      "native_prediction_csv": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\hourly\\chronos2\\future_unlabelled_native_predictions.csv",
+      "history_end": "2025-04-29 23:00:00",
+      "native_history_count": 3600,
+      "mean_blend_level": 39129.37842288966,
+      "trainable_weights": false
+    }
+  },
+  "replay_verification": [
+    {
+      "split": "internal_test",
+      "cached_raw_plus_locked_blend_replay_max_error": 0.0,
+      "future_poison_native_input_unchanged": true,
+      "raw_csv_sha256": "0deff996c6296e7746612f536a17d1d56bbcc35d364cb6a488ec7164041bda44",
+      "full_frozen_checkpoint_forward_replay": "Not rerun here; reproducible CLI provided. Cached raw SHA and locked blend exact replay verified."
+    },
+    {
+      "split": "future_unlabelled",
+      "cached_raw_plus_locked_blend_replay_max_error": 0.0,
+      "future_poison_native_input_unchanged": true,
+      "raw_csv_sha256": "d508bfb268ab5c2560efc5550f4a864c32e320de741520c88a55748124f4583e",
+      "full_frozen_checkpoint_forward_replay": "Not rerun here; reproducible CLI provided. Cached raw SHA and locked blend exact replay verified."
+    }
+  ],
+  "selection_lock": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\hourly\\chronos2\\selection_lock.json",
+  "candidate_results_json": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\hourly\\chronos2\\candidate_results.json",
+  "validation_prediction_csv": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\hourly\\chronos2\\validation_predictions.csv",
+  "may_labels_read": false,
+  "alpha0_baseline_equivalent": true,
+  "weight_finetuning": false,
+  "input_scope": "Aggregate hourly target only",
+  "target_mode": "Frozen official median forecast with CV-selected train-only historical-mean blend",
+  "daily_mapping": null,
+  "provenance": {
+    "model_id": "amazon/chronos-2",
+    "revision": "29ec3766d36d6f73f0696f85560a422f50e8498c",
+    "local_snapshot": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\.model_cache\\models--amazon--chronos-2\\snapshots\\29ec3766d36d6f73f0696f85560a422f50e8498c",
+    "license": "Apache-2.0",
+    "mode": "Frozen zero-shot univariate, no finetuning",
+    "files": {
+      "config.json": "ef1143bfdc9c0376d9a056eefca46cb4b1ec3d0ffacd541ff56feb40fb708031",
+      "model.safetensors": "ddcda3c7508bf2528087723e98a20707cc04b7f370ae275a9fd88078ddba4f42",
+      "README.md": "c7b29bc88f5bc3ebc6e7213b6353be80090d671fefa4aa74ed20498838c16558"
+    },
+    "data_transfer": "Only public model files downloaded. Input observations processed locally."
+  },
+  "runtime_seconds": 1.6804982000030577,
+  "claim_limits": [
+    "Pinned official120M pretrained checkpoint, no current-SOTA claim",
+    "Alpha0 is simple mean baseline",
+    "No calibrated prediction interval claim for blended point path"
+  ]
+}

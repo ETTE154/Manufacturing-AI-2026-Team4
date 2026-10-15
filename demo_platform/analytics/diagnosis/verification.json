@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "saved_model_replay_200_rows_exact": true,
+  "Unix_timestamp_mutation_does_not_change_scores": true,
+  "original_input_rows_unchanged": true,
+  "synthetic_source_tag_propagated": true,
+  "strict_invalid_inputs_rejected": [
+    "missing_sensor",
+    "bad_localtime",
+    "nonfinite_sensor",
+    "unknown_module"
+  ],
+  "class_probability_sum_max_absdiff": 7.529160939157009e-08,
+  "actual_fault_probability_never_claimed": true,
+  "model_hashes_unchanged": true,
+  "source_and_old_artifacts_policy": "Only new diagnosis output files written; all source and prior model artifacts kept read-only.",
+  "full_scan": {
+    "rows": 33696013,
+    "source_sha256": "3b4e1ff2125ca64612837530a8612fa7f044f398e508e00026097fc788d0dce5",
+    "source_size_mtime_preserved": true,
+    "six_rules_all_rows": true,
+    "AE_all_rows": true,
+    "candidate_count": 180,
+    "candidate_peak_replay_max_absdiff": 0.0,
+    "candidate_intervals_exact_5s_contiguous": true,
+    "actual_ground_truth_count": null
+  }
+}

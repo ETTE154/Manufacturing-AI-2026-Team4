@@ -1,0 +1,768 @@
+{
+  "status": "pass",
+  "target_sha256": "729b149a3e3165dfb339f0386249bfbda0326657f9e722d86da8138db36117de",
+  "common_sha256": "643f2e3abf0cc62e306c2c5aa9578bd96090342af24328abafc73710c31fd9ad",
+  "complete_period_counts": [
+    {
+      "origin": "2025-02-15 00:00:00",
+      "role": "validation1",
+      "frequency": "H",
+      "complete_periods": 1824,
+      "partial_periods": 0,
+      "latest_available_at": "2025-02-15 00:00:00",
+      "last_training_period_label": "2025-02-14 23:00:00",
+      "prefix_hours": 1824
+    },
+    {
+      "origin": "2025-02-15 00:00:00",
+      "role": "validation1",
+      "frequency": "D",
+      "complete_periods": 76,
+      "partial_periods": 0,
+      "latest_available_at": "2025-02-15 00:00:00",
+      "last_training_period_label": "2025-02-14 00:00:00",
+      "prefix_hours": 1824
+    },
+    {
+      "origin": "2025-02-15 00:00:00",
+      "role": "validation1",
+      "frequency": "W-SUN",
+      "complete_periods": 10,
+      "partial_periods": 2,
+      "latest_available_at": "2025-02-10 00:00:00",
+      "last_training_period_label": "2025-02-09 00:00:00",
+      "prefix_hours": 1824
+    },
+    {
+      "origin": "2025-02-15 00:00:00",
+      "role": "validation1",
+      "frequency": "MS",
+      "complete_periods": 2,
+      "partial_periods": 1,
+      "latest_available_at": "2025-02-01 00:00:00",
+      "last_training_period_label": "2025-01-01 00:00:00",
+      "prefix_hours": 1824
+    },
+    {
+      "origin": "2025-02-22 00:00:00",
+      "role": "validation2",
+      "frequency": "H",
+      "complete_periods": 1992,
+      "partial_periods": 0,
+      "latest_available_at": "2025-02-22 00:00:00",
+      "last_training_period_label": "2025-02-21 23:00:00",
+      "prefix_hours": 1992
+    },
+    {
+      "origin": "2025-02-22 00:00:00",
+      "role": "validation2",
+      "frequency": "D",
+      "complete_periods": 83,
+      "partial_periods": 0,
+      "latest_available_at": "2025-02-22 00:00:00",
+      "last_training_period_label": "2025-02-21 00:00:00",
+      "prefix_hours": 1992
+    },
+    {
+      "origin": "2025-02-22 00:00:00",
+      "role": "validation2",
+      "frequency": "W-SUN",
+      "complete_periods": 11,
+      "partial_periods": 2,
+      "latest_available_at": "2025-02-17 00:00:00",
+      "last_training_period_label": "2025-02-16 00:00:00",
+      "prefix_hours": 1992
+    },
+    {
+      "origin": "2025-02-22 00:00:00",
+      "role": "validation2",
+      "frequency": "MS",
+      "complete_periods": 2,
+      "partial_periods": 1,
+      "latest_available_at": "2025-02-01 00:00:00",
+      "last_training_period_label": "2025-01-01 00:00:00",
+      "prefix_hours": 1992
+    },
+    {
+      "origin": "2025-02-25 00:00:00",
+      "role": "validation3",
+      "frequency": "H",
+      "complete_periods": 2064,
+      "partial_periods": 0,
+      "latest_available_at": "2025-02-25 00:00:00",
+      "last_training_period_label": "2025-02-24 23:00:00",
+      "prefix_hours": 2064
+    },
+    {
+      "origin": "2025-02-25 00:00:00",
+      "role": "validation3",
+      "frequency": "D",
+      "complete_periods": 86,
+      "partial_periods": 0,
+      "latest_available_at": "2025-02-25 00:00:00",
+      "last_training_period_label": "2025-02-24 00:00:00",
+      "prefix_hours": 2064
+    },
+    {
+      "origin": "2025-02-25 00:00:00",
+      "role": "validation3",
+      "frequency": "W-SUN",
+      "complete_periods": 12,
+      "partial_periods": 2,
+      "latest_available_at": "2025-02-24 00:00:00",
+      "last_training_period_label": "2025-02-23 00:00:00",
+      "prefix_hours": 2064
+    },
+    {
+      "origin": "2025-02-25 00:00:00",
+      "role": "validation3",
+      "frequency": "MS",
+      "complete_periods": 2,
+      "partial_periods": 1,
+      "latest_available_at": "2025-02-01 00:00:00",
+      "last_training_period_label": "2025-01-01 00:00:00",
+      "prefix_hours": 2064
+    },
+    {
+      "origin": "2025-03-29 00:00:00",
+      "role": "internal",
+      "frequency": "H",
+      "complete_periods": 2832,
+      "partial_periods": 0,
+      "latest_available_at": "2025-03-29 00:00:00",
+      "last_training_period_label": "2025-03-28 23:00:00",
+      "prefix_hours": 2832
+    },
+    {
+      "origin": "2025-03-29 00:00:00",
+      "role": "internal",
+      "frequency": "D",
+      "complete_periods": 118,
+      "partial_periods": 0,
+      "latest_available_at": "2025-03-29 00:00:00",
+      "last_training_period_label": "2025-03-28 00:00:00",
+      "prefix_hours": 2832
+    },
+    {
+      "origin": "2025-03-29 00:00:00",
+      "role": "internal",
+      "frequency": "W-SUN",
+      "complete_periods": 16,
+      "partial_periods": 2,
+      "latest_available_at": "2025-03-24 00:00:00",
+      "last_training_period_label": "2025-03-23 00:00:00",
+      "prefix_hours": 2832
+    },
+    {
+      "origin": "2025-03-29 00:00:00",
+      "role": "internal",
+      "frequency": "MS",
+      "complete_periods": 3,
+      "partial_periods": 1,
+      "latest_available_at": "2025-03-01 00:00:00",
+      "last_training_period_label": "2025-02-01 00:00:00",
+      "prefix_hours": 2832
+    },
+    {
+      "origin": "2025-04-30 00:00:00",
+      "role": "final",
+      "frequency": "H",
+      "complete_periods": 3600,
+      "partial_periods": 0,
+      "latest_available_at": "2025-04-30 00:00:00",
+      "last_training_period_label": "2025-04-29 23:00:00",
+      "prefix_hours": 3600
+    },
+    {
+      "origin": "2025-04-30 00:00:00",
+      "role": "final",
+      "frequency": "D",
+      "complete_periods": 150,
+      "partial_periods": 0,
+      "latest_available_at": "2025-04-30 00:00:00",
+      "last_training_period_label": "2025-04-29 00:00:00",
+      "prefix_hours": 3600
+    },
+    {
+      "origin": "2025-04-30 00:00:00",
+      "role": "final",
+      "frequency": "W-SUN",
+      "complete_periods": 21,
+      "partial_periods": 2,
+      "latest_available_at": "2025-04-28 00:00:00",
+      "last_training_period_label": "2025-04-27 00:00:00",
+      "prefix_hours": 3600
+    },
+    {
+      "origin": "2025-04-30 00:00:00",
+      "role": "final",
+      "frequency": "MS",
+      "complete_periods": 4,
+      "partial_periods": 1,
+      "latest_available_at": "2025-04-01 00:00:00",
+      "last_training_period_label": "2025-03-01 00:00:00",
+      "prefix_hours": 3600
+    }
+  ],
+  "period_statistics_future_poison_checks": [
+    {
+      "origin": "2025-02-15 00:00:00",
+      "frequency": "H",
+      "period_statistics_future_poison_equal": true
+    },
+    {
+      "origin": "2025-02-15 00:00:00",
+      "frequency": "D",
+      "period_statistics_future_poison_equal": true
+    },
+    {
+      "origin": "2025-02-15 00:00:00",
+      "frequency": "W-SUN",
+      "period_statistics_future_poison_equal": true
+    },
+    {
+      "origin": "2025-02-15 00:00:00",
+      "frequency": "MS",
+      "period_statistics_future_poison_equal": true
+    },
+    {
+      "origin": "2025-02-22 00:00:00",
+      "frequency": "H",
+      "period_statistics_future_poison_equal": true
+    },
+    {
+      "origin": "2025-02-22 00:00:00",
+      "frequency": "D",
+      "period_statistics_future_poison_equal": true
+    },
+    {
+      "origin": "2025-02-22 00:00:00",
+      "frequency": "W-SUN",
+      "period_statistics_future_poison_equal": true
+    },
+    {
+      "origin": "2025-02-22 00:00:00",
+      "frequency": "MS",
+      "period_statistics_future_poison_equal": true
+    },
+    {
+      "origin": "2025-02-25 00:00:00",
+      "frequency": "H",
+      "period_statistics_future_poison_equal": true
+    },
+    {
+      "origin": "2025-02-25 00:00:00",
+      "frequency": "D",
+      "period_statistics_future_poison_equal": true
+    },
+    {
+      "origin": "2025-02-25 00:00:00",
+      "frequency": "W-SUN",
+      "period_statistics_future_poison_equal": true
+    },
+    {
+      "origin": "2025-02-25 00:00:00",
+      "frequency": "MS",
+      "period_statistics_future_poison_equal": true
+    },
+    {
+      "origin": "2025-03-29 00:00:00",
+      "frequency": "H",
+      "period_statistics_future_poison_equal": true
+    },
+    {
+      "origin": "2025-03-29 00:00:00",
+      "frequency": "D",
+      "period_statistics_future_poison_equal": true
+    },
+    {
+      "origin": "2025-03-29 00:00:00",
+      "frequency": "W-SUN",
+      "period_statistics_future_poison_equal": true
+    },
+    {
+      "origin": "2025-03-29 00:00:00",
+      "frequency": "MS",
+      "period_statistics_future_poison_equal": true
+    },
+    {
+      "origin": "2025-04-30 00:00:00",
+      "frequency": "H",
+      "period_statistics_future_poison_equal": true
+    },
+    {
+      "origin": "2025-04-30 00:00:00",
+      "frequency": "D",
+      "period_statistics_future_poison_equal": true
+    },
+    {
+      "origin": "2025-04-30 00:00:00",
+      "frequency": "W-SUN",
+      "period_statistics_future_poison_equal": true
+    },
+    {
+      "origin": "2025-04-30 00:00:00",
+      "frequency": "MS",
+      "period_statistics_future_poison_equal": true
+    }
+  ],
+  "profile_future_poison_checks": 60,
+  "full_period_allocation_checks": [
+    {
+      "origin": "2025-02-15 00:00:00",
+      "frequency": "D",
+      "profile": "uniform",
+      "full_period_hours": 24,
+      "energy_conservation_absdiff_kwh": 0.0
+    },
+    {
+      "origin": "2025-02-15 00:00:00",
+      "frequency": "W-SUN",
+      "profile": "uniform",
+      "full_period_hours": 168,
+      "energy_conservation_absdiff_kwh": 0.0
+    },
+    {
+      "origin": "2025-02-15 00:00:00",
+      "frequency": "MS",
+      "profile": "uniform",
+      "full_period_hours": 744,
+      "energy_conservation_absdiff_kwh": 0.0
+    },
+    {
+      "origin": "2025-02-15 00:00:00",
+      "frequency": "D",
+      "profile": "hour",
+      "full_period_hours": 24,
+      "energy_conservation_absdiff_kwh": 0.0
+    },
+    {
+      "origin": "2025-02-15 00:00:00",
+      "frequency": "W-SUN",
+      "profile": "hour",
+      "full_period_hours": 168,
+      "energy_conservation_absdiff_kwh": 9.313225746154785e-10
+    },
+    {
+      "origin": "2025-02-15 00:00:00",
+      "frequency": "MS",
+      "profile": "hour",
+      "full_period_hours": 744,
+      "energy_conservation_absdiff_kwh": 3.725290298461914e-09
+    },
+    {
+      "origin": "2025-02-15 00:00:00",
+      "frequency": "D",
+      "profile": "weekday_hour",
+      "full_period_hours": 24,
+      "energy_conservation_absdiff_kwh": 0.0
+    },
+    {
+      "origin": "2025-02-15 00:00:00",
+      "frequency": "W-SUN",
+      "profile": "weekday_hour",
+      "full_period_hours": 168,
+      "energy_conservation_absdiff_kwh": 0.0
+    },
+    {
+      "origin": "2025-02-15 00:00:00",
+      "frequency": "MS",
+      "profile": "weekday_hour",
+      "full_period_hours": 744,
+      "energy_conservation_absdiff_kwh": 0.0
+    },
+    {
+      "origin": "2025-02-22 00:00:00",
+      "frequency": "D",
+      "profile": "uniform",
+      "full_period_hours": 24,
+      "energy_conservation_absdiff_kwh": 0.0
+    },
+    {
+      "origin": "2025-02-22 00:00:00",
+      "frequency": "W-SUN",
+      "profile": "uniform",
+      "full_period_hours": 168,
+      "energy_conservation_absdiff_kwh": 0.0
+    },
+    {
+      "origin": "2025-02-22 00:00:00",
+      "frequency": "MS",
+      "profile": "uniform",
+      "full_period_hours": 744,
+      "energy_conservation_absdiff_kwh": 0.0
+    },
+    {
+      "origin": "2025-02-22 00:00:00",
+      "frequency": "D",
+      "profile": "hour",
+      "full_period_hours": 24,
+      "energy_conservation_absdiff_kwh": 0.0
+    },
+    {
+      "origin": "2025-02-22 00:00:00",
+      "frequency": "W-SUN",
+      "profile": "hour",
+      "full_period_hours": 168,
+      "energy_conservation_absdiff_kwh": 0.0
+    },
+    {
+      "origin": "2025-02-22 00:00:00",
+      "frequency": "MS",
+      "profile": "hour",
+      "full_period_hours": 744,
+      "energy_conservation_absdiff_kwh": 3.725290298461914e-09
+    },
+    {
+      "origin": "2025-02-22 00:00:00",
+      "frequency": "D",
+      "profile": "weekday_hour",
+      "full_period_hours": 24,
+      "energy_conservation_absdiff_kwh": 0.0
+    },
+    {
+      "origin": "2025-02-22 00:00:00",
+      "frequency": "W-SUN",
+      "profile": "weekday_hour",
+      "full_period_hours": 168,
+      "energy_conservation_absdiff_kwh": 9.313225746154785e-10
+    },
+    {
+      "origin": "2025-02-22 00:00:00",
+      "frequency": "MS",
+      "profile": "weekday_hour",
+      "full_period_hours": 744,
+      "energy_conservation_absdiff_kwh": 0.0
+    },
+    {
+      "origin": "2025-02-25 00:00:00",
+      "frequency": "D",
+      "profile": "uniform",
+      "full_period_hours": 24,
+      "energy_conservation_absdiff_kwh": 0.0
+    },
+    {
+      "origin": "2025-02-25 00:00:00",
+      "frequency": "W-SUN",
+      "profile": "uniform",
+      "full_period_hours": 168,
+      "energy_conservation_absdiff_kwh": 0.0
+    },
+    {
+      "origin": "2025-02-25 00:00:00",
+      "frequency": "MS",
+      "profile": "uniform",
+      "full_period_hours": 744,
+      "energy_conservation_absdiff_kwh": 0.0
+    },
+    {
+      "origin": "2025-02-25 00:00:00",
+      "frequency": "D",
+      "profile": "hour",
+      "full_period_hours": 24,
+      "energy_conservation_absdiff_kwh": 0.0
+    },
+    {
+      "origin": "2025-02-25 00:00:00",
+      "frequency": "W-SUN",
+      "profile": "hour",
+      "full_period_hours": 168,
+      "energy_conservation_absdiff_kwh": 9.313225746154785e-10
+    },
+    {
+      "origin": "2025-02-25 00:00:00",
+      "frequency": "MS",
+      "profile": "hour",
+      "full_period_hours": 744,
+      "energy_conservation_absdiff_kwh": 0.0
+    },
+    {
+      "origin": "2025-02-25 00:00:00",
+      "frequency": "D",
+      "profile": "weekday_hour",
+      "full_period_hours": 24,
+      "energy_conservation_absdiff_kwh": 0.0
+    },
+    {
+      "origin": "2025-02-25 00:00:00",
+      "frequency": "W-SUN",
+      "profile": "weekday_hour",
+      "full_period_hours": 168,
+      "energy_conservation_absdiff_kwh": 9.313225746154785e-10
+    },
+    {
+      "origin": "2025-02-25 00:00:00",
+      "frequency": "MS",
+      "profile": "weekday_hour",
+      "full_period_hours": 744,
+      "energy_conservation_absdiff_kwh": 0.0
+    },
+    {
+      "origin": "2025-03-29 00:00:00",
+      "frequency": "D",
+      "profile": "uniform",
+      "full_period_hours": 24,
+      "energy_conservation_absdiff_kwh": 0.0
+    },
+    {
+      "origin": "2025-03-29 00:00:00",
+      "frequency": "W-SUN",
+      "profile": "uniform",
+      "full_period_hours": 168,
+      "energy_conservation_absdiff_kwh": 0.0
+    },
+    {
+      "origin": "2025-03-29 00:00:00",
+      "frequency": "MS",
+      "profile": "uniform",
+      "full_period_hours": 744,
+      "energy_conservation_absdiff_kwh": 0.0
+    },
+    {
+      "origin": "2025-03-29 00:00:00",
+      "frequency": "D",
+      "profile": "hour",
+      "full_period_hours": 24,
+      "energy_conservation_absdiff_kwh": 0.0
+    },
+    {
+      "origin": "2025-03-29 00:00:00",
+      "frequency": "W-SUN",
+      "profile": "hour",
+      "full_period_hours": 168,
+      "energy_conservation_absdiff_kwh": 0.0
+    },
+    {
+      "origin": "2025-03-29 00:00:00",
+      "frequency": "MS",
+      "profile": "hour",
+      "full_period_hours": 744,
+      "energy_conservation_absdiff_kwh": 0.0
+    },
+    {
+      "origin": "2025-03-29 00:00:00",
+      "frequency": "D",
+      "profile": "weekday_hour",
+      "full_period_hours": 24,
+      "energy_conservation_absdiff_kwh": 0.0
+    },
+    {
+      "origin": "2025-03-29 00:00:00",
+      "frequency": "W-SUN",
+      "profile": "weekday_hour",
+      "full_period_hours": 168,
+      "energy_conservation_absdiff_kwh": 0.0
+    },
+    {
+      "origin": "2025-03-29 00:00:00",
+      "frequency": "MS",
+      "profile": "weekday_hour",
+      "full_period_hours": 744,
+      "energy_conservation_absdiff_kwh": 3.725290298461914e-09
+    },
+    {
+      "origin": "2025-04-30 00:00:00",
+      "frequency": "D",
+      "profile": "uniform",
+      "full_period_hours": 24,
+      "energy_conservation_absdiff_kwh": 0.0
+    },
+    {
+      "origin": "2025-04-30 00:00:00",
+      "frequency": "W-SUN",
+      "profile": "uniform",
+      "full_period_hours": 168,
+      "energy_conservation_absdiff_kwh": 0.0
+    },
+    {
+      "origin": "2025-04-30 00:00:00",
+      "frequency": "MS",
+      "profile": "uniform",
+      "full_period_hours": 744,
+      "energy_conservation_absdiff_kwh": 0.0
+    },
+    {
+      "origin": "2025-04-30 00:00:00",
+      "frequency": "D",
+      "profile": "hour",
+      "full_period_hours": 24,
+      "energy_conservation_absdiff_kwh": 0.0
+    },
+    {
+      "origin": "2025-04-30 00:00:00",
+      "frequency": "W-SUN",
+      "profile": "hour",
+      "full_period_hours": 168,
+      "energy_conservation_absdiff_kwh": 0.0
+    },
+    {
+      "origin": "2025-04-30 00:00:00",
+      "frequency": "MS",
+      "profile": "hour",
+      "full_period_hours": 744,
+      "energy_conservation_absdiff_kwh": 0.0
+    },
+    {
+      "origin": "2025-04-30 00:00:00",
+      "frequency": "D",
+      "profile": "weekday_hour",
+      "full_period_hours": 24,
+      "energy_conservation_absdiff_kwh": 1.1641532182693481e-10
+    },
+    {
+      "origin": "2025-04-30 00:00:00",
+      "frequency": "W-SUN",
+      "profile": "weekday_hour",
+      "full_period_hours": 168,
+      "energy_conservation_absdiff_kwh": 9.313225746154785e-10
+    },
+    {
+      "origin": "2025-04-30 00:00:00",
+      "frequency": "MS",
+      "profile": "weekday_hour",
+      "full_period_hours": 744,
+      "energy_conservation_absdiff_kwh": 0.0
+    }
+  ],
+  "data_file_checks": [
+    {
+      "frequency": "H",
+      "rows": 3600,
+      "complete": 3600,
+      "partial_rows": [],
+      "source_review_energy_max_absdiff": null,
+      "sha256": "45936a4c060e0d2911b070c3144cb623f2b99379632bd58a845cdc8e21a20024"
+    },
+    {
+      "frequency": "D",
+      "rows": 150,
+      "complete": 150,
+      "partial_rows": [],
+      "source_review_energy_max_absdiff": 0.0,
+      "sha256": "c287d614095ac287b81615f10c279435b1a5998b0633074873460e387ce9dcf1"
+    },
+    {
+      "frequency": "W-SUN",
+      "rows": 23,
+      "complete": 21,
+      "partial_rows": [
+        {
+          "period_end_exclusive": "2024-12-02 00:00:00",
+          "period_label": "2024-12-01 00:00:00",
+          "energy_kwh": 939354.3609027778,
+          "observed_hours": 24,
+          "first_observed": "2024-12-01 00:00:00",
+          "last_observed": "2024-12-01 23:00:00",
+          "period_start": "2024-11-25 00:00:00",
+          "expected_hours": 168,
+          "rate_kwh_per_hour": 39139.76503761574,
+          "coverage": 0.14285714285714285,
+          "available_at": "2024-12-02 00:00:00",
+          "partial_left": true,
+          "partial_right": false,
+          "complete": false,
+          "available_before_origin": true,
+          "frequency": "W-SUN",
+          "energy_kwh_provisional": 939354.3609027778,
+          "mean_hourly_energy_kwh_provisional": 39139.76503761574,
+          "full_period_available_at": "2024-12-02 00:00:00"
+        },
+        {
+          "period_end_exclusive": "2025-05-05 00:00:00",
+          "period_label": "2025-05-04 00:00:00",
+          "energy_kwh": 1878550.350361111,
+          "observed_hours": 48,
+          "first_observed": "2025-04-28 00:00:00",
+          "last_observed": "2025-04-29 23:00:00",
+          "period_start": "2025-04-28 00:00:00",
+          "expected_hours": 168,
+          "rate_kwh_per_hour": 39136.46563252315,
+          "coverage": 0.2857142857142857,
+          "available_at": "2025-05-05 00:00:00",
+          "partial_left": false,
+          "partial_right": true,
+          "complete": false,
+          "available_before_origin": false,
+          "frequency": "W-SUN",
+          "energy_kwh_provisional": 1878550.350361111,
+          "mean_hourly_energy_kwh_provisional": 39136.46563252315,
+          "full_period_available_at": "2025-05-05 00:00:00"
+        }
+      ],
+      "source_review_energy_max_absdiff": 0.0,
+      "sha256": "c7791630dd2a86f3dd127b9788e22fd57d3e886ccf4ac890eac6d8788e4e0337"
+    },
+    {
+      "frequency": "MS",
+      "rows": 5,
+      "complete": 4,
+      "partial_rows": [
+        {
+          "period_end_exclusive": "2025-05-01 00:00:00",
+          "period_label": "2025-04-01 00:00:00",
+          "energy_kwh": 27233172.443,
+          "observed_hours": 696,
+          "first_observed": "2025-04-01 00:00:00",
+          "last_observed": "2025-04-29 23:00:00",
+          "period_start": "2025-04-01 00:00:00",
+          "expected_hours": 720,
+          "rate_kwh_per_hour": 39128.12132614943,
+          "coverage": 0.9666666666666667,
+          "available_at": "2025-05-01 00:00:00",
+          "partial_left": false,
+          "partial_right": true,
+          "complete": false,
+          "available_before_origin": false,
+          "frequency": "MS",
+          "energy_kwh_provisional": 27233172.443,
+          "mean_hourly_energy_kwh_provisional": 39128.12132614943,
+          "full_period_available_at": "2025-05-01 00:00:00"
+        }
+      ],
+      "source_review_energy_max_absdiff": 0.0,
+      "sha256": "a56580b7e62e74efcd8fb680da1c896f7bfbdf07bd6f045457e8e08fef1ef37e"
+    }
+  ],
+  "protocol": {
+    "target_source": "E:\\AI work\\AWS_프로젝트\\output\\analysis\\baseline_audit\\complete_hour_module_sum.csv",
+    "target_sha256": "729b149a3e3165dfb339f0386249bfbda0326657f9e722d86da8138db36117de",
+    "hour_count": 3600,
+    "step_hours": 1,
+    "forecast_points": 745,
+    "offsets": "0..744",
+    "leads_from_last_observation": "1..745",
+    "selection_offsets": "240..744",
+    "selection_points_per_origin": 505,
+    "selection_objective": "Mean3-origin Late505 MAE; no internal-test/May tuning",
+    "validation_origins": [
+      "2025-02-15 00:00:00",
+      "2025-02-22 00:00:00",
+      "2025-02-25 00:00:00"
+    ],
+    "validation_target_end": "2025-03-28 00:00:00",
+    "validation_path_observations": 2235,
+    "validation_path_unique_hours": 985,
+    "validation_late_observations": 1515,
+    "validation_late_unique_hours": 745,
+    "validation_repeated_late_labels": 770,
+    "validation_independence_limit": "Three overlapping fixed-origin paths are not three independent samples; repeated future labels must not inflate reliability claims.",
+    "internal_origin": "2025-03-29 00:00:00",
+    "internal_end": "2025-04-29 00:00:00",
+    "validation_internal_label_overlap_hours": 0,
+    "all_selection_labels_available_before_internal_origin": true,
+    "final_origin": "2025-04-30 00:00:00",
+    "final_end": "2025-05-31 00:00:00",
+    "final_evaluation_start": "2025-05-10 00:00:00",
+    "final_label_read_policy": "No May CSV is read by common/data/model development; parent evaluates after locks",
+    "rejected_design_note": "Initial lastvalidationoriginFeb28 was rejected before scoring because its labels reachedMarch31 and overlappedMar29 internal test49hours; final lastoriginFeb25 fixes label overlap and selection-time availability.",
+    "period_training_filter": "Reaggregate actual prefix; complete and available_at<=origin. WeeklySunday label is not its availability, which is Monday00; monthlynextMonth00.",
+    "monthly_limit": "Only2 full monthly periods at each validation origin and4 at final; monthly methods are explicit statistical baselines, not trained high-capacity SOTA.",
+    "unit_limit": "13-meter provisional guide kWh sum; unknown hierarchy/unit/circuit scope. Rate normalization separates calendar length from load.",
+    "post_EDA_limit": "Earlier April/May EDA occurred; this is a controlled subsequent experiment, not a pristine prospective evaluation."
+  },
+  "raw_4_9GB_reads": 0,
+  "May_CSV_reads": 0,
+  "weekly_availability": "Sunday display label does not authorizeSunday00 use; bucket closesMonday00",
+  "monthly_incomplete_policy": "April696/720hour partial excluded at Apr30; fullApril availableMay1 but observations forApr30 are unavailable",
+  "profile_scope": "All profile parameters fitted from completed hourly prefix and frozen; future calendar only selects fixed weights"
+}

@@ -1,0 +1,57 @@
+{
+  "status": "complete",
+  "primary_goal": "Project-guide hourly May electricity-energy, cost and carbon forecasts using only observations available at the end of April",
+  "target": "13-module complete-hour sum, provisional kWh under guide assumptions",
+  "source_policy": "Read existing verified data; original and all earlier outputs are preserved",
+  "resolutions": [
+    "hourly",
+    "daily",
+    "weekly Monday-Sunday",
+    "monthly calendar"
+  ],
+  "hourly_path": {
+    "points": 745,
+    "offsets": "0..744",
+    "leads_from_previous_hour_key": "1..745"
+  },
+  "validation_origins": [
+    "2025-02-15 00:00:00",
+    "2025-02-22 00:00:00",
+    "2025-02-25 00:00:00"
+  ],
+  "pretraining_design_correction": "Initially proposed February28 was replaced by February25 before successful scoring, so all validation labels and model selection information precede the March29 internal test origin.",
+  "selection": {
+    "objective": "Mean of three validation-origin MAEs on offsets240..744 (505 hourly values per origin)",
+    "secondary": "Full745 path MAE, RMSE, R2; coarse-period metrics reported separately where available",
+    "overlap_limit": "Validation targets overlap between forecast origins. 1515 scoring rows are not1515 independent observed hours; unique target count and origin-level errors must be reported.",
+    "feature_allocation_scaler": "Each forecast origin fits from its own historical prefix only"
+  },
+  "internal_test": {
+    "origin": "2025-03-29 00:00:00",
+    "path_end": "2025-04-29 00:00:00",
+    "scored_offsets": "240..744",
+    "use_for_tuning": false
+  },
+  "final_forecast": {
+    "origin": "2025-04-30 00:00:00",
+    "path_end": "2025-05-31 00:00:00",
+    "May_score": "May10-May31 00:00,505 rows",
+    "May_for_tuning": false
+  },
+  "coarse_models": {
+    "target": "Period hourly-average energy rate plus known future period duration, avoiding artificial month-length trends",
+    "daily_mapping": "Forecast32 daily rates; multiply by24 for full-day energy and use historical-only hourly shares to form745 hourly outputs",
+    "weekly_monthly_mapping": "Forecast each future calendar bucket rate and apply historical-only within-period profiles; never use future realized period totals",
+    "partial_periods": "Preserve counts and coverage; full-period training targets must be complete and available before origin. Known partial-prefix statistics are explicitly labeled if used as features.",
+    "monthly_limit": "Only4 complete months in full data and2 during the three validation fits. Use transparent level baselines rather than pretend to train a supported seasonal monthly model."
+  },
+  "evaluation": "All candidate model selection is based on validation hourly505 MAE, regardless of training resolution",
+  "unit_limits": "Guide activePower/energy scaling and meter hierarchy remain unresolved; no unsupported rescaling or meter removal",
+  "post_EDA_limit": "April/May were examined in previous work. This is a revised historical evaluation, not a pristine prospective blind test.",
+  "seed": 20261013,
+  "cpu_threads_per_job": 4,
+  "native_candidates_completed": 137,
+  "families_completed": 17,
+  "selected_by_validation": "daily_chronos2",
+  "verification_pass": true
+}

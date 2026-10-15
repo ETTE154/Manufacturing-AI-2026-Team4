@@ -1,0 +1,28 @@
+{
+  "scenarios": {
+    "dayahead24": {
+      "selected_model": "chronos2",
+      "criterion": "Validation path MAE only; numerical tie within1e-6 kWh prefers simple baseline"
+    },
+    "long745": {
+      "selected_model": "chronos2",
+      "criterion": "Validation path MAE only; numerical tie within1e-6 kWh prefers simple baseline"
+    }
+  },
+  "selection_lock_sha256": {
+    "dayahead24/arima": "2285e545a1373b739bb7c0af5252811bcff26535e7b22f5273fa1f3c12060fe2",
+    "dayahead24/xgboost": "2e327589ae8486fa24573bbe183516d2e900556c79809dd3526137ba91cf52e4",
+    "dayahead24/patchtst": "c5be014d2b758f69663b19cc80fc8b263f8460b36b194cc6455ffbb189573dfb",
+    "dayahead24/itransformer": "ffa9c5f3be0ebff5d987b434131d742d5e7a6d51e6f010c1b5050e500194cf3d",
+    "dayahead24/chronos2": "1a017108579260213505827821966be5fed1cb4f27fb45c4efb578bbfa5a53c4",
+    "dayahead24/baseline": "34d611bcf89554b690759a4c051182220762457565caa3b237b4db5f70cda20b",
+    "long745/arima": "87740cf4f40ff4566d7dab7788ed2769b035fe27358881263722df06ff512b08",
+    "long745/xgboost": "f16610517754a62515c1908c2c078810c4aeb422c7270c251e04095f158bc719",
+    "long745/patchtst": "430144bc2efd8835b20ffc35e857673d6e3fa8e0fbd6024f6f11ce8b3aa907f8",
+    "long745/itransformer": "26800fc8bcad9e960c586f3fd423c135ebc06e543043077bc46afcb803d2f304",
+    "long745/chronos2": "6134e5566c01d5b68b99bf93fae326685d82e5f99148120db6deb1c98c7fba7c",
+    "long745/baseline": "3900ef91215e50704dc27122614c4f6d137b9435619bba2f8b362f2d751977b9"
+  },
+  "target_sha256": "729b149a3e3165dfb339f0386249bfbda0326657f9e722d86da8138db36117de",
+  "selection_uses_May_labels": false
+}

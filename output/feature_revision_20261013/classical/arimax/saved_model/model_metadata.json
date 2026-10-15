@@ -1,0 +1,29 @@
+{
+  "model_path": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\classical\\arimax\\saved_model\\model.joblib",
+  "sha256": "6ea25903ff08f7bc57a98e65b44739bd0c44288ba3ed3f6c1481595583ff028b",
+  "config": {
+    "model": "arimax",
+    "order": [
+      0,
+      0,
+      0
+    ],
+    "exog": "calendar"
+  },
+  "selected_sensor_columns": [],
+  "feature_schema": [
+    "target_hour_sin",
+    "target_hour_cos",
+    "target_dow_sin",
+    "target_dow_cos",
+    "target_weekend"
+  ],
+  "history_end": "2025-04-29 23:00:00",
+  "history_count": 3600,
+  "target_center": 39128.94126014552,
+  "forecast_points": 24,
+  "reload_max_absdiff_kwh": 0.0,
+  "native_reload_max_absdiff_kwh": null,
+  "scaler_fit": "Training prefix only for Ridge/ElasticNet and ARIMAX exog; no global scaling for XGB.",
+  "context_storage": "Last720 completed hourly rows saved for standalone fixed-origin prediction; operational new-history input is not implemented."
+}

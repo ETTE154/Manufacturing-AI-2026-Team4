@@ -1,0 +1,18 @@
+{
+  "source": "http://sahmyook-project.s3-website.ap-northeast-2.amazonaws.com/",
+  "note": "Raw datasets are excluded from Git; hashes were recorded by the original source comparison audit.",
+  "datasets": [
+    {
+      "path": "may-dataset/rtu_ground_truth_may.csv",
+      "url": "https://sahmyook-project.s3.ap-northeast-2.amazonaws.com/may-dataset/rtu_ground_truth_may.csv",
+      "bytes": 46000,
+      "sha256": "a0e44dc6481fba7d78a2c5b60f0f5e0c2bcc69a8f732c9229bbbdaa38dee04bf"
+    },
+    {
+      "path": "traing-dataset/rtu_data_full.csv",
+      "url": "https://sahmyook-project.s3.ap-northeast-2.amazonaws.com/traing-dataset/rtu_data_full.csv",
+      "bytes": 4909245995,
+      "sha256": "3b4e1ff2125ca64612837530a8612fa7f044f398e508e00026097fc788d0dce5"
+    }
+  ]
+}

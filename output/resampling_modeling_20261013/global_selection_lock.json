@@ -1,0 +1,116 @@
+{
+  "created_utc": "2026-10-13T03:27:37.180370+00:00",
+  "selected_model": "daily_chronos2",
+  "criterion": "Mean3-origin Late505 MAE; no test/May selection",
+  "validation_origins": [
+    "2025-02-15",
+    "2025-02-22",
+    "2025-02-25"
+  ],
+  "selected_validation_mae": 76.22743939013054,
+  "rankings": [
+    {
+      "model": "daily_chronos2",
+      "validation_mae_kwh": 76.22743939013054
+    },
+    {
+      "model": "weekly_arima",
+      "validation_mae_kwh": 76.2315652105475
+    },
+    {
+      "model": "hourly_baseline",
+      "validation_mae_kwh": 76.23463795828368
+    },
+    {
+      "model": "hourly_xgboost",
+      "validation_mae_kwh": 76.23593561182761
+    },
+    {
+      "model": "weekly_level",
+      "validation_mae_kwh": 76.2363342942925
+    },
+    {
+      "model": "monthly_level",
+      "validation_mae_kwh": 76.23640653568604
+    },
+    {
+      "model": "hourly_arima",
+      "validation_mae_kwh": 76.23714199487793
+    },
+    {
+      "model": "daily_level",
+      "validation_mae_kwh": 76.2371426749644
+    },
+    {
+      "model": "hourly_chronos2",
+      "validation_mae_kwh": 76.2371426749644
+    },
+    {
+      "model": "daily_arima",
+      "validation_mae_kwh": 76.23714271849295
+    },
+    {
+      "model": "daily_xgboost",
+      "validation_mae_kwh": 76.2852932248361
+    },
+    {
+      "model": "hourly_ridge",
+      "validation_mae_kwh": 76.29280679064968
+    },
+    {
+      "model": "daily_ridge",
+      "validation_mae_kwh": 76.30012651243938
+    },
+    {
+      "model": "daily_patchtst",
+      "validation_mae_kwh": 76.40504609799349
+    },
+    {
+      "model": "daily_itransformer",
+      "validation_mae_kwh": 76.57295820438335
+    },
+    {
+      "model": "hourly_patchtst",
+      "validation_mae_kwh": 79.90464576042987
+    },
+    {
+      "model": "hourly_itransformer",
+      "validation_mae_kwh": 80.12556871662377
+    }
+  ],
+  "native_selection_lock_sha256": {
+    "coarse/selection_lock.json": "d222c93076e12b1fca3fd46e099ce32e3e7650d1e477552a0e7543d272189d17",
+    "hourly/selection_lock.json": "948ac9dda288e93402b8455c2b395d8b582b61dc649066e0699a131f9821165e",
+    "neural/hourly/patchtst/selection_lock.json": "b481f051e94593e36d54eca2f375a446155afa1cfcda8c0d65af893914815e03",
+    "neural/hourly/itransformer/selection_lock.json": "326e1d4bb8ad4745d83a6d3f4150f119f77f301c5e24fc921ed9c568e1a66f68",
+    "neural/hourly/chronos2/selection_lock.json": "c9ae3c5a57063bf07e69dd20783b7e819d7deda7c17fe72c8a88a816f87766b2",
+    "neural/daily/patchtst/selection_lock.json": "d079812517248a3e66fb736c5b857b54b0a0613fde35933faa43edab1a9779a5",
+    "neural/daily/itransformer/selection_lock.json": "79fc14dc67cf253688015f15a7f9d13e866b3f3f61a71f3fc57bfeab32e04ba4",
+    "neural/daily/chronos2/selection_lock.json": "4b15bf12d54d3fbd5aca1e6516b5a3b95af3e7ff229ffb1f26d5985482e7c254"
+  },
+  "future_path_sha256": {
+    "daily_level": "078cb84b37ebfcc063c17c41ebdbf6a8c6e191e3cd75098ee5ae69ec2730f9a1",
+    "daily_arima": "2c397f926f29c5ab830e2f8c48831f328b0f9b0e2e8da1d3094b85c6f1e8902c",
+    "weekly_level": "2d98421d175e6696f9d1f29d7105a52f639b6069b106b649084b078b1a585351",
+    "weekly_arima": "4608e8db9be4fe359d46b55e6f418f143560a586470840f7f0e19a6cfa77efe1",
+    "monthly_level": "14f723e274830042cd7c1cfdb0fedb526690d623e3b3a31476547029fa8cd328",
+    "daily_xgboost": "6a6a79a256d9fafc951a660228e3caaf563a79690197bc1ad23772b3fe0438a6",
+    "daily_ridge": "cfcf65864be6105252669cce82341809b85295fcb6b84d1597ea2a1e480c8b87",
+    "hourly_xgboost": "901b8b04b6839fdb07642ef332d2a35cefe69ffe28a39db06f88e2b1c68c21d8",
+    "hourly_ridge": "78eeaccc9c8ba41a28ad5a36088828c53d2a2ee8f1795fc9010f336b4b885e2c",
+    "hourly_arima": "9180b71908e75f71895eec64f7e0b1a9b50ebcc17afc1764d18ad22c53db25a4",
+    "hourly_baseline": "7be65b4112928f6c3c8fa9338fe03df3d5a46b907547b20a0e93d6ed1370a8b5",
+    "hourly_patchtst": "bb18e971d5ca2833688a95ba54417d509214c8f041b1cf55a199e528f1079b46",
+    "hourly_itransformer": "e202b35700f80029f541709d4ebf4750d7dbe3ff58fd8368a559b00d40f16349",
+    "hourly_chronos2": "2b0c295fa8c48e195a5033a0205f463c8d4ee8868b8671986ce86963f502f0bd",
+    "daily_patchtst": "8d815239ad1315331da22e23cd9d6446fbc191d1f0cb50c547b5390843b4743d",
+    "daily_itransformer": "2a655d011066193e13fcd9f73cb5a814e2e8c5409de951256b004feb56806167",
+    "daily_chronos2": "23b2297681e3c8966c722fc22d4513640cf4a57b1cd3923b35288048c8f9d64c"
+  },
+  "May_read_at_lock": false,
+  "native_candidate_count": 137,
+  "model_families_after_selection": 17,
+  "optimality_limit": "Best among finite137 candidates under this historical protocol; not a mathematical/global optimum",
+  "test_selection_prohibited": true,
+  "earlier_EDA_acknowledged": true
+}

@@ -1,0 +1,14 @@
+{
+  "assumptions": "Conditionally assume stationary five-second power with independent samples within hours and independent module innovations, with no extra predictable hourly mean changes. This is a diagnostic, not a proven data-generating process.",
+  "formula": "sum_m mean_hour(std_power_kw[m,h]^2)/720; one-hour energy numeric equals hourly mean kW under guide units",
+  "hours": 2904,
+  "IID_expected_aggregate_hourly_variance_kwh2": 9273.395918901213,
+  "actual_aggregate_hourly_variance_kwh2": 9069.86056171334,
+  "actual_over_IID_expected": 0.978051691206991,
+  "IID_expected_std_kwh": 96.29847308707035,
+  "actual_std_kwh": 95.2358155407583,
+  "sum_actual_module_variance_kwh2": 9291.96724360563,
+  "net_between_module_covariance_kwh2": -222.10668189229727,
+  "observed_covariance_sum_vs_target_var_absdiff": 7.275957614183426e-12,
+  "limits": "Similar variance does not prove Gaussianity, independence, synthetic generation or impossibility of forecasting. It quantifies how much apparent hourly variation could arise from averaging fast fluctuations."
+}

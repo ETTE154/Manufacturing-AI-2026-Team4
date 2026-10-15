@@ -1,0 +1,16 @@
+import { chromium } from 'file:///C:/Users/jeon/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/index.mjs';
+import fs from 'node:fs';
+import { pathToFileURL } from 'node:url';
+const root='E:/AI work/AWS_프로젝트/demo_platform';
+const browser=await chromium.launch({headless:true,executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe'});
+const page=await browser.newPage({viewport:{width:1440,height:1000},deviceScaleFactor:1});
+const errors=[];page.on('pageerror',e=>errors.push(e.message));
+await page.goto(pathToFileURL(root+'/docs/implementation_report.html').href,{waitUntil:'load'});
+const images=await page.locator('img').evaluateAll(imgs=>imgs.map(i=>({src:i.getAttribute('src'),loaded:i.complete&&i.naturalWidth>0})));
+const missing=images.filter(i=>!i.loaded);
+await page.screenshot({path:root+'/docs/report_preview.png'});
+await page.locator('#forecast').scrollIntoViewIfNeeded();await page.screenshot({path:root+'/docs/forecast_report_preview.png'});
+const overflow=await page.evaluate(()=>document.documentElement.scrollWidth>window.innerWidth);
+fs.writeFileSync(root+'/docs/report_visual_qa.json',JSON.stringify({status:!missing.length&&!errors.length&&!overflow?'passed':'failed',images:images.length,missing,errors,overflow},null,2));
+console.log(JSON.stringify({images:images.length,missing:missing.length,errors:errors.length,overflow}));
+await browser.close();

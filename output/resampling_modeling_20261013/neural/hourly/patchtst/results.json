@@ -1,0 +1,443 @@
+{
+  "family": "patchtst",
+  "scenario": "hourly",
+  "selected_config": {
+    "group": "target_only",
+    "context": 72,
+    "loss": "L1",
+    "dropout": 0.2,
+    "instance_norm": false,
+    "output_penalty": 0.05
+  },
+  "selected_candidate": 1,
+  "validation": {
+    "full745": {
+      "count": 2235,
+      "mae_kwh": 80.64077843551988,
+      "rmse_kwh": 103.2362538747159,
+      "mape_percent": 0.20610431571099716,
+      "r2": -0.12270098326744816,
+      "bias_pred_minus_actual_kwh": 0.28814911152047934
+    },
+    "late505": {
+      "count": 1515,
+      "mae_kwh": 79.90464576042987,
+      "rmse_kwh": 102.50412937475544,
+      "mape_percent": 0.20420893757758177,
+      "r2": -0.12151838480699895,
+      "bias_pred_minus_actual_kwh": -0.5792398933621785
+    },
+    "origin_count": 3,
+    "unique_target_hours": 985,
+    "late_unique_target_hours": 745,
+    "origin_late505_mae_kwh": {
+      "2025-02-15 00:00:00": 78.359560319043,
+      "2025-02-22 00:00:00": 80.70583241430103,
+      "2025-02-25 00:00:00": 80.64854454794558
+    },
+    "mean_origin_late505_mae_kwh": 79.90464576042986
+  },
+  "internal_test": {
+    "full745": {
+      "count": 745,
+      "mae_kwh": 82.43070517767377,
+      "rmse_kwh": 102.48814105614404,
+      "mape_percent": 0.21067646730281459,
+      "r2": -0.11622743833912241,
+      "bias_pred_minus_actual_kwh": 2.250286230317916
+    },
+    "late505": {
+      "count": 505,
+      "mae_kwh": 82.23088347521711,
+      "rmse_kwh": 101.96513825695968,
+      "mape_percent": 0.21014226459040566,
+      "r2": -0.11491397445628482,
+      "bias_pred_minus_actual_kwh": -1.4211035094259648
+    },
+    "origin_count": 1,
+    "unique_target_hours": 745,
+    "late_unique_target_hours": 505,
+    "origin_late505_mae_kwh": {
+      "2025-03-29 00:00:00": 82.23088347521711
+    },
+    "mean_origin_late505_mae_kwh": 82.23088347521711
+  },
+  "fits": {
+    "internal_test": {
+      "inner_early_stopping": {
+        "fit_end": "2025-02-25 22:00:00",
+        "fit_rows": 2087,
+        "fit_history_hour_end": "2025-02-25 22:00:00",
+        "holdout_native_periods": 745,
+        "inner_forecast_origin": "2025-02-25 23:00:00",
+        "inner_scoring_offsets": "240..744",
+        "best_epoch": 2,
+        "best_inner_late505_mae_kwh": 84.40557071207687,
+        "epochs_run": 6,
+        "best_at_epoch_cap": false,
+        "training_windows": 54,
+        "logs": [
+          {
+            "epoch": 1,
+            "loss": "L1",
+            "target_data_loss_standardized": 0.9415728317366706,
+            "regularized_objective": 0.9623066915406121,
+            "inner_late505_mae_kwh": 84.47682825823534
+          },
+          {
+            "epoch": 2,
+            "loss": "L1",
+            "target_data_loss_standardized": 0.911475349355627,
+            "regularized_objective": 0.9304013737925777,
+            "inner_late505_mae_kwh": 84.40557071207687
+          },
+          {
+            "epoch": 3,
+            "loss": "L1",
+            "target_data_loss_standardized": 0.8807048554773684,
+            "regularized_objective": 0.898120641708374,
+            "inner_late505_mae_kwh": 84.46837004226386
+          },
+          {
+            "epoch": 4,
+            "loss": "L1",
+            "target_data_loss_standardized": 0.8587429876680728,
+            "regularized_objective": 0.8751242204948708,
+            "inner_late505_mae_kwh": 84.56438467505438
+          },
+          {
+            "epoch": 5,
+            "loss": "L1",
+            "target_data_loss_standardized": 0.8356501901591266,
+            "regularized_objective": 0.8511870326819243,
+            "inner_late505_mae_kwh": 84.70559388375673
+          },
+          {
+            "epoch": 6,
+            "loss": "L1",
+            "target_data_loss_standardized": 0.8147434261110094,
+            "regularized_objective": 0.8292840564692462,
+            "inner_late505_mae_kwh": 84.82649624179967
+          }
+        ],
+        "normalizer": {
+          "features": [
+            "target_rate"
+          ],
+          "target_index": 0,
+          "mean": [
+            39129.9856512671
+          ],
+          "scale": [
+            94.58121051193544
+          ],
+          "fit_rows": 2087,
+          "fit_start": "2024-12-01 00:00:00",
+          "fit_end": "2025-02-25 22:00:00",
+          "fit_scope": "Strict training prefix only",
+          "near_constant_fallback_count": 0
+        },
+        "future_label_overlap": false,
+        "scaler_excludes_inner_holdout": true,
+        "seconds": 0.08540609991177917
+      },
+      "fitted_model": {
+        "family": "patchtst",
+        "resolution": "hourly",
+        "config": {
+          "group": "target_only",
+          "context": 72,
+          "loss": "L1",
+          "dropout": 0.2,
+          "instance_norm": false,
+          "output_penalty": 0.05
+        },
+        "architecture": {
+          "seq_len": 72,
+          "pred_len": 745,
+          "d_model": 32,
+          "d_ff": 64,
+          "e_layers": 1,
+          "n_heads": 4,
+          "dropout": 0.2,
+          "enc_in": 1,
+          "fc_dropout": 0.2,
+          "head_dropout": 0.2,
+          "individual": false,
+          "patch_len": 16,
+          "stride": 8,
+          "padding_patch": "end",
+          "revin": false,
+          "affine": true,
+          "subtract_last": false,
+          "decomposition": false,
+          "kernel_size": 25,
+          "core_norm": "LayerNorm"
+        },
+        "normalizer": {
+          "features": [
+            "target_rate"
+          ],
+          "target_index": 0,
+          "mean": [
+            39129.99786044413
+          ],
+          "scale": [
+            95.187906259565
+          ],
+          "fit_rows": 2832,
+          "fit_start": "2024-12-01 00:00:00",
+          "fit_end": "2025-03-28 23:00:00",
+          "fit_scope": "Strict training prefix only",
+          "near_constant_fallback_count": 0
+        },
+        "epochs": 2,
+        "seed": 20261013,
+        "data_sha256": "729b149a3e3165dfb339f0386249bfbda0326657f9e722d86da8138db36117de",
+        "history_start": "2024-12-01 00:00:00",
+        "history_end": "2025-03-28 23:00:00",
+        "history_hour_count": 2832,
+        "native_period_count": 2832,
+        "native_forecast_points": 745,
+        "hourly_forecast_points": 745,
+        "mapping": "native H target path",
+        "mapping_profile": {
+          "kind": "uniform",
+          "hour_factors": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "fit_uses_future": false
+        },
+        "target_loss": "Explicit target_rate channel only; multires covariates never future targets",
+        "units": "Provisional guide kWh per hour; meter hierarchy unresolved",
+        "path": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\hourly\\patchtst\\saved_models\\internal_test.pt",
+        "sha256": "574f5252df7b697d6e35696cb66b5f93e8889162eb611d60cb15a01a412c7ffb",
+        "training_windows": 85,
+        "training_loss_logs": [
+          {
+            "epoch": 1,
+            "loss": "L1",
+            "target_data_loss_standardized": 0.9386803872445051,
+            "regularized_objective": 0.9588418876423556
+          },
+          {
+            "epoch": 2,
+            "loss": "L1",
+            "target_data_loss_standardized": 0.9036867317031412,
+            "regularized_objective": 0.9217993301503798
+          }
+        ],
+        "fit_seconds": 0.049754400039091706,
+        "trainable_parameters": 224682,
+        "normalizer_fit_matches_prefix": true,
+        "maximum_supervised_native_label": "2025-03-28 23:00:00",
+        "model_input_features": [
+          "target_rate"
+        ]
+      },
+      "prediction_csv": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\hourly\\patchtst\\test_predictions.csv",
+      "native_prediction_csv": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\hourly\\patchtst\\internal_test_native_predictions.csv"
+    },
+    "future_unlabelled": {
+      "inner_early_stopping": {
+        "epoch_count_frozen_on_validation": true,
+        "no_April_epoch_selection": true
+      },
+      "fitted_model": {
+        "family": "patchtst",
+        "resolution": "hourly",
+        "config": {
+          "group": "target_only",
+          "context": 72,
+          "loss": "L1",
+          "dropout": 0.2,
+          "instance_norm": false,
+          "output_penalty": 0.05
+        },
+        "architecture": {
+          "seq_len": 72,
+          "pred_len": 745,
+          "d_model": 32,
+          "d_ff": 64,
+          "e_layers": 1,
+          "n_heads": 4,
+          "dropout": 0.2,
+          "enc_in": 1,
+          "fc_dropout": 0.2,
+          "head_dropout": 0.2,
+          "individual": false,
+          "patch_len": 16,
+          "stride": 8,
+          "padding_patch": "end",
+          "revin": false,
+          "affine": true,
+          "subtract_last": false,
+          "decomposition": false,
+          "kernel_size": 25,
+          "core_norm": "LayerNorm"
+        },
+        "normalizer": {
+          "features": [
+            "target_rate"
+          ],
+          "target_index": 0,
+          "mean": [
+            39129.37842288966
+          ],
+          "scale": [
+            95.75091898019765
+          ],
+          "fit_rows": 3600,
+          "fit_start": "2024-12-01 00:00:00",
+          "fit_end": "2025-04-29 23:00:00",
+          "fit_scope": "Strict training prefix only",
+          "near_constant_fallback_count": 0
+        },
+        "epochs": 3,
+        "seed": 20261013,
+        "data_sha256": "729b149a3e3165dfb339f0386249bfbda0326657f9e722d86da8138db36117de",
+        "history_start": "2024-12-01 00:00:00",
+        "history_end": "2025-04-29 23:00:00",
+        "history_hour_count": 3600,
+        "native_period_count": 3600,
+        "native_forecast_points": 745,
+        "hourly_forecast_points": 745,
+        "mapping": "native H target path",
+        "mapping_profile": {
+          "kind": "uniform",
+          "hour_factors": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "fit_uses_future": false
+        },
+        "target_loss": "Explicit target_rate channel only; multires covariates never future targets",
+        "units": "Provisional guide kWh per hour; meter hierarchy unresolved",
+        "path": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\hourly\\patchtst\\saved_models\\future_unlabelled.pt",
+        "sha256": "4d75c572a820eca54947ad8d9d75e8f22c106e9a1517f35d2af3d989e6d7ab0c",
+        "training_windows": 117,
+        "training_loss_logs": [
+          {
+            "epoch": 1,
+            "loss": "L1",
+            "target_data_loss_standardized": 0.9361201275108207,
+            "regularized_objective": 0.9560957102694063
+          },
+          {
+            "epoch": 2,
+            "loss": "L1",
+            "target_data_loss_standardized": 0.8985751943710523,
+            "regularized_objective": 0.9158225477251232
+          },
+          {
+            "epoch": 3,
+            "loss": "L1",
+            "target_data_loss_standardized": 0.8682737625562228,
+            "regularized_objective": 0.8836477516043899
+          }
+        ],
+        "fit_seconds": 0.0938132000155747,
+        "trainable_parameters": 224682,
+        "normalizer_fit_matches_prefix": true,
+        "maximum_supervised_native_label": "2025-04-29 23:00:00",
+        "model_input_features": [
+          "target_rate"
+        ]
+      },
+      "prediction_csv": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\hourly\\patchtst\\future_path.csv",
+      "native_prediction_csv": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\hourly\\patchtst\\future_unlabelled_native_predictions.csv"
+    }
+  },
+  "replay_verification": [
+    {
+      "split": "internal_test",
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\hourly\\patchtst\\saved_models\\internal_test.pt",
+      "prediction_csv": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\hourly\\patchtst\\test_predictions.csv",
+      "max_abs_native_replay_error": 0.0,
+      "hourly_mapping_exact": true,
+      "future_poison_prefix_covariates_equal": true,
+      "prefix_scaler_recompute_max_error": 0.0,
+      "forecast_start": "2025-03-29 00:00:00",
+      "forecast_end": "2025-04-29 00:00:00"
+    },
+    {
+      "split": "future_unlabelled",
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\hourly\\patchtst\\saved_models\\future_unlabelled.pt",
+      "prediction_csv": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\hourly\\patchtst\\future_path.csv",
+      "max_abs_native_replay_error": 0.0,
+      "hourly_mapping_exact": true,
+      "future_poison_prefix_covariates_equal": true,
+      "prefix_scaler_recompute_max_error": 0.0,
+      "forecast_start": "2025-04-30 00:00:00",
+      "forecast_end": "2025-05-31 00:00:00"
+    }
+  ],
+  "final_epoch_count": 3,
+  "selection_lock": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\hourly\\patchtst\\selection_lock.json",
+  "validation_prediction_csv": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\hourly\\patchtst\\validation_predictions.csv",
+  "candidate_results_json": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\hourly\\patchtst\\candidate_results.json",
+  "input_scope": "Aggregate hourly target only",
+  "target_mode": "Explicit target_rate output channel; target-only loss. No auxiliary future-covariate labels.",
+  "daily_mapping": null,
+  "patch_channel_independence_note": "Official channel-independent core; no cross-resolution covariate benefit is claimed",
+  "single_token_limit": null,
+  "training_budget": {
+    "maximum_inner_epochs": 24,
+    "patience": 4,
+    "cpu_threads": 4
+  },
+  "daily_tiny_sample_limit": null,
+  "may_labels_read": false,
+  "official_core_provenance": {
+    "file": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\patchtst\\provenance.json",
+    "sha256": "036f4ed7fd8dd6054224f7dd1780391ff6da8f501d09dcdb8727625ef9b7b4ad",
+    "official_core_hashes_verified": true,
+    "claim": "Pinned official 2023 PatchTST / 2024 iTransformer core, compact retraining; no claim of current SOTA superiority"
+  },
+  "runtime_seconds": 2.588460800005123
+}

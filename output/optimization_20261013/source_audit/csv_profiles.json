@@ -1,0 +1,191 @@
+{
+  "may-dataset/rtu_ground_truth_may.csv": {
+    "source_key": "may-dataset/rtu_ground_truth_may.csv",
+    "downloaded_profile": {
+      "path": "E:\\AI work\\AWS_프로젝트\\output\\optimization_20261013\\source_audit\\downloads\\may-dataset\\rtu_ground_truth_may.csv",
+      "headers": [
+        "id",
+        "hourly_pow",
+        "may_bill",
+        "may_carbon",
+        "agg_pow"
+      ],
+      "column_count": 5,
+      "rows": 505,
+      "id_start": "2025-05-10 00:00:00",
+      "id_end": "2025-05-31 00:00:00",
+      "duplicate_ids": 0,
+      "continuous_hourly_grid": true,
+      "missing_counts": {
+        "id": 0,
+        "hourly_pow": 0,
+        "may_bill": 0,
+        "may_carbon": 0,
+        "agg_pow": 0
+      },
+      "provided_targets": {
+        "hourly_pow_min": 38771.5519080792,
+        "hourly_pow_max": 39339.2117612679
+      },
+      "may_bill_to_hourly_pow_ratio": {
+        "minimum": 179.99999999999986,
+        "maximum": 180.00000000000014
+      },
+      "may_carbon_to_hourly_pow_ratio": {
+        "minimum": 0.42399999999989324,
+        "maximum": 0.4240000000001149
+      },
+      "agg_pow_matches_hourly_pow_cumsum_max_absdiff": 19691976.628952917
+    },
+    "original_headers": [
+      "id",
+      "hourly_pow",
+      "may_bill",
+      "may_carbon",
+      "agg_pow"
+    ],
+    "headers_match": true,
+    "profile_comparison_method": "Downloaded official CSV parsed directly; original is byte-identical by independently computed SHA-256, so row counts and all field values are identical without a redundant second parse."
+  },
+  "traing-dataset/rtu_data_full.csv": {
+    "source_key": "traing-dataset/rtu_data_full.csv",
+    "downloaded_profile": {
+      "path": "E:\\AI work\\AWS_프로젝트\\output\\optimization_20261013\\source_audit\\downloads\\traing-dataset\\rtu_data_full.csv",
+      "headers": [
+        "module(equipment)",
+        "timestamp",
+        "localtime",
+        "operation",
+        "voltageR",
+        "voltageS",
+        "voltageT",
+        "voltageRS",
+        "voltageST",
+        "voltageTR",
+        "currentR",
+        "currentS",
+        "currentT",
+        "activePower",
+        "powerFactorR",
+        "powerFactorS",
+        "powerFactorT",
+        "reactivePowerLagging",
+        "accumActiveEnergy"
+      ],
+      "column_count": 19,
+      "rows": 33696013,
+      "module_count": 13,
+      "rows_by_module": {
+        "1(PM-3)": 2592001,
+        "2(L-1전등)": 2592001,
+        "3(분쇄기(2))": 2592001,
+        "4(분쇄기(1))": 2592001,
+        "5(좌측분전반)": 2592001,
+        "11(우측분전반1)": 2592001,
+        "12(4호기)": 2592001,
+        "13(3호기)": 2592001,
+        "14(2호기)": 2592001,
+        "15(예비건조기)": 2592001,
+        "16(호이스트)": 2592001,
+        "17(6호기)": 2592001,
+        "18(우측분전반2)": 2592001
+      },
+      "localtime_numeric_min": 20241201000000,
+      "localtime_numeric_max": 20250430000000,
+      "recorded_localtime_start": "2024-12-01 00:00:00",
+      "recorded_localtime_end": "2025-04-30 00:00:00",
+      "localtime_bounds_by_module": {
+        "1(PM-3)": {
+          "minimum": "2024-12-01 00:00:00",
+          "maximum": "2025-04-30 00:00:00"
+        },
+        "2(L-1전등)": {
+          "minimum": "2024-12-01 00:00:00",
+          "maximum": "2025-04-30 00:00:00"
+        },
+        "3(분쇄기(2))": {
+          "minimum": "2024-12-01 00:00:00",
+          "maximum": "2025-04-30 00:00:00"
+        },
+        "4(분쇄기(1))": {
+          "minimum": "2024-12-01 00:00:00",
+          "maximum": "2025-04-30 00:00:00"
+        },
+        "5(좌측분전반)": {
+          "minimum": "2024-12-01 00:00:00",
+          "maximum": "2025-04-30 00:00:00"
+        },
+        "11(우측분전반1)": {
+          "minimum": "2024-12-01 00:00:00",
+          "maximum": "2025-04-30 00:00:00"
+        },
+        "12(4호기)": {
+          "minimum": "2024-12-01 00:00:00",
+          "maximum": "2025-04-30 00:00:00"
+        },
+        "13(3호기)": {
+          "minimum": "2024-12-01 00:00:00",
+          "maximum": "2025-04-30 00:00:00"
+        },
+        "14(2호기)": {
+          "minimum": "2024-12-01 00:00:00",
+          "maximum": "2025-04-30 00:00:00"
+        },
+        "15(예비건조기)": {
+          "minimum": "2024-12-01 00:00:00",
+          "maximum": "2025-04-30 00:00:00"
+        },
+        "16(호이스트)": {
+          "minimum": "2024-12-01 00:00:00",
+          "maximum": "2025-04-30 00:00:00"
+        },
+        "17(6호기)": {
+          "minimum": "2024-12-01 00:00:00",
+          "maximum": "2025-04-30 00:00:00"
+        },
+        "18(우측분전반2)": {
+          "minimum": "2024-12-01 00:00:00",
+          "maximum": "2025-04-30 00:00:00"
+        }
+      },
+      "timestamp_min_ms": 1733040000000,
+      "timestamp_max_ms": 1745996400000,
+      "timestamp_min_as_utc": "2024-12-01 08:00:00+00:00",
+      "timestamp_max_as_utc": "2025-04-30 07:00:00+00:00",
+      "missing_counts_profiled_key_columns": {
+        "module(equipment)": 0,
+        "timestamp": 0,
+        "localtime": 0
+      },
+      "profiled_columns": [
+        "module(equipment)",
+        "timestamp",
+        "localtime"
+      ],
+      "elapsed_seconds": 34.65599999995902
+    },
+    "original_headers": [
+      "module(equipment)",
+      "timestamp",
+      "localtime",
+      "operation",
+      "voltageR",
+      "voltageS",
+      "voltageT",
+      "voltageRS",
+      "voltageST",
+      "voltageTR",
+      "currentR",
+      "currentS",
+      "currentT",
+      "activePower",
+      "powerFactorR",
+      "powerFactorS",
+      "powerFactorT",
+      "reactivePowerLagging",
+      "accumActiveEnergy"
+    ],
+    "headers_match": true,
+    "profile_comparison_method": "Downloaded official CSV parsed directly; original is byte-identical by independently computed SHA-256, so row counts and all field values are identical without a redundant second parse."
+  }
+}

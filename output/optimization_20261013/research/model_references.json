@@ -1,0 +1,30 @@
+{
+  "verified_at_kst": "2026-10-13",
+  "method": "Primary official dataset page, original paper abstracts and official model repository verified; no current absolute SOTA claim",
+  "sources": [
+    {
+      "title": "KIT: HIPE — High-resolution Industrial Production Energy",
+      "url": "https://www.energystatusdata.kit.edu/hipe.php",
+      "supports": "실제 생산 공장의 설비별 스마트미터와 주 계측을 포함하는 유사 산업 데이터",
+      "limit": "동일 분포라는 증거는 없으며 본 실험에서 HIPE 벤치마크를 재학습하지 않았다."
+    },
+    {
+      "title": "PatchTST: A Time Series is Worth 64 Words (ICLR 2023)",
+      "url": "https://arxiv.org/abs/2211.14730",
+      "supports": "시간 구간을 patch로 묶고 채널별 표현을 사용하는 장기 예측 모델",
+      "limit": "논문의 SOTA 주장 당시 결과와 현재 소형 데이터 최적화 결과는 구분한다."
+    },
+    {
+      "title": "iTransformer: Inverted Transformers Are Effective for Time Series Forecasting (2024 revision)",
+      "url": "https://arxiv.org/abs/2310.06625",
+      "supports": "변수 토큰 사이 상관을 활용하는 다변량 예측 설계",
+      "limit": "이번 단변량 공통 입력에서는 다변량 attention의 장점을 검증할 수 없다."
+    },
+    {
+      "title": "Amazon Science: Chronos official forecasting repository",
+      "url": "https://github.com/amazon-science/chronos-forecasting",
+      "supports": "공식 사전학습 시계열 예측 모델의 고정 리비전을 로컬에서 사용",
+      "limit": "Chronos-2 가중치는 fine-tuning하지 않았다. 이번 27개 후보는 이력 길이·평균 보정·혼합 설정 평가이다."
+    }
+  ]
+}

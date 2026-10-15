@@ -1,0 +1,438 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "verification_status": "passed",
+  "actual_fault_labels_available": false,
+  "actual_precision_recall_available": false,
+  "model_available_from": "2025-02-01T00:00:00",
+  "chronological_protocol": {
+    "training": {
+      "start_inclusive": "2024-12-01T00:00:00",
+      "end_exclusive": "2025-01-01T00:00:00",
+      "roles": [
+        "baseline",
+        "IF",
+        "AE",
+        "synthetic_classifiers"
+      ]
+    },
+    "validation_calibration": {
+      "start_inclusive": "2025-01-01T00:00:00",
+      "end_exclusive": "2025-02-01T00:00:00",
+      "roles": [
+        "threshold_calibration",
+        "AE_epoch_selection",
+        "synthetic_classifier_selection"
+      ]
+    },
+    "after_calibration_test": {
+      "start_inclusive": "2025-02-01T00:00:00",
+      "end_exclusive": "2025-04-30T00:00:00",
+      "roles": [
+        "unlabeled_sample_alarm_rates",
+        "independent_synthetic_test_bases"
+      ]
+    },
+    "full_scan": {
+      "start_inclusive": "2024-12-01T00:00:00",
+      "end_inclusive": "2025-04-30T00:00:00",
+      "training_and_calibration_periods_are_retrospective": true
+    },
+    "actual_sample_endpoints": {
+      "baseline_training": {
+        "start": "2024-12-01 00:01:00",
+        "end": "2024-12-31 23:58:40",
+        "rows": 38688
+      },
+      "threshold_and_AE_validation": {
+        "start": "2025-01-01 00:00:00",
+        "end": "2025-01-31 23:58:15",
+        "rows": 38688
+      },
+      "unlabeled_original_and_synthetic_test_bases": {
+        "start": "2025-02-01 00:01:25",
+        "end": "2025-04-29 23:57:25",
+        "rows": 109824
+      }
+    }
+  },
+  "time_axis": {
+    "field": "localtime",
+    "format": "%Y%m%d%H%M%S",
+    "step_seconds": 5,
+    "timezone_conversion": null,
+    "Unix_timestamp_used_for_scoring": false
+  },
+  "models": {
+    "contextual_rules": {
+      "label": "모듈·시간대 조건 검사",
+      "role": "six candidate patterns",
+      "threshold": "January module/type 99.9th percentile; night rows only for night pattern",
+      "synthetic_test_metrics": {
+        "count": 14000,
+        "positive_count": 12000,
+        "threshold": 1.0,
+        "precision": 0.9992983687072443,
+        "recall": 0.9495,
+        "f1": 0.97376292624562,
+        "roc_auc": 0.9896967083333333,
+        "average_precision": 0.9983998577498698,
+        "meaning": "Only explicit six-form synthetic transformations versus unmodified reference rows; not real-fault accuracy."
+      },
+      "original_sample_alarm_fraction": 0.00641025641025641,
+      "full_source_scoring": true
+    },
+    "autoencoder": {
+      "label": "Autoencoder",
+      "role": "pointwise multivariate reconstruction deviation",
+      "threshold": 0.16612977623941366,
+      "training": {
+        "architecture": [
+          24,
+          32,
+          12,
+          32,
+          24
+        ],
+        "epochs_run": 99,
+        "best_epoch": 79,
+        "January_best_loss": 0.023215677589178085,
+        "stop": "January validation plateau patience20,min_delta1e-4; max2000 safety guard",
+        "guard_reached": false
+      },
+      "synthetic_test_metrics": {
+        "count": 14000,
+        "positive_count": 12000,
+        "threshold": 0.16612977623941366,
+        "precision": 0.9997669269315931,
+        "recall": 0.7149166666666666,
+        "f1": 0.8336815509450464,
+        "roc_auc": 0.9762619583333332,
+        "average_precision": 0.9960945345514985,
+        "meaning": "Only explicit six-form synthetic transformations versus unmodified reference rows; not real-fault accuracy."
+      },
+      "original_sample_alarm_fraction": 0.0010835518648018648,
+      "full_source_scoring": true,
+      "candidate_pattern": "abnormal_pattern"
+    },
+    "isolation_forest": {
+      "label": "Isolation Forest",
+      "role": "pointwise multivariate anomaly score",
+      "threshold": 0.6073029326631353,
+      "synthetic_test_metrics": {
+        "count": 14000,
+        "positive_count": 12000,
+        "threshold": 0.6073029326631353,
+        "precision": 0.9930394431554525,
+        "recall": 0.035666666666666666,
+        "f1": 0.06886010779502856,
+        "roc_auc": 0.9552018333333334,
+        "average_precision": 0.9902117028147414,
+        "meaning": "Only explicit six-form synthetic transformations versus unmodified reference rows; not real-fault accuracy."
+      },
+      "original_sample_alarm_fraction": 0.000883231351981352,
+      "full_source_scoring": false,
+      "coverage": "187200stratified original sample for calibration/comparison and exact peak rows of up to180frontend candidates; not all33.7M rows."
+    },
+    "random_forest": {
+      "label": "합성 형태 분류 Random Forest",
+      "role": "seven-class synthetic transformation similarity",
+      "selected": false,
+      "validation_macro_f1": 0.9781672788344172,
+      "test_macro_f1": 0.9780604397423048,
+      "test_accuracy": 0.9782142857142857,
+      "test_points": 14000,
+      "probability_meaning": "Synthetic transformation class similarity; not real-fault probability.",
+      "full_source_scoring": false,
+      "coverage": "187200stratified original sample for calibration/comparison and exact peak rows of up to180frontend candidates; not all33.7M rows."
+    },
+    "xgboost": {
+      "label": "합성 형태 분류 XGBoost",
+      "role": "seven-class synthetic transformation similarity",
+      "selected": true,
+      "validation_macro_f1": 0.9796604729497936,
+      "test_macro_f1": 0.9794317999880924,
+      "test_accuracy": 0.9795,
+      "test_points": 14000,
+      "probability_meaning": "Synthetic transformation class similarity; not real-fault probability.",
+      "full_source_scoring": false,
+      "coverage": "187200stratified original sample for calibration/comparison and exact peak rows of up to180frontend candidates; not all33.7M rows."
+    }
+  },
+  "types": [
+    {
+      "id": "load_imbalance",
+      "label": "부하 불균형",
+      "description": "상 전류와 모듈 평소 대비 전류 불균형 초과",
+      "raw_alarm_points": 63044,
+      "all_contiguous_events": 62908,
+      "sustained_3point_events": 0,
+      "frontend_review_candidates": 30,
+      "status": "no_sustained_candidate_found",
+      "coverage_note": "Single-point candidates, if present, are not a found fault; unmatched forms use separately tagged synthetic demonstrations.",
+      "threshold_by_module": {
+        "14": 4.264458054973335,
+        "3": 3.8429589702594655,
+        "1": 3.929528055714637,
+        "2": 3.9459762505384797,
+        "12": 4.104602396996909,
+        "17": 3.864201581907107,
+        "15": 4.063378530785133,
+        "16": 3.9937793434062905,
+        "5": 3.9792442693104446,
+        "18": 3.9248792208865924,
+        "11": 4.341100251772442,
+        "4": 4.019210320458387,
+        "13": 3.971841213210011
+      }
+    },
+    {
+      "id": "reactive_power_surge",
+      "label": "무효전력 급증",
+      "description": "Q·Q/P 증가와 역률 저하 보조 신호",
+      "raw_alarm_points": 40810,
+      "all_contiguous_events": 40762,
+      "sustained_3point_events": 0,
+      "frontend_review_candidates": 30,
+      "status": "no_sustained_candidate_found",
+      "coverage_note": "Single-point candidates, if present, are not a found fault; unmatched forms use separately tagged synthetic demonstrations.",
+      "threshold_by_module": {
+        "14": 4.379806893857343,
+        "3": 4.462603570801964,
+        "1": 4.466997502847498,
+        "2": 4.491935375219989,
+        "12": 4.774830950226704,
+        "17": 4.882797337337188,
+        "15": 4.684896210077223,
+        "16": 4.4448783391838695,
+        "5": 4.365588549217947,
+        "18": 4.435791242240477,
+        "11": 4.3378515113036755,
+        "4": 4.587286882346634,
+        "13": 4.299509086964132
+      }
+    },
+    {
+      "id": "power_factor_drop",
+      "label": "역률 급감",
+      "description": "최소·평균 역률 저하와 Q/P 증가 보조 신호",
+      "raw_alarm_points": 44193,
+      "all_contiguous_events": 44119,
+      "sustained_3point_events": 1,
+      "frontend_review_candidates": 30,
+      "status": "unconfirmed_natural_candidates",
+      "coverage_note": "Single-point candidates, if present, are not a found fault; unmatched forms use separately tagged synthetic demonstrations.",
+      "threshold_by_module": {
+        "14": 3.584381979552889,
+        "3": 3.5206017915445567,
+        "1": 3.5047601902153476,
+        "2": 3.339839732810993,
+        "12": 3.638730182134226,
+        "17": 12.087915400181455,
+        "15": 19.422128746907656,
+        "16": 3.3760506365428133,
+        "5": 3.321140375569206,
+        "18": 3.6433073841500767,
+        "11": 3.5432466320371336,
+        "4": 3.4742773132926374,
+        "13": 3.6324679200389176
+      }
+    },
+    {
+      "id": "abnormal_pattern",
+      "label": "비정상 패턴",
+      "description": "강건 센서 편차·경험적 전력관계 편차 또는 AE 재구성 편차",
+      "raw_alarm_points": 71400,
+      "all_contiguous_events": 71085,
+      "sustained_3point_events": 3,
+      "frontend_review_candidates": 30,
+      "status": "unconfirmed_natural_candidates",
+      "coverage_note": "Single-point candidates, if present, are not a found fault; unmatched forms use separately tagged synthetic demonstrations.",
+      "threshold_by_module": {
+        "14": 2.9022538773195774,
+        "3": 3.048140341801456,
+        "1": 3.192454651573311,
+        "2": 3.120839794580098,
+        "12": 3.5192719815905074,
+        "17": 6.763708545077553,
+        "15": 12.080027974915488,
+        "16": 2.9432878507376423,
+        "5": 3.1075155561033516,
+        "18": 3.161077207688974,
+        "11": 3.0838521115391684,
+        "4": 3.2279418409916536,
+        "13": 8.66334558965683
+      }
+    },
+    {
+      "id": "night_operation",
+      "label": "야간 이상가동",
+      "description": "22–06시 모듈·시간대 기준 전력·전류 초과; operation=1만으로 경보하지 않음",
+      "raw_alarm_points": 13038,
+      "all_contiguous_events": 12984,
+      "sustained_3point_events": 0,
+      "frontend_review_candidates": 30,
+      "status": "no_sustained_candidate_found",
+      "coverage_note": "Single-point candidates, if present, are not a found fault; unmatched forms use separately tagged synthetic demonstrations.",
+      "threshold_by_module": {
+        "14": 6.543415886938436,
+        "3": 5.526039382019904,
+        "1": 5.260685513780053,
+        "2": 4.794285942542335,
+        "12": 5.534432612423542,
+        "17": 5.791899971339053,
+        "15": 5.169040235145048,
+        "16": 5.295886501323961,
+        "5": 4.871263868006717,
+        "18": 5.664546060288416,
+        "11": 5.927429787150794,
+        "4": 4.626492073923615,
+        "13": 5.191215195488318
+      }
+    },
+    {
+      "id": "current_only_increase",
+      "label": "전류만 증가",
+      "description": "전류 증가와 경험적 전력관계 불일치",
+      "raw_alarm_points": 45126,
+      "all_contiguous_events": 45066,
+      "sustained_3point_events": 0,
+      "frontend_review_candidates": 30,
+      "status": "no_sustained_candidate_found",
+      "coverage_note": "Single-point candidates, if present, are not a found fault; unmatched forms use separately tagged synthetic demonstrations.",
+      "threshold_by_module": {
+        "14": 2.9353369424892173,
+        "3": 2.815736133891579,
+        "1": 2.8097969661031357,
+        "2": 2.707423800279919,
+        "12": 2.7234251387163204,
+        "17": 2.7499950488096134,
+        "15": 2.5899824526726496,
+        "16": 2.5443217260088096,
+        "5": 2.670088486876138,
+        "18": 2.739423011311191,
+        "11": 2.7850425766152376,
+        "4": 2.797557690145525,
+        "13": 2.7540481326334163
+      }
+    }
+  ],
+  "replay_events": [
+    {
+      "id": "power_factor_drop_0061",
+      "type": "power_factor_drop",
+      "module_id": "5",
+      "equipment": "5(좌측분전반)",
+      "start": "2025-02-26T06:47:00",
+      "end": "2025-02-26T06:47:10",
+      "time": "2025-02-26T06:47:05",
+      "point_count": 3,
+      "duration_seconds": 15,
+      "score": 1.031009968081829,
+      "threshold": 1.0,
+      "source_kind": "recorded",
+      "status": "unconfirmed_candidate",
+      "evaluation_scope": "chronological_after_calibration"
+    },
+    {
+      "id": "abnormal_pattern_0091",
+      "type": "abnormal_pattern",
+      "module_id": "15",
+      "equipment": "15(예비건조기)",
+      "start": "2025-02-28T04:38:20",
+      "end": "2025-02-28T04:38:30",
+      "time": "2025-02-28T04:38:30",
+      "point_count": 3,
+      "duration_seconds": 15,
+      "score": 2.617583496503652,
+      "threshold": 1.0,
+      "source_kind": "recorded",
+      "status": "unconfirmed_candidate",
+      "evaluation_scope": "chronological_after_calibration"
+    },
+    {
+      "id": "abnormal_pattern_0092",
+      "type": "abnormal_pattern",
+      "module_id": "17",
+      "equipment": "17(6호기)",
+      "start": "2025-02-19T03:04:00",
+      "end": "2025-02-19T03:04:10",
+      "time": "2025-02-19T03:04:05",
+      "point_count": 3,
+      "duration_seconds": 15,
+      "score": 2.0942812421807497,
+      "threshold": 1.0,
+      "source_kind": "recorded",
+      "status": "unconfirmed_candidate",
+      "evaluation_scope": "chronological_after_calibration"
+    },
+    {
+      "id": "abnormal_pattern_0093",
+      "type": "abnormal_pattern",
+      "module_id": "17",
+      "equipment": "17(6호기)",
+      "start": "2025-03-13T19:45:05",
+      "end": "2025-03-13T19:45:15",
+      "time": "2025-03-13T19:45:15",
+      "point_count": 3,
+      "duration_seconds": 15,
+      "score": 1.194385244945436,
+      "threshold": 1.0,
+      "source_kind": "recorded",
+      "status": "unconfirmed_candidate",
+      "evaluation_scope": "chronological_after_calibration"
+    }
+  ],
+  "candidate_display_score": {
+    "definition": "rule_score/rule_threshold; abnormal_pattern=max(rule ratio,AE ratio)",
+    "threshold": 1.0,
+    "unit": "dimensionless_exceedance_ratio",
+    "changes_frozen_model_thresholds": false
+  },
+  "synthetic_design": {
+    "train_bases": 3000,
+    "validation_bases": 1500,
+    "test_bases": 2000,
+    "classes": [
+      "unmodified_reference",
+      "load_imbalance",
+      "reactive_power_surge",
+      "power_factor_drop",
+      "abnormal_pattern",
+      "night_operation",
+      "current_only_increase"
+    ],
+    "source_base_split_disjoint": true,
+    "same_base_repeated_across7classes": true,
+    "severity": "1.5..2.8 multiplicative broad transformations; classifier transfer to actual unknown injected forms is unverified."
+  },
+  "selected_classifier": "xgboost",
+  "classifier_selected_on": "January synthetic validation macroF1 only",
+  "model_files": {
+    "bundle": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\models.joblib",
+    "ae": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\ae.pt",
+    "xgb_native": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\synthetic_xgb.json"
+  },
+  "source_sha256": "3b4e1ff2125ca64612837530a8612fa7f044f398e508e00026097fc788d0dce5",
+  "source_rows": 33696013,
+  "limitations": [
+    "No actual fault type/timestamps; natural candidate numbers are not ground truth.",
+    "Synthetic precision/recall does not estimate real precision/recall.",
+    "Background current imbalance is large; use module-relative context and manual review.",
+    "Raw power/Q numeric units and meter hierarchy remain uncertain.",
+    "Autoencoder and IF are pointwise multivariate detectors, not a validated temporal fault classifier.",
+    "Unmodified reference class is not verified healthy.",
+    "Single points can trigger platform warnings; neither a warning nor sustained three-point interval confirms a fault.",
+    "Original sample alarm fractions are not false-positive rates.",
+    "Six-form synthetic evaluation measures explicit transformations; transfer to unknown real inserted forms is unverified.",
+    "December/January replay is retrospective because the frozen detector becomes available on February1.",
+    "Candidate score/threshold normalization is for display only; API rule scores retain native thresholds."
+  ],
+  "paths": {
+    "results.json": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\results.json",
+    "scan_summary.json": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\scan_summary.json",
+    "candidates.json": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\candidates.json",
+    "verification.json": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\verification.json",
+    "README.md": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\README.md"
+  }
+}

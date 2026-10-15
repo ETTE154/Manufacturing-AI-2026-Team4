@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="927.022187pt" height="515.833608pt" viewBox="0 0 927.022187 515.833608" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-13T12:50:14.514495</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 515.833608 
+L 927.022187 515.833608 
+L 927.022187 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 82.346094 225.488785 
+L 919.822188 225.488785 
+L 919.822188 23.60625 
+L 82.346094 23.60625 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 82.346094 225.488785 
+L 82.346094 23.60625 
+" clip-path="url(#pdc13254749)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.18; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_2">
+      <defs>
+       <path id="m7de32c1dc0" d="M 0 0 
+L 0 3.5 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m7de32c1dc0" x="82.346094" y="225.488785" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 256.586086 225.488785 
+L 256.586086 23.60625 
+" clip-path="url(#pdc13254749)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.18; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m7de32c1dc0" x="256.586086" y="225.488785" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 430.826079 225.488785 
+L 430.826079 23.60625 
+" clip-path="url(#pdc13254749)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.18; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m7de32c1dc0" x="430.826079" y="225.488785" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_7">
+      <path d="M 588.204137 225.488785 
+L 588.204137 23.60625 
+" clip-path="url(#pdc13254749)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.18; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#m7de32c1dc0" x="588.204137" y="225.488785" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_9">
+      <path d="M 762.44413 225.488785 
+L 762.44413 23.60625 
+" clip-path="url(#pdc13254749)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.18; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#m7de32c1dc0" x="762.44413" y="225.488785" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_11">
+      <path d="M 82.346094 225.488785 
+L 919.822188 225.488785 
+" clip-path="url(#pdc13254749)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.18; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_12">
+      <defs>
+       <path id="mdb35691f60" d="M 0 0 
+L -3.5 0 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#mdb35691f60" x="82.346094" y="225.488785" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: end" x="75.346094" y="229.487809" transform="rotate(-0 75.346094 229.487809)">0</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_13">
+      <path d="M 82.346094 187.496157 
+L 919.822188 187.496157 
+" clip-path="url(#pdc13254749)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.18; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_14">
+      <g>
+       <use xlink:href="#mdb35691f60" x="82.346094" y="187.496157" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: end" x="75.346094" y="191.495181" transform="rotate(-0 75.346094 191.495181)">200,000</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_15">
+      <path d="M 82.346094 149.50353 
+L 919.822188 149.50353 
+" clip-path="url(#pdc13254749)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.18; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_16">
+      <g>
+       <use xlink:href="#mdb35691f60" x="82.346094" y="149.50353" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: end" x="75.346094" y="153.502553" transform="rotate(-0 75.346094 153.502553)">400,000</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_17">
+      <path d="M 82.346094 111.510902 
+L 919.822188 111.510902 
+" clip-path="url(#pdc13254749)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.18; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_18">
+      <g>
+       <use xlink:href="#mdb35691f60" x="82.346094" y="111.510902" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: end" x="75.346094" y="115.509925" transform="rotate(-0 75.346094 115.509925)">600,000</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_19">
+      <path d="M 82.346094 73.518274 
+L 919.822188 73.518274 
+" clip-path="url(#pdc13254749)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.18; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_20">
+      <g>
+       <use xlink:href="#mdb35691f60" x="82.346094" y="73.518274" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: end" x="75.346094" y="77.517298" transform="rotate(-0 75.346094 77.517298)">800,000</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_21">
+      <path d="M 82.346094 35.525647 
+L 919.822188 35.525647 
+" clip-path="url(#pdc13254749)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.18; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_22">
+      <g>
+       <use xlink:href="#mdb35691f60" x="82.346094" y="35.525647" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: end" x="75.346094" y="39.52467" transform="rotate(-0 75.346094 39.52467)">1,000,000</text>
+     </g>
+    </g>
+    <g id="text_7">
+     <text style="font-size: 10px; font-family: 'Malgun Gothic'" transform="translate(15.871875 163.063143) rotate(-90)">관측 에너지 합계</text>
+     <text style="font-size: 10px; font-family: 'Malgun Gothic'" transform="translate(26.414453 149.54283) rotate(-90)">(잠정 kWh)</text>
+    </g>
+   </g>
+   <g id="line2d_23">
+    <path d="M 82.346094 47.046083 
+L 87.966739 47.009025 
+L 93.587384 47.13351 
+L 99.208029 46.966869 
+L 110.449318 47.062463 
+L 116.069963 47.088358 
+L 121.690608 46.996339 
+L 132.931898 47.200272 
+L 155.414478 47.090715 
+L 177.897057 47.144157 
+L 189.138347 47.132362 
+L 206.000282 47.109751 
+L 211.620927 47.226539 
+L 217.241572 46.965236 
+L 228.482862 47.196143 
+L 234.103507 47.063134 
+L 239.724152 47.221105 
+L 245.344797 47.118051 
+L 250.965441 47.140675 
+L 256.586086 47.021454 
+L 262.206731 47.193702 
+L 267.827376 47.059218 
+L 284.689311 47.058409 
+L 295.930601 47.234009 
+L 301.551246 47.137667 
+L 307.171891 47.170389 
+L 312.792536 47.047046 
+L 324.033826 47.136588 
+L 329.65447 47.232392 
+L 335.275115 47.023645 
+L 340.89576 47.240326 
+L 346.516405 47.042729 
+L 352.13705 47.106501 
+L 357.757695 46.907997 
+L 363.37834 47.11689 
+L 374.61963 47.140713 
+L 380.240275 47.06921 
+L 385.86092 47.128782 
+L 391.481565 46.831674 
+L 402.722854 47.058086 
+L 408.343499 46.962307 
+L 413.964144 47.170512 
+L 419.584789 47.073286 
+L 430.826079 47.162849 
+L 436.446724 47.026991 
+L 453.308659 47.117513 
+L 458.929304 46.938665 
+L 464.549949 47.066013 
+L 475.791238 47.031011 
+L 481.411883 47.21461 
+L 487.032528 47.0212 
+L 498.273818 46.989036 
+L 503.894463 46.889773 
+L 520.756398 47.093619 
+L 526.377043 46.981168 
+L 537.618333 47.174904 
+L 554.480267 47.078097 
+L 560.100912 47.214112 
+L 565.721557 47.060162 
+L 593.824782 47.19116 
+L 599.445427 47.008385 
+L 605.066072 47.147124 
+L 610.686717 46.983487 
+L 621.928007 47.080085 
+L 627.548651 47.025558 
+L 638.789941 47.093037 
+L 644.410586 47.00183 
+L 655.651876 47.194787 
+L 661.272521 46.97345 
+L 683.755101 47.073541 
+L 694.996391 47.109802 
+L 700.617035 47.072722 
+L 706.23768 47.186946 
+L 711.858325 46.956877 
+L 723.099615 47.10414 
+L 728.72026 47.050216 
+L 734.340905 47.177771 
+L 739.96155 47.027067 
+L 745.582195 47.271036 
+L 751.20284 47.109349 
+L 756.823485 47.066959 
+L 762.44413 47.245102 
+L 773.685419 47.157157 
+L 779.306064 46.986533 
+L 784.926709 47.136286 
+L 801.788644 47.227068 
+L 807.409289 47.003779 
+L 818.650579 47.094063 
+L 835.512514 47.0537 
+L 852.374448 46.942534 
+L 857.995093 47.136802 
+L 869.236383 47.136991 
+L 874.857028 47.210374 
+L 880.477673 47.116078 
+L 891.718963 47.193868 
+L 897.339608 46.918765 
+L 902.960253 46.954589 
+L 908.580898 47.178503 
+L 919.822188 47.044801 
+L 919.822188 47.044801 
+" clip-path="url(#pdc13254749)" style="fill: none; stroke: #255e8c; stroke-width: 1.35; stroke-linecap: square"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 82.346094 225.488785 
+L 82.346094 23.60625 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 82.346094 225.488785 
+L 919.822188 225.488785 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Malgun Gothic'; text-anchor: middle" x="501.084141" y="17.60625" transform="rotate(-0 501.084141 17.60625)">일 D 집계: 에너지 합계와 관측 시간당 평균을 분리</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_5">
+    <path d="M 82.346094 444.172297 
+L 919.822188 444.172297 
+L 919.822188 242.289762 
+L 82.346094 242.289762 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_3">
+    <g id="xtick_6">
+     <g id="line2d_24">
+      <path d="M 82.346094 444.172297 
+L 82.346094 242.289762 
+" clip-path="url(#pdf08a4b936)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.18; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_25">
+      <g>
+       <use xlink:href="#m7de32c1dc0" x="82.346094" y="444.172297" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: middle" x="82.346094" y="459.170344" transform="rotate(-0 82.346094 459.170344)">2024-12</text>
+     </g>
+    </g>
+    <g id="xtick_7">
+     <g id="line2d_26">
+      <path d="M 256.586086 444.172297 
+L 256.586086 242.289762 
+" clip-path="url(#pdf08a4b936)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.18; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_27">
+      <g>
+       <use xlink:href="#m7de32c1dc0" x="256.586086" y="444.172297" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: middle" x="256.586086" y="459.170344" transform="rotate(-0 256.586086 459.170344)">2025-01</text>
+     </g>
+    </g>
+    <g id="xtick_8">
+     <g id="line2d_28">
+      <path d="M 430.826079 444.172297 
+L 430.826079 242.289762 
+" clip-path="url(#pdf08a4b936)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.18; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_29">
+      <g>
+       <use xlink:href="#m7de32c1dc0" x="430.826079" y="444.172297" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: middle" x="430.826079" y="459.170344" transform="rotate(-0 430.826079 459.170344)">2025-02</text>
+     </g>
+    </g>
+    <g id="xtick_9">
+     <g id="line2d_30">
+      <path d="M 588.204137 444.172297 
+L 588.204137 242.289762 
+" clip-path="url(#pdf08a4b936)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.18; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_31">
+      <g>
+       <use xlink:href="#m7de32c1dc0" x="588.204137" y="444.172297" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_12">
+      <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: middle" x="588.204137" y="459.170344" transform="rotate(-0 588.204137 459.170344)">2025-03</text>
+     </g>
+    </g>
+    <g id="xtick_10">
+     <g id="line2d_32">
+      <path d="M 762.44413 444.172297 
+L 762.44413 242.289762 
+" clip-path="url(#pdf08a4b936)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.18; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_33">
+      <g>
+       <use xlink:href="#m7de32c1dc0" x="762.44413" y="444.172297" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_13">
+      <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: middle" x="762.44413" y="459.170344" transform="rotate(-0 762.44413 459.170344)">2025-04</text>
+     </g>
+    </g>
+    <g id="text_14">
+     <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: middle" x="501.084141" y="473.712922" transform="rotate(-0 501.084141 473.712922)">기간 시작일 (기록된 localtime)</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_4">
+    <g id="ytick_7">
+     <g id="line2d_34">
+      <path d="M 82.346094 416.758054 
+L 919.822188 416.758054 
+" clip-path="url(#pdf08a4b936)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.18; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_35">
+      <g>
+       <use xlink:href="#mdb35691f60" x="82.346094" y="416.758054" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_15">
+      <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: end" x="75.346094" y="420.757077" transform="rotate(-0 75.346094 420.757077)">39,100</text>
+     </g>
+    </g>
+    <g id="ytick_8">
+     <g id="line2d_36">
+      <path d="M 82.346094 378.669531 
+L 919.822188 378.669531 
+" clip-path="url(#pdf08a4b936)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.18; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_37">
+      <g>
+       <use xlink:href="#mdb35691f60" x="82.346094" y="378.669531" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_16">
+      <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: end" x="75.346094" y="382.668554" transform="rotate(-0 75.346094 382.668554)">39,120</text>
+     </g>
+    </g>
+    <g id="ytick_9">
+     <g id="line2d_38">
+      <path d="M 82.346094 340.581008 
+L 919.822188 340.581008 
+" clip-path="url(#pdf08a4b936)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.18; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_39">
+      <g>
+       <use xlink:href="#mdb35691f60" x="82.346094" y="340.581008" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_17">
+      <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: end" x="75.346094" y="344.580032" transform="rotate(-0 75.346094 344.580032)">39,140</text>
+     </g>
+    </g>
+    <g id="ytick_10">
+     <g id="line2d_40">
+      <path d="M 82.346094 302.492486 
+L 919.822188 302.492486 
+" clip-path="url(#pdf08a4b936)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.18; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_41">
+      <g>
+       <use xlink:href="#mdb35691f60" x="82.346094" y="302.492486" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_18">
+      <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: end" x="75.346094" y="306.491509" transform="rotate(-0 75.346094 306.491509)">39,160</text>
+     </g>
+    </g>
+    <g id="ytick_11">
+     <g id="line2d_42">
+      <path d="M 82.346094 264.403963 
+L 919.822188 264.403963 
+" clip-path="url(#pdf08a4b936)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.18; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_43">
+      <g>
+       <use xlink:href="#mdb35691f60" x="82.346094" y="264.403963" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_19">
+      <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: end" x="75.346094" y="268.402986" transform="rotate(-0 75.346094 268.402986)">39,180</text>
+     </g>
+    </g>
+    <g id="text_20">
+     <text style="font-size: 10px; font-family: 'Malgun Gothic'" transform="translate(28.996875 386.746654) rotate(-90)">관측 평균 에너지율</text>
+     <text style="font-size: 10px; font-family: 'Malgun Gothic'" transform="translate(39.617578 392.708373) rotate(-90)">(잠정 kWh/h, 축 확대)</text>
+    </g>
+   </g>
+   <g id="line2d_44">
+    <path d="M 82.346094 341.028477 
+L 87.966739 325.548962 
+L 93.587384 377.548653 
+L 99.208029 307.939613 
+L 104.828673 347.984983 
+L 110.449318 347.870781 
+L 116.069963 358.687839 
+L 121.690608 320.249662 
+L 127.311253 373.228233 
+L 132.931898 405.436016 
+L 138.552543 387.135384 
+L 144.173188 374.213294 
+L 149.793833 387.481334 
+L 155.414478 359.672088 
+L 161.035123 373.42295 
+L 166.655768 402.957809 
+L 172.276413 374.435522 
+L 177.897057 381.995975 
+L 183.517702 359.011562 
+L 189.138347 377.068861 
+L 194.758992 368.827053 
+L 200.379637 390.973811 
+L 206.000282 367.623831 
+L 211.620927 416.408631 
+L 217.241572 307.257472 
+L 222.862217 366.910214 
+L 228.482862 403.711411 
+L 234.103507 348.151304 
+L 239.724152 414.138389 
+L 245.344797 371.091115 
+L 250.965441 380.541569 
+L 256.586086 330.74066 
+L 262.206731 402.691613 
+L 267.827376 346.515415 
+L 273.448021 338.645038 
+L 279.068666 316.594779 
+L 284.689311 346.177507 
+L 290.309956 399.397657 
+L 295.930601 419.528935 
+L 301.551246 379.285118 
+L 307.171891 392.953656 
+L 312.792536 341.430768 
+L 318.413181 345.099607 
+L 324.033826 378.834063 
+L 329.65447 418.853337 
+L 335.275115 331.655893 
+L 340.89576 422.167393 
+L 346.516405 339.627636 
+L 352.13705 366.26647 
+L 357.757695 283.34767 
+L 363.37834 370.606228 
+L 368.998985 394.868718 
+L 374.61963 380.557289 
+L 380.240275 350.689401 
+L 385.86092 375.573718 
+L 391.481565 251.466241 
+L 397.10221 317.132783 
+L 402.722854 346.042532 
+L 408.343499 306.034063 
+L 413.964144 393.004962 
+L 419.584789 352.391709 
+L 425.205434 387.779944 
+L 430.826079 389.803842 
+L 436.446724 333.053497 
+L 442.067369 343.208962 
+L 447.688014 343.357026 
+L 453.308659 370.866164 
+L 458.929304 296.158201 
+L 464.549949 349.353898 
+L 470.170594 330.021492 
+L 475.791238 334.73262 
+L 481.411883 411.425619 
+L 487.032528 330.63444 
+L 492.653173 344.426866 
+L 498.273818 317.199182 
+L 503.894463 275.734903 
+L 509.515108 309.252516 
+L 515.135753 370.708377 
+L 520.756398 360.885158 
+L 526.377043 313.912559 
+L 531.997688 358.607818 
+L 537.618333 394.839726 
+L 543.238978 378.858605 
+L 548.859622 391.25574 
+L 554.480267 354.401326 
+L 560.100912 411.21751 
+L 565.721557 346.909632 
+L 571.342202 358.175707 
+L 576.962847 399.583722 
+L 582.583492 384.90377 
+L 588.204137 370.638403 
+L 593.824782 401.630163 
+L 599.445427 325.281578 
+L 605.066072 383.235354 
+L 610.686717 314.880996 
+L 616.307362 345.927288 
+L 621.928007 355.231978 
+L 627.548651 332.455045 
+L 633.169296 361.319221 
+L 638.789941 360.642252 
+L 644.410586 322.543459 
+L 650.031231 381.858472 
+L 655.651876 403.144986 
+L 661.272521 310.688604 
+L 666.893166 331.660134 
+L 672.513811 390.671521 
+L 678.134456 373.365743 
+L 683.755101 352.498238 
+L 689.375746 368.913097 
+L 694.996391 367.645138 
+L 700.617035 352.156454 
+L 706.23768 399.869802 
+L 711.858325 303.765776 
+L 717.47897 341.078487 
+L 723.099615 365.280193 
+L 728.72026 342.755158 
+L 734.340905 396.037258 
+L 739.96155 333.085343 
+L 745.582195 434.995818 
+L 751.20284 367.456172 
+L 756.823485 349.749095 
+L 762.44413 424.162342 
+L 768.064775 420.260215 
+L 773.685419 387.42646 
+L 779.306064 316.153635 
+L 784.926709 378.707994 
+L 790.547354 392.071941 
+L 796.167999 359.689002 
+L 801.788644 416.629452 
+L 807.409289 323.357282 
+L 813.029934 319.028259 
+L 818.650579 361.070692 
+L 824.271224 370.624121 
+L 829.891869 362.098782 
+L 835.512514 344.210346 
+L 841.133159 326.858053 
+L 846.753803 344.227471 
+L 852.374448 297.774309 
+L 857.995093 378.923738 
+L 863.615738 370.481434 
+L 869.236383 379.002585 
+L 874.857028 409.656055 
+L 880.477673 370.26674 
+L 886.098318 395.824665 
+L 891.718963 402.761289 
+L 897.339608 287.8457 
+L 902.960253 302.809718 
+L 908.580898 396.342709 
+L 914.201543 354.130657 
+L 919.822188 340.493243 
+L 919.822188 340.493243 
+" clip-path="url(#pdf08a4b936)" style="fill: none; stroke: #197d79; stroke-width: 1.3; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_45">
+    <path d="M 82.346094 360.809017 
+L 919.822188 360.809017 
+" clip-path="url(#pdf08a4b936)" style="fill: none; stroke-dasharray: 3.33,1.44; stroke-dashoffset: 0; stroke: #738393; stroke-width: 0.9"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 82.346094 444.172297 
+L 82.346094 242.289762 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 82.346094 444.172297 
+L 919.822188 444.172297 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+  </g>
+  <g id="text_21">
+   <text style="font-size: 9px; font-family: 'Malgun Gothic'; fill: #374151" transform="translate(224.998984 497.34353)">합계는 관측 길이에 비례합니다. 평균 에너지율은 정격 대비 부하율(%)이 아니며 계측 계층이 미확정된 모듈 합입니다.</text>
+   <text style="font-size: 9px; font-family: 'Malgun Gothic'; fill: #374151" transform="translate(286.357891 506.83185)">점선=전체3,600시간 가중 평균. 부하 정격에 대한 비율(%) 자료는 제공되지 않았습니다.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pdc13254749">
+   <rect x="82.346094" y="23.60625" width="837.476094" height="201.882535"/>
+  </clipPath>
+  <clipPath id="pdf08a4b936">
+   <rect x="82.346094" y="242.289762" width="837.476094" height="201.882535"/>
+  </clipPath>
+ </defs>
+</svg>

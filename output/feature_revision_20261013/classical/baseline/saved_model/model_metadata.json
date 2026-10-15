@@ -1,0 +1,18 @@
+{
+  "model_path": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\classical\\baseline\\saved_model\\model.joblib",
+  "sha256": "acfabfaf239e797ef94bab71230894e73d7e5955f55764fdbecffc455abd8f37",
+  "config": {
+    "model": "baseline",
+    "kind": "ema720"
+  },
+  "selected_sensor_columns": [],
+  "feature_schema": null,
+  "history_end": "2025-04-29 23:00:00",
+  "history_count": 3600,
+  "target_center": null,
+  "forecast_points": 24,
+  "reload_max_absdiff_kwh": 0.0,
+  "native_reload_max_absdiff_kwh": null,
+  "scaler_fit": "Training prefix only for Ridge/ElasticNet and ARIMAX exog; no global scaling for XGB.",
+  "context_storage": "Last720 completed hourly rows saved for standalone fixed-origin prediction; operational new-history input is not implemented."
+}

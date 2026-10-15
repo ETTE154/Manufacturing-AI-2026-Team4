@@ -1,0 +1,443 @@
+{
+  "analysis_date": "2026-10-11",
+  "guide_goal": "전기요금·탄소배출량 예측, 삽입 이상치 탐지, 분석 에이전트 및 Streamlit 대시보드",
+  "training": {
+    "rows": 33696013,
+    "equipment_count": 13,
+    "columns": 19,
+    "localtime_first": "2024-12-01 00:00:00",
+    "localtime_last": "2025-04-30 00:00:00",
+    "complete_module_hours": 46800,
+    "complete_all_module_hours": 3600,
+    "complete_days": 150,
+    "partial_end_hour": "2025-04-30 00:00:00",
+    "partial_end_records_per_equipment": 1,
+    "observed_energy_kwh_including_partial_end": 140865816.5269722,
+    "complete_hour_energy_kwh": 140865762.32240278,
+    "hourly_energy_mean_kwh": 39129.37842288966,
+    "hourly_energy_std_kwh": 95.76422049015692,
+    "hourly_cv_percent": 0.2447373925933292,
+    "operation_rate": 1.0,
+    "equipment_mean_power_spread_percent": 0.0679864366277953,
+    "equipment_observed_energy_share_min_percent": 7.689064208753963,
+    "equipment_observed_energy_share_max_percent": 7.694293934648407,
+    "hour_of_day_peak_to_trough_percent": 0.060828880101142645,
+    "weekday_peak_to_trough_percent": 0.01911078958740736
+  },
+  "may": {
+    "rows": 505,
+    "time_first": "2025-05-10 00:00:00",
+    "time_last": "2025-05-31 00:00:00",
+    "mean_hourly_target": 39071.38393652529,
+    "std_hourly_target": 92.96732096789468,
+    "cv_percent": 0.23794222676864432,
+    "provided_period_energy_assuming_kwh": 19731048.887945272,
+    "provided_period_cost_krw": 3551588799.830149,
+    "provided_period_carbon_kgco2": 8365964.728488805,
+    "mean_change_vs_training_percent": -0.14821213293396696,
+    "complete_days": 21,
+    "partial_last_day_hours": 1,
+    "is_full_calendar_month": false,
+    "derived_columns": "may_bill=hourly_pow*180; may_carbon=hourly_pow*0.424; agg_pow=sum(hourly_pow) repeated on all rows"
+  },
+  "quality": {
+    "null_cells": 0,
+    "localtime_duplicate_rows": 0,
+    "localtime_non_5s_diffs": 0,
+    "unix_duplicate_extra_rows": 9360,
+    "unix_reverse_transitions": 13,
+    "offsets_local_naive_minus_unix_ms": {
+      "-28800000": 22042800,
+      "-25200000": 11653213
+    },
+    "offset_transition_first": {
+      "equipment": "1(PM-3)",
+      "localtime": "2025-03-09 03:00:00",
+      "offset_ms": -25200000
+    },
+    "counter_unit_ratio_min": 0.9999999169560182,
+    "counter_unit_ratio_max": 1.0000000933656654,
+    "counter_negative_diffs": 0
+  },
+  "anomalies": {
+    "candidate_rows": 63963,
+    "candidate_rate_percent": 0.18982364471428712,
+    "consecutive_candidate_run_count": 63416,
+    "by_equipment": [
+      {
+        "module(equipment)": "13(3호기)",
+        "candidate_rows": 13027,
+        "voltage_candidate_rows": 13027,
+        "pf_candidate_rows": 0,
+        "first": "2024-12-01 00:22:40",
+        "last": "2025-04-29 23:49:15",
+        "rate_of_equipment_percent": 0.5025846826447984
+      },
+      {
+        "module(equipment)": "15(예비건조기)",
+        "candidate_rows": 26244,
+        "voltage_candidate_rows": 0,
+        "pf_candidate_rows": 26244,
+        "first": "2024-12-01 00:00:40",
+        "last": "2025-04-29 23:53:05",
+        "rate_of_equipment_percent": 1.0124996093751506
+      },
+      {
+        "module(equipment)": "17(6호기)",
+        "candidate_rows": 24692,
+        "voltage_candidate_rows": 0,
+        "pf_candidate_rows": 24692,
+        "first": "2024-12-01 00:00:05",
+        "last": "2025-04-29 23:49:15",
+        "rate_of_equipment_percent": 0.9526230892657834
+      }
+    ],
+    "rule_counts": {
+      "voltage_outside_205_225": 13027,
+      "phase_pf_outside_80_100": 50936,
+      "invalid_sign_or_operation": 0
+    },
+    "rule_definition": "상전압 <205V 또는 >225V; 상역률 <80% 또는 >100%; 음수 전력·전류 또는 operation 값 오류",
+    "limitations": "전형적인 학습 분포를 참고한 탐색적 후보. 현장 정상범위·정답 라벨을 검증하지 않았으며 확정 고장/삽입 이상치 판정이 아니다."
+  },
+  "sensor_sample": {
+    "rows": 16849,
+    "method": "every 2000th row of each 300000-row chunk; systematic descriptive sample, not unbiased inference",
+    "corr_power_total_current": 0.9993651807803673,
+    "limitations": "상관관계는 16,849행 체계적 표본 기준. 전수 결과와 구분. 미래 실측 전류는 예측 시점에 미리 알려지지 않아 예측 특성으로 사용 불가."
+  },
+  "baseline": {
+    "source_hourly": "E:\\AI work\\AWS_프로젝트\\output\\analysis\\hourly_by_equipment.csv",
+    "source_may": "E:\\AI work\\AWS_프로젝트\\may-dataset\\rtu_ground_truth_may.csv",
+    "aggregation": "sum over modules of sum(activePower kW)*5/3600 kWh; only module hours with exactly 720 records, and only hours where every listed module is present",
+    "hierarchy_limitation": "Meter hierarchy is unconfirmed; module sums may double count parent and child equipment. Training aggregation and May target scope may differ.",
+    "target_unit_limitation": "Guide says activePower is kW; training hourly energy is derived in kWh. May hourly_pow column itself has no explicit unit in CSV; comparison presumes same energy scale and scope.",
+    "expected_equipment": [
+      "1(PM-3)",
+      "11(우측분전반1)",
+      "12(4호기)",
+      "13(3호기)",
+      "14(2호기)",
+      "15(예비건조기)",
+      "16(호이스트)",
+      "17(6호기)",
+      "18(우측분전반2)",
+      "2(L-1전등)",
+      "3(분쇄기(2))",
+      "4(분쇄기(1))",
+      "5(좌측분전반)"
+    ],
+    "expected_equipment_count": 13,
+    "raw_timestamp_sampling_flags": {
+      "1(PM-3)": {
+        "zero_diffs": 0,
+        "negative_time_diffs": 1,
+        "offgrid": 0
+      },
+      "2(L-1전등)": {
+        "zero_diffs": 0,
+        "negative_time_diffs": 1,
+        "offgrid": 0
+      },
+      "3(분쇄기(2))": {
+        "zero_diffs": 0,
+        "negative_time_diffs": 1,
+        "offgrid": 0
+      },
+      "4(분쇄기(1))": {
+        "zero_diffs": 0,
+        "negative_time_diffs": 1,
+        "offgrid": 0
+      },
+      "5(좌측분전반)": {
+        "zero_diffs": 0,
+        "negative_time_diffs": 1,
+        "offgrid": 0
+      },
+      "11(우측분전반1)": {
+        "zero_diffs": 0,
+        "negative_time_diffs": 1,
+        "offgrid": 0
+      },
+      "12(4호기)": {
+        "zero_diffs": 0,
+        "negative_time_diffs": 1,
+        "offgrid": 0
+      },
+      "13(3호기)": {
+        "zero_diffs": 0,
+        "negative_time_diffs": 1,
+        "offgrid": 0
+      },
+      "14(2호기)": {
+        "zero_diffs": 0,
+        "negative_time_diffs": 1,
+        "offgrid": 0
+      },
+      "15(예비건조기)": {
+        "zero_diffs": 0,
+        "negative_time_diffs": 1,
+        "offgrid": 0
+      },
+      "16(호이스트)": {
+        "zero_diffs": 0,
+        "negative_time_diffs": 1,
+        "offgrid": 0
+      },
+      "17(6호기)": {
+        "zero_diffs": 0,
+        "negative_time_diffs": 1,
+        "offgrid": 0
+      },
+      "18(우측분전반2)": {
+        "zero_diffs": 0,
+        "negative_time_diffs": 1,
+        "offgrid": 0
+      }
+    },
+    "source_time_audit": "E:\\AI work\\AWS_프로젝트\\output\\analysis\\time_anomaly_audit.json",
+    "localtime_grid_audit_status": "Verified by exhaustive raw-row audit: every module has zero localtime duplicate rows, negative differences, and non-five-second differences; all modules share identical localtime start and end",
+    "localtime_grid_audit_rows": 33696013,
+    "localtime_grid_audit_checks": {
+      "1(PM-3)": {
+        "local_origin": 1733011200000,
+        "unix_origin": 1733040000000,
+        "local_duplicate_rows": 0,
+        "unix_duplicate_rows": 720,
+        "local_negative_diffs": 0,
+        "local_non_5s_diffs": 0,
+        "local_last": 1745971200000,
+        "offset_last": -25200000
+      },
+      "2(L-1전등)": {
+        "local_origin": 1733011200000,
+        "unix_origin": 1733040000000,
+        "local_duplicate_rows": 0,
+        "unix_duplicate_rows": 720,
+        "local_negative_diffs": 0,
+        "local_non_5s_diffs": 0,
+        "local_last": 1745971200000,
+        "offset_last": -25200000
+      },
+      "3(분쇄기(2))": {
+        "local_origin": 1733011200000,
+        "unix_origin": 1733040000000,
+        "local_duplicate_rows": 0,
+        "unix_duplicate_rows": 720,
+        "local_negative_diffs": 0,
+        "local_non_5s_diffs": 0,
+        "local_last": 1745971200000,
+        "offset_last": -25200000
+      },
+      "4(분쇄기(1))": {
+        "local_origin": 1733011200000,
+        "unix_origin": 1733040000000,
+        "local_duplicate_rows": 0,
+        "unix_duplicate_rows": 720,
+        "local_negative_diffs": 0,
+        "local_non_5s_diffs": 0,
+        "local_last": 1745971200000,
+        "offset_last": -25200000
+      },
+      "5(좌측분전반)": {
+        "local_origin": 1733011200000,
+        "unix_origin": 1733040000000,
+        "local_duplicate_rows": 0,
+        "unix_duplicate_rows": 720,
+        "local_negative_diffs": 0,
+        "local_non_5s_diffs": 0,
+        "local_last": 1745971200000,
+        "offset_last": -25200000
+      },
+      "11(우측분전반1)": {
+        "local_origin": 1733011200000,
+        "unix_origin": 1733040000000,
+        "local_duplicate_rows": 0,
+        "unix_duplicate_rows": 720,
+        "local_negative_diffs": 0,
+        "local_non_5s_diffs": 0,
+        "local_last": 1745971200000,
+        "offset_last": -25200000
+      },
+      "12(4호기)": {
+        "local_origin": 1733011200000,
+        "unix_origin": 1733040000000,
+        "local_duplicate_rows": 0,
+        "unix_duplicate_rows": 720,
+        "local_negative_diffs": 0,
+        "local_non_5s_diffs": 0,
+        "local_last": 1745971200000,
+        "offset_last": -25200000
+      },
+      "13(3호기)": {
+        "local_origin": 1733011200000,
+        "unix_origin": 1733040000000,
+        "local_duplicate_rows": 0,
+        "unix_duplicate_rows": 720,
+        "local_negative_diffs": 0,
+        "local_non_5s_diffs": 0,
+        "local_last": 1745971200000,
+        "offset_last": -25200000
+      },
+      "14(2호기)": {
+        "local_origin": 1733011200000,
+        "unix_origin": 1733040000000,
+        "local_duplicate_rows": 0,
+        "unix_duplicate_rows": 720,
+        "local_negative_diffs": 0,
+        "local_non_5s_diffs": 0,
+        "local_last": 1745971200000,
+        "offset_last": -25200000
+      },
+      "15(예비건조기)": {
+        "local_origin": 1733011200000,
+        "unix_origin": 1733040000000,
+        "local_duplicate_rows": 0,
+        "unix_duplicate_rows": 720,
+        "local_negative_diffs": 0,
+        "local_non_5s_diffs": 0,
+        "local_last": 1745971200000,
+        "offset_last": -25200000
+      },
+      "16(호이스트)": {
+        "local_origin": 1733011200000,
+        "unix_origin": 1733040000000,
+        "local_duplicate_rows": 0,
+        "unix_duplicate_rows": 720,
+        "local_negative_diffs": 0,
+        "local_non_5s_diffs": 0,
+        "local_last": 1745971200000,
+        "offset_last": -25200000
+      },
+      "17(6호기)": {
+        "local_origin": 1733011200000,
+        "unix_origin": 1733040000000,
+        "local_duplicate_rows": 0,
+        "unix_duplicate_rows": 720,
+        "local_negative_diffs": 0,
+        "local_non_5s_diffs": 0,
+        "local_last": 1745971200000,
+        "offset_last": -25200000
+      },
+      "18(우측분전반2)": {
+        "local_origin": 1733011200000,
+        "unix_origin": 1733040000000,
+        "local_duplicate_rows": 0,
+        "unix_duplicate_rows": 720,
+        "local_negative_diffs": 0,
+        "local_non_5s_diffs": 0,
+        "local_last": 1745971200000,
+        "offset_last": -25200000
+      }
+    },
+    "time_key_limitation": "Forecasting uses recorded localtime. Unix timestamps contain 720 duplicate rows per module around the March 9 offset transition from local-minus-Unix -8 hours to -7 hours, inconsistent with the guide describing Korean time.",
+    "energy_conversion_max_abs_diff": 9.094947017729282e-13,
+    "equipment_hour_rows": 46813,
+    "complete_equipment_hour_rows": 46800,
+    "eligible_all_module_hours": 3600,
+    "excluded_partial_or_missing_module_hours": 1,
+    "training_start": "2024-12-01 00:00:00",
+    "training_end": "2025-04-29 23:00:00",
+    "all_training_count": 3600,
+    "all_training_mean_provisional_kwh": 39129.37842288966,
+    "missing_all_module_training_hours": [],
+    "selection": "Lowest MAE on fixed-origin validation consisting of the last 14 complete days available in April; May actual values are read only after selecting winner",
+    "validation": {
+      "forecast_origin": "2025-04-16 00:00:00",
+      "history_start": "2024-12-01 00:00:00",
+      "history_end": "2025-04-15 23:00:00",
+      "history_count": 3264,
+      "target_start": "2025-04-16 00:00:00",
+      "target_end": "2025-04-29 23:00:00",
+      "target_count": 336,
+      "expected_target_count": 336,
+      "missing_validation_hours": [],
+      "scores": {
+        "historical_mean": {
+          "mae": 80.38255099504711,
+          "rmse": 98.16306316617008,
+          "mape_percent": 0.2054433908240596,
+          "prediction_count": 336,
+          "complete": true
+        },
+        "historical_median": {
+          "mae": 80.38741418650785,
+          "rmse": 98.16758014235998,
+          "mape_percent": 0.2054536385671176,
+          "prediction_count": 336,
+          "complete": true
+        },
+        "last_7_days_mean": {
+          "mae": 80.44671715905692,
+          "rmse": 98.49318879662464,
+          "mape_percent": 0.20565440467428522,
+          "prediction_count": 336,
+          "complete": true
+        },
+        "hour_of_day_mean": {
+          "mae": 81.040925254216,
+          "rmse": 98.7487844279136,
+          "mape_percent": 0.2071269117713167,
+          "prediction_count": 336,
+          "complete": true
+        },
+        "weekday_hour_mean": {
+          "mae": 80.33172814001149,
+          "rmse": 98.43686701489563,
+          "mape_percent": 0.2053148639138276,
+          "prediction_count": 336,
+          "complete": true
+        },
+        "seasonal_naive_24h_fixed": {
+          "mae": 124.57910342261887,
+          "rmse": 155.35756883254717,
+          "mape_percent": 0.3184589328392972,
+          "prediction_count": 336,
+          "complete": true
+        },
+        "seasonal_naive_168h_fixed": {
+          "mae": 102.89719973544973,
+          "rmse": 129.42087425701175,
+          "mape_percent": 0.2629967698726512,
+          "prediction_count": 336,
+          "complete": true
+        }
+      },
+      "selected_model": "weekday_hour_mean"
+    },
+    "may_selected_baseline": {
+      "forecast_origin": "2025-04-30 00:00:00",
+      "selected_model": "weekday_hour_mean",
+      "evaluation_start": "2025-05-10 00:00:00",
+      "evaluation_end": "2025-05-31 00:00:00",
+      "evaluation_count": 505,
+      "first_horizon_hours": 240.0,
+      "last_horizon_hours": 744.0,
+      "scores": {
+        "mae": 89.63856460479975,
+        "rmse": 111.22195152525752,
+        "mape_percent": 0.2296624031620397,
+        "prediction_count": 505,
+        "complete": true
+      },
+      "forecast_mean": 39129.41938794319,
+      "may_actual_mean": 39071.38393652529,
+      "mean_scope_ratio_actual_to_forecast": 0.9985168333104432
+    },
+    "forecast_protocol": "Every future prediction is fixed from pre-origin training. Seasonal baselines repeat the last training day/week and never consume future actual observations.",
+    "derived_evaluation": {
+      "cost_mae_krw": 16134.941628863957,
+      "carbon_mae_kgco2": 38.0067513924203,
+      "method": "same fixed energy forecast multiplied by guide factors 180 and 0.424; no separate models"
+    }
+  },
+  "assumptions": {
+    "power_unit": "activePower=kW (가이드)",
+    "energy_formula": "sum(activePower)*5/3600 kWh",
+    "cost_krw_per_kwh": 180,
+    "carbon_kgco2_per_kwh": 0.424,
+    "may_unit": "5월 CSV 자체 단위 미기재. 가이드 계산식과 학습 값 규모에 따라 kWh 동일 스케일 비교를 가정",
+    "meter_hierarchy": "계측 계층 미확인. 전 설비 합계는 잠정 모듈 합계이며 실제 공장 총량으로 확정할 수 없음",
+    "time_axis": "전수 확인된 localtime 사용. Unix timestamp는 가이드 한국시간과 불일치하여 재정의 필요"
+  }
+}

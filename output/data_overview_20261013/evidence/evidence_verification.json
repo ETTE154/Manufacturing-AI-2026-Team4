@@ -1,0 +1,14 @@
+{
+  "status": "pass",
+  "dictionary_rows": 24,
+  "full_dictionary_rows": 19,
+  "May_dictionary_rows": 5,
+  "full_column_order_matches": true,
+  "module_rows_sum_matches": true,
+  "all_module_grid_checks_pass": true,
+  "all_numeric_ranges_finite": true,
+  "May_full_check_pass": true,
+  "source_original_size_mtime_unchanged": true,
+  "new_training_full_scans": 0,
+  "raw_copies": 0
+}

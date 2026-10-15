@@ -1,0 +1,11 @@
+{
+  "model": "xgboost",
+  "scenario": "dayahead24",
+  "path_rows": 24,
+  "reload_max_abs_diff_kwh": 0.0,
+  "forecast_origin": "2025-04-30 00:00:00",
+  "forecast_end": "2025-04-30 23:00:00",
+  "May_labels_read": false,
+  "new_optimized_models_only": true,
+  "output": "E:\\AI work\\AWS_프로젝트\\output\\optimization_20261013\\forecast\\cli_predictions\\dayahead24_xgboost.csv"
+}

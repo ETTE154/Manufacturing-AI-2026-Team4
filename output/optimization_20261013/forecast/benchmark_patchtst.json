@@ -1,0 +1,12 @@
+{
+  "family": "patchtst",
+  "context": 168,
+  "points": 24,
+  "windows": 1945,
+  "parameters": 25915,
+  "epoch_seconds": 0.4942310999613255,
+  "mse_standardized": 1.188204457153085,
+  "threads": 4,
+  "maximum_epochs": 24,
+  "patience": 4
+}

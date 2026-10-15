@@ -1,0 +1,379 @@
+{
+  "family": "itransformer",
+  "scenario": "long745",
+  "configs": [
+    {
+      "context": 24,
+      "d_model": 32,
+      "layers": 1,
+      "dropout": 0.0
+    },
+    {
+      "context": 72,
+      "d_model": 32,
+      "layers": 1,
+      "dropout": 0.1
+    },
+    {
+      "context": 168,
+      "d_model": 32,
+      "layers": 1,
+      "dropout": 0.1
+    },
+    {
+      "context": 336,
+      "d_model": 32,
+      "layers": 1,
+      "dropout": 0.1
+    },
+    {
+      "context": 512,
+      "d_model": 32,
+      "layers": 1,
+      "dropout": 0.3
+    },
+    {
+      "context": 168,
+      "d_model": 64,
+      "layers": 2,
+      "dropout": 0.1
+    },
+    {
+      "context": 168,
+      "d_model": 32,
+      "layers": 1,
+      "dropout": 0.1,
+      "loss": "L1"
+    }
+  ],
+  "budget": {
+    "configs": 7,
+    "MSE_candidates": 6,
+    "extra_L1_candidate": 1,
+    "seed": 20261013,
+    "threads": 4,
+    "maximum_epochs": 24,
+    "early_stop_patience": 4,
+    "batch_size": 32,
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "loss": "Six MSE and one L1 candidate; same train-only global normalization and validation selection",
+    "context_candidates": [
+      24,
+      72,
+      168,
+      336,
+      512,
+      168,
+      168
+    ],
+    "versions": {
+      "torch": "2.14.1",
+      "numpy": "2.3.5",
+      "pandas": "3.0.1"
+    },
+    "claim": "Budgeted local validation search; not a guarantee of global optimality. No internal-test or May tuning."
+  },
+  "source_approval": {
+    "approved_for_training": true,
+    "approval_basis": "Parent root SOURCE GO: official train and May downloaded bytes match original SHA completely; raw originals are not read again by this optimization.",
+    "target_sha256": "729b149a3e3165dfb339f0386249bfbda0326657f9e722d86da8138db36117de",
+    "byte_comparison": "E:/AI work/AWS_프로젝트/output/optimization_20261013/source_audit/byte_comparison.json",
+    "source_manifest": "E:/AI work/AWS_프로젝트/output/optimization_20261013/source_audit/source_manifest.json",
+    "new_outputs_only": "E:/AI work/AWS_프로젝트/output/optimization_20261013/forecast"
+  },
+  "protocol": {
+    "status": "source_approved_training_enabled",
+    "assumed_presentation_scenario": "24-value hourly day-ahead curve, plus lead24 endpoint; user clarification was pending and 24h is the declared assumption",
+    "target_source": "E:\\AI work\\AWS_프로젝트\\output\\analysis\\baseline_audit\\complete_hour_module_sum.csv",
+    "target_sha256": "729b149a3e3165dfb339f0386249bfbda0326657f9e722d86da8138db36117de",
+    "old_outputs_policy": "Read existing analysis/modeling; all new code/models/metrics/predictions/figures only under this forecast directory",
+    "target": "13-module provisional hourly energy sum, kWh; unknown meter hierarchy can double count; not certified facility consumption",
+    "source_resolution_seconds": 5,
+    "model_step_hours": 1,
+    "aggregation": "sum(activePower_kW)*5/3600 over 720 unique five-second values per module; all 13 modules must be complete at the same hour",
+    "data_start": "2024-12-01 00:00:00",
+    "data_end": "2025-04-29 23:00:00",
+    "target_hours": 3600,
+    "time_key": "Recorded localtime: continuous audited grid; supplied Unix key has March9 offset transition inconsistent with Korean-time guide",
+    "dayahead": {
+      "points": 24,
+      "offsets_from_origin": "0..23",
+      "leads_from_last_observed": "1..24",
+      "endpoint_definition": "lead24 is origin+23h, not origin+24h; relative to last observed origin-1h it is exactly 24h later",
+      "validation_folds": [
+        {
+          "fold": 1,
+          "fit_origin": "2025-01-10 00:00:00",
+          "history_hours": 960,
+          "origins": [
+            "2025-01-10 00:00:00",
+            "2025-01-11 00:00:00",
+            "2025-01-12 00:00:00",
+            "2025-01-13 00:00:00",
+            "2025-01-14 00:00:00",
+            "2025-01-15 00:00:00",
+            "2025-01-16 00:00:00",
+            "2025-01-17 00:00:00",
+            "2025-01-18 00:00:00",
+            "2025-01-19 00:00:00",
+            "2025-01-20 00:00:00",
+            "2025-01-21 00:00:00",
+            "2025-01-22 00:00:00",
+            "2025-01-23 00:00:00"
+          ],
+          "target_start": "2025-01-10 00:00:00",
+          "target_end": "2025-01-23 23:00:00",
+          "target_rows": 336,
+          "origins_count": 14
+        },
+        {
+          "fold": 2,
+          "fit_origin": "2025-01-24 00:00:00",
+          "history_hours": 1296,
+          "origins": [
+            "2025-01-24 00:00:00",
+            "2025-01-25 00:00:00",
+            "2025-01-26 00:00:00",
+            "2025-01-27 00:00:00",
+            "2025-01-28 00:00:00",
+            "2025-01-29 00:00:00",
+            "2025-01-30 00:00:00",
+            "2025-01-31 00:00:00",
+            "2025-02-01 00:00:00",
+            "2025-02-02 00:00:00",
+            "2025-02-03 00:00:00",
+            "2025-02-04 00:00:00",
+            "2025-02-05 00:00:00",
+            "2025-02-06 00:00:00"
+          ],
+          "target_start": "2025-01-24 00:00:00",
+          "target_end": "2025-02-06 23:00:00",
+          "target_rows": 336,
+          "origins_count": 14
+        },
+        {
+          "fold": 3,
+          "fit_origin": "2025-02-07 00:00:00",
+          "history_hours": 1632,
+          "origins": [
+            "2025-02-07 00:00:00",
+            "2025-02-08 00:00:00",
+            "2025-02-09 00:00:00",
+            "2025-02-10 00:00:00",
+            "2025-02-11 00:00:00",
+            "2025-02-12 00:00:00",
+            "2025-02-13 00:00:00",
+            "2025-02-14 00:00:00",
+            "2025-02-15 00:00:00",
+            "2025-02-16 00:00:00",
+            "2025-02-17 00:00:00",
+            "2025-02-18 00:00:00",
+            "2025-02-19 00:00:00",
+            "2025-02-20 00:00:00"
+          ],
+          "target_start": "2025-02-07 00:00:00",
+          "target_end": "2025-02-20 23:00:00",
+          "target_rows": 336,
+          "origins_count": 14
+        },
+        {
+          "fold": 4,
+          "fit_origin": "2025-02-21 00:00:00",
+          "history_hours": 1968,
+          "origins": [
+            "2025-02-21 00:00:00",
+            "2025-02-22 00:00:00",
+            "2025-02-23 00:00:00",
+            "2025-02-24 00:00:00",
+            "2025-02-25 00:00:00",
+            "2025-02-26 00:00:00",
+            "2025-02-27 00:00:00",
+            "2025-02-28 00:00:00",
+            "2025-03-01 00:00:00",
+            "2025-03-02 00:00:00",
+            "2025-03-03 00:00:00",
+            "2025-03-04 00:00:00",
+            "2025-03-05 00:00:00",
+            "2025-03-06 00:00:00"
+          ],
+          "target_start": "2025-02-21 00:00:00",
+          "target_end": "2025-03-06 23:00:00",
+          "target_rows": 336,
+          "origins_count": 14
+        },
+        {
+          "fold": 5,
+          "fit_origin": "2025-03-07 00:00:00",
+          "history_hours": 2304,
+          "origins": [
+            "2025-03-07 00:00:00",
+            "2025-03-08 00:00:00",
+            "2025-03-09 00:00:00",
+            "2025-03-10 00:00:00",
+            "2025-03-11 00:00:00",
+            "2025-03-12 00:00:00",
+            "2025-03-13 00:00:00",
+            "2025-03-14 00:00:00",
+            "2025-03-15 00:00:00",
+            "2025-03-16 00:00:00",
+            "2025-03-17 00:00:00",
+            "2025-03-18 00:00:00",
+            "2025-03-19 00:00:00",
+            "2025-03-20 00:00:00"
+          ],
+          "target_start": "2025-03-07 00:00:00",
+          "target_end": "2025-03-20 23:00:00",
+          "target_rows": 336,
+          "origins_count": 14
+        }
+      ],
+      "validation_total_origins": 70,
+      "validation_target_rows": 1680,
+      "training_updates": "Expand fitted history at each fold start. Weights fixed within each 14-day block; input context updates daily using only observations before that origin. ARIMA filtering/state may update on newly past observations without refitting coefficients.",
+      "selection": "Lowest mean 70-origin path MAE; 24h endpoint MAE is separately reported, not used opportunistically for winner selection",
+      "test_fit_origin": "2025-04-01 00:00:00",
+      "test_origins": [
+        "2025-04-01 00:00:00",
+        "2025-04-02 00:00:00",
+        "2025-04-03 00:00:00",
+        "2025-04-04 00:00:00",
+        "2025-04-05 00:00:00",
+        "2025-04-06 00:00:00",
+        "2025-04-07 00:00:00",
+        "2025-04-08 00:00:00",
+        "2025-04-09 00:00:00",
+        "2025-04-10 00:00:00",
+        "2025-04-11 00:00:00",
+        "2025-04-12 00:00:00",
+        "2025-04-13 00:00:00",
+        "2025-04-14 00:00:00",
+        "2025-04-15 00:00:00",
+        "2025-04-16 00:00:00",
+        "2025-04-17 00:00:00",
+        "2025-04-18 00:00:00",
+        "2025-04-19 00:00:00",
+        "2025-04-20 00:00:00",
+        "2025-04-21 00:00:00",
+        "2025-04-22 00:00:00",
+        "2025-04-23 00:00:00",
+        "2025-04-24 00:00:00",
+        "2025-04-25 00:00:00",
+        "2025-04-26 00:00:00",
+        "2025-04-27 00:00:00",
+        "2025-04-28 00:00:00",
+        "2025-04-29 00:00:00"
+      ],
+      "test_origin_count": 29,
+      "test_target_rows": 696,
+      "test_target_start": "2025-04-01 00:00:00",
+      "test_target_end": "2025-04-29 23:00:00",
+      "test_usage": "April labels excluded from new HPO. Existing project EDA/evaluations already saw April, so this is post-EDA locking, not a pristine prospective holdout."
+    },
+    "long": {
+      "points": 745,
+      "offsets_from_origin": "0..744",
+      "leads_from_last_observed": "1..745",
+      "validation_origin": "2025-02-25 00:00:00",
+      "validation_history_hours": 2064,
+      "validation_end": "2025-03-28 00:00:00",
+      "test_origin": "2025-03-29 00:00:00",
+      "test_history_hours": 2832,
+      "test_end": "2025-04-29 00:00:00",
+      "selection": "Blocked Feb25 fixed-origin P745 validation only; March29 internal test does not tune",
+      "independent_origin_limitation": "Only one long validation origin and one long test origin; 150 days of data cannot support many nonoverlapping 31-day horizons with sufficient expanding history.",
+      "may_origin": "2025-04-30 00:00:00",
+      "may_path_end": "2025-05-31 00:00:00",
+      "may_score_start": "2025-05-10 00:00:00",
+      "may_score_end": "2025-05-31 00:00:00",
+      "may_score_rows": 505,
+      "may_score_offsets": "240..744",
+      "may_score_leads": "241..745",
+      "may_no_tuning": "May values were seen in prior EDA/evaluation. No additional HPO, calibration, preprocessing, or model selection may use May labels.",
+      "may_day_ahead_limitation": "May sensor/context observations are unavailable. Public May505 labels are not used as rolling model inputs. April demonstrates day-ahead; May remains the separate single-origin long-forecast task."
+    },
+    "neural_input_policy": "All newly optimized neural models are aggregate univariate; iTransformer consequently has one variate token and cannot demonstrate its multivariate cross-channel attention advantage. XGBoost/calendar Ridge additionally use deterministically known calendar.",
+    "optimization_claim": "Budgeted local search and validation selection; no guarantee of global optimum or superiority over strong simple baselines",
+    "planned_search_budget": {
+      "xgboost_configs": 30,
+      "arima_small_grid": true,
+      "patchtst_configs_per_scenario": 6,
+      "itransformer_configs_per_scenario": 6,
+      "day_neural_contexts": [
+        24,
+        72,
+        168,
+        336,
+        720
+      ],
+      "long_neural_contexts": [
+        24,
+        72,
+        168,
+        336,
+        512
+      ],
+      "long_context_constraint": "Inner fitting history has1319points after holding out745; context720+output745 exceeds it, so context512 is the largest predeclared feasible candidate.",
+      "chronos_contexts": [
+        168,
+        720,
+        "full"
+      ],
+      "cpu_threads": 4
+    },
+    "seed": 20261013
+  },
+  "vendor": {
+    "source": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\itransformer\\vendor\\provenance.json",
+    "source_sha256": "82b2f4036b2f4cfc70fe02a84c62a822432b1105ff1ac044a129a7ede2073980",
+    "record": {
+      "repository": "https://github.com/thuml/iTransformer",
+      "revision": "c2426e68ca13f74aaec08045c5c724d8ad328124",
+      "files": [
+        {
+          "upstream_url": "https://raw.githubusercontent.com/thuml/iTransformer/c2426e68ca13f74aaec08045c5c724d8ad328124/model/iTransformer.py",
+          "path": "model/iTransformer.py",
+          "upstream_sha256": "6f34777a5a12c253a293f79e7e1fd5b6f79ac100b443951e051e269e7e2542db",
+          "local_sha256": "61aaa7d4caa71d1e1381b193fd012243c68b27c564af0a9e14cb474099507bfc"
+        },
+        {
+          "upstream_url": "https://raw.githubusercontent.com/thuml/iTransformer/c2426e68ca13f74aaec08045c5c724d8ad328124/layers/Embed.py",
+          "path": "layers/Embed.py",
+          "upstream_sha256": "2de7e5049a696d320a23a8bdb6e08e823cf7fa3f246a0a49555fcd729c5c8398",
+          "local_sha256": "cb1b8934d87659e656e6c92ba6290c4a76fbfb88389527ce43766c5b8cfd46ed"
+        },
+        {
+          "upstream_url": "https://raw.githubusercontent.com/thuml/iTransformer/c2426e68ca13f74aaec08045c5c724d8ad328124/layers/SelfAttention_Family.py",
+          "path": "layers/SelfAttention_Family.py",
+          "upstream_sha256": "38ac67428d528b8e145e4944ca059b40629a8446c891142602d5aaadc38dfd9e",
+          "local_sha256": "3d9f29c895a47335e670289f504ceaa95ded44047fba6bfbd96f01173ba88b6c"
+        },
+        {
+          "upstream_url": "https://raw.githubusercontent.com/thuml/iTransformer/c2426e68ca13f74aaec08045c5c724d8ad328124/layers/Transformer_EncDec.py",
+          "path": "layers/Transformer_EncDec.py",
+          "upstream_sha256": "985c31f4ae187b08afaa9663dc960a40544b2ec33ab55389ceab3930edc1ce02",
+          "local_sha256": "eed892a31468b1142777420f4b7ecb8cdbae020d835bbdd59a045c99bbe986df"
+        },
+        {
+          "upstream_url": "https://raw.githubusercontent.com/thuml/iTransformer/c2426e68ca13f74aaec08045c5c724d8ad328124/utils/masking.py",
+          "path": "utils/masking.py",
+          "upstream_sha256": "02f453e52cfaec65e34132923add80e7132f188706680fa86d7bd884976e09ef",
+          "local_sha256": "c22de70ad076f4eeecc857aba984741da05da54375333399ff2742b041544986"
+        },
+        {
+          "upstream_url": "https://raw.githubusercontent.com/thuml/iTransformer/c2426e68ca13f74aaec08045c5c724d8ad328124/LICENSE",
+          "path": "LICENSE",
+          "upstream_sha256": "29d2a4c09fa577780522219dc248466977f77cd420354c5e9a0e86550be2b849",
+          "local_sha256": "29d2a4c09fa577780522219dc248466977f77cd420354c5e9a0e86550be2b849"
+        }
+      ],
+      "changes": [
+        "Namespace-only import isolation",
+        "Reformer dependency moved into unused ReformerLayer constructor; selected FullAttention unchanged"
+      ]
+    },
+    "scope": "Pinned official core, compact local retraining. Namespace-only import changes; unused iTransformer Reformer import is lazy. No published benchmark reproduction.",
+    "iTransformer_univariate_limit": "One variate token: no cross-channel attention advantage is demonstrated."
+  }
+}

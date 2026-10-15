@@ -1,0 +1,133 @@
+{
+  "family": "patchtst",
+  "scenario": "dayahead24",
+  "configs": [
+    {
+      "group": "module_energy",
+      "context": 24,
+      "d_model": 32,
+      "layers": 1,
+      "loss": "MSE",
+      "instance_norm": false,
+      "dropout": 0.1,
+      "output_penalty": 0.03
+    },
+    {
+      "group": "module_energy",
+      "context": 72,
+      "d_model": 32,
+      "layers": 1,
+      "loss": "MSE",
+      "instance_norm": true,
+      "dropout": 0.1,
+      "output_penalty": 0.03
+    },
+    {
+      "group": "module_energy",
+      "context": 168,
+      "d_model": 32,
+      "layers": 1,
+      "loss": "L1",
+      "instance_norm": false,
+      "dropout": 0.2,
+      "output_penalty": 0.05
+    },
+    {
+      "group": "selected_sensors",
+      "context": 24,
+      "d_model": 32,
+      "layers": 1,
+      "loss": "MSE",
+      "instance_norm": false,
+      "dropout": 0.1,
+      "output_penalty": 0.03
+    },
+    {
+      "group": "selected_sensors",
+      "context": 72,
+      "d_model": 32,
+      "layers": 1,
+      "loss": "MSE",
+      "instance_norm": true,
+      "dropout": 0.1,
+      "output_penalty": 0.03
+    },
+    {
+      "group": "selected_sensors",
+      "context": 168,
+      "d_model": 32,
+      "layers": 1,
+      "loss": "L1",
+      "instance_norm": false,
+      "dropout": 0.2,
+      "output_penalty": 0.05
+    }
+  ],
+  "data_sha256": "1ad0a14f29f7ffad521918817315c95889f82adef7335709ce386fd057b1ba9b",
+  "vendor": {
+    "provenance_file": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\patchtst\\provenance.json",
+    "sha256": "036f4ed7fd8dd6054224f7dd1780391ff6da8f501d09dcdb8727625ef9b7b4ad",
+    "official_core_hashes_verified": true,
+    "record": {
+      "repository": "https://github.com/yuqinie98/PatchTST",
+      "commit": "204c21efe0b39603ad6e2ca640ef5896646ab1a9",
+      "files": [
+        {
+          "upstream_path": "PatchTST_supervised/models/PatchTST.py",
+          "source_url": "https://raw.githubusercontent.com/yuqinie98/PatchTST/204c21efe0b39603ad6e2ca640ef5896646ab1a9/PatchTST_supervised/models/PatchTST.py",
+          "original_sha256": "49d8bb865e1226d6338842f4b33c4bc6992cefb048dc2a4a5a8c410ca708586b",
+          "vendored_path": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\patchtst\\patchtst_vendor\\models\\PatchTST.py",
+          "vendored_sha256": "1a6f8e081addbec8522389e9cbf6eb3674be1d24d7af64c1582e36079055a879",
+          "modification": "Only from/import layers namespace changed to patchtst_vendor.layers"
+        },
+        {
+          "upstream_path": "PatchTST_supervised/layers/PatchTST_backbone.py",
+          "source_url": "https://raw.githubusercontent.com/yuqinie98/PatchTST/204c21efe0b39603ad6e2ca640ef5896646ab1a9/PatchTST_supervised/layers/PatchTST_backbone.py",
+          "original_sha256": "df67173153787c2356bdfb6491159cd754332ef7382986efe879e1fbea8ebf26",
+          "vendored_path": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\patchtst\\patchtst_vendor\\layers\\PatchTST_backbone.py",
+          "vendored_sha256": "3d9fc0d88a36e61dcbb20bdd628a60236c6946fa335885157f2725934fc689b3",
+          "modification": "Only from/import layers namespace changed to patchtst_vendor.layers"
+        },
+        {
+          "upstream_path": "PatchTST_supervised/layers/PatchTST_layers.py",
+          "source_url": "https://raw.githubusercontent.com/yuqinie98/PatchTST/204c21efe0b39603ad6e2ca640ef5896646ab1a9/PatchTST_supervised/layers/PatchTST_layers.py",
+          "original_sha256": "21c06c70a90c60ee2a269b5c600c702834dea22cdfd72915e6b0f8b4a28db3f6",
+          "vendored_path": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\patchtst\\patchtst_vendor\\layers\\PatchTST_layers.py",
+          "vendored_sha256": "21c06c70a90c60ee2a269b5c600c702834dea22cdfd72915e6b0f8b4a28db3f6",
+          "modification": "Only from/import layers namespace changed to patchtst_vendor.layers"
+        },
+        {
+          "upstream_path": "PatchTST_supervised/layers/RevIN.py",
+          "source_url": "https://raw.githubusercontent.com/yuqinie98/PatchTST/204c21efe0b39603ad6e2ca640ef5896646ab1a9/PatchTST_supervised/layers/RevIN.py",
+          "original_sha256": "e64c0ccded9228b347134e7368420d3fb10f70c75145b5ff2d8bdd8c3af59df6",
+          "vendored_path": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\patchtst\\patchtst_vendor\\layers\\RevIN.py",
+          "vendored_sha256": "e64c0ccded9228b347134e7368420d3fb10f70c75145b5ff2d8bdd8c3af59df6",
+          "modification": "Only from/import layers namespace changed to patchtst_vendor.layers"
+        },
+        {
+          "upstream_path": "LICENSE",
+          "source_url": "https://raw.githubusercontent.com/yuqinie98/PatchTST/204c21efe0b39603ad6e2ca640ef5896646ab1a9/LICENSE",
+          "original_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "vendored_path": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\patchtst\\patchtst_vendor\\LICENSE",
+          "vendored_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "modification": "Unmodified license"
+        }
+      ],
+      "architecture_scope": "Official supervised PatchTST core with namespace-only import changes; compact univariate config, not original-paper benchmark reproduction",
+      "algorithmic_modifications": false
+    },
+    "claim": "Pinned official core with existing namespace/lazy unused-import changes only; compact local retraining"
+  },
+  "max_epochs": 16,
+  "patience": 3,
+  "batch_size": 64,
+  "training_origin_stride_hours": 6,
+  "input_scope": "13 module energies + explicit aggregate target + optional prefix-stable physical sensors",
+  "feature_selection": "Independent inner/outer TRAIN prefixes; pretest schema (March31 day, March28 long) reused for final April29 weight/scaler fit",
+  "day_CV": "Jan10/Jan24/Feb7/Feb21/Mar7 x14 daily origins, aggregate path MAE selects config; endpoints1/6/24 reported",
+  "loss_definition": "Aggregate-target only for iTransformer; train-standardized uniform all-channel targets and module-sum output for PatchTST",
+  "no_May_labels_read": true,
+  "seed": 20261013,
+  "threads": 4,
+  "post_EDA": true
+}

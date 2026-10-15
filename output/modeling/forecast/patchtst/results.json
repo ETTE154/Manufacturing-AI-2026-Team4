@@ -1,0 +1,154 @@
+{
+  "model": "patchtst",
+  "frozen_config": {
+    "enc_in": 1,
+    "pred_len": 745,
+    "e_layers": 1,
+    "n_heads": 4,
+    "d_model": 32,
+    "d_ff": 64,
+    "dropout": 0.1,
+    "fc_dropout": 0.1,
+    "head_dropout": 0.1,
+    "individual": false,
+    "patch_len": 16,
+    "stride": 8,
+    "padding_patch": "end",
+    "revin": true,
+    "affine": true,
+    "subtract_last": false,
+    "decomposition": false,
+    "kernel_size": 25,
+    "seq_len": 168
+  },
+  "frozen_epochs": 1,
+  "validation": {
+    "H96": {
+      "count": 96,
+      "mae_kwh": 82.49766983455841,
+      "rmse_kwh": 106.87893394328054,
+      "mape_percent": 0.21095212324091384,
+      "bias_pred_minus_actual_kwh": 3.001373441304016
+    },
+    "H192": {
+      "count": 192,
+      "mae_kwh": 80.84151638767669,
+      "rmse_kwh": 102.39866240392617,
+      "mape_percent": 0.20666713055647926,
+      "bias_pred_minus_actual_kwh": 1.2351722082340377
+    },
+    "H336": {
+      "count": 336,
+      "mae_kwh": 81.18529561110788,
+      "rmse_kwh": 103.06472699254402,
+      "mape_percent": 0.20747753011400458,
+      "bias_pred_minus_actual_kwh": -6.442221926925868
+    },
+    "H720": {
+      "count": 720,
+      "mae_kwh": 78.67138858223498,
+      "rmse_kwh": 99.40123240468475,
+      "mape_percent": 0.20103580065678495,
+      "bias_pred_minus_actual_kwh": -5.0133021212086835
+    },
+    "P745": {
+      "count": 745,
+      "mae_kwh": 78.92861618814536,
+      "rmse_kwh": 99.72256947984442,
+      "mape_percent": 0.20170036862347107,
+      "bias_pred_minus_actual_kwh": -4.321054871310548
+    }
+  },
+  "internal_test": {
+    "H96": {
+      "count": 96,
+      "mae_kwh": 77.39047589613612,
+      "rmse_kwh": 102.37309276487684,
+      "mape_percent": 0.19795399375199754,
+      "bias_pred_minus_actual_kwh": 26.003067716570587
+    },
+    "H192": {
+      "count": 192,
+      "mae_kwh": 81.03439748703438,
+      "rmse_kwh": 102.85699495861687,
+      "mape_percent": 0.20723646861980954,
+      "bias_pred_minus_actual_kwh": 18.3786513966279
+    },
+    "H336": {
+      "count": 336,
+      "mae_kwh": 83.69810763684977,
+      "rmse_kwh": 104.20032789783498,
+      "mape_percent": 0.21399961290539918,
+      "bias_pred_minus_actual_kwh": 13.694938531202471
+    },
+    "H720": {
+      "count": 720,
+      "mae_kwh": 80.44427297247584,
+      "rmse_kwh": 101.05837528739437,
+      "mape_percent": 0.20564153132095167,
+      "bias_pred_minus_actual_kwh": 8.05620168617663
+    },
+    "P745": {
+      "count": 745,
+      "mae_kwh": 80.88516937667835,
+      "rmse_kwh": 101.32876307128241,
+      "mape_percent": 0.20676732647471724,
+      "bias_pred_minus_actual_kwh": 7.733962352746483
+    }
+  },
+  "internal_test_fit": {
+    "epochs_frozen": 1,
+    "training_windows": 1920,
+    "training_max_label": "2025-03-28 23:00:00",
+    "runtime_seconds": 0.6099999999860302,
+    "epoch_logs": [
+      {
+        "epoch": 1,
+        "training_mse_standardized": 1.183521819114685
+      }
+    ],
+    "checkpoint": {
+      "path": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\patchtst\\checkpoints\\internal_test.pt",
+      "sha256": "e3d4229df56750c9fa9f83452ae964a62bdfc9d23429a42a19bd20c0c21a8fc8",
+      "parameter_count": 511148
+    }
+  },
+  "selection_lock": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\patchtst\\selection_lock.json",
+  "provenance_file": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\patchtst\\provenance.json",
+  "architecture_scope": "Official supervised PatchTST core with namespace-only import changes; compact univariate config, not original-paper benchmark reproduction",
+  "final_checkpoint_planned_path": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\patchtst\\checkpoints\\final_3600.pt",
+  "may_labels_read": true,
+  "final_full_history_fit": {
+    "epochs_frozen": 1,
+    "training_windows": 2688,
+    "training_max_label": "2025-04-29 23:00:00",
+    "runtime_seconds": 0.9070000000065193,
+    "epoch_logs": [
+      {
+        "epoch": 1,
+        "training_mse_standardized": 1.1519894897937775
+      }
+    ],
+    "checkpoint": {
+      "path": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\patchtst\\checkpoints\\final_3600.pt",
+      "sha256": "7a36ffb8628dcc26842245e7fa07210fc7ddc52fa11a2c47e8d6b48fac3ffc1d",
+      "parameter_count": 511148
+    }
+  },
+  "final_checkpoint": {
+    "path": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\patchtst\\checkpoints\\final_3600.pt",
+    "sha256": "7a36ffb8628dcc26842245e7fa07210fc7ddc52fa11a2c47e8d6b48fac3ffc1d",
+    "parameter_count": 511148
+  },
+  "full_forecast_path_rows": 745,
+  "full_forecast_origin": "2025-04-30 00:00:00",
+  "full_forecast_end": "2025-05-31 00:00:00",
+  "may_505_labelled_hours": {
+    "count": 505,
+    "mae_kwh": 92.3523811227988,
+    "rmse_kwh": 114.1218925384736,
+    "mape_percent": 0.23662548298255065,
+    "bias_pred_minus_actual_kwh": 61.949391135820655
+  },
+  "may_scores_do_not_change_selection": true
+}

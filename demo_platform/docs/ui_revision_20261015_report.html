@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FactoryLens UI·재생 기능 개선 결과 · 2026-10-15</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f5f8ff;color:#17233b;font:16px/1.75 "Malgun Gothic",Arial,sans-serif}main{max-width:1120px;margin:auto;padding:48px 24px 72px}header{padding:32px;background:#fff;border:1px solid #dce5f4;border-radius:18px;border-top:5px solid #2563eb}h1{font-size:30px;line-height:1.45;font-weight:600;margin:10px 0}h2{font-size:21px;font-weight:600;margin:0 0 14px}h3{font-size:17px;margin:16px 0 8px}p{margin:10px 0}small,.muted{color:#52627a}.eyebrow{color:#1d4ed8;font-size:13px;font-weight:600;letter-spacing:.08em}section{background:#fff;border:1px solid #dce5f4;border-radius:16px;margin-top:22px;padding:28px}a{color:#1d4ed8;text-underline-offset:3px}table{border-collapse:collapse;width:100%;font-size:14px}th,td{padding:13px 14px;text-align:left;border-bottom:1px solid #e4eaf4;vertical-align:top}th{background:#f1f5ff;color:#1e40af}td{word-break:keep-all;overflow-wrap:anywhere}.table-wrap{overflow:auto}code{background:#edf3ff;border-radius:4px;padding:2px 5px;font-size:13px}.swatches{display:flex;flex-wrap:wrap;gap:12px;margin:18px 0}.swatch{padding:10px 14px;border:1px solid #dce5f4;border-radius:10px}.dot{display:inline-block;width:14px;height:14px;vertical-align:-2px;border-radius:50%;margin-right:8px}.flow{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:18px 0}.flow>div{background:#f4f7ff;border:1px solid #dce5f4;border-radius:12px;padding:18px}.flow strong{display:block;color:#1e40af;font-size:21px}.note{border-left:4px solid #2563eb;background:#f4f7ff;padding:14px 18px}.red{color:#b91c1c}.images{display:grid;grid-template-columns:minmax(0,1fr);gap:18px}figure{margin:8px 0 0}img{max-width:100%;height:auto;border:1px solid #dce5f4;border-radius:10px}figcaption{font-size:13px;color:#52627a;margin-top:8px}ul{padding-left:23px}li{margin:6px 0}.pill{display:inline-block;color:#1e40af;background:#eaf1ff;padding:5px 12px;border-radius:20px;font-size:13px;font-weight:600}@media(max-width:650px){main{padding:20px 14px}header,section{padding:20px}h1{font-size:24px}.flow{grid-template-columns:1fr}table{min-width:580px}}@media print{body{background:#fff}main{max-width:none;padding:0}section,header{break-inside:avoid}a{color:inherit}}
+</style>
+</head>
+<body><main>
+<header>
+<div class="eyebrow">FACTORYLENS · UI / UX REVISION</div>
+<h1>더 잘 읽히는 화면,<br>고장 발생 지점으로 이어지는 재생</h1>
+<p>흰색과 파란색으로 화면을 통일하고, 실시간 차트의 시간 범위와 이상 후보 재생 동작을 개선했습니다.</p>
+<p><span class="pill">2026-10-15 · 로컬 데모 반영</span> &nbsp; <a href="http://127.0.0.1:8099/">대시보드 열기</a></p>
+</header>
+
+<section>
+<h2>UI/UX 평가와 반영 내용</h2>
+<p>기존 화면은 짙은 사이드바·녹색 강조·미색 배경이 혼재했고, 작은 조작 글자와 과도하게 굵은 제목 때문에 정보의 우선순위가 고르게 전달되지 않았습니다. 긴 진단 근거와 날짜 조작부의 줄바꿈도 정리했습니다.</p>
+<div class="swatches">
+<span class="swatch"><span class="dot" style="background:#fff;border:1px solid #94a3b8"></span>배경 #ffffff</span>
+<span class="swatch"><span class="dot" style="background:#2563eb"></span>주요 동작 #2563eb</span>
+<span class="swatch"><span class="dot" style="background:#1e40af"></span>보조 강조 #1e40af</span>
+<span class="swatch"><span class="dot" style="background:#dc2626"></span>이상 후보 #dc2626</span>
+</div>
+<div class="table-wrap"><table>
+<thead><tr><th>평가 항목</th><th>개선 전</th><th>개선 후</th></tr></thead>
+<tbody>
+<tr><td>배경과 강조</td><td>짙은 남색·녹색·미색 혼재</td><td>흰 카드, 연한 파란 배경·사이드바, 파란 선택 상태</td></tr>
+<tr><td>내비게이션 / 기본 버튼</td><td>12px / 10px</td><td>14px / 13px · 조회 버튼 12px</td></tr>
+<tr><td>페이지 제목</td><td>26px · 굵기 750</td><td>29px · 굵기 600, 모바일 25px</td></tr>
+<tr><td>본문과 긴 근거</td><td>9–11px 보조 글자, 긴 원문 노출</td><td>본문 14px, 한국어 핵심값 요약 + 원문 접기, 보고서 행간 1.75</td></tr>
+<tr><td>줄바꿈과 좁은 화면</td><td>날짜·재생 조작부 밀집</td><td>날짜와 조작부 재배치, 단어 단위 줄바꿈, 큰 표는 내부 가로 스크롤</td></tr>
+<tr><td>색의 의미</td><td>상태 강조색 혼용</td><td>정상·연결·선택은 파랑, 이상 후보·오류는 빨강, 미설정은 회색</td></tr>
+</tbody></table></div>
+<p class="muted">글자 크기는 데스크톱 브라우저의 계산된 스타일 기준입니다. 보조 설명은 11–12px를 사용하며, 키보드 포커스와 버튼 상태도 함께 정리했습니다.</p>
+</section>
+
+<section>
+<h2>스트리밍: 최신 관측을 기준으로 움직이는 5분 창</h2>
+<div class="flow"><div><strong>왼쪽</strong>최신 관측 − 300초</div><div><strong>60개 시간 간격</strong>원본 5초 × 60 = 5분</div><div><strong>오른쪽</strong>실제 표시된 최신 관측</div></div>
+<p>가로축 시작점을 고정하지 않고 새로운 관측이 들어올 때마다 양 끝을 함께 이동합니다. 양 끝을 포함하면 최대 <b>61개 관측 시각</b>이며, 눈금은 60초 간격으로 표시합니다. 아직 5분이 쌓이지 않은 시작 구간은 과거를 빈 영역으로 둡니다.</p>
+<p>새로운 재생 세션으로 이동하면 이전 세션의 차트 이력을 이어 붙이지 않습니다. 영속 수집 로그는 보존합니다. 명시적으로 기간을 지정한 과거 조회는 선택한 전체 기간을 보여 줍니다.</p>
+</section>
+
+<section>
+<h2>고장진단: 후보를 누르면 감지 30초 전부터 자동 재생</h2>
+<p>현재 스트리밍 구간 밖의 후보도 서버에서 해당 시각의 원본 데이터를 다시 읽습니다. 후보의 <b>첫 감지 시각 − 30초</b>를 새 재생 시작점으로 설정하고, 해당 모듈과 관련 센서 화면을 선택한 뒤 자동 재생합니다.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>검증한 원본 후보</th><th>첫 감지</th><th>자동 재생 시작</th></tr></thead>
+<tbody>
+<tr><td>15 · 예비건조기 · 비정상 패턴</td><td>2025-02-28 04:38:20</td><td>2025-02-28 04:37:50</td></tr>
+<tr><td>17 · 6호기 · 비정상 패턴</td><td>2025-02-19 03:04:00</td><td>2025-02-19 03:03:30</td></tr>
+<tr><td>17 · 6호기 · 비정상 패턴</td><td>2025-03-13 19:45:05</td><td>2025-03-13 19:44:35</td></tr>
+<tr><td>5 · 좌측분전반 · 역률 급감</td><td>2025-02-26 06:47:00</td><td>2025-02-26 06:46:30</td></tr>
+</tbody></table></div>
+<p class="red">이상 후보 관측은 빨간 점·선, 선택한 후보 구간은 붉은 음영으로 표시합니다. 규칙·AE·Isolation Forest 상세 차트도 임계값 초과 지점을 붉게 표시합니다.</p>
+<p>증강 시연은 시작점을 옮겨도 원래의 변형 기준 시각과 고장 원인을 유지합니다. 저장 알람의 식별자도 보존해 같은 후보가 재생 이동 때문에 새 고장으로 중복 등록되지 않도록 했습니다.</p>
+<p class="note">붉은 표시는 검토가 필요한 이상 후보입니다. 실제 삽입 고장 정답 라벨이 추가된 것은 아니며, 고장 확정을 의미하지 않습니다.</p>
+</section>
+
+<section>
+<h2>검증과 확인 자료</h2>
+<ul>
+<li>프로덕션 Vite 빌드 성공. 배포된 파일: <code>index-BwTlLOYF.js</code> / <code>index-Q7vJeuK6.css</code>.</li>
+<li>서버 회귀 검증 <b>22개 통과</b>: 원본 후보 4개, 정확한 30초 전 이동, 새 세션 자동 재생, 잘못된 ID 처리, 증강 시각 유지, 60간격 초과 스트리밍, 13모듈 정렬.</li>
+<li>실제 브라우저에서 61관측·300초·양 끝 눈금, 과거 시간 조회 3,600점 전체 표시, 후보 상세의 센서·진단 차트 붉은 표시를 확인했습니다.</li>
+<li>독립 브라우저 검사에서도 4개 원본 후보 모두 현재 범위 밖의 4월 조회 상태에서 자동 재생으로 이동하고, 날짜 필터 해제·5초 원본 복귀·해당 모듈 선택·붉은 SVG 관측 표시를 확인했습니다. 콘솔 오류·경고는 0건입니다.</li>
+<li>375·768·1440·1920px 운영현황의 페이지 가로 넘침 및 검사 대상 텍스트 대비 실패 0건. 데스크톱·태블릿·모바일에서 조작부와 긴 문구의 배치를 확인했습니다.</li>
+<li>검증 과정에서 GPT·Slack 외부 호출은 하지 않았습니다.</li>
+</ul>
+<p><a href="../tests/replay_revision_verification.json">서버 검증 결과</a> · <a href="../frontend/qa/ui_revision_20261015/independent/responsive_overview.json">독립 화면 검사 결과</a> · <a href="../frontend/qa/ui_revision_20261015/independent/jump_dom_checks.json">4개 후보 브라우저 검증</a> · <a href="ui_revision_notes.txt">프런트엔드 개선 기록</a> · <a href="api_replay_revision_20261015.txt">재생 API 계약</a></p>
+<div class="images"><figure><img src="ui_revision_detail.png" alt="흰색·파란색 진단 화면과 붉게 강조한 후보 센서 관측"><figcaption>원본 예비건조기 후보: 상별 역률·전류·유효전력에서 후보 지점과 선택 구간을 붉게 표시합니다.</figcaption></figure></div>
+</section>
+
+<section>
+<h2>변경 보존 기록</h2>
+<p>작업 전 애플리케이션 소스 <b>6개 사본</b>을 만들고 SHA-256 일치를 확인했습니다. 사본 생성 실패 0개, 중복 생략 0개입니다. <a href="../revisions/20261015_ui/backup_manifest.json">백업 경로와 검증값</a>을 남겼습니다.</p>
+<p>원본 센서 데이터와 기존 예측 모델·평가 결과는 이번 UI 개선 범위에서 수정하지 않았습니다. 기존 산출물의 file_id를 유지해 <a href="../artifact_inventory.csv">산출물 색인</a>을 갱신합니다. 이 프로젝트는 상위 workspace.json에 등록된 project_id가 없어 기존 null 상태를 유지합니다.</p>
+</section>
+<p class="muted"><small>FactoryLens · 로컬 제조 설비 데이터 플랫폼 데모 · 2026-10-15</small></p>
+</main></body></html>

@@ -1,0 +1,42 @@
+{
+  "selected_model": "chronos2",
+  "selected_model_id": "chronos2",
+  "selection_metric": "validation.P745.mae_kwh",
+  "validation_metric": 76.01094547912001,
+  "selection_uses_may_labels": false,
+  "selection_uses_internal_test_labels": false,
+  "candidate_validation_mae_kwh": {
+    "arima": 76.03288894159851,
+    "xgboost": 76.40075057459573,
+    "baseline_mean": 76.03288890378326,
+    "baseline_median": 76.03986672259501,
+    "baseline_weekday_hour_mean": 78.73614749230397,
+    "patchtst": 78.92861618814536,
+    "itransformer": 76.42929912844782,
+    "chronos2": 76.01094547912001
+  },
+  "config": {
+    "model": "Chronos-2",
+    "model_id": "amazon/chronos-2",
+    "revision": "29ec3766d36d6f73f0696f85560a422f50e8498c",
+    "context_length": 8192,
+    "prediction_length": 745,
+    "quantile_levels": [
+      0.1,
+      0.5,
+      0.9
+    ],
+    "selection_basis": "Predeclared official frozen model; no tuning",
+    "mode": "zero-shot",
+    "status": "frozen_before_May_labels"
+  },
+  "model_lock_sha256": {
+    "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\arima_xgb_selection_lock.json": "8078dded3df0dfbbf84812ce9d6072767510e138597cf3f9165550b879a3679c",
+    "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\patchtst\\selection_lock.json": "f7dce2511a1eccea9b27a8cb5d00d36db85e534256ee331c851c7164f7570e7d",
+    "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\itransformer\\selection_lock.json": "762076524ebc486643fd00db0fd9b9e97541ddca4ae0e27fe82423b3b2adb453",
+    "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\chronos2\\selection_lock.json": "a00b5a510f6a29dd16d9d60e30d01a2ce6dd4f9eee73e251348850285d188a58"
+  },
+  "baseline_fallback": "baseline_mean",
+  "practical_note": "Tiny validation improvement is not evidence of superiority; deployment choice follows predeclared lowest validation MAE, mean remains a simple fallback.",
+  "holdout_disclosure": "May labels were previously inspected in descriptive EDA; no model or parameter selection here uses them."
+}

@@ -1,0 +1,18 @@
+{
+  "selected_models": {
+    "dayahead24": "previous_chronos2",
+    "long745": "previous_chronos2"
+  },
+  "criterion": "Validation path MAE only; numerical tie prefers simple baseline",
+  "new_model_selection_lock_sha256": {
+    "classical_day": "c158a3c1a49fd3c453bb9fc327da84f5be2102c209bcbb7e4e81fbd0d2cb86c7",
+    "classical_long": "d36206cb6b7c0a6a61e14d1a2fe4edb21f5f7e994a93e87f384961890f1bc745",
+    "dayahead24/itransformer": "47cfbd3c15996685843101dacf729f4940b17864c57a1a2b8fe1ba3b1b8d8d2f",
+    "dayahead24/patchtst": "d506d9a02faa31463155140b59a57ca44af89fba507b32086fafa9428b6e7c83",
+    "long745/itransformer": "a5405e03a1596fe6b1725b4b5e09656c1a0b84c6a6f91942990f5b408f69c6c6",
+    "long745/patchtst": "22112300db64842684627c89a55b74124165840b9dd1e972cbadc9bdcb950b7f"
+  },
+  "April_or_May_scores_used_for_selection": false,
+  "feature_sha256": "1ad0a14f29f7ffad521918817315c95889f82adef7335709ce386fd057b1ba9b",
+  "post_EDA_limit": "April/May were seen in previous experiments; no pristine prospective claim"
+}

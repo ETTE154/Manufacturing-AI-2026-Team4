@@ -1,0 +1,658 @@
+{
+  "status": "pass",
+  "model_count": 6,
+  "CV_models_checked": 27,
+  "models": [
+    {
+      "resolution": "hourly",
+      "family": "patchtst",
+      "candidate": 0,
+      "fold": 1,
+      "inner_scaler_max_error": 0.0,
+      "refit_scaler_max_error": 0.0,
+      "saved_model_replay_max_error": 0.0,
+      "inner_training_windows": 14,
+      "native_fit_rows": 1079,
+      "schema_feature_count": 1,
+      "target_index": 0
+    },
+    {
+      "resolution": "hourly",
+      "family": "patchtst",
+      "candidate": 0,
+      "fold": 2,
+      "inner_scaler_max_error": 0.0,
+      "refit_scaler_max_error": 0.0,
+      "saved_model_replay_max_error": 0.0,
+      "inner_training_windows": 21,
+      "native_fit_rows": 1247,
+      "schema_feature_count": 1,
+      "target_index": 0
+    },
+    {
+      "resolution": "hourly",
+      "family": "patchtst",
+      "candidate": 0,
+      "fold": 3,
+      "inner_scaler_max_error": 0.0,
+      "refit_scaler_max_error": 0.0,
+      "saved_model_replay_max_error": 0.0,
+      "inner_training_windows": 24,
+      "native_fit_rows": 1319,
+      "schema_feature_count": 1,
+      "target_index": 0
+    },
+    {
+      "resolution": "hourly",
+      "family": "patchtst",
+      "candidate": 1,
+      "fold": 1,
+      "inner_scaler_max_error": 0.0,
+      "refit_scaler_max_error": 0.0,
+      "saved_model_replay_max_error": 0.0,
+      "inner_training_windows": 12,
+      "native_fit_rows": 1079,
+      "schema_feature_count": 1,
+      "target_index": 0
+    },
+    {
+      "resolution": "hourly",
+      "family": "patchtst",
+      "candidate": 1,
+      "fold": 2,
+      "inner_scaler_max_error": 0.0,
+      "refit_scaler_max_error": 0.0,
+      "saved_model_replay_max_error": 0.0,
+      "inner_training_windows": 19,
+      "native_fit_rows": 1247,
+      "schema_feature_count": 1,
+      "target_index": 0
+    },
+    {
+      "resolution": "hourly",
+      "family": "patchtst",
+      "candidate": 1,
+      "fold": 3,
+      "inner_scaler_max_error": 0.0,
+      "refit_scaler_max_error": 0.0,
+      "saved_model_replay_max_error": 0.0,
+      "inner_training_windows": 22,
+      "native_fit_rows": 1319,
+      "schema_feature_count": 1,
+      "target_index": 0
+    },
+    {
+      "resolution": "hourly",
+      "family": "itransformer",
+      "candidate": 0,
+      "fold": 1,
+      "inner_scaler_max_error": 0.0,
+      "refit_scaler_max_error": 0.0,
+      "saved_model_replay_max_error": 0.0,
+      "inner_training_windows": 14,
+      "native_fit_rows": 1079,
+      "schema_feature_count": 1,
+      "target_index": 0
+    },
+    {
+      "resolution": "hourly",
+      "family": "itransformer",
+      "candidate": 0,
+      "fold": 2,
+      "inner_scaler_max_error": 0.0,
+      "refit_scaler_max_error": 0.0,
+      "saved_model_replay_max_error": 0.0,
+      "inner_training_windows": 21,
+      "native_fit_rows": 1247,
+      "schema_feature_count": 1,
+      "target_index": 0
+    },
+    {
+      "resolution": "hourly",
+      "family": "itransformer",
+      "candidate": 0,
+      "fold": 3,
+      "inner_scaler_max_error": 0.0,
+      "refit_scaler_max_error": 0.0,
+      "saved_model_replay_max_error": 0.0,
+      "inner_training_windows": 24,
+      "native_fit_rows": 1319,
+      "schema_feature_count": 1,
+      "target_index": 0
+    },
+    {
+      "resolution": "hourly",
+      "family": "itransformer",
+      "candidate": 1,
+      "fold": 1,
+      "inner_scaler_max_error": 0.0,
+      "refit_scaler_max_error": 0.0,
+      "saved_model_replay_max_error": 0.0,
+      "inner_training_windows": 12,
+      "native_fit_rows": 1079,
+      "schema_feature_count": 1,
+      "target_index": 0
+    },
+    {
+      "resolution": "hourly",
+      "family": "itransformer",
+      "candidate": 1,
+      "fold": 2,
+      "inner_scaler_max_error": 0.0,
+      "refit_scaler_max_error": 0.0,
+      "saved_model_replay_max_error": 0.0,
+      "inner_training_windows": 19,
+      "native_fit_rows": 1247,
+      "schema_feature_count": 1,
+      "target_index": 0
+    },
+    {
+      "resolution": "hourly",
+      "family": "itransformer",
+      "candidate": 1,
+      "fold": 3,
+      "inner_scaler_max_error": 0.0,
+      "refit_scaler_max_error": 0.0,
+      "saved_model_replay_max_error": 0.0,
+      "inner_training_windows": 22,
+      "native_fit_rows": 1319,
+      "schema_feature_count": 1,
+      "target_index": 0
+    },
+    {
+      "resolution": "hourly",
+      "family": "itransformer",
+      "candidate": 2,
+      "fold": 1,
+      "inner_scaler_max_error": 0.0,
+      "refit_scaler_max_error": 0.0,
+      "saved_model_replay_max_error": 0.0,
+      "inner_training_windows": 14,
+      "native_fit_rows": 1079,
+      "schema_feature_count": 7,
+      "target_index": 6
+    },
+    {
+      "resolution": "hourly",
+      "family": "itransformer",
+      "candidate": 2,
+      "fold": 2,
+      "inner_scaler_max_error": 0.0,
+      "refit_scaler_max_error": 0.0,
+      "saved_model_replay_max_error": 0.0,
+      "inner_training_windows": 21,
+      "native_fit_rows": 1247,
+      "schema_feature_count": 7,
+      "target_index": 6
+    },
+    {
+      "resolution": "hourly",
+      "family": "itransformer",
+      "candidate": 2,
+      "fold": 3,
+      "inner_scaler_max_error": 0.0,
+      "refit_scaler_max_error": 0.0,
+      "saved_model_replay_max_error": 0.0,
+      "inner_training_windows": 24,
+      "native_fit_rows": 1319,
+      "schema_feature_count": 7,
+      "target_index": 6
+    },
+    {
+      "resolution": "daily",
+      "family": "patchtst",
+      "candidate": 0,
+      "fold": 1,
+      "inner_scaler_max_error": 0.0,
+      "refit_scaler_max_error": 0.0,
+      "saved_model_replay_max_error": 0.0,
+      "inner_training_windows": 6,
+      "native_fit_rows": 44,
+      "schema_feature_count": 1,
+      "target_index": 0
+    },
+    {
+      "resolution": "daily",
+      "family": "patchtst",
+      "candidate": 0,
+      "fold": 2,
+      "inner_scaler_max_error": 0.0,
+      "refit_scaler_max_error": 0.0,
+      "saved_model_replay_max_error": 0.0,
+      "inner_training_windows": 13,
+      "native_fit_rows": 51,
+      "schema_feature_count": 1,
+      "target_index": 0
+    },
+    {
+      "resolution": "daily",
+      "family": "patchtst",
+      "candidate": 0,
+      "fold": 3,
+      "inner_scaler_max_error": 0.0,
+      "refit_scaler_max_error": 0.0,
+      "saved_model_replay_max_error": 0.0,
+      "inner_training_windows": 16,
+      "native_fit_rows": 54,
+      "schema_feature_count": 1,
+      "target_index": 0
+    },
+    {
+      "resolution": "daily",
+      "family": "patchtst",
+      "candidate": 1,
+      "fold": 1,
+      "inner_scaler_max_error": 0.0,
+      "refit_scaler_max_error": 0.0,
+      "saved_model_replay_max_error": 0.0,
+      "inner_training_windows": 6,
+      "native_fit_rows": 44,
+      "schema_feature_count": 1,
+      "target_index": 0
+    },
+    {
+      "resolution": "daily",
+      "family": "patchtst",
+      "candidate": 1,
+      "fold": 2,
+      "inner_scaler_max_error": 0.0,
+      "refit_scaler_max_error": 0.0,
+      "saved_model_replay_max_error": 0.0,
+      "inner_training_windows": 13,
+      "native_fit_rows": 51,
+      "schema_feature_count": 1,
+      "target_index": 0
+    },
+    {
+      "resolution": "daily",
+      "family": "patchtst",
+      "candidate": 1,
+      "fold": 3,
+      "inner_scaler_max_error": 0.0,
+      "refit_scaler_max_error": 0.0,
+      "saved_model_replay_max_error": 0.0,
+      "inner_training_windows": 16,
+      "native_fit_rows": 54,
+      "schema_feature_count": 1,
+      "target_index": 0
+    },
+    {
+      "resolution": "daily",
+      "family": "itransformer",
+      "candidate": 0,
+      "fold": 1,
+      "inner_scaler_max_error": 0.0,
+      "refit_scaler_max_error": 0.0,
+      "saved_model_replay_max_error": 0.0,
+      "inner_training_windows": 6,
+      "native_fit_rows": 44,
+      "schema_feature_count": 1,
+      "target_index": 0
+    },
+    {
+      "resolution": "daily",
+      "family": "itransformer",
+      "candidate": 0,
+      "fold": 2,
+      "inner_scaler_max_error": 0.0,
+      "refit_scaler_max_error": 0.0,
+      "saved_model_replay_max_error": 0.0,
+      "inner_training_windows": 13,
+      "native_fit_rows": 51,
+      "schema_feature_count": 1,
+      "target_index": 0
+    },
+    {
+      "resolution": "daily",
+      "family": "itransformer",
+      "candidate": 0,
+      "fold": 3,
+      "inner_scaler_max_error": 0.0,
+      "refit_scaler_max_error": 0.0,
+      "saved_model_replay_max_error": 0.0,
+      "inner_training_windows": 16,
+      "native_fit_rows": 54,
+      "schema_feature_count": 1,
+      "target_index": 0
+    },
+    {
+      "resolution": "daily",
+      "family": "itransformer",
+      "candidate": 1,
+      "fold": 1,
+      "inner_scaler_max_error": 0.0,
+      "refit_scaler_max_error": 0.0,
+      "saved_model_replay_max_error": 0.0,
+      "inner_training_windows": 6,
+      "native_fit_rows": 44,
+      "schema_feature_count": 1,
+      "target_index": 0
+    },
+    {
+      "resolution": "daily",
+      "family": "itransformer",
+      "candidate": 1,
+      "fold": 2,
+      "inner_scaler_max_error": 0.0,
+      "refit_scaler_max_error": 0.0,
+      "saved_model_replay_max_error": 0.0,
+      "inner_training_windows": 13,
+      "native_fit_rows": 51,
+      "schema_feature_count": 1,
+      "target_index": 0
+    },
+    {
+      "resolution": "daily",
+      "family": "itransformer",
+      "candidate": 1,
+      "fold": 3,
+      "inner_scaler_max_error": 0.0,
+      "refit_scaler_max_error": 0.0,
+      "saved_model_replay_max_error": 0.0,
+      "inner_training_windows": 16,
+      "native_fit_rows": 54,
+      "schema_feature_count": 1,
+      "target_index": 0
+    }
+  ],
+  "model_summaries": [
+    {
+      "family": "patchtst",
+      "resolution": "hourly",
+      "candidate_count": 2,
+      "selected_config": {
+        "group": "target_only",
+        "context": 72,
+        "loss": "L1",
+        "dropout": 0.2,
+        "instance_norm": false,
+        "output_penalty": 0.05
+      },
+      "validation_origin_count": 3,
+      "inner_holdout_native_periods": 745,
+      "maximum_epochs": 24,
+      "patience": 4,
+      "all_candidate_inner_best_at_epoch_cap_count": 0,
+      "selected_inner_best_at_epoch_cap_count": 0,
+      "selected_inner_epochs": [
+        3,
+        5,
+        1
+      ],
+      "convergence_note": "Early stopping minima occurred before cap",
+      "alpha0_baseline_equivalent": false,
+      "official_provenance": {
+        "file": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\patchtst\\provenance.json",
+        "sha256": "036f4ed7fd8dd6054224f7dd1780391ff6da8f501d09dcdb8727625ef9b7b4ad",
+        "official_core_hashes_verified": true,
+        "claim": "Pinned official 2023 PatchTST / 2024 iTransformer core, compact retraining; no claim of current SOTA superiority"
+      },
+      "validation_505_mae": 79.90464576042986,
+      "internal_test_505_mae": 82.23088347521711
+    },
+    {
+      "family": "itransformer",
+      "resolution": "hourly",
+      "candidate_count": 3,
+      "selected_config": {
+        "group": "completed_multires",
+        "context": 24,
+        "loss": "MSE",
+        "dropout": 0.1,
+        "instance_norm": false,
+        "output_penalty": 0.03
+      },
+      "validation_origin_count": 3,
+      "inner_holdout_native_periods": 745,
+      "maximum_epochs": 24,
+      "patience": 4,
+      "all_candidate_inner_best_at_epoch_cap_count": 9,
+      "selected_inner_best_at_epoch_cap_count": 3,
+      "selected_inner_epochs": [
+        24,
+        24,
+        24
+      ],
+      "convergence_note": "Some minima at epoch24; further convergence is unresolved",
+      "alpha0_baseline_equivalent": false,
+      "official_provenance": {
+        "file": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\itransformer\\vendor\\provenance.json",
+        "sha256": "82b2f4036b2f4cfc70fe02a84c62a822432b1105ff1ac044a129a7ede2073980",
+        "official_core_hashes_verified": true,
+        "claim": "Pinned official 2023 PatchTST / 2024 iTransformer core, compact retraining; no claim of current SOTA superiority"
+      },
+      "validation_505_mae": 80.12556871662379,
+      "internal_test_505_mae": 80.27523074778324
+    },
+    {
+      "family": "chronos2",
+      "resolution": "hourly",
+      "candidate_count": 6,
+      "selected_config": {
+        "context": "full",
+        "mean_blend_alpha": 0.0,
+        "mapping_profile": "uniform"
+      },
+      "validation_origin_count": 3,
+      "inner_holdout_native_periods": null,
+      "maximum_epochs": null,
+      "patience": null,
+      "all_candidate_inner_best_at_epoch_cap_count": 0,
+      "selected_inner_best_at_epoch_cap_count": 0,
+      "selected_inner_epochs": [],
+      "convergence_note": "Early stopping minima occurred before cap",
+      "alpha0_baseline_equivalent": true,
+      "official_provenance": {
+        "source": "amazon/chronos-2",
+        "revision": "29ec3766d36d6f73f0696f85560a422f50e8498c",
+        "local_snapshot": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\.model_cache\\models--amazon--chronos-2\\snapshots\\29ec3766d36d6f73f0696f85560a422f50e8498c",
+        "files_sha256": {
+          "config.json": "ef1143bfdc9c0376d9a056eefca46cb4b1ec3d0ffacd541ff56feb40fb708031",
+          "model.safetensors": "ddcda3c7508bf2528087723e98a20707cc04b7f370ae275a9fd88078ddba4f42",
+          "README.md": "c7b29bc88f5bc3ebc6e7213b6353be80090d671fefa4aa74ed20498838c16558"
+        }
+      },
+      "validation_505_mae": 76.23714267496439,
+      "internal_test_505_mae": 77.99724622179032
+    },
+    {
+      "family": "patchtst",
+      "resolution": "daily",
+      "candidate_count": 2,
+      "selected_config": {
+        "group": "target_only",
+        "context": 7,
+        "loss": "MSE",
+        "dropout": 0.1,
+        "instance_norm": false,
+        "output_penalty": 0.03
+      },
+      "validation_origin_count": 3,
+      "inner_holdout_native_periods": 32,
+      "maximum_epochs": 24,
+      "patience": 4,
+      "all_candidate_inner_best_at_epoch_cap_count": 0,
+      "selected_inner_best_at_epoch_cap_count": 0,
+      "selected_inner_epochs": [
+        3,
+        1,
+        6
+      ],
+      "convergence_note": "Early stopping minima occurred before cap",
+      "alpha0_baseline_equivalent": false,
+      "official_provenance": {
+        "file": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\patchtst\\provenance.json",
+        "sha256": "036f4ed7fd8dd6054224f7dd1780391ff6da8f501d09dcdb8727625ef9b7b4ad",
+        "official_core_hashes_verified": true,
+        "claim": "Pinned official 2023 PatchTST / 2024 iTransformer core, compact retraining; no claim of current SOTA superiority"
+      },
+      "validation_505_mae": 76.40504609799349,
+      "internal_test_505_mae": 77.94597640415762
+    },
+    {
+      "family": "itransformer",
+      "resolution": "daily",
+      "candidate_count": 2,
+      "selected_config": {
+        "group": "target_only",
+        "context": 7,
+        "loss": "MSE",
+        "dropout": 0.1,
+        "instance_norm": false,
+        "output_penalty": 0.03
+      },
+      "validation_origin_count": 3,
+      "inner_holdout_native_periods": 32,
+      "maximum_epochs": 24,
+      "patience": 4,
+      "all_candidate_inner_best_at_epoch_cap_count": 3,
+      "selected_inner_best_at_epoch_cap_count": 1,
+      "selected_inner_epochs": [
+        24,
+        1,
+        20
+      ],
+      "convergence_note": "Some minima at epoch24; further convergence is unresolved",
+      "alpha0_baseline_equivalent": false,
+      "official_provenance": {
+        "file": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\itransformer\\vendor\\provenance.json",
+        "sha256": "82b2f4036b2f4cfc70fe02a84c62a822432b1105ff1ac044a129a7ede2073980",
+        "official_core_hashes_verified": true,
+        "claim": "Pinned official 2023 PatchTST / 2024 iTransformer core, compact retraining; no claim of current SOTA superiority"
+      },
+      "validation_505_mae": 76.57295820438337,
+      "internal_test_505_mae": 77.85724990058615
+    },
+    {
+      "family": "chronos2",
+      "resolution": "daily",
+      "candidate_count": 6,
+      "selected_config": {
+        "context": 28,
+        "mean_blend_alpha": 0.25,
+        "mapping_profile": "uniform"
+      },
+      "validation_origin_count": 3,
+      "inner_holdout_native_periods": null,
+      "maximum_epochs": null,
+      "patience": null,
+      "all_candidate_inner_best_at_epoch_cap_count": 0,
+      "selected_inner_best_at_epoch_cap_count": 0,
+      "selected_inner_epochs": [],
+      "convergence_note": "Early stopping minima occurred before cap",
+      "alpha0_baseline_equivalent": false,
+      "official_provenance": {
+        "source": "amazon/chronos-2",
+        "revision": "29ec3766d36d6f73f0696f85560a422f50e8498c",
+        "local_snapshot": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\.model_cache\\models--amazon--chronos-2\\snapshots\\29ec3766d36d6f73f0696f85560a422f50e8498c",
+        "files_sha256": {
+          "config.json": "ef1143bfdc9c0376d9a056eefca46cb4b1ec3d0ffacd541ff56feb40fb708031",
+          "model.safetensors": "ddcda3c7508bf2528087723e98a20707cc04b7f370ae275a9fd88078ddba4f42",
+          "README.md": "c7b29bc88f5bc3ebc6e7213b6353be80090d671fefa4aa74ed20498838c16558"
+        }
+      },
+      "validation_505_mae": 76.22743939013054,
+      "internal_test_505_mae": 77.98527971412858
+    }
+  ],
+  "chronos_official_forward_replays": [
+    {
+      "resolution": "hourly",
+      "split": "internal_test",
+      "official_checkpoint_reloaded": true,
+      "frozen_official_forward_raw_median_max_error": 0.0,
+      "locked_blend_native_max_error": 0.0,
+      "mapped_hourly745_CSV_max_error": 0.0,
+      "output_csv": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\replay\\hourly_chronos2_internal_test.csv",
+      "new_fitted_weights": false,
+      "May_labels_opened": false
+    },
+    {
+      "resolution": "hourly",
+      "split": "future_unlabelled",
+      "official_checkpoint_reloaded": true,
+      "frozen_official_forward_raw_median_max_error": 0.0,
+      "locked_blend_native_max_error": 0.0,
+      "mapped_hourly745_CSV_max_error": 0.0,
+      "output_csv": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\replay\\hourly_chronos2_future_unlabelled.csv",
+      "new_fitted_weights": false,
+      "May_labels_opened": false
+    },
+    {
+      "resolution": "daily",
+      "split": "internal_test",
+      "official_checkpoint_reloaded": true,
+      "frozen_official_forward_raw_median_max_error": 0.0,
+      "locked_blend_native_max_error": 0.0,
+      "mapped_hourly745_CSV_max_error": 0.0,
+      "output_csv": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\replay\\daily_chronos2_internal_test.csv",
+      "new_fitted_weights": false,
+      "May_labels_opened": false
+    },
+    {
+      "resolution": "daily",
+      "split": "future_unlabelled",
+      "official_checkpoint_reloaded": true,
+      "frozen_official_forward_raw_median_max_error": 0.0,
+      "locked_blend_native_max_error": 0.0,
+      "mapped_hourly745_CSV_max_error": 0.0,
+      "output_csv": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\neural\\replay\\daily_chronos2_future_unlabelled.csv",
+      "new_fitted_weights": false,
+      "May_labels_opened": false
+    }
+  ],
+  "multi_resolution_clock_checks": [
+    {
+      "last_hour": "2024-12-01 00:00:00",
+      "completion_clock": "2024-12-01 01:00:00",
+      "truncated_prefix_vs_full_causal_row_max_error": 0.0
+    },
+    {
+      "last_hour": "2024-12-01 23:00:00",
+      "completion_clock": "2024-12-02 00:00:00",
+      "truncated_prefix_vs_full_causal_row_max_error": 0.0
+    },
+    {
+      "last_hour": "2024-12-02 00:00:00",
+      "completion_clock": "2024-12-02 01:00:00",
+      "truncated_prefix_vs_full_causal_row_max_error": 0.0
+    },
+    {
+      "last_hour": "2024-12-07 23:00:00",
+      "completion_clock": "2024-12-08 00:00:00",
+      "truncated_prefix_vs_full_causal_row_max_error": 0.0
+    },
+    {
+      "last_hour": "2024-12-08 23:00:00",
+      "completion_clock": "2024-12-09 00:00:00",
+      "truncated_prefix_vs_full_causal_row_max_error": 0.0
+    },
+    {
+      "last_hour": "2024-12-31 23:00:00",
+      "completion_clock": "2025-01-01 00:00:00",
+      "truncated_prefix_vs_full_causal_row_max_error": 0.0
+    },
+    {
+      "last_hour": "2025-01-14 22:00:00",
+      "completion_clock": "2025-01-14 23:00:00",
+      "truncated_prefix_vs_full_causal_row_max_error": 0.0
+    },
+    {
+      "last_hour": "2025-02-14 23:00:00",
+      "completion_clock": "2025-02-15 00:00:00",
+      "truncated_prefix_vs_full_causal_row_max_error": 0.0
+    }
+  ],
+  "validation_observations": 2235,
+  "validation_unique_hours": 985,
+  "validation_late_observations": 1515,
+  "validation_late_unique_hours": 745,
+  "validation_internal_test_label_overlap": 0,
+  "first_daily_inner_training_window_count": 6,
+  "context14_daily_infeasible_first_fold": true,
+  "final_epoch_counts_frozen_before_April": true,
+  "future_exports_have_no_actuals": true,
+  "May_labels_opened": false,
+  "all_35_neural_checkpoint_replays_exact": true,
+  "limitation": "Deterministic replay and no-leak checks do not establish forecasting skill."
+}

@@ -1,0 +1,367 @@
+{
+  "candidate": 4,
+  "config": {
+    "context": 336,
+    "d_model": 64,
+    "layers": 1,
+    "dropout": 0.1
+  },
+  "architecture": {
+    "enc_in": 1,
+    "seq_len": 336,
+    "pred_len": 24,
+    "d_model": 64,
+    "d_ff": 128,
+    "e_layers": 1,
+    "n_heads": 4,
+    "dropout": 0.1,
+    "fc_dropout": 0.1,
+    "head_dropout": 0.1,
+    "individual": false,
+    "patch_len": 16,
+    "stride": 8,
+    "padding_patch": "end",
+    "revin": true,
+    "affine": true,
+    "subtract_last": false,
+    "decomposition": false,
+    "kernel_size": 25,
+    "training_loss": "MSE"
+  },
+  "validation": {
+    "path_24_values": {
+      "count": 1680,
+      "mae_kwh": 81.47447872151692,
+      "rmse_kwh": 103.23545160117745,
+      "mape_percent": 0.20822388072436981,
+      "bias_pred_minus_actual_kwh": 0.6945668899993983,
+      "r2": -0.1846234192242413
+    },
+    "endpoint_lead_24": {
+      "count": 70,
+      "mae_kwh": 81.5195492616813,
+      "rmse_kwh": 106.1596449122058,
+      "mape_percent": 0.20840733953005602,
+      "bias_pred_minus_actual_kwh": 5.4000158263249824,
+      "r2": -0.20616292048390528
+    },
+    "origin_count": 70,
+    "mean_origin_path_mae_kwh": 81.4744787215169,
+    "origin_path_mae_std_kwh": 13.930010350231592,
+    "origin_start": "2025-01-10 00:00:00",
+    "origin_end": "2025-03-20 00:00:00"
+  },
+  "fold_fits": [
+    {
+      "fold": 1,
+      "fit_origin": "2025-01-10 00:00:00",
+      "epochs": 1,
+      "inner": {
+        "inner_fitting_hours": 792,
+        "inner_fitting_end": "2025-01-02 23:00:00",
+        "inner_tail_origin": "2025-01-03 00:00:00",
+        "inner_tail_end": "2025-01-09 23:00:00",
+        "inner_holdout_hours": 168,
+        "inner_origins": 7,
+        "training_windows": 433,
+        "training_tail_target_overlap": false,
+        "best_epoch": 1,
+        "best_mae_kwh": 84.75008998271429,
+        "epochs_run": 5,
+        "logs": [
+          {
+            "epoch": 1,
+            "training_mse_standardized": 1.4310253203328156,
+            "inner_chronological_mae_kwh": 84.75008998271429
+          },
+          {
+            "epoch": 2,
+            "training_mse_standardized": 0.90348232879925,
+            "inner_chronological_mae_kwh": 90.51483503954205
+          },
+          {
+            "epoch": 3,
+            "training_mse_standardized": 0.7491267512081402,
+            "inner_chronological_mae_kwh": 91.19432552092049
+          },
+          {
+            "epoch": 4,
+            "training_mse_standardized": 0.698703466331711,
+            "inner_chronological_mae_kwh": 93.38794780366217
+          },
+          {
+            "epoch": 5,
+            "training_mse_standardized": 0.6549663390904046,
+            "inner_chronological_mae_kwh": 98.39221323637001
+          }
+        ],
+        "seconds": 1.0442491000285372
+      },
+      "refit": {
+        "path": "E:\\AI work\\AWS_프로젝트\\output\\optimization_20261013\\forecast\\dayahead24\\patchtst\\checkpoints\\candidate4_fold1.pt",
+        "sha256": "32a6955c403208491473028bde765055aedbf33e65e1e7872068a6ed036482a1",
+        "parameter_count": 101787,
+        "epochs": 1,
+        "history_hours": 960,
+        "history_end": "2025-01-09 23:00:00",
+        "fit_seconds": 0.2737438000040129,
+        "training_windows": 601,
+        "maximum_supervised_label": "2025-01-09 23:00:00",
+        "training_mse_logs": [
+          1.4361696610236525
+        ]
+      },
+      "reused_existing_saved_CV_fit": true
+    },
+    {
+      "fold": 2,
+      "fit_origin": "2025-01-24 00:00:00",
+      "epochs": 1,
+      "inner": {
+        "inner_fitting_hours": 1128,
+        "inner_fitting_end": "2025-01-16 23:00:00",
+        "inner_tail_origin": "2025-01-17 00:00:00",
+        "inner_tail_end": "2025-01-23 23:00:00",
+        "inner_holdout_hours": 168,
+        "inner_origins": 7,
+        "training_windows": 769,
+        "training_tail_target_overlap": false,
+        "best_epoch": 1,
+        "best_mae_kwh": 76.97355255568853,
+        "epochs_run": 5,
+        "logs": [
+          {
+            "epoch": 1,
+            "training_mse_standardized": 1.4019296377005905,
+            "inner_chronological_mae_kwh": 76.97355255568853
+          },
+          {
+            "epoch": 2,
+            "training_mse_standardized": 0.9902393027306843,
+            "inner_chronological_mae_kwh": 80.83434388648239
+          },
+          {
+            "epoch": 3,
+            "training_mse_standardized": 0.9202212147966938,
+            "inner_chronological_mae_kwh": 83.55092301269285
+          },
+          {
+            "epoch": 4,
+            "training_mse_standardized": 0.8825831476826662,
+            "inner_chronological_mae_kwh": 82.31146142188234
+          },
+          {
+            "epoch": 5,
+            "training_mse_standardized": 0.8606989200775583,
+            "inner_chronological_mae_kwh": 82.23536377861225
+          }
+        ],
+        "seconds": 1.7420319999800995
+      },
+      "refit": {
+        "path": "E:\\AI work\\AWS_프로젝트\\output\\optimization_20261013\\forecast\\dayahead24\\patchtst\\checkpoints\\candidate4_fold2.pt",
+        "sha256": "95effb6a5e0827a03dd6dacda81313469b988b8f4100e352a142db2a0fc9546a",
+        "parameter_count": 101787,
+        "epochs": 1,
+        "history_hours": 1296,
+        "history_end": "2025-01-23 23:00:00",
+        "fit_seconds": 0.42135329998563975,
+        "training_windows": 937,
+        "maximum_supervised_label": "2025-01-23 23:00:00",
+        "training_mse_logs": [
+          1.401765703773295
+        ]
+      },
+      "reused_existing_saved_CV_fit": true
+    },
+    {
+      "fold": 3,
+      "fit_origin": "2025-02-07 00:00:00",
+      "epochs": 2,
+      "inner": {
+        "inner_fitting_hours": 1464,
+        "inner_fitting_end": "2025-01-30 23:00:00",
+        "inner_tail_origin": "2025-01-31 00:00:00",
+        "inner_tail_end": "2025-02-06 23:00:00",
+        "inner_holdout_hours": 168,
+        "inner_origins": 7,
+        "training_windows": 1105,
+        "training_tail_target_overlap": false,
+        "best_epoch": 2,
+        "best_mae_kwh": 88.06471773573075,
+        "epochs_run": 6,
+        "logs": [
+          {
+            "epoch": 1,
+            "training_mse_standardized": 1.38156952782454,
+            "inner_chronological_mae_kwh": 89.86384136907485
+          },
+          {
+            "epoch": 2,
+            "training_mse_standardized": 1.0716979321311502,
+            "inner_chronological_mae_kwh": 88.06471773573075
+          },
+          {
+            "epoch": 3,
+            "training_mse_standardized": 1.0202159108079936,
+            "inner_chronological_mae_kwh": 91.14115568768592
+          },
+          {
+            "epoch": 4,
+            "training_mse_standardized": 0.9929687216271103,
+            "inner_chronological_mae_kwh": 90.78609033591968
+          },
+          {
+            "epoch": 5,
+            "training_mse_standardized": 0.9614233106509593,
+            "inner_chronological_mae_kwh": 90.65597989898201
+          },
+          {
+            "epoch": 6,
+            "training_mse_standardized": 0.9338058036916396,
+            "inner_chronological_mae_kwh": 93.25620466072118
+          }
+        ],
+        "seconds": 3.0113223999505863
+      },
+      "refit": {
+        "path": "E:\\AI work\\AWS_프로젝트\\output\\optimization_20261013\\forecast\\dayahead24\\patchtst\\checkpoints\\candidate4_fold3.pt",
+        "sha256": "684f7b34e56bad73320c17ecf08fb7db12b7b25895e40bfbf73e95eb95d9dad7",
+        "parameter_count": 101787,
+        "epochs": 2,
+        "history_hours": 1632,
+        "history_end": "2025-02-06 23:00:00",
+        "fit_seconds": 1.1495286000426859,
+        "training_windows": 1273,
+        "maximum_supervised_label": "2025-02-06 23:00:00",
+        "training_mse_logs": [
+          1.3853085232080669,
+          1.103963459558779
+        ]
+      },
+      "reused_existing_saved_CV_fit": true
+    },
+    {
+      "fold": 4,
+      "fit_origin": "2025-02-21 00:00:00",
+      "epochs": 1,
+      "inner": {
+        "inner_fitting_hours": 1800,
+        "inner_fitting_end": "2025-02-13 23:00:00",
+        "inner_tail_origin": "2025-02-14 00:00:00",
+        "inner_tail_end": "2025-02-20 23:00:00",
+        "inner_holdout_hours": 168,
+        "inner_origins": 7,
+        "training_windows": 1441,
+        "training_tail_target_overlap": false,
+        "best_epoch": 1,
+        "best_mae_kwh": 79.50042056125542,
+        "epochs_run": 5,
+        "logs": [
+          {
+            "epoch": 1,
+            "training_mse_standardized": 1.3717685097377388,
+            "inner_chronological_mae_kwh": 79.50042056125542
+          },
+          {
+            "epoch": 2,
+            "training_mse_standardized": 1.11458272424363,
+            "inner_chronological_mae_kwh": 80.44304633660063
+          },
+          {
+            "epoch": 3,
+            "training_mse_standardized": 1.0662002370723165,
+            "inner_chronological_mae_kwh": 80.05160051948977
+          },
+          {
+            "epoch": 4,
+            "training_mse_standardized": 1.038594804895495,
+            "inner_chronological_mae_kwh": 82.8149454181226
+          },
+          {
+            "epoch": 5,
+            "training_mse_standardized": 1.0092822894877977,
+            "inner_chronological_mae_kwh": 81.20127817253653
+          }
+        ],
+        "seconds": 3.1857618000358343
+      },
+      "refit": {
+        "path": "E:\\AI work\\AWS_프로젝트\\output\\optimization_20261013\\forecast\\dayahead24\\patchtst\\checkpoints\\candidate4_fold4.pt",
+        "sha256": "7cc372a083be514620650287406168a1170b69811a53ed1965febdfae36dcb76",
+        "parameter_count": 101787,
+        "epochs": 1,
+        "history_hours": 1968,
+        "history_end": "2025-02-20 23:00:00",
+        "fit_seconds": 0.7175840000854805,
+        "training_windows": 1609,
+        "maximum_supervised_label": "2025-02-20 23:00:00",
+        "training_mse_logs": [
+          1.3467359722883083
+        ]
+      },
+      "reused_existing_saved_CV_fit": true
+    },
+    {
+      "fold": 5,
+      "fit_origin": "2025-03-07 00:00:00",
+      "epochs": 1,
+      "inner": {
+        "inner_fitting_hours": 2136,
+        "inner_fitting_end": "2025-02-27 23:00:00",
+        "inner_tail_origin": "2025-02-28 00:00:00",
+        "inner_tail_end": "2025-03-06 23:00:00",
+        "inner_holdout_hours": 168,
+        "inner_origins": 7,
+        "training_windows": 1777,
+        "training_tail_target_overlap": false,
+        "best_epoch": 1,
+        "best_mae_kwh": 78.27904735772287,
+        "epochs_run": 5,
+        "logs": [
+          {
+            "epoch": 1,
+            "training_mse_standardized": 1.3480556401632178,
+            "inner_chronological_mae_kwh": 78.27904735772287
+          },
+          {
+            "epoch": 2,
+            "training_mse_standardized": 1.1425272579869328,
+            "inner_chronological_mae_kwh": 80.88840602465159
+          },
+          {
+            "epoch": 3,
+            "training_mse_standardized": 1.0968894227945074,
+            "inner_chronological_mae_kwh": 80.93977007389238
+          },
+          {
+            "epoch": 4,
+            "training_mse_standardized": 1.0628879299040384,
+            "inner_chronological_mae_kwh": 80.31392397422164
+          },
+          {
+            "epoch": 5,
+            "training_mse_standardized": 1.029307307590577,
+            "inner_chronological_mae_kwh": 80.0492334828774
+          }
+        ],
+        "seconds": 3.908809900050983
+      },
+      "refit": {
+        "path": "E:\\AI work\\AWS_프로젝트\\output\\optimization_20261013\\forecast\\dayahead24\\patchtst\\checkpoints\\candidate4_fold5.pt",
+        "sha256": "e3b4f4c1f27af69751aaa326096f5e6c196b293986509b0a895a55a9e987e899",
+        "parameter_count": 101787,
+        "epochs": 1,
+        "history_hours": 2304,
+        "history_end": "2025-03-06 23:00:00",
+        "fit_seconds": 0.8479301000479609,
+        "training_windows": 1945,
+        "maximum_supervised_label": "2025-03-06 23:00:00",
+        "training_mse_logs": [
+          1.3442038541587888
+        ]
+      },
+      "reused_existing_saved_CV_fit": true
+    }
+  ]
+}

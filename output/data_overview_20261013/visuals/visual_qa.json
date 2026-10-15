@@ -1,0 +1,199 @@
+{
+  "status": "pass",
+  "figure_count": 10,
+  "formats": [
+    "png",
+    "svg"
+  ],
+  "sources_preserved": [
+    {
+      "path": "E:\\AI work\\AWS_프로젝트\\output\\analysis\\baseline_audit\\complete_hour_module_sum.csv",
+      "unchanged_sha256": "729b149a3e3165dfb339f0386249bfbda0326657f9e722d86da8138db36117de"
+    },
+    {
+      "path": "E:\\AI work\\AWS_프로젝트\\output\\analysis\\hourly_by_equipment.csv",
+      "unchanged_sha256": "8df1c2a3f3cac80c44a9761a0a308e78ca683bd8197d18bc42a3c56d57b8c022"
+    },
+    {
+      "path": "E:\\AI work\\AWS_프로젝트\\output\\analysis\\equipment_summary.csv",
+      "unchanged_sha256": "d73e02a9b3cc30479bcbb3f10647db585f6bc2c4707fd6e7216434d43a6b3bc2"
+    },
+    {
+      "path": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\diagnosis\\uniform_raw_sample.csv.gz",
+      "unchanged_sha256": "97f2d648c4e0e32db400b0e43beedba0b42621cf5b1fa4d88e07f547fad2f3c1"
+    },
+    {
+      "path": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\diagnosis\\sample_summary.json",
+      "unchanged_sha256": "969354bb40e91404fecbc3d293b21b1c2f771f6164eef9530723aa6231d605b2"
+    },
+    {
+      "path": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\data\\hourly_dataset.csv",
+      "unchanged_sha256": "45936a4c060e0d2911b070c3144cb623f2b99379632bd58a845cdc8e21a20024"
+    },
+    {
+      "path": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\data\\daily_dataset.csv",
+      "unchanged_sha256": "c287d614095ac287b81615f10c279435b1a5998b0633074873460e387ce9dcf1"
+    },
+    {
+      "path": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\data\\weekly_dataset.csv",
+      "unchanged_sha256": "c7791630dd2a86f3dd127b9788e22fd57d3e886ccf4ac890eac6d8788e4e0337"
+    },
+    {
+      "path": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\data\\monthly_dataset.csv",
+      "unchanged_sha256": "a56580b7e62e74efcd8fb680da1c896f7bfbdf07bd6f045457e8e08fef1ef37e"
+    }
+  ],
+  "figures": [
+    {
+      "key": "hourly_energy_rate",
+      "png_dimensions": [
+        2443,
+        1361
+      ],
+      "png_sha256": "5f81f14f34b19535b6e9f3750335b32521f3cad6e19a3d2318cc315ac9687eaa",
+      "svg_sha256": "43939c8b2e154d740f6a90514661a0d28d4282f35c090ba5ecac0b02de906c9d",
+      "PNG_decodes": true,
+      "SVG_parses": true,
+      "SVG_external_image_dependencies": false,
+      "replacement_characters": 0
+    },
+    {
+      "key": "daily_energy_rate",
+      "png_dimensions": [
+        2441,
+        1361
+      ],
+      "png_sha256": "a64b6f6a868e52fa6d6eca3d0c53dbdc6c7c8d22d769ecd2200797b458665012",
+      "svg_sha256": "b85a11c75334ae030743ed48628938a0649d7b7ee29f1666cca112f5896a54dc",
+      "PNG_decodes": true,
+      "SVG_parses": true,
+      "SVG_external_image_dependencies": false,
+      "replacement_characters": 0
+    },
+    {
+      "key": "weekly_energy_rate",
+      "png_dimensions": [
+        2441,
+        1361
+      ],
+      "png_sha256": "44a0a809e00abef950260ba3bfafbf143e0f4d5399afb34bd85c3a75c093926e",
+      "svg_sha256": "37ab0ec7d0c40ca998b4fa24d8ee91de5dc67ae733ab77115d4bc9b02136bf91",
+      "PNG_decodes": true,
+      "SVG_parses": true,
+      "SVG_external_image_dependencies": false,
+      "replacement_characters": 0
+    },
+    {
+      "key": "monthly_energy_rate",
+      "png_dimensions": [
+        2440,
+        1361
+      ],
+      "png_sha256": "1b27cfc101e3a0d13f2462637d06d4f859a94c9c05dfe0c15d5c527bba08cfdf",
+      "svg_sha256": "aa189671e926dfa0d8a176471b18fc7b558fd1a65139194c534403e4f9a17ce6",
+      "PNG_decodes": true,
+      "SVG_parses": true,
+      "SVG_external_image_dependencies": false,
+      "replacement_characters": 0
+    },
+    {
+      "key": "hourly_72h",
+      "png_dimensions": [
+        2443,
+        1193
+      ],
+      "png_sha256": "712f38e12d8e9f9d761a8250dd2b864df844a2ff991aecff48e9bba4fac7dcc6",
+      "svg_sha256": "ffaae982db366b09fa5a921d6d68737966be872df87a9a0e45a2c002869ce9c3",
+      "PNG_decodes": true,
+      "SVG_parses": true,
+      "SVG_external_image_dependencies": false,
+      "replacement_characters": 0
+    },
+    {
+      "key": "weekday_hour_pattern",
+      "png_dimensions": [
+        2449,
+        1286
+      ],
+      "png_sha256": "5a440d8150bf8361aff84e72c7b1554ce4a9e8d13c8e37cfd8d3efe2187335a2",
+      "svg_sha256": "9043e4c44f53fd17f41ddc23f44ff8774f4827b684c29eedb655208f69333242",
+      "PNG_decodes": true,
+      "SVG_parses": true,
+      "SVG_external_image_dependencies": false,
+      "replacement_characters": 0
+    },
+    {
+      "key": "module_energy_distribution",
+      "png_dimensions": [
+        2350,
+        1455
+      ],
+      "png_sha256": "57f1161a95d8f8ea355c08a7a37b8cb924c1e62067c2ee4e69d5a19c4cd46017",
+      "svg_sha256": "67223f11fac472b70860dd0cf020f343da739049264874a7df3729d5f47d61bc",
+      "PNG_decodes": true,
+      "SVG_parses": true,
+      "SVG_external_image_dependencies": false,
+      "replacement_characters": 0
+    },
+    {
+      "key": "module_energy_comparison",
+      "png_dimensions": [
+        2635,
+        1471
+      ],
+      "png_sha256": "16c19fbd5b18df2d6acc55ada044e06a92f871deab9af092b50f6ed97e0bfb66",
+      "svg_sha256": "bfec595c94809e75f22631a5dd47669cf82670811abd80d265d98ec290529e3c",
+      "PNG_decodes": true,
+      "SVG_parses": true,
+      "SVG_external_image_dependencies": false,
+      "replacement_characters": 0
+    },
+    {
+      "key": "resolution_variability",
+      "png_dimensions": [
+        2447,
+        1100
+      ],
+      "png_sha256": "5ffc422576e748d6b6f5b2de8f70c46c80210aeccfbe5a7223d347fb9df52f14",
+      "svg_sha256": "6e1e8cbdf73bc22dfe660f8d5e16767f1f9257447ae6fc828c305cd8ca0386d5",
+      "PNG_decodes": true,
+      "SVG_parses": true,
+      "SVG_external_image_dependencies": false,
+      "replacement_characters": 0
+    },
+    {
+      "key": "sensor_distribution_correlation",
+      "png_dimensions": [
+        2813,
+        1654
+      ],
+      "png_sha256": "1cb79f0e3907a823a325a957862ce7f45b5f577a3934a0a86f600c9529e9ce13",
+      "svg_sha256": "85ec27213e63f2430ce6c5ed1558a4f6a42dcef34c57e1ed6d40871f97e89044",
+      "PNG_decodes": true,
+      "SVG_parses": true,
+      "SVG_external_image_dependencies": false,
+      "replacement_characters": 0
+    }
+  ],
+  "visual_inspection": {
+    "inspected_PNG_keys": [
+      "hourly_energy_rate",
+      "hourly_72h",
+      "daily_energy_rate",
+      "weekly_energy_rate",
+      "monthly_energy_rate",
+      "weekday_hour_pattern",
+      "module_energy_distribution",
+      "module_energy_comparison",
+      "resolution_variability",
+      "sensor_distribution_correlation"
+    ],
+    "Korean_font_normal": true,
+    "titles_labels_legends_not_clipped": true,
+    "partial_week_labels_corrected_and_rechecked": true,
+    "partial_month_hollow_marker_and_hatching": true,
+    "zero_axes_and_expanded_axes_explicit": true,
+    "sensor_log_hist_and_observed_correlation_only": true
+  },
+  "scope": "Descriptive EDA only; no model training and no May-label read"
+}

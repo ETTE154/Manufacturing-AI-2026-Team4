@@ -1,0 +1,40 @@
+{
+  "source_data_copies_created": 2,
+  "duplicate_copy_skips": 0,
+  "download_failures": 0,
+  "verified_source_data_copies": 2,
+  "items": [
+    {
+      "file_id": "93652aeb-cad1-5934-be2e-6a0854fb9ad2",
+      "workspace_id": "ai-work-e",
+      "project_id": null,
+      "project_registration_status": "Existing AWS project folder is not listed in the parent workspace registry; registry unchanged",
+      "project_folder": "E:/AI work/AWS_프로젝트",
+      "source_key": "may-dataset/rtu_ground_truth_may.csv",
+      "original_path": "E:\\AI work\\AWS_프로젝트\\may-dataset\\rtu_ground_truth_may.csv",
+      "copy_path": "E:\\AI work\\AWS_프로젝트\\output\\optimization_20261013\\source_audit\\downloads\\may-dataset\\rtu_ground_truth_may.csv",
+      "source_url": "https://sahmyook-project.s3.ap-northeast-2.amazonaws.com/may-dataset/rtu_ground_truth_may.csv",
+      "bytes": 46000,
+      "sha256": "a0e44dc6481fba7d78a2c5b60f0f5e0c2bcc69a8f732c9229bbbdaa38dee04bf",
+      "copy_status": "downloaded",
+      "verification_status": "complete_bytes_and_sha256_identical",
+      "ai_generated": "unknown"
+    },
+    {
+      "file_id": "c7faecdb-ead8-5559-812c-d226ae909580",
+      "workspace_id": "ai-work-e",
+      "project_id": null,
+      "project_registration_status": "Existing AWS project folder is not listed in the parent workspace registry; registry unchanged",
+      "project_folder": "E:/AI work/AWS_프로젝트",
+      "source_key": "traing-dataset/rtu_data_full.csv",
+      "original_path": "E:\\AI work\\AWS_프로젝트\\traing-dataset\\rtu_data_full.csv",
+      "copy_path": "E:\\AI work\\AWS_프로젝트\\output\\optimization_20261013\\source_audit\\downloads\\traing-dataset\\rtu_data_full.csv",
+      "source_url": "https://sahmyook-project.s3.ap-northeast-2.amazonaws.com/traing-dataset/rtu_data_full.csv",
+      "bytes": 4909245995,
+      "sha256": "3b4e1ff2125ca64612837530a8612fa7f044f398e508e00026097fc788d0dce5",
+      "copy_status": "downloaded",
+      "verification_status": "complete_bytes_and_sha256_identical",
+      "ai_generated": "unknown"
+    }
+  ]
+}

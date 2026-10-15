@@ -1,0 +1,634 @@
+{
+  "status": "pass",
+  "audited_at_utc": "2026-10-12T17:52:15.259664+00:00",
+  "scope": "Read-only final independence audit; no retraining, added model, threshold adjustment or existing-file mutation. Only this independent_audit.json is newly written.",
+  "source_integrity": {
+    "official_byte_identity": true,
+    "extraction_uses_exact_source_audit": true,
+    "source_stat_checks": [
+      {
+        "source_key": "may-dataset/rtu_ground_truth_may.csv",
+        "recorded_sha256": "a0e44dc6481fba7d78a2c5b60f0f5e0c2bcc69a8f732c9229bbbdaa38dee04bf",
+        "official_sha256": "a0e44dc6481fba7d78a2c5b60f0f5e0c2bcc69a8f732c9229bbbdaa38dee04bf",
+        "bytes_equal": true,
+        "mtime_unchanged_since_sha": true
+      },
+      {
+        "source_key": "traing-dataset/rtu_data_full.csv",
+        "recorded_sha256": "3b4e1ff2125ca64612837530a8612fa7f044f398e508e00026097fc788d0dce5",
+        "official_sha256": "3b4e1ff2125ca64612837530a8612fa7f044f398e508e00026097fc788d0dce5",
+        "bytes_equal": true,
+        "mtime_unchanged_since_sha": true
+      }
+    ],
+    "legacy_native_hash_checks": [
+      {
+        "model": "xgb_rule_distillation",
+        "file": "xgb_rule_distillation.json",
+        "unchanged_sha256": true
+      },
+      {
+        "model": "xgb_rule_sensor_excluded_transfer",
+        "file": "xgb_rule_sensor_excluded_transfer.json",
+        "unchanged_sha256": true
+      },
+      {
+        "model": "ae_unsupervised_all_training",
+        "file": "ae_unsupervised_all_training.pt",
+        "unchanged_sha256": true
+      },
+      {
+        "model": "ae_unsupervised_all_training",
+        "file": "ae_unsupervised_all_training_scaler.pkl",
+        "unchanged_sha256": true
+      },
+      {
+        "model": "ae_weak_normal_proxy",
+        "file": "ae_weak_normal_proxy.pt",
+        "unchanged_sha256": true
+      },
+      {
+        "model": "ae_weak_normal_proxy",
+        "file": "ae_weak_normal_proxy_scaler.pkl",
+        "unchanged_sha256": true
+      }
+    ]
+  },
+  "synthetic_partition": {
+    "base_windows": 312,
+    "all_visual_plus_base_windows": 318,
+    "base_overlap_pairs": [],
+    "base_windows_by_split": {
+      "test": 78,
+      "train": 156,
+      "validation": 78
+    },
+    "events_by_split": {
+      "test": 312,
+      "train": 624,
+      "validation": 312
+    },
+    "seeds_unique": true,
+    "no_cross_month_boundary": true,
+    "events_total": 1248,
+    "synthetic_rows": 449280,
+    "reuse_policy": "Four corruption templates share the same base only within a split; this intentional dependence does not create cross-split leakage. Visual test windows are illustrations and are excluded from synthesis/training."
+  },
+  "paired_teacher": {
+    "all449280_source_keys_and_module_and_times_match": true,
+    "mask_false_exact_sensor_delta_max": 0.0,
+    "every_mask_true_row_has_actual_sensor_change": true,
+    "only_declared_single_sensor_perturbed": true,
+    "teacher_definition": "Exact unmodified source measurements from weak-rule-normal bases, not certified physically healthy targets",
+    "training_only_denoising_scaler_median_max_absdiff": 0.0,
+    "training_only_denoising_scaler_IQR_max_absdiff": 0.0,
+    "train_only_injection_IQR_verified": true,
+    "denoising_training_rows": 224640,
+    "denoising_source_keys": "window_id + localtime, independently also confirmed module and datetime"
+  },
+  "split_and_selection_code_review": {
+    "new_IF_RobustZ_training": "Dec-Feb original weak-normal only",
+    "synthetic_XGB_training": "Dec-Feb weak-normal negatives + known injected positives only",
+    "synthetic_XGB_checkpoint": "March original weak-normal + March synthetic known-mask aucpr early stopping",
+    "denoising_AE_checkpoint": "March ORIGINAL weak-normal reconstruction MSE only",
+    "new_model_thresholds": "March ORIGINAL weak-normal q99.5, float64 nextafter toward+inf; no synthetic/test threshold selection",
+    "legacy_thresholds": "Existing March locks retained exactly",
+    "April_labels_in_fit_or_checkpoint_or_threshold_choice": false,
+    "limits": "April already seen in preceding project EDA; family extension is not a pristine prospective test. No real fault labels are created by synthesis."
+  },
+  "float64_alarm_checks": [
+    {
+      "model": "xgb_rule_distillation",
+      "dataset": "original_test_scores.csv.gz",
+      "rows": 36192,
+      "score_dtype": "float64",
+      "alarm_rows": 219,
+      "mismatches": 0
+    },
+    {
+      "model": "xgb_rule_distillation",
+      "dataset": "continuous_window_scores.csv.gz",
+      "rows": 114480,
+      "score_dtype": "float64",
+      "alarm_rows": 484,
+      "mismatches": 0
+    },
+    {
+      "model": "xgb_rule_distillation",
+      "dataset": "full_candidate_scores.csv.gz",
+      "rows": 63963,
+      "score_dtype": "float64",
+      "alarm_rows": 63963,
+      "mismatches": 0
+    },
+    {
+      "model": "xgb_rule_distillation",
+      "dataset": "synthetic_test_scores.csv.gz",
+      "rows": 112320,
+      "score_dtype": "float64",
+      "alarm_rows": 673,
+      "mismatches": 0
+    },
+    {
+      "model": "xgb_rule_sensor_excluded_transfer",
+      "dataset": "original_test_scores.csv.gz",
+      "rows": 36192,
+      "score_dtype": "float64",
+      "alarm_rows": 125,
+      "mismatches": 0
+    },
+    {
+      "model": "xgb_rule_sensor_excluded_transfer",
+      "dataset": "continuous_window_scores.csv.gz",
+      "rows": 114480,
+      "score_dtype": "float64",
+      "alarm_rows": 464,
+      "mismatches": 0
+    },
+    {
+      "model": "xgb_rule_sensor_excluded_transfer",
+      "dataset": "full_candidate_scores.csv.gz",
+      "rows": 63963,
+      "score_dtype": "float64",
+      "alarm_rows": 266,
+      "mismatches": 0
+    },
+    {
+      "model": "xgb_rule_sensor_excluded_transfer",
+      "dataset": "synthetic_test_scores.csv.gz",
+      "rows": 112320,
+      "score_dtype": "float64",
+      "alarm_rows": 443,
+      "mismatches": 0
+    },
+    {
+      "model": "ae_unsupervised_all_training",
+      "dataset": "original_test_scores.csv.gz",
+      "rows": 36192,
+      "score_dtype": "float64",
+      "alarm_rows": 219,
+      "mismatches": 0
+    },
+    {
+      "model": "ae_unsupervised_all_training",
+      "dataset": "continuous_window_scores.csv.gz",
+      "rows": 114480,
+      "score_dtype": "float64",
+      "alarm_rows": 532,
+      "mismatches": 0
+    },
+    {
+      "model": "ae_unsupervised_all_training",
+      "dataset": "full_candidate_scores.csv.gz",
+      "rows": 63963,
+      "score_dtype": "float64",
+      "alarm_rows": 55983,
+      "mismatches": 0
+    },
+    {
+      "model": "ae_unsupervised_all_training",
+      "dataset": "synthetic_test_scores.csv.gz",
+      "rows": 112320,
+      "score_dtype": "float64",
+      "alarm_rows": 1672,
+      "mismatches": 0
+    },
+    {
+      "model": "ae_weak_normal_proxy",
+      "dataset": "original_test_scores.csv.gz",
+      "rows": 36192,
+      "score_dtype": "float64",
+      "alarm_rows": 243,
+      "mismatches": 0
+    },
+    {
+      "model": "ae_weak_normal_proxy",
+      "dataset": "continuous_window_scores.csv.gz",
+      "rows": 114480,
+      "score_dtype": "float64",
+      "alarm_rows": 654,
+      "mismatches": 0
+    },
+    {
+      "model": "ae_weak_normal_proxy",
+      "dataset": "full_candidate_scores.csv.gz",
+      "rows": 63963,
+      "score_dtype": "float64",
+      "alarm_rows": 63947,
+      "mismatches": 0
+    },
+    {
+      "model": "ae_weak_normal_proxy",
+      "dataset": "synthetic_test_scores.csv.gz",
+      "rows": 112320,
+      "score_dtype": "float64",
+      "alarm_rows": 1646,
+      "mismatches": 0
+    },
+    {
+      "model": "isolation_forest",
+      "dataset": "original_test_scores.csv.gz",
+      "rows": 36192,
+      "score_dtype": "float64",
+      "alarm_rows": 182,
+      "mismatches": 0
+    },
+    {
+      "model": "isolation_forest",
+      "dataset": "continuous_window_scores.csv.gz",
+      "rows": 114480,
+      "score_dtype": "float64",
+      "alarm_rows": 525,
+      "mismatches": 0
+    },
+    {
+      "model": "isolation_forest",
+      "dataset": "full_candidate_scores.csv.gz",
+      "rows": 63963,
+      "score_dtype": "float64",
+      "alarm_rows": 14432,
+      "mismatches": 0
+    },
+    {
+      "model": "isolation_forest",
+      "dataset": "synthetic_test_scores.csv.gz",
+      "rows": 112320,
+      "score_dtype": "float64",
+      "alarm_rows": 567,
+      "mismatches": 0
+    },
+    {
+      "model": "robust_z",
+      "dataset": "original_test_scores.csv.gz",
+      "rows": 36192,
+      "score_dtype": "float64",
+      "alarm_rows": 264,
+      "mismatches": 0
+    },
+    {
+      "model": "robust_z",
+      "dataset": "continuous_window_scores.csv.gz",
+      "rows": 114480,
+      "score_dtype": "float64",
+      "alarm_rows": 620,
+      "mismatches": 0
+    },
+    {
+      "model": "robust_z",
+      "dataset": "full_candidate_scores.csv.gz",
+      "rows": 63963,
+      "score_dtype": "float64",
+      "alarm_rows": 61149,
+      "mismatches": 0
+    },
+    {
+      "model": "robust_z",
+      "dataset": "synthetic_test_scores.csv.gz",
+      "rows": 112320,
+      "score_dtype": "float64",
+      "alarm_rows": 1558,
+      "mismatches": 0
+    },
+    {
+      "model": "xgb_synthetic_augmented",
+      "dataset": "original_test_scores.csv.gz",
+      "rows": 36192,
+      "score_dtype": "float64",
+      "alarm_rows": 230,
+      "mismatches": 0
+    },
+    {
+      "model": "xgb_synthetic_augmented",
+      "dataset": "continuous_window_scores.csv.gz",
+      "rows": 114480,
+      "score_dtype": "float64",
+      "alarm_rows": 581,
+      "mismatches": 0
+    },
+    {
+      "model": "xgb_synthetic_augmented",
+      "dataset": "full_candidate_scores.csv.gz",
+      "rows": 63963,
+      "score_dtype": "float64",
+      "alarm_rows": 50948,
+      "mismatches": 0
+    },
+    {
+      "model": "xgb_synthetic_augmented",
+      "dataset": "synthetic_test_scores.csv.gz",
+      "rows": 112320,
+      "score_dtype": "float64",
+      "alarm_rows": 1679,
+      "mismatches": 0
+    },
+    {
+      "model": "ae_synthetic_denoising",
+      "dataset": "original_test_scores.csv.gz",
+      "rows": 36192,
+      "score_dtype": "float64",
+      "alarm_rows": 248,
+      "mismatches": 0
+    },
+    {
+      "model": "ae_synthetic_denoising",
+      "dataset": "continuous_window_scores.csv.gz",
+      "rows": 114480,
+      "score_dtype": "float64",
+      "alarm_rows": 548,
+      "mismatches": 0
+    },
+    {
+      "model": "ae_synthetic_denoising",
+      "dataset": "full_candidate_scores.csv.gz",
+      "rows": 63963,
+      "score_dtype": "float64",
+      "alarm_rows": 63963,
+      "mismatches": 0
+    },
+    {
+      "model": "ae_synthetic_denoising",
+      "dataset": "synthetic_test_scores.csv.gz",
+      "rows": 112320,
+      "score_dtype": "float64",
+      "alarm_rows": 1775,
+      "mismatches": 0
+    }
+  ],
+  "point_metric_recomputations": [
+    {
+      "model": "xgb_rule_distillation",
+      "dataset": "original_test_scores.csv.gz",
+      "metrics_max_absdiff": 0.0
+    },
+    {
+      "model": "xgb_rule_distillation",
+      "dataset": "synthetic_test_scores.csv.gz",
+      "metrics_max_absdiff": 0.0
+    },
+    {
+      "model": "xgb_rule_sensor_excluded_transfer",
+      "dataset": "original_test_scores.csv.gz",
+      "metrics_max_absdiff": 0.0
+    },
+    {
+      "model": "xgb_rule_sensor_excluded_transfer",
+      "dataset": "synthetic_test_scores.csv.gz",
+      "metrics_max_absdiff": 0.0
+    },
+    {
+      "model": "ae_unsupervised_all_training",
+      "dataset": "original_test_scores.csv.gz",
+      "metrics_max_absdiff": 0.0
+    },
+    {
+      "model": "ae_unsupervised_all_training",
+      "dataset": "synthetic_test_scores.csv.gz",
+      "metrics_max_absdiff": 0.0
+    },
+    {
+      "model": "ae_weak_normal_proxy",
+      "dataset": "original_test_scores.csv.gz",
+      "metrics_max_absdiff": 0.0
+    },
+    {
+      "model": "ae_weak_normal_proxy",
+      "dataset": "synthetic_test_scores.csv.gz",
+      "metrics_max_absdiff": 0.0
+    },
+    {
+      "model": "isolation_forest",
+      "dataset": "original_test_scores.csv.gz",
+      "metrics_max_absdiff": 0.0
+    },
+    {
+      "model": "isolation_forest",
+      "dataset": "synthetic_test_scores.csv.gz",
+      "metrics_max_absdiff": 0.0
+    },
+    {
+      "model": "robust_z",
+      "dataset": "original_test_scores.csv.gz",
+      "metrics_max_absdiff": 0.0
+    },
+    {
+      "model": "robust_z",
+      "dataset": "synthetic_test_scores.csv.gz",
+      "metrics_max_absdiff": 0.0
+    },
+    {
+      "model": "xgb_synthetic_augmented",
+      "dataset": "original_test_scores.csv.gz",
+      "metrics_max_absdiff": 0.0
+    },
+    {
+      "model": "xgb_synthetic_augmented",
+      "dataset": "synthetic_test_scores.csv.gz",
+      "metrics_max_absdiff": 0.0
+    },
+    {
+      "model": "ae_synthetic_denoising",
+      "dataset": "original_test_scores.csv.gz",
+      "metrics_max_absdiff": 0.0
+    },
+    {
+      "model": "ae_synthetic_denoising",
+      "dataset": "synthetic_test_scores.csv.gz",
+      "metrics_max_absdiff": 0.0
+    }
+  ],
+  "event_recomputations": [
+    {
+      "model": "xgb_rule_distillation",
+      "events": 312,
+      "event_any_hit_fraction": 0.10897435897435898,
+      "paired_clean_any_alarm_fraction": 0.05448717948717949,
+      "macro_injected_point_recall": 0.0531613777762314,
+      "detected_events_delay_median_seconds": 12.5
+    },
+    {
+      "model": "xgb_rule_sensor_excluded_transfer",
+      "events": 312,
+      "event_any_hit_fraction": 0.041666666666666664,
+      "paired_clean_any_alarm_fraction": 0.03205128205128205,
+      "macro_injected_point_recall": 0.005045042561235453,
+      "detected_events_delay_median_seconds": 50.0
+    },
+    {
+      "model": "ae_unsupervised_all_training",
+      "events": 312,
+      "event_any_hit_fraction": 0.5512820512820513,
+      "paired_clean_any_alarm_fraction": 0.035256410256410256,
+      "macro_injected_point_recall": 0.3498396725650194,
+      "detected_events_delay_median_seconds": 0.0
+    },
+    {
+      "model": "ae_weak_normal_proxy",
+      "events": 312,
+      "event_any_hit_fraction": 0.5352564102564102,
+      "paired_clean_any_alarm_fraction": 0.05448717948717949,
+      "macro_injected_point_recall": 0.35289863276479894,
+      "detected_events_delay_median_seconds": 0.0
+    },
+    {
+      "model": "isolation_forest",
+      "events": 312,
+      "event_any_hit_fraction": 0.10897435897435898,
+      "paired_clean_any_alarm_fraction": 0.038461538461538464,
+      "macro_injected_point_recall": 0.006083279095913962,
+      "detected_events_delay_median_seconds": 40.0
+    },
+    {
+      "model": "robust_z",
+      "events": 312,
+      "event_any_hit_fraction": 0.4583333333333333,
+      "paired_clean_any_alarm_fraction": 0.07371794871794872,
+      "macro_injected_point_recall": 0.3020607581135867,
+      "detected_events_delay_median_seconds": 0.0
+    },
+    {
+      "model": "xgb_synthetic_augmented",
+      "events": 312,
+      "event_any_hit_fraction": 0.5993589743589743,
+      "paired_clean_any_alarm_fraction": 0.04807692307692308,
+      "macro_injected_point_recall": 0.3377028978530842,
+      "detected_events_delay_median_seconds": 5.0
+    },
+    {
+      "model": "ae_synthetic_denoising",
+      "events": 312,
+      "event_any_hit_fraction": 0.5769230769230769,
+      "paired_clean_any_alarm_fraction": 0.05128205128205128,
+      "macro_injected_point_recall": 0.37439092027027243,
+      "detected_events_delay_median_seconds": 0.0
+    }
+  ],
+  "metric_interpretation": {
+    "point_metrics": "Confusion/AP/AUROC over exact per-observation injection mask. Synthetic test positives3978/112320 are constructed prevalence; precision is not an industrial deployment estimate.",
+    "event_metrics": "Detected_any means at least one alarm within known injected rows, not automatic point adjustment. Paired unmodified controls use exactly the same rows/mask. Longer events have more incidental-hit opportunity.",
+    "delay": "Time from first injected observation to first in-mask alarm, only detected events; missed events remain in event recall. Reported delays are conditional, not a mean over all faults.",
+    "illustrations": "Candidate/normal examples and25s trailing-median suppression are post-hoc illustrations, not selection or independent accuracy evaluation."
+  },
+  "forecast_fit_count_reporting": {
+    "issue": "Original compare_and_plot fit_count falls back to Chronos calibration/context candidate count;27 candidates are not27 weight training runs. Baseline statistical candidates are likewise not learned-weight fits.",
+    "recommended_labels": "Chronos pretrained weight fit count0, calibration candidate count27, inference origins/paths separately. Neural outerCV refit count is35/day or7/long; nested inner fits andtest/final refits are separate counts.",
+    "parent_notified": true,
+    "code_contains_corrected_count_field": true,
+    "issue_status": "resolved",
+    "resolved_at_utc": "2026-10-12T17:57:59.706078+00:00",
+    "resolution": "Chronos frozen pretrained weight training count is explicitly0, and27 calibration/context candidates have a separate field. Other model fit counts and validation refit counts are null rather than estimated from trials; exact native logs are referenced. No exact fit_count key remains anywhere in the final comparison JSON.",
+    "verified_final_comparison_cards": [
+      {
+        "scenario": "dayahead24",
+        "model": "arima",
+        "trained_model_fit_count": null,
+        "validation_refit_count": null,
+        "trials_count": 13,
+        "calibration_candidates": null
+      },
+      {
+        "scenario": "dayahead24",
+        "model": "xgboost",
+        "trained_model_fit_count": null,
+        "validation_refit_count": null,
+        "trials_count": 31,
+        "calibration_candidates": null
+      },
+      {
+        "scenario": "dayahead24",
+        "model": "patchtst",
+        "trained_model_fit_count": null,
+        "validation_refit_count": null,
+        "trials_count": 7,
+        "calibration_candidates": null
+      },
+      {
+        "scenario": "dayahead24",
+        "model": "itransformer",
+        "trained_model_fit_count": null,
+        "validation_refit_count": null,
+        "trials_count": 7,
+        "calibration_candidates": null
+      },
+      {
+        "scenario": "dayahead24",
+        "model": "chronos2",
+        "trained_model_fit_count": 0,
+        "validation_refit_count": null,
+        "trials_count": 27,
+        "calibration_candidates": 27
+      },
+      {
+        "scenario": "dayahead24",
+        "model": "baseline",
+        "trained_model_fit_count": null,
+        "validation_refit_count": null,
+        "trials_count": 17,
+        "calibration_candidates": null
+      },
+      {
+        "scenario": "long745",
+        "model": "arima",
+        "trained_model_fit_count": null,
+        "validation_refit_count": null,
+        "trials_count": 13,
+        "calibration_candidates": null
+      },
+      {
+        "scenario": "long745",
+        "model": "xgboost",
+        "trained_model_fit_count": null,
+        "validation_refit_count": null,
+        "trials_count": 31,
+        "calibration_candidates": null
+      },
+      {
+        "scenario": "long745",
+        "model": "patchtst",
+        "trained_model_fit_count": null,
+        "validation_refit_count": null,
+        "trials_count": 7,
+        "calibration_candidates": null
+      },
+      {
+        "scenario": "long745",
+        "model": "itransformer",
+        "trained_model_fit_count": null,
+        "validation_refit_count": null,
+        "trials_count": 7,
+        "calibration_candidates": null
+      },
+      {
+        "scenario": "long745",
+        "model": "chronos2",
+        "trained_model_fit_count": 0,
+        "validation_refit_count": null,
+        "trials_count": 27,
+        "calibration_candidates": 27
+      },
+      {
+        "scenario": "long745",
+        "model": "baseline",
+        "trained_model_fit_count": null,
+        "validation_refit_count": null,
+        "trials_count": 17,
+        "calibration_candidates": null
+      }
+    ],
+    "final_comparison_sha256": "1da3a39fa8b0a0d9ad6397b6f4da3f125b811584f811b928881a08299634d229"
+  },
+  "source_code_sha256": {
+    "anomaly\\anomaly_study.py": "64510cf45010e5cd64530cf5892151c214729fdf1a4013b9fdab7a1f9d032744",
+    "anomaly\\add_denoising_ae.py": "3813e9556f6dedfb99c76e031e8bb8cf42d443b6427d73560aadf2bd2a0d4568",
+    "forecast\\compare_and_plot.py": "a119fadd569dcca5b23be1c737b8c9196ac69ff70a3191e439a1e14f5e21f3a5"
+  },
+  "checks_summary": {
+    "models": 8,
+    "stored_alarm_groups": 32,
+    "point_metric_groups": 16,
+    "event_metric_models": 8,
+    "original_raw_CSV_reread": false,
+    "all_numeric_checks_passed": true,
+    "fit_count_reporting_resolved": true
+  },
+  "updated_at_utc": "2026-10-12T17:57:59.706078+00:00"
+}

@@ -1,0 +1,33 @@
+{
+  "status": "pass",
+  "table_shape": [
+    3600,
+    443
+  ],
+  "finite": true,
+  "index_continuous_unique": true,
+  "catalog_columns_match": true,
+  "existing_derived_statistics_max_absdiff": 0.0,
+  "counter_delta_exact_match": true,
+  "correlations_checked": 5304,
+  "correlation_max_absdiff": 0.0,
+  "April_or_May_feature_selection_rejected": true,
+  "selector_counts": [
+    0,
+    2,
+    0,
+    1,
+    0,
+    0
+  ],
+  "block_shuffle_recomputed_empirical_p": 0.5920398009950248,
+  "analysis_physical_correlations_pre_April_only": true,
+  "PNG_visual_QA_count": 7,
+  "PNG_SVG_files_present": 14,
+  "figure_font_missing_issue": "resolved using fallback font and ASCII log exponents",
+  "feature_sha256": "1ad0a14f29f7ffad521918817315c95889f82adef7335709ce386fd057b1ba9b",
+  "raw_CSV_full_scans": 1,
+  "raw_CSV_reread_in_this_verification": false,
+  "availability_limit": "Bucket completion assumed; unknown additional telemetry latency must be allowed operationally",
+  "selection_limit": "April/May seen in prior project EDA; this is controlled post-EDA revision"
+}

@@ -1,0 +1,225 @@
+{
+  "status": "passed",
+  "data_kind": "recorded_original",
+  "confirmed_faults": false,
+  "source_sha256_from_completed_fullscan": "3b4e1ff2125ca64612837530a8612fa7f044f398e508e00026097fc788d0dce5",
+  "source": "E:\\AI work\\AWS_프로젝트\\traing-dataset\\rtu_data_full.csv",
+  "window_definition": "inclusive peak-3minutes through peak+3minutes;73five-second timestamps",
+  "frozen_scoring": true,
+  "extra_training_epochs": 0,
+  "class_probabilities_are_fault_probabilities": false,
+  "figures_per_event": [
+    "sensors_3panel",
+    "six_normalized_rules",
+    "normalized_autoencoder",
+    "normalized_isolation_forest"
+  ],
+  "format_per_figure": [
+    "png",
+    "svg"
+  ],
+  "events": [
+    {
+      "id": "power_factor_drop_0061",
+      "type": "power_factor_drop",
+      "module_id": "5",
+      "equipment": "5(좌측분전반)",
+      "source_kind": "recorded",
+      "status": "unconfirmed_candidate",
+      "peak_time": "2025-02-26T06:47:05",
+      "event_start": "2025-02-26T06:47:00",
+      "event_end": "2025-02-26T06:47:10",
+      "window_start_inclusive": "2025-02-26T06:44:05",
+      "window_end_inclusive": "2025-02-26T06:50:05",
+      "original_rows_scored_all_models": 73,
+      "saved_peak_scores_reproduced": true,
+      "weak_candidate": true,
+      "figures": {
+        "sensors": {
+          "png": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\power_factor_drop_0061_sensors.png",
+          "svg": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\power_factor_drop_0061_sensors.svg"
+        },
+        "rules": {
+          "png": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\power_factor_drop_0061_rules.png",
+          "svg": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\power_factor_drop_0061_rules.svg"
+        },
+        "autoencoder": {
+          "png": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\power_factor_drop_0061_ae.png",
+          "svg": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\power_factor_drop_0061_ae.svg"
+        },
+        "isolation_forest": {
+          "png": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\power_factor_drop_0061_iforest.png",
+          "svg": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\power_factor_drop_0061_iforest.svg"
+        }
+      },
+      "scores_csv": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\power_factor_drop_0061_scores.csv",
+      "peak_scores": {
+        "rules_ratio": {
+          "load_imbalance": 0.0,
+          "reactive_power_surge": 0.2721186455745939,
+          "power_factor_drop": 1.031009968081829,
+          "abnormal_pattern": 0.7464747244141359,
+          "night_operation": 0.0,
+          "current_only_increase": 0.0
+        },
+        "ae_ratio": 0.05106537185264471,
+        "iforest_ratio": 0.8306272788833647
+      }
+    },
+    {
+      "id": "abnormal_pattern_0091",
+      "type": "abnormal_pattern",
+      "module_id": "15",
+      "equipment": "15(예비건조기)",
+      "source_kind": "recorded",
+      "status": "unconfirmed_candidate",
+      "peak_time": "2025-02-28T04:38:30",
+      "event_start": "2025-02-28T04:38:20",
+      "event_end": "2025-02-28T04:38:30",
+      "window_start_inclusive": "2025-02-28T04:35:30",
+      "window_end_inclusive": "2025-02-28T04:41:30",
+      "original_rows_scored_all_models": 73,
+      "saved_peak_scores_reproduced": true,
+      "weak_candidate": false,
+      "figures": {
+        "sensors": {
+          "png": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0091_sensors.png",
+          "svg": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0091_sensors.svg"
+        },
+        "rules": {
+          "png": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0091_rules.png",
+          "svg": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0091_rules.svg"
+        },
+        "autoencoder": {
+          "png": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0091_ae.png",
+          "svg": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0091_ae.svg"
+        },
+        "isolation_forest": {
+          "png": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0091_iforest.png",
+          "svg": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0091_iforest.svg"
+        }
+      },
+      "scores_csv": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0091_scores.csv",
+      "peak_scores": {
+        "rules_ratio": {
+          "load_imbalance": 0.29875760418773245,
+          "reactive_power_surge": 1.2972318330907153,
+          "power_factor_drop": 0.9107221823085239,
+          "abnormal_pattern": 0.8625388955366764,
+          "night_operation": 1.0572777434659113,
+          "current_only_increase": 0.45474559808800913
+        },
+        "ae_ratio": 2.617583496503652,
+        "iforest_ratio": 1.148394509724861
+      }
+    },
+    {
+      "id": "abnormal_pattern_0092",
+      "type": "abnormal_pattern",
+      "module_id": "17",
+      "equipment": "17(6호기)",
+      "source_kind": "recorded",
+      "status": "unconfirmed_candidate",
+      "peak_time": "2025-02-19T03:04:05",
+      "event_start": "2025-02-19T03:04:00",
+      "event_end": "2025-02-19T03:04:10",
+      "window_start_inclusive": "2025-02-19T03:01:05",
+      "window_end_inclusive": "2025-02-19T03:07:05",
+      "original_rows_scored_all_models": 73,
+      "saved_peak_scores_reproduced": true,
+      "weak_candidate": false,
+      "figures": {
+        "sensors": {
+          "png": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0092_sensors.png",
+          "svg": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0092_sensors.svg"
+        },
+        "rules": {
+          "png": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0092_rules.png",
+          "svg": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0092_rules.svg"
+        },
+        "autoencoder": {
+          "png": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0092_ae.png",
+          "svg": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0092_ae.svg"
+        },
+        "isolation_forest": {
+          "png": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0092_iforest.png",
+          "svg": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0092_iforest.svg"
+        }
+      },
+      "scores_csv": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0092_scores.csv",
+      "peak_scores": {
+        "rules_ratio": {
+          "load_imbalance": 0.2720237047867355,
+          "reactive_power_surge": 0.3453886468414797,
+          "power_factor_drop": 0.899455605075451,
+          "abnormal_pattern": 0.7939081453693954,
+          "night_operation": 0.5636913594151296,
+          "current_only_increase": 0.2553855943976397
+        },
+        "ae_ratio": 2.0942812421807497,
+        "iforest_ratio": 0.9878404893571989
+      }
+    },
+    {
+      "id": "abnormal_pattern_0093",
+      "type": "abnormal_pattern",
+      "module_id": "17",
+      "equipment": "17(6호기)",
+      "source_kind": "recorded",
+      "status": "unconfirmed_candidate",
+      "peak_time": "2025-03-13T19:45:15",
+      "event_start": "2025-03-13T19:45:05",
+      "event_end": "2025-03-13T19:45:15",
+      "window_start_inclusive": "2025-03-13T19:42:15",
+      "window_end_inclusive": "2025-03-13T19:48:15",
+      "original_rows_scored_all_models": 73,
+      "saved_peak_scores_reproduced": true,
+      "weak_candidate": false,
+      "figures": {
+        "sensors": {
+          "png": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0093_sensors.png",
+          "svg": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0093_sensors.svg"
+        },
+        "rules": {
+          "png": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0093_rules.png",
+          "svg": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0093_rules.svg"
+        },
+        "autoencoder": {
+          "png": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0093_ae.png",
+          "svg": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0093_ae.svg"
+        },
+        "isolation_forest": {
+          "png": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0093_iforest.png",
+          "svg": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0093_iforest.svg"
+        }
+      },
+      "scores_csv": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\diagnosis\\plots\\abnormal_pattern_0093_scores.csv",
+      "peak_scores": {
+        "rules_ratio": {
+          "load_imbalance": 0.0,
+          "reactive_power_surge": 0.3100749233379933,
+          "power_factor_drop": 0.938577102221747,
+          "abnormal_pattern": 0.8897051400404956,
+          "night_operation": 0.0,
+          "current_only_increase": 0.0
+        },
+        "ae_ratio": 1.194385244945436,
+        "iforest_ratio": 0.9780510078063916
+      }
+    }
+  ],
+  "source_size_mtime_preserved": true,
+  "source_index_unchanged": true,
+  "models_and_thresholds_unchanged": true,
+  "model_sha256": {
+    "models.joblib": "f7d29618d3eaafea049fa05fb644f96ff6e3970e1e1c0142140886e1b61e58f9",
+    "ae.pt": "81549dee053d0201e4485492dc2433370fcbf5a6143b9a0a085798678680a7fe",
+    "synthetic_xgb.json": "89281cbbc252435ea5713233cc6bb5de82987f5a51a7451a372507ad5a1e85a4",
+    "baseline.json": "8c1748f631636cd280aac9ebfddddf2c0f66bd746bb575e23ed616cca1a1c81e",
+    "thresholds.json": "93f85fc87d1f9818f07bf6afc1b33bf0f059cdeee16d5a78fa48635e5f4cb551"
+  },
+  "figure_count": 16,
+  "image_file_count": 32,
+  "original_rows_scored_all_models": 292,
+  "interpretation": "Only three AE abnormal-pattern intervals and one weak PF-rule interval are shown; actual fault labels unavailable."
+}

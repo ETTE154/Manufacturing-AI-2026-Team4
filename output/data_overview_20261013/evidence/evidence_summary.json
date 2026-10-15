@@ -1,0 +1,701 @@
+{
+  "schema_version": 1,
+  "status": "verified",
+  "source_paths": {
+    "full_profile": "E:\\AI work\\AWS_프로젝트\\output\\analysis\\training_profile.json",
+    "time_exhaustive_audit": "E:\\AI work\\AWS_프로젝트\\output\\analysis\\time_anomaly_audit.json",
+    "guide_sanitized_visual_summary": "E:\\AI work\\AWS_프로젝트\\output\\analysis\\guide_summary.json",
+    "official_byte_comparison": "E:\\AI work\\AWS_프로젝트\\output\\optimization_20261013\\source_audit\\audit_report.json",
+    "official_copy_key_profiles": "E:\\AI work\\AWS_프로젝트\\output\\optimization_20261013\\source_audit\\csv_profiles.json",
+    "prior_hourly_aggregate_metrics": "E:\\AI work\\AWS_프로젝트\\output\\analysis\\analysis_metrics.json",
+    "prior_streaming_code_reviewed": "E:\\AI work\\AWS_프로젝트\\output\\analysis\\scripts\\profile_training.py"
+  },
+  "source_integrity": [
+    {
+      "path": "E:\\AI work\\AWS_프로젝트\\may-dataset\\rtu_ground_truth_may.csv",
+      "bytes": 46000,
+      "recorded_full_SHA256": "a0e44dc6481fba7d78a2c5b60f0f5e0c2bcc69a8f732c9229bbbdaa38dee04bf",
+      "official_download_SHA256": "a0e44dc6481fba7d78a2c5b60f0f5e0c2bcc69a8f732c9229bbbdaa38dee04bf",
+      "recorded_official_byte_identity": true,
+      "current_size_and_mtime_unchanged_since_SHA": true,
+      "checksum_scope": "Previous independent full-file SHA comparison reused; training file not rehashed in this overview"
+    },
+    {
+      "path": "E:\\AI work\\AWS_프로젝트\\traing-dataset\\rtu_data_full.csv",
+      "bytes": 4909245995,
+      "recorded_full_SHA256": "3b4e1ff2125ca64612837530a8612fa7f044f398e508e00026097fc788d0dce5",
+      "official_download_SHA256": "3b4e1ff2125ca64612837530a8612fa7f044f398e508e00026097fc788d0dce5",
+      "recorded_official_byte_identity": true,
+      "current_size_and_mtime_unchanged_since_SHA": true,
+      "checksum_scope": "Previous independent full-file SHA comparison reused; training file not rehashed in this overview"
+    }
+  ],
+  "full": {
+    "path": "E:\\AI work\\AWS_프로젝트\\traing-dataset\\rtu_data_full.csv",
+    "bytes": 4909245995,
+    "rows": 33696013,
+    "columns": 19,
+    "column_names": [
+      "module(equipment)",
+      "timestamp",
+      "localtime",
+      "operation",
+      "voltageR",
+      "voltageS",
+      "voltageT",
+      "voltageRS",
+      "voltageST",
+      "voltageTR",
+      "currentR",
+      "currentS",
+      "currentT",
+      "activePower",
+      "powerFactorR",
+      "powerFactorS",
+      "powerFactorT",
+      "reactivePowerLagging",
+      "accumActiveEnergy"
+    ],
+    "module_count": 13,
+    "first": "2024-12-01 00:00:00",
+    "last": "2025-04-30 00:00:00",
+    "sampling_seconds": 5,
+    "missing_total": 0,
+    "missing_by_column": {
+      "module(equipment)": 0,
+      "timestamp": 0,
+      "localtime": 0,
+      "operation": 0,
+      "voltageR": 0,
+      "voltageS": 0,
+      "voltageT": 0,
+      "voltageRS": 0,
+      "voltageST": 0,
+      "voltageTR": 0,
+      "currentR": 0,
+      "currentS": 0,
+      "currentT": 0,
+      "activePower": 0,
+      "powerFactorR": 0,
+      "powerFactorS": 0,
+      "powerFactorT": 0,
+      "reactivePowerLagging": 0,
+      "accumActiveEnergy": 0
+    },
+    "module_rows": {
+      "1(PM-3)": 2592001,
+      "2(L-1전등)": 2592001,
+      "3(분쇄기(2))": 2592001,
+      "4(분쇄기(1))": 2592001,
+      "5(좌측분전반)": 2592001,
+      "11(우측분전반1)": 2592001,
+      "12(4호기)": 2592001,
+      "13(3호기)": 2592001,
+      "14(2호기)": 2592001,
+      "15(예비건조기)": 2592001,
+      "16(호이스트)": 2592001,
+      "17(6호기)": 2592001,
+      "18(우측분전반2)": 2592001
+    },
+    "listmodule_names": [
+      "1(PM-3)",
+      "2(L-1전등)",
+      "3(분쇄기(2))",
+      "4(분쇄기(1))",
+      "5(좌측분전반)",
+      "11(우측분전반1)",
+      "12(4호기)",
+      "13(3호기)",
+      "14(2호기)",
+      "15(예비건조기)",
+      "16(호이스트)",
+      "17(6호기)",
+      "18(우측분전반2)"
+    ],
+    "module_details": [
+      {
+        "module_id": 1,
+        "source_tag": "1(PM-3)",
+        "source_label": "PM-3",
+        "rows": 2592001,
+        "first": "2024-12-01 00:00:00",
+        "last": "2025-04-30 00:00:00",
+        "operation_counts": {
+          "1": 2592001
+        },
+        "local_duplicate_rows": 0,
+        "local_negative_diffs": 0,
+        "local_non_5s_diffs": 0,
+        "unix_duplicate_extra_rows": 720,
+        "unix_negative_diffs": 1,
+        "counter_negative_diffs": 0,
+        "mapping_confidence": "원본태그문자열그대로만확인; 물리장비/상하위계측기매핑미확정",
+        "label_scope": "설비/계측점명표기; 실제범위미확정"
+      },
+      {
+        "module_id": 2,
+        "source_tag": "2(L-1전등)",
+        "source_label": "L-1전등",
+        "rows": 2592001,
+        "first": "2024-12-01 00:00:00",
+        "last": "2025-04-30 00:00:00",
+        "operation_counts": {
+          "1": 2592001
+        },
+        "local_duplicate_rows": 0,
+        "local_negative_diffs": 0,
+        "local_non_5s_diffs": 0,
+        "unix_duplicate_extra_rows": 720,
+        "unix_negative_diffs": 1,
+        "counter_negative_diffs": 0,
+        "mapping_confidence": "원본태그문자열그대로만확인; 물리장비/상하위계측기매핑미확정",
+        "label_scope": "설비/계측점명표기; 실제범위미확정"
+      },
+      {
+        "module_id": 3,
+        "source_tag": "3(분쇄기(2))",
+        "source_label": "분쇄기(2)",
+        "rows": 2592001,
+        "first": "2024-12-01 00:00:00",
+        "last": "2025-04-30 00:00:00",
+        "operation_counts": {
+          "1": 2592001
+        },
+        "local_duplicate_rows": 0,
+        "local_negative_diffs": 0,
+        "local_non_5s_diffs": 0,
+        "unix_duplicate_extra_rows": 720,
+        "unix_negative_diffs": 1,
+        "counter_negative_diffs": 0,
+        "mapping_confidence": "원본태그문자열그대로만확인; 물리장비/상하위계측기매핑미확정",
+        "label_scope": "설비/계측점명표기; 실제범위미확정"
+      },
+      {
+        "module_id": 4,
+        "source_tag": "4(분쇄기(1))",
+        "source_label": "분쇄기(1)",
+        "rows": 2592001,
+        "first": "2024-12-01 00:00:00",
+        "last": "2025-04-30 00:00:00",
+        "operation_counts": {
+          "1": 2592001
+        },
+        "local_duplicate_rows": 0,
+        "local_negative_diffs": 0,
+        "local_non_5s_diffs": 0,
+        "unix_duplicate_extra_rows": 720,
+        "unix_negative_diffs": 1,
+        "counter_negative_diffs": 0,
+        "mapping_confidence": "원본태그문자열그대로만확인; 물리장비/상하위계측기매핑미확정",
+        "label_scope": "설비/계측점명표기; 실제범위미확정"
+      },
+      {
+        "module_id": 5,
+        "source_tag": "5(좌측분전반)",
+        "source_label": "좌측분전반",
+        "rows": 2592001,
+        "first": "2024-12-01 00:00:00",
+        "last": "2025-04-30 00:00:00",
+        "operation_counts": {
+          "1": 2592001
+        },
+        "local_duplicate_rows": 0,
+        "local_negative_diffs": 0,
+        "local_non_5s_diffs": 0,
+        "unix_duplicate_extra_rows": 720,
+        "unix_negative_diffs": 1,
+        "counter_negative_diffs": 0,
+        "mapping_confidence": "원본태그문자열그대로만확인; 물리장비/상하위계측기매핑미확정",
+        "label_scope": "분전반계측점가능(이름에근거한추정)"
+      },
+      {
+        "module_id": 11,
+        "source_tag": "11(우측분전반1)",
+        "source_label": "우측분전반1",
+        "rows": 2592001,
+        "first": "2024-12-01 00:00:00",
+        "last": "2025-04-30 00:00:00",
+        "operation_counts": {
+          "1": 2592001
+        },
+        "local_duplicate_rows": 0,
+        "local_negative_diffs": 0,
+        "local_non_5s_diffs": 0,
+        "unix_duplicate_extra_rows": 720,
+        "unix_negative_diffs": 1,
+        "counter_negative_diffs": 0,
+        "mapping_confidence": "원본태그문자열그대로만확인; 물리장비/상하위계측기매핑미확정",
+        "label_scope": "분전반계측점가능(이름에근거한추정)"
+      },
+      {
+        "module_id": 12,
+        "source_tag": "12(4호기)",
+        "source_label": "4호기",
+        "rows": 2592001,
+        "first": "2024-12-01 00:00:00",
+        "last": "2025-04-30 00:00:00",
+        "operation_counts": {
+          "1": 2592001
+        },
+        "local_duplicate_rows": 0,
+        "local_negative_diffs": 0,
+        "local_non_5s_diffs": 0,
+        "unix_duplicate_extra_rows": 720,
+        "unix_negative_diffs": 1,
+        "counter_negative_diffs": 0,
+        "mapping_confidence": "원본태그문자열그대로만확인; 물리장비/상하위계측기매핑미확정",
+        "label_scope": "설비/계측점명표기; 실제범위미확정"
+      },
+      {
+        "module_id": 13,
+        "source_tag": "13(3호기)",
+        "source_label": "3호기",
+        "rows": 2592001,
+        "first": "2024-12-01 00:00:00",
+        "last": "2025-04-30 00:00:00",
+        "operation_counts": {
+          "1": 2592001
+        },
+        "local_duplicate_rows": 0,
+        "local_negative_diffs": 0,
+        "local_non_5s_diffs": 0,
+        "unix_duplicate_extra_rows": 720,
+        "unix_negative_diffs": 1,
+        "counter_negative_diffs": 0,
+        "mapping_confidence": "원본태그문자열그대로만확인; 물리장비/상하위계측기매핑미확정",
+        "label_scope": "설비/계측점명표기; 실제범위미확정"
+      },
+      {
+        "module_id": 14,
+        "source_tag": "14(2호기)",
+        "source_label": "2호기",
+        "rows": 2592001,
+        "first": "2024-12-01 00:00:00",
+        "last": "2025-04-30 00:00:00",
+        "operation_counts": {
+          "1": 2592001
+        },
+        "local_duplicate_rows": 0,
+        "local_negative_diffs": 0,
+        "local_non_5s_diffs": 0,
+        "unix_duplicate_extra_rows": 720,
+        "unix_negative_diffs": 1,
+        "counter_negative_diffs": 0,
+        "mapping_confidence": "원본태그문자열그대로만확인; 물리장비/상하위계측기매핑미확정",
+        "label_scope": "설비/계측점명표기; 실제범위미확정"
+      },
+      {
+        "module_id": 15,
+        "source_tag": "15(예비건조기)",
+        "source_label": "예비건조기",
+        "rows": 2592001,
+        "first": "2024-12-01 00:00:00",
+        "last": "2025-04-30 00:00:00",
+        "operation_counts": {
+          "1": 2592001
+        },
+        "local_duplicate_rows": 0,
+        "local_negative_diffs": 0,
+        "local_non_5s_diffs": 0,
+        "unix_duplicate_extra_rows": 720,
+        "unix_negative_diffs": 1,
+        "counter_negative_diffs": 0,
+        "mapping_confidence": "원본태그문자열그대로만확인; 물리장비/상하위계측기매핑미확정",
+        "label_scope": "설비/계측점명표기; 실제범위미확정"
+      },
+      {
+        "module_id": 16,
+        "source_tag": "16(호이스트)",
+        "source_label": "호이스트",
+        "rows": 2592001,
+        "first": "2024-12-01 00:00:00",
+        "last": "2025-04-30 00:00:00",
+        "operation_counts": {
+          "1": 2592001
+        },
+        "local_duplicate_rows": 0,
+        "local_negative_diffs": 0,
+        "local_non_5s_diffs": 0,
+        "unix_duplicate_extra_rows": 720,
+        "unix_negative_diffs": 1,
+        "counter_negative_diffs": 0,
+        "mapping_confidence": "원본태그문자열그대로만확인; 물리장비/상하위계측기매핑미확정",
+        "label_scope": "설비/계측점명표기; 실제범위미확정"
+      },
+      {
+        "module_id": 17,
+        "source_tag": "17(6호기)",
+        "source_label": "6호기",
+        "rows": 2592001,
+        "first": "2024-12-01 00:00:00",
+        "last": "2025-04-30 00:00:00",
+        "operation_counts": {
+          "1": 2592001
+        },
+        "local_duplicate_rows": 0,
+        "local_negative_diffs": 0,
+        "local_non_5s_diffs": 0,
+        "unix_duplicate_extra_rows": 720,
+        "unix_negative_diffs": 1,
+        "counter_negative_diffs": 0,
+        "mapping_confidence": "원본태그문자열그대로만확인; 물리장비/상하위계측기매핑미확정",
+        "label_scope": "설비/계측점명표기; 실제범위미확정"
+      },
+      {
+        "module_id": 18,
+        "source_tag": "18(우측분전반2)",
+        "source_label": "우측분전반2",
+        "rows": 2592001,
+        "first": "2024-12-01 00:00:00",
+        "last": "2025-04-30 00:00:00",
+        "operation_counts": {
+          "1": 2592001
+        },
+        "local_duplicate_rows": 0,
+        "local_negative_diffs": 0,
+        "local_non_5s_diffs": 0,
+        "unix_duplicate_extra_rows": 720,
+        "unix_negative_diffs": 1,
+        "counter_negative_diffs": 0,
+        "mapping_confidence": "원본태그문자열그대로만확인; 물리장비/상하위계측기매핑미확정",
+        "label_scope": "분전반계측점가능(이름에근거한추정)"
+      }
+    ],
+    "span_days": 150.0,
+    "expected_rows_per_module_inclusive": 2592001,
+    "full_day_count": 150,
+    "last_day_is_partial": true,
+    "last_day_records_per_module": 1,
+    "complete_all_module_hour_count": 3600,
+    "complete_module_hour_count": 46800,
+    "module_hour_bucket_count_including_endpoint": 46813,
+    "last_hour_is_partial": true,
+    "last_hour_records_per_module": 1,
+    "operation_observed_values": [
+      1
+    ],
+    "operation_field_constant": true,
+    "dtype_inference": {
+      "method": "pandas.read_csv 원본 앞 2,000행 기본 추론",
+      "rows": 2000,
+      "scope": "표본의 parser 추론이며 CSV에는 고정된 자료형 스키마가 없음",
+      "dtypes": {
+        "module(equipment)": "str",
+        "timestamp": "int64",
+        "localtime": "int64",
+        "operation": "int64",
+        "voltageR": "float64",
+        "voltageS": "float64",
+        "voltageT": "float64",
+        "voltageRS": "float64",
+        "voltageST": "float64",
+        "voltageTR": "float64",
+        "currentR": "float64",
+        "currentS": "float64",
+        "currentT": "float64",
+        "activePower": "float64",
+        "powerFactorR": "float64",
+        "powerFactorS": "float64",
+        "powerFactorT": "float64",
+        "reactivePowerLagging": "float64",
+        "accumActiveEnergy": "int64"
+      }
+    },
+    "numeric_statistics_scope": "15개원본numeric센서/counter열: 기존전체33,696,013행스트리밍sum/sumsq/min/max에서전체통계재구성. sourceendpoint포함;std ddof=0.",
+    "numeric_statistics": {
+      "voltageR": {
+        "min": 190.1,
+        "max": 220.0,
+        "mean": 214.99376980297342,
+        "std": 2.9021141358535316
+      },
+      "voltageS": {
+        "min": 190.14,
+        "max": 220.0,
+        "mean": 214.99466851879478,
+        "std": 2.9025523105650626
+      },
+      "voltageT": {
+        "min": 190.18,
+        "max": 220.0,
+        "mean": 214.99431860825788,
+        "std": 2.9023573078966405
+      },
+      "voltageRS": {
+        "min": 330.83,
+        "max": 381.04,
+        "mean": 372.3699873139294,
+        "std": 3.5730769151189588
+      },
+      "voltageST": {
+        "min": 329.95,
+        "max": 381.04,
+        "mean": 372.3704619599951,
+        "std": 3.5726655639097857
+      },
+      "voltageTR": {
+        "min": 330.56,
+        "max": 381.04,
+        "mean": 372.36968358096254,
+        "std": 3.572803707888942
+      },
+      "currentR": {
+        "min": 5.0,
+        "max": 30.0,
+        "mean": 17.499397734384775,
+        "std": 7.2172171270679595
+      },
+      "currentS": {
+        "min": 5.0,
+        "max": 30.0,
+        "mean": 17.499249443546926,
+        "std": 7.217179783873383
+      },
+      "currentT": {
+        "min": 5.0,
+        "max": 30.0,
+        "mean": 17.501930017951974,
+        "std": 7.216742483108641
+      },
+      "activePower": {
+        "min": 864.44,
+        "max": 5220.93,
+        "mean": 3009.952183346439,
+        "std": 717.1453987051784
+      },
+      "powerFactorR": {
+        "min": 60.0,
+        "max": 100.0,
+        "mean": 92.46882192056373,
+        "std": 4.405299215884062
+      },
+      "powerFactorS": {
+        "min": 60.0,
+        "max": 100.0,
+        "mean": 92.47003854818077,
+        "std": 4.405555292716048
+      },
+      "powerFactorT": {
+        "min": 60.0,
+        "max": 100.0,
+        "mean": 92.46884008710467,
+        "std": 4.4056192825740474
+      },
+      "reactivePowerLagging": {
+        "min": 89.44,
+        "max": 1550.63,
+        "mean": 601.9452275745501,
+        "std": 229.0784649922556
+      },
+      "accumActiveEnergy": {
+        "min": 1129004.0,
+        "max": 15438171.0,
+        "mean": 8103413.169411348,
+        "std": 3344950.2449687696
+      }
+    }
+  },
+  "may": {
+    "path": "E:\\AI work\\AWS_프로젝트\\may-dataset\\rtu_ground_truth_may.csv",
+    "bytes": 46000,
+    "sha256_current_full_check": "a0e44dc6481fba7d78a2c5b60f0f5e0c2bcc69a8f732c9229bbbdaa38dee04bf",
+    "rows": 505,
+    "columns": 5,
+    "column_names": [
+      "id",
+      "hourly_pow",
+      "may_bill",
+      "may_carbon",
+      "agg_pow"
+    ],
+    "first": "2025-05-10 00:00:00",
+    "last": "2025-05-31 00:00:00",
+    "sampling_seconds": 3600,
+    "missing_total": 0,
+    "missing_by_column": {
+      "id": 0,
+      "hourly_pow": 0,
+      "may_bill": 0,
+      "may_carbon": 0,
+      "agg_pow": 0
+    },
+    "duplicate_time_ids": 0,
+    "non_hourly_steps": 0,
+    "span_hours": 504,
+    "complete_days": 21,
+    "partial_last_day_hours": 1,
+    "covers_full_calendar_May": false,
+    "no_module_or_sensor_columns": true,
+    "derived_relationships": {
+      "may_bill": "hourly_pow*180",
+      "may_carbon": "hourly_pow*0.424",
+      "agg_pow": "sum(all505 hourly_pow) repeated on everyrow, not cumulative",
+      "cost_max_absdiff": 4.6566128730773926e-09,
+      "carbon_max_absdiff": 4.48198989033699e-09,
+      "constant_total_max_absdiff": 2.9802322387695312e-08,
+      "agg_pow_unique_count": 1
+    },
+    "scope": "May原本505행전체재검증; 가이드평가기간정답이지만단위/계측범위는원시May자료없어독립확정불가"
+  },
+  "time_quality": {
+    "localtime_parse_format": "%Y%m%d%H%M%S after string conversion; preserve14-digit source code",
+    "localtime_source_literal_example": "20241201000000",
+    "localtime_source_representation": "Unquoted numeric-looking14-digit CSV token; pandas bounded default dtype int64; guide calls it a string",
+    "localtime_duplicate_keys_module_time": 0,
+    "localtime_negative_diffs": 0,
+    "localtime_non_5_second_steps": 0,
+    "unix_duplicate_extra_keys_module_timestamp": 9360,
+    "unix_negative_transitions": 13,
+    "local_naive_minus_unix_ms": {
+      "-28800000": 22042800,
+      "-25200000": 11653213
+    },
+    "offset_transitions": [
+      {
+        "equipment": "1(PM-3)",
+        "localtime": "2025-03-09 03:00:00",
+        "offset_ms": -25200000
+      },
+      {
+        "equipment": "2(L-1전등)",
+        "localtime": "2025-03-09 03:00:00",
+        "offset_ms": -25200000
+      },
+      {
+        "equipment": "3(분쇄기(2))",
+        "localtime": "2025-03-09 03:00:00",
+        "offset_ms": -25200000
+      },
+      {
+        "equipment": "4(분쇄기(1))",
+        "localtime": "2025-03-09 03:00:00",
+        "offset_ms": -25200000
+      },
+      {
+        "equipment": "5(좌측분전반)",
+        "localtime": "2025-03-09 03:00:00",
+        "offset_ms": -25200000
+      },
+      {
+        "equipment": "11(우측분전반1)",
+        "localtime": "2025-03-09 03:00:00",
+        "offset_ms": -25200000
+      },
+      {
+        "equipment": "12(4호기)",
+        "localtime": "2025-03-09 03:00:00",
+        "offset_ms": -25200000
+      },
+      {
+        "equipment": "13(3호기)",
+        "localtime": "2025-03-09 03:00:00",
+        "offset_ms": -25200000
+      },
+      {
+        "equipment": "14(2호기)",
+        "localtime": "2025-03-09 03:00:00",
+        "offset_ms": -25200000
+      },
+      {
+        "equipment": "15(예비건조기)",
+        "localtime": "2025-03-09 03:00:00",
+        "offset_ms": -25200000
+      },
+      {
+        "equipment": "16(호이스트)",
+        "localtime": "2025-03-09 03:00:00",
+        "offset_ms": -25200000
+      },
+      {
+        "equipment": "17(6호기)",
+        "localtime": "2025-03-09 03:00:00",
+        "offset_ms": -25200000
+      },
+      {
+        "equipment": "18(우측분전반2)",
+        "localtime": "2025-03-09 03:00:00",
+        "offset_ms": -25200000
+      }
+    ],
+    "timestamp_utc_start": "2024-12-01 08:00:00+00:00",
+    "timestamp_utc_end": "2025-04-30 07:00:00+00:00",
+    "first_row_clock_example": {
+      "recorded_localtime": "2024-12-01 00:00:00",
+      "timestamp_ms": 1733040000000,
+      "as_UTC": "2024-12-01 08:00:00+00:00",
+      "as_Asia_Seoul": "2024-12-01 17:00:00+09:00"
+    },
+    "interpretation": "全13모듈 localtime은5초연속. Unix key는3/9 03:00에서모듈별1회역순/비인접중복720추가행; localtime역순은0. -8h→-7h가미국태평양DST형패턴과유사하지만의도된timezone은미확정.",
+    "action": "원본유지·recorded localtime을명시해분석; timezone확인전Seoul변환/Unix중복행자동제거금지"
+  },
+  "train_may_coverage": {
+    "time_basis": "Recorded naive calendar labels; common intendedtimezone is unverified",
+    "last_training_raw_observation": "2025-04-30 00:00:00",
+    "first_May_label": "2025-05-10 00:00:00",
+    "raw_end_to_first_label_elapsed_hours": 240.0,
+    "raw_end_to_first_label_elapsed_days": 10.0,
+    "overlapping_recorded_label_hours": 0,
+    "last_complete_training_hour_start": "2025-04-29 23:00:00",
+    "first_unobserved_complete_hour_start": "2025-04-30 00:00:00",
+    "bridge_hour_count_before_May_labels": 240,
+    "bridge_hours": "2025-04-30 00:00 through2025-05-09 23:00",
+    "May_missing_days_are_not_zero_load": "May1–9 labels and Mayfive-secondsensorobservations are not provided; no silentzero fill"
+  },
+  "units_and_interpretation": {
+    "capacity_or_load_factor_data_present": false,
+    "normalized_period_measure": "기간 평균 부하(kWh/h)=전력량/관측시간. 정격용량 대비 부하율 자료는 없음",
+    "guide_units": {
+      "sampling": "5초 단위 수집 데이터; 가이드는 각 activePower가 해당 5초간 평균이라고 명시",
+      "activePower": "kW",
+      "record_energy_kWh": "activePower_kW * (5 / 3600)",
+      "hour_energy_kWh_complete_regular": "sum(activePower_kW in hour) / 720",
+      "hour_mean_power_kW_complete_regular": "mean(activePower_kW in hour)",
+      "hour_expected_records_per_module": 720,
+      "cost_KRW": "energy_kWh * 180",
+      "emissions_kgCO2": "energy_kWh * 0.424",
+      "MAE_cost_KRW": "MAE_energy_kWh * 180 (동일 표본과 선형 환산일 경우)",
+      "MAE_emissions_kgCO2": "MAE_energy_kWh * 0.424 (동일 표본과 선형 환산일 경우)",
+      "accumActiveEnergy_conflict": "일반 Columns 표는 Wh, 아래 주요 컬럼 표는 kWh로 표기하여 원문 단위가 불일치한다. 실제 증가량과 activePower 적분값으로 단위를 검증해야 한다.",
+      "validation_sum_note": "5월 파일의 sum이 원시 activePower의 시간별 합인지 이미 kWh로 환산된 합인지 가이드만으로 확정할 수 없다. 대응하는 원시 관측이 있으면 실제 집계를 직접 대조하고, 없으면 파일 구조·단위·값 규모로 추정하되 단위가 확정된 것으로 단정하지 않는다. raw_sum과 kWh를 명확히 구분한다.",
+      "tariff_note": "180원/kWh 및 0.424 kgCO2/kWh는 프로젝트 가정값이며 실측 요금제/현행 공식 계수 확인 결과가 아니다.",
+      "coverage_note": "결측을 0 소비로 대체하지 않는다. 고정 5초 표본의 에너지를 합산하고 유효 표본 수/관측률을 함께 표시한다. 긴 결측 구간을 전력이 유지된 것으로 임의 적분하지 않는다."
+    },
+    "counter_unit_conflict": "Guide generalWh vs keycolumnkWh. Numeric increments approximatelymatch project integration but do not independently certify absolutephysicalunits.",
+    "module_count_limit": "13 distinctmodule(equipment) labels/계측태그;13확정물리장비가아님. 분전반등상하위계측혼재가능하며전모듈합계는잠정sum,확정공장소비량아님.",
+    "module_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "nonconsecutive_ID_note": "IDs6–10이없다는사실만으로누락된5장비를추정하지않음",
+    "forecast_truth_limit": "Maybill/carbon은정답의선형파생열, agg_pow는전체정답합; 미래예측피처로사용하면정답누출",
+    "fault_label_limit": "Guide says intentionally inserted anomalies, but no suppliedrow/event fault labels or mask. Rulecandidate counts are screening, not confirmedfaults."
+  },
+  "statistical_scope": {
+    "prior_training_full_scan_rows": 33696013,
+    "prior_time_exhaustive_rows": 33696013,
+    "overview_training_bounded_rows_read": 2000,
+    "overview_new_training_full_scans": 0,
+    "overview_May_full_rows_read": 505,
+    "training_dtype_scope": "bounded-prefixinference only",
+    "training_range_missing_time_scope": "reusedexhaustive evidence, not sampled estimates",
+    "std_convention": "feature_dictionary numeric std is population ddof0; existinghourlySD95.764 uses sample ddof1 and is a differentaggregation",
+    "raw_data_copies_created": 0,
+    "credentials": "Original guidecredentials are not read, copied or shown; sanitizedguide_summary reused"
+  },
+  "outputs": {
+    "feature_dictionary": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\evidence\\feature_dictionary.csv",
+    "module_dictionary": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\evidence\\module_dictionary.csv",
+    "module_numeric_summary": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\evidence\\module_numeric_summary.csv"
+  }
+}

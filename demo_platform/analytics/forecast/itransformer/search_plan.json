@@ -1,0 +1,114 @@
+{
+  "configs": [
+    {
+      "resolution": "hourly",
+      "context": 24,
+      "scaler": "zscore",
+      "loss": "MAE",
+      "instance_norm": false,
+      "group": "target",
+      "d_model": 64,
+      "layers": 2,
+      "dropout": 0.1,
+      "mean_prior_penalty": 0.01
+    },
+    {
+      "resolution": "hourly",
+      "context": 72,
+      "scaler": "robust",
+      "loss": "Huber",
+      "instance_norm": true,
+      "group": "target",
+      "d_model": 64,
+      "layers": 2,
+      "dropout": 0.1,
+      "mean_prior_penalty": 0.01
+    },
+    {
+      "resolution": "hourly",
+      "context": 168,
+      "scaler": "minmax",
+      "loss": "MSE",
+      "instance_norm": false,
+      "group": "target",
+      "d_model": 64,
+      "layers": 2,
+      "dropout": 0.1,
+      "mean_prior_penalty": 0.01
+    },
+    {
+      "resolution": "hourly",
+      "context": 72,
+      "scaler": "zscore",
+      "loss": "Huber",
+      "instance_norm": false,
+      "group": "target",
+      "d_model": 64,
+      "layers": 2,
+      "dropout": 0.1,
+      "mean_prior_penalty": 0.01
+    },
+    {
+      "resolution": "daily",
+      "context": 7,
+      "scaler": "zscore",
+      "loss": "MSE",
+      "instance_norm": false,
+      "group": "target",
+      "d_model": 64,
+      "layers": 2,
+      "dropout": 0.1,
+      "mean_prior_penalty": 0.01
+    },
+    {
+      "resolution": "daily",
+      "context": 7,
+      "scaler": "zscore",
+      "loss": "MAE",
+      "instance_norm": false,
+      "group": "target",
+      "d_model": 64,
+      "layers": 2,
+      "dropout": 0.1,
+      "mean_prior_penalty": 0.01
+    },
+    {
+      "resolution": "daily",
+      "context": 7,
+      "scaler": "robust",
+      "loss": "Huber",
+      "instance_norm": false,
+      "group": "target",
+      "d_model": 64,
+      "layers": 2,
+      "dropout": 0.1,
+      "mean_prior_penalty": 0.01
+    },
+    {
+      "resolution": "daily",
+      "context": 7,
+      "scaler": "minmax",
+      "loss": "MSE",
+      "instance_norm": false,
+      "group": "target",
+      "d_model": 64,
+      "layers": 2,
+      "dropout": 0.1,
+      "mean_prior_penalty": 0.01
+    },
+    {
+      "resolution": "hourly",
+      "context": 72,
+      "scaler": "robust",
+      "loss": "Huber",
+      "instance_norm": true,
+      "group": "module13_target",
+      "d_model": 64,
+      "layers": 2,
+      "dropout": 0.1,
+      "mean_prior_penalty": 0.01
+    }
+  ],
+  "stopping": "Native Late505 validation plateau + LRreduction, no small fixed epoch cap",
+  "seed": 20261014
+}

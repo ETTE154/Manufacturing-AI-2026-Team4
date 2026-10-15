@@ -1,0 +1,20 @@
+{
+  "rows": 33696013,
+  "raw_reads": 1,
+  "excluded_endpoint_rows": 13,
+  "complete_hours": 3600,
+  "complete_module_hours": 46800,
+  "counts_min": 720,
+  "counts_max": 720,
+  "feature_columns": 442,
+  "energy_sum_vs_existing_target_max_absdiff": 1.4551915228366852e-11,
+  "raw_activePower_integrated_vs_target_max_absdiff": 3.637978807091713e-11,
+  "raw_activePower_mean_vs_old_max_absdiff": 9.094947017729282e-12,
+  "raw_activePower_std_vs_old_max_absdiff": 4.661160346586257e-11,
+  "source_size_unchanged": true,
+  "source_mtime_unchanged": true,
+  "target_sha256": "729b149a3e3165dfb339f0386249bfbda0326657f9e722d86da8138db36117de",
+  "feature_sha256": "1ad0a14f29f7ffad521918817315c95889f82adef7335709ce386fd057b1ba9b",
+  "elapsed_seconds": 53.84719230001792,
+  "all_finite": true
+}

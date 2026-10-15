@@ -1,0 +1,132 @@
+{
+  "protocol": "Fit Dec-Feb, evaluate March chronological INNER holdout inside the pre-April analysis prefix. One-step forecast uses only row t-1 and known calendar at t.",
+  "train_rows": 1992,
+  "holdout_rows": 744,
+  "models": {
+    "training_mean_baseline": {
+      "count": 744,
+      "mae_kwh": 75.88536806616402,
+      "r2": -0.00019628214025790847
+    },
+    "ridge": {
+      "count": 744,
+      "mae_kwh": 85.26310037156556,
+      "r2": -0.24229780775043852
+    },
+    "extra_trees": {
+      "count": 744,
+      "mae_kwh": 75.90222368900233,
+      "r2": -0.0033099470980848533
+    }
+  },
+  "grouped_permutation": "20 seeded day-block shuffles; all columns in each family moved together. q05/q95 are permutation distribution, not confidence intervals",
+  "individual_table": "10 block shuffles of every fitted Ridge column; correlated ties and low-R2 caveat apply",
+  "top_groups": [
+    {
+      "model": "ridge",
+      "group": "unbalance",
+      "columns": 26,
+      "base_MAE": 85.26310037156556,
+      "base_R2": -0.24229780775043852,
+      "permutation_MAE_increase_mean": 2.5117433388718644,
+      "permutation_MAE_increase_std": 0.7415386012490811,
+      "permutation_q05": 1.4073062599156068,
+      "permutation_q95": 3.587247159786824,
+      "permutation_R2_drop_mean": 0.061569981231123595,
+      "remove_group_refit_MAE_increase": 0.19715152370486067
+    },
+    {
+      "model": "ridge",
+      "group": "reactive_power",
+      "columns": 26,
+      "base_MAE": 85.26310037156556,
+      "base_R2": -0.24229780775043852,
+      "permutation_MAE_increase_mean": 0.6724200356617687,
+      "permutation_MAE_increase_std": 0.4802601403362189,
+      "permutation_q05": -0.015718008063425493,
+      "permutation_q95": 1.2582559679059295,
+      "permutation_R2_drop_mean": 0.011638680713336003,
+      "remove_group_refit_MAE_increase": -0.5401046233900928
+    },
+    {
+      "model": "extra_trees",
+      "group": "reactive_power",
+      "columns": 26,
+      "base_MAE": 75.90222368900233,
+      "base_R2": -0.0033099470980848533,
+      "permutation_MAE_increase_mean": 0.08766486888303363,
+      "permutation_MAE_increase_std": 0.057322306755744894,
+      "permutation_q05": 0.008380491358052923,
+      "permutation_q95": 0.18580697523862644,
+      "permutation_R2_drop_mean": 0.0015328191878320797,
+      "remove_group_refit_MAE_increase": null
+    },
+    {
+      "model": "extra_trees",
+      "group": "voltage",
+      "columns": 156,
+      "base_MAE": 75.90222368900233,
+      "base_R2": -0.0033099470980848533,
+      "permutation_MAE_increase_mean": 0.07083197662254434,
+      "permutation_MAE_increase_std": 0.15010497460610736,
+      "permutation_q05": -0.2141069534034429,
+      "permutation_q95": 0.274353606776527,
+      "permutation_R2_drop_mean": -0.00013461060963464443,
+      "remove_group_refit_MAE_increase": null
+    },
+    {
+      "model": "extra_trees",
+      "group": "module_energy",
+      "columns": 13,
+      "base_MAE": 75.90222368900233,
+      "base_R2": -0.0033099470980848533,
+      "permutation_MAE_increase_mean": 0.0692152998483742,
+      "permutation_MAE_increase_std": 0.050557910341444384,
+      "permutation_q05": -0.0035630553379803575,
+      "permutation_q95": 0.13291852423892223,
+      "permutation_R2_drop_mean": 0.001325465597096931,
+      "remove_group_refit_MAE_increase": null
+    },
+    {
+      "model": "ridge",
+      "group": "power_variability",
+      "columns": 13,
+      "base_MAE": 85.26310037156556,
+      "base_R2": -0.24229780775043852,
+      "permutation_MAE_increase_mean": 0.03833972540292265,
+      "permutation_MAE_increase_std": 0.28963482006155783,
+      "permutation_q05": -0.29589034182738416,
+      "permutation_q95": 0.4553194600392787,
+      "permutation_R2_drop_mean": -0.0014277612921053673,
+      "remove_group_refit_MAE_increase": -0.08607024108307826
+    },
+    {
+      "model": "extra_trees",
+      "group": "current",
+      "columns": 78,
+      "base_MAE": 75.90222368900233,
+      "base_R2": -0.0033099470980848533,
+      "permutation_MAE_increase_mean": 0.036660336409385506,
+      "permutation_MAE_increase_std": 0.0877167988287309,
+      "permutation_q05": -0.06693788769445276,
+      "permutation_q95": 0.1597660579258673,
+      "permutation_R2_drop_mean": 0.00028264954478186,
+      "remove_group_refit_MAE_increase": null
+    },
+    {
+      "model": "extra_trees",
+      "group": "counter_delta",
+      "columns": 13,
+      "base_MAE": 75.90222368900233,
+      "base_R2": -0.0033099470980848533,
+      "permutation_MAE_increase_mean": 0.03081802546302228,
+      "permutation_MAE_increase_std": 0.035592044753983434,
+      "permutation_q05": -0.017786055248485155,
+      "permutation_q95": 0.06892924749138135,
+      "permutation_R2_drop_mean": 0.0009237376100971085,
+      "remove_group_refit_MAE_increase": null
+    }
+  ],
+  "limits": "Low held-out R2 makes low importance inconclusive about intrinsic feature value. Correlation substitution can dilute individual scores. Group removal refits are descriptive fixed-Ridge ablations, not outer-CV selection.",
+  "source": "https://scikit-learn.org/stable/modules/permutation_importance.html"
+}

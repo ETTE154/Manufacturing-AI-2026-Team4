@@ -1,0 +1,235 @@
+{
+  "family": "patchtst",
+  "scenario": "dayahead24",
+  "selected_candidate": 2,
+  "frozen_config": {
+    "context": 72,
+    "d_model": 32,
+    "layers": 1,
+    "dropout": 0.1
+  },
+  "architecture": {
+    "enc_in": 1,
+    "seq_len": 72,
+    "pred_len": 24,
+    "d_model": 32,
+    "d_ff": 64,
+    "e_layers": 1,
+    "n_heads": 4,
+    "dropout": 0.1,
+    "fc_dropout": 0.1,
+    "head_dropout": 0.1,
+    "individual": false,
+    "patch_len": 16,
+    "stride": 8,
+    "padding_patch": "end",
+    "revin": true,
+    "affine": true,
+    "subtract_last": false,
+    "decomposition": false,
+    "kernel_size": 25,
+    "training_loss": "MSE"
+  },
+  "selection": "Lowest70-origin mean path MAE",
+  "selection_uses_internal_test_labels": false,
+  "selection_uses_may_labels": false,
+  "validation": {
+    "path_24_values": {
+      "count": 1680,
+      "mae_kwh": 76.3712857563001,
+      "rmse_kwh": 97.10760314278598,
+      "mape_percent": 0.19517104604995164,
+      "bias_pred_minus_actual_kwh": -0.15208906134916367,
+      "r2": -0.0481635664689426
+    },
+    "endpoint_lead_24": {
+      "count": 70,
+      "mae_kwh": 81.1586739872365,
+      "rmse_kwh": 98.85112078278057,
+      "mape_percent": 0.20747951834422126,
+      "bias_pred_minus_actual_kwh": 5.069883658906474,
+      "r2": -0.04580389372519278
+    },
+    "origin_count": 70,
+    "mean_origin_path_mae_kwh": 76.37128575630011,
+    "origin_path_mae_std_kwh": 13.81440423148368,
+    "origin_start": "2025-01-10 00:00:00",
+    "origin_end": "2025-03-20 00:00:00"
+  },
+  "validation_reload_max_absdiff": 0.0,
+  "validation_reload_origins": 70,
+  "budget": {
+    "configs": 7,
+    "MSE_candidates": 6,
+    "extra_L1_candidate": 1,
+    "seed": 20261013,
+    "threads": 4,
+    "maximum_epochs": 24,
+    "early_stop_patience": 4,
+    "batch_size": 32,
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "loss": "Six MSE and one L1 candidate; same train-only global normalization and validation selection",
+    "context_candidates": [
+      24,
+      72,
+      168,
+      336,
+      720,
+      168,
+      168
+    ],
+    "versions": {
+      "torch": "2.14.1",
+      "numpy": "2.3.5",
+      "pandas": "3.0.1"
+    },
+    "claim": "Budgeted local validation search; not a guarantee of global optimality. No internal-test or May tuning."
+  },
+  "provenance": {
+    "source": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\patchtst\\provenance.json",
+    "source_sha256": "036f4ed7fd8dd6054224f7dd1780391ff6da8f501d09dcdb8727625ef9b7b4ad",
+    "record": {
+      "repository": "https://github.com/yuqinie98/PatchTST",
+      "commit": "204c21efe0b39603ad6e2ca640ef5896646ab1a9",
+      "files": [
+        {
+          "upstream_path": "PatchTST_supervised/models/PatchTST.py",
+          "source_url": "https://raw.githubusercontent.com/yuqinie98/PatchTST/204c21efe0b39603ad6e2ca640ef5896646ab1a9/PatchTST_supervised/models/PatchTST.py",
+          "original_sha256": "49d8bb865e1226d6338842f4b33c4bc6992cefb048dc2a4a5a8c410ca708586b",
+          "vendored_path": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\patchtst\\patchtst_vendor\\models\\PatchTST.py",
+          "vendored_sha256": "1a6f8e081addbec8522389e9cbf6eb3674be1d24d7af64c1582e36079055a879",
+          "modification": "Only from/import layers namespace changed to patchtst_vendor.layers"
+        },
+        {
+          "upstream_path": "PatchTST_supervised/layers/PatchTST_backbone.py",
+          "source_url": "https://raw.githubusercontent.com/yuqinie98/PatchTST/204c21efe0b39603ad6e2ca640ef5896646ab1a9/PatchTST_supervised/layers/PatchTST_backbone.py",
+          "original_sha256": "df67173153787c2356bdfb6491159cd754332ef7382986efe879e1fbea8ebf26",
+          "vendored_path": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\patchtst\\patchtst_vendor\\layers\\PatchTST_backbone.py",
+          "vendored_sha256": "3d9fc0d88a36e61dcbb20bdd628a60236c6946fa335885157f2725934fc689b3",
+          "modification": "Only from/import layers namespace changed to patchtst_vendor.layers"
+        },
+        {
+          "upstream_path": "PatchTST_supervised/layers/PatchTST_layers.py",
+          "source_url": "https://raw.githubusercontent.com/yuqinie98/PatchTST/204c21efe0b39603ad6e2ca640ef5896646ab1a9/PatchTST_supervised/layers/PatchTST_layers.py",
+          "original_sha256": "21c06c70a90c60ee2a269b5c600c702834dea22cdfd72915e6b0f8b4a28db3f6",
+          "vendored_path": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\patchtst\\patchtst_vendor\\layers\\PatchTST_layers.py",
+          "vendored_sha256": "21c06c70a90c60ee2a269b5c600c702834dea22cdfd72915e6b0f8b4a28db3f6",
+          "modification": "Only from/import layers namespace changed to patchtst_vendor.layers"
+        },
+        {
+          "upstream_path": "PatchTST_supervised/layers/RevIN.py",
+          "source_url": "https://raw.githubusercontent.com/yuqinie98/PatchTST/204c21efe0b39603ad6e2ca640ef5896646ab1a9/PatchTST_supervised/layers/RevIN.py",
+          "original_sha256": "e64c0ccded9228b347134e7368420d3fb10f70c75145b5ff2d8bdd8c3af59df6",
+          "vendored_path": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\patchtst\\patchtst_vendor\\layers\\RevIN.py",
+          "vendored_sha256": "e64c0ccded9228b347134e7368420d3fb10f70c75145b5ff2d8bdd8c3af59df6",
+          "modification": "Only from/import layers namespace changed to patchtst_vendor.layers"
+        },
+        {
+          "upstream_path": "LICENSE",
+          "source_url": "https://raw.githubusercontent.com/yuqinie98/PatchTST/204c21efe0b39603ad6e2ca640ef5896646ab1a9/LICENSE",
+          "original_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "vendored_path": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\patchtst\\patchtst_vendor\\LICENSE",
+          "vendored_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "modification": "Unmodified license"
+        }
+      ],
+      "architecture_scope": "Official supervised PatchTST core with namespace-only import changes; compact univariate config, not original-paper benchmark reproduction",
+      "algorithmic_modifications": false
+    },
+    "scope": "Pinned official core, compact local retraining. Namespace-only import changes; unused iTransformer Reformer import is lazy. No published benchmark reproduction.",
+    "iTransformer_univariate_limit": null
+  },
+  "target_sha256": "729b149a3e3165dfb339f0386249bfbda0326657f9e722d86da8138db36117de",
+  "frozen_epochs": 8,
+  "pretest_epoch_choice": {
+    "inner_fitting_hours": 2736,
+    "inner_fitting_end": "2025-03-24 23:00:00",
+    "inner_tail_origin": "2025-03-25 00:00:00",
+    "inner_tail_end": "2025-03-31 23:00:00",
+    "inner_holdout_hours": 168,
+    "inner_origins": 7,
+    "training_windows": 2641,
+    "training_tail_target_overlap": false,
+    "best_epoch": 8,
+    "best_mae_kwh": 75.58100752968221,
+    "epochs_run": 12,
+    "logs": [
+      {
+        "epoch": 1,
+        "training_loss_standardized": 1.1587532686040691,
+        "training_loss_name": "MSE",
+        "inner_chronological_mae_kwh": 78.53195105087491
+      },
+      {
+        "epoch": 2,
+        "training_loss_standardized": 1.0561320053181473,
+        "training_loss_name": "MSE",
+        "inner_chronological_mae_kwh": 76.877104696903
+      },
+      {
+        "epoch": 3,
+        "training_loss_standardized": 1.044461913968252,
+        "training_loss_name": "MSE",
+        "inner_chronological_mae_kwh": 76.66414914435258
+      },
+      {
+        "epoch": 4,
+        "training_loss_standardized": 1.0372150352352363,
+        "training_loss_name": "MSE",
+        "inner_chronological_mae_kwh": 76.34291816125724
+      },
+      {
+        "epoch": 5,
+        "training_loss_standardized": 1.0306678041279744,
+        "training_loss_name": "MSE",
+        "inner_chronological_mae_kwh": 76.44145830955823
+      },
+      {
+        "epoch": 6,
+        "training_loss_standardized": 1.0269661707572981,
+        "training_loss_name": "MSE",
+        "inner_chronological_mae_kwh": 75.98512294049371
+      },
+      {
+        "epoch": 7,
+        "training_loss_standardized": 1.0221687128759613,
+        "training_loss_name": "MSE",
+        "inner_chronological_mae_kwh": 76.47345617949959
+      },
+      {
+        "epoch": 8,
+        "training_loss_standardized": 1.0195822532047878,
+        "training_loss_name": "MSE",
+        "inner_chronological_mae_kwh": 75.58100752968221
+      },
+      {
+        "epoch": 9,
+        "training_loss_standardized": 1.0145813206387757,
+        "training_loss_name": "MSE",
+        "inner_chronological_mae_kwh": 76.47913640390138
+      },
+      {
+        "epoch": 10,
+        "training_loss_standardized": 1.0108424332592352,
+        "training_loss_name": "MSE",
+        "inner_chronological_mae_kwh": 76.14772161136213
+      },
+      {
+        "epoch": 11,
+        "training_loss_standardized": 1.0062750307099018,
+        "training_loss_name": "MSE",
+        "inner_chronological_mae_kwh": 76.07281028773238
+      },
+      {
+        "epoch": 12,
+        "training_loss_standardized": 1.0028344679853765,
+        "training_loss_name": "MSE",
+        "inner_chronological_mae_kwh": 76.09026825813761
+      }
+    ],
+    "seconds": 5.965351200080477
+  },
+  "final_epoch_policy": "March training-only inner tail selects test epochs; the same epoch count is frozen for full3600 refit. April test scores never select an epoch."
+}

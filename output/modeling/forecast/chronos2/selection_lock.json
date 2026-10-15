@@ -1,0 +1,15 @@
+{
+  "model": "Chronos-2",
+  "model_id": "amazon/chronos-2",
+  "revision": "29ec3766d36d6f73f0696f85560a422f50e8498c",
+  "context_length": 8192,
+  "prediction_length": 745,
+  "quantile_levels": [
+    0.1,
+    0.5,
+    0.9
+  ],
+  "selection_basis": "Predeclared official frozen model; no tuning",
+  "mode": "zero-shot",
+  "status": "frozen_before_May_labels"
+}

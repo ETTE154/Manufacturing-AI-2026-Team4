@@ -1,0 +1,23 @@
+{
+  "modules": "visuals/figures/module_energy_distribution.png",
+  "hourly": "visuals/figures/hourly_energy_rate.png",
+  "daily": "visuals/figures/daily_energy_rate.png",
+  "weekly": "visuals/figures/weekly_energy_rate.png",
+  "monthly": "visuals/figures/monthly_energy_rate.png",
+  "hourly_zoom": "visuals/figures/hourly_72h.png",
+  "calendar": "visuals/figures/weekday_hour_pattern.png",
+  "variability": "visuals/figures/resolution_variability.png",
+  "sensors": "visuals/figures/sensor_distribution_correlation.png",
+  "decomposition_case_text": {
+    "stl24": "계절성 강도 0.1467, 추세 강도 0.0436. 입력 표준편차 95.7642, 잔차 표준편차 86.7913(시간 전력량(kWh,잠정)). 이 지표는 기술적 분해 결과이며 미래 예측 성능이 아닙니다. 동일 설정으로 시간 순서를 섞은 19개 참고 분해의 강도 90% 범위는 [0.1231, 0.1544]이며 실제 강도도 이 범위 안에 있습니다. 따라서 추출된 계절선 자체가 뚜렷한 반복성을 입증하지 않습니다.",
+    "stl168": "계절성 강도 0.1438, 추세 강도 0.0082. 입력 표준편차 95.7642, 잔차 표준편차 88.3240(시간 전력량(kWh,잠정)). 이 지표는 기술적 분해 결과이며 미래 예측 성능이 아닙니다. 동일 설정으로 시간 순서를 섞은 19개 참고 분해의 강도 90% 범위는 [0.1351, 0.1724]이며 실제 강도도 이 범위 안에 있습니다. 따라서 추출된 계절선 자체가 뚜렷한 반복성을 입증하지 않습니다.",
+    "daily_stl7": "계절성 강도 0.1930, 추세 강도 0.2446. 입력 표준편차 18.0259, 잔차 표준편차 14.4901(기간 평균 부하(kWh/h)). 이 지표는 기술적 분해 결과이며 미래 예측 성능이 아닙니다. 동일 설정으로 시간 순서를 섞은 19개 참고 분해의 강도 90% 범위는 [0.0395, 0.1956]이며 실제 강도도 이 범위 안에 있습니다. 따라서 추출된 계절선 자체가 뚜렷한 반복성을 입증하지 않습니다.",
+    "mstl": "계절성 강도 0.2327, 추세 강도 0.0075. 입력 표준편차 95.7642, 잔차 표준편차 83.6742(시간 전력량(kWh,잠정)). 이 지표는 기술적 분해 결과이며 미래 예측 성능이 아닙니다. 두 계절 성분의 합으로 계산한 강도이며 단일주기 STL보다 커졌다는 사실을 예측 향상의 근거로 사용하지 않았습니다."
+  },
+  "stl24": "decomposition/hourly_stl24.png",
+  "stl168": "decomposition/hourly_stl168.png",
+  "daily_stl7": "decomposition/daily_stl7.png",
+  "mstl": "decomposition/hourly_mstl24_168.png",
+  "diagnostics": "decomposition/H_raw_periodicity.png",
+  "diagnostic_text": "원 시계열의 ACF: 24시간 0.02610, 168시간 -0.02140, 일자료 7일 0.04192. 각 점별 95% 구간에는 0이 포함됐습니다. 위상 평균의 1,999회 순열 검정 p는 각각 0.9845, 0.5885, 0.7390(Holm 보정은 모두1)로 지정 주기 반복성을 뒷받침하지 못했습니다. 순열은 귀무가설에서 시간 순서의 교환 가능성을 가정하므로, 비기각을 독립성·무작위 생성·예측 불가능성의 증명으로 해석하지 않았습니다."
+}

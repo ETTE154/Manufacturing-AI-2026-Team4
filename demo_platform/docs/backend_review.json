@@ -1,0 +1,110 @@
+{
+  "status": "pass",
+  "method": "read-only source AST isolation; no backend imports, real DB, server or integration calls",
+  "checked_at": "2026-10-14T15:10:34.554553+00:00",
+  "source_sha256": {
+    "app.py": "0a76d50a61f94182274f7c486a6b199b3b057af73bdbc49bec7bb2b8b2bffcf7",
+    "engine.py": "fcdd73cdd8a93522c6681dc7e6535beacf0f5a87267ed0d7625e6f94373cddea",
+    "data_source.py": "b9d4b44d42a7940bd7ca9198e0b050414c08fc92b407d55cbb21147bce625bcf",
+    "services.py": "279e702920619def794e264f0aba88a7e50f6cf7b7c253715eb7d3fa6fda19a4",
+    "store.py": "8d7a7d0ef05e1e30c756deafe7cf2b491f27956b18a9a30349b8ddc19d946548",
+    "config.py": "49d89b91dd1e0b2697b5bb2ac566053d612c0a9634dc81c092160616719d42dd"
+  },
+  "checks": [
+    {
+      "check": "pure_synthetic_transform",
+      "status": "pass",
+      "scope": "module17 only; [120,300) seconds; input immutable; deterministic"
+    },
+    {
+      "check": "alarm_identity_and_total_count",
+      "status": "pass",
+      "distinct_synthetic_scenarios": 2,
+      "same_event_inserted_once": true,
+      "open_count_before_ack": 27,
+      "display_limit": 20,
+      "open_count_after_ack": 26,
+      "storage": "in-memory SQLite fixture; real DB never opened"
+    },
+    {
+      "check": "sql_scope_before_limit_and_exact_total",
+      "status": "pass",
+      "module": "17",
+      "source_kind": "recorded",
+      "eligible_total": 35,
+      "returned_rows": 3,
+      "newer_outside_rows": 50,
+      "excluded_synthetic": 6,
+      "excluded_other_module": 10,
+      "invalid_source_kind_rejected": true
+    },
+    {
+      "check": "hourly_bucket_availability",
+      "status": "pass",
+      "end": "2025-03-13 19:43:00",
+      "included_bucket": "18:00-19:00",
+      "excluded_incomplete_bucket": "19:00-20:00"
+    },
+    {
+      "check": "report_requested_origin_and_future_rejection",
+      "status": "pass",
+      "historical_report_forecast_origin": "2025-03-12 13:00:00"
+    },
+    {
+      "check": "weekly_report_source_scope_and_untruncated_count",
+      "status": "pass",
+      "recorded_total": 35,
+      "evidence_rows": 30,
+      "synthetic_excluded": true
+    },
+    {
+      "check": "chat_fault_events_cursor_scope",
+      "status": "pass",
+      "as_of": "2025-02-18 13:00:00",
+      "returned_event_times": [
+        "2025-02-18 12:58:00"
+      ],
+      "expected_start": "2025-02-11 13:00:00",
+      "expected_end_exclusive": "2025-02-18 13:00:00"
+    }
+  ],
+  "summary": "검토한 범위에서 재현 가능한 중대 미해결 오류가 발견되지 않았습니다.",
+  "unresolved_findings": [],
+  "resolved_findings": [
+    {
+      "issue": "완료되지 않은 시간 집계의 미래 관측 포함",
+      "resolution": "time+1h<=end; 날짜 생략 조회는 현재 snapshot+5초까지만"
+    },
+    {
+      "issue": "과거 보고서와 예측 원점 불일치",
+      "resolution": "선택된 보고서 종료 시각을 forecast origin에 전달; 미래 시각 거부"
+    },
+    {
+      "issue": "과거 채팅에 미래 또는 기간 밖 알림 포함",
+      "resolution": "SQL의 module/start/end 조건을 LIMIT 전에 적용하고 정확한 total 반환"
+    },
+    {
+      "issue": "주간 원본 보고서에 합성 시연 알림 포함 및 상세 제한을 총건수로 표시",
+      "resolution": "recorded 원천만 조회; 상세 최대30개와 total 별도"
+    },
+    {
+      "issue": "합성 이벤트 상세를 원본 센서로 재현",
+      "resolution": "순수 결정적 augment_records로 해당 scenario 변환 재현"
+    },
+    {
+      "issue": "서로 다른 합성 시연 알림 식별자 충돌",
+      "resolution": "synthetic scenario_id를 알림 identity에 포함; 반복 삽입은 멱등"
+    },
+    {
+      "issue": "열린 알림 수를 최신20개 표시 개수로 제한",
+      "resolution": "전체 open 상태를 SQL COUNT로 집계"
+    }
+  ],
+  "constraints": [
+    "서버 코드 및 실제 SQLite DB 수정 없음",
+    "GPT/Slack/외부 API 호출 없음",
+    "예측 모델·선정·고정 평가·예측 경로 파일 수정 없음",
+    "AST로 추출한 실제 함수와 메모리 모의자료 검증; 네트워크·배포 전반의 보안 인증을 의미하지 않음"
+  ],
+  "verification_script": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\forecast\\verify_backend_readonly.py"
+}

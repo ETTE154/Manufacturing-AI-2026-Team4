@@ -1,0 +1,154 @@
+{
+  "candidate": 6,
+  "config": {
+    "context": 168,
+    "d_model": 64,
+    "layers": 2,
+    "dropout": 0.1
+  },
+  "architecture": {
+    "seq_len": 168,
+    "pred_len": 745,
+    "d_model": 64,
+    "d_ff": 128,
+    "e_layers": 2,
+    "n_heads": 4,
+    "dropout": 0.1,
+    "output_attention": false,
+    "use_norm": true,
+    "embed": "timeF",
+    "freq": "h",
+    "class_strategy": "projection",
+    "factor": 5,
+    "activation": "gelu",
+    "training_loss": "MSE"
+  },
+  "validation": {
+    "P745": {
+      "count": 745,
+      "mae_kwh": 76.28172985500737,
+      "rmse_kwh": 96.76871778050894,
+      "mape_percent": 0.19495698328924452,
+      "bias_pred_minus_actual_kwh": -1.1890875961235607,
+      "r2": -0.0013060715717816418
+    },
+    "LateP505": {
+      "count": 505,
+      "mae_kwh": 77.56079620194033,
+      "rmse_kwh": 97.69795525853861,
+      "mape_percent": 0.19820828853259467,
+      "bias_pred_minus_actual_kwh": -0.32230631338504756,
+      "r2": -0.0010548211790937234
+    }
+  },
+  "fold_fits": [
+    {
+      "fold": 1,
+      "fit_origin": "2025-02-25 00:00:00",
+      "epochs": 4,
+      "inner": {
+        "inner_fitting_hours": 1319,
+        "inner_fitting_end": "2025-01-24 22:00:00",
+        "inner_tail_origin": "2025-01-24 23:00:00",
+        "inner_tail_end": "2025-02-24 23:00:00",
+        "inner_holdout_hours": 745,
+        "inner_origins": 1,
+        "training_windows": 407,
+        "training_tail_target_overlap": false,
+        "best_epoch": 4,
+        "best_mae_kwh": 76.53966669638561,
+        "epochs_run": 8,
+        "logs": [
+          {
+            "epoch": 1,
+            "training_loss_standardized": 1.320668022521298,
+            "training_loss_name": "MSE",
+            "inner_chronological_mae_kwh": 85.96105354320183
+          },
+          {
+            "epoch": 2,
+            "training_loss_standardized": 1.1802770414867916,
+            "training_loss_name": "MSE",
+            "inner_chronological_mae_kwh": 80.97060289870637
+          },
+          {
+            "epoch": 3,
+            "training_loss_standardized": 1.0687076093523742,
+            "training_loss_name": "MSE",
+            "inner_chronological_mae_kwh": 77.1800373094588
+          },
+          {
+            "epoch": 4,
+            "training_loss_standardized": 1.0279052559222284,
+            "training_loss_name": "MSE",
+            "inner_chronological_mae_kwh": 76.53966669638561
+          },
+          {
+            "epoch": 5,
+            "training_loss_standardized": 1.0218106927098454,
+            "training_loss_name": "MSE",
+            "inner_chronological_mae_kwh": 76.92917241824624
+          },
+          {
+            "epoch": 6,
+            "training_loss_standardized": 1.0187628690967983,
+            "training_loss_name": "MSE",
+            "inner_chronological_mae_kwh": 77.16382653391878
+          },
+          {
+            "epoch": 7,
+            "training_loss_standardized": 1.0147687009277155,
+            "training_loss_name": "MSE",
+            "inner_chronological_mae_kwh": 77.1227626107864
+          },
+          {
+            "epoch": 8,
+            "training_loss_standardized": 1.0109966952326257,
+            "training_loss_name": "MSE",
+            "inner_chronological_mae_kwh": 77.25689484064564
+          }
+        ],
+        "seconds": 0.8989902000175789
+      },
+      "refit": {
+        "path": "E:\\AI work\\AWS_프로젝트\\output\\optimization_20261013\\forecast\\long745\\itransformer\\checkpoints\\candidate6_fold1.pt",
+        "sha256": "6ba2680144258ea6511f941a0a01d4b21f27795c543dd9c1cb966075da2275f3",
+        "parameter_count": 126313,
+        "epochs": 4,
+        "family": "itransformer",
+        "architecture": {
+          "seq_len": 168,
+          "pred_len": 745,
+          "d_model": 64,
+          "d_ff": 128,
+          "e_layers": 2,
+          "n_heads": 4,
+          "dropout": 0.1,
+          "output_attention": false,
+          "use_norm": true,
+          "embed": "timeF",
+          "freq": "h",
+          "class_strategy": "projection",
+          "factor": 5,
+          "activation": "gelu",
+          "training_loss": "MSE"
+        },
+        "normalization_mean": 39129.81282000295,
+        "normalization_scale": 94.45265436998334,
+        "forecast_context_in_checkpoint": true,
+        "history_hours": 2064,
+        "history_end": "2025-02-24 23:00:00",
+        "fit_seconds": 1.236366800032556,
+        "training_windows": 1152,
+        "maximum_supervised_label": "2025-02-24 23:00:00",
+        "training_loss_logs": [
+          1.1868085033363767,
+          1.0067800747023687,
+          1.0017422139644623,
+          0.9990553276406394
+        ],
+        "training_loss_name": "MSE"
+      }
+    }
+  ]
+}

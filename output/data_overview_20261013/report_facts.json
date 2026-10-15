@@ -1,0 +1,456 @@
+{
+  "full": {
+    "rows": 33696013,
+    "columns": [
+      "module(equipment)",
+      "timestamp",
+      "localtime",
+      "operation",
+      "voltageR",
+      "voltageS",
+      "voltageT",
+      "voltageRS",
+      "voltageST",
+      "voltageTR",
+      "currentR",
+      "currentS",
+      "currentT",
+      "activePower",
+      "powerFactorR",
+      "powerFactorS",
+      "powerFactorT",
+      "reactivePowerLagging",
+      "accumActiveEnergy"
+    ],
+    "module_count": 13,
+    "rows_per_module": 2592001,
+    "first": "2024-12-01 00:00:00",
+    "last": "2025-04-30 00:00:00",
+    "sampling_seconds": 5,
+    "span_days": 150,
+    "missing_total": 0,
+    "bytes": 4909245995
+  },
+  "may": {
+    "rows": 505,
+    "columns": [
+      "id",
+      "hourly_pow",
+      "may_bill",
+      "may_carbon",
+      "agg_pow"
+    ],
+    "first": "2025-05-10 00:00:00",
+    "last": "2025-05-31 00:00:00",
+    "sampling_seconds": 3600,
+    "mean": 39071.38393652529,
+    "std": 92.96732096789461,
+    "missing_total": 0,
+    "bill_factor_max_error": 4.6566128730773926e-09,
+    "carbon_factor_max_error": 4.48198989033699e-09,
+    "agg_unique": 1,
+    "agg_sum_error": 2.9802322387695312e-08
+  },
+  "original_numeric_statistics": [
+    {
+      "name": "voltageR",
+      "mean": 214.99376980297342,
+      "std": 2.9021141358535316,
+      "min": 190.1,
+      "max": 220.0,
+      "missing": 0
+    },
+    {
+      "name": "voltageS",
+      "mean": 214.99466851879478,
+      "std": 2.9025523105650626,
+      "min": 190.14,
+      "max": 220.0,
+      "missing": 0
+    },
+    {
+      "name": "voltageT",
+      "mean": 214.99431860825788,
+      "std": 2.9023573078966405,
+      "min": 190.18,
+      "max": 220.0,
+      "missing": 0
+    },
+    {
+      "name": "voltageRS",
+      "mean": 372.3699873139294,
+      "std": 3.5730769151189588,
+      "min": 330.83,
+      "max": 381.04,
+      "missing": 0
+    },
+    {
+      "name": "voltageST",
+      "mean": 372.3704619599951,
+      "std": 3.5726655639097857,
+      "min": 329.95,
+      "max": 381.04,
+      "missing": 0
+    },
+    {
+      "name": "voltageTR",
+      "mean": 372.36968358096254,
+      "std": 3.572803707888942,
+      "min": 330.56,
+      "max": 381.04,
+      "missing": 0
+    },
+    {
+      "name": "currentR",
+      "mean": 17.499397734384775,
+      "std": 7.2172171270679595,
+      "min": 5.0,
+      "max": 30.0,
+      "missing": 0
+    },
+    {
+      "name": "currentS",
+      "mean": 17.499249443546926,
+      "std": 7.217179783873383,
+      "min": 5.0,
+      "max": 30.0,
+      "missing": 0
+    },
+    {
+      "name": "currentT",
+      "mean": 17.501930017951974,
+      "std": 7.216742483108641,
+      "min": 5.0,
+      "max": 30.0,
+      "missing": 0
+    },
+    {
+      "name": "activePower",
+      "mean": 3009.952183346439,
+      "std": 717.1453987051784,
+      "min": 864.44,
+      "max": 5220.93,
+      "missing": 0
+    },
+    {
+      "name": "powerFactorR",
+      "mean": 92.46882192056373,
+      "std": 4.405299215884062,
+      "min": 60.0,
+      "max": 100.0,
+      "missing": 0
+    },
+    {
+      "name": "powerFactorS",
+      "mean": 92.47003854818077,
+      "std": 4.405555292716048,
+      "min": 60.0,
+      "max": 100.0,
+      "missing": 0
+    },
+    {
+      "name": "powerFactorT",
+      "mean": 92.46884008710467,
+      "std": 4.4056192825740474,
+      "min": 60.0,
+      "max": 100.0,
+      "missing": 0
+    },
+    {
+      "name": "reactivePowerLagging",
+      "mean": 601.9452275745501,
+      "std": 229.0784649922556,
+      "min": 89.44,
+      "max": 1550.63,
+      "missing": 0
+    },
+    {
+      "name": "accumActiveEnergy",
+      "mean": 8103413.169411348,
+      "std": 3344950.2449687696,
+      "min": 1129004.0,
+      "max": 15438171.0,
+      "missing": 0
+    }
+  ],
+  "original_statistic_scope": "Full population33,696,013 rows; moments from previous full-scan training_profile.json; std ddof0",
+  "time_checks": [
+    {
+      "module": "1(PM-3)",
+      "local_duplicates": 0,
+      "local_negative": 0,
+      "local_non_5s": 0,
+      "unix_duplicates": 720
+    },
+    {
+      "module": "2(L-1전등)",
+      "local_duplicates": 0,
+      "local_negative": 0,
+      "local_non_5s": 0,
+      "unix_duplicates": 720
+    },
+    {
+      "module": "3(분쇄기(2))",
+      "local_duplicates": 0,
+      "local_negative": 0,
+      "local_non_5s": 0,
+      "unix_duplicates": 720
+    },
+    {
+      "module": "4(분쇄기(1))",
+      "local_duplicates": 0,
+      "local_negative": 0,
+      "local_non_5s": 0,
+      "unix_duplicates": 720
+    },
+    {
+      "module": "5(좌측분전반)",
+      "local_duplicates": 0,
+      "local_negative": 0,
+      "local_non_5s": 0,
+      "unix_duplicates": 720
+    },
+    {
+      "module": "11(우측분전반1)",
+      "local_duplicates": 0,
+      "local_negative": 0,
+      "local_non_5s": 0,
+      "unix_duplicates": 720
+    },
+    {
+      "module": "12(4호기)",
+      "local_duplicates": 0,
+      "local_negative": 0,
+      "local_non_5s": 0,
+      "unix_duplicates": 720
+    },
+    {
+      "module": "13(3호기)",
+      "local_duplicates": 0,
+      "local_negative": 0,
+      "local_non_5s": 0,
+      "unix_duplicates": 720
+    },
+    {
+      "module": "14(2호기)",
+      "local_duplicates": 0,
+      "local_negative": 0,
+      "local_non_5s": 0,
+      "unix_duplicates": 720
+    },
+    {
+      "module": "15(예비건조기)",
+      "local_duplicates": 0,
+      "local_negative": 0,
+      "local_non_5s": 0,
+      "unix_duplicates": 720
+    },
+    {
+      "module": "16(호이스트)",
+      "local_duplicates": 0,
+      "local_negative": 0,
+      "local_non_5s": 0,
+      "unix_duplicates": 720
+    },
+    {
+      "module": "17(6호기)",
+      "local_duplicates": 0,
+      "local_negative": 0,
+      "local_non_5s": 0,
+      "unix_duplicates": 720
+    },
+    {
+      "module": "18(우측분전반2)",
+      "local_duplicates": 0,
+      "local_negative": 0,
+      "local_non_5s": 0,
+      "unix_duplicates": 720
+    }
+  ],
+  "unix_duplicate_rows": 9360,
+  "local_duplicate_rows": 0,
+  "local_non5s_intervals": 0,
+  "operation_constant_one": true,
+  "target": {
+    "complete_hours": 3600,
+    "first": "2024-12-01 00:00:00",
+    "last": "2025-04-29 23:00:00",
+    "total_provisional_kwh": 140865762.32240278,
+    "mean": 39129.37842288966,
+    "std": 95.76422049015697,
+    "source_sha256": "729b149a3e3165dfb339f0386249bfbda0326657f9e722d86da8138db36117de"
+  },
+  "source_time_offsets": {
+    "-28800000": 22042800,
+    "-25200000": 11653213
+  },
+  "source_offset_transition": "2025-03-09 03:00:00",
+  "module_statistics": [
+    {
+      "module": "1(PM-3)",
+      "energy_kwh": 10837487.172263889,
+      "mean_hour_energy": 3010.413103406636,
+      "hours": 3600,
+      "share_percent": 7.693485623184914
+    },
+    {
+      "module": "11(우측분전반1)",
+      "energy_kwh": 10835682.55886111,
+      "mean_hour_energy": 3009.911821905864,
+      "hours": 3600,
+      "share_percent": 7.692204535876666
+    },
+    {
+      "module": "12(4호기)",
+      "energy_kwh": 10836116.768569445,
+      "mean_hour_energy": 3010.0324357137347,
+      "hours": 3600,
+      "share_percent": 7.6925127794847485
+    },
+    {
+      "module": "13(3호기)",
+      "energy_kwh": 10831259.717472222,
+      "mean_hour_energy": 3008.683254853395,
+      "hours": 3600,
+      "share_percent": 7.689064779759942
+    },
+    {
+      "module": "14(2호기)",
+      "energy_kwh": 10834920.519791666,
+      "mean_hour_energy": 3009.700144386574,
+      "hours": 3600,
+      "share_percent": 7.691663567612356
+    },
+    {
+      "module": "15(예비건조기)",
+      "energy_kwh": 10837473.490944445,
+      "mean_hour_energy": 3010.4093030401236,
+      "hours": 3600,
+      "share_percent": 7.693475910874969
+    },
+    {
+      "module": "16(호이스트)",
+      "energy_kwh": 10835153.817916667,
+      "mean_hour_energy": 3009.7649494212965,
+      "hours": 3600,
+      "share_percent": 7.691829184949851
+    },
+    {
+      "module": "17(6호기)",
+      "energy_kwh": 10835794.422166666,
+      "mean_hour_energy": 3009.942895046296,
+      "hours": 3600,
+      "share_percent": 7.692283947157103
+    },
+    {
+      "module": "18(우측분전반2)",
+      "energy_kwh": 10836167.539152779,
+      "mean_hour_energy": 3010.0465386535498,
+      "hours": 3600,
+      "share_percent": 7.692548821303922
+    },
+    {
+      "module": "2(L-1전등)",
+      "energy_kwh": 10835691.951194445,
+      "mean_hour_energy": 3009.9144308873456,
+      "hours": 3600,
+      "share_percent": 7.692211203453783
+    },
+    {
+      "module": "3(분쇄기(2))",
+      "energy_kwh": 10834450.50276389,
+      "mean_hour_energy": 3009.5695841010806,
+      "hours": 3600,
+      "share_percent": 7.691329904541906
+    },
+    {
+      "module": "4(분쇄기(1))",
+      "energy_kwh": 10838627.205375,
+      "mean_hour_energy": 3010.7297792708337,
+      "hours": 3600,
+      "share_percent": 7.694294927796849
+    },
+    {
+      "module": "5(좌측분전반)",
+      "energy_kwh": 10836936.655930556,
+      "mean_hour_energy": 3010.2601822029324,
+      "hours": 3600,
+      "share_percent": 7.693094814002998
+    }
+  ],
+  "raw_prefix": {
+    "rows_read": 17280,
+    "scope": "Original firstPM-3 day, bounded prefix only, not full-population sensor inference",
+    "first": "2024-12-01 00:00:00",
+    "last": "2024-12-01 23:59:55",
+    "cadence_seconds": 5,
+    "unique_modules": 1,
+    "inferred_parser_dtypes_from_prefix": {
+      "module(equipment)": "str",
+      "timestamp": "int64",
+      "localtime": "int64",
+      "operation": "int64",
+      "voltageR": "float64",
+      "voltageS": "float64",
+      "voltageT": "float64",
+      "voltageRS": "float64",
+      "voltageST": "float64",
+      "voltageTR": "float64",
+      "currentR": "float64",
+      "currentS": "float64",
+      "currentT": "float64",
+      "activePower": "float64",
+      "powerFactorR": "float64",
+      "powerFactorS": "float64",
+      "powerFactorT": "float64",
+      "reactivePowerLagging": "float64",
+      "accumActiveEnergy": "int64"
+    },
+    "localtime_parser": "String conversion followed by explicitformat %Y%m%d%H%M%S",
+    "figures": {
+      "raw": "raw_views/raw_5second_example.png",
+      "timeline": "raw_views/dataset_timeline.png"
+    },
+    "original_modified": false,
+    "no_imputation": true,
+    "no_anomaly_removal": true
+  },
+  "analysis_type": "Descriptive EDA, not forecasting evaluation",
+  "statistical_sources": [
+    "output/analysis/training_profile.json",
+    "output/analysis/time_anomaly_audit.json",
+    "output/analysis/baseline_audit/complete_hour_module_sum.csv",
+    "output/analysis/hourly_by_equipment.csv"
+  ],
+  "resampled_datasets": {
+    "hourly": {
+      "rows": 3600,
+      "complete": 3600,
+      "partial": 0,
+      "energy_sum": 140865762.32240278,
+      "source": "Audited complete-hour target, freshly reaggregated; no imputation"
+    },
+    "daily": {
+      "rows": 150,
+      "complete": 150,
+      "partial": 0,
+      "energy_sum": 140865762.32240278,
+      "source": "Audited complete-hour target, freshly reaggregated; no imputation"
+    },
+    "weekly": {
+      "rows": 23,
+      "complete": 21,
+      "partial": 2,
+      "energy_sum": 140865762.32240278,
+      "source": "Audited complete-hour target, freshly reaggregated; no imputation"
+    },
+    "monthly": {
+      "rows": 5,
+      "complete": 4,
+      "partial": 1,
+      "energy_sum": 140865762.32240278,
+      "source": "Audited complete-hour target, freshly reaggregated; no imputation"
+    }
+  },
+  "sources_modified": false
+}

@@ -1,0 +1,169 @@
+{
+  "xgb_rule_distillation": {
+    "threshold": 0.47502279281616216,
+    "threshold_basis": "99.5th percentile of validation weak-normal probability scores (strictly greater than the quantile), frozen for April; positive validation labels not used to optimize alarm threshold",
+    "alarm_comparison": "float64 score >= float64 threshold",
+    "features": [
+      "voltageR",
+      "voltageS",
+      "voltageT",
+      "voltageRS",
+      "voltageST",
+      "voltageTR",
+      "currentR",
+      "currentS",
+      "currentT",
+      "activePower",
+      "powerFactorR",
+      "powerFactorS",
+      "powerFactorT",
+      "reactivePowerLagging"
+    ],
+    "kind": "xgb"
+  },
+  "xgb_rule_sensor_excluded_transfer": {
+    "threshold": 0.521167278289795,
+    "threshold_basis": "99.5th percentile of validation weak-normal probability scores (strictly greater than the quantile), frozen for April; positive validation labels not used to optimize alarm threshold",
+    "alarm_comparison": "float64 score >= float64 threshold",
+    "features": [
+      "currentR",
+      "currentS",
+      "currentT",
+      "activePower",
+      "reactivePowerLagging"
+    ],
+    "kind": "xgb"
+  },
+  "ae_unsupervised_all_training": {
+    "threshold": 0.30083799362182617,
+    "threshold_basis": "99.5th percentile of validation weak-normal proxy scores, frozen for April; threshold calibration is semi-supervised, including when the AE fit itself is unsupervised",
+    "alarm_comparison": "float64 score >= float64 threshold",
+    "features": [
+      "voltageR",
+      "voltageS",
+      "voltageT",
+      "voltageRS",
+      "voltageST",
+      "voltageTR",
+      "currentR",
+      "currentS",
+      "currentT",
+      "activePower",
+      "powerFactorR",
+      "powerFactorS",
+      "powerFactorT",
+      "reactivePowerLagging"
+    ],
+    "kind": "ae"
+  },
+  "ae_weak_normal_proxy": {
+    "threshold": 0.3080447018146515,
+    "threshold_basis": "99.5th percentile of validation weak-normal proxy scores, frozen for April; threshold calibration is semi-supervised, including when the AE fit itself is unsupervised",
+    "alarm_comparison": "float64 score >= float64 threshold",
+    "features": [
+      "voltageR",
+      "voltageS",
+      "voltageT",
+      "voltageRS",
+      "voltageST",
+      "voltageTR",
+      "currentR",
+      "currentS",
+      "currentT",
+      "activePower",
+      "powerFactorR",
+      "powerFactorS",
+      "powerFactorT",
+      "reactivePowerLagging"
+    ],
+    "kind": "ae"
+  },
+  "isolation_forest": {
+    "threshold": 0.573227971100529,
+    "threshold_basis": "March original weak-normal scores 99.5th percentile, nextafter(float64,+inf) for strict tie handling; frozen before April",
+    "alarm_comparison": "float64 score >= float64 threshold",
+    "features": [
+      "voltageR",
+      "voltageS",
+      "voltageT",
+      "voltageRS",
+      "voltageST",
+      "voltageTR",
+      "currentR",
+      "currentS",
+      "currentT",
+      "activePower",
+      "powerFactorR",
+      "powerFactorS",
+      "powerFactorT",
+      "reactivePowerLagging"
+    ],
+    "kind": "if"
+  },
+  "robust_z": {
+    "threshold": 2.761682571839805,
+    "threshold_basis": "March original weak-normal scores 99.5th percentile, nextafter(float64,+inf) for strict tie handling; frozen before April",
+    "alarm_comparison": "float64 score >= float64 threshold",
+    "features": [
+      "voltageR",
+      "voltageS",
+      "voltageT",
+      "voltageRS",
+      "voltageST",
+      "voltageTR",
+      "currentR",
+      "currentS",
+      "currentT",
+      "activePower",
+      "powerFactorR",
+      "powerFactorS",
+      "powerFactorT",
+      "reactivePowerLagging"
+    ],
+    "kind": "z"
+  },
+  "xgb_synthetic_augmented": {
+    "threshold": 0.9217655828595163,
+    "threshold_basis": "March original weak-normal scores 99.5th percentile, nextafter(float64,+inf) for strict tie handling; frozen before April",
+    "alarm_comparison": "float64 score >= float64 threshold",
+    "features": [
+      "voltageR",
+      "voltageS",
+      "voltageT",
+      "voltageRS",
+      "voltageST",
+      "voltageTR",
+      "currentR",
+      "currentS",
+      "currentT",
+      "activePower",
+      "powerFactorR",
+      "powerFactorS",
+      "powerFactorT",
+      "reactivePowerLagging"
+    ],
+    "kind": "xgb"
+  },
+  "ae_synthetic_denoising": {
+    "threshold": 0.29156841218471513,
+    "threshold_basis": "March ORIGINAL weak-normal reconstruction scores q99.5, nextafter(float64,+inf), frozen; no synthetic/test threshold optimization",
+    "alarm_comparison": "float64 score >= float64 threshold",
+    "features": [
+      "voltageR",
+      "voltageS",
+      "voltageT",
+      "voltageRS",
+      "voltageST",
+      "voltageTR",
+      "currentR",
+      "currentS",
+      "currentT",
+      "activePower",
+      "powerFactorR",
+      "powerFactorS",
+      "powerFactorT",
+      "reactivePowerLagging"
+    ],
+    "kind": "ae"
+  }
+}

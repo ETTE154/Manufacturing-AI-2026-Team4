@@ -1,0 +1,30 @@
+[
+  {
+    "model": "patchtst",
+    "scenario": "dayahead24",
+    "returncode": 0,
+    "seconds": 37.87591549998615,
+    "log": "E:\\AI work\\AWS_\ud504\ub85c\uc81d\ud2b8\\output\\optimization_20261013\\forecast\\hpo_patchtst_dayahead24.log"
+  },
+  {
+    "model": "itransformer",
+    "scenario": "dayahead24",
+    "returncode": 0,
+    "seconds": 109.51454700005706,
+    "log": "E:\\AI work\\AWS_\ud504\ub85c\uc81d\ud2b8\\output\\optimization_20261013\\forecast\\hpo_itransformer_dayahead24.log"
+  },
+  {
+    "model": "patchtst",
+    "scenario": "long745",
+    "returncode": 0,
+    "seconds": 22.23725879995618,
+    "log": "E:\\AI work\\AWS_\ud504\ub85c\uc81d\ud2b8\\output\\optimization_20261013\\forecast\\hpo_patchtst_long745.log"
+  },
+  {
+    "model": "itransformer",
+    "scenario": "long745",
+    "returncode": 0,
+    "seconds": 34.39106230007019,
+    "log": "E:\\AI work\\AWS_\ud504\ub85c\uc81d\ud2b8\\output\\optimization_20261013\\forecast\\hpo_itransformer_long745.log"
+  }
+]

@@ -1,0 +1,1024 @@
+{
+  "passed": true,
+  "models": [
+    {
+      "family": "itransformer",
+      "scenario": "dayahead24",
+      "test_rows": 696,
+      "target_index": 13,
+      "input_channels": 14,
+      "default_saved_context_replay_max_absdiff_kwh": 0.0,
+      "generic_named_wide_history_replay_max_absdiff_kwh": 0.0,
+      "all_named_training_scalers_verified": true
+    },
+    {
+      "family": "patchtst",
+      "scenario": "dayahead24",
+      "test_rows": 696,
+      "target_index": 13,
+      "input_channels": 14,
+      "default_saved_context_replay_max_absdiff_kwh": 0.0,
+      "generic_named_wide_history_replay_max_absdiff_kwh": 0.0,
+      "all_named_training_scalers_verified": true
+    },
+    {
+      "family": "itransformer",
+      "scenario": "long745",
+      "test_rows": 745,
+      "target_index": 13,
+      "input_channels": 14,
+      "default_saved_context_replay_max_absdiff_kwh": 0.0,
+      "generic_named_wide_history_replay_max_absdiff_kwh": 0.0,
+      "all_named_training_scalers_verified": true
+    },
+    {
+      "family": "patchtst",
+      "scenario": "long745",
+      "test_rows": 745,
+      "target_index": 13,
+      "input_channels": 14,
+      "default_saved_context_replay_max_absdiff_kwh": 0.0,
+      "generic_named_wide_history_replay_max_absdiff_kwh": 0.0,
+      "all_named_training_scalers_verified": true
+    }
+  ],
+  "unique_CV_checkpoints_audited": 51,
+  "all_CV_inner_scaler_feature_prefixes_exclude_inner_tail": true,
+  "per_channel_instance_norm_enabled_cases_verified": 15,
+  "tensor_checks": [
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\itransformer\\checkpoints\\candidate1_fold1.pt",
+      "family": "itransformer",
+      "scenario": "dayahead24",
+      "output_shape": [
+        1,
+        24,
+        14
+      ],
+      "target_index": 13,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 1.906281787676562,
+      "other_output_channels_max_change_kwh": 1.906281787676562,
+      "patch_channel_independence_verified": false,
+      "input_only_instance_norm_enabled": false,
+      "per_channel_shift_inverse_max_error_kwh": null
+    },
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\itransformer\\checkpoints\\candidate1_fold2.pt",
+      "family": "itransformer",
+      "scenario": "dayahead24",
+      "output_shape": [
+        1,
+        24,
+        14
+      ],
+      "target_index": 13,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 3.2604356038427795,
+      "other_output_channels_max_change_kwh": 3.2604356038427795,
+      "patch_channel_independence_verified": false,
+      "input_only_instance_norm_enabled": false,
+      "per_channel_shift_inverse_max_error_kwh": null
+    },
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\itransformer\\checkpoints\\candidate1_fold3.pt",
+      "family": "itransformer",
+      "scenario": "dayahead24",
+      "output_shape": [
+        1,
+        24,
+        14
+      ],
+      "target_index": 13,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 1.811876113017206,
+      "other_output_channels_max_change_kwh": 1.811876113017206,
+      "patch_channel_independence_verified": false,
+      "input_only_instance_norm_enabled": false,
+      "per_channel_shift_inverse_max_error_kwh": null
+    },
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\itransformer\\checkpoints\\candidate1_fold4.pt",
+      "family": "itransformer",
+      "scenario": "dayahead24",
+      "output_shape": [
+        1,
+        24,
+        14
+      ],
+      "target_index": 13,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 1.920556569530163,
+      "other_output_channels_max_change_kwh": 1.920556569530163,
+      "patch_channel_independence_verified": false,
+      "input_only_instance_norm_enabled": false,
+      "per_channel_shift_inverse_max_error_kwh": null
+    },
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\itransformer\\checkpoints\\candidate1_fold5.pt",
+      "family": "itransformer",
+      "scenario": "dayahead24",
+      "output_shape": [
+        1,
+        24,
+        14
+      ],
+      "target_index": 13,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 1.7875945062187384,
+      "other_output_channels_max_change_kwh": 1.7875945062187384,
+      "patch_channel_independence_verified": false,
+      "input_only_instance_norm_enabled": false,
+      "per_channel_shift_inverse_max_error_kwh": null
+    },
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\itransformer\\checkpoints\\candidate2_fold1.pt",
+      "family": "itransformer",
+      "scenario": "dayahead24",
+      "output_shape": [
+        1,
+        24,
+        14
+      ],
+      "target_index": 13,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 2.472011140853283,
+      "other_output_channels_max_change_kwh": 2.472011140853283,
+      "patch_channel_independence_verified": false,
+      "input_only_instance_norm_enabled": true,
+      "per_channel_shift_inverse_max_error_kwh": 1.5918821119953463e-05
+    },
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\itransformer\\checkpoints\\candidate2_fold2.pt",
+      "family": "itransformer",
+      "scenario": "dayahead24",
+      "output_shape": [
+        1,
+        24,
+        14
+      ],
+      "target_index": 13,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 2.224500211304985,
+      "other_output_channels_max_change_kwh": 2.224500211304985,
+      "patch_channel_independence_verified": false,
+      "input_only_instance_norm_enabled": true,
+      "per_channel_shift_inverse_max_error_kwh": 2.0730082994191434e-05
+    },
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\itransformer\\checkpoints\\candidate2_fold3.pt",
+      "family": "itransformer",
+      "scenario": "dayahead24",
+      "output_shape": [
+        1,
+        24,
+        14
+      ],
+      "target_index": 13,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 1.9955547201097943,
+      "other_output_channels_max_change_kwh": 1.9955547201097943,
+      "patch_channel_independence_verified": false,
+      "input_only_instance_norm_enabled": true,
+      "per_channel_shift_inverse_max_error_kwh": 1.7993651212577788e-05
+    },
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\itransformer\\checkpoints\\candidate2_fold4.pt",
+      "family": "itransformer",
+      "scenario": "dayahead24",
+      "output_shape": [
+        1,
+        24,
+        14
+      ],
+      "target_index": 13,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 2.82309965154127,
+      "other_output_channels_max_change_kwh": 2.82309965154127,
+      "patch_channel_independence_verified": false,
+      "input_only_instance_norm_enabled": true,
+      "per_channel_shift_inverse_max_error_kwh": 2.7784630944438504e-05
+    },
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\itransformer\\checkpoints\\candidate2_fold5.pt",
+      "family": "itransformer",
+      "scenario": "dayahead24",
+      "output_shape": [
+        1,
+        24,
+        14
+      ],
+      "target_index": 13,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 1.3208439720474416,
+      "other_output_channels_max_change_kwh": 1.3208439720474416,
+      "patch_channel_independence_verified": false,
+      "input_only_instance_norm_enabled": true,
+      "per_channel_shift_inverse_max_error_kwh": 1.2388749780711805e-05
+    },
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\itransformer\\checkpoints\\candidate3_fold1.pt",
+      "family": "itransformer",
+      "scenario": "dayahead24",
+      "output_shape": [
+        1,
+        24,
+        14
+      ],
+      "target_index": 13,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 1.4187550693168305,
+      "other_output_channels_max_change_kwh": 1.4187550693168305,
+      "patch_channel_independence_verified": false,
+      "input_only_instance_norm_enabled": false,
+      "per_channel_shift_inverse_max_error_kwh": null
+    },
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\itransformer\\checkpoints\\candidate3_fold2.pt",
+      "family": "itransformer",
+      "scenario": "dayahead24",
+      "output_shape": [
+        1,
+        24,
+        14
+      ],
+      "target_index": 13,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 2.683405384486832,
+      "other_output_channels_max_change_kwh": 2.683405384486832,
+      "patch_channel_independence_verified": false,
+      "input_only_instance_norm_enabled": false,
+      "per_channel_shift_inverse_max_error_kwh": null
+    },
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\itransformer\\checkpoints\\candidate3_fold3.pt",
+      "family": "itransformer",
+      "scenario": "dayahead24",
+      "output_shape": [
+        1,
+        24,
+        14
+      ],
+      "target_index": 13,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 2.5452480464737164,
+      "other_output_channels_max_change_kwh": 2.5452480464737164,
+      "patch_channel_independence_verified": false,
+      "input_only_instance_norm_enabled": false,
+      "per_channel_shift_inverse_max_error_kwh": null
+    },
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\itransformer\\checkpoints\\candidate3_fold4.pt",
+      "family": "itransformer",
+      "scenario": "dayahead24",
+      "output_shape": [
+        1,
+        24,
+        14
+      ],
+      "target_index": 13,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 1.3761195082988706,
+      "other_output_channels_max_change_kwh": 1.3761195082988706,
+      "patch_channel_independence_verified": false,
+      "input_only_instance_norm_enabled": false,
+      "per_channel_shift_inverse_max_error_kwh": null
+    },
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\itransformer\\checkpoints\\candidate3_fold5.pt",
+      "family": "itransformer",
+      "scenario": "dayahead24",
+      "output_shape": [
+        1,
+        24,
+        14
+      ],
+      "target_index": 13,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 2.502976941061206,
+      "other_output_channels_max_change_kwh": 2.502976941061206,
+      "patch_channel_independence_verified": false,
+      "input_only_instance_norm_enabled": false,
+      "per_channel_shift_inverse_max_error_kwh": null
+    },
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\itransformer\\checkpoints\\candidate4_fold2.pt",
+      "family": "itransformer",
+      "scenario": "dayahead24",
+      "output_shape": [
+        1,
+        24,
+        16
+      ],
+      "target_index": 15,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 2.434156970863114,
+      "other_output_channels_max_change_kwh": 2.434156970863114,
+      "patch_channel_independence_verified": false,
+      "input_only_instance_norm_enabled": false,
+      "per_channel_shift_inverse_max_error_kwh": null
+    },
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\itransformer\\checkpoints\\candidate4_fold3.pt",
+      "family": "itransformer",
+      "scenario": "dayahead24",
+      "output_shape": [
+        1,
+        24,
+        14
+      ],
+      "target_index": 13,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 1.9798974339355482,
+      "other_output_channels_max_change_kwh": 1.9798974339355482,
+      "patch_channel_independence_verified": false,
+      "input_only_instance_norm_enabled": false,
+      "per_channel_shift_inverse_max_error_kwh": null
+    },
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\itransformer\\checkpoints\\candidate4_fold4.pt",
+      "family": "itransformer",
+      "scenario": "dayahead24",
+      "output_shape": [
+        1,
+        24,
+        15
+      ],
+      "target_index": 14,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 1.8566252534728847,
+      "other_output_channels_max_change_kwh": 1.8566252534728847,
+      "patch_channel_independence_verified": false,
+      "input_only_instance_norm_enabled": false,
+      "per_channel_shift_inverse_max_error_kwh": null
+    },
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\itransformer\\checkpoints\\candidate5_fold2.pt",
+      "family": "itransformer",
+      "scenario": "dayahead24",
+      "output_shape": [
+        1,
+        24,
+        16
+      ],
+      "target_index": 15,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 1.867785935239226,
+      "other_output_channels_max_change_kwh": 1.867785935239226,
+      "patch_channel_independence_verified": false,
+      "input_only_instance_norm_enabled": true,
+      "per_channel_shift_inverse_max_error_kwh": 1.568762736781082e-05
+    },
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\itransformer\\checkpoints\\candidate5_fold4.pt",
+      "family": "itransformer",
+      "scenario": "dayahead24",
+      "output_shape": [
+        1,
+        24,
+        15
+      ],
+      "target_index": 14,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 2.512088582312572,
+      "other_output_channels_max_change_kwh": 2.512088582312572,
+      "patch_channel_independence_verified": false,
+      "input_only_instance_norm_enabled": true,
+      "per_channel_shift_inverse_max_error_kwh": 3.480095328711741e-05
+    },
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\itransformer\\checkpoints\\candidate6_fold2.pt",
+      "family": "itransformer",
+      "scenario": "dayahead24",
+      "output_shape": [
+        1,
+        24,
+        16
+      ],
+      "target_index": 15,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 2.0793952443564194,
+      "other_output_channels_max_change_kwh": 2.0793952443564194,
+      "patch_channel_independence_verified": false,
+      "input_only_instance_norm_enabled": false,
+      "per_channel_shift_inverse_max_error_kwh": null
+    },
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\itransformer\\checkpoints\\candidate6_fold3.pt",
+      "family": "itransformer",
+      "scenario": "dayahead24",
+      "output_shape": [
+        1,
+        24,
+        14
+      ],
+      "target_index": 13,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 2.5603795807110146,
+      "other_output_channels_max_change_kwh": 2.5603795807110146,
+      "patch_channel_independence_verified": false,
+      "input_only_instance_norm_enabled": false,
+      "per_channel_shift_inverse_max_error_kwh": null
+    },
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\itransformer\\checkpoints\\candidate6_fold4.pt",
+      "family": "itransformer",
+      "scenario": "dayahead24",
+      "output_shape": [
+        1,
+        24,
+        15
+      ],
+      "target_index": 14,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 1.226203175210685,
+      "other_output_channels_max_change_kwh": 1.226203175210685,
+      "patch_channel_independence_verified": false,
+      "input_only_instance_norm_enabled": false,
+      "per_channel_shift_inverse_max_error_kwh": null
+    },
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\patchtst\\checkpoints\\candidate1_fold1.pt",
+      "family": "patchtst",
+      "scenario": "dayahead24",
+      "output_shape": [
+        1,
+        24,
+        14
+      ],
+      "target_index": 13,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 13.199311596319603,
+      "other_output_channels_max_change_kwh": 0.0,
+      "patch_channel_independence_verified": true,
+      "input_only_instance_norm_enabled": false,
+      "per_channel_shift_inverse_max_error_kwh": null
+    },
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\patchtst\\checkpoints\\candidate1_fold2.pt",
+      "family": "patchtst",
+      "scenario": "dayahead24",
+      "output_shape": [
+        1,
+        24,
+        14
+      ],
+      "target_index": 13,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 12.316995880253671,
+      "other_output_channels_max_change_kwh": 0.0,
+      "patch_channel_independence_verified": true,
+      "input_only_instance_norm_enabled": false,
+      "per_channel_shift_inverse_max_error_kwh": null
+    },
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\patchtst\\checkpoints\\candidate1_fold3.pt",
+      "family": "patchtst",
+      "scenario": "dayahead24",
+      "output_shape": [
+        1,
+        24,
+        14
+      ],
+      "target_index": 13,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 7.645395171974087,
+      "other_output_channels_max_change_kwh": 0.0,
+      "patch_channel_independence_verified": true,
+      "input_only_instance_norm_enabled": false,
+      "per_channel_shift_inverse_max_error_kwh": null
+    },
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\patchtst\\checkpoints\\candidate1_fold4.pt",
+      "family": "patchtst",
+      "scenario": "dayahead24",
+      "output_shape": [
+        1,
+        24,
+        14
+      ],
+      "target_index": 13,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 8.42000634381111,
+      "other_output_channels_max_change_kwh": 0.0,
+      "patch_channel_independence_verified": true,
+      "input_only_instance_norm_enabled": false,
+      "per_channel_shift_inverse_max_error_kwh": null
+    },
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\patchtst\\checkpoints\\candidate1_fold5.pt",
+      "family": "patchtst",
+      "scenario": "dayahead24",
+      "output_shape": [
+        1,
+        24,
+        14
+      ],
+      "target_index": 13,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 5.7687396469918895,
+      "other_output_channels_max_change_kwh": 0.0,
+      "patch_channel_independence_verified": true,
+      "input_only_instance_norm_enabled": false,
+      "per_channel_shift_inverse_max_error_kwh": null
+    },
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\patchtst\\checkpoints\\candidate2_fold1.pt",
+      "family": "patchtst",
+      "scenario": "dayahead24",
+      "output_shape": [
+        1,
+        24,
+        14
+      ],
+      "target_index": 13,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 23.475322364603926,
+      "other_output_channels_max_change_kwh": 0.0,
+      "patch_channel_independence_verified": true,
+      "input_only_instance_norm_enabled": true,
+      "per_channel_shift_inverse_max_error_kwh": 1.87614722761964e-05
+    },
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\patchtst\\checkpoints\\candidate2_fold2.pt",
+      "family": "patchtst",
+      "scenario": "dayahead24",
+      "output_shape": [
+        1,
+        24,
+        14
+      ],
+      "target_index": 13,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 20.350912991671066,
+      "other_output_channels_max_change_kwh": 0.0,
+      "patch_channel_independence_verified": true,
+      "input_only_instance_norm_enabled": true,
+      "per_channel_shift_inverse_max_error_kwh": 1.7228375597255763e-05
+    },
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\patchtst\\checkpoints\\candidate2_fold3.pt",
+      "family": "patchtst",
+      "scenario": "dayahead24",
+      "output_shape": [
+        1,
+        24,
+        14
+      ],
+      "target_index": 13,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 10.934340388215787,
+      "other_output_channels_max_change_kwh": 0.0,
+      "patch_channel_independence_verified": true,
+      "input_only_instance_norm_enabled": true,
+      "per_channel_shift_inverse_max_error_kwh": 2.347609121500227e-05
+    },
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\patchtst\\checkpoints\\candidate2_fold4.pt",
+      "family": "patchtst",
+      "scenario": "dayahead24",
+      "output_shape": [
+        1,
+        24,
+        14
+      ],
+      "target_index": 13,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 7.34309934706107,
+      "other_output_channels_max_change_kwh": 0.0,
+      "patch_channel_independence_verified": true,
+      "input_only_instance_norm_enabled": true,
+      "per_channel_shift_inverse_max_error_kwh": 2.383795508364983e-05
+    },
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\patchtst\\checkpoints\\candidate2_fold5.pt",
+      "family": "patchtst",
+      "scenario": "dayahead24",
+      "output_shape": [
+        1,
+        24,
+        14
+      ],
+      "target_index": 13,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 8.842955780695775,
+      "other_output_channels_max_change_kwh": 0.0,
+      "patch_channel_independence_verified": true,
+      "input_only_instance_norm_enabled": true,
+      "per_channel_shift_inverse_max_error_kwh": 1.717529954703423e-05
+    },
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\patchtst\\checkpoints\\candidate3_fold1.pt",
+      "family": "patchtst",
+      "scenario": "dayahead24",
+      "output_shape": [
+        1,
+        24,
+        14
+      ],
+      "target_index": 13,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 20.82554389906727,
+      "other_output_channels_max_change_kwh": 0.0,
+      "patch_channel_independence_verified": true,
+      "input_only_instance_norm_enabled": false,
+      "per_channel_shift_inverse_max_error_kwh": null
+    },
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\patchtst\\checkpoints\\candidate3_fold2.pt",
+      "family": "patchtst",
+      "scenario": "dayahead24",
+      "output_shape": [
+        1,
+        24,
+        14
+      ],
+      "target_index": 13,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 14.571899189977557,
+      "other_output_channels_max_change_kwh": 0.0,
+      "patch_channel_independence_verified": true,
+      "input_only_instance_norm_enabled": false,
+      "per_channel_shift_inverse_max_error_kwh": null
+    },
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\patchtst\\checkpoints\\candidate3_fold3.pt",
+      "family": "patchtst",
+      "scenario": "dayahead24",
+      "output_shape": [
+        1,
+        24,
+        14
+      ],
+      "target_index": 13,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 10.754265155119356,
+      "other_output_channels_max_change_kwh": 0.0,
+      "patch_channel_independence_verified": true,
+      "input_only_instance_norm_enabled": false,
+      "per_channel_shift_inverse_max_error_kwh": null
+    },
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\patchtst\\checkpoints\\candidate3_fold4.pt",
+      "family": "patchtst",
+      "scenario": "dayahead24",
+      "output_shape": [
+        1,
+        24,
+        14
+      ],
+      "target_index": 13,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 10.721059610361408,
+      "other_output_channels_max_change_kwh": 0.0,
+      "patch_channel_independence_verified": true,
+      "input_only_instance_norm_enabled": false,
+      "per_channel_shift_inverse_max_error_kwh": null
+    },
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\patchtst\\checkpoints\\candidate3_fold5.pt",
+      "family": "patchtst",
+      "scenario": "dayahead24",
+      "output_shape": [
+        1,
+        24,
+        14
+      ],
+      "target_index": 13,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 11.60789889607986,
+      "other_output_channels_max_change_kwh": 0.0,
+      "patch_channel_independence_verified": true,
+      "input_only_instance_norm_enabled": false,
+      "per_channel_shift_inverse_max_error_kwh": null
+    },
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\patchtst\\checkpoints\\candidate4_fold2.pt",
+      "family": "patchtst",
+      "scenario": "dayahead24",
+      "output_shape": [
+        1,
+        24,
+        16
+      ],
+      "target_index": 15,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 12.597348541559768,
+      "other_output_channels_max_change_kwh": 0.0,
+      "patch_channel_independence_verified": true,
+      "input_only_instance_norm_enabled": false,
+      "per_channel_shift_inverse_max_error_kwh": null
+    },
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\patchtst\\checkpoints\\candidate4_fold3.pt",
+      "family": "patchtst",
+      "scenario": "dayahead24",
+      "output_shape": [
+        1,
+        24,
+        14
+      ],
+      "target_index": 13,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 8.885786646438646,
+      "other_output_channels_max_change_kwh": 0.0,
+      "patch_channel_independence_verified": true,
+      "input_only_instance_norm_enabled": false,
+      "per_channel_shift_inverse_max_error_kwh": null
+    },
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\patchtst\\checkpoints\\candidate4_fold4.pt",
+      "family": "patchtst",
+      "scenario": "dayahead24",
+      "output_shape": [
+        1,
+        24,
+        15
+      ],
+      "target_index": 14,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 10.006310009368462,
+      "other_output_channels_max_change_kwh": 0.0,
+      "patch_channel_independence_verified": true,
+      "input_only_instance_norm_enabled": false,
+      "per_channel_shift_inverse_max_error_kwh": null
+    },
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\patchtst\\checkpoints\\candidate5_fold2.pt",
+      "family": "patchtst",
+      "scenario": "dayahead24",
+      "output_shape": [
+        1,
+        24,
+        16
+      ],
+      "target_index": 15,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 18.369499015578185,
+      "other_output_channels_max_change_kwh": 0.0,
+      "patch_channel_independence_verified": true,
+      "input_only_instance_norm_enabled": true,
+      "per_channel_shift_inverse_max_error_kwh": 1.9329395669842597e-05
+    },
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\patchtst\\checkpoints\\candidate5_fold3.pt",
+      "family": "patchtst",
+      "scenario": "dayahead24",
+      "output_shape": [
+        1,
+        24,
+        14
+      ],
+      "target_index": 13,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 11.186676642668317,
+      "other_output_channels_max_change_kwh": 0.0,
+      "patch_channel_independence_verified": true,
+      "input_only_instance_norm_enabled": true,
+      "per_channel_shift_inverse_max_error_kwh": 1.785307837565142e-05
+    },
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\patchtst\\checkpoints\\candidate5_fold4.pt",
+      "family": "patchtst",
+      "scenario": "dayahead24",
+      "output_shape": [
+        1,
+        24,
+        15
+      ],
+      "target_index": 14,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 7.71482868953899,
+      "other_output_channels_max_change_kwh": 0.0,
+      "patch_channel_independence_verified": true,
+      "input_only_instance_norm_enabled": true,
+      "per_channel_shift_inverse_max_error_kwh": 2.9187901233740376e-05
+    },
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\patchtst\\checkpoints\\candidate6_fold2.pt",
+      "family": "patchtst",
+      "scenario": "dayahead24",
+      "output_shape": [
+        1,
+        24,
+        16
+      ],
+      "target_index": 15,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 19.5630754714075,
+      "other_output_channels_max_change_kwh": 0.0,
+      "patch_channel_independence_verified": true,
+      "input_only_instance_norm_enabled": false,
+      "per_channel_shift_inverse_max_error_kwh": null
+    },
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\patchtst\\checkpoints\\candidate6_fold3.pt",
+      "family": "patchtst",
+      "scenario": "dayahead24",
+      "output_shape": [
+        1,
+        24,
+        14
+      ],
+      "target_index": 13,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 10.485138024880143,
+      "other_output_channels_max_change_kwh": 0.0,
+      "patch_channel_independence_verified": true,
+      "input_only_instance_norm_enabled": false,
+      "per_channel_shift_inverse_max_error_kwh": null
+    },
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\patchtst\\checkpoints\\candidate6_fold4.pt",
+      "family": "patchtst",
+      "scenario": "dayahead24",
+      "output_shape": [
+        1,
+        24,
+        15
+      ],
+      "target_index": 14,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 8.707324906870781,
+      "other_output_channels_max_change_kwh": 0.0,
+      "patch_channel_independence_verified": true,
+      "input_only_instance_norm_enabled": false,
+      "per_channel_shift_inverse_max_error_kwh": null
+    },
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\long745\\itransformer\\checkpoints\\candidate1_fold1.pt",
+      "family": "itransformer",
+      "scenario": "long745",
+      "output_shape": [
+        1,
+        745,
+        14
+      ],
+      "target_index": 13,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 4.072513847117079,
+      "other_output_channels_max_change_kwh": 4.072513847117079,
+      "patch_channel_independence_verified": false,
+      "input_only_instance_norm_enabled": false,
+      "per_channel_shift_inverse_max_error_kwh": null
+    },
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\long745\\itransformer\\checkpoints\\candidate2_fold1.pt",
+      "family": "itransformer",
+      "scenario": "long745",
+      "output_shape": [
+        1,
+        745,
+        14
+      ],
+      "target_index": 13,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 4.639081731671467,
+      "other_output_channels_max_change_kwh": 4.639081731671467,
+      "patch_channel_independence_verified": false,
+      "input_only_instance_norm_enabled": false,
+      "per_channel_shift_inverse_max_error_kwh": null
+    },
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\long745\\patchtst\\checkpoints\\candidate1_fold1.pt",
+      "family": "patchtst",
+      "scenario": "long745",
+      "output_shape": [
+        1,
+        745,
+        14
+      ],
+      "target_index": 13,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 40.084358091975446,
+      "other_output_channels_max_change_kwh": 0.0,
+      "patch_channel_independence_verified": true,
+      "input_only_instance_norm_enabled": false,
+      "per_channel_shift_inverse_max_error_kwh": null
+    },
+    {
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\long745\\patchtst\\checkpoints\\candidate2_fold1.pt",
+      "family": "patchtst",
+      "scenario": "long745",
+      "output_shape": [
+        1,
+        745,
+        14
+      ],
+      "target_index": 13,
+      "target_name": "target_energy_kwh",
+      "aggregate_output_alignment_verified": true,
+      "global_scaler_inverse_max_error": 0.0,
+      "non_target_module_perturbation_aggregate_max_change_kwh": 30.18915660712082,
+      "other_output_channels_max_change_kwh": 0.0,
+      "patch_channel_independence_verified": true,
+      "input_only_instance_norm_enabled": false,
+      "per_channel_shift_inverse_max_error_kwh": null
+    }
+  ],
+  "all_test_label_timestamp_and_horizon_alignment_verified": true,
+  "future_poison_guards_passed": true,
+  "generic_history_supported": "Consecutive completed-hour wide CSV containing hour and every saved named input feature; feature names and scaler stay fixed",
+  "May_labels_read": false,
+  "old_vendor_hashes_unchanged": true
+}

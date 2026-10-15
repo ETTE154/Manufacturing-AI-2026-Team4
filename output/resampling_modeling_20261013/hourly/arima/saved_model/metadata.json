@@ -1,0 +1,33 @@
+{
+  "model_path": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\hourly\\arima\\saved_model\\model.joblib",
+  "model_sha256": "c705e8f519e96c0d92512d1beb4d6fc1bd25173ea5433cb558ff19a09e245cea",
+  "config": {
+    "model": "arima",
+    "order": [
+      2,
+      0,
+      1
+    ]
+  },
+  "history_end": "2025-04-29 23:00:00",
+  "history_count": 3600,
+  "forecast_points": 745,
+  "feature_names": null,
+  "target_center": 39129.37842288966,
+  "training_examples": null,
+  "forecast_context_audit": {
+    "origin": "2025-04-30 00:00:00",
+    "history_end": "2025-04-29 23:00:00",
+    "history_hours": 3600,
+    "D_complete_count": 150,
+    "W_complete_count": 21,
+    "M_complete_count": 4,
+    "monthly_fallback_used": false,
+    "monthly_latest_available_at": "2025-04-01 00:00:00",
+    "fallback": "Mean of this strict historical prefix; missing/support flags retained. No global/future imputation."
+  },
+  "reload_max_absdiff_kwh": 0.0,
+  "native_reload_max_absdiff_kwh": null,
+  "scaler": "Ridge StandardScaler fit on historical direct examples only; XGB/ARIMA none.",
+  "standalone_inference": "Saved feature context/state forecasts exactly the frozen Apr30 origin; no target file or May read is needed."
+}

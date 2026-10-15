@@ -1,0 +1,127 @@
+{
+  "retrieved_at_utc": "2026-10-12T17:11:38.091937+00:00",
+  "website_url": "http://sahmyook-project.s3-website.ap-northeast-2.amazonaws.com/",
+  "bucket": "sahmyook-project",
+  "region": "ap-northeast-2",
+  "base_download_url": "https://sahmyook-project.s3.ap-northeast-2.amazonaws.com",
+  "listing_method": "Exact public ListObjectsV2+delimiter/prefix traversal declared in official page JavaScript; no script execution",
+  "prefixes_visited": [
+    "",
+    "may-dataset/",
+    "traing-dataset/"
+  ],
+  "listing_pages": [
+    {
+      "request_url": "https://sahmyook-project.s3.ap-northeast-2.amazonaws.com?list-type=2&prefix=&delimiter=%2F",
+      "status": 200,
+      "xml_file": "listing_7883ca17ddc837b1.xml",
+      "xml_sha256": "2532f37e1a0c6913742e960a444976ed41644baa74f34cba19c3b6a7b77b63d1"
+    },
+    {
+      "request_url": "https://sahmyook-project.s3.ap-northeast-2.amazonaws.com?list-type=2&prefix=may-dataset%2F&delimiter=%2F",
+      "status": 200,
+      "xml_file": "listing_ea5d17ba48e34a93.xml",
+      "xml_sha256": "6e57c1afdbbf96c6a4f72322d0a4a74fb8aae43232fa941d499af98399175974"
+    },
+    {
+      "request_url": "https://sahmyook-project.s3.ap-northeast-2.amazonaws.com?list-type=2&prefix=traing-dataset%2F&delimiter=%2F",
+      "status": 200,
+      "xml_file": "listing_3738a45a8dfc49d8.xml",
+      "xml_sha256": "127eca1ef94e235148d444525eb85fea92039a2f0f0ca9c64c2ee1a6b64fa854"
+    }
+  ],
+  "objects": [
+    {
+      "key": "index (1).html",
+      "bytes": 15585,
+      "last_modified": "2026-10-09T23:25:48.000Z",
+      "etag": "\"d7db9bee559f7a06e433eaf56b5e2acb\"",
+      "download_url": "https://sahmyook-project.s3.ap-northeast-2.amazonaws.com/index%20%281%29.html",
+      "storage_class": "STANDARD"
+    },
+    {
+      "key": "may-dataset/rtu_ground_truth_may.csv",
+      "bytes": 46000,
+      "last_modified": "2026-03-26T07:10:33.000Z",
+      "etag": "\"4cde4ab38952c00f8a0f7292922d1b24\"",
+      "download_url": "https://sahmyook-project.s3.ap-northeast-2.amazonaws.com/may-dataset/rtu_ground_truth_may.csv",
+      "storage_class": "STANDARD"
+    },
+    {
+      "key": "traing-dataset/rtu_data_full.csv",
+      "bytes": 4909245995,
+      "last_modified": "2026-03-26T07:10:34.000Z",
+      "etag": "\"ef386800a9b2a3a71d34946888238539\"",
+      "download_url": "https://sahmyook-project.s3.ap-northeast-2.amazonaws.com/traing-dataset/rtu_data_full.csv",
+      "storage_class": "STANDARD"
+    }
+  ],
+  "dataset_and_label_inventory": [
+    {
+      "key": "may-dataset/rtu_ground_truth_may.csv",
+      "bytes": 46000,
+      "last_modified": "2026-03-26T07:10:33.000Z",
+      "etag": "\"4cde4ab38952c00f8a0f7292922d1b24\"",
+      "download_url": "https://sahmyook-project.s3.ap-northeast-2.amazonaws.com/may-dataset/rtu_ground_truth_may.csv",
+      "storage_class": "STANDARD"
+    },
+    {
+      "key": "traing-dataset/rtu_data_full.csv",
+      "bytes": 4909245995,
+      "last_modified": "2026-03-26T07:10:34.000Z",
+      "etag": "\"ef386800a9b2a3a71d34946888238539\"",
+      "download_url": "https://sahmyook-project.s3.ap-northeast-2.amazonaws.com/traing-dataset/rtu_data_full.csv",
+      "storage_class": "STANDARD"
+    }
+  ],
+  "credentials_handling": "PDF text/API credentials will not be printed or embedded in public-facing reports.",
+  "downloaded_files": [
+    {
+      "source_key": "may-dataset/rtu_ground_truth_may.csv",
+      "download_url": "https://sahmyook-project.s3.ap-northeast-2.amazonaws.com/may-dataset/rtu_ground_truth_may.csv",
+      "downloaded_path": "E:\\AI work\\AWS_프로젝트\\output\\optimization_20261013\\source_audit\\downloads\\may-dataset\\rtu_ground_truth_may.csv",
+      "bytes": 46000,
+      "sha256": "a0e44dc6481fba7d78a2c5b60f0f5e0c2bcc69a8f732c9229bbbdaa38dee04bf",
+      "elapsed_seconds": 0.20300000009592623,
+      "response_history": [
+        {
+          "attempt": 1,
+          "status": 200,
+          "headers": {
+            "Content-Length": "46000",
+            "Content-Type": "text/csv",
+            "ETag": "\"4cde4ab38952c00f8a0f7292922d1b24\"",
+            "Last-Modified": "Thu, 26 Mar 2026 07:10:33 GMT"
+          },
+          "started_at_utc": "2026-10-12T17:13:34.094514+00:00"
+        }
+      ],
+      "completed_at_utc": "2026-10-12T17:13:34.106517+00:00",
+      "etag_note": "ETag records source object version evidence. It is not assumed to be a cryptographic content checksum or MD5; multipart and encryption behavior can change its meaning. Independently computed SHA-256 is used for byte identity."
+    },
+    {
+      "source_key": "traing-dataset/rtu_data_full.csv",
+      "download_url": "https://sahmyook-project.s3.ap-northeast-2.amazonaws.com/traing-dataset/rtu_data_full.csv",
+      "downloaded_path": "E:\\AI work\\AWS_프로젝트\\output\\optimization_20261013\\source_audit\\downloads\\traing-dataset\\rtu_data_full.csv",
+      "bytes": 4909245995,
+      "sha256": "3b4e1ff2125ca64612837530a8612fa7f044f398e508e00026097fc788d0dce5",
+      "elapsed_seconds": 82.14000000001397,
+      "response_history": [
+        {
+          "attempt": 1,
+          "status": 200,
+          "headers": {
+            "Content-Length": "4909245995",
+            "Content-Type": "text/csv",
+            "ETag": "\"ef386800a9b2a3a71d34946888238539\"",
+            "Last-Modified": "Thu, 26 Mar 2026 07:10:34 GMT"
+          },
+          "started_at_utc": "2026-10-12T17:13:34.128997+00:00"
+        }
+      ],
+      "completed_at_utc": "2026-10-12T17:14:56.044188+00:00",
+      "etag_note": "ETag records source object version evidence. It is not assumed to be a cryptographic content checksum or MD5; multipart and encryption behavior can change its meaning. Independently computed SHA-256 is used for byte identity."
+    }
+  ],
+  "download_completed_at_utc": "2026-10-12T17:14:56.045193+00:00"
+}

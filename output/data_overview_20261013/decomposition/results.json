@@ -1,0 +1,670 @@
+{
+  "status": "complete",
+  "source": {
+    "path": "E:\\AI work\\AWS_프로젝트\\output\\analysis\\baseline_audit\\complete_hour_module_sum.csv",
+    "sha256": "729b149a3e3165dfb339f0386249bfbda0326657f9e722d86da8138db36117de",
+    "source_unchanged": true,
+    "hours": 3600,
+    "start": "2024-12-01 00:00:00",
+    "end": "2025-04-29 23:00:00",
+    "target": "13-module complete-hour provisional guidekWh sum; unknown meter hierarchy and scale remain unresolved."
+  },
+  "cases": {
+    "hourly_stl24": {
+      "id": "hourly_stl24",
+      "label": "시간자료 STL:24시간 지정",
+      "period": 24,
+      "frequency": "H",
+      "unit": "시간 전력량(kWh,잠정)",
+      "samples": 3600,
+      "settings": {
+        "period": 24,
+        "seasonal": 13,
+        "seasonal_deg": 1,
+        "seasonal_jump": 1,
+        "trend": 41,
+        "trend_deg": 1,
+        "trend_jump": 1,
+        "low_pass": 25,
+        "low_pass_deg": 1,
+        "low_pass_jump": 1,
+        "robust": true
+      },
+      "components_csv": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\decomposition\\hourly_stl24_components.csv",
+      "figure": {
+        "png": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\decomposition\\hourly_stl24.png",
+        "svg": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\decomposition\\hourly_stl24.svg"
+      },
+      "input_mean": 39129.37842288966,
+      "input_std": 95.76422049015697,
+      "input_cv_percent": 0.24473739259332933,
+      "residual_std": 86.79134623092804,
+      "trend_std": 17.46933691366742,
+      "seasonal_std": 36.453727759559776,
+      "seasonal_strength": 0.1466544384873547,
+      "trend_strength": 0.043550711839856704,
+      "component_scale_as_percent_of_observed_mean": {
+        "trend": 0.04464506623352932,
+        "seasonal": 0.09316204148603419,
+        "resid": 0.22180609488076453
+      },
+      "component_variances": {
+        "trend": 305.17773220322306,
+        "seasonal": 1328.874267568099,
+        "resid": 7532.737780576827
+      },
+      "component_variance_to_input_variance": {
+        "trend": 0.03327716235694789,
+        "seasonal": 0.1449029863174493,
+        "resid": 0.8213841039674749
+      },
+      "covariance_matrix": {
+        "components": [
+          "trend",
+          "seasonal",
+          "resid"
+        ],
+        "matrix": [
+          [
+            305.1777322032231,
+            0.2458104959035911,
+            18.9079902963699
+          ],
+          [
+            0.2458104959035911,
+            1328.874267568099,
+            -17.155727922651757
+          ],
+          [
+            18.9079902963699,
+            -17.155727922651757,
+            7532.7377805768265
+          ]
+        ]
+      },
+      "variance_identity": {
+        "observed_variance": 9170.7859260874,
+        "sum_component_variances": 9166.789780348148,
+        "twice_sum_cross_covariances": 3.9961457392437296,
+        "reconciled_variance": 9170.785926087392,
+        "absolute_error": 7.275957614183426e-12
+      },
+      "reconstruction_max_absdiff": 0.0,
+      "interpretation": "Strength is an in-sample decomposition statistic, not significance, forecast accuracy or predictive R2. Component variance shares need not sum to1 because components covary; the covariance identity is provided.",
+      "same_setting_shuffled_STL_reference": {
+        "replicates": 19,
+        "seasonal_strength_mean": 0.1405173695038459,
+        "seasonal_strength_5_95pct_reference_range": [
+          0.12306896043286925,
+          0.15443675422724004
+        ],
+        "coarse_one_sided_permutation_p": 0.3,
+        "minimum_p_resolution": 0.05,
+        "interpretation": "The same STL settings extract a seasonal curve even after time order is shuffled. This19replicate reference is illustrative; raw prespecified phase tests use1999 permutations.",
+        "trend_strength_mean": 0.0505533240653362,
+        "trend_strength_5_95pct_reference_range": [
+          0.04309227612843284,
+          0.05999094806697973
+        ],
+        "coarse_one_sided_trend_permutation_p": 0.9
+      }
+    },
+    "hourly_stl168": {
+      "id": "hourly_stl168",
+      "label": "시간자료 STL:168시간 지정",
+      "period": 168,
+      "frequency": "H",
+      "unit": "시간 전력량(kWh,잠정)",
+      "samples": 3600,
+      "settings": {
+        "period": 168,
+        "seasonal": 13,
+        "seasonal_deg": 1,
+        "seasonal_jump": 1,
+        "trend": 285,
+        "trend_deg": 1,
+        "trend_jump": 1,
+        "low_pass": 169,
+        "low_pass_deg": 1,
+        "low_pass_jump": 1,
+        "robust": true
+      },
+      "components_csv": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\decomposition\\hourly_stl168_components.csv",
+      "figure": {
+        "png": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\decomposition\\hourly_stl168.png",
+        "svg": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\decomposition\\hourly_stl168.svg"
+      },
+      "input_mean": 39129.37842288966,
+      "input_std": 95.76422049015697,
+      "input_cv_percent": 0.24473739259332933,
+      "residual_std": 88.32403142783471,
+      "trend_std": 8.716976431955981,
+      "seasonal_std": 41.50175352998962,
+      "seasonal_strength": 0.14384822998336066,
+      "trend_strength": 0.008161086517852634,
+      "component_scale_as_percent_of_observed_mean": {
+        "trend": 0.02227731894370389,
+        "seasonal": 0.10606290005800904,
+        "resid": 0.22572306279255247
+      },
+      "component_variances": {
+        "trend": 75.98567811527602,
+        "seasonal": 1722.395546064006,
+        "resid": 7801.134527665135
+      },
+      "component_variance_to_input_variance": {
+        "trend": 0.00828562336180214,
+        "seasonal": 0.18781329756749043,
+        "resid": 0.8506505975102824
+      },
+      "covariance_matrix": {
+        "components": [
+          "trend",
+          "seasonal",
+          "resid"
+        ],
+        "matrix": [
+          [
+            75.98567811527603,
+            -2.631517206245289,
+            -5.8980437474981064
+          ],
+          [
+            -2.631517206245289,
+            1722.3955460640063,
+            -205.83535192476177
+          ],
+          [
+            -5.8980437474981064,
+            -205.83535192476177,
+            7801.1345276651355
+          ]
+        ]
+      },
+      "variance_identity": {
+        "observed_variance": 9170.7859260874,
+        "sum_component_variances": 9599.515751844418,
+        "twice_sum_cross_covariances": -428.72982575700917,
+        "reconciled_variance": 9170.785926087408,
+        "absolute_error": 9.094947017729282e-12
+      },
+      "reconstruction_max_absdiff": 0.0,
+      "interpretation": "Strength is an in-sample decomposition statistic, not significance, forecast accuracy or predictive R2. Component variance shares need not sum to1 because components covary; the covariance identity is provided.",
+      "same_setting_shuffled_STL_reference": {
+        "replicates": 19,
+        "seasonal_strength_mean": 0.15336321625527152,
+        "seasonal_strength_5_95pct_reference_range": [
+          0.13507380311726336,
+          0.17235971680875364
+        ],
+        "coarse_one_sided_permutation_p": 0.8,
+        "minimum_p_resolution": 0.05,
+        "interpretation": "The same STL settings extract a seasonal curve even after time order is shuffled. This19replicate reference is illustrative; raw prespecified phase tests use1999 permutations.",
+        "trend_strength_mean": 0.005929743477074487,
+        "trend_strength_5_95pct_reference_range": [
+          0.0035669678765562706,
+          0.008978928723621438
+        ],
+        "coarse_one_sided_trend_permutation_p": 0.2
+      }
+    },
+    "daily_stl7": {
+      "id": "daily_stl7",
+      "label": "일자료 STL:7일 지정",
+      "period": 7,
+      "frequency": "D",
+      "unit": "기간 평균 부하(kWh/h)",
+      "samples": 150,
+      "settings": {
+        "period": 7,
+        "seasonal": 13,
+        "seasonal_deg": 1,
+        "seasonal_jump": 1,
+        "trend": 13,
+        "trend_deg": 1,
+        "trend_jump": 1,
+        "low_pass": 9,
+        "low_pass_deg": 1,
+        "low_pass_jump": 1,
+        "robust": true
+      },
+      "components_csv": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\decomposition\\daily_stl7_components.csv",
+      "figure": {
+        "png": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\decomposition\\daily_stl7.png",
+        "svg": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\decomposition\\daily_stl7.svg"
+      },
+      "input_mean": 39129.37842288966,
+      "input_std": 18.025937200824487,
+      "input_cv_percent": 0.04606752759016428,
+      "residual_std": 14.490082420368015,
+      "trend_std": 7.006529359277494,
+      "seasonal_std": 6.50983127853005,
+      "seasonal_strength": 0.19297324490085277,
+      "trend_strength": 0.24462035461522114,
+      "component_scale_as_percent_of_observed_mean": {
+        "trend": 0.017906058418701735,
+        "seasonal": 0.016636684611176875,
+        "resid": 0.03703121031917976
+      },
+      "component_variances": {
+        "trend": 49.09145366241749,
+        "seasonal": 42.37790327492819,
+        "resid": 209.9624885490582
+      },
+      "component_variance_to_input_variance": {
+        "trend": 0.1510811162322869,
+        "seasonal": 0.13041986848439044,
+        "resid": 0.6461688292026503
+      },
+      "covariance_matrix": {
+        "components": [
+          "trend",
+          "seasonal",
+          "resid"
+        ],
+        "matrix": [
+          [
+            49.0914536624175,
+            -1.6136415192213667,
+            9.451150579091568
+          ],
+          [
+            -1.6136415192213667,
+            42.37790327492819,
+            3.9137741809582383
+          ],
+          [
+            9.451150579091568,
+            3.9137741809582383,
+            209.9624885490582
+          ]
+        ]
+      },
+      "variance_identity": {
+        "observed_variance": 324.9344119680681,
+        "sum_component_variances": 301.43184548640386,
+        "twice_sum_cross_covariances": 23.502566481656913,
+        "reconciled_variance": 324.9344119680608,
+        "absolute_error": 7.332801033044234e-12
+      },
+      "reconstruction_max_absdiff": 0.0,
+      "interpretation": "Strength is an in-sample decomposition statistic, not significance, forecast accuracy or predictive R2. Component variance shares need not sum to1 because components covary; the covariance identity is provided.",
+      "same_setting_shuffled_STL_reference": {
+        "replicates": 19,
+        "seasonal_strength_mean": 0.1163173776422908,
+        "seasonal_strength_5_95pct_reference_range": [
+          0.03950467877879917,
+          0.1956269094785853
+        ],
+        "coarse_one_sided_permutation_p": 0.1,
+        "minimum_p_resolution": 0.05,
+        "interpretation": "The same STL settings extract a seasonal curve even after time order is shuffled. This19replicate reference is illustrative; raw prespecified phase tests use1999 permutations.",
+        "trend_strength_mean": 0.13912178829249522,
+        "trend_strength_5_95pct_reference_range": [
+          0.04093447264223168,
+          0.22940401610530792
+        ],
+        "coarse_one_sided_trend_permutation_p": 0.1
+      }
+    },
+    "hourly_mstl24_168": {
+      "id": "hourly_mstl24_168",
+      "label": "시간자료 MSTL:24+168시간 지정",
+      "period": [
+        24,
+        168
+      ],
+      "frequency": "H",
+      "unit": "시간 전력량(kWh,잠정)",
+      "samples": 3600,
+      "settings": {
+        "periods": [
+          24,
+          168
+        ],
+        "windows": [
+          11,
+          15
+        ],
+        "iterate": 2,
+        "lmbda": null,
+        "stl_kwargs": {
+          "robust": true
+        }
+      },
+      "components_csv": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\decomposition\\hourly_mstl24_168_components.csv",
+      "figure": {
+        "png": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\decomposition\\hourly_mstl24_168.png",
+        "svg": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\decomposition\\hourly_mstl24_168.svg"
+      },
+      "input_mean": 39129.37842288966,
+      "input_std": 95.76422049015697,
+      "input_cv_percent": 0.24473739259332933,
+      "residual_std": 83.67422205359595,
+      "trend_std": 9.213317205078248,
+      "seasonal_std": 53.45714812143938,
+      "seasonal_strength": 0.23267248682237718,
+      "trend_strength": 0.007450486007742785,
+      "component_scale_as_percent_of_observed_mean": {
+        "trend": 0.023545779607091068,
+        "seasonal": 0.13661639994303704,
+        "resid": 0.21383989581763638
+      },
+      "component_variances": {
+        "trend": 84.88521392139084,
+        "seasonal_24": 1628.8965711265175,
+        "seasonal_168": 1266.0022283936275,
+        "resid": 7001.375436274484
+      },
+      "component_variance_to_input_variance": {
+        "trend": 0.009256045731034314,
+        "seasonal_24": 0.17761799089573405,
+        "seasonal_168": 0.1380472991733819,
+        "resid": 0.7634433398296031
+      },
+      "covariance_matrix": {
+        "components": [
+          "trend",
+          "seasonal_24",
+          "seasonal_168",
+          "resid"
+        ],
+        "matrix": [
+          [
+            84.88521392139084,
+            0.10333359944362812,
+            -3.169910425970459,
+            -16.165001164938634
+          ],
+          [
+            0.10333359944362812,
+            1628.8965711265178,
+            -18.616057121317883,
+            -138.58399425816197
+          ],
+          [
+            -3.169910425970459,
+            -18.616057121317883,
+            1266.0022283936275,
+            -228.75513244336398
+          ],
+          [
+            -16.165001164938634,
+            -138.58399425816197,
+            -228.75513244336398,
+            7001.375436274484
+          ]
+        ]
+      },
+      "variance_identity": {
+        "observed_variance": 9170.7859260874,
+        "sum_component_variances": 9981.15944971602,
+        "twice_sum_cross_covariances": -810.3735236286193,
+        "reconciled_variance": 9170.785926087401,
+        "absolute_error": 1.8189894035458565e-12
+      },
+      "reconstruction_max_absdiff": 7.275957614183426e-12,
+      "interpretation": "Strength is an in-sample decomposition statistic, not significance, forecast accuracy or predictive R2. Component variance shares need not sum to1 because components covary; the covariance identity is provided.",
+      "individual_seasonal_strength": {
+        "seasonal_24": 0.1618235065137713,
+        "seasonal_168": 0.10352185538124892
+      },
+      "individual_seasonal_std": {
+        "seasonal_24": 40.3595908196121,
+        "seasonal_168": 35.58092506377016
+      },
+      "individual_seasons_figure": {
+        "png": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\decomposition\\hourly_mstl_individual_seasons.png",
+        "svg": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\decomposition\\hourly_mstl_individual_seasons.svg"
+      }
+    }
+  },
+  "strength_table_csv": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\decomposition\\strength_and_scale.csv",
+  "strength_figure": {
+    "png": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\decomposition\\strength_and_scale.png",
+    "svg": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\decomposition\\strength_and_scale.svg"
+  },
+  "raw_periodicity": {
+    "H": {
+      "sample_count": 3600,
+      "sample_step": "hour",
+      "period_tests": [
+        {
+          "period_steps": 24,
+          "cycles_observed": 150.0,
+          "raw_acf_at_period": 0.02610428622331001,
+          "raw_acf_ci95_at_period": [
+            -0.006766191428665375,
+            0.0589747638752854
+          ],
+          "zero_in_pointwise_ci95": true,
+          "phase_mean_between_variance_fraction": 0.0030840683483223472,
+          "phase_permutation_p": 0.9845,
+          "phase_null_95pct_reference_range": [
+            0.0033349447695020114,
+            0.010615356372900986
+          ],
+          "spectral_bin_frequency": 0.041666666666666664,
+          "spectral_bin_period": 24.0,
+          "spectral_nearest_bin_power_fraction": 7.207176654266884e-05,
+          "spectral_bin_permutation_p": 0.8885,
+          "spectral_bin_note": "Nearest finite-window Fourier bin; it equals the exact desired frequency only if sample length is divisible by the period.",
+          "phase_permutation_Holm_adjusted_p": 1.0
+        },
+        {
+          "period_steps": 168,
+          "cycles_observed": 21.428571428571427,
+          "raw_acf_at_period": -0.0214049834702992,
+          "raw_acf_ci95_at_period": [
+            -0.055408794753862,
+            0.012598827813263599
+          ],
+          "zero_in_pointwise_ci95": true,
+          "phase_mean_between_variance_fraction": 0.04519813629697574,
+          "phase_permutation_p": 0.5885,
+          "phase_null_95pct_reference_range": [
+            0.037473799959402525,
+            0.056120982900449694
+          ],
+          "spectral_bin_frequency": 0.005833333333333334,
+          "spectral_bin_period": 171.42857142857142,
+          "spectral_nearest_bin_power_fraction": 0.00021477008560426847,
+          "spectral_bin_permutation_p": 0.687,
+          "spectral_bin_note": "Nearest finite-window Fourier bin; it equals the exact desired frequency only if sample length is divisible by the period.",
+          "phase_permutation_Holm_adjusted_p": 1.0
+        }
+      ],
+      "ljung_box": [
+        {
+          "lag": 24,
+          "Q": 25.159250116781433,
+          "p": 0.39714841465343415
+        },
+        {
+          "lag": 168,
+          "Q": 155.9699386900139,
+          "p": 0.7376267493704189
+        },
+        {
+          "lag": 336,
+          "Q": 346.88236546360224,
+          "p": 0.32960642336319257
+        }
+      ],
+      "spectrum_global": {
+        "peak_frequency": 0.185,
+        "peak_period_steps": 5.405405405405405,
+        "peak_power_fraction": 0.005617330207558471,
+        "max_peak_any_frequency_permutation_p": 0.0655
+      },
+      "permutations": 1999,
+      "null": "IID exchangeable ordering: shuffling preserves the observed marginal values and removes time alignment. Approximate if serial dependence exists; nonrejection does not prove independence.",
+      "acf_limit": "Pointwise95% intervals are not simultaneous confidence bands; Ljung-Box tests joint correlations up to a lag, not a specific24/168/7period.",
+      "figure": {
+        "png": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\decomposition\\H_raw_periodicity.png",
+        "svg": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\decomposition\\H_raw_periodicity.svg"
+      },
+      "csv": {
+        "acf": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\decomposition\\H_raw_acf.csv",
+        "ljungbox": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\decomposition\\H_raw_ljungbox.csv",
+        "periodogram": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\decomposition\\H_raw_periodogram.csv"
+      }
+    },
+    "D": {
+      "sample_count": 150,
+      "sample_step": "day",
+      "period_tests": [
+        {
+          "period_steps": 7,
+          "cycles_observed": 21.428571428571427,
+          "raw_acf_at_period": 0.04191506558580714,
+          "raw_acf_ci95_at_period": [
+            -0.12069361539003733,
+            0.20452374656165162
+          ],
+          "zero_in_pointwise_ci95": true,
+          "phase_mean_between_variance_fraction": 0.0244345448069976,
+          "phase_permutation_p": 0.739,
+          "phase_null_95pct_reference_range": [
+            0.008582079757142206,
+            0.09686027446501749
+          ],
+          "spectral_bin_frequency": 0.14,
+          "spectral_bin_period": 7.142857142857142,
+          "spectral_nearest_bin_power_fraction": 0.003153749293274296,
+          "spectral_bin_permutation_p": 0.7985,
+          "spectral_bin_note": "Nearest finite-window Fourier bin; it equals the exact desired frequency only if sample length is divisible by the period.",
+          "phase_permutation_Holm_adjusted_p": 1.0
+        }
+      ],
+      "ljung_box": [
+        {
+          "lag": 7,
+          "Q": 2.7980562697610476,
+          "p": 0.9030341406727557
+        },
+        {
+          "lag": 14,
+          "Q": 4.607707351227029,
+          "p": 0.990558380843801
+        },
+        {
+          "lag": 28,
+          "Q": 16.30121852189557,
+          "p": 0.9611457382073479
+        }
+      ],
+      "spectrum_global": {
+        "peak_frequency": 0.35333333333333333,
+        "peak_period_steps": 2.830188679245283,
+        "peak_power_fraction": 0.0563509270280136,
+        "max_peak_any_frequency_permutation_p": 0.71
+      },
+      "permutations": 1999,
+      "null": "IID exchangeable ordering: shuffling preserves the observed marginal values and removes time alignment. Approximate if serial dependence exists; nonrejection does not prove independence.",
+      "acf_limit": "Pointwise95% intervals are not simultaneous confidence bands; Ljung-Box tests joint correlations up to a lag, not a specific24/168/7period.",
+      "figure": {
+        "png": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\decomposition\\D_raw_periodicity.png",
+        "svg": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\decomposition\\D_raw_periodicity.svg"
+      },
+      "csv": {
+        "acf": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\decomposition\\D_raw_acf.csv",
+        "ljungbox": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\decomposition\\D_raw_ljungbox.csv",
+        "periodogram": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\decomposition\\D_raw_periodogram.csv"
+      }
+    }
+  },
+  "short_series_limits": {
+    "weekly": {
+      "complete_periods": 21,
+      "hypothetical_annual_period": 52,
+      "decomposition_performed": false,
+      "reason": "21complete weeks do not cover one full annual cycle; no arbitrary52week seasonality fitted."
+    },
+    "monthly": {
+      "complete_periods": 4,
+      "hypothetical_annual_period": 12,
+      "decomposition_performed": false,
+      "reason": "4complete months cannot estimate annual12month seasonal effects. April is partial and excluded."
+    }
+  },
+  "interpretation": {
+    "full_history_leakage": "STL/MSTL uses smoothing over the completeDec-Apr history, including values later than each timestamp. These descriptive components are not admissible historical-origin forecast features. Forecast applications must recompute within the available training prefix and validate chronologically.",
+    "forced_pattern": "A seasonal curve necessarily follows a requested period; positive extracted strength alone is not evidence of genuine periodicity. Same-setting shuffled references and tests on raw time order distinguish the two.",
+    "variance_not_R2": "No forecast R2 is calculated. The additive reconstruction is a definition and covariance-adjusted variance accounting is descriptive, not proof of predictive fit.",
+    "uncertainty": "Permutation tests assume exchangeable ordering under the null. Pointwise ACF intervals and short weekly/monthly coverage cannot establish independence, causality, future predictability or factory generalization.",
+    "units": "Hourly components: provisional energy in each1hour bucket(kWh). Daily components: full-day energy/24observed hours(kWh/h), period average load without rated-capacity normalization. Component percentages are relative to observed mean, not equipment load factors."
+  },
+  "settings_search_performed": false,
+  "May_data_used": false,
+  "libraries": {
+    "statsmodels": "0.15.0",
+    "scipy": "1.18.1",
+    "numpy": "2.3.5",
+    "pandas": "3.0.1"
+  },
+  "references": [
+    {
+      "title": "statsmodels0.15 STL API",
+      "url": "https://www.statsmodels.org/stable/generated/statsmodels.tsa.seasonal.STL.html",
+      "use": "Fixed robust LOESS settings, smoother windows and trend/low-pass defaults."
+    },
+    {
+      "title": "statsmodels0.15 MSTL API",
+      "url": "https://www.statsmodels.org/stable/generated/statsmodels.tsa.seasonal.MSTL.html",
+      "use": "Multiple periods24/168, explicit default-equivalent windows11/15, two iterations and robust STL kwargs; no Box-Cox transformation."
+    },
+    {
+      "title": "Forecasting: Principles and Practice3, STL features",
+      "url": "https://otexts.com/fpp3/features.html#stl-features",
+      "use": "Descriptive trend/seasonal strength definitions based on remainder variance; no out-of-sample forecast R2 interpretation."
+    },
+    {
+      "title": "statsmodels ACF API",
+      "url": "https://www.statsmodels.org/stable/generated/statsmodels.tsa.stattools.acf.html",
+      "use": "Raw-series ACF and Bartlett pointwise95% confidence intervals."
+    },
+    {
+      "title": "statsmodels Ljung-Box API",
+      "url": "https://www.statsmodels.org/stable/generated/statsmodels.stats.diagnostic.acorr_ljungbox.html",
+      "use": "Joint raw autocorrelation diagnostics, not a test specific to one seasonal period."
+    },
+    {
+      "title": "SciPy periodogram API",
+      "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.periodogram.html",
+      "use": "One-sided boxcar spectrum with mean removal, fs1sample/time-step and spectrum scaling."
+    }
+  ],
+  "verification": {
+    "status": "passed",
+    "cases": [
+      {
+        "case": "hourly_stl24",
+        "rows": 3600,
+        "reconstruction_max_absdiff": 3.637978807091713e-12,
+        "strength_csv_recompute_diff": 0.0
+      },
+      {
+        "case": "hourly_stl168",
+        "rows": 3600,
+        "reconstruction_max_absdiff": 3.637978807091713e-12,
+        "strength_csv_recompute_diff": 0.0
+      },
+      {
+        "case": "daily_stl7",
+        "rows": 150,
+        "reconstruction_max_absdiff": 3.61666252501891e-12,
+        "strength_csv_recompute_diff": 0.0
+      },
+      {
+        "case": "hourly_mstl24_168",
+        "rows": 3600,
+        "reconstruction_max_absdiff": 7.176481631177012e-12,
+        "strength_csv_recompute_diff": 0.0
+      }
+    ],
+    "original_target_sha_unchanged": true
+  },
+  "runtime_seconds": 94.96900000004098,
+  "references_accessed_date": "2026-10-13"
+}

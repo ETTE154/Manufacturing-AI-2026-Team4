@@ -1,0 +1,125 @@
+{
+  "status": "passed",
+  "selection_lock_sha256": "c158a3c1a49fd3c453bb9fc327da84f5be2102c209bcbb7e4e81fbd0d2cb86c7",
+  "checks": [
+    {
+      "model": "xgboost",
+      "split": "validation",
+      "rows": 1680,
+      "origins": 70,
+      "metric_max_absdiff": 0
+    },
+    {
+      "model": "xgboost",
+      "split": "test",
+      "rows": 696,
+      "origins": 29,
+      "metric_max_absdiff": 0
+    },
+    {
+      "model": "xgboost",
+      "standalone_saved_context_reload_max_absdiff": 0.0,
+      "future_rows": 24
+    },
+    {
+      "model": "ridge",
+      "split": "validation",
+      "rows": 1680,
+      "origins": 70,
+      "metric_max_absdiff": 0
+    },
+    {
+      "model": "ridge",
+      "split": "test",
+      "rows": 696,
+      "origins": 29,
+      "metric_max_absdiff": 0
+    },
+    {
+      "model": "ridge",
+      "standalone_saved_context_reload_max_absdiff": 0.0,
+      "future_rows": 24
+    },
+    {
+      "model": "elasticnet",
+      "split": "validation",
+      "rows": 1680,
+      "origins": 70,
+      "metric_max_absdiff": 0
+    },
+    {
+      "model": "elasticnet",
+      "split": "test",
+      "rows": 696,
+      "origins": 29,
+      "metric_max_absdiff": 0
+    },
+    {
+      "model": "elasticnet",
+      "standalone_saved_context_reload_max_absdiff": 0.0,
+      "future_rows": 24
+    },
+    {
+      "model": "arimax",
+      "split": "validation",
+      "rows": 1680,
+      "origins": 70,
+      "metric_max_absdiff": 0
+    },
+    {
+      "model": "arimax",
+      "split": "test",
+      "rows": 696,
+      "origins": 29,
+      "metric_max_absdiff": 0
+    },
+    {
+      "model": "arimax",
+      "standalone_saved_context_reload_max_absdiff": 0.0,
+      "future_rows": 24
+    },
+    {
+      "model": "baseline",
+      "split": "validation",
+      "rows": 1680,
+      "origins": 70,
+      "metric_max_absdiff": 0
+    },
+    {
+      "model": "baseline",
+      "split": "test",
+      "rows": 696,
+      "origins": 29,
+      "metric_max_absdiff": 0
+    },
+    {
+      "model": "baseline",
+      "standalone_saved_context_reload_max_absdiff": 0.0,
+      "future_rows": 24
+    }
+  ],
+  "metric_tolerance": 1e-07,
+  "reload_tolerance": 1e-08,
+  "old_artifacts_modified": false,
+  "May_labels_read": false,
+  "cli_checks": [
+    {
+      "scenario": "dayahead24",
+      "selected_model": "baseline",
+      "points": 24,
+      "max_absdiff": 0.0
+    },
+    {
+      "scenario": "long745",
+      "selected_model": "ridge",
+      "points": 745,
+      "max_absdiff": 0.0
+    }
+  ],
+  "figures_verified": 22,
+  "diagnostic_tables_verified": {
+    "xgboost": 20,
+    "ridge": 20,
+    "elasticnet": 20
+  }
+}

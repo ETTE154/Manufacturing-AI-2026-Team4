@@ -1,0 +1,956 @@
+{
+  "status": "complete",
+  "seed": 20261013,
+  "resamples": 10000,
+  "direction": "baseline_minus_model; positive = MAE improvement",
+  "scope": "Observed paired-error uncertainty only. No new fitting, HPO, calibration, model ranking decision, or deployment selection.",
+  "comparisons": {
+    "april_24h_cv_selected_vs_baseline": {
+      "model": "chronos2",
+      "model_display_name": "Chronos-2 + 과거 평균 혼합",
+      "model_config_locked": {
+        "context": 168,
+        "calibration": "historical_mean",
+        "alpha": 0.25
+      },
+      "baseline_config_locked": {
+        "name": "ema",
+        "window": 720
+      },
+      "observations": 696,
+      "paired_unit_type": "One complete 24-hour path MAE per fixed daily April origin; 29 units, equal 24-hour weights",
+      "paired_units": 29,
+      "target_start": "2025-04-01 00:00:00",
+      "target_end": "2025-04-29 23:00:00",
+      "baseline_mae_kwh": 79.46838365673148,
+      "model_mae_kwh": 79.34035981962879,
+      "baseline_minus_model_mae_kwh": 0.12802383710270035,
+      "relative_mae_improvement_percent": 0.16110034105601936,
+      "positive_direction": "Positive baseline-minus-model means lower MAE / improvement by the model; negative means worse",
+      "source_paths": {
+        "model": {
+          "prediction_csv": "E:\\AI work\\AWS_프로젝트\\output\\optimization_20261013\\forecast\\dayahead24\\chronos2\\test_predictions.csv",
+          "prediction_sha256": "20766bd71ef27d9ccfc7a7947afd2b3750abe57cb021c1947f3b2fbdc2df53c3",
+          "referenced_result_json": "E:\\AI work\\AWS_프로젝트\\output\\optimization_20261013\\forecast\\dayahead24\\chronos2\\results.json",
+          "json_metric_mae_kwh": 79.34035981962879,
+          "source_csv_split_labels": [
+            "April_test"
+          ]
+        },
+        "baseline": {
+          "prediction_csv": "E:\\AI work\\AWS_프로젝트\\output\\optimization_20261013\\forecast\\dayahead24\\baselines\\test_predictions.csv",
+          "prediction_sha256": "418bf71710c7acae964deb5f33eac9d8b2b36027e469b7b7ef7a634f38e2dbfe",
+          "referenced_result_json": "E:\\AI work\\AWS_프로젝트\\output\\optimization_20261013\\forecast\\dayahead24\\baselines\\results.json",
+          "json_metric_mae_kwh": 79.46838365673148,
+          "source_csv_split_labels": [
+            "April_test"
+          ]
+        }
+      },
+      "units": [
+        {
+          "unit": "2025-04-01 00:00:00",
+          "observations": 24,
+          "first_target": "2025-04-01 00:00:00",
+          "last_target": "2025-04-01 23:00:00",
+          "baseline_mae_kwh": 56.18360269793144,
+          "model_mae_kwh": 56.05192120333292,
+          "baseline_minus_model_mae_kwh": 0.1316814945985243
+        },
+        {
+          "unit": "2025-04-02 00:00:00",
+          "observations": 24,
+          "first_target": "2025-04-02 00:00:00",
+          "last_target": "2025-04-02 23:00:00",
+          "baseline_mae_kwh": 93.36402447589323,
+          "model_mae_kwh": 93.38929794939729,
+          "baseline_minus_model_mae_kwh": -0.02527347350405762
+        },
+        {
+          "unit": "2025-04-03 00:00:00",
+          "observations": 24,
+          "first_target": "2025-04-03 00:00:00",
+          "last_target": "2025-04-03 23:00:00",
+          "baseline_mae_kwh": 89.25256826995246,
+          "model_mae_kwh": 89.20871710681179,
+          "baseline_minus_model_mae_kwh": 0.04385116314066787
+        },
+        {
+          "unit": "2025-04-04 00:00:00",
+          "observations": 24,
+          "first_target": "2025-04-04 00:00:00",
+          "last_target": "2025-04-04 23:00:00",
+          "baseline_mae_kwh": 66.6640926862495,
+          "model_mae_kwh": 66.61465017652851,
+          "baseline_minus_model_mae_kwh": 0.04944250972099932
+        },
+        {
+          "unit": "2025-04-05 00:00:00",
+          "observations": 24,
+          "first_target": "2025-04-05 00:00:00",
+          "last_target": "2025-04-05 23:00:00",
+          "baseline_mae_kwh": 85.2903703703693,
+          "model_mae_kwh": 85.28333098234846,
+          "baseline_minus_model_mae_kwh": 0.007039388020833333
+        },
+        {
+          "unit": "2025-04-06 00:00:00",
+          "observations": 24,
+          "first_target": "2025-04-06 00:00:00",
+          "last_target": "2025-04-06 23:00:00",
+          "baseline_mae_kwh": 84.39194297172253,
+          "model_mae_kwh": 84.59920522279936,
+          "baseline_minus_model_mae_kwh": -0.20726225107682694
+        },
+        {
+          "unit": "2025-04-07 00:00:00",
+          "observations": 24,
+          "first_target": "2025-04-07 00:00:00",
+          "last_target": "2025-04-07 23:00:00",
+          "baseline_mae_kwh": 86.1199364842978,
+          "model_mae_kwh": 86.31801107169547,
+          "baseline_minus_model_mae_kwh": -0.1980745873976654
+        },
+        {
+          "unit": "2025-04-08 00:00:00",
+          "observations": 24,
+          "first_target": "2025-04-08 00:00:00",
+          "last_target": "2025-04-08 23:00:00",
+          "baseline_mae_kwh": 81.0710041447328,
+          "model_mae_kwh": 81.02545797729363,
+          "baseline_minus_model_mae_kwh": 0.04554616743916995
+        },
+        {
+          "unit": "2025-04-09 00:00:00",
+          "observations": 24,
+          "first_target": "2025-04-09 00:00:00",
+          "last_target": "2025-04-09 23:00:00",
+          "baseline_mae_kwh": 74.49093877332173,
+          "model_mae_kwh": 73.99752909276019,
+          "baseline_minus_model_mae_kwh": 0.4934096805615506
+        },
+        {
+          "unit": "2025-04-10 00:00:00",
+          "observations": 24,
+          "first_target": "2025-04-10 00:00:00",
+          "last_target": "2025-04-10 23:00:00",
+          "baseline_mae_kwh": 92.60431740991226,
+          "model_mae_kwh": 92.11165903807098,
+          "baseline_minus_model_mae_kwh": 0.4926583718412682
+        },
+        {
+          "unit": "2025-04-11 00:00:00",
+          "observations": 24,
+          "first_target": "2025-04-11 00:00:00",
+          "last_target": "2025-04-11 23:00:00",
+          "baseline_mae_kwh": 101.51407519252795,
+          "model_mae_kwh": 100.74995123620435,
+          "baseline_minus_model_mae_kwh": 0.7641239563236013
+        },
+        {
+          "unit": "2025-04-12 00:00:00",
+          "observations": 24,
+          "first_target": "2025-04-12 00:00:00",
+          "last_target": "2025-04-12 23:00:00",
+          "baseline_mae_kwh": 49.81335895687092,
+          "model_mae_kwh": 50.02165790007226,
+          "baseline_minus_model_mae_kwh": -0.20829894320134676
+        },
+        {
+          "unit": "2025-04-13 00:00:00",
+          "observations": 24,
+          "first_target": "2025-04-13 00:00:00",
+          "last_target": "2025-04-13 23:00:00",
+          "baseline_mae_kwh": 56.904214579694475,
+          "model_mae_kwh": 56.58269828352362,
+          "baseline_minus_model_mae_kwh": 0.32151629617086047
+        },
+        {
+          "unit": "2025-04-14 00:00:00",
+          "observations": 24,
+          "first_target": "2025-04-14 00:00:00",
+          "last_target": "2025-04-14 23:00:00",
+          "baseline_mae_kwh": 70.4169574593355,
+          "model_mae_kwh": 71.0265656669447,
+          "baseline_minus_model_mae_kwh": -0.6096082076091989
+        },
+        {
+          "unit": "2025-04-15 00:00:00",
+          "observations": 24,
+          "first_target": "2025-04-15 00:00:00",
+          "last_target": "2025-04-15 23:00:00",
+          "baseline_mae_kwh": 88.75124176184909,
+          "model_mae_kwh": 88.33335890641199,
+          "baseline_minus_model_mae_kwh": 0.4178828554371042
+        },
+        {
+          "unit": "2025-04-16 00:00:00",
+          "observations": 24,
+          "first_target": "2025-04-16 00:00:00",
+          "last_target": "2025-04-16 23:00:00",
+          "baseline_mae_kwh": 81.02508652892386,
+          "model_mae_kwh": 80.74595609324963,
+          "baseline_minus_model_mae_kwh": 0.279130435674233
+        },
+        {
+          "unit": "2025-04-17 00:00:00",
+          "observations": 24,
+          "first_target": "2025-04-17 00:00:00",
+          "last_target": "2025-04-17 23:00:00",
+          "baseline_mae_kwh": 74.27607374964919,
+          "model_mae_kwh": 73.5418332873951,
+          "baseline_minus_model_mae_kwh": 0.7342404622540926
+        },
+        {
+          "unit": "2025-04-18 00:00:00",
+          "observations": 24,
+          "first_target": "2025-04-18 00:00:00",
+          "last_target": "2025-04-18 23:00:00",
+          "baseline_mae_kwh": 73.72949941118684,
+          "model_mae_kwh": 73.76320245718398,
+          "baseline_minus_model_mae_kwh": -0.03370304599714776
+        },
+        {
+          "unit": "2025-04-19 00:00:00",
+          "observations": 24,
+          "first_target": "2025-04-19 00:00:00",
+          "last_target": "2025-04-19 23:00:00",
+          "baseline_mae_kwh": 80.43817650462977,
+          "model_mae_kwh": 80.4680430410881,
+          "baseline_minus_model_mae_kwh": -0.029866536458333332
+        },
+        {
+          "unit": "2025-04-20 00:00:00",
+          "observations": 24,
+          "first_target": "2025-04-20 00:00:00",
+          "last_target": "2025-04-20 23:00:00",
+          "baseline_mae_kwh": 69.54258914741997,
+          "model_mae_kwh": 69.6304024189297,
+          "baseline_minus_model_mae_kwh": -0.08781327150973084
+        },
+        {
+          "unit": "2025-04-21 00:00:00",
+          "observations": 24,
+          "first_target": "2025-04-21 00:00:00",
+          "last_target": "2025-04-21 23:00:00",
+          "baseline_mae_kwh": 82.55559622253925,
+          "model_mae_kwh": 82.69123521894501,
+          "baseline_minus_model_mae_kwh": -0.13563899640575983
+        },
+        {
+          "unit": "2025-04-22 00:00:00",
+          "observations": 24,
+          "first_target": "2025-04-22 00:00:00",
+          "last_target": "2025-04-22 23:00:00",
+          "baseline_mae_kwh": 78.41063888888766,
+          "model_mae_kwh": 78.41161545138766,
+          "baseline_minus_model_mae_kwh": -0.0009765625
+        },
+        {
+          "unit": "2025-04-23 00:00:00",
+          "observations": 24,
+          "first_target": "2025-04-23 00:00:00",
+          "last_target": "2025-04-23 23:00:00",
+          "baseline_mae_kwh": 70.59097229212784,
+          "model_mae_kwh": 70.64486490733482,
+          "baseline_minus_model_mae_kwh": -0.05389261520698104
+        },
+        {
+          "unit": "2025-04-24 00:00:00",
+          "observations": 24,
+          "first_target": "2025-04-24 00:00:00",
+          "last_target": "2025-04-24 23:00:00",
+          "baseline_mae_kwh": 81.11489814814922,
+          "model_mae_kwh": 81.1076146195034,
+          "baseline_minus_model_mae_kwh": 0.007283528645833333
+        },
+        {
+          "unit": "2025-04-25 00:00:00",
+          "observations": 24,
+          "first_target": "2025-04-25 00:00:00",
+          "last_target": "2025-04-25 23:00:00",
+          "baseline_mae_kwh": 79.18786536122934,
+          "model_mae_kwh": 78.92594894685801,
+          "baseline_minus_model_mae_kwh": 0.261916414371323
+        },
+        {
+          "unit": "2025-04-26 00:00:00",
+          "observations": 24,
+          "first_target": "2025-04-26 00:00:00",
+          "last_target": "2025-04-26 23:00:00",
+          "baseline_mae_kwh": 75.26587808477325,
+          "model_mae_kwh": 75.28577135283103,
+          "baseline_minus_model_mae_kwh": -0.019893268057785463
+        },
+        {
+          "unit": "2025-04-27 00:00:00",
+          "observations": 24,
+          "first_target": "2025-04-27 00:00:00",
+          "last_target": "2025-04-27 23:00:00",
+          "baseline_mae_kwh": 92.5628686654806,
+          "model_mae_kwh": 92.68775102404834,
+          "baseline_minus_model_mae_kwh": -0.12488235856775039
+        },
+        {
+          "unit": "2025-04-28 00:00:00",
+          "observations": 24,
+          "first_target": "2025-04-28 00:00:00",
+          "last_target": "2025-04-28 23:00:00",
+          "baseline_mae_kwh": 87.93537210648174,
+          "model_mae_kwh": 86.96157653356507,
+          "baseline_minus_model_mae_kwh": 0.9737955729166666
+        },
+        {
+          "unit": "2025-04-29 00:00:00",
+          "observations": 24,
+          "first_target": "2025-04-29 00:00:00",
+          "last_target": "2025-04-29 23:00:00",
+          "baseline_mae_kwh": 101.11496469907343,
+          "model_mae_kwh": 100.69060760271925,
+          "baseline_minus_model_mae_kwh": 0.4243570963541667
+        }
+      ],
+      "uncertainty": {
+        "resamples": 10000,
+        "seed": 20261013,
+        "method": "Paired cluster/block resampling with replacement, percentile 2.5/97.5 interval",
+        "confidence_level": 0.95,
+        "paired_bootstrap_95_interval_kwh": [
+          0.008096337859247254,
+          0.25268988351412264
+        ],
+        "interval_excludes_zero": true,
+        "nominal_interval_direction": "baseline_minus_model",
+        "resampled_observation_counts": {
+          "minimum": 696,
+          "maximum": 696,
+          "variable_due_to_partial_block": false
+        },
+        "bootstrap_standard_error_kwh": 0.06233170340738693,
+        "quantile_method": "numpy linear percentile; no point-adjustment, multiple-test correction, or model reselection"
+      },
+      "evaluation_role": "CV-selected day-ahead blend, locked before April scoring; uncertainty does not reselect a model"
+    },
+    "may_505h_locked_selected_vs_baseline": {
+      "model": "chronos2",
+      "model_display_name": "Chronos-2 frozen zero-shot",
+      "model_config_locked": {
+        "context": "full",
+        "calibration": "none",
+        "alpha": 1.0
+      },
+      "baseline_config_locked": {
+        "name": "train_mean"
+      },
+      "observations": 505,
+      "paired_unit_type": "Nonoverlapping calendar-day blocks on a single long forecast path: 21 full 24-hour blocks + 1 final one-hour partial block",
+      "paired_units": 22,
+      "target_start": "2025-05-10 00:00:00",
+      "target_end": "2025-05-31 00:00:00",
+      "baseline_mae_kwh": 89.0314876276913,
+      "model_mae_kwh": 90.06614166501885,
+      "baseline_minus_model_mae_kwh": -1.0346540373275293,
+      "relative_mae_improvement_percent": -1.162121475105761,
+      "positive_direction": "Positive baseline-minus-model means lower MAE / improvement by the model; negative means worse",
+      "source_paths": {
+        "model": {
+          "prediction_csv": "E:\\AI work\\AWS_프로젝트\\output\\optimization_20261013\\forecast\\long745\\chronos2\\may_predictions.csv",
+          "prediction_sha256": "b2d9ac2ab0bd9b6dcac183abd5b0ed66a284ee748c9d87b6fe09b39ab994077a",
+          "referenced_result_json": "E:\\AI work\\AWS_프로젝트\\output\\optimization_20261013\\forecast\\long745\\chronos2\\results.json",
+          "json_metric_mae_kwh": 90.06614166501885,
+          "source_csv_split_labels": [
+            "May_P505"
+          ]
+        },
+        "baseline": {
+          "prediction_csv": "E:\\AI work\\AWS_프로젝트\\output\\optimization_20261013\\forecast\\long745\\baselines\\may_predictions.csv",
+          "prediction_sha256": "8ee44520ffb7cd7771e78f280e36bb0618e5574b641ebe971987875d78923afc",
+          "referenced_result_json": "E:\\AI work\\AWS_프로젝트\\output\\optimization_20261013\\forecast\\long745\\baselines\\results.json",
+          "json_metric_mae_kwh": 89.0314876276913,
+          "source_csv_split_labels": [
+            "May_P505"
+          ]
+        }
+      },
+      "units": [
+        {
+          "unit": "2025-05-10 00:00:00",
+          "observations": 24,
+          "first_target": "2025-05-10 00:00:00",
+          "last_target": "2025-05-10 23:00:00",
+          "baseline_mae_kwh": 105.74893860109478,
+          "model_mae_kwh": 106.69485858212526,
+          "baseline_minus_model_mae_kwh": -0.9459199810304805
+        },
+        {
+          "unit": "2025-05-11 00:00:00",
+          "observations": 24,
+          "first_target": "2025-05-11 00:00:00",
+          "last_target": "2025-05-11 23:00:00",
+          "baseline_mae_kwh": 92.74464681265756,
+          "model_mae_kwh": 93.91208372077138,
+          "baseline_minus_model_mae_kwh": -1.1674369081138138
+        },
+        {
+          "unit": "2025-05-12 00:00:00",
+          "observations": 24,
+          "first_target": "2025-05-12 00:00:00",
+          "last_target": "2025-05-12 23:00:00",
+          "baseline_mae_kwh": 96.49432607673923,
+          "model_mae_kwh": 97.65861344423654,
+          "baseline_minus_model_mae_kwh": -1.1642873674973089
+        },
+        {
+          "unit": "2025-05-13 00:00:00",
+          "observations": 24,
+          "first_target": "2025-05-13 00:00:00",
+          "last_target": "2025-05-13 23:00:00",
+          "baseline_mae_kwh": 107.03049089968772,
+          "model_mae_kwh": 108.01783422691187,
+          "baseline_minus_model_mae_kwh": -0.9873433272241527
+        },
+        {
+          "unit": "2025-05-14 00:00:00",
+          "observations": 24,
+          "first_target": "2025-05-14 00:00:00",
+          "last_target": "2025-05-14 23:00:00",
+          "baseline_mae_kwh": 83.9026303481772,
+          "model_mae_kwh": 85.10111421584618,
+          "baseline_minus_model_mae_kwh": -1.1984838676689833
+        },
+        {
+          "unit": "2025-05-15 00:00:00",
+          "observations": 24,
+          "first_target": "2025-05-15 00:00:00",
+          "last_target": "2025-05-15 23:00:00",
+          "baseline_mae_kwh": 62.436156344014,
+          "model_mae_kwh": 63.556312171238154,
+          "baseline_minus_model_mae_kwh": -1.1201558272241527
+        },
+        {
+          "unit": "2025-05-16 00:00:00",
+          "observations": 24,
+          "first_target": "2025-05-16 00:00:00",
+          "last_target": "2025-05-16 23:00:00",
+          "baseline_mae_kwh": 112.95813989916981,
+          "model_mae_kwh": 114.21757672272845,
+          "baseline_minus_model_mae_kwh": -1.2594368235586444
+        },
+        {
+          "unit": "2025-05-17 00:00:00",
+          "observations": 24,
+          "first_target": "2025-05-17 00:00:00",
+          "last_target": "2025-05-17 23:00:00",
+          "baseline_mae_kwh": 86.13388645345003,
+          "model_mae_kwh": 87.07742458574587,
+          "baseline_minus_model_mae_kwh": -0.9435381322958468
+        },
+        {
+          "unit": "2025-05-18 00:00:00",
+          "observations": 24,
+          "first_target": "2025-05-18 00:00:00",
+          "last_target": "2025-05-18 23:00:00",
+          "baseline_mae_kwh": 81.29691378727541,
+          "model_mae_kwh": 82.00085094905474,
+          "baseline_minus_model_mae_kwh": -0.7039371617793222
+        },
+        {
+          "unit": "2025-05-19 00:00:00",
+          "observations": 24,
+          "first_target": "2025-05-19 00:00:00",
+          "last_target": "2025-05-19 23:00:00",
+          "baseline_mae_kwh": 73.37105500825055,
+          "model_mae_kwh": 74.2641600542247,
+          "baseline_minus_model_mae_kwh": -0.8931050459741527
+        },
+        {
+          "unit": "2025-05-20 00:00:00",
+          "observations": 24,
+          "first_target": "2025-05-20 00:00:00",
+          "last_target": "2025-05-20 23:00:00",
+          "baseline_mae_kwh": 97.71684870275901,
+          "model_mae_kwh": 98.99064872301248,
+          "baseline_minus_model_mae_kwh": -1.273800020253475
+        },
+        {
+          "unit": "2025-05-21 00:00:00",
+          "observations": 24,
+          "first_target": "2025-05-21 00:00:00",
+          "last_target": "2025-05-21 23:00:00",
+          "baseline_mae_kwh": 76.31354343829996,
+          "model_mae_kwh": 77.06354179799594,
+          "baseline_minus_model_mae_kwh": -0.7499983596959888
+        },
+        {
+          "unit": "2025-05-22 00:00:00",
+          "observations": 24,
+          "first_target": "2025-05-22 00:00:00",
+          "last_target": "2025-05-22 23:00:00",
+          "baseline_mae_kwh": 86.61504101467654,
+          "model_mae_kwh": 87.67941029901219,
+          "baseline_minus_model_mae_kwh": -1.06436928433565
+        },
+        {
+          "unit": "2025-05-23 00:00:00",
+          "observations": 24,
+          "first_target": "2025-05-23 00:00:00",
+          "last_target": "2025-05-23 23:00:00",
+          "baseline_mae_kwh": 86.27063951008313,
+          "model_mae_kwh": 87.6729799794751,
+          "baseline_minus_model_mae_kwh": -1.4023404693919777
+        },
+        {
+          "unit": "2025-05-24 00:00:00",
+          "observations": 24,
+          "first_target": "2025-05-24 00:00:00",
+          "last_target": "2025-05-24 23:00:00",
+          "baseline_mae_kwh": 114.27402024552491,
+          "model_mae_kwh": 114.89787928230423,
+          "baseline_minus_model_mae_kwh": -0.6238590367793222
+        },
+        {
+          "unit": "2025-05-25 00:00:00",
+          "observations": 24,
+          "first_target": "2025-05-25 00:00:00",
+          "last_target": "2025-05-25 23:00:00",
+          "baseline_mae_kwh": 73.63687932686025,
+          "model_mae_kwh": 74.64493350702924,
+          "baseline_minus_model_mae_kwh": -1.0080541801689833
+        },
+        {
+          "unit": "2025-05-26 00:00:00",
+          "observations": 24,
+          "first_target": "2025-05-26 00:00:00",
+          "last_target": "2025-05-26 23:00:00",
+          "baseline_mae_kwh": 87.80646241118181,
+          "model_mae_kwh": 88.88792153926745,
+          "baseline_minus_model_mae_kwh": -1.08145912808565
+        },
+        {
+          "unit": "2025-05-27 00:00:00",
+          "observations": 24,
+          "first_target": "2025-05-27 00:00:00",
+          "last_target": "2025-05-27 23:00:00",
+          "baseline_mae_kwh": 88.60632362248877,
+          "model_mae_kwh": 89.60685054346293,
+          "baseline_minus_model_mae_kwh": -1.0005269209741527
+        },
+        {
+          "unit": "2025-05-28 00:00:00",
+          "observations": 24,
+          "first_target": "2025-05-28 00:00:00",
+          "last_target": "2025-05-28 23:00:00",
+          "baseline_mae_kwh": 75.25661665676519,
+          "model_mae_kwh": 76.441143408629,
+          "baseline_minus_model_mae_kwh": -1.1845267518638138
+        },
+        {
+          "unit": "2025-05-29 00:00:00",
+          "observations": 24,
+          "first_target": "2025-05-29 00:00:00",
+          "last_target": "2025-05-29 23:00:00",
+          "baseline_mae_kwh": 95.69367275212637,
+          "model_mae_kwh": 96.84345097518387,
+          "baseline_minus_model_mae_kwh": -1.149778223057486
+        },
+        {
+          "unit": "2025-05-30 00:00:00",
+          "observations": 24,
+          "first_target": "2025-05-30 00:00:00",
+          "last_target": "2025-05-30 23:00:00",
+          "baseline_mae_kwh": 85.82865647697933,
+          "model_mae_kwh": 86.80590865837014,
+          "baseline_minus_model_mae_kwh": -0.9772521813908194
+        },
+        {
+          "unit": "2025-05-31 00:00:00",
+          "observations": 1,
+          "first_target": "2025-05-31 00:00:00",
+          "last_target": "2025-05-31 00:00:00",
+          "baseline_mae_kwh": 77.63993066583498,
+          "model_mae_kwh": 74.54960355549701,
+          "baseline_minus_model_mae_kwh": 3.0903271103379666
+        }
+      ],
+      "uncertainty": {
+        "resamples": 10000,
+        "seed": 20261013,
+        "method": "Paired cluster/block resampling with replacement, percentile 2.5/97.5 interval",
+        "confidence_level": 0.95,
+        "paired_bootstrap_95_interval_kwh": [
+          -1.1141435235914043,
+          -0.9481590693818288
+        ],
+        "interval_excludes_zero": true,
+        "nominal_interval_direction": "baseline_minus_model",
+        "resampled_observation_counts": {
+          "minimum": 390,
+          "maximum": 528,
+          "variable_due_to_partial_block": true
+        },
+        "bootstrap_standard_error_kwh": 0.04187201739645709,
+        "quantile_method": "numpy linear percentile; no point-adjustment, multiple-test correction, or model reselection"
+      },
+      "partial_block_policy": "Retain and resample the final May31 00:00 one-hour block in the same 22-block pool. Compute total paired error difference / total sampled hours; never average 22 block means equally.",
+      "evaluation_role": "Validation-selected long model, selection lock unchanged"
+    },
+    "may_505h_observed_best_xgb_vs_baseline": {
+      "model": "xgboost",
+      "model_display_name": "XGBoost",
+      "model_config_locked": {
+        "n_estimators": 50,
+        "max_depth": 2,
+        "learning_rate": 0.01,
+        "min_child_weight": 100,
+        "reg_lambda": 100.0,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "feature_set": "history",
+        "residual_shrinkage": 0.5,
+        "objective": "reg:absoluteerror"
+      },
+      "baseline_config_locked": {
+        "name": "train_mean"
+      },
+      "observations": 505,
+      "paired_unit_type": "Nonoverlapping calendar-day blocks on a single long forecast path: 21 full 24-hour blocks + 1 final one-hour partial block",
+      "paired_units": 22,
+      "target_start": "2025-05-10 00:00:00",
+      "target_end": "2025-05-31 00:00:00",
+      "baseline_mae_kwh": 89.0314876276913,
+      "model_mae_kwh": 88.41735047397373,
+      "baseline_minus_model_mae_kwh": 0.614137153717586,
+      "relative_mae_improvement_percent": 0.6897976997596209,
+      "positive_direction": "Positive baseline-minus-model means lower MAE / improvement by the model; negative means worse",
+      "source_paths": {
+        "model": {
+          "prediction_csv": "E:\\AI work\\AWS_프로젝트\\output\\optimization_20261013\\forecast\\long745\\xgboost\\may_predictions.csv",
+          "prediction_sha256": "23f40fe702943c0443827e0b0a929814e8de26e7802a5979eaeb25c878873aa9",
+          "referenced_result_json": "E:\\AI work\\AWS_프로젝트\\output\\optimization_20261013\\forecast\\long745\\xgboost\\results.json",
+          "json_metric_mae_kwh": 88.41735047397373,
+          "source_csv_split_labels": [
+            "May_P505"
+          ]
+        },
+        "baseline": {
+          "prediction_csv": "E:\\AI work\\AWS_프로젝트\\output\\optimization_20261013\\forecast\\long745\\baselines\\may_predictions.csv",
+          "prediction_sha256": "8ee44520ffb7cd7771e78f280e36bb0618e5574b641ebe971987875d78923afc",
+          "referenced_result_json": "E:\\AI work\\AWS_프로젝트\\output\\optimization_20261013\\forecast\\long745\\baselines\\results.json",
+          "json_metric_mae_kwh": 89.0314876276913,
+          "source_csv_split_labels": [
+            "May_P505"
+          ]
+        }
+      },
+      "units": [
+        {
+          "unit": "2025-05-10 00:00:00",
+          "observations": 24,
+          "first_target": "2025-05-10 00:00:00",
+          "last_target": "2025-05-10 23:00:00",
+          "baseline_mae_kwh": 105.74893860109478,
+          "model_mae_kwh": 105.00122787334233,
+          "baseline_minus_model_mae_kwh": 0.7477107277524434
+        },
+        {
+          "unit": "2025-05-11 00:00:00",
+          "observations": 24,
+          "first_target": "2025-05-11 00:00:00",
+          "last_target": "2025-05-11 23:00:00",
+          "baseline_mae_kwh": 92.74464681265756,
+          "model_mae_kwh": 92.08650798113376,
+          "baseline_minus_model_mae_kwh": 0.6581388315238049
+        },
+        {
+          "unit": "2025-05-12 00:00:00",
+          "observations": 24,
+          "first_target": "2025-05-12 00:00:00",
+          "last_target": "2025-05-12 23:00:00",
+          "baseline_mae_kwh": 96.49432607673923,
+          "model_mae_kwh": 95.74661534898678,
+          "baseline_minus_model_mae_kwh": 0.7477107277524434
+        },
+        {
+          "unit": "2025-05-13 00:00:00",
+          "observations": 24,
+          "first_target": "2025-05-13 00:00:00",
+          "last_target": "2025-05-13 23:00:00",
+          "baseline_mae_kwh": 107.03049089968772,
+          "model_mae_kwh": 106.49641180843598,
+          "baseline_minus_model_mae_kwh": 0.5340790912517454
+        },
+        {
+          "unit": "2025-05-14 00:00:00",
+          "observations": 24,
+          "first_target": "2025-05-14 00:00:00",
+          "last_target": "2025-05-14 23:00:00",
+          "baseline_mae_kwh": 83.9026303481772,
+          "model_mae_kwh": 83.2617354386751,
+          "baseline_minus_model_mae_kwh": 0.6408949095020944
+        },
+        {
+          "unit": "2025-05-15 00:00:00",
+          "observations": 24,
+          "first_target": "2025-05-15 00:00:00",
+          "last_target": "2025-05-15 23:00:00",
+          "baseline_mae_kwh": 62.436156344014,
+          "model_mae_kwh": 61.90207725276226,
+          "baseline_minus_model_mae_kwh": 0.5340790912517454
+        },
+        {
+          "unit": "2025-05-16 00:00:00",
+          "observations": 24,
+          "first_target": "2025-05-16 00:00:00",
+          "last_target": "2025-05-16 23:00:00",
+          "baseline_mae_kwh": 112.95813989916981,
+          "model_mae_kwh": 112.10361335316702,
+          "baseline_minus_model_mae_kwh": 0.8545265460027925
+        },
+        {
+          "unit": "2025-05-17 00:00:00",
+          "observations": 24,
+          "first_target": "2025-05-17 00:00:00",
+          "last_target": "2025-05-17 23:00:00",
+          "baseline_mae_kwh": 86.13388645345003,
+          "model_mae_kwh": 85.70662318044863,
+          "baseline_minus_model_mae_kwh": 0.42726327300139627
+        },
+        {
+          "unit": "2025-05-18 00:00:00",
+          "observations": 24,
+          "first_target": "2025-05-18 00:00:00",
+          "last_target": "2025-05-18 23:00:00",
+          "baseline_mae_kwh": 81.29691378727541,
+          "model_mae_kwh": 80.86965051427403,
+          "baseline_minus_model_mae_kwh": 0.42726327300139627
+        },
+        {
+          "unit": "2025-05-19 00:00:00",
+          "observations": 24,
+          "first_target": "2025-05-19 00:00:00",
+          "last_target": "2025-05-19 23:00:00",
+          "baseline_mae_kwh": 73.37105500825055,
+          "model_mae_kwh": 72.83697591699881,
+          "baseline_minus_model_mae_kwh": 0.5340790912517454
+        },
+        {
+          "unit": "2025-05-20 00:00:00",
+          "observations": 24,
+          "first_target": "2025-05-20 00:00:00",
+          "last_target": "2025-05-20 23:00:00",
+          "baseline_mae_kwh": 97.71684870275901,
+          "model_mae_kwh": 96.75550633850587,
+          "baseline_minus_model_mae_kwh": 0.9613423642531416
+        },
+        {
+          "unit": "2025-05-21 00:00:00",
+          "observations": 24,
+          "first_target": "2025-05-21 00:00:00",
+          "last_target": "2025-05-21 23:00:00",
+          "baseline_mae_kwh": 76.31354343829996,
+          "model_mae_kwh": 75.88628016529856,
+          "baseline_minus_model_mae_kwh": 0.42726327300139627
+        },
+        {
+          "unit": "2025-05-22 00:00:00",
+          "observations": 24,
+          "first_target": "2025-05-22 00:00:00",
+          "last_target": "2025-05-22 23:00:00",
+          "baseline_mae_kwh": 86.61504101467654,
+          "model_mae_kwh": 85.97414610517444,
+          "baseline_minus_model_mae_kwh": 0.6408949095020944
+        },
+        {
+          "unit": "2025-05-23 00:00:00",
+          "observations": 24,
+          "first_target": "2025-05-23 00:00:00",
+          "last_target": "2025-05-23 23:00:00",
+          "baseline_mae_kwh": 86.27063951008313,
+          "model_mae_kwh": 85.41611296408034,
+          "baseline_minus_model_mae_kwh": 0.8545265460027925
+        },
+        {
+          "unit": "2025-05-24 00:00:00",
+          "observations": 24,
+          "first_target": "2025-05-24 00:00:00",
+          "last_target": "2025-05-24 23:00:00",
+          "baseline_mae_kwh": 114.27402024552491,
+          "model_mae_kwh": 113.84675697252351,
+          "baseline_minus_model_mae_kwh": 0.42726327300139627
+        },
+        {
+          "unit": "2025-05-25 00:00:00",
+          "observations": 24,
+          "first_target": "2025-05-25 00:00:00",
+          "last_target": "2025-05-25 23:00:00",
+          "baseline_mae_kwh": 73.63687932686025,
+          "model_mae_kwh": 72.99598441735816,
+          "baseline_minus_model_mae_kwh": 0.6408949095020944
+        },
+        {
+          "unit": "2025-05-26 00:00:00",
+          "observations": 24,
+          "first_target": "2025-05-26 00:00:00",
+          "last_target": "2025-05-26 23:00:00",
+          "baseline_mae_kwh": 87.80646241118181,
+          "model_mae_kwh": 87.16556750167972,
+          "baseline_minus_model_mae_kwh": 0.6408949095020944
+        },
+        {
+          "unit": "2025-05-27 00:00:00",
+          "observations": 24,
+          "first_target": "2025-05-27 00:00:00",
+          "last_target": "2025-05-27 23:00:00",
+          "baseline_mae_kwh": 88.60632362248877,
+          "model_mae_kwh": 88.12990134194024,
+          "baseline_minus_model_mae_kwh": 0.4764222805485285
+        },
+        {
+          "unit": "2025-05-28 00:00:00",
+          "observations": 24,
+          "first_target": "2025-05-28 00:00:00",
+          "last_target": "2025-05-28 23:00:00",
+          "baseline_mae_kwh": 75.25661665676519,
+          "model_mae_kwh": 74.50890592901276,
+          "baseline_minus_model_mae_kwh": 0.7477107277524434
+        },
+        {
+          "unit": "2025-05-29 00:00:00",
+          "observations": 24,
+          "first_target": "2025-05-29 00:00:00",
+          "last_target": "2025-05-29 23:00:00",
+          "baseline_mae_kwh": 95.69367275212637,
+          "model_mae_kwh": 95.17483341346967,
+          "baseline_minus_model_mae_kwh": 0.5188393386567137
+        },
+        {
+          "unit": "2025-05-30 00:00:00",
+          "observations": 24,
+          "first_target": "2025-05-30 00:00:00",
+          "last_target": "2025-05-30 23:00:00",
+          "baseline_mae_kwh": 85.82865647697933,
+          "model_mae_kwh": 85.29457738572758,
+          "baseline_minus_model_mae_kwh": 0.5340790912517454
+        },
+        {
+          "unit": "2025-05-31 00:00:00",
+          "observations": 1,
+          "first_target": "2025-05-31 00:00:00",
+          "last_target": "2025-05-31 00:00:00",
+          "baseline_mae_kwh": 77.63993066583498,
+          "model_mae_kwh": 78.92172048483917,
+          "baseline_minus_model_mae_kwh": -1.2817898190041888
+        }
+      ],
+      "uncertainty": {
+        "resamples": 10000,
+        "seed": 20261013,
+        "method": "Paired cluster/block resampling with replacement, percentile 2.5/97.5 interval",
+        "confidence_level": 0.95,
+        "paired_bootstrap_95_interval_kwh": [
+          0.5502663488549528,
+          0.6808545583837042
+        ],
+        "interval_excludes_zero": true,
+        "nominal_interval_direction": "baseline_minus_model",
+        "resampled_observation_counts": {
+          "minimum": 390,
+          "maximum": 528,
+          "variable_due_to_partial_block": true
+        },
+        "bootstrap_standard_error_kwh": 0.033324525154419644,
+        "quantile_method": "numpy linear percentile; no point-adjustment, multiple-test correction, or model reselection"
+      },
+      "partial_block_policy": "Retain and resample the final May31 00:00 one-hour block in the same 22-block pool. Compute total paired error difference / total sampled hours; never average 22 block means equally.",
+      "evaluation_role": "Descriptive May observed best only, not deployment-selected; nominal CI conditional on fixed XGB and not corrected for choosing a May winner"
+    }
+  },
+  "all_models_csv_mae_audit": {
+    "april_24h": {
+      "arima": {
+        "rows": 696,
+        "mae_kwh": 79.35011987876032,
+        "actuals_keys_identical_to_baseline": true
+      },
+      "xgboost": {
+        "rows": 696,
+        "mae_kwh": 79.35026577178235,
+        "actuals_keys_identical_to_baseline": true
+      },
+      "patchtst": {
+        "rows": 696,
+        "mae_kwh": 80.56555211587545,
+        "actuals_keys_identical_to_baseline": true
+      },
+      "itransformer": {
+        "rows": 696,
+        "mae_kwh": 80.64400781989431,
+        "actuals_keys_identical_to_baseline": true
+      },
+      "chronos2": {
+        "rows": 696,
+        "mae_kwh": 79.34035981962879,
+        "actuals_keys_identical_to_baseline": true
+      },
+      "baseline": {
+        "rows": 696,
+        "mae_kwh": 79.46838365673148,
+        "actuals_keys_identical_to_baseline": true
+      }
+    },
+    "may_505h": {
+      "arima": {
+        "rows": 505,
+        "mae_kwh": 89.03148525348828,
+        "actuals_keys_identical_to_baseline": true
+      },
+      "xgboost": {
+        "rows": 505,
+        "mae_kwh": 88.41735047397373,
+        "actuals_keys_identical_to_baseline": true
+      },
+      "patchtst": {
+        "rows": 505,
+        "mae_kwh": 88.63836319642304,
+        "actuals_keys_identical_to_baseline": true
+      },
+      "itransformer": {
+        "rows": 505,
+        "mae_kwh": 91.09672689485804,
+        "actuals_keys_identical_to_baseline": true
+      },
+      "chronos2": {
+        "rows": 505,
+        "mae_kwh": 90.06614166501885,
+        "actuals_keys_identical_to_baseline": true
+      },
+      "baseline": {
+        "rows": 505,
+        "mae_kwh": 89.0314876276913,
+        "actuals_keys_identical_to_baseline": true
+      }
+    }
+  },
+  "provenance": {
+    "comparison_json": "E:\\AI work\\AWS_프로젝트\\output\\optimization_20261013\\forecast\\comparison_results.json",
+    "comparison_sha256": "1da3a39fa8b0a0d9ad6397b6f4da3f125b811584f811b928881a08299634d229",
+    "selection_lock": "E:\\AI work\\AWS_프로젝트\\output\\optimization_20261013\\forecast\\comparison_selection_lock.json",
+    "selection_lock_sha256_before_and_after": "38ac42f351443d690583ad4cd6d2237b2b48ad8322ba2044a82a17c4d121910a",
+    "selection_unchanged_verified": true,
+    "runtime": {
+      "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+      "numpy": "2.3.5",
+      "pandas": "3.0.1"
+    }
+  },
+  "limitations_ko": [
+    "이 구간·저장 예측·모델 fit을 고정한 조건부 percentile bootstrap이며 학습·하이퍼파라미터 탐색·모델 선택의 불확실성을 포함하지 않습니다.",
+    "April의 29개 원점은 같은 공장의 한 달에서 나온 값입니다. 24시간 안의 상관은 보존하지만 인접 날짜 간 상관·겹치는 과거 입력·고정 모델 파라미터의 의존성은 완전히 반영하지 못합니다.",
+    "May의 22개 블록은 서로 독립적인 forecast origin이 아니라 한 745시간 예측 경로의 505개 라벨 구간입니다. 월·설비·다른 공장으로 일반화하는 신뢰구간이 아닙니다.",
+    "마지막 1시간 블록도 유지하며, resampling마다 전체 관측 수가 달라질 수 있습니다. 시간 수로 가중한 MAE 차이를 계산해 부분 블록을 24시간 블록과 같은 무게로 과대평가하지 않습니다.",
+    "May 관찰 최저 XGB 비교는 사후 관찰입니다. CI는 여러 모델 중 최저를 관찰한 선택 편향이나 다중 비교를 보정하지 않으며, 배포 모델을 바꾸는 근거로 사용하지 않습니다.",
+    "April·May는 기존 EDA/평가에서 이미 노출됐습니다. 완전히 미노출된 전향 평가로 해석할 수 없습니다.",
+    "May에는 새 센서 입력이 없어 일일 24h rolling 평가를 할 수 없습니다. April의 next-day 결과와 May의 단일 장기 경로는 다른 과제입니다.",
+    "명목 95% 구간이 0을 제외하더라도 이 데이터 조건의 관측 차이를 나타낼 뿐 공학적 가치·다른 월의 우위·실제 절감 효과를 보장하지 않습니다."
+  ]
+}

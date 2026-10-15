@@ -1,0 +1,344 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "notification_regression25_passed",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "session_count_not_limited_by256_occurrence_lookup",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "seek_clears_current_active_but_keeps_session_totals",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "new_session_clears_detection_totals_and_active",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "availability_has_all13_module_scopes",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "raw_bounds_are_dynamic_original_endpoints",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "raw_terminal_day_has_only_one_point",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "completed_hour_availability_ends_Apr29",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "day_week_month_counts_and_completeness",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "week_label_not_mistaken_for_available_calendar_date",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "default_replay_starts_at_original_first_point",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "full_replay_end_includes_last_original_point",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "initial_buffer_is_only_five_minutes",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "start_has_no_completed_hour",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "bootstrap_exposes_dynamic_bounds_and_grain_metadata",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "empty_date_raw_default_clamps_to_first_point",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "empty_date_hour_default_is_valid_empty_prefix",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "first_hour_forecast_waits_without_fake_zero_prediction",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "calendar_terminal_Apr30_returns_exactly_one_raw_point",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "400_timestamp_after_source",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "400_before_source",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "400_reversed",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "400_equal",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "400_raw_two_calendar_days",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "400_aggregated_Apr30_unavailable",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "400_unknown_module",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "400_unknown_grain",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "monthly_partial_record_flags_preserved",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "weekly_labels_and_partial_flags_preserved",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "buffer_rolls_across_five_minutes_without_whole_source_load",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "history_remains61_endpoints_300seconds",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "one_completed_hour_after_first_hour",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "terminal_raw_point_loaded_with_bounded_final_chunk",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "source_bytes_and_mtime_unchanged",
+      "passed": true,
+      "details": null
+    }
+  ],
+  "production_POST_or_server_restart": false,
+  "production_DB_used": false,
+  "external_transport_calls": 0,
+  "availability_summary": {
+    "raw": {
+      "min_date": "2024-12-01",
+      "max_date": "2025-04-30",
+      "last_timestamp": "2025-04-30 00:00:00",
+      "period_count": 2592001,
+      "complete_period_count": 2592001,
+      "partial_last_day": true,
+      "last_day_samples": 1
+    },
+    "hour": {
+      "min_date": "2024-12-01",
+      "max_date": "2025-04-29",
+      "last_timestamp": "2025-04-29 23:00:00",
+      "period_count": 3600,
+      "complete_period_count": 3600
+    },
+    "day": {
+      "min_date": "2024-12-01",
+      "max_date": "2025-04-29",
+      "last_timestamp": "2025-04-29 00:00:00",
+      "period_count": 150,
+      "complete_period_count": 150
+    },
+    "week": {
+      "min_date": "2024-12-01",
+      "max_date": "2025-04-29",
+      "last_timestamp": "2025-05-04 00:00:00",
+      "period_count": 23,
+      "complete_period_count": 21
+    },
+    "month": {
+      "min_date": "2024-12-01",
+      "max_date": "2025-04-29",
+      "last_timestamp": "2025-04-01 00:00:00",
+      "period_count": 5,
+      "complete_period_count": 4
+    }
+  },
+  "notification_regression_checks": [
+    {
+      "name": "preview_has_no_new_events_despite_old_alarms",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "normal_telemetry_does_not_republish_DB_history",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "first_two_positive_points_are_not_new_detection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "third_point_emits_once_with_onset_and_detected_time",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "sustained_fault_does_not_repeat_every_tick",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "event_has_resolvable_persistent_and_occurrence_IDs",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "no_new_events_in_snapshot",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "legacy_persistent_ID_hash_unchanged",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "different_onset_same_bucket_emits_current_occurrence",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "existing_ack_and_outbox_are_not_reset",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "current_detected_time_differs_from_stored_time",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "ASGI_GET_occurrence_detail_returns_current_interval",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "ASGI_GET_persistent_ID_still_returns_legacy_record",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "new_session_replay_notifies_even_when_DB_insert_is_duplicate",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "same_DB_replay_does_not_add_Slack_job",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "same_session_same_onset_revisit_is_suppressed",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "missing_5second_point_restarts_streak",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "AI_only_and_other_module_rule_notify_independently",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "AI_sustained_frame_is_not_repeated",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "seek_preview_does_not_log_or_notify",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "state_packet_explicitly_has_empty_new_events",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "SSE_reconnect_does_not_replay_last_alert",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "occurrence_lookup_bounded_to256",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "persistent_ID_lookup_survives_occurrence_eviction",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "unknown_detail_still_404",
+      "passed": true,
+      "details": null
+    }
+  ]
+}

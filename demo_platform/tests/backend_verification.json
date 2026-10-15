@@ -1,0 +1,185 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "data_ai_forecast_ready",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "13_real_modules",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "instantaneous_power_is_sensor_sum",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "source_and_received_clocks_separate",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "no_incomplete_future_hour",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "raw_default_end_current_observed_tick",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "prefix_only_forecast",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "module_fit_not_aggregate_allocation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "7_models_505_labels",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "negative_r2_not_hidden",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "4_sustained_unconfirmed_events",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "complete_model_specific_score_paths",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "source_fault_label_not_invented",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "durable_13_rows_per_source_tick",
+      "passed": true,
+      "details": {
+        "new_records": 65
+      }
+    },
+    {
+      "name": "real_17_three_tick_alarm",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "pause_stops_new_logs",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "report_rejects_future_asof",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "chat_rejects_future_context",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "local_report_truthful_168_complete_hours",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "historical_report_matches_requested_forecast_origin",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "fault_chat_has_no_future_events",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "weekly_actual_report_excludes_synthetic_alarms",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "real_allowlisted_local_data_search",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "schedule_persists_module_and_minutes",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "webhook_ssrf_rejected",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "cross_site_mutation_rejected",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "explicit_synthetic_source_load_imbalance",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "explicit_synthetic_source_reactive_power_surge",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "explicit_synthetic_source_power_factor_drop",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "synthetic_alarm_retains_scenario_identity",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "synthetic_detail_reproduces_augmented_values",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "explicit_synthetic_source_abnormal_pattern",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "explicit_synthetic_source_night_operation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "explicit_synthetic_source_current_only_increase",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "credentials_absent_from_client_response",
+      "passed": true,
+      "details": null
+    }
+  ],
+  "external_sensor_transmission": false,
+  "real_slack_delivery": "not_configured",
+  "real_gpt_generation": "not_verified_authentication_failed_or_unconfigured"
+}

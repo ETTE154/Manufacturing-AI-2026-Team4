@@ -1,0 +1,4474 @@
+{
+  "records": [
+    {
+      "candidate": 0,
+      "config": {
+        "family": "daily_level",
+        "resolution": "daily",
+        "profile": "uniform",
+        "profile_alpha": 0.5,
+        "kind": "mean"
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.52011723377744,
+          "rmse_kwh": 97.43525756990498,
+          "mape_percent": 0.19557415750162838,
+          "r2": -7.346483646952784e-05,
+          "bias_pred_minus_actual_kwh": 0.7046562820007833
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.23714267496443,
+          "rmse_kwh": 96.79524154217242,
+          "mape_percent": 0.19483174403241388,
+          "r2": -7.29727616335385e-05,
+          "bias_pred_minus_actual_kwh": -0.9129734970788614
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.23714267496443
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 76,
+          "last_period_label": "2025-02-14 00:00:00",
+          "last_period_available_at": "2025-02-15 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 83,
+          "last_period_label": "2025-02-21 00:00:00",
+          "last_period_available_at": "2025-02-22 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 86,
+          "last_period_label": "2025-02-24 00:00:00",
+          "last_period_available_at": "2025-02-25 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 0
+        }
+      ],
+      "objective": 76.23714267496443
+    },
+    {
+      "candidate": 1,
+      "config": {
+        "family": "daily_level",
+        "resolution": "daily",
+        "profile": "hour",
+        "profile_alpha": 0.5,
+        "kind": "mean"
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.57575473817793,
+          "rmse_kwh": 97.53667512505587,
+          "mape_percent": 0.19571646389586042,
+          "r2": -0.0021564436983421142,
+          "bias_pred_minus_actual_kwh": 0.7020157760536749
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.28123651799162,
+          "rmse_kwh": 96.86688062939264,
+          "mape_percent": 0.19494413146495382,
+          "r2": -0.0015538477737291334,
+          "bias_pred_minus_actual_kwh": -0.9168688969415713
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.28123651799162
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 76,
+          "last_period_label": "2025-02-14 00:00:00",
+          "last_period_available_at": "2025-02-15 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 83,
+          "last_period_label": "2025-02-21 00:00:00",
+          "last_period_available_at": "2025-02-22 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 86,
+          "last_period_label": "2025-02-24 00:00:00",
+          "last_period_available_at": "2025-02-25 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 0
+        }
+      ],
+      "objective": 76.28123651799162
+    },
+    {
+      "candidate": 2,
+      "config": {
+        "family": "daily_level",
+        "resolution": "daily",
+        "profile": "weekday_hour",
+        "profile_alpha": 0.5,
+        "kind": "mean"
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 77.17120687354976,
+          "rmse_kwh": 98.21314041625911,
+          "mape_percent": 0.19723792907455365,
+          "r2": -0.01610555401325775,
+          "bias_pred_minus_actual_kwh": 0.6906769663998474
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.76536974279051,
+          "rmse_kwh": 97.61592643710563,
+          "mape_percent": 0.19618081718388442,
+          "r2": -0.017103234560975622,
+          "bias_pred_minus_actual_kwh": -0.9335964478168276
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.7653697427905
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 76,
+          "last_period_label": "2025-02-14 00:00:00",
+          "last_period_available_at": "2025-02-15 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 83,
+          "last_period_label": "2025-02-21 00:00:00",
+          "last_period_available_at": "2025-02-22 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 86,
+          "last_period_label": "2025-02-24 00:00:00",
+          "last_period_available_at": "2025-02-25 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 0
+        }
+      ],
+      "objective": 76.7653697427905
+    },
+    {
+      "candidate": 3,
+      "config": {
+        "family": "daily_level",
+        "resolution": "daily",
+        "profile": "uniform",
+        "profile_alpha": 0.5,
+        "kind": "median"
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.52245282166614,
+          "rmse_kwh": 97.4393032401398,
+          "mape_percent": 0.19557225428594818,
+          "r2": -0.0001565159115690662,
+          "bias_pred_minus_actual_kwh": -0.8692984240358188
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.25168185257763,
+          "rmse_kwh": 96.82050000787996,
+          "mape_percent": 0.19486103349131492,
+          "r2": -0.0005949737255419585,
+          "bias_pred_minus_actual_kwh": -2.4869282031154634
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.25168185257763
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 76,
+          "last_period_label": "2025-02-14 00:00:00",
+          "last_period_available_at": "2025-02-15 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 83,
+          "last_period_label": "2025-02-21 00:00:00",
+          "last_period_available_at": "2025-02-22 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 86,
+          "last_period_label": "2025-02-24 00:00:00",
+          "last_period_available_at": "2025-02-25 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 0
+        }
+      ],
+      "objective": 76.25168185257763
+    },
+    {
+      "candidate": 4,
+      "config": {
+        "family": "daily_level",
+        "resolution": "daily",
+        "profile": "hour",
+        "profile_alpha": 0.5,
+        "kind": "median"
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.55164678827269,
+          "rmse_kwh": 97.54075448495877,
+          "mape_percent": 0.19564698640217962,
+          "r2": -0.0022402735459114975,
+          "bias_pred_minus_actual_kwh": -0.8719388171862825
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.26133049998103,
+          "rmse_kwh": 96.89218118241533,
+          "mape_percent": 0.1948853982661009,
+          "r2": -0.002077105574780802,
+          "bias_pred_minus_actual_kwh": -2.4908234365752504
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.26133049998103
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 76,
+          "last_period_label": "2025-02-14 00:00:00",
+          "last_period_available_at": "2025-02-15 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 83,
+          "last_period_label": "2025-02-21 00:00:00",
+          "last_period_available_at": "2025-02-22 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 86,
+          "last_period_label": "2025-02-24 00:00:00",
+          "last_period_available_at": "2025-02-25 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 0
+        }
+      ],
+      "objective": 76.26133049998103
+    },
+    {
+      "candidate": 5,
+      "config": {
+        "family": "daily_level",
+        "resolution": "daily",
+        "profile": "weekday_hour",
+        "profile_alpha": 0.5,
+        "kind": "median"
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 77.20775129454081,
+          "rmse_kwh": 98.21731707424742,
+          "mape_percent": 0.19732352299289208,
+          "r2": -0.016191978611854507,
+          "bias_pred_minus_actual_kwh": -0.8832771634684673
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.8321013655727,
+          "rmse_kwh": 97.64124566129286,
+          "mape_percent": 0.19634356535224726,
+          "r2": -0.017630927234018268,
+          "bias_pred_minus_actual_kwh": -2.5075503038625517
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.83210136557271
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 76,
+          "last_period_label": "2025-02-14 00:00:00",
+          "last_period_available_at": "2025-02-15 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 83,
+          "last_period_label": "2025-02-21 00:00:00",
+          "last_period_available_at": "2025-02-22 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 86,
+          "last_period_label": "2025-02-24 00:00:00",
+          "last_period_available_at": "2025-02-25 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 0
+        }
+      ],
+      "objective": 76.83210136557271
+    },
+    {
+      "candidate": 6,
+      "config": {
+        "family": "daily_level",
+        "resolution": "daily",
+        "profile": "uniform",
+        "profile_alpha": 0.5,
+        "kind": "prefix_mean"
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.52011723377751,
+          "rmse_kwh": 97.43525756990505,
+          "mape_percent": 0.19557415750162854,
+          "r2": -7.34648364708601e-05,
+          "bias_pred_minus_actual_kwh": 0.7046562820032086
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.2371426749644,
+          "rmse_kwh": 96.7952415421724,
+          "mape_percent": 0.19483174403241382,
+          "r2": -7.297276163309441e-05,
+          "bias_pred_minus_actual_kwh": -0.912973497076436
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.23714267496439
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 76,
+          "last_period_label": "2025-02-14 00:00:00",
+          "last_period_available_at": "2025-02-15 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 83,
+          "last_period_label": "2025-02-21 00:00:00",
+          "last_period_available_at": "2025-02-22 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 86,
+          "last_period_label": "2025-02-24 00:00:00",
+          "last_period_available_at": "2025-02-25 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 0
+        }
+      ],
+      "objective": 76.23714267496439
+    },
+    {
+      "candidate": 7,
+      "config": {
+        "family": "daily_level",
+        "resolution": "daily",
+        "profile": "hour",
+        "profile_alpha": 0.5,
+        "kind": "prefix_mean"
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.57575473817803,
+          "rmse_kwh": 97.53667512505592,
+          "mape_percent": 0.19571646389586078,
+          "r2": -0.0021564436983430024,
+          "bias_pred_minus_actual_kwh": 0.7020157760561003
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.28123651799169,
+          "rmse_kwh": 96.86688062939264,
+          "mape_percent": 0.19494413146495396,
+          "r2": -0.0015538477737289114,
+          "bias_pred_minus_actual_kwh": -0.9168688969391459
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.28123651799169
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 76,
+          "last_period_label": "2025-02-14 00:00:00",
+          "last_period_available_at": "2025-02-15 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 83,
+          "last_period_label": "2025-02-21 00:00:00",
+          "last_period_available_at": "2025-02-22 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 86,
+          "last_period_label": "2025-02-24 00:00:00",
+          "last_period_available_at": "2025-02-25 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 0
+        }
+      ],
+      "objective": 76.28123651799169
+    },
+    {
+      "candidate": 8,
+      "config": {
+        "family": "daily_level",
+        "resolution": "daily",
+        "profile": "weekday_hour",
+        "profile_alpha": 0.5,
+        "kind": "prefix_mean"
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 77.17120687354978,
+          "rmse_kwh": 98.21314041625917,
+          "mape_percent": 0.19723792907455373,
+          "r2": -0.01610555401325886,
+          "bias_pred_minus_actual_kwh": 0.6906769664022727
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.76536974279033,
+          "rmse_kwh": 97.61592643710561,
+          "mape_percent": 0.19618081718388397,
+          "r2": -0.0171032345609754,
+          "bias_pred_minus_actual_kwh": -0.9335964478144023
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.76536974279033
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 76,
+          "last_period_label": "2025-02-14 00:00:00",
+          "last_period_available_at": "2025-02-15 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 83,
+          "last_period_label": "2025-02-21 00:00:00",
+          "last_period_available_at": "2025-02-22 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 86,
+          "last_period_label": "2025-02-24 00:00:00",
+          "last_period_available_at": "2025-02-25 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 0
+        }
+      ],
+      "objective": 76.76536974279033
+    },
+    {
+      "candidate": 9,
+      "config": {
+        "family": "daily_level",
+        "resolution": "daily",
+        "profile": "uniform",
+        "profile_alpha": 0.5,
+        "kind": "recent",
+        "window": 1
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 80.59954255116473,
+          "rmse_kwh": 102.16723292713048,
+          "mape_percent": 0.20600995350971077,
+          "r2": -0.09957002334777765,
+          "bias_pred_minus_actual_kwh": 2.914734272725217
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 80.18032567687371,
+          "rmse_kwh": 101.6329303709881,
+          "mape_percent": 0.20491813726941388,
+          "r2": -0.10253546994115692,
+          "bias_pred_minus_actual_kwh": 1.2971044936455722
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 80.18032567687372
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 76,
+          "last_period_label": "2025-02-14 00:00:00",
+          "last_period_available_at": "2025-02-15 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 83,
+          "last_period_label": "2025-02-21 00:00:00",
+          "last_period_available_at": "2025-02-22 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 86,
+          "last_period_label": "2025-02-24 00:00:00",
+          "last_period_available_at": "2025-02-25 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 0
+        }
+      ],
+      "objective": 80.18032567687372
+    },
+    {
+      "candidate": 10,
+      "config": {
+        "family": "daily_level",
+        "resolution": "daily",
+        "profile": "hour",
+        "profile_alpha": 0.5,
+        "kind": "recent",
+        "window": 1
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 80.6153781967275,
+          "rmse_kwh": 102.26351338988522,
+          "mape_percent": 0.206050528089823,
+          "r2": -0.101643427730441,
+          "bias_pred_minus_actual_kwh": 2.912092532081102
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 80.13807629645648,
+          "rmse_kwh": 101.70048566363482,
+          "mape_percent": 0.2048098839078149,
+          "r2": -0.10400166520166487,
+          "bias_pred_minus_actual_kwh": 1.2932072722990156
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 80.13807629645648
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 76,
+          "last_period_label": "2025-02-14 00:00:00",
+          "last_period_available_at": "2025-02-15 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 83,
+          "last_period_label": "2025-02-21 00:00:00",
+          "last_period_available_at": "2025-02-22 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 86,
+          "last_period_label": "2025-02-24 00:00:00",
+          "last_period_available_at": "2025-02-25 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 0
+        }
+      ],
+      "objective": 80.13807629645648
+    },
+    {
+      "candidate": 11,
+      "config": {
+        "family": "daily_level",
+        "resolution": "daily",
+        "profile": "weekday_hour",
+        "profile_alpha": 0.5,
+        "kind": "recent",
+        "window": 1
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 81.25444227357572,
+          "rmse_kwh": 102.9088964603809,
+          "mape_percent": 0.2076833086958745,
+          "r2": -0.1155922055745282,
+          "bias_pred_minus_actual_kwh": 2.9007535515200598
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 80.6448181565186,
+          "rmse_kwh": 102.41415392921765,
+          "mape_percent": 0.2061039440040999,
+          "r2": -0.11955036987385093,
+          "bias_pred_minus_actual_kwh": 1.2764794692934962
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 80.64481815651858
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 76,
+          "last_period_label": "2025-02-14 00:00:00",
+          "last_period_available_at": "2025-02-15 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 83,
+          "last_period_label": "2025-02-21 00:00:00",
+          "last_period_available_at": "2025-02-22 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 86,
+          "last_period_label": "2025-02-24 00:00:00",
+          "last_period_available_at": "2025-02-25 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 0
+        }
+      ],
+      "objective": 80.64481815651858
+    },
+    {
+      "candidate": 12,
+      "config": {
+        "family": "daily_level",
+        "resolution": "daily",
+        "profile": "uniform",
+        "profile_alpha": 0.5,
+        "kind": "recent",
+        "window": 7
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.90136430269267,
+          "rmse_kwh": 97.84776915452144,
+          "mape_percent": 0.19656301186873384,
+          "r2": -0.008559411077784684,
+          "bias_pred_minus_actual_kwh": 3.5734494678350517
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.5429814859016,
+          "rmse_kwh": 97.17320192144614,
+          "mape_percent": 0.19562742232566363,
+          "r2": -0.007898273399466138,
+          "bias_pred_minus_actual_kwh": 1.9558196887554071
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.54298148590159
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 76,
+          "last_period_label": "2025-02-14 00:00:00",
+          "last_period_available_at": "2025-02-15 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 83,
+          "last_period_label": "2025-02-21 00:00:00",
+          "last_period_available_at": "2025-02-22 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 86,
+          "last_period_label": "2025-02-24 00:00:00",
+          "last_period_available_at": "2025-02-25 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 0
+        }
+      ],
+      "objective": 76.54298148590159
+    },
+    {
+      "candidate": 13,
+      "config": {
+        "family": "daily_level",
+        "resolution": "daily",
+        "profile": "hour",
+        "profile_alpha": 0.5,
+        "kind": "recent",
+        "window": 7
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.96326448535422,
+          "rmse_kwh": 97.94859354992884,
+          "mape_percent": 0.19672130666968088,
+          "r2": -0.010638963512052513,
+          "bias_pred_minus_actual_kwh": 3.570808503027671
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.61895951592177,
+          "rmse_kwh": 97.24430383900058,
+          "mape_percent": 0.19582127637439695,
+          "r2": -0.00937377727744404,
+          "bias_pred_minus_actual_kwh": 1.9519236119600243
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.61895951592177
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 76,
+          "last_period_label": "2025-02-14 00:00:00",
+          "last_period_available_at": "2025-02-15 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 83,
+          "last_period_label": "2025-02-21 00:00:00",
+          "last_period_available_at": "2025-02-22 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 86,
+          "last_period_label": "2025-02-24 00:00:00",
+          "last_period_available_at": "2025-02-25 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 0
+        }
+      ],
+      "objective": 76.61895951592177
+    },
+    {
+      "candidate": 14,
+      "config": {
+        "family": "daily_level",
+        "resolution": "daily",
+        "profile": "weekday_hour",
+        "profile_alpha": 0.5,
+        "kind": "recent",
+        "window": 7
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 77.5314335704945,
+          "rmse_kwh": 98.62206018567616,
+          "mape_percent": 0.19817296084278202,
+          "r2": -0.024584473346622504,
+          "bias_pred_minus_actual_kwh": 3.5594690181124857
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.96510492591285,
+          "rmse_kwh": 97.99017530611597,
+          "mape_percent": 0.19670526416549783,
+          "r2": -0.024917111538026226,
+          "bias_pred_minus_actual_kwh": 1.9351950649072605
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.96510492591284
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 76,
+          "last_period_label": "2025-02-14 00:00:00",
+          "last_period_available_at": "2025-02-15 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 83,
+          "last_period_label": "2025-02-21 00:00:00",
+          "last_period_available_at": "2025-02-22 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 86,
+          "last_period_label": "2025-02-24 00:00:00",
+          "last_period_available_at": "2025-02-25 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 0
+        }
+      ],
+      "objective": 76.96510492591284
+    },
+    {
+      "candidate": 15,
+      "config": {
+        "family": "daily_level",
+        "resolution": "daily",
+        "profile": "uniform",
+        "profile_alpha": 0.5,
+        "kind": "recent",
+        "window": 28
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.79530931398561,
+          "rmse_kwh": 97.74884489127132,
+          "mape_percent": 0.19631137620027142,
+          "r2": -0.00652113134546739,
+          "bias_pred_minus_actual_kwh": 7.4964771491576645
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.40551671397802,
+          "rmse_kwh": 96.98569235582248,
+          "mape_percent": 0.19529571202248694,
+          "r2": -0.004012259116424666,
+          "bias_pred_minus_actual_kwh": 5.87884737007802
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.40551671397803
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 76,
+          "last_period_label": "2025-02-14 00:00:00",
+          "last_period_available_at": "2025-02-15 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 83,
+          "last_period_label": "2025-02-21 00:00:00",
+          "last_period_available_at": "2025-02-22 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 86,
+          "last_period_label": "2025-02-24 00:00:00",
+          "last_period_available_at": "2025-02-25 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 0
+        }
+      ],
+      "objective": 76.40551671397803
+    },
+    {
+      "candidate": 16,
+      "config": {
+        "family": "daily_level",
+        "resolution": "daily",
+        "profile": "hour",
+        "profile_alpha": 0.5,
+        "kind": "recent",
+        "window": 28
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.89017623192721,
+          "rmse_kwh": 97.8497723588248,
+          "mape_percent": 0.19655391788970397,
+          "r2": -0.008600707292320209,
+          "bias_pred_minus_actual_kwh": 7.493836153678799
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.52122891809702,
+          "rmse_kwh": 97.05692437127854,
+          "mape_percent": 0.19559110470521884,
+          "r2": -0.005487612407699238,
+          "bias_pred_minus_actual_kwh": 5.874951248034605
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.52122891809702
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 76,
+          "last_period_label": "2025-02-14 00:00:00",
+          "last_period_available_at": "2025-02-15 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 83,
+          "last_period_label": "2025-02-21 00:00:00",
+          "last_period_available_at": "2025-02-22 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 86,
+          "last_period_label": "2025-02-24 00:00:00",
+          "last_period_available_at": "2025-02-25 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 0
+        }
+      ],
+      "objective": 76.52122891809702
+    },
+    {
+      "candidate": 17,
+      "config": {
+        "family": "daily_level",
+        "resolution": "daily",
+        "profile": "weekday_hour",
+        "profile_alpha": 0.5,
+        "kind": "recent",
+        "window": 28
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 77.33192770091296,
+          "rmse_kwh": 98.52357193662405,
+          "mape_percent": 0.1976823457402287,
+          "r2": -0.02253910653339597,
+          "bias_pred_minus_actual_kwh": 7.4824954248003905
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.7285864927967,
+          "rmse_kwh": 97.80364655680826,
+          "mape_percent": 0.1961202588660786,
+          "r2": -0.0210188727649947,
+          "bias_pred_minus_actual_kwh": 5.858220865828252
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.7285864927967
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 76,
+          "last_period_label": "2025-02-14 00:00:00",
+          "last_period_available_at": "2025-02-15 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 83,
+          "last_period_label": "2025-02-21 00:00:00",
+          "last_period_available_at": "2025-02-22 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 86,
+          "last_period_label": "2025-02-24 00:00:00",
+          "last_period_available_at": "2025-02-25 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 0
+        }
+      ],
+      "objective": 76.7285864927967
+    },
+    {
+      "candidate": 18,
+      "config": {
+        "family": "daily_level",
+        "resolution": "daily",
+        "profile": "uniform",
+        "profile_alpha": 0.5,
+        "kind": "recent",
+        "window": 56
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.54166407806827,
+          "rmse_kwh": 97.46216234363409,
+          "mape_percent": 0.19563769240204082,
+          "r2": -0.0006258411698880639,
+          "bias_pred_minus_actual_kwh": 2.403711754954746
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.23806586513756,
+          "rmse_kwh": 96.79145211911579,
+          "mape_percent": 0.1948425625774795,
+          "r2": 5.329132958142857e-06,
+          "bias_pred_minus_actual_kwh": 0.7860819758751015
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.23806586513756
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 76,
+          "last_period_label": "2025-02-14 00:00:00",
+          "last_period_available_at": "2025-02-15 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 83,
+          "last_period_label": "2025-02-21 00:00:00",
+          "last_period_available_at": "2025-02-22 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 86,
+          "last_period_label": "2025-02-24 00:00:00",
+          "last_period_available_at": "2025-02-25 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 0
+        }
+      ],
+      "objective": 76.23806586513756
+    },
+    {
+      "candidate": 19,
+      "config": {
+        "family": "daily_level",
+        "resolution": "daily",
+        "profile": "hour",
+        "profile_alpha": 0.5,
+        "kind": "recent",
+        "window": 56
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.63080677830723,
+          "rmse_kwh": 97.56352163814329,
+          "mape_percent": 0.1958656163268455,
+          "r2": -0.0027081973582401275,
+          "bias_pred_minus_actual_kwh": 2.401071155348904
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.32528325472903,
+          "rmse_kwh": 96.86304420713927,
+          "mape_percent": 0.1950651471220879,
+          "r2": -0.0014745160691134185,
+          "bias_pred_minus_actual_kwh": 0.7821864378425282
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.32528325472903
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 76,
+          "last_period_label": "2025-02-14 00:00:00",
+          "last_period_available_at": "2025-02-15 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 83,
+          "last_period_label": "2025-02-21 00:00:00",
+          "last_period_available_at": "2025-02-22 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 86,
+          "last_period_label": "2025-02-24 00:00:00",
+          "last_period_available_at": "2025-02-25 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 0
+        }
+      ],
+      "objective": 76.32528325472903
+    },
+    {
+      "candidate": 20,
+      "config": {
+        "family": "daily_level",
+        "resolution": "daily",
+        "profile": "weekday_hour",
+        "profile_alpha": 0.5,
+        "kind": "recent",
+        "window": 56
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 77.15711034543024,
+          "rmse_kwh": 98.23966595736147,
+          "mape_percent": 0.19721030368582074,
+          "r2": -0.016654490525032983,
+          "bias_pred_minus_actual_kwh": 2.389731844796847
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.71851614205355,
+          "rmse_kwh": 97.61188983552051,
+          "mape_percent": 0.19606946945649695,
+          "r2": -0.017019118048624993,
+          "bias_pred_minus_actual_kwh": 0.765458148018447
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.71851614205355
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 76,
+          "last_period_label": "2025-02-14 00:00:00",
+          "last_period_available_at": "2025-02-15 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 83,
+          "last_period_label": "2025-02-21 00:00:00",
+          "last_period_available_at": "2025-02-22 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 86,
+          "last_period_label": "2025-02-24 00:00:00",
+          "last_period_available_at": "2025-02-25 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 0
+        }
+      ],
+      "objective": 76.71851614205355
+    },
+    {
+      "candidate": 21,
+      "config": {
+        "family": "daily_arima",
+        "resolution": "daily",
+        "kind": "arima",
+        "order": [
+          0,
+          0,
+          0
+        ],
+        "profile": "uniform",
+        "profile_alpha": 0.5
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.52011721341725,
+          "rmse_kwh": 97.43525753396132,
+          "mape_percent": 0.1955741574249924,
+          "r2": -7.346409861974657e-05,
+          "bias_pred_minus_actual_kwh": 0.7046513586464535
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.23714271849295,
+          "rmse_kwh": 96.79524158976812,
+          "mape_percent": 0.19483174411914816,
+          "r2": -7.297374513570709e-05,
+          "bias_pred_minus_actual_kwh": -0.9129784204331912
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.23714271849293
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 76,
+          "last_period_label": "2025-02-14 00:00:00",
+          "last_period_available_at": "2025-02-15 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 83,
+          "last_period_label": "2025-02-21 00:00:00",
+          "last_period_available_at": "2025-02-22 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 86,
+          "last_period_label": "2025-02-24 00:00:00",
+          "last_period_available_at": "2025-02-25 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 0
+        }
+      ],
+      "objective": 76.23714271849293
+    },
+    {
+      "candidate": 22,
+      "config": {
+        "family": "daily_arima",
+        "resolution": "daily",
+        "kind": "arima",
+        "order": [
+          0,
+          0,
+          0
+        ],
+        "profile": "hour",
+        "profile_alpha": 0.5
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.5757546250103,
+          "rmse_kwh": 97.53667508925949,
+          "mape_percent": 0.19571646358206257,
+          "r2": -0.0021564429627505266,
+          "bias_pred_minus_actual_kwh": 0.7020108526998791
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.28123643748523,
+          "rmse_kwh": 96.86688067713092,
+          "mape_percent": 0.19494413123472207,
+          "r2": -0.0015538487609076945,
+          "bias_pred_minus_actual_kwh": -0.9168738202952095
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.28123643748523
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 76,
+          "last_period_label": "2025-02-14 00:00:00",
+          "last_period_available_at": "2025-02-15 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 83,
+          "last_period_label": "2025-02-21 00:00:00",
+          "last_period_available_at": "2025-02-22 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 86,
+          "last_period_label": "2025-02-24 00:00:00",
+          "last_period_available_at": "2025-02-25 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 0
+        }
+      ],
+      "objective": 76.28123643748523
+    },
+    {
+      "candidate": 23,
+      "config": {
+        "family": "daily_arima",
+        "resolution": "daily",
+        "kind": "arima",
+        "order": [
+          1,
+          0,
+          0
+        ],
+        "profile": "uniform",
+        "profile_alpha": 0.5
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.5070504380369,
+          "rmse_kwh": 97.42905024029294,
+          "mape_percent": 0.19554071064279885,
+          "r2": 5.395490966597638e-05,
+          "bias_pred_minus_actual_kwh": 0.6971370308492509
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.23718708205871,
+          "rmse_kwh": 96.79530968397927,
+          "mape_percent": 0.19483188062307805,
+          "r2": -7.438082265465162e-05,
+          "bias_pred_minus_actual_kwh": -0.9083123461643368
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.23718708205871
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 76,
+          "last_period_label": "2025-02-14 00:00:00",
+          "last_period_available_at": "2025-02-15 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 83,
+          "last_period_label": "2025-02-21 00:00:00",
+          "last_period_available_at": "2025-02-22 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 86,
+          "last_period_label": "2025-02-24 00:00:00",
+          "last_period_available_at": "2025-02-25 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 0
+        }
+      ],
+      "objective": 76.23718708205871
+    },
+    {
+      "candidate": 24,
+      "config": {
+        "family": "daily_arima",
+        "resolution": "daily",
+        "kind": "arima",
+        "order": [
+          1,
+          0,
+          0
+        ],
+        "profile": "hour",
+        "profile_alpha": 0.5
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.56274187826895,
+          "rmse_kwh": 97.53047394663498,
+          "mape_percent": 0.19568315514567847,
+          "r2": -0.002029017715224235,
+          "bias_pred_minus_actual_kwh": 0.6944965240289431
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.2814051011799,
+          "rmse_kwh": 96.86694822669057,
+          "mape_percent": 0.19494458537754242,
+          "r2": -0.0015552456169758422,
+          "bias_pred_minus_actual_kwh": -0.9122077473153761
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.28140510117989
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 76,
+          "last_period_label": "2025-02-14 00:00:00",
+          "last_period_available_at": "2025-02-15 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 83,
+          "last_period_label": "2025-02-21 00:00:00",
+          "last_period_available_at": "2025-02-22 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 86,
+          "last_period_label": "2025-02-24 00:00:00",
+          "last_period_available_at": "2025-02-25 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 0
+        }
+      ],
+      "objective": 76.28140510117989
+    },
+    {
+      "candidate": 25,
+      "config": {
+        "family": "daily_arima",
+        "resolution": "daily",
+        "kind": "arima",
+        "order": [
+          0,
+          1,
+          0
+        ],
+        "profile": "uniform",
+        "profile_alpha": 0.5
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 80.59954255116473,
+          "rmse_kwh": 102.16723292713048,
+          "mape_percent": 0.20600995350971077,
+          "r2": -0.09957002334777765,
+          "bias_pred_minus_actual_kwh": 2.914734272725217
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 80.18032567687371,
+          "rmse_kwh": 101.6329303709881,
+          "mape_percent": 0.20491813726941388,
+          "r2": -0.10253546994115692,
+          "bias_pred_minus_actual_kwh": 1.2971044936455722
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 80.18032567687372
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 76,
+          "last_period_label": "2025-02-14 00:00:00",
+          "last_period_available_at": "2025-02-15 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 83,
+          "last_period_label": "2025-02-21 00:00:00",
+          "last_period_available_at": "2025-02-22 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 86,
+          "last_period_label": "2025-02-24 00:00:00",
+          "last_period_available_at": "2025-02-25 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 0
+        }
+      ],
+      "objective": 80.18032567687372
+    },
+    {
+      "candidate": 26,
+      "config": {
+        "family": "daily_arima",
+        "resolution": "daily",
+        "kind": "arima",
+        "order": [
+          0,
+          1,
+          0
+        ],
+        "profile": "hour",
+        "profile_alpha": 0.5
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 80.6153781967275,
+          "rmse_kwh": 102.26351338988522,
+          "mape_percent": 0.206050528089823,
+          "r2": -0.101643427730441,
+          "bias_pred_minus_actual_kwh": 2.912092532081102
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 80.13807629645648,
+          "rmse_kwh": 101.70048566363482,
+          "mape_percent": 0.2048098839078149,
+          "r2": -0.10400166520166487,
+          "bias_pred_minus_actual_kwh": 1.2932072722990156
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 80.13807629645648
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 76,
+          "last_period_label": "2025-02-14 00:00:00",
+          "last_period_available_at": "2025-02-15 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 83,
+          "last_period_label": "2025-02-21 00:00:00",
+          "last_period_available_at": "2025-02-22 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 86,
+          "last_period_label": "2025-02-24 00:00:00",
+          "last_period_available_at": "2025-02-25 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 0
+        }
+      ],
+      "objective": 80.13807629645648
+    },
+    {
+      "candidate": 27,
+      "config": {
+        "family": "daily_arima",
+        "resolution": "daily",
+        "kind": "arima",
+        "order": [
+          0,
+          1,
+          1
+        ],
+        "profile": "uniform",
+        "profile_alpha": 0.5
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.77178757955487,
+          "rmse_kwh": 97.70438012764403,
+          "mape_percent": 0.19624456049029457,
+          "r2": -0.005605631115251919,
+          "bias_pred_minus_actual_kwh": 6.138010803294733
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.40554191844899,
+          "rmse_kwh": 96.98044333784082,
+          "mape_percent": 0.19528905824215106,
+          "r2": -0.003903584616888889,
+          "bias_pred_minus_actual_kwh": 4.520381024215088
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.40554191844899
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 76,
+          "last_period_label": "2025-02-14 00:00:00",
+          "last_period_available_at": "2025-02-15 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 83,
+          "last_period_label": "2025-02-21 00:00:00",
+          "last_period_available_at": "2025-02-22 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 86,
+          "last_period_label": "2025-02-24 00:00:00",
+          "last_period_available_at": "2025-02-25 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 0
+        }
+      ],
+      "objective": 76.40554191844899
+    },
+    {
+      "candidate": 28,
+      "config": {
+        "family": "daily_arima",
+        "resolution": "daily",
+        "kind": "arima",
+        "order": [
+          0,
+          1,
+          1
+        ],
+        "profile": "hour",
+        "profile_alpha": 0.5
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.85650151289202,
+          "rmse_kwh": 97.80535085302556,
+          "mape_percent": 0.19646115838602546,
+          "r2": -0.007685152943973206,
+          "bias_pred_minus_actual_kwh": 6.135369811965569
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.50356475375983,
+          "rmse_kwh": 97.05167874425989,
+          "mape_percent": 0.19553924886044652,
+          "r2": -0.005378928344447198,
+          "bias_pred_minus_actual_kwh": 4.51648490829351
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.50356475375985
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 76,
+          "last_period_label": "2025-02-14 00:00:00",
+          "last_period_available_at": "2025-02-15 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 83,
+          "last_period_label": "2025-02-21 00:00:00",
+          "last_period_available_at": "2025-02-22 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 86,
+          "last_period_label": "2025-02-24 00:00:00",
+          "last_period_available_at": "2025-02-25 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 0
+        }
+      ],
+      "objective": 76.50356475375985
+    },
+    {
+      "candidate": 29,
+      "config": {
+        "family": "weekly_level",
+        "resolution": "weekly",
+        "profile": "uniform",
+        "profile_alpha": 0.5,
+        "kind": "mean"
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.51896622986644,
+          "rmse_kwh": 97.43327681006994,
+          "mape_percent": 0.19556976360639408,
+          "r2": -3.2804293956356645e-05,
+          "bias_pred_minus_actual_kwh": 0.41788288412735586
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.23809125330234,
+          "rmse_kwh": 96.795803664564,
+          "mape_percent": 0.19483274025932476,
+          "r2": -8.458831286461965e-05,
+          "bias_pred_minus_actual_kwh": -1.1997468949522887
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.23809125330234
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 10,
+          "last_period_label": "2025-02-09 00:00:00",
+          "last_period_available_at": "2025-02-10 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 2
+        },
+        {
+          "complete_periods": 11,
+          "last_period_label": "2025-02-16 00:00:00",
+          "last_period_available_at": "2025-02-17 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 2
+        },
+        {
+          "complete_periods": 12,
+          "last_period_label": "2025-02-23 00:00:00",
+          "last_period_available_at": "2025-02-24 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 2
+        }
+      ],
+      "objective": 76.23809125330234
+    },
+    {
+      "candidate": 30,
+      "config": {
+        "family": "weekly_level",
+        "resolution": "weekly",
+        "profile": "hour",
+        "profile_alpha": 0.5,
+        "kind": "mean"
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.56927436640898,
+          "rmse_kwh": 97.53471016332263,
+          "mape_percent": 0.1956984511180598,
+          "r2": -0.002116065466780448,
+          "bias_pred_minus_actual_kwh": 0.4152424165523133
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.27411999743363,
+          "rmse_kwh": 96.86746377436063,
+          "mape_percent": 0.19492451752026738,
+          "r2": -0.0015659066495949947,
+          "bias_pred_minus_actual_kwh": -1.2036422382066077
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.27411999743363
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 10,
+          "last_period_label": "2025-02-09 00:00:00",
+          "last_period_available_at": "2025-02-10 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 2
+        },
+        {
+          "complete_periods": 11,
+          "last_period_label": "2025-02-16 00:00:00",
+          "last_period_available_at": "2025-02-17 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 2
+        },
+        {
+          "complete_periods": 12,
+          "last_period_label": "2025-02-23 00:00:00",
+          "last_period_available_at": "2025-02-24 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 2
+        }
+      ],
+      "objective": 76.27411999743363
+    },
+    {
+      "candidate": 31,
+      "config": {
+        "family": "weekly_level",
+        "resolution": "weekly",
+        "profile": "weekday_hour",
+        "profile_alpha": 0.5,
+        "kind": "mean"
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 77.17446554037232,
+          "rmse_kwh": 98.21120880917732,
+          "mape_percent": 0.1972448182678317,
+          "r2": -0.016065585891379186,
+          "bias_pred_minus_actual_kwh": 0.4039036822165653
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.78378264429045,
+          "rmse_kwh": 97.61653871055852,
+          "mape_percent": 0.19622645916987402,
+          "r2": -0.017115993693324505,
+          "bias_pred_minus_actual_kwh": -1.2203696779691209
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.78378264429045
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 10,
+          "last_period_label": "2025-02-09 00:00:00",
+          "last_period_available_at": "2025-02-10 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 2
+        },
+        {
+          "complete_periods": 11,
+          "last_period_label": "2025-02-16 00:00:00",
+          "last_period_available_at": "2025-02-17 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 2
+        },
+        {
+          "complete_periods": 12,
+          "last_period_label": "2025-02-23 00:00:00",
+          "last_period_available_at": "2025-02-24 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 2
+        }
+      ],
+      "objective": 76.78378264429045
+    },
+    {
+      "candidate": 32,
+      "config": {
+        "family": "weekly_level",
+        "resolution": "weekly",
+        "profile": "uniform",
+        "profile_alpha": 0.5,
+        "kind": "median"
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.52252179946711,
+          "rmse_kwh": 97.43607000663236,
+          "mape_percent": 0.1955793043246104,
+          "r2": -9.014257347272903e-05,
+          "bias_pred_minus_actual_kwh": 0.5068989001519476
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.2363342942925,
+          "rmse_kwh": 96.79436201028261,
+          "mape_percent": 0.19482866771203874,
+          "r2": -5.4798478239970194e-05,
+          "bias_pred_minus_actual_kwh": -1.110730878927697
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.23633429429252
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 10,
+          "last_period_label": "2025-02-09 00:00:00",
+          "last_period_available_at": "2025-02-10 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 2
+        },
+        {
+          "complete_periods": 11,
+          "last_period_label": "2025-02-16 00:00:00",
+          "last_period_available_at": "2025-02-17 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 2
+        },
+        {
+          "complete_periods": 12,
+          "last_period_label": "2025-02-23 00:00:00",
+          "last_period_available_at": "2025-02-24 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 2
+        }
+      ],
+      "objective": 76.23633429429252
+    },
+    {
+      "candidate": 33,
+      "config": {
+        "family": "weekly_level",
+        "resolution": "weekly",
+        "profile": "hour",
+        "profile_alpha": 0.5,
+        "kind": "median"
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.57436776623943,
+          "rmse_kwh": 97.53749513485651,
+          "mape_percent": 0.19571192153736822,
+          "r2": -0.0021732944174994717,
+          "bias_pred_minus_actual_kwh": 0.5042584181745262
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.27591761347968,
+          "rmse_kwh": 96.86601475796576,
+          "mape_percent": 0.19492952868217864,
+          "r2": -0.0015359425211243227,
+          "bias_pred_minus_actual_kwh": -1.1146262434292817
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.27591761347968
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 10,
+          "last_period_label": "2025-02-09 00:00:00",
+          "last_period_available_at": "2025-02-10 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 2
+        },
+        {
+          "complete_periods": 11,
+          "last_period_label": "2025-02-16 00:00:00",
+          "last_period_available_at": "2025-02-17 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 2
+        },
+        {
+          "complete_periods": 12,
+          "last_period_label": "2025-02-23 00:00:00",
+          "last_period_available_at": "2025-02-24 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 2
+        }
+      ],
+      "objective": 76.27591761347968
+    },
+    {
+      "candidate": 34,
+      "config": {
+        "family": "weekly_level",
+        "resolution": "weekly",
+        "profile": "weekday_hour",
+        "profile_alpha": 0.5,
+        "kind": "median"
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 77.17568548058365,
+          "rmse_kwh": 98.21397132591014,
+          "mape_percent": 0.19724838797297536,
+          "r2": -0.016122747139944993,
+          "bias_pred_minus_actual_kwh": 0.492919670106126
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.77331476133412,
+          "rmse_kwh": 97.61509619378819,
+          "mape_percent": 0.1962001223093317,
+          "r2": -0.01708593329460717,
+          "bias_pred_minus_actual_kwh": -1.1313537034506351
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.77331476133413
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 10,
+          "last_period_label": "2025-02-09 00:00:00",
+          "last_period_available_at": "2025-02-10 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 2
+        },
+        {
+          "complete_periods": 11,
+          "last_period_label": "2025-02-16 00:00:00",
+          "last_period_available_at": "2025-02-17 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 2
+        },
+        {
+          "complete_periods": 12,
+          "last_period_label": "2025-02-23 00:00:00",
+          "last_period_available_at": "2025-02-24 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 2
+        }
+      ],
+      "objective": 76.77331476133413
+    },
+    {
+      "candidate": 35,
+      "config": {
+        "family": "weekly_level",
+        "resolution": "weekly",
+        "profile": "uniform",
+        "profile_alpha": 0.5,
+        "kind": "prefix_mean"
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.52011723377751,
+          "rmse_kwh": 97.43525756990505,
+          "mape_percent": 0.19557415750162854,
+          "r2": -7.34648364708601e-05,
+          "bias_pred_minus_actual_kwh": 0.7046562820032086
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.2371426749644,
+          "rmse_kwh": 96.7952415421724,
+          "mape_percent": 0.19483174403241382,
+          "r2": -7.297276163309441e-05,
+          "bias_pred_minus_actual_kwh": -0.912973497076436
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.23714267496439
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 10,
+          "last_period_label": "2025-02-09 00:00:00",
+          "last_period_available_at": "2025-02-10 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 2
+        },
+        {
+          "complete_periods": 11,
+          "last_period_label": "2025-02-16 00:00:00",
+          "last_period_available_at": "2025-02-17 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 2
+        },
+        {
+          "complete_periods": 12,
+          "last_period_label": "2025-02-23 00:00:00",
+          "last_period_available_at": "2025-02-24 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 2
+        }
+      ],
+      "objective": 76.23714267496439
+    },
+    {
+      "candidate": 36,
+      "config": {
+        "family": "weekly_level",
+        "resolution": "weekly",
+        "profile": "hour",
+        "profile_alpha": 0.5,
+        "kind": "prefix_mean"
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.57575473817803,
+          "rmse_kwh": 97.53667512505592,
+          "mape_percent": 0.19571646389586078,
+          "r2": -0.0021564436983430024,
+          "bias_pred_minus_actual_kwh": 0.7020157760561003
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.28123651799169,
+          "rmse_kwh": 96.86688062939264,
+          "mape_percent": 0.19494413146495396,
+          "r2": -0.0015538477737289114,
+          "bias_pred_minus_actual_kwh": -0.9168688969391459
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.28123651799169
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 10,
+          "last_period_label": "2025-02-09 00:00:00",
+          "last_period_available_at": "2025-02-10 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 2
+        },
+        {
+          "complete_periods": 11,
+          "last_period_label": "2025-02-16 00:00:00",
+          "last_period_available_at": "2025-02-17 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 2
+        },
+        {
+          "complete_periods": 12,
+          "last_period_label": "2025-02-23 00:00:00",
+          "last_period_available_at": "2025-02-24 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 2
+        }
+      ],
+      "objective": 76.28123651799169
+    },
+    {
+      "candidate": 37,
+      "config": {
+        "family": "weekly_level",
+        "resolution": "weekly",
+        "profile": "weekday_hour",
+        "profile_alpha": 0.5,
+        "kind": "prefix_mean"
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 77.17120687354978,
+          "rmse_kwh": 98.21314041625917,
+          "mape_percent": 0.19723792907455373,
+          "r2": -0.01610555401325886,
+          "bias_pred_minus_actual_kwh": 0.6906769664022727
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.76536974279033,
+          "rmse_kwh": 97.61592643710561,
+          "mape_percent": 0.19618081718388397,
+          "r2": -0.0171032345609754,
+          "bias_pred_minus_actual_kwh": -0.9335964478144023
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.76536974279033
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 10,
+          "last_period_label": "2025-02-09 00:00:00",
+          "last_period_available_at": "2025-02-10 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 2
+        },
+        {
+          "complete_periods": 11,
+          "last_period_label": "2025-02-16 00:00:00",
+          "last_period_available_at": "2025-02-17 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 2
+        },
+        {
+          "complete_periods": 12,
+          "last_period_label": "2025-02-23 00:00:00",
+          "last_period_available_at": "2025-02-24 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 2
+        }
+      ],
+      "objective": 76.76536974279033
+    },
+    {
+      "candidate": 38,
+      "config": {
+        "family": "weekly_level",
+        "resolution": "weekly",
+        "profile": "uniform",
+        "profile_alpha": 0.5,
+        "kind": "recent",
+        "window": 1
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 77.00486170117067,
+          "rmse_kwh": 97.9730462825809,
+          "mape_percent": 0.19684665094265122,
+          "r2": -0.01114363577442301,
+          "bias_pred_minus_actual_kwh": 7.4364295990016505
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.55809044825111,
+          "rmse_kwh": 97.18671501495444,
+          "mape_percent": 0.19568501725005075,
+          "r2": -0.008178613459184358,
+          "bias_pred_minus_actual_kwh": 5.818799819922006
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.55809044825112
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 10,
+          "last_period_label": "2025-02-09 00:00:00",
+          "last_period_available_at": "2025-02-10 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 2
+        },
+        {
+          "complete_periods": 11,
+          "last_period_label": "2025-02-16 00:00:00",
+          "last_period_available_at": "2025-02-17 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 2
+        },
+        {
+          "complete_periods": 12,
+          "last_period_label": "2025-02-23 00:00:00",
+          "last_period_available_at": "2025-02-24 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 2
+        }
+      ],
+      "objective": 76.55809044825112
+    },
+    {
+      "candidate": 39,
+      "config": {
+        "family": "weekly_level",
+        "resolution": "weekly",
+        "profile": "hour",
+        "profile_alpha": 0.5,
+        "kind": "recent",
+        "window": 1
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 77.07401628832753,
+          "rmse_kwh": 98.07370646617757,
+          "mape_percent": 0.19702347202203552,
+          "r2": -0.013222456320228781,
+          "bias_pred_minus_actual_kwh": 7.433788510641416
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.65627918044221,
+          "rmse_kwh": 97.25774283847102,
+          "mape_percent": 0.19593561163300946,
+          "r2": -0.009652784076835674,
+          "bias_pred_minus_actual_kwh": 5.814903560855678
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.6562791804422
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 10,
+          "last_period_label": "2025-02-09 00:00:00",
+          "last_period_available_at": "2025-02-10 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 2
+        },
+        {
+          "complete_periods": 11,
+          "last_period_label": "2025-02-16 00:00:00",
+          "last_period_available_at": "2025-02-17 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 2
+        },
+        {
+          "complete_periods": 12,
+          "last_period_label": "2025-02-23 00:00:00",
+          "last_period_available_at": "2025-02-24 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 2
+        }
+      ],
+      "objective": 76.6562791804422
+    },
+    {
+      "candidate": 40,
+      "config": {
+        "family": "weekly_level",
+        "resolution": "weekly",
+        "profile": "weekday_hour",
+        "profile_alpha": 0.5,
+        "kind": "recent",
+        "window": 1
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 77.56719432576163,
+          "rmse_kwh": 98.7460212439166,
+          "mape_percent": 0.19828335248048218,
+          "r2": -0.027161754652622827,
+          "bias_pred_minus_actual_kwh": 7.42244792489785
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.8755824977063,
+          "rmse_kwh": 98.00301683873258,
+          "mape_percent": 0.1964953402533107,
+          "r2": -0.025185758244257173,
+          "bias_pred_minus_actual_kwh": 5.798173389808564
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.87558249770632
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 10,
+          "last_period_label": "2025-02-09 00:00:00",
+          "last_period_available_at": "2025-02-10 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 2
+        },
+        {
+          "complete_periods": 11,
+          "last_period_label": "2025-02-16 00:00:00",
+          "last_period_available_at": "2025-02-17 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 2
+        },
+        {
+          "complete_periods": 12,
+          "last_period_label": "2025-02-23 00:00:00",
+          "last_period_available_at": "2025-02-24 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 2
+        }
+      ],
+      "objective": 76.87558249770632
+    },
+    {
+      "candidate": 41,
+      "config": {
+        "family": "weekly_level",
+        "resolution": "weekly",
+        "profile": "uniform",
+        "profile_alpha": 0.5,
+        "kind": "recent",
+        "window": 4
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.68789467637907,
+          "rmse_kwh": 97.63821201325887,
+          "mape_percent": 0.1960302013718178,
+          "r2": -0.004244044310199646,
+          "bias_pred_minus_actual_kwh": 6.172907422248135
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.32355975222148,
+          "rmse_kwh": 96.89461522020189,
+          "mape_percent": 0.19507973870833653,
+          "r2": -0.0021274527575276814,
+          "bias_pred_minus_actual_kwh": 4.55527764316849
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.3235597522215
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 10,
+          "last_period_label": "2025-02-09 00:00:00",
+          "last_period_available_at": "2025-02-10 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 2
+        },
+        {
+          "complete_periods": 11,
+          "last_period_label": "2025-02-16 00:00:00",
+          "last_period_available_at": "2025-02-17 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 2
+        },
+        {
+          "complete_periods": 12,
+          "last_period_label": "2025-02-23 00:00:00",
+          "last_period_available_at": "2025-02-24 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 2
+        }
+      ],
+      "objective": 76.3235597522215
+    },
+    {
+      "candidate": 42,
+      "config": {
+        "family": "weekly_level",
+        "resolution": "weekly",
+        "profile": "hour",
+        "profile_alpha": 0.5,
+        "kind": "recent",
+        "window": 4
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.79305854356338,
+          "rmse_kwh": 97.73931060177065,
+          "mape_percent": 0.19629905941216624,
+          "r2": -0.00632479151449683,
+          "bias_pred_minus_actual_kwh": 6.170266586569645
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.44898367078663,
+          "rmse_kwh": 96.96600362381751,
+          "mape_percent": 0.19539995058354515,
+          "r2": -0.0036046583388242848,
+          "bias_pred_minus_actual_kwh": 4.5513817568702315
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.44898367078662
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 10,
+          "last_period_label": "2025-02-09 00:00:00",
+          "last_period_available_at": "2025-02-10 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 2
+        },
+        {
+          "complete_periods": 11,
+          "last_period_label": "2025-02-16 00:00:00",
+          "last_period_available_at": "2025-02-17 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 2
+        },
+        {
+          "complete_periods": 12,
+          "last_period_label": "2025-02-23 00:00:00",
+          "last_period_available_at": "2025-02-24 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 2
+        }
+      ],
+      "objective": 76.44898367078662
+    },
+    {
+      "candidate": 43,
+      "config": {
+        "family": "weekly_level",
+        "resolution": "weekly",
+        "profile": "weekday_hour",
+        "profile_alpha": 0.5,
+        "kind": "recent",
+        "window": 4
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 77.24200639330857,
+          "rmse_kwh": 98.41395576501097,
+          "mape_percent": 0.19744593573126748,
+          "r2": -0.02026504223104908,
+          "bias_pred_minus_actual_kwh": 6.158926197183834
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.69392911247635,
+          "rmse_kwh": 97.71357034402392,
+          "mape_percent": 0.19602520776721208,
+          "r2": -0.019139041798356793,
+          "bias_pred_minus_actual_kwh": 4.534651875499426
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.69392911247634
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 10,
+          "last_period_label": "2025-02-09 00:00:00",
+          "last_period_available_at": "2025-02-10 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 2
+        },
+        {
+          "complete_periods": 11,
+          "last_period_label": "2025-02-16 00:00:00",
+          "last_period_available_at": "2025-02-17 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 2
+        },
+        {
+          "complete_periods": 12,
+          "last_period_label": "2025-02-23 00:00:00",
+          "last_period_available_at": "2025-02-24 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 2
+        }
+      ],
+      "objective": 76.69392911247634
+    },
+    {
+      "candidate": 44,
+      "config": {
+        "family": "weekly_arima",
+        "resolution": "weekly",
+        "kind": "arima",
+        "order": [
+          0,
+          0,
+          0
+        ],
+        "profile": "uniform",
+        "profile_alpha": 0.5
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.51896621827292,
+          "rmse_kwh": 97.43327678819043,
+          "mape_percent": 0.19556976355169264,
+          "r2": -3.280384482384768e-05,
+          "bias_pred_minus_actual_kwh": 0.4178778668476892
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.23809130340933,
+          "rmse_kwh": 96.79580372712641,
+          "mape_percent": 0.19483274036239862,
+          "r2": -8.458960564183826e-05,
+          "bias_pred_minus_actual_kwh": -1.1997519122319555
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.23809130340932
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 10,
+          "last_period_label": "2025-02-09 00:00:00",
+          "last_period_available_at": "2025-02-10 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 2
+        },
+        {
+          "complete_periods": 11,
+          "last_period_label": "2025-02-16 00:00:00",
+          "last_period_available_at": "2025-02-17 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 2
+        },
+        {
+          "complete_periods": 12,
+          "last_period_label": "2025-02-23 00:00:00",
+          "last_period_available_at": "2025-02-24 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 2
+        }
+      ],
+      "objective": 76.23809130340932
+    },
+    {
+      "candidate": 45,
+      "config": {
+        "family": "weekly_arima",
+        "resolution": "weekly",
+        "kind": "arima",
+        "order": [
+          0,
+          0,
+          0
+        ],
+        "profile": "hour",
+        "profile_alpha": 0.5
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.56927425144579,
+          "rmse_kwh": 97.53471014157812,
+          "mape_percent": 0.19569845079920298,
+          "r2": -0.0021160650199543163,
+          "bias_pred_minus_actual_kwh": 0.4152373992736916
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.27411990834668,
+          "rmse_kwh": 96.86746383705824,
+          "mape_percent": 0.19492451726763438,
+          "r2": -0.0015659079461249892,
+          "bias_pred_minus_actual_kwh": -1.2036472554850688
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.27411990834669
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 10,
+          "last_period_label": "2025-02-09 00:00:00",
+          "last_period_available_at": "2025-02-10 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 2
+        },
+        {
+          "complete_periods": 11,
+          "last_period_label": "2025-02-16 00:00:00",
+          "last_period_available_at": "2025-02-17 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 2
+        },
+        {
+          "complete_periods": 12,
+          "last_period_label": "2025-02-23 00:00:00",
+          "last_period_available_at": "2025-02-24 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 2
+        }
+      ],
+      "objective": 76.27411990834669
+    },
+    {
+      "candidate": 46,
+      "config": {
+        "family": "weekly_arima",
+        "resolution": "weekly",
+        "kind": "arima",
+        "order": [
+          1,
+          0,
+          0
+        ],
+        "profile": "uniform",
+        "profile_alpha": 0.5
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.5380175131077,
+          "rmse_kwh": 97.45466753851191,
+          "mape_percent": 0.1956220067554359,
+          "r2": -0.00047195155477619544,
+          "bias_pred_minus_actual_kwh": 1.1269502195535273
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.2315652105475,
+          "rmse_kwh": 96.78813300155608,
+          "mape_percent": 0.1948187488442879,
+          "r2": 7.391045683924347e-05,
+          "bias_pred_minus_actual_kwh": -0.6518779675949694
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.2315652105475
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 10,
+          "last_period_label": "2025-02-09 00:00:00",
+          "last_period_available_at": "2025-02-10 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 2
+        },
+        {
+          "complete_periods": 11,
+          "last_period_label": "2025-02-16 00:00:00",
+          "last_period_available_at": "2025-02-17 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 2
+        },
+        {
+          "complete_periods": 12,
+          "last_period_label": "2025-02-23 00:00:00",
+          "last_period_available_at": "2025-02-24 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 2
+        }
+      ],
+      "objective": 76.2315652105475
+    },
+    {
+      "candidate": 47,
+      "config": {
+        "family": "weekly_arima",
+        "resolution": "weekly",
+        "kind": "arima",
+        "order": [
+          1,
+          0,
+          0
+        ],
+        "profile": "hour",
+        "profile_alpha": 0.5
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.59695983330333,
+          "rmse_kwh": 97.5560700890314,
+          "mape_percent": 0.1957727571733588,
+          "r2": -0.002555036752304396,
+          "bias_pred_minus_actual_kwh": 1.124309723395655
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.28146522529251,
+          "rmse_kwh": 96.85978337103867,
+          "mape_percent": 0.19494597301660418,
+          "r2": -0.0014070891300865807,
+          "bias_pred_minus_actual_kwh": -0.6557733530162193
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.28146522529251
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 10,
+          "last_period_label": "2025-02-09 00:00:00",
+          "last_period_available_at": "2025-02-10 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 2
+        },
+        {
+          "complete_periods": 11,
+          "last_period_label": "2025-02-16 00:00:00",
+          "last_period_available_at": "2025-02-17 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 2
+        },
+        {
+          "complete_periods": 12,
+          "last_period_label": "2025-02-23 00:00:00",
+          "last_period_available_at": "2025-02-24 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 2
+        }
+      ],
+      "objective": 76.28146522529251
+    },
+    {
+      "candidate": 48,
+      "config": {
+        "family": "weekly_arima",
+        "resolution": "weekly",
+        "kind": "arima",
+        "order": [
+          0,
+          1,
+          0
+        ],
+        "profile": "uniform",
+        "profile_alpha": 0.5
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 77.00486170117067,
+          "rmse_kwh": 97.9730462825809,
+          "mape_percent": 0.19684665094265122,
+          "r2": -0.01114363577442301,
+          "bias_pred_minus_actual_kwh": 7.4364295990016505
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.55809044825111,
+          "rmse_kwh": 97.18671501495444,
+          "mape_percent": 0.19568501725005075,
+          "r2": -0.008178613459184358,
+          "bias_pred_minus_actual_kwh": 5.818799819922006
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.55809044825112
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 10,
+          "last_period_label": "2025-02-09 00:00:00",
+          "last_period_available_at": "2025-02-10 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 2
+        },
+        {
+          "complete_periods": 11,
+          "last_period_label": "2025-02-16 00:00:00",
+          "last_period_available_at": "2025-02-17 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 2
+        },
+        {
+          "complete_periods": 12,
+          "last_period_label": "2025-02-23 00:00:00",
+          "last_period_available_at": "2025-02-24 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 2
+        }
+      ],
+      "objective": 76.55809044825112
+    },
+    {
+      "candidate": 49,
+      "config": {
+        "family": "weekly_arima",
+        "resolution": "weekly",
+        "kind": "arima",
+        "order": [
+          0,
+          1,
+          0
+        ],
+        "profile": "hour",
+        "profile_alpha": 0.5
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 77.07401628832753,
+          "rmse_kwh": 98.07370646617757,
+          "mape_percent": 0.19702347202203552,
+          "r2": -0.013222456320228781,
+          "bias_pred_minus_actual_kwh": 7.433788510641416
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.65627918044221,
+          "rmse_kwh": 97.25774283847102,
+          "mape_percent": 0.19593561163300946,
+          "r2": -0.009652784076835674,
+          "bias_pred_minus_actual_kwh": 5.814903560855678
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.6562791804422
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 10,
+          "last_period_label": "2025-02-09 00:00:00",
+          "last_period_available_at": "2025-02-10 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 2
+        },
+        {
+          "complete_periods": 11,
+          "last_period_label": "2025-02-16 00:00:00",
+          "last_period_available_at": "2025-02-17 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 2
+        },
+        {
+          "complete_periods": 12,
+          "last_period_label": "2025-02-23 00:00:00",
+          "last_period_available_at": "2025-02-24 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 2
+        }
+      ],
+      "objective": 76.6562791804422
+    },
+    {
+      "candidate": 50,
+      "config": {
+        "family": "weekly_arima",
+        "resolution": "weekly",
+        "kind": "arima",
+        "order": [
+          0,
+          1,
+          1
+        ],
+        "profile": "uniform",
+        "profile_alpha": 0.5
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.70340354177615,
+          "rmse_kwh": 97.64770327116288,
+          "mape_percent": 0.19606845742921536,
+          "r2": -0.0044392957860222015,
+          "bias_pred_minus_actual_kwh": 5.896062526087855
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.3239416203245,
+          "rmse_kwh": 96.89547679127732,
+          "mape_percent": 0.1950792338878393,
+          "r2": -0.0021452743436674027,
+          "bias_pred_minus_actual_kwh": 4.27843274700821
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.3239416203245
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 10,
+          "last_period_label": "2025-02-09 00:00:00",
+          "last_period_available_at": "2025-02-10 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 2
+        },
+        {
+          "complete_periods": 11,
+          "last_period_label": "2025-02-16 00:00:00",
+          "last_period_available_at": "2025-02-17 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 2
+        },
+        {
+          "complete_periods": 12,
+          "last_period_label": "2025-02-23 00:00:00",
+          "last_period_available_at": "2025-02-24 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 2
+        }
+      ],
+      "objective": 76.3239416203245
+    },
+    {
+      "candidate": 51,
+      "config": {
+        "family": "weekly_arima",
+        "resolution": "weekly",
+        "kind": "arima",
+        "order": [
+          0,
+          1,
+          1
+        ],
+        "profile": "hour",
+        "profile_alpha": 0.5
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.80059964960901,
+          "rmse_kwh": 97.74879501573174,
+          "mape_percent": 0.19631695457377052,
+          "r2": -0.006520104207565769,
+          "bias_pred_minus_actual_kwh": 5.893421701575163
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.44460052186957,
+          "rmse_kwh": 96.96686903548422,
+          "mape_percent": 0.19538726823292493,
+          "r2": -0.003622572556661874,
+          "bias_pred_minus_actual_kwh": 4.2745368771823165
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.44460052186957
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 10,
+          "last_period_label": "2025-02-09 00:00:00",
+          "last_period_available_at": "2025-02-10 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 2
+        },
+        {
+          "complete_periods": 11,
+          "last_period_label": "2025-02-16 00:00:00",
+          "last_period_available_at": "2025-02-17 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 2
+        },
+        {
+          "complete_periods": 12,
+          "last_period_label": "2025-02-23 00:00:00",
+          "last_period_available_at": "2025-02-24 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 2
+        }
+      ],
+      "objective": 76.44460052186957
+    },
+    {
+      "candidate": 52,
+      "config": {
+        "family": "monthly_level",
+        "resolution": "monthly",
+        "profile": "uniform",
+        "profile_alpha": 0.5,
+        "kind": "mean"
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.52006068741339,
+          "rmse_kwh": 97.44277094005247,
+          "mape_percent": 0.19556314126935437,
+          "r2": -0.00022770493410928516,
+          "bias_pred_minus_actual_kwh": -1.4702338114560929
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.26750777828791,
+          "rmse_kwh": 96.84095224430149,
+          "mape_percent": 0.19489852943442199,
+          "r2": -0.001017747134072211,
+          "bias_pred_minus_actual_kwh": -3.0878635905357377
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.26750777828791
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 2,
+          "last_period_label": "2025-01-01 00:00:00",
+          "last_period_available_at": "2025-02-01 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 1
+        },
+        {
+          "complete_periods": 2,
+          "last_period_label": "2025-01-01 00:00:00",
+          "last_period_available_at": "2025-02-01 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 1
+        },
+        {
+          "complete_periods": 2,
+          "last_period_label": "2025-01-01 00:00:00",
+          "last_period_available_at": "2025-02-01 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 1
+        }
+      ],
+      "objective": 76.26750777828791
+    },
+    {
+      "candidate": 53,
+      "config": {
+        "family": "monthly_level",
+        "resolution": "monthly",
+        "profile": "hour",
+        "profile_alpha": 0.5,
+        "kind": "mean"
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.53949878606691,
+          "rmse_kwh": 97.54423040457196,
+          "mape_percent": 0.19561294291195072,
+          "r2": -0.002311705609653103,
+          "bias_pred_minus_actual_kwh": -1.4728741690291682
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.26060788730815,
+          "rmse_kwh": 96.91263787406712,
+          "mape_percent": 0.19488060446076083,
+          "r2": -0.0025002841241685836,
+          "bias_pred_minus_actual_kwh": -3.0917587715102144
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.26060788730815
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 2,
+          "last_period_label": "2025-01-01 00:00:00",
+          "last_period_available_at": "2025-02-01 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 1
+        },
+        {
+          "complete_periods": 2,
+          "last_period_label": "2025-01-01 00:00:00",
+          "last_period_available_at": "2025-02-01 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 1
+        },
+        {
+          "complete_periods": 2,
+          "last_period_label": "2025-01-01 00:00:00",
+          "last_period_available_at": "2025-02-01 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 1
+        }
+      ],
+      "objective": 76.26060788730815
+    },
+    {
+      "candidate": 54,
+      "config": {
+        "family": "monthly_level",
+        "resolution": "monthly",
+        "profile": "weekday_hour",
+        "profile_alpha": 0.5,
+        "kind": "mean"
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 77.2212542215862,
+          "rmse_kwh": 98.22081257655348,
+          "mape_percent": 0.19735505779129595,
+          "r2": -0.016264311367811812,
+          "bias_pred_minus_actual_kwh": -1.484212353720164
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.8658850283135,
+          "rmse_kwh": 97.66161720402522,
+          "mape_percent": 0.19642698269088776,
+          "r2": -0.018055601752920092,
+          "bias_pred_minus_actual_kwh": -3.1084854004104034
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.8658850283135
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 2,
+          "last_period_label": "2025-01-01 00:00:00",
+          "last_period_available_at": "2025-02-01 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 1
+        },
+        {
+          "complete_periods": 2,
+          "last_period_label": "2025-01-01 00:00:00",
+          "last_period_available_at": "2025-02-01 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 1
+        },
+        {
+          "complete_periods": 2,
+          "last_period_label": "2025-01-01 00:00:00",
+          "last_period_available_at": "2025-02-01 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 1
+        }
+      ],
+      "objective": 76.8658850283135
+    },
+    {
+      "candidate": 55,
+      "config": {
+        "family": "monthly_level",
+        "resolution": "monthly",
+        "profile": "uniform",
+        "profile_alpha": 0.5,
+        "kind": "median"
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.52006068741339,
+          "rmse_kwh": 97.44277094005247,
+          "mape_percent": 0.19556314126935437,
+          "r2": -0.00022770493410928516,
+          "bias_pred_minus_actual_kwh": -1.4702338114560929
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.26750777828791,
+          "rmse_kwh": 96.84095224430149,
+          "mape_percent": 0.19489852943442199,
+          "r2": -0.001017747134072211,
+          "bias_pred_minus_actual_kwh": -3.0878635905357377
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.26750777828791
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 2,
+          "last_period_label": "2025-01-01 00:00:00",
+          "last_period_available_at": "2025-02-01 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 1
+        },
+        {
+          "complete_periods": 2,
+          "last_period_label": "2025-01-01 00:00:00",
+          "last_period_available_at": "2025-02-01 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 1
+        },
+        {
+          "complete_periods": 2,
+          "last_period_label": "2025-01-01 00:00:00",
+          "last_period_available_at": "2025-02-01 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 1
+        }
+      ],
+      "objective": 76.26750777828791
+    },
+    {
+      "candidate": 56,
+      "config": {
+        "family": "monthly_level",
+        "resolution": "monthly",
+        "profile": "hour",
+        "profile_alpha": 0.5,
+        "kind": "median"
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.53949878606691,
+          "rmse_kwh": 97.54423040457196,
+          "mape_percent": 0.19561294291195072,
+          "r2": -0.002311705609653103,
+          "bias_pred_minus_actual_kwh": -1.4728741690291682
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.26060788730815,
+          "rmse_kwh": 96.91263787406712,
+          "mape_percent": 0.19488060446076083,
+          "r2": -0.0025002841241685836,
+          "bias_pred_minus_actual_kwh": -3.0917587715102144
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.26060788730815
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 2,
+          "last_period_label": "2025-01-01 00:00:00",
+          "last_period_available_at": "2025-02-01 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 1
+        },
+        {
+          "complete_periods": 2,
+          "last_period_label": "2025-01-01 00:00:00",
+          "last_period_available_at": "2025-02-01 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 1
+        },
+        {
+          "complete_periods": 2,
+          "last_period_label": "2025-01-01 00:00:00",
+          "last_period_available_at": "2025-02-01 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 1
+        }
+      ],
+      "objective": 76.26060788730815
+    },
+    {
+      "candidate": 57,
+      "config": {
+        "family": "monthly_level",
+        "resolution": "monthly",
+        "profile": "weekday_hour",
+        "profile_alpha": 0.5,
+        "kind": "median"
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 77.2212542215862,
+          "rmse_kwh": 98.22081257655348,
+          "mape_percent": 0.19735505779129595,
+          "r2": -0.016264311367811812,
+          "bias_pred_minus_actual_kwh": -1.484212353720164
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.8658850283135,
+          "rmse_kwh": 97.66161720402522,
+          "mape_percent": 0.19642698269088776,
+          "r2": -0.018055601752920092,
+          "bias_pred_minus_actual_kwh": -3.1084854004104034
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.8658850283135
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 2,
+          "last_period_label": "2025-01-01 00:00:00",
+          "last_period_available_at": "2025-02-01 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 1
+        },
+        {
+          "complete_periods": 2,
+          "last_period_label": "2025-01-01 00:00:00",
+          "last_period_available_at": "2025-02-01 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 1
+        },
+        {
+          "complete_periods": 2,
+          "last_period_label": "2025-01-01 00:00:00",
+          "last_period_available_at": "2025-02-01 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 1
+        }
+      ],
+      "objective": 76.8658850283135
+    },
+    {
+      "candidate": 58,
+      "config": {
+        "family": "monthly_level",
+        "resolution": "monthly",
+        "profile": "uniform",
+        "profile_alpha": 0.5,
+        "kind": "prefix_mean"
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.52011723377751,
+          "rmse_kwh": 97.43525756990505,
+          "mape_percent": 0.19557415750162854,
+          "r2": -7.34648364708601e-05,
+          "bias_pred_minus_actual_kwh": 0.7046562820032086
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.2371426749644,
+          "rmse_kwh": 96.7952415421724,
+          "mape_percent": 0.19483174403241382,
+          "r2": -7.297276163309441e-05,
+          "bias_pred_minus_actual_kwh": -0.912973497076436
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.23714267496439
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 2,
+          "last_period_label": "2025-01-01 00:00:00",
+          "last_period_available_at": "2025-02-01 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 1
+        },
+        {
+          "complete_periods": 2,
+          "last_period_label": "2025-01-01 00:00:00",
+          "last_period_available_at": "2025-02-01 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 1
+        },
+        {
+          "complete_periods": 2,
+          "last_period_label": "2025-01-01 00:00:00",
+          "last_period_available_at": "2025-02-01 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 1
+        }
+      ],
+      "objective": 76.23714267496439
+    },
+    {
+      "candidate": 59,
+      "config": {
+        "family": "monthly_level",
+        "resolution": "monthly",
+        "profile": "hour",
+        "profile_alpha": 0.5,
+        "kind": "prefix_mean"
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.57575473817803,
+          "rmse_kwh": 97.53667512505592,
+          "mape_percent": 0.19571646389586078,
+          "r2": -0.0021564436983430024,
+          "bias_pred_minus_actual_kwh": 0.7020157760561003
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.28123651799169,
+          "rmse_kwh": 96.86688062939264,
+          "mape_percent": 0.19494413146495396,
+          "r2": -0.0015538477737289114,
+          "bias_pred_minus_actual_kwh": -0.9168688969391459
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.28123651799169
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 2,
+          "last_period_label": "2025-01-01 00:00:00",
+          "last_period_available_at": "2025-02-01 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 1
+        },
+        {
+          "complete_periods": 2,
+          "last_period_label": "2025-01-01 00:00:00",
+          "last_period_available_at": "2025-02-01 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 1
+        },
+        {
+          "complete_periods": 2,
+          "last_period_label": "2025-01-01 00:00:00",
+          "last_period_available_at": "2025-02-01 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 1
+        }
+      ],
+      "objective": 76.28123651799169
+    },
+    {
+      "candidate": 60,
+      "config": {
+        "family": "monthly_level",
+        "resolution": "monthly",
+        "profile": "weekday_hour",
+        "profile_alpha": 0.5,
+        "kind": "prefix_mean"
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 77.17120687354978,
+          "rmse_kwh": 98.21314041625917,
+          "mape_percent": 0.19723792907455373,
+          "r2": -0.01610555401325886,
+          "bias_pred_minus_actual_kwh": 0.6906769664022727
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.76536974279033,
+          "rmse_kwh": 97.61592643710561,
+          "mape_percent": 0.19618081718388397,
+          "r2": -0.0171032345609754,
+          "bias_pred_minus_actual_kwh": -0.9335964478144023
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.76536974279033
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 2,
+          "last_period_label": "2025-01-01 00:00:00",
+          "last_period_available_at": "2025-02-01 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 1
+        },
+        {
+          "complete_periods": 2,
+          "last_period_label": "2025-01-01 00:00:00",
+          "last_period_available_at": "2025-02-01 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 1
+        },
+        {
+          "complete_periods": 2,
+          "last_period_label": "2025-01-01 00:00:00",
+          "last_period_available_at": "2025-02-01 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 1
+        }
+      ],
+      "objective": 76.76536974279033
+    },
+    {
+      "candidate": 61,
+      "config": {
+        "family": "monthly_level",
+        "resolution": "monthly",
+        "profile": "uniform",
+        "profile_alpha": 0.5,
+        "kind": "recent",
+        "window": 1
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.52034109360937,
+          "rmse_kwh": 97.4368907283632,
+          "mape_percent": 0.19557624259098266,
+          "r2": -0.00010699052658913466,
+          "bias_pred_minus_actual_kwh": 1.0077965051556008
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.23640653568604,
+          "rmse_kwh": 96.79363112649155,
+          "mape_percent": 0.19483138585748455,
+          "r2": -3.969592334662764e-05,
+          "bias_pred_minus_actual_kwh": -0.6098332739240439
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.23640653568604
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 2,
+          "last_period_label": "2025-01-01 00:00:00",
+          "last_period_available_at": "2025-02-01 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 1
+        },
+        {
+          "complete_periods": 2,
+          "last_period_label": "2025-01-01 00:00:00",
+          "last_period_available_at": "2025-02-01 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 1
+        },
+        {
+          "complete_periods": 2,
+          "last_period_label": "2025-01-01 00:00:00",
+          "last_period_available_at": "2025-02-01 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 1
+        }
+      ],
+      "objective": 76.23640653568604
+    },
+    {
+      "candidate": 62,
+      "config": {
+        "family": "monthly_level",
+        "resolution": "monthly",
+        "profile": "hour",
+        "profile_alpha": 0.5,
+        "kind": "recent",
+        "window": 1
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.58191426662735,
+          "rmse_kwh": 97.53830041904014,
+          "mape_percent": 0.19573371717366694,
+          "r2": -0.002189842671760367,
+          "bias_pred_minus_actual_kwh": 1.0051559803644101
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.2878221812449,
+          "rmse_kwh": 96.86526146570002,
+          "mape_percent": 0.19496248379827927,
+          "r2": -0.0015203654098390196,
+          "bias_pred_minus_actual_kwh": -0.6137287015865356
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.2878221812449
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 2,
+          "last_period_label": "2025-01-01 00:00:00",
+          "last_period_available_at": "2025-02-01 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 1
+        },
+        {
+          "complete_periods": 2,
+          "last_period_label": "2025-01-01 00:00:00",
+          "last_period_available_at": "2025-02-01 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 1
+        },
+        {
+          "complete_periods": 2,
+          "last_period_label": "2025-01-01 00:00:00",
+          "last_period_available_at": "2025-02-01 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 1
+        }
+      ],
+      "objective": 76.2878221812449
+    },
+    {
+      "candidate": 63,
+      "config": {
+        "family": "monthly_level",
+        "resolution": "monthly",
+        "profile": "weekday_hour",
+        "profile_alpha": 0.5,
+        "kind": "recent",
+        "window": 1
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 77.16550311672442,
+          "rmse_kwh": 98.21472917369333,
+          "mape_percent": 0.19722485086493452,
+          "r2": -0.016138428602205046,
+          "bias_pred_minus_actual_kwh": 0.9938170776087539
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.75693050959751,
+          "rmse_kwh": 97.61427642155097,
+          "mape_percent": 0.19616075854023773,
+          "r2": -0.017068850377262246,
+          "bias_pred_minus_actual_kwh": -0.6304563898098662
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.75693050959751
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 2,
+          "last_period_label": "2025-01-01 00:00:00",
+          "last_period_available_at": "2025-02-01 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 1
+        },
+        {
+          "complete_periods": 2,
+          "last_period_label": "2025-01-01 00:00:00",
+          "last_period_available_at": "2025-02-01 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 1
+        },
+        {
+          "complete_periods": 2,
+          "last_period_label": "2025-01-01 00:00:00",
+          "last_period_available_at": "2025-02-01 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 1
+        }
+      ],
+      "objective": 76.75693050959751
+    },
+    {
+      "candidate": 64,
+      "config": {
+        "family": "daily_xgboost",
+        "resolution": "daily",
+        "kind": "xgboost",
+        "depth": 1,
+        "trees": 50,
+        "lambda": 100.0,
+        "loss": "reg:squarederror",
+        "shrink": 0.5,
+        "profile": "uniform",
+        "profile_alpha": 0.5
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.63176899584877,
+          "rmse_kwh": 97.52124470897608,
+          "mape_percent": 0.19587254011000071,
+          "r2": -0.0018393841369723773,
+          "bias_pred_minus_actual_kwh": 3.240872322586448
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.2852932248361,
+          "rmse_kwh": 96.82034068838065,
+          "mape_percent": 0.19496751775459215,
+          "r2": -0.0005916807419474868,
+          "bias_pred_minus_actual_kwh": 1.5407318512758936
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.2852932248361
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 76,
+          "last_period_label": "2025-02-14 00:00:00",
+          "last_period_available_at": "2025-02-15 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 83,
+          "last_period_label": "2025-02-21 00:00:00",
+          "last_period_available_at": "2025-02-22 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 86,
+          "last_period_label": "2025-02-24 00:00:00",
+          "last_period_available_at": "2025-02-25 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 0
+        }
+      ],
+      "objective": 76.2852932248361
+    },
+    {
+      "candidate": 65,
+      "config": {
+        "family": "daily_xgboost",
+        "resolution": "daily",
+        "kind": "xgboost",
+        "depth": 1,
+        "trees": 50,
+        "lambda": 100.0,
+        "loss": "reg:squarederror",
+        "shrink": 0.5,
+        "profile": "hour",
+        "profile_alpha": 0.5
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.7060316221519,
+          "rmse_kwh": 97.62254664883112,
+          "mape_percent": 0.19606243670816662,
+          "r2": -0.003921822373277761,
+          "bias_pred_minus_actual_kwh": 3.2382317075698968
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.36995972324216,
+          "rmse_kwh": 96.89191135444088,
+          "mape_percent": 0.195183583712244,
+          "r2": -0.0020715243595403887,
+          "bias_pred_minus_actual_kwh": 1.536836290508719
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.36995972324216
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 76,
+          "last_period_label": "2025-02-14 00:00:00",
+          "last_period_available_at": "2025-02-15 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 83,
+          "last_period_label": "2025-02-21 00:00:00",
+          "last_period_available_at": "2025-02-22 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 86,
+          "last_period_label": "2025-02-24 00:00:00",
+          "last_period_available_at": "2025-02-25 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 0
+        }
+      ],
+      "objective": 76.36995972324216
+    },
+    {
+      "candidate": 66,
+      "config": {
+        "family": "daily_xgboost",
+        "resolution": "daily",
+        "kind": "xgboost",
+        "depth": 2,
+        "trees": 100,
+        "lambda": 100.0,
+        "loss": "reg:squarederror",
+        "shrink": 0.5,
+        "profile": "uniform",
+        "profile_alpha": 0.5
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.63740823601302,
+          "rmse_kwh": 97.56923453156456,
+          "mape_percent": 0.1958911070245168,
+          "r2": -0.0028256292155979246,
+          "bias_pred_minus_actual_kwh": 4.132682122273622
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.29323452096955,
+          "rmse_kwh": 96.85982203402928,
+          "mape_percent": 0.19499250408564495,
+          "r2": -0.0014078885826409593,
+          "bias_pred_minus_actual_kwh": 2.559721114234458
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.29323452096953
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 76,
+          "last_period_label": "2025-02-14 00:00:00",
+          "last_period_available_at": "2025-02-15 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 83,
+          "last_period_label": "2025-02-21 00:00:00",
+          "last_period_available_at": "2025-02-22 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 86,
+          "last_period_label": "2025-02-24 00:00:00",
+          "last_period_available_at": "2025-02-25 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 0
+        }
+      ],
+      "objective": 76.29323452096953
+    },
+    {
+      "candidate": 67,
+      "config": {
+        "family": "daily_xgboost",
+        "resolution": "daily",
+        "kind": "xgboost",
+        "depth": 2,
+        "trees": 100,
+        "lambda": 100.0,
+        "loss": "reg:squarederror",
+        "shrink": 0.5,
+        "profile": "hour",
+        "profile_alpha": 0.5
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.73266535097761,
+          "rmse_kwh": 97.67041709670428,
+          "mape_percent": 0.19613465202296954,
+          "r2": -0.00490663524460988,
+          "bias_pred_minus_actual_kwh": 4.1300413287139195
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.40586469018145,
+          "rmse_kwh": 96.93125779267135,
+          "mape_percent": 0.19528002573836334,
+          "r2": -0.002885543824129755,
+          "bias_pred_minus_actual_kwh": 2.5558252900717826
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.40586469018145
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 76,
+          "last_period_label": "2025-02-14 00:00:00",
+          "last_period_available_at": "2025-02-15 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 83,
+          "last_period_label": "2025-02-21 00:00:00",
+          "last_period_available_at": "2025-02-22 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 86,
+          "last_period_label": "2025-02-24 00:00:00",
+          "last_period_available_at": "2025-02-25 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 0
+        }
+      ],
+      "objective": 76.40586469018145
+    },
+    {
+      "candidate": 68,
+      "config": {
+        "family": "daily_xgboost",
+        "resolution": "daily",
+        "kind": "xgboost",
+        "depth": 1,
+        "trees": 100,
+        "lambda": 100.0,
+        "loss": "reg:absoluteerror",
+        "shrink": 0.5,
+        "profile": "uniform",
+        "profile_alpha": 0.5
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.65289217293558,
+          "rmse_kwh": 97.53418966855294,
+          "mape_percent": 0.19592784879491495,
+          "r2": -0.0021053698943411803,
+          "bias_pred_minus_actual_kwh": 3.501969924022577
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.302197183289,
+          "rmse_kwh": 96.82851980506493,
+          "mape_percent": 0.19501203749360108,
+          "r2": -0.0007607423612516762,
+          "bias_pred_minus_actual_kwh": 1.8131023936699464
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.30219718328898
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 76,
+          "last_period_label": "2025-02-14 00:00:00",
+          "last_period_available_at": "2025-02-15 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 83,
+          "last_period_label": "2025-02-21 00:00:00",
+          "last_period_available_at": "2025-02-22 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 86,
+          "last_period_label": "2025-02-24 00:00:00",
+          "last_period_available_at": "2025-02-25 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 0
+        }
+      ],
+      "objective": 76.30219718328898
+    },
+    {
+      "candidate": 69,
+      "config": {
+        "family": "daily_xgboost",
+        "resolution": "daily",
+        "kind": "xgboost",
+        "depth": 1,
+        "trees": 100,
+        "lambda": 100.0,
+        "loss": "reg:absoluteerror",
+        "shrink": 0.5,
+        "profile": "hour",
+        "profile_alpha": 0.5
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.7300545734416,
+          "rmse_kwh": 97.6354578778192,
+          "mape_percent": 0.19612515482733597,
+          "r2": -0.004187390566815941,
+          "bias_pred_minus_actual_kwh": 3.4993292545122574
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.39164227966583,
+          "rmse_kwh": 96.90005251651752,
+          "mape_percent": 0.19524031420127091,
+          "r2": -0.0022399258145149314,
+          "bias_pred_minus_actual_kwh": 1.8092067525109656
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.39164227966583
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 76,
+          "last_period_label": "2025-02-14 00:00:00",
+          "last_period_available_at": "2025-02-15 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 83,
+          "last_period_label": "2025-02-21 00:00:00",
+          "last_period_available_at": "2025-02-22 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 86,
+          "last_period_label": "2025-02-24 00:00:00",
+          "last_period_available_at": "2025-02-25 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 0
+        }
+      ],
+      "objective": 76.39164227966583
+    },
+    {
+      "candidate": 70,
+      "config": {
+        "family": "daily_ridge",
+        "resolution": "daily",
+        "kind": "ridge",
+        "alpha": 100.0,
+        "profile": "uniform",
+        "profile_alpha": 0.5
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 77.96209271032495,
+          "rmse_kwh": 99.0301218532771,
+          "mape_percent": 0.1993249138179914,
+          "r2": -0.03308071864040807,
+          "bias_pred_minus_actual_kwh": 13.536137947575831
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 77.56088875243219,
+          "rmse_kwh": 98.32168710184746,
+          "mape_percent": 0.198285400885761,
+          "r2": -0.031863662142997295,
+          "bias_pred_minus_actual_kwh": 12.942210619740893
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 77.56088875243218
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 76,
+          "last_period_label": "2025-02-14 00:00:00",
+          "last_period_available_at": "2025-02-15 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 83,
+          "last_period_label": "2025-02-21 00:00:00",
+          "last_period_available_at": "2025-02-22 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 86,
+          "last_period_label": "2025-02-24 00:00:00",
+          "last_period_available_at": "2025-02-25 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 0
+        }
+      ],
+      "objective": 77.56088875243218
+    },
+    {
+      "candidate": 71,
+      "config": {
+        "family": "daily_ridge",
+        "resolution": "daily",
+        "kind": "ridge",
+        "alpha": 100.0,
+        "profile": "hour",
+        "profile_alpha": 0.5
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 78.04327752404758,
+          "rmse_kwh": 99.12949831846858,
+          "mape_percent": 0.1995324458409752,
+          "r2": -0.035155146493969225,
+          "bias_pred_minus_actual_kwh": 13.5334962275297
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 77.65517853706207,
+          "rmse_kwh": 98.39156676264034,
+          "mape_percent": 0.19852602726970844,
+          "r2": -0.03333092554505379,
+          "bias_pred_minus_actual_kwh": 12.938313428781438
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 77.65517853706207
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 76,
+          "last_period_label": "2025-02-14 00:00:00",
+          "last_period_available_at": "2025-02-15 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 83,
+          "last_period_label": "2025-02-21 00:00:00",
+          "last_period_available_at": "2025-02-22 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 86,
+          "last_period_label": "2025-02-24 00:00:00",
+          "last_period_available_at": "2025-02-25 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 0
+        }
+      ],
+      "objective": 77.65517853706207
+    },
+    {
+      "candidate": 72,
+      "config": {
+        "family": "daily_ridge",
+        "resolution": "daily",
+        "kind": "ridge",
+        "alpha": 10000.0,
+        "profile": "uniform",
+        "profile_alpha": 0.5
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.70321173904632,
+          "rmse_kwh": 97.62897406883846,
+          "mape_percent": 0.1960681227702648,
+          "r2": -0.004054022153908932,
+          "bias_pred_minus_actual_kwh": 5.868916633559238
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.34773927643376,
+          "rmse_kwh": 96.90497217418304,
+          "mape_percent": 0.19514083984299926,
+          "r2": -0.0023416967087919183,
+          "bias_pred_minus_actual_kwh": 4.351186713031739
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.34773927643376
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 76,
+          "last_period_label": "2025-02-14 00:00:00",
+          "last_period_available_at": "2025-02-15 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 83,
+          "last_period_label": "2025-02-21 00:00:00",
+          "last_period_available_at": "2025-02-22 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 86,
+          "last_period_label": "2025-02-24 00:00:00",
+          "last_period_available_at": "2025-02-25 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 0
+        }
+      ],
+      "objective": 76.34773927643376
+    },
+    {
+      "candidate": 73,
+      "config": {
+        "family": "daily_ridge",
+        "resolution": "daily",
+        "kind": "ridge",
+        "alpha": 10000.0,
+        "profile": "hour",
+        "profile_alpha": 0.5
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.8002496533852,
+          "rmse_kwh": 97.73005834904022,
+          "mape_percent": 0.19631621520925036,
+          "r2": -0.006134277983104397,
+          "bias_pred_minus_actual_kwh": 5.866275734497646
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.45840922736228,
+          "rmse_kwh": 96.97631755107894,
+          "mape_percent": 0.19542335123285903,
+          "r2": -0.0038181693749299583,
+          "bias_pred_minus_actual_kwh": 4.3472907332277
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.45840922736228
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 76,
+          "last_period_label": "2025-02-14 00:00:00",
+          "last_period_available_at": "2025-02-15 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 83,
+          "last_period_label": "2025-02-21 00:00:00",
+          "last_period_available_at": "2025-02-22 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 86,
+          "last_period_label": "2025-02-24 00:00:00",
+          "last_period_available_at": "2025-02-25 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 0
+        }
+      ],
+      "objective": 76.45840922736228
+    },
+    {
+      "candidate": 74,
+      "config": {
+        "family": "daily_ridge",
+        "resolution": "daily",
+        "kind": "ridge",
+        "alpha": 1000000.0,
+        "profile": "uniform",
+        "profile_alpha": 0.5
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.64045511075744,
+          "rmse_kwh": 97.57109418073665,
+          "mape_percent": 0.19590365320941494,
+          "r2": -0.002863856872756587,
+          "bias_pred_minus_actual_kwh": 5.0961012622232
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.30012651243938,
+          "rmse_kwh": 96.85862286553697,
+          "mape_percent": 0.1950145537589236,
+          "r2": -0.0013830929691625027,
+          "bias_pred_minus_actual_kwh": 3.479577556965365
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.30012651243938
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 76,
+          "last_period_label": "2025-02-14 00:00:00",
+          "last_period_available_at": "2025-02-15 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 83,
+          "last_period_label": "2025-02-21 00:00:00",
+          "last_period_available_at": "2025-02-22 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 86,
+          "last_period_label": "2025-02-24 00:00:00",
+          "last_period_available_at": "2025-02-25 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 0
+        }
+      ],
+      "objective": 76.30012651243938
+    },
+    {
+      "candidate": 75,
+      "config": {
+        "family": "daily_ridge",
+        "resolution": "daily",
+        "kind": "ridge",
+        "alpha": 1000000.0,
+        "profile": "hour",
+        "profile_alpha": 0.5
+      },
+      "validation": {
+        "full745": {
+          "count": 2235,
+          "mae_kwh": 76.74528005864984,
+          "rmse_kwh": 97.67226400263804,
+          "mape_percent": 0.19617164630262515,
+          "r2": -0.0049446403157553664,
+          "bias_pred_minus_actual_kwh": 5.093460439754262
+        },
+        "late505": {
+          "count": 1515,
+          "mae_kwh": 76.41901336532077,
+          "rmse_kwh": 96.9300432910816,
+          "mape_percent": 0.19531806322941897,
+          "r2": -0.0028604126438576127,
+          "bias_pred_minus_actual_kwh": 3.4756816901544503
+        },
+        "origin_count": 3,
+        "mean_origin_late505_mae_kwh": 76.41901336532077
+      },
+      "period_metadata_by_fold": [
+        {
+          "complete_periods": 76,
+          "last_period_label": "2025-02-14 00:00:00",
+          "last_period_available_at": "2025-02-15 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-14 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 83,
+          "last_period_label": "2025-02-21 00:00:00",
+          "last_period_available_at": "2025-02-22 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-21 23:00:00",
+          "partial_periods_excluded": 0
+        },
+        {
+          "complete_periods": 86,
+          "last_period_label": "2025-02-24 00:00:00",
+          "last_period_available_at": "2025-02-25 00:00:00",
+          "period_target": "Hourly-average energy rate; period sum uses known calendar duration",
+          "history_end": "2025-02-24 23:00:00",
+          "partial_periods_excluded": 0
+        }
+      ],
+      "objective": 76.41901336532077
+    }
+  ],
+  "elapsed_seconds": 6.479700200026855
+}

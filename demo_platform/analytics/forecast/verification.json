@@ -1,0 +1,2470 @@
+{
+  "status": "pass",
+  "scaler_inner_model_checks": [
+    {
+      "family": "arima",
+      "candidate": 7,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 7,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 7,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 8,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 8,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 8,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 9,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 9,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 9,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 10,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 10,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 10,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 11,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 11,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 11,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 12,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 12,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 12,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 13,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 13,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 13,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 14,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 14,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 14,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 15,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 15,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 15,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 16,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 16,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 16,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 17,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 17,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 17,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 18,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 18,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 18,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 19,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 19,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 19,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 20,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 20,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 20,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "xgboost",
+      "candidate": 21,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "xgboost",
+      "candidate": 21,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "xgboost",
+      "candidate": 21,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "xgboost",
+      "candidate": 22,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "xgboost",
+      "candidate": 22,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "xgboost",
+      "candidate": 22,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 23,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 23,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 23,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 24,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 24,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 24,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 25,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 25,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 25,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 26,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 26,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 26,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 27,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 27,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 27,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 28,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 28,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 28,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 29,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 29,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 29,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 30,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 30,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 30,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 31,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 31,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 31,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 32,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 32,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 32,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 33,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 33,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 33,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 34,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 34,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 34,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 35,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 35,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 35,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 36,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 36,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 36,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "xgboost",
+      "candidate": 37,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "xgboost",
+      "candidate": 37,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "xgboost",
+      "candidate": 37,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "xgboost",
+      "candidate": 38,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "xgboost",
+      "candidate": 38,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "xgboost",
+      "candidate": 38,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 39,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 39,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 39,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 40,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 40,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 40,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 41,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 41,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 41,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 42,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 42,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 42,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 43,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 43,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 43,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 44,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 44,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 44,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 45,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 45,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 45,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 46,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 46,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 46,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 47,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 47,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 47,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 48,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 48,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 48,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 49,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 49,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 49,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 50,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 50,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 50,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 51,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 51,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 51,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 52,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 52,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 52,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "xgboost",
+      "candidate": 53,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "xgboost",
+      "candidate": 53,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "xgboost",
+      "candidate": 53,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "xgboost",
+      "candidate": 54,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "xgboost",
+      "candidate": 54,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "xgboost",
+      "candidate": 54,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 55,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 55,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 55,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 56,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 56,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 56,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 57,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 57,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 57,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 58,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 58,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 58,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 59,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 59,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 59,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 60,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 60,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 60,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 61,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 61,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 61,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 62,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 62,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 62,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 63,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 63,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 63,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 64,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 64,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 64,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 65,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 65,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 65,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 66,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 66,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 66,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 67,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 67,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 67,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 68,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 68,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 68,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "xgboost",
+      "candidate": 69,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "xgboost",
+      "candidate": 69,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "xgboost",
+      "candidate": 69,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "xgboost",
+      "candidate": 70,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "xgboost",
+      "candidate": 70,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "xgboost",
+      "candidate": 70,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 71,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 71,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 71,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 72,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 72,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 72,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 73,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 73,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 73,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 74,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 74,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 74,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 75,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 75,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 75,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 76,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 76,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 76,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 77,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 77,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 77,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 78,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 78,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 78,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 79,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 79,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 79,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 80,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 80,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 80,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 81,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 81,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 81,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 82,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 82,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 82,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 83,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 83,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 83,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 84,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 84,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 84,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "xgboost",
+      "candidate": 85,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "xgboost",
+      "candidate": 85,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "xgboost",
+      "candidate": 85,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "xgboost",
+      "candidate": 86,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "xgboost",
+      "candidate": 86,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "xgboost",
+      "candidate": 86,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 87,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 87,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 87,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 88,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 88,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 88,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 89,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 89,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 89,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 90,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 90,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 90,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 91,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 91,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 91,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 92,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 92,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "arima",
+      "candidate": 92,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 93,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 93,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 93,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 94,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 94,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 94,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 95,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 95,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 95,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 96,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 96,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 96,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 97,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 97,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 97,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 98,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 98,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 98,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 99,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 99,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 99,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 100,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 100,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "candidate": 100,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "xgboost",
+      "candidate": 101,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "xgboost",
+      "candidate": 101,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "xgboost",
+      "candidate": 101,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "xgboost",
+      "candidate": 102,
+      "origin": "2025-02-15 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "xgboost",
+      "candidate": 102,
+      "origin": "2025-02-22 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "xgboost",
+      "candidate": 102,
+      "origin": "2025-02-25 00:00:00",
+      "scaler_recompute_error": 0.0
+    },
+    {
+      "family": "patchtst",
+      "candidate": 0,
+      "origin": "2025-02-15 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 93,
+      "best_epoch": 3
+    },
+    {
+      "family": "patchtst",
+      "candidate": 0,
+      "origin": "2025-02-22 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 93,
+      "best_epoch": 3
+    },
+    {
+      "family": "patchtst",
+      "candidate": 0,
+      "origin": "2025-02-25 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 91,
+      "best_epoch": 1
+    },
+    {
+      "family": "patchtst",
+      "candidate": 1,
+      "origin": "2025-02-15 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 91,
+      "best_epoch": 1
+    },
+    {
+      "family": "patchtst",
+      "candidate": 1,
+      "origin": "2025-02-22 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 94,
+      "best_epoch": 4
+    },
+    {
+      "family": "patchtst",
+      "candidate": 1,
+      "origin": "2025-02-25 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 91,
+      "best_epoch": 1
+    },
+    {
+      "family": "patchtst",
+      "candidate": 2,
+      "origin": "2025-02-15 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 91,
+      "best_epoch": 1
+    },
+    {
+      "family": "patchtst",
+      "candidate": 2,
+      "origin": "2025-02-22 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 91,
+      "best_epoch": 1
+    },
+    {
+      "family": "patchtst",
+      "candidate": 2,
+      "origin": "2025-02-25 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 91,
+      "best_epoch": 1
+    },
+    {
+      "family": "patchtst",
+      "candidate": 3,
+      "origin": "2025-02-15 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 91,
+      "best_epoch": 1
+    },
+    {
+      "family": "patchtst",
+      "candidate": 3,
+      "origin": "2025-02-22 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 91,
+      "best_epoch": 1
+    },
+    {
+      "family": "patchtst",
+      "candidate": 3,
+      "origin": "2025-02-25 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 91,
+      "best_epoch": 1
+    },
+    {
+      "family": "patchtst",
+      "candidate": 4,
+      "origin": "2025-02-15 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 102,
+      "best_epoch": 12
+    },
+    {
+      "family": "patchtst",
+      "candidate": 4,
+      "origin": "2025-02-22 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 91,
+      "best_epoch": 1
+    },
+    {
+      "family": "patchtst",
+      "candidate": 4,
+      "origin": "2025-02-25 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 91,
+      "best_epoch": 1
+    },
+    {
+      "family": "patchtst",
+      "candidate": 5,
+      "origin": "2025-02-15 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 102,
+      "best_epoch": 12
+    },
+    {
+      "family": "patchtst",
+      "candidate": 5,
+      "origin": "2025-02-22 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 91,
+      "best_epoch": 1
+    },
+    {
+      "family": "patchtst",
+      "candidate": 5,
+      "origin": "2025-02-25 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 91,
+      "best_epoch": 1
+    },
+    {
+      "family": "patchtst",
+      "candidate": 6,
+      "origin": "2025-02-15 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 102,
+      "best_epoch": 12
+    },
+    {
+      "family": "patchtst",
+      "candidate": 6,
+      "origin": "2025-02-22 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 91,
+      "best_epoch": 1
+    },
+    {
+      "family": "patchtst",
+      "candidate": 6,
+      "origin": "2025-02-25 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 91,
+      "best_epoch": 1
+    },
+    {
+      "family": "patchtst",
+      "candidate": 7,
+      "origin": "2025-02-15 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 155,
+      "best_epoch": 125
+    },
+    {
+      "family": "patchtst",
+      "candidate": 7,
+      "origin": "2025-02-22 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 91,
+      "best_epoch": 1
+    },
+    {
+      "family": "patchtst",
+      "candidate": 7,
+      "origin": "2025-02-25 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 91,
+      "best_epoch": 1
+    },
+    {
+      "family": "itransformer",
+      "candidate": 0,
+      "origin": "2025-02-15 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 91,
+      "best_epoch": 1
+    },
+    {
+      "family": "itransformer",
+      "candidate": 0,
+      "origin": "2025-02-22 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 95,
+      "best_epoch": 5
+    },
+    {
+      "family": "itransformer",
+      "candidate": 0,
+      "origin": "2025-02-25 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 91,
+      "best_epoch": 1
+    },
+    {
+      "family": "itransformer",
+      "candidate": 1,
+      "origin": "2025-02-15 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 102,
+      "best_epoch": 12
+    },
+    {
+      "family": "itransformer",
+      "candidate": 1,
+      "origin": "2025-02-22 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 113,
+      "best_epoch": 23
+    },
+    {
+      "family": "itransformer",
+      "candidate": 1,
+      "origin": "2025-02-25 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 111,
+      "best_epoch": 21
+    },
+    {
+      "family": "itransformer",
+      "candidate": 2,
+      "origin": "2025-02-15 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 91,
+      "best_epoch": 1
+    },
+    {
+      "family": "itransformer",
+      "candidate": 2,
+      "origin": "2025-02-22 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 91,
+      "best_epoch": 1
+    },
+    {
+      "family": "itransformer",
+      "candidate": 2,
+      "origin": "2025-02-25 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 94,
+      "best_epoch": 4
+    },
+    {
+      "family": "itransformer",
+      "candidate": 3,
+      "origin": "2025-02-15 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 91,
+      "best_epoch": 1
+    },
+    {
+      "family": "itransformer",
+      "candidate": 3,
+      "origin": "2025-02-22 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 92,
+      "best_epoch": 2
+    },
+    {
+      "family": "itransformer",
+      "candidate": 3,
+      "origin": "2025-02-25 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 91,
+      "best_epoch": 1
+    },
+    {
+      "family": "itransformer",
+      "candidate": 4,
+      "origin": "2025-02-15 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 111,
+      "best_epoch": 21
+    },
+    {
+      "family": "itransformer",
+      "candidate": 4,
+      "origin": "2025-02-22 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 91,
+      "best_epoch": 1
+    },
+    {
+      "family": "itransformer",
+      "candidate": 4,
+      "origin": "2025-02-25 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 91,
+      "best_epoch": 1
+    },
+    {
+      "family": "itransformer",
+      "candidate": 5,
+      "origin": "2025-02-15 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 111,
+      "best_epoch": 21
+    },
+    {
+      "family": "itransformer",
+      "candidate": 5,
+      "origin": "2025-02-22 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 91,
+      "best_epoch": 1
+    },
+    {
+      "family": "itransformer",
+      "candidate": 5,
+      "origin": "2025-02-25 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 91,
+      "best_epoch": 1
+    },
+    {
+      "family": "itransformer",
+      "candidate": 6,
+      "origin": "2025-02-15 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 103,
+      "best_epoch": 13
+    },
+    {
+      "family": "itransformer",
+      "candidate": 6,
+      "origin": "2025-02-22 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 91,
+      "best_epoch": 1
+    },
+    {
+      "family": "itransformer",
+      "candidate": 6,
+      "origin": "2025-02-25 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 91,
+      "best_epoch": 1
+    },
+    {
+      "family": "itransformer",
+      "candidate": 7,
+      "origin": "2025-02-15 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 91,
+      "best_epoch": 1
+    },
+    {
+      "family": "itransformer",
+      "candidate": 7,
+      "origin": "2025-02-22 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 91,
+      "best_epoch": 1
+    },
+    {
+      "family": "itransformer",
+      "candidate": 7,
+      "origin": "2025-02-25 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 93,
+      "best_epoch": 3
+    },
+    {
+      "family": "itransformer",
+      "candidate": 8,
+      "origin": "2025-02-15 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 106,
+      "best_epoch": 16
+    },
+    {
+      "family": "itransformer",
+      "candidate": 8,
+      "origin": "2025-02-22 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 113,
+      "best_epoch": 23
+    },
+    {
+      "family": "itransformer",
+      "candidate": 8,
+      "origin": "2025-02-25 00:00:00",
+      "inner_best_replay_MAE_error": 0.0,
+      "scaler_recompute_error": 0,
+      "inverse_roundtrip_error": 0.0,
+      "epochs_run": 109,
+      "best_epoch": 19
+    }
+  ],
+  "native_replays": [
+    {
+      "family": "patchtst",
+      "split": "internal_test",
+      "native_CSV_reload_error": 0.0,
+      "input_shape": [
+        1,
+        72,
+        1
+      ],
+      "output_shape": [
+        1,
+        745,
+        1
+      ],
+      "explicit_target_index": 0
+    },
+    {
+      "family": "patchtst",
+      "split": "future_unlabelled",
+      "native_CSV_reload_error": 0.0,
+      "input_shape": [
+        1,
+        72,
+        1
+      ],
+      "output_shape": [
+        1,
+        745,
+        1
+      ],
+      "explicit_target_index": 0
+    },
+    {
+      "family": "itransformer",
+      "split": "internal_test",
+      "native_CSV_reload_error": 0.0,
+      "input_shape": [
+        1,
+        72,
+        1
+      ],
+      "output_shape": [
+        1,
+        745,
+        1
+      ],
+      "explicit_target_index": 0
+    },
+    {
+      "family": "itransformer",
+      "split": "future_unlabelled",
+      "native_CSV_reload_error": 0.0,
+      "input_shape": [
+        1,
+        72,
+        1
+      ],
+      "output_shape": [
+        1,
+        745,
+        1
+      ],
+      "explicit_target_index": 0
+    },
+    {
+      "family": "baseline",
+      "split": "internal_test",
+      "native_CSV_reload_error": 0.0
+    },
+    {
+      "family": "baseline",
+      "split": "future_unlabelled",
+      "native_CSV_reload_error": 0.0
+    },
+    {
+      "family": "arima",
+      "split": "internal_test",
+      "native_CSV_reload_error": 0.0
+    },
+    {
+      "family": "arima",
+      "split": "future_unlabelled",
+      "native_CSV_reload_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "split": "internal_test",
+      "native_CSV_reload_error": 0.0
+    },
+    {
+      "family": "ridge",
+      "split": "future_unlabelled",
+      "native_CSV_reload_error": 0.0
+    },
+    {
+      "family": "xgboost",
+      "split": "internal_test",
+      "native_CSV_reload_error": 0.0
+    },
+    {
+      "family": "xgboost",
+      "split": "future_unlabelled",
+      "native_CSV_reload_error": 0.0
+    },
+    {
+      "family": "chronos2",
+      "split": "internal_test",
+      "official_raw_forward_max_error": 0.0,
+      "native_CSV_reload_error": 0.0
+    },
+    {
+      "family": "chronos2",
+      "split": "future_unlabelled",
+      "official_raw_forward_max_error": 0.0,
+      "native_CSV_reload_error": 0.0
+    }
+  ],
+  "official_cores": [
+    {
+      "family": "patchtst",
+      "official_core_provenance": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\patchtst\\provenance.json",
+      "sha256": "036f4ed7fd8dd6054224f7dd1780391ff6da8f501d09dcdb8727625ef9b7b4ad",
+      "declared_files_verified": 5
+    },
+    {
+      "family": "itransformer",
+      "official_core_provenance": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\forecast\\itransformer\\vendor\\provenance.json",
+      "sha256": "82b2f4036b2f4cfc70fe02a84c62a822432b1105ff1ac044a129a7ede2073980",
+      "declared_files_verified": 6
+    }
+  ],
+  "target_source_sha256": "729b149a3e3165dfb339f0386249bfbda0326657f9e722d86da8138db36117de",
+  "module_source_sha256": "8df1c2a3f3cac80c44a9761a0a308e78ca683bd8197d18bc42a3c56d57b8c022",
+  "unit_tests": {
+    "status": "pass",
+    "tests": [
+      {
+        "scaler": "zscore",
+        "roundtrip_max_error_kwh": 0.0,
+        "normalizer": {
+          "kind": "zscore",
+          "center": [
+            39130.11766341527
+          ],
+          "offset": [
+            0.0
+          ],
+          "scale": [
+            93.82245782939587
+          ],
+          "fit_rows": 1824,
+          "residual_centering": "Train-prefix arithmetic mean before numerical scaling",
+          "native_unit": "provisional guide kWh per hour",
+          "physical_unit_conversion": false
+        },
+        "fit_end": "2025-02-14 23:00:00",
+        "R2_both_truth_and_prediction_unit_change_errors": {
+          "0.003472222222222222": 0.0,
+          "0.001": 0.0,
+          "1000.0": 0.0
+        }
+      },
+      {
+        "scaler": "robust",
+        "roundtrip_max_error_kwh": 0.0,
+        "normalizer": {
+          "kind": "robust",
+          "center": [
+            39130.11766341527
+          ],
+          "offset": [
+            -1.1168995263833494
+          ],
+          "scale": [
+            123.45599305555152
+          ],
+          "fit_rows": 1824,
+          "residual_centering": "Train-prefix arithmetic mean before numerical scaling",
+          "native_unit": "provisional guide kWh per hour",
+          "physical_unit_conversion": false
+        },
+        "fit_end": "2025-02-14 23:00:00",
+        "R2_both_truth_and_prediction_unit_change_errors": {
+          "0.003472222222222222": 0.0,
+          "0.001": 0.0,
+          "1000.0": 0.0
+        }
+      },
+      {
+        "scaler": "minmax",
+        "roundtrip_max_error_kwh": 0.0,
+        "normalizer": {
+          "kind": "minmax",
+          "center": [
+            39130.11766341527
+          ],
+          "offset": [
+            -313.39744119305396
+          ],
+          "scale": [
+            626.4430972222253
+          ],
+          "fit_rows": 1824,
+          "residual_centering": "Train-prefix arithmetic mean before numerical scaling",
+          "native_unit": "provisional guide kWh per hour",
+          "physical_unit_conversion": false
+        },
+        "fit_end": "2025-02-14 23:00:00",
+        "R2_both_truth_and_prediction_unit_change_errors": {
+          "0.003472222222222222": 0.0,
+          "0.001": 0.0,
+          "1000.0": 0.0
+        }
+      }
+    ],
+    "physical_unit_status": "Guide kW/kWh provisional; no evidence authorizes a divide288 or divide1000 correction",
+    "conclusion": "Correct reversible normalization improves conditioning. Scaling truth and prediction together cannot repair R2 or forecast direction.",
+    "target_sha256": "729b149a3e3165dfb339f0386249bfbda0326657f9e722d86da8138db36117de",
+    "guide_target_retained": true
+  },
+  "validation_internal_test_label_overlap": 0,
+  "scalers_fit_only_origin_prefix": true,
+  "explicit_native_shape_checked": true,
+  "no_original_or_old_venv_modified": true,
+  "May_labels_read": false,
+  "serving_API_verification": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\forecast\\serving_api_verification.json"
+}

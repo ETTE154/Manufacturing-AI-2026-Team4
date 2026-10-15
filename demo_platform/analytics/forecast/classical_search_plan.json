@@ -1,0 +1,835 @@
+{
+  "configs": [
+    {
+      "family": "baseline",
+      "kind": "mean",
+      "window": "full",
+      "resolution": "hourly"
+    },
+    {
+      "family": "baseline",
+      "kind": "median",
+      "window": "full",
+      "resolution": "hourly"
+    },
+    {
+      "family": "baseline",
+      "kind": "trimmed_mean",
+      "window": "full",
+      "resolution": "hourly"
+    },
+    {
+      "family": "baseline",
+      "kind": "ema",
+      "window": 168,
+      "resolution": "hourly"
+    },
+    {
+      "family": "baseline",
+      "kind": "ema",
+      "window": 720,
+      "resolution": "hourly"
+    },
+    {
+      "family": "baseline",
+      "kind": "recent_mean",
+      "window": 168,
+      "resolution": "hourly"
+    },
+    {
+      "family": "baseline",
+      "kind": "recent_mean",
+      "window": 720,
+      "resolution": "hourly"
+    },
+    {
+      "family": "arima",
+      "resolution": "hourly",
+      "scaler": "zscore",
+      "order": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "family": "arima",
+      "resolution": "hourly",
+      "scaler": "zscore",
+      "order": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "family": "arima",
+      "resolution": "hourly",
+      "scaler": "zscore",
+      "order": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "family": "arima",
+      "resolution": "hourly",
+      "scaler": "zscore",
+      "order": [
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "family": "arima",
+      "resolution": "hourly",
+      "scaler": "zscore",
+      "order": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "family": "arima",
+      "resolution": "hourly",
+      "scaler": "zscore",
+      "order": [
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "family": "ridge",
+      "resolution": "hourly",
+      "scaler": "zscore",
+      "alpha": 1.0,
+      "intercept": false
+    },
+    {
+      "family": "ridge",
+      "resolution": "hourly",
+      "scaler": "zscore",
+      "alpha": 1.0,
+      "intercept": true
+    },
+    {
+      "family": "ridge",
+      "resolution": "hourly",
+      "scaler": "zscore",
+      "alpha": 100.0,
+      "intercept": false
+    },
+    {
+      "family": "ridge",
+      "resolution": "hourly",
+      "scaler": "zscore",
+      "alpha": 100.0,
+      "intercept": true
+    },
+    {
+      "family": "ridge",
+      "resolution": "hourly",
+      "scaler": "zscore",
+      "alpha": 10000.0,
+      "intercept": false
+    },
+    {
+      "family": "ridge",
+      "resolution": "hourly",
+      "scaler": "zscore",
+      "alpha": 10000.0,
+      "intercept": true
+    },
+    {
+      "family": "ridge",
+      "resolution": "hourly",
+      "scaler": "zscore",
+      "alpha": 1000000.0,
+      "intercept": false
+    },
+    {
+      "family": "ridge",
+      "resolution": "hourly",
+      "scaler": "zscore",
+      "alpha": 1000000.0,
+      "intercept": true
+    },
+    {
+      "family": "xgboost",
+      "resolution": "hourly",
+      "scaler": "zscore",
+      "depth": 1,
+      "max_estimators_protection": 10000
+    },
+    {
+      "family": "xgboost",
+      "resolution": "hourly",
+      "scaler": "zscore",
+      "depth": 2,
+      "max_estimators_protection": 10000
+    },
+    {
+      "family": "arima",
+      "resolution": "hourly",
+      "scaler": "robust",
+      "order": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "family": "arima",
+      "resolution": "hourly",
+      "scaler": "robust",
+      "order": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "family": "arima",
+      "resolution": "hourly",
+      "scaler": "robust",
+      "order": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "family": "arima",
+      "resolution": "hourly",
+      "scaler": "robust",
+      "order": [
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "family": "arima",
+      "resolution": "hourly",
+      "scaler": "robust",
+      "order": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "family": "arima",
+      "resolution": "hourly",
+      "scaler": "robust",
+      "order": [
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "family": "ridge",
+      "resolution": "hourly",
+      "scaler": "robust",
+      "alpha": 1.0,
+      "intercept": false
+    },
+    {
+      "family": "ridge",
+      "resolution": "hourly",
+      "scaler": "robust",
+      "alpha": 1.0,
+      "intercept": true
+    },
+    {
+      "family": "ridge",
+      "resolution": "hourly",
+      "scaler": "robust",
+      "alpha": 100.0,
+      "intercept": false
+    },
+    {
+      "family": "ridge",
+      "resolution": "hourly",
+      "scaler": "robust",
+      "alpha": 100.0,
+      "intercept": true
+    },
+    {
+      "family": "ridge",
+      "resolution": "hourly",
+      "scaler": "robust",
+      "alpha": 10000.0,
+      "intercept": false
+    },
+    {
+      "family": "ridge",
+      "resolution": "hourly",
+      "scaler": "robust",
+      "alpha": 10000.0,
+      "intercept": true
+    },
+    {
+      "family": "ridge",
+      "resolution": "hourly",
+      "scaler": "robust",
+      "alpha": 1000000.0,
+      "intercept": false
+    },
+    {
+      "family": "ridge",
+      "resolution": "hourly",
+      "scaler": "robust",
+      "alpha": 1000000.0,
+      "intercept": true
+    },
+    {
+      "family": "xgboost",
+      "resolution": "hourly",
+      "scaler": "robust",
+      "depth": 1,
+      "max_estimators_protection": 10000
+    },
+    {
+      "family": "xgboost",
+      "resolution": "hourly",
+      "scaler": "robust",
+      "depth": 2,
+      "max_estimators_protection": 10000
+    },
+    {
+      "family": "arima",
+      "resolution": "hourly",
+      "scaler": "minmax",
+      "order": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "family": "arima",
+      "resolution": "hourly",
+      "scaler": "minmax",
+      "order": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "family": "arima",
+      "resolution": "hourly",
+      "scaler": "minmax",
+      "order": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "family": "arima",
+      "resolution": "hourly",
+      "scaler": "minmax",
+      "order": [
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "family": "arima",
+      "resolution": "hourly",
+      "scaler": "minmax",
+      "order": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "family": "arima",
+      "resolution": "hourly",
+      "scaler": "minmax",
+      "order": [
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "family": "ridge",
+      "resolution": "hourly",
+      "scaler": "minmax",
+      "alpha": 1.0,
+      "intercept": false
+    },
+    {
+      "family": "ridge",
+      "resolution": "hourly",
+      "scaler": "minmax",
+      "alpha": 1.0,
+      "intercept": true
+    },
+    {
+      "family": "ridge",
+      "resolution": "hourly",
+      "scaler": "minmax",
+      "alpha": 100.0,
+      "intercept": false
+    },
+    {
+      "family": "ridge",
+      "resolution": "hourly",
+      "scaler": "minmax",
+      "alpha": 100.0,
+      "intercept": true
+    },
+    {
+      "family": "ridge",
+      "resolution": "hourly",
+      "scaler": "minmax",
+      "alpha": 10000.0,
+      "intercept": false
+    },
+    {
+      "family": "ridge",
+      "resolution": "hourly",
+      "scaler": "minmax",
+      "alpha": 10000.0,
+      "intercept": true
+    },
+    {
+      "family": "ridge",
+      "resolution": "hourly",
+      "scaler": "minmax",
+      "alpha": 1000000.0,
+      "intercept": false
+    },
+    {
+      "family": "ridge",
+      "resolution": "hourly",
+      "scaler": "minmax",
+      "alpha": 1000000.0,
+      "intercept": true
+    },
+    {
+      "family": "xgboost",
+      "resolution": "hourly",
+      "scaler": "minmax",
+      "depth": 1,
+      "max_estimators_protection": 10000
+    },
+    {
+      "family": "xgboost",
+      "resolution": "hourly",
+      "scaler": "minmax",
+      "depth": 2,
+      "max_estimators_protection": 10000
+    },
+    {
+      "family": "arima",
+      "resolution": "daily",
+      "scaler": "zscore",
+      "order": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "family": "arima",
+      "resolution": "daily",
+      "scaler": "zscore",
+      "order": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "family": "arima",
+      "resolution": "daily",
+      "scaler": "zscore",
+      "order": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "family": "arima",
+      "resolution": "daily",
+      "scaler": "zscore",
+      "order": [
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "family": "arima",
+      "resolution": "daily",
+      "scaler": "zscore",
+      "order": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "family": "arima",
+      "resolution": "daily",
+      "scaler": "zscore",
+      "order": [
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "family": "ridge",
+      "resolution": "daily",
+      "scaler": "zscore",
+      "alpha": 1.0,
+      "intercept": false
+    },
+    {
+      "family": "ridge",
+      "resolution": "daily",
+      "scaler": "zscore",
+      "alpha": 1.0,
+      "intercept": true
+    },
+    {
+      "family": "ridge",
+      "resolution": "daily",
+      "scaler": "zscore",
+      "alpha": 100.0,
+      "intercept": false
+    },
+    {
+      "family": "ridge",
+      "resolution": "daily",
+      "scaler": "zscore",
+      "alpha": 100.0,
+      "intercept": true
+    },
+    {
+      "family": "ridge",
+      "resolution": "daily",
+      "scaler": "zscore",
+      "alpha": 10000.0,
+      "intercept": false
+    },
+    {
+      "family": "ridge",
+      "resolution": "daily",
+      "scaler": "zscore",
+      "alpha": 10000.0,
+      "intercept": true
+    },
+    {
+      "family": "ridge",
+      "resolution": "daily",
+      "scaler": "zscore",
+      "alpha": 1000000.0,
+      "intercept": false
+    },
+    {
+      "family": "ridge",
+      "resolution": "daily",
+      "scaler": "zscore",
+      "alpha": 1000000.0,
+      "intercept": true
+    },
+    {
+      "family": "xgboost",
+      "resolution": "daily",
+      "scaler": "zscore",
+      "depth": 1,
+      "max_estimators_protection": 10000
+    },
+    {
+      "family": "xgboost",
+      "resolution": "daily",
+      "scaler": "zscore",
+      "depth": 2,
+      "max_estimators_protection": 10000
+    },
+    {
+      "family": "arima",
+      "resolution": "daily",
+      "scaler": "robust",
+      "order": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "family": "arima",
+      "resolution": "daily",
+      "scaler": "robust",
+      "order": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "family": "arima",
+      "resolution": "daily",
+      "scaler": "robust",
+      "order": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "family": "arima",
+      "resolution": "daily",
+      "scaler": "robust",
+      "order": [
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "family": "arima",
+      "resolution": "daily",
+      "scaler": "robust",
+      "order": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "family": "arima",
+      "resolution": "daily",
+      "scaler": "robust",
+      "order": [
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "family": "ridge",
+      "resolution": "daily",
+      "scaler": "robust",
+      "alpha": 1.0,
+      "intercept": false
+    },
+    {
+      "family": "ridge",
+      "resolution": "daily",
+      "scaler": "robust",
+      "alpha": 1.0,
+      "intercept": true
+    },
+    {
+      "family": "ridge",
+      "resolution": "daily",
+      "scaler": "robust",
+      "alpha": 100.0,
+      "intercept": false
+    },
+    {
+      "family": "ridge",
+      "resolution": "daily",
+      "scaler": "robust",
+      "alpha": 100.0,
+      "intercept": true
+    },
+    {
+      "family": "ridge",
+      "resolution": "daily",
+      "scaler": "robust",
+      "alpha": 10000.0,
+      "intercept": false
+    },
+    {
+      "family": "ridge",
+      "resolution": "daily",
+      "scaler": "robust",
+      "alpha": 10000.0,
+      "intercept": true
+    },
+    {
+      "family": "ridge",
+      "resolution": "daily",
+      "scaler": "robust",
+      "alpha": 1000000.0,
+      "intercept": false
+    },
+    {
+      "family": "ridge",
+      "resolution": "daily",
+      "scaler": "robust",
+      "alpha": 1000000.0,
+      "intercept": true
+    },
+    {
+      "family": "xgboost",
+      "resolution": "daily",
+      "scaler": "robust",
+      "depth": 1,
+      "max_estimators_protection": 10000
+    },
+    {
+      "family": "xgboost",
+      "resolution": "daily",
+      "scaler": "robust",
+      "depth": 2,
+      "max_estimators_protection": 10000
+    },
+    {
+      "family": "arima",
+      "resolution": "daily",
+      "scaler": "minmax",
+      "order": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "family": "arima",
+      "resolution": "daily",
+      "scaler": "minmax",
+      "order": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "family": "arima",
+      "resolution": "daily",
+      "scaler": "minmax",
+      "order": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "family": "arima",
+      "resolution": "daily",
+      "scaler": "minmax",
+      "order": [
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "family": "arima",
+      "resolution": "daily",
+      "scaler": "minmax",
+      "order": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "family": "arima",
+      "resolution": "daily",
+      "scaler": "minmax",
+      "order": [
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "family": "ridge",
+      "resolution": "daily",
+      "scaler": "minmax",
+      "alpha": 1.0,
+      "intercept": false
+    },
+    {
+      "family": "ridge",
+      "resolution": "daily",
+      "scaler": "minmax",
+      "alpha": 1.0,
+      "intercept": true
+    },
+    {
+      "family": "ridge",
+      "resolution": "daily",
+      "scaler": "minmax",
+      "alpha": 100.0,
+      "intercept": false
+    },
+    {
+      "family": "ridge",
+      "resolution": "daily",
+      "scaler": "minmax",
+      "alpha": 100.0,
+      "intercept": true
+    },
+    {
+      "family": "ridge",
+      "resolution": "daily",
+      "scaler": "minmax",
+      "alpha": 10000.0,
+      "intercept": false
+    },
+    {
+      "family": "ridge",
+      "resolution": "daily",
+      "scaler": "minmax",
+      "alpha": 10000.0,
+      "intercept": true
+    },
+    {
+      "family": "ridge",
+      "resolution": "daily",
+      "scaler": "minmax",
+      "alpha": 1000000.0,
+      "intercept": false
+    },
+    {
+      "family": "ridge",
+      "resolution": "daily",
+      "scaler": "minmax",
+      "alpha": 1000000.0,
+      "intercept": true
+    },
+    {
+      "family": "xgboost",
+      "resolution": "daily",
+      "scaler": "minmax",
+      "depth": 1,
+      "max_estimators_protection": 10000
+    },
+    {
+      "family": "xgboost",
+      "resolution": "daily",
+      "scaler": "minmax",
+      "depth": 2,
+      "max_estimators_protection": 10000
+    }
+  ],
+  "seed": 20261014,
+  "selection": "Three origin mean Late505 only",
+  "validation_origins": [
+    "2025-02-15 00:00:00",
+    "2025-02-22 00:00:00",
+    "2025-02-25 00:00:00"
+  ],
+  "unit_rescaling": false,
+  "native_units_retained": true
+}

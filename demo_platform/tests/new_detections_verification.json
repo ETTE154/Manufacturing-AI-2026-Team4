@@ -1,0 +1,154 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "preview_has_no_new_events_despite_old_alarms",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "normal_telemetry_does_not_republish_DB_history",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "first_two_positive_points_are_not_new_detection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "third_point_emits_once_with_onset_and_detected_time",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "sustained_fault_does_not_repeat_every_tick",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "event_has_resolvable_persistent_and_occurrence_IDs",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "no_new_events_in_snapshot",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "legacy_persistent_ID_hash_unchanged",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "different_onset_same_bucket_emits_current_occurrence",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "existing_ack_and_outbox_are_not_reset",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "current_detected_time_differs_from_stored_time",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "ASGI_GET_occurrence_detail_returns_current_interval",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "ASGI_GET_persistent_ID_still_returns_legacy_record",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "new_session_replay_notifies_even_when_DB_insert_is_duplicate",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "same_DB_replay_does_not_add_Slack_job",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "same_session_same_onset_revisit_is_suppressed",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "missing_5second_point_restarts_streak",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "AI_only_and_other_module_rule_notify_independently",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "AI_sustained_frame_is_not_repeated",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "seek_preview_does_not_log_or_notify",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "state_packet_explicitly_has_empty_new_events",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "SSE_reconnect_does_not_replay_last_alert",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "occurrence_lookup_bounded_to256",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "persistent_ID_lookup_survives_occurrence_eviction",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "unknown_detail_still_404",
+      "passed": true,
+      "details": null
+    }
+  ],
+  "external_GPT_or_Slack_calls": 0,
+  "production_server_restart_or_POST": false,
+  "production_DB_used": false,
+  "example_notification": {
+    "id": "04775fde71b6e4205d08",
+    "event_id": "04775fde71b6e4205d08",
+    "detail_event_id": "occ_5b16774fa7e3db92992e13495e62",
+    "occurrence_id": "occ_5b16774fa7e3db92992e13495e62",
+    "session_id": "16810b7b0e0b4685a6de6cfdb9cadcf2",
+    "module_id": "17",
+    "equipment": "17(fixture)",
+    "type": "power_factor_drop",
+    "title": "역률 급감",
+    "first_time": "2025-03-13 19:46:05",
+    "detected_at": "2025-03-13 19:46:15",
+    "received_at": "2026-10-15T01:19:12.640+00:00",
+    "source_kind": "recorded",
+    "status": "unconfirmed_candidate",
+    "alarm_status": "acknowledged",
+    "stored_detected_at": "2025-03-13 19:45:15",
+    "new_persistent_alarm": false,
+    "detail_url": "/api/diagnosis/occ_5b16774fa7e3db92992e13495e62"
+  },
+  "last_checked_occurrences": 256
+}

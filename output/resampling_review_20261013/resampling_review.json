@@ -1,0 +1,132 @@
+{
+  "status": "verified",
+  "source": "E:\\AI work\\AWS_프로젝트\\output\\analysis\\baseline_audit\\complete_hour_module_sum.csv",
+  "source_sha256": "729b149a3e3165dfb339f0386249bfbda0326657f9e722d86da8138db36117de",
+  "source_resolution_hours": 1,
+  "datasets": {
+    "daily": {
+      "file": "E:\\AI work\\AWS_프로젝트\\output\\resampling_review_20261013\\daily_dataset.csv",
+      "frequency": "D",
+      "bucket_count": 150,
+      "complete_periods": 150,
+      "pre_April_complete_periods": 121,
+      "partial_periods": [],
+      "mean_hourly_rate_cv_percent": 0.04606752759016428,
+      "period_energy_cv_percent": 0.0460675275901642,
+      "pre_April_rate_lag1_correlation": 0.013864099100950851,
+      "pre_April_rate_lag7_correlation": 0.0675147748139448,
+      "partial_periods_excluded_from_statistics": true
+    },
+    "weekly": {
+      "file": "E:\\AI work\\AWS_프로젝트\\output\\resampling_review_20261013\\weekly_dataset.csv",
+      "frequency": "W-SUN",
+      "bucket_count": 23,
+      "complete_periods": 21,
+      "pre_April_complete_periods": 17,
+      "partial_periods": [
+        {
+          "period_label": "2024-12-01 00:00:00",
+          "period_start": "2024-11-25 00:00:00",
+          "period_end_exclusive": "2024-12-02 00:00:00",
+          "energy_kwh_provisional": 939354.3609027778,
+          "mean_hourly_energy_kwh_provisional": 39139.76503761574,
+          "observed_hours": 24,
+          "expected_hours": 168,
+          "coverage": 0.14285714285714285,
+          "complete": false,
+          "full_period_available_at": "2024-12-02 00:00:00"
+        },
+        {
+          "period_label": "2025-05-04 00:00:00",
+          "period_start": "2025-04-28 00:00:00",
+          "period_end_exclusive": "2025-05-05 00:00:00",
+          "energy_kwh_provisional": 1878550.350361111,
+          "mean_hourly_energy_kwh_provisional": 39136.46563252315,
+          "observed_hours": 48,
+          "expected_hours": 168,
+          "coverage": 0.2857142857142857,
+          "complete": false,
+          "full_period_available_at": "2025-05-05 00:00:00"
+        }
+      ],
+      "mean_hourly_rate_cv_percent": 0.019292962610374016,
+      "period_energy_cv_percent": 0.019292962610373422,
+      "pre_April_rate_lag1_correlation": 0.13103408544524078,
+      "pre_April_rate_lag7_correlation": -0.2153104183830882,
+      "partial_periods_excluded_from_statistics": true
+    },
+    "monthly": {
+      "file": "E:\\AI work\\AWS_프로젝트\\output\\resampling_review_20261013\\monthly_dataset.csv",
+      "frequency": "MS",
+      "bucket_count": 5,
+      "complete_periods": 4,
+      "pre_April_complete_periods": 4,
+      "partial_periods": [
+        {
+          "period_label": "2025-04-01 00:00:00",
+          "period_start": "2025-04-01 00:00:00",
+          "period_end_exclusive": "2025-05-01 00:00:00",
+          "energy_kwh_provisional": 27233172.443,
+          "mean_hourly_energy_kwh_provisional": 39128.12132614943,
+          "observed_hours": 696,
+          "expected_hours": 720,
+          "coverage": 0.9666666666666667,
+          "complete": false,
+          "full_period_available_at": "2025-05-01 00:00:00"
+        }
+      ],
+      "mean_hourly_rate_cv_percent": 0.008158268560368222,
+      "period_energy_cv_percent": 4.953266318057454,
+      "pre_April_rate_lag1_correlation": null,
+      "pre_April_rate_lag7_correlation": null,
+      "partial_periods_excluded_from_statistics": true
+    }
+  },
+  "source_hour_count": 3600,
+  "hourly_rate_cv_percent": 0.24473739259332933,
+  "guide_evaluation": "May10-May31 hourly505 targets; coarser predictions must be mapped to hours using only information available before each origin",
+  "limitations": [
+    "Monthly total differences reflect calendar month lengths as well as load; examine normalized hourly rate.",
+    "Smoothing and lower variation do not establish forecast skill; do not compare MAE across aggregation units.",
+    "No future incomplete day/week/month is used as an observed complete-period feature.",
+    "No forecast model fitted in this resampling feasibility review; existing post-EDA limitations remain."
+  ],
+  "copied_original_files": 0,
+  "copy_failures": 0,
+  "originals_preserved": true,
+  "files": [
+    {
+      "file_id": "552c3b82-a55c-58f9-9733-359aa19d91b1",
+      "project_id": null,
+      "relative_path": "daily_dataset.csv",
+      "bytes": 14523,
+      "sha256": "8810dc8102034ed91dbe10e41ab9f4954933a9525198e981ab628a5a71933a75",
+      "original_path": "E:\\AI work\\AWS_프로젝트\\output\\analysis\\baseline_audit\\complete_hour_module_sum.csv",
+      "copy_status": "new_derived_dataset",
+      "ai_generated": true,
+      "verified": true
+    },
+    {
+      "file_id": "216dd917-79fc-56e3-b7d3-325cf54a83fb",
+      "project_id": null,
+      "relative_path": "weekly_dataset.csv",
+      "bytes": 2465,
+      "sha256": "c57b49ccdaa9e1d653ccd892911930804eed58976446007c962dde56d2daffb4",
+      "original_path": "E:\\AI work\\AWS_프로젝트\\output\\analysis\\baseline_audit\\complete_hour_module_sum.csv",
+      "copy_status": "new_derived_dataset",
+      "ai_generated": true,
+      "verified": true
+    },
+    {
+      "file_id": "6affa832-4290-5464-a404-4d4a31b47aa3",
+      "project_id": null,
+      "relative_path": "monthly_dataset.csv",
+      "bytes": 685,
+      "sha256": "d670468068a7ebadfab2796aef622a4d4d34a5193273daf9f1c8388539d578e9",
+      "original_path": "E:\\AI work\\AWS_프로젝트\\output\\analysis\\baseline_audit\\complete_hour_module_sum.csv",
+      "copy_status": "new_derived_dataset",
+      "ai_generated": true,
+      "verified": true
+    }
+  ]
+}

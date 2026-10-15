@@ -1,0 +1,685 @@
+{
+  "charts": {
+    "hourly_energy_rate": {
+      "title": "시간 H 에너지 및 평균 에너지율",
+      "caption": "1시간 버킷에서는 에너지와 시간당 평균의 수치가 같습니다. 상단0축·하단확대축을 사용했으며 생산 주기나 예측력의 증거가 아닙니다.\n점선=전체3,600시간 가중 평균. 부하 정격에 대한 비율(%) 자료는 제공되지 않았습니다.",
+      "paths": {
+        "png": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\visuals\\figures\\hourly_energy_rate.png",
+        "svg": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\visuals\\figures\\hourly_energy_rate.svg"
+      },
+      "evidence": {
+        "period_count": 3600,
+        "complete_count": 3600,
+        "partial_count": 0,
+        "observed_hours": 3600,
+        "total_energy_kwh": 140865762.32240278,
+        "weighted_rate_kwh_per_hour": 39129.37842288966,
+        "complete_rate_statistics": {
+          "n": 3600,
+          "mean": 39129.37842288966,
+          "std_ddof1": 95.76422049015697,
+          "cv_percent": 0.24473739259332933,
+          "minimum": 38783.49736111111,
+          "maximum": 39443.163319444444
+        },
+        "partial_periods": []
+      },
+      "source_files": [
+        "E:\\AI work\\AWS_프로젝트\\output\\analysis\\baseline_audit\\complete_hour_module_sum.csv",
+        "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\data\\hourly_dataset.csv"
+      ],
+      "interpretation_limits": [
+        "기본 기술통계 시각화이며 예측 모델 학습·검증이 아님",
+        "평균 에너지율 축은 확대됨",
+        "기록된 localtime 기준"
+      ]
+    },
+    "daily_energy_rate": {
+      "title": "일 D 에너지 및 평균 에너지율",
+      "caption": "합계는 관측 길이에 비례합니다. 평균 에너지율은 정격 대비 부하율(%)이 아니며 계측 계층이 미확정된 모듈 합입니다.\n점선=전체3,600시간 가중 평균. 부하 정격에 대한 비율(%) 자료는 제공되지 않았습니다.",
+      "paths": {
+        "png": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\visuals\\figures\\daily_energy_rate.png",
+        "svg": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\visuals\\figures\\daily_energy_rate.svg"
+      },
+      "evidence": {
+        "period_count": 150,
+        "complete_count": 150,
+        "partial_count": 0,
+        "observed_hours": 3600,
+        "total_energy_kwh": 140865762.32240278,
+        "weighted_rate_kwh_per_hour": 39129.37842288966,
+        "complete_rate_statistics": {
+          "n": 150,
+          "mean": 39129.37842288966,
+          "std_ddof1": 18.025937200824487,
+          "cv_percent": 0.04606752759016428,
+          "minimum": 39090.42348553241,
+          "maximum": 39186.79350173611
+        },
+        "partial_periods": []
+      },
+      "source_files": [
+        "E:\\AI work\\AWS_프로젝트\\output\\analysis\\baseline_audit\\complete_hour_module_sum.csv",
+        "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\data\\daily_dataset.csv"
+      ],
+      "interpretation_limits": [
+        "기본 기술통계 시각화이며 예측 모델 학습·검증이 아님",
+        "평균 에너지율 축은 확대됨",
+        "기록된 localtime 기준"
+      ]
+    },
+    "weekly_energy_rate": {
+      "title": "주 W-SUN 에너지 및 평균 에너지율",
+      "caption": "합계는 관측 길이에 비례합니다. 평균 에너지율은 정격 대비 부하율(%)이 아니며 계측 계층이 미확정된 모듈 합입니다.\n점선=전체3,600시간 가중 평균. 부하 정격에 대한 비율(%) 자료는 제공되지 않았습니다.",
+      "paths": {
+        "png": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\visuals\\figures\\weekly_energy_rate.png",
+        "svg": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\visuals\\figures\\weekly_energy_rate.svg"
+      },
+      "evidence": {
+        "period_count": 23,
+        "complete_count": 21,
+        "partial_count": 2,
+        "observed_hours": 3600,
+        "total_energy_kwh": 140865762.32240278,
+        "weighted_rate_kwh_per_hour": 39129.37842288966,
+        "complete_rate_statistics": {
+          "n": 21,
+          "mean": 39129.211341025766,
+          "std_ddof1": 7.54918411375833,
+          "cv_percent": 0.019292962610374016,
+          "minimum": 39118.32178984788,
+          "maximum": 39141.85171312831
+        },
+        "partial_periods": [
+          {
+            "period_start": "2024-11-25 00:00:00",
+            "period_end_exclusive": "2024-12-02 00:00:00",
+            "first_observed": "2024-12-01 00:00:00",
+            "last_observed": "2024-12-01 23:00:00",
+            "observed_hours": 24,
+            "expected_hours": 168,
+            "coverage": 0.14285714285714285,
+            "energy_kwh": 939354.3609027778,
+            "rate_kwh_per_hour": 39139.76503761574
+          },
+          {
+            "period_start": "2025-04-28 00:00:00",
+            "period_end_exclusive": "2025-05-05 00:00:00",
+            "first_observed": "2025-04-28 00:00:00",
+            "last_observed": "2025-04-29 23:00:00",
+            "observed_hours": 48,
+            "expected_hours": 168,
+            "coverage": 0.2857142857142857,
+            "energy_kwh": 1878550.350361111,
+            "rate_kwh_per_hour": 39136.46563252315
+          }
+        ]
+      },
+      "source_files": [
+        "E:\\AI work\\AWS_프로젝트\\output\\analysis\\baseline_audit\\complete_hour_module_sum.csv",
+        "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\data\\weekly_dataset.csv"
+      ],
+      "interpretation_limits": [
+        "기본 기술통계 시각화이며 예측 모델 학습·검증이 아님",
+        "평균 에너지율 축은 확대됨",
+        "기록된 localtime 기준"
+      ]
+    },
+    "monthly_energy_rate": {
+      "title": "월 MS 에너지 및 평균 에너지율",
+      "caption": "2월28일과31일 월의 합계 차이는 주로 달 길이 효과입니다. 4월은29/30일 부분 월이며 남은24시간을 보간하지 않았습니다.\n점선=전체3,600시간 가중 평균. 부하 정격에 대한 비율(%) 자료는 제공되지 않았습니다.",
+      "paths": {
+        "png": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\visuals\\figures\\monthly_energy_rate.png",
+        "svg": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\visuals\\figures\\monthly_energy_rate.svg"
+      },
+      "evidence": {
+        "period_count": 5,
+        "complete_count": 4,
+        "partial_count": 1,
+        "observed_hours": 3600,
+        "total_energy_kwh": 140865762.32240278,
+        "weighted_rate_kwh_per_hour": 39129.37842288966,
+        "complete_rate_statistics": {
+          "n": 4,
+          "mean": 39129.76278364449,
+          "std_ddof1": 3.1923111349247333,
+          "cv_percent": 0.008158268560368222,
+          "minimum": 39125.423743111554,
+          "maximum": 39133.113398933536
+        },
+        "partial_periods": [
+          {
+            "period_start": "2025-04-01 00:00:00",
+            "period_end_exclusive": "2025-05-01 00:00:00",
+            "first_observed": "2025-04-01 00:00:00",
+            "last_observed": "2025-04-29 23:00:00",
+            "observed_hours": 696,
+            "expected_hours": 720,
+            "coverage": 0.9666666666666667,
+            "energy_kwh": 27233172.443,
+            "rate_kwh_per_hour": 39128.12132614943
+          }
+        ]
+      },
+      "source_files": [
+        "E:\\AI work\\AWS_프로젝트\\output\\analysis\\baseline_audit\\complete_hour_module_sum.csv",
+        "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\data\\monthly_dataset.csv"
+      ],
+      "interpretation_limits": [
+        "기본 기술통계 시각화이며 예측 모델 학습·검증이 아님",
+        "평균 에너지율 축은 확대됨",
+        "기록된 localtime 기준"
+      ]
+    },
+    "hourly_72h": {
+      "title": "첫72시간 확대",
+      "caption": "실제 연속 완전 시간 집계72개를 표시했습니다. 보간·이동평균·비연속 센서 표본 연결을 하지 않았습니다.",
+      "paths": {
+        "png": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\visuals\\figures\\hourly_72h.png",
+        "svg": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\visuals\\figures\\hourly_72h.svg"
+      },
+      "evidence": {
+        "hours": 72,
+        "first": "2024-12-01 00:00:00",
+        "last": "2024-12-03 23:00:00",
+        "statistics": {
+          "n": 72,
+          "mean": 39136.082272762345,
+          "std_ddof1": 79.85165648814964,
+          "cv_percent": 0.20403589692912166,
+          "minimum": 38934.01051388889,
+          "maximum": 39339.51116666666
+        }
+      },
+      "source_files": [
+        "E:\\AI work\\AWS_프로젝트\\output\\analysis\\baseline_audit\\complete_hour_module_sum.csv",
+        "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\data\\hourly_dataset.csv"
+      ],
+      "interpretation_limits": [
+        "구간은 첫72시간으로 사전 고정한 예시이며 전 기간 대표 주기를 증명하지 않음"
+      ]
+    },
+    "weekday_hour_pattern": {
+      "title": "요일·시간대 평균과 셀 관측 수",
+      "caption": "셀 n은 서로 다른 날짜의 시간 집계 수입니다. 작은 탐색적 평균 차이를 안정된 생산 주기·절감 가능성·예측력으로 해석하지 않습니다.",
+      "paths": {
+        "png": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\visuals\\figures\\weekday_hour_pattern.png",
+        "svg": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\visuals\\figures\\weekday_hour_pattern.svg"
+      },
+      "evidence": {
+        "cell_count": 168,
+        "cell_observation_n_min": 21,
+        "cell_observation_n_max": 22,
+        "mean_cell_observation_n": 21.428571428571427,
+        "relative_min_percent": -0.12187298748013164,
+        "relative_max_percent": 0.19533392183945786,
+        "color_scale_absolute_limit_percent": 0.19533392183945786,
+        "cell_data": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\visuals\\weekday_hour_cells.json"
+      },
+      "source_files": [
+        "E:\\AI work\\AWS_프로젝트\\output\\analysis\\baseline_audit\\complete_hour_module_sum.csv"
+      ],
+      "interpretation_limits": [
+        "학습을 통한 미래 패턴이 아니라 전 관측 기간의 기술통계",
+        "요일·시간 셀 평균 차이에 대한 유의성 검정 미실시"
+      ]
+    },
+    "module_energy_distribution": {
+      "title": "모듈 시간 에너지 분포",
+      "caption": "상자=25~75분위, 선=중앙값, 수염=1.5 IQR 범위. 개별 이상점은 생략했습니다. 계측 계층이 미확정되어 공장 총량으로 단정하지 않습니다.",
+      "paths": {
+        "png": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\visuals\\figures\\module_energy_distribution.png",
+        "svg": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\visuals\\figures\\module_energy_distribution.svg"
+      },
+      "evidence": {
+        "module_count": 13,
+        "complete_rows": 46800,
+        "modules": [
+          {
+            "module": "1(PM-3)",
+            "count_complete_hours": 3600,
+            "total_energy_kwh": 10837487.172263889,
+            "n": 3600,
+            "mean": 3010.413103406636,
+            "std_ddof1": 26.628391386293174,
+            "cv_percent": 0.8845427677736328,
+            "minimum": 2924.088638888889,
+            "maximum": 3106.273152777778,
+            "q25": 2992.4752638888885,
+            "median": 3009.999965277778,
+            "q75": 3028.2408055555557
+          },
+          {
+            "module": "2(L-1전등)",
+            "count_complete_hours": 3600,
+            "total_energy_kwh": 10835691.951194443,
+            "n": 3600,
+            "mean": 3009.914430887345,
+            "std_ddof1": 26.86885870972398,
+            "cv_percent": 0.8926784905909382,
+            "minimum": 2899.727597222223,
+            "maximum": 3113.613527777778,
+            "q25": 2991.8740451388885,
+            "median": 3010.200659722222,
+            "q75": 3028.011295138889
+          },
+          {
+            "module": "3(분쇄기(2))",
+            "count_complete_hours": 3600,
+            "total_energy_kwh": 10834450.50276389,
+            "n": 3600,
+            "mean": 3009.5695841010806,
+            "std_ddof1": 26.61044824542579,
+            "cv_percent": 0.8841944836897329,
+            "minimum": 2918.125166666667,
+            "maximum": 3102.1793611111116,
+            "q25": 2990.948659722222,
+            "median": 3009.5049027777777,
+            "q75": 3027.9111562499997
+          },
+          {
+            "module": "4(분쇄기(1))",
+            "count_complete_hours": 3600,
+            "total_energy_kwh": 10838627.205375,
+            "n": 3600,
+            "mean": 3010.7297792708337,
+            "std_ddof1": 26.744601634489044,
+            "cv_percent": 0.8883095991751973,
+            "minimum": 2915.7137777777775,
+            "maximum": 3100.415333333333,
+            "q25": 2992.6544756944445,
+            "median": 3011.446472222222,
+            "q75": 3029.0674756944445
+          },
+          {
+            "module": "5(좌측분전반)",
+            "count_complete_hours": 3600,
+            "total_energy_kwh": 10836936.655930556,
+            "n": 3600,
+            "mean": 3010.2601822029324,
+            "std_ddof1": 26.836330783099573,
+            "cv_percent": 0.8914953910548865,
+            "minimum": 2915.3713055555554,
+            "maximum": 3101.428888888889,
+            "q25": 2991.771076388889,
+            "median": 3010.7617291666666,
+            "q75": 3028.9987812500003
+          },
+          {
+            "module": "11(우측분전반1)",
+            "count_complete_hours": 3600,
+            "total_energy_kwh": 10835682.55886111,
+            "n": 3600,
+            "mean": 3009.911821905864,
+            "std_ddof1": 27.017854877877106,
+            "cv_percent": 0.8976294481866086,
+            "minimum": 2893.2547916666667,
+            "maximum": 3111.315902777778,
+            "q25": 2991.9123784722224,
+            "median": 3010.146076388889,
+            "q75": 3028.4166562499995
+          },
+          {
+            "module": "12(4호기)",
+            "count_complete_hours": 3600,
+            "total_energy_kwh": 10836116.768569443,
+            "n": 3600,
+            "mean": 3010.0324357137342,
+            "std_ddof1": 26.688160945464602,
+            "cv_percent": 0.8866403108754657,
+            "minimum": 2918.9185277777774,
+            "maximum": 3088.380333333333,
+            "q25": 2992.6105625,
+            "median": 3010.134041666667,
+            "q75": 3028.073784722222
+          },
+          {
+            "module": "13(3호기)",
+            "count_complete_hours": 3600,
+            "total_energy_kwh": 10831259.717472222,
+            "n": 3600,
+            "mean": 3008.683254853395,
+            "std_ddof1": 26.89204059636486,
+            "cv_percent": 0.8938142808148556,
+            "minimum": 2914.6408055555553,
+            "maximum": 3099.8518888888884,
+            "q25": 2990.2025416666665,
+            "median": 3008.8844375,
+            "q75": 3027.1070729166668
+          },
+          {
+            "module": "14(2호기)",
+            "count_complete_hours": 3600,
+            "total_energy_kwh": 10834920.519791666,
+            "n": 3600,
+            "mean": 3009.700144386574,
+            "std_ddof1": 26.705499880207263,
+            "cv_percent": 0.8873143037194584,
+            "minimum": 2909.0528055555556,
+            "maximum": 3090.4019444444443,
+            "q25": 2991.492871527778,
+            "median": 3009.7567569444445,
+            "q75": 3028.044833333333
+          },
+          {
+            "module": "15(예비건조기)",
+            "count_complete_hours": 3600,
+            "total_energy_kwh": 10837473.490944445,
+            "n": 3600,
+            "mean": 3010.4093030401236,
+            "std_ddof1": 26.330297711121688,
+            "cv_percent": 0.8746417865680756,
+            "minimum": 2927.2858333333334,
+            "maximum": 3103.468888888889,
+            "q25": 2992.3949027777776,
+            "median": 3010.8270069444447,
+            "q75": 3028.0982916666667
+          },
+          {
+            "module": "16(호이스트)",
+            "count_complete_hours": 3600,
+            "total_energy_kwh": 10835153.817916667,
+            "n": 3600,
+            "mean": 3009.7649494212965,
+            "std_ddof1": 27.489862792733216,
+            "cv_percent": 0.9133558020209798,
+            "minimum": 2906.596833333333,
+            "maximum": 3102.9933194444443,
+            "q25": 2990.5649236111117,
+            "median": 3009.601131944444,
+            "q75": 3028.3670729166665
+          },
+          {
+            "module": "17(6호기)",
+            "count_complete_hours": 3600,
+            "total_energy_kwh": 10835794.422166668,
+            "n": 3600,
+            "mean": 3009.9428950462966,
+            "std_ddof1": 26.621842437373697,
+            "cv_percent": 0.8844633724177089,
+            "minimum": 2919.0731527777775,
+            "maximum": 3117.156152777778,
+            "q25": 2991.9086631944447,
+            "median": 3009.9539999999997,
+            "q75": 3027.9666701388887
+          },
+          {
+            "module": "18(우측분전반2)",
+            "count_complete_hours": 3600,
+            "total_energy_kwh": 10836167.539152779,
+            "n": 3600,
+            "mean": 3010.0465386535498,
+            "std_ddof1": 26.57947816592664,
+            "cv_percent": 0.8830254889619129,
+            "minimum": 2915.613763888889,
+            "maximum": 3111.9230555555555,
+            "q25": 2992.2623541666667,
+            "median": 3009.8325972222224,
+            "q75": 3028.1115138888886
+          }
+        ]
+      },
+      "source_files": [
+        "E:\\AI work\\AWS_프로젝트\\output\\analysis\\hourly_by_equipment.csv"
+      ],
+      "interpretation_limits": [
+        "분포의 비슷함은 센서 동일성·설비 효율의 증명이 아님",
+        "고장 라벨을 사용하지 않은 기술통계"
+      ]
+    },
+    "module_energy_comparison": {
+      "title": "모듈 누적·평균 에너지 비교",
+      "caption": "평균 최고-최저 차이는 2.047 kWh (0.0680%)입니다. 이를 실제 설비별 생산성·전력 절감 우선순위로 해석하지 않습니다.",
+      "paths": {
+        "png": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\visuals\\figures\\module_energy_comparison.png",
+        "svg": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\visuals\\figures\\module_energy_comparison.svg"
+      },
+      "evidence": {
+        "module_means_kwh": {
+          "1(PM-3)": 3010.413103406636,
+          "2(L-1전등)": 3009.914430887345,
+          "3(분쇄기(2))": 3009.5695841010806,
+          "4(분쇄기(1))": 3010.7297792708337,
+          "5(좌측분전반)": 3010.2601822029324,
+          "11(우측분전반1)": 3009.911821905864,
+          "12(4호기)": 3010.0324357137342,
+          "13(3호기)": 3008.683254853395,
+          "14(2호기)": 3009.700144386574,
+          "15(예비건조기)": 3010.4093030401236,
+          "16(호이스트)": 3009.7649494212965,
+          "17(6호기)": 3009.9428950462966,
+          "18(우측분전반2)": 3010.0465386535498
+        },
+        "module_totals_kwh": {
+          "1(PM-3)": 10837487.172263889,
+          "2(L-1전등)": 10835691.951194443,
+          "3(분쇄기(2))": 10834450.50276389,
+          "4(분쇄기(1))": 10838627.205375,
+          "5(좌측분전반)": 10836936.655930556,
+          "11(우측분전반1)": 10835682.55886111,
+          "12(4호기)": 10836116.768569443,
+          "13(3호기)": 10831259.717472222,
+          "14(2호기)": 10834920.519791666,
+          "15(예비건조기)": 10837473.490944445,
+          "16(호이스트)": 10835153.817916667,
+          "17(6호기)": 10835794.422166668,
+          "18(우측분전반2)": 10836167.539152779
+        },
+        "mean_high_low_range_kwh": 2.0465244174388317,
+        "relative_range_percent": 0.06799192447979621,
+        "total_complete_module_sum_kwh": 140865762.32240278,
+        "raw_summary_power_mean_kw": {
+          "1(PM-3)": 3010.4136327262217,
+          "2(L-1전등)": 3009.91479864784,
+          "3(분쇄기(2))": 3009.570050995351,
+          "4(분쇄기(1))": 3010.7293876275508,
+          "5(좌측분전반)": 3010.259966473778,
+          "11(우측분전반1)": 3009.9117022832934,
+          "12(4호기)": 3010.032706796795,
+          "13(3호기)": 3008.683028393893,
+          "14(2호기)": 3009.7004718979665,
+          "15(예비건조기)": 3010.4086321494474,
+          "16(호이스트)": 3009.765151865296,
+          "17(6호기)": 3009.94237069353,
+          "18(우측분전반2)": 3010.046482952745
+        },
+        "raw_summary_endpoint_note": "equipment_summary includes one additional5s observation/module at April30 00; chart uses complete3600h only"
+      },
+      "source_files": [
+        "E:\\AI work\\AWS_프로젝트\\output\\analysis\\hourly_by_equipment.csv",
+        "E:\\AI work\\AWS_프로젝트\\output\\analysis\\equipment_summary.csv"
+      ],
+      "interpretation_limits": [
+        "누적합에 원본 마지막 부분 시간13레코드를 포함하지 않음",
+        "모듈 합은 계층 미확인으로 중복 가능"
+      ]
+    },
+    "resolution_variability": {
+      "title": "리샘플링과 평균 변동 감소",
+      "caption": "집계가 커지면 평균의 변동이 작아집니다. 예측 성능 향상이 자동으로 따라오지는 않으며 월의 완전 표본은4개뿐입니다.",
+      "paths": {
+        "png": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\visuals\\figures\\resolution_variability.png",
+        "svg": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\visuals\\figures\\resolution_variability.svg"
+      },
+      "evidence": {
+        "hourly": {
+          "complete_period_n": 3600,
+          "std_ddof1_kwh_per_hour": 95.76422049015697,
+          "mean_unweighted_period_rate": 39129.37842288966,
+          "cv_percent": 0.24473739259332933
+        },
+        "daily": {
+          "complete_period_n": 150,
+          "std_ddof1_kwh_per_hour": 18.025937200824487,
+          "mean_unweighted_period_rate": 39129.37842288966,
+          "cv_percent": 0.04606752759016428
+        },
+        "weekly": {
+          "complete_period_n": 21,
+          "std_ddof1_kwh_per_hour": 7.54918411375833,
+          "mean_unweighted_period_rate": 39129.211341025766,
+          "cv_percent": 0.019292962610374016
+        },
+        "monthly": {
+          "complete_period_n": 4,
+          "std_ddof1_kwh_per_hour": 3.1923111349247333,
+          "mean_unweighted_period_rate": 39129.76278364449,
+          "cv_percent": 0.008158268560368222
+        }
+      },
+      "source_files": [
+        "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\data\\hourly_dataset.csv",
+        "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\data\\daily_dataset.csv",
+        "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\data\\weekly_dataset.csv",
+        "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\data\\monthly_dataset.csv"
+      ],
+      "interpretation_limits": [
+        "부분 주·부분 월은 통계에서 제외됨",
+        "해상도별 관측 포함 구간과 표본 수가 달라 동일한 독립 표본 실험이 아님",
+        "집계가 원시 센서 이상을 제거하거나 미래 변동을 학습했다는 의미가 아님"
+      ]
+    },
+    "sensor_distribution_correlation": {
+      "title": "균등 센서 표본의 분포·동시 상관",
+      "caption": "모듈×완전시간마다 무작위4개를 추출한 표본입니다. 비연속 표본을 선으로 연결하지 않았고, 동시 상관을 미래 예측·고장 인과성으로 해석하지 않습니다.",
+      "paths": {
+        "png": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\visuals\\figures\\sensor_distribution_correlation.png",
+        "svg": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\visuals\\figures\\sensor_distribution_correlation.svg"
+      },
+      "evidence": {
+        "rows": 187200,
+        "seed": 20261011,
+        "sampling": "Each module x complete localtime hour: four unique 5-second slots selected uniformly without replacement with deterministic stratum seed; no candidate oversampling",
+        "complete_module_hour_strata": 46800,
+        "per_stratum_unique_slots": 4,
+        "per_full_hour_inclusion_probability": 0.005555555555555556,
+        "first": "2024-12-01 00:01:00",
+        "last": "2025-04-29 23:57:25",
+        "candidate_oversampling": false,
+        "sample_min_voltage_lt205": 60,
+        "sample_min_pf_lt80": 293,
+        "correlation_power_current_sum": 0.9993645162964406,
+        "sensor_statistics": {
+          "전력": {
+            "n": 187200,
+            "mean": 3008.0875692841882,
+            "std_ddof1": 717.3185660148542,
+            "cv_percent": 23.84633257819516,
+            "minimum": 921.16,
+            "maximum": 5197.6
+          },
+          "전류합": {
+            "n": 187200,
+            "mean": 52.467204861111114,
+            "std_ddof1": 12.502299699532495,
+            "cv_percent": 23.828789303009444,
+            "minimum": 15.9,
+            "maximum": 89.67
+          },
+          "역률최솟값": {
+            "n": 187200,
+            "mean": 88.70640058760684,
+            "std_ddof1": 3.011270002050772,
+            "cv_percent": 3.3946479420916513,
+            "minimum": 60.02,
+            "maximum": 99.74
+          },
+          "전압최솟값": {
+            "n": 187200,
+            "mean": 212.49873595085472,
+            "std_ddof1": 1.9622987392096565,
+            "cv_percent": 0.9234401938576631,
+            "minimum": 190.63,
+            "maximum": 219.85
+          },
+          "무효전력": {
+            "n": 187200,
+            "mean": 601.2273055021368,
+            "std_ddof1": 229.10544039647033,
+            "cv_percent": 38.10629329370272,
+            "minimum": 106.21,
+            "maximum": 1492.56
+          },
+          "평균역률": {
+            "n": 187200,
+            "mean": 92.45673214031339,
+            "std_ddof1": 2.6340613276360303,
+            "cv_percent": 2.8489665021239867,
+            "minimum": 61.39666666666667,
+            "maximum": 99.88
+          }
+        },
+        "correlations": {
+          "전력": {
+            "전력": 1.0,
+            "전류합": 0.9993645162964406,
+            "역률최솟값": -0.0011178753793936826,
+            "전압최솟값": 0.02854102516015317,
+            "무효전력": 0.6262323132241165,
+            "평균역률": -0.0011395676909812579
+          },
+          "전류합": {
+            "전력": 0.9993645162964406,
+            "전류합": 1.0,
+            "역률최솟값": -0.0010992713892296884,
+            "전압최솟값": 0.0028191665239963052,
+            "무효전력": 0.6257498763081766,
+            "평균역률": -0.0010617324182488474
+          },
+          "역률최솟값": {
+            "전력": -0.0011178753793936826,
+            "전류합": -0.0010992713892296884,
+            "역률최솟값": 1.0,
+            "전압최솟값": -0.0016359983852773407,
+            "무효전력": 0.00048291884210062647,
+            "평균역률": 0.79142001834504
+          },
+          "전압최솟값": {
+            "전력": 0.02854102516015317,
+            "전류합": 0.0028191665239963052,
+            "역률최솟값": -0.0016359983852773407,
+            "전압최솟값": 1.0,
+            "무효전력": 0.020054319505331895,
+            "평균역률": -0.0026853529214983856
+          },
+          "무효전력": {
+            "전력": 0.6262323132241165,
+            "전류합": 0.6257498763081766,
+            "역률최솟값": 0.00048291884210062647,
+            "전압최솟값": 0.020054319505331895,
+            "무효전력": 1.0,
+            "평균역률": 0.0001270771248011656
+          },
+          "평균역률": {
+            "전력": -0.0011395676909812579,
+            "전류합": -0.0010617324182488474,
+            "역률최솟값": 0.79142001834504,
+            "전압최솟값": -0.0026853529214983856,
+            "무효전력": 0.0001270771248011656,
+            "평균역률": 1.0
+          }
+        },
+        "scatter_plot_points": 3000
+      },
+      "source_files": [
+        "E:\\AI work\\AWS_프로젝트\\output\\modeling\\diagnosis\\uniform_raw_sample.csv.gz",
+        "E:\\AI work\\AWS_프로젝트\\output\\modeling\\diagnosis\\sample_summary.json"
+      ],
+      "interpretation_limits": [
+        "표본 비율·탐색 임계값은 실제 고장률/고장 정답이 아님",
+        "현재 전류와 현재 전력의 상관은 미래 전력 예측 특성이 아님",
+        "역률·전압 기준은 기존 전기 품질 탐색 기준이며 확정 고장 판단이 아님",
+        "히스토그램·상관은187200 표본, 산점도만3000개를 표시"
+      ]
+    }
+  },
+  "figure_count": 10,
+  "image_formats": [
+    "png",
+    "svg"
+  ],
+  "language": "Korean",
+  "font": "Malgun Gothic",
+  "analysis_role": "Descriptive EDA; no forecast learning/training",
+  "May_overlay": "Not used; no May-label file opened"
+}

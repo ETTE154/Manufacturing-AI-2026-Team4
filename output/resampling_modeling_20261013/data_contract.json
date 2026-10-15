@@ -1,0 +1,77 @@
+{
+  "target_source": "E:\\AI work\\AWS_프로젝트\\output\\analysis\\baseline_audit\\complete_hour_module_sum.csv",
+  "target_sha256": "729b149a3e3165dfb339f0386249bfbda0326657f9e722d86da8138db36117de",
+  "hour_count": 3600,
+  "step_hours": 1,
+  "forecast_points": 745,
+  "offsets": "0..744",
+  "leads_from_last_observation": "1..745",
+  "selection_offsets": "240..744",
+  "selection_points_per_origin": 505,
+  "selection_objective": "Mean3-origin Late505 MAE; no internal-test/May tuning",
+  "validation_origins": [
+    "2025-02-15 00:00:00",
+    "2025-02-22 00:00:00",
+    "2025-02-25 00:00:00"
+  ],
+  "validation_target_end": "2025-03-28 00:00:00",
+  "validation_path_observations": 2235,
+  "validation_path_unique_hours": 985,
+  "validation_late_observations": 1515,
+  "validation_late_unique_hours": 745,
+  "validation_repeated_late_labels": 770,
+  "validation_independence_limit": "Three overlapping fixed-origin paths are not three independent samples; repeated future labels must not inflate reliability claims.",
+  "internal_origin": "2025-03-29 00:00:00",
+  "internal_end": "2025-04-29 00:00:00",
+  "validation_internal_label_overlap_hours": 0,
+  "all_selection_labels_available_before_internal_origin": true,
+  "final_origin": "2025-04-30 00:00:00",
+  "final_end": "2025-05-31 00:00:00",
+  "final_evaluation_start": "2025-05-10 00:00:00",
+  "final_label_read_policy": "No May CSV is read by common/data/model development; parent evaluates after locks",
+  "rejected_design_note": "Initial lastvalidationoriginFeb28 was rejected before scoring because its labels reachedMarch31 and overlappedMar29 internal test49hours; final lastoriginFeb25 fixes label overlap and selection-time availability.",
+  "period_training_filter": "Reaggregate actual prefix; complete and available_at<=origin. WeeklySunday label is not its availability, which is Monday00; monthlynextMonth00.",
+  "monthly_limit": "Only2 full monthly periods at each validation origin and4 at final; monthly methods are explicit statistical baselines, not trained high-capacity SOTA.",
+  "unit_limit": "13-meter provisional guide kWh sum; unknown hierarchy/unit/circuit scope. Rate normalization separates calendar length from load.",
+  "post_EDA_limit": "Earlier April/May EDA occurred; this is a controlled subsequent experiment, not a pristine prospective evaluation.",
+  "data": [
+    {
+      "frequency": "H",
+      "all_periods": 3600,
+      "complete_periods": 3600,
+      "first_validation_complete_periods": 1824
+    },
+    {
+      "frequency": "D",
+      "all_periods": 150,
+      "complete_periods": 150,
+      "first_validation_complete_periods": 76
+    },
+    {
+      "frequency": "W-SUN",
+      "all_periods": 23,
+      "complete_periods": 21,
+      "first_validation_complete_periods": 10
+    },
+    {
+      "frequency": "MS",
+      "all_periods": 5,
+      "complete_periods": 4,
+      "first_validation_complete_periods": 2
+    }
+  ],
+  "data_target_column": "energy_kwh",
+  "dataset_period_index": "period_start",
+  "dataset_fields": [
+    "rate_kwh_per_hour",
+    "energy_kwh",
+    "observed_hours",
+    "expected_hours",
+    "coverage",
+    "complete",
+    "available_at"
+  ],
+  "profile_fields": "Fit past completed H observations only. Kinduniform/hour/weekday_hour, alpha[0,1] blend dimensionless weights; no future profile labels.",
+  "allocation": "Full calendar energy=predicted rate*expectedhours; positive profile weights normalized within that entire period. Partial future path is only the requested intersection; no subtraction of realized partial-period energy.",
+  "telemetry_latency_assumption": "Availability assumes calendar bucket completion; unknown additional reporting latency may require operational delay."
+}

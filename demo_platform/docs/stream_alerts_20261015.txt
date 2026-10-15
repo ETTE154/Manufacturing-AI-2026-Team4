@@ -1,0 +1,77 @@
+FactoryLens · 스트리밍 감지 알림과 상세 근거
+작성일: 2026-10-15
+
+사용 방법
+1. 운영현황에서 실제 기록 · 역률 의심 구간을 선택하고 재생합니다.
+2. 17(6호기)의2025-03-13 19:45:05~15 후보가3연속 관측되면 오른쪽 위에
+   '6호기 / 비정상 패턴 / 발생2025-03-13 19:45:05' 알림이 나타납니다.
+3. 알림 본문을 누르면 현재 페이지 위에 센서 변화·탐지 근거 창이 열립니다.
+   역률·전류·유효전력, 규칙·AE·Isolation Forest 점수와 임계값을 비교합니다.
+   탐지 조건과 주요 근거값은 한국어로 요약하고 원문은 접어서 제공합니다.
+4. 알림창을 닫아도 상단 종 모양 알림 센터에서 다시 열 수 있습니다.
+   새 감지는 미읽음으로 표시하고, 읽음 처리와 고장진단의 확인(ACK)은 구분합니다.
+5. 상세의 '감지 전부터 재생'은 별도 동작입니다. 발생 구간 첫점30초 전부터
+   재생하며, 알림을 열기만 했을 때는 현재 스트리밍 시각을 이동하지 않습니다.
+
+표시 원칙
+- 설비명, 고장 유형, 첫 이상 관측의 기록 시각(first_time)을 카드에 표시합니다.
+- 상세 헤더에서 발생 시각과3연속 조건을 만족한 감지 시각(detected_at)을 구분합니다.
+- 원본 재생/증강 시연을 해당 알림의source_kind로 표시합니다.
+- 붉은 점·선·음영은 미확인 이상 후보입니다. 실제 고장 정답이 추가된 것은 아닙니다.
+- 현재 팝업은 최대3개, 알림 센터는 최근50개입니다. 닫은 팝업도 센터에 남습니다.
+- 새로고침 후 저장 알람은 읽은 이력으로 조용히 조회하고 과거 팝업을 재생성하지 않습니다.
+- 미읽음 상태는 현재 브라우저 실행 중 유지합니다. 원본 수집 로그·저장 알람은 SQLite에 보존합니다.
+- 모바일에서 알림 카드·센터·상세 창은 화면 폭에 맞추고, 상세는 내부 스크롤합니다.
+- 상세 창은Escape/닫기/배경 클릭으로 닫고 키보드 포커스가 창 안에서 이동합니다.
+
+API 계약
+SSE /api/stream 의 type='telemetry'에만 최상위 new_detections 배열을 보냅니다.
+connected/state와 bootstrap/과거snapshot.alarms는 신규 팝업의 근거로 사용하지 않습니다.
+
+new_detections 항목:
+  id/event_id: 기존 SQLite 저장 알람 ID. 기존10분 중복 해시를 유지합니다.
+  occurrence_id: 현재세션·모듈·유형·첫 이상 관측의 고유 ID.
+  detail_event_id: 해당 occurrence_id. 현재 발생 구간의 상세 조회·재생에 우선 사용합니다.
+  module_id/equipment/type/title/first_time/detected_at/received_at/source_kind
+  alarm_status/stored_detected_at/new_persistent_alarm/detail_url
+
+GET /api/diagnosis/{detail_event_id}는 현재 발생 구간의 센서와 점수를 반환합니다.
+같은10분 저장 버킷에서 발생 시각이 달라도 기존 알람의 다른 시각으로 연결하지 않습니다.
+현재 발생 상세는 서버 메모리에 최근256개를 보관하며, 저장 ID 직접 조회도 지원합니다.
+서버 재시작 후 페이지를 새로고침하면 저장 ID 이력으로 조회합니다. 발생 상세 캐시는 영구 이력이 아닙니다.
+POST /api/replay {action:'jump_event',event_id:detail_event_id}도 같은 구간을 사용합니다.
+
+중복과 시간 처리
+- 연속3번째5초 관측에서 현재 발생을1회 통지하고 지속 구간에서는 매tick 반복하지 않습니다.
+- 관측 간격이5초보다 벌어지거나 정상으로 돌아오면 연속 조건을 다시 계산합니다.
+- 같은 세션·같은 첫점 재방문과 SSE 중복 전달은 재통지하지 않습니다.
+- 새 재생 세션에서 동일 구간을 다시 감지하면 알림을 표시하되 기존 저장 알람과
+  Slack 대기열은 중복 생성하지 않습니다. 확인 처리된 기존 알람도 재설정하지 않습니다.
+- 프런트엔드는 늦은sequence를 거른 뒤 신규 이벤트를 처리합니다.
+- 상세 요청A→B/닫기 경합은 요청 번호로 구분하여 늦은 응답이 창을 덮지 않게 했습니다.
+
+변경 파일
+frontend/src/App.jsx, styles.css, Notifications.jsx(신규), notifications.js(신규)
+backend/engine.py, app.py, store.py
+예측 모델/임계값과 원본 센서 파일은 변경하지 않았습니다.
+
+검증
+tests/new_detections_verification.json: 격리 서버 집중검증25개 통과.
+tests/notification_contract_verification.json: 프런트 알림 계약14개 통과.
+tests/replay_revision_verification.json: 기존30초 재생/61끝점/증강 기준시각22개 통과.
+프로덕션 Vite 빌드 성공. index-BFfBhh7n.js / index-BepIvJyi.css.
+실제 브라우저 검증 자료는 frontend/qa/stream_alerts_20261015에 보관합니다.
+qa_result.json: 독립 브라우저 핵심검증13개 통과. 원본3연속 감지→알림1건→동일발생
+상세/6개차트·근거/읽음과ACK구분/과거팝업방지/합성구분/375px모바일동작을 확인했습니다.
+브라우저 콘솔 오류·경고0건이며 최종 빌드의 실제 모바일 날짜 표시도 확인했습니다.
+네트워크 강제 단절과 빠른 A/B 연속 클릭 스트레스 검사는 별도로 실행하지 않았습니다.
+recorded_detail_desktop.png: 원본 후보 알림을 클릭한 센서·탐지 근거 상세 창.
+synthetic_alert_mobile.png: 최신 CSS에서 실제375px 모바일 알림 카드.
+마지막 상태는 원본17(6호기) 후보30초 전인2025-03-13 19:44:35,20배속·일시정지입니다.
+대시보드를 새로고침하고 재생하면 알림을 시연할 수 있습니다.
+위 자동 검증 과정의 GPT/Slack 외부 호출은0회입니다.
+
+보존
+revisions/20261015_stream_alerts/backup_manifest.json에 작업 전 소스6개를 복사하고
+크기와SHA-256을 검증했습니다. 사본 생성6개/검증6개/중복 생략0개/실패0개입니다.
+산출물의 기존file_id를 유지해 artifact_inventory.csv를 갱신합니다.

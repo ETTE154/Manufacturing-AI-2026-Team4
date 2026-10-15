@@ -1,0 +1,363 @@
+{
+  "candidate_count": 40,
+  "candidates": [
+    {
+      "model": "xgboost",
+      "group": "H",
+      "n_estimators": 50,
+      "max_depth": 2,
+      "learning_rate": 0.01,
+      "min_child_weight": 100,
+      "reg_lambda": 100.0,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "objective": "reg:absoluteerror",
+      "residual_shrinkage": 0.5
+    },
+    {
+      "model": "xgboost",
+      "group": "H",
+      "n_estimators": 50,
+      "max_depth": 1,
+      "learning_rate": 0.01,
+      "min_child_weight": 5,
+      "reg_lambda": 10.0,
+      "subsample": 1.0,
+      "colsample_bytree": 1.0,
+      "objective": "reg:squarederror",
+      "residual_shrinkage": 0.25
+    },
+    {
+      "model": "xgboost",
+      "group": "H",
+      "n_estimators": 200,
+      "max_depth": 4,
+      "learning_rate": 0.03,
+      "min_child_weight": 50,
+      "reg_lambda": 100.0,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "objective": "reg:squarederror",
+      "residual_shrinkage": 1.0
+    },
+    {
+      "model": "xgboost",
+      "group": "HD",
+      "n_estimators": 50,
+      "max_depth": 2,
+      "learning_rate": 0.01,
+      "min_child_weight": 100,
+      "reg_lambda": 100.0,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "objective": "reg:absoluteerror",
+      "residual_shrinkage": 0.5
+    },
+    {
+      "model": "xgboost",
+      "group": "HD",
+      "n_estimators": 50,
+      "max_depth": 1,
+      "learning_rate": 0.01,
+      "min_child_weight": 5,
+      "reg_lambda": 10.0,
+      "subsample": 1.0,
+      "colsample_bytree": 1.0,
+      "objective": "reg:squarederror",
+      "residual_shrinkage": 0.25
+    },
+    {
+      "model": "xgboost",
+      "group": "HD",
+      "n_estimators": 200,
+      "max_depth": 4,
+      "learning_rate": 0.03,
+      "min_child_weight": 50,
+      "reg_lambda": 100.0,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "objective": "reg:squarederror",
+      "residual_shrinkage": 1.0
+    },
+    {
+      "model": "xgboost",
+      "group": "HDW",
+      "n_estimators": 50,
+      "max_depth": 2,
+      "learning_rate": 0.01,
+      "min_child_weight": 100,
+      "reg_lambda": 100.0,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "objective": "reg:absoluteerror",
+      "residual_shrinkage": 0.5
+    },
+    {
+      "model": "xgboost",
+      "group": "HDW",
+      "n_estimators": 50,
+      "max_depth": 1,
+      "learning_rate": 0.01,
+      "min_child_weight": 5,
+      "reg_lambda": 10.0,
+      "subsample": 1.0,
+      "colsample_bytree": 1.0,
+      "objective": "reg:squarederror",
+      "residual_shrinkage": 0.25
+    },
+    {
+      "model": "xgboost",
+      "group": "HDW",
+      "n_estimators": 200,
+      "max_depth": 4,
+      "learning_rate": 0.03,
+      "min_child_weight": 50,
+      "reg_lambda": 100.0,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "objective": "reg:squarederror",
+      "residual_shrinkage": 1.0
+    },
+    {
+      "model": "xgboost",
+      "group": "HDWM",
+      "n_estimators": 50,
+      "max_depth": 2,
+      "learning_rate": 0.01,
+      "min_child_weight": 100,
+      "reg_lambda": 100.0,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "objective": "reg:absoluteerror",
+      "residual_shrinkage": 0.5
+    },
+    {
+      "model": "xgboost",
+      "group": "HDWM",
+      "n_estimators": 50,
+      "max_depth": 1,
+      "learning_rate": 0.01,
+      "min_child_weight": 5,
+      "reg_lambda": 10.0,
+      "subsample": 1.0,
+      "colsample_bytree": 1.0,
+      "objective": "reg:squarederror",
+      "residual_shrinkage": 0.25
+    },
+    {
+      "model": "xgboost",
+      "group": "HDWM",
+      "n_estimators": 200,
+      "max_depth": 4,
+      "learning_rate": 0.03,
+      "min_child_weight": 50,
+      "reg_lambda": 100.0,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "objective": "reg:squarederror",
+      "residual_shrinkage": 1.0
+    },
+    {
+      "model": "xgboost",
+      "group": "H_previous_history_only",
+      "n_estimators": 50,
+      "max_depth": 2,
+      "learning_rate": 0.01,
+      "min_child_weight": 100,
+      "reg_lambda": 100.0,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "objective": "reg:absoluteerror",
+      "residual_shrinkage": 0.5
+    },
+    {
+      "model": "ridge",
+      "group": "H",
+      "alpha": 100000.0
+    },
+    {
+      "model": "ridge",
+      "group": "HD",
+      "alpha": 100000.0
+    },
+    {
+      "model": "ridge",
+      "group": "HDW",
+      "alpha": 100000.0
+    },
+    {
+      "model": "ridge",
+      "group": "HDWM",
+      "alpha": 100000.0
+    },
+    {
+      "model": "arima",
+      "order": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "model": "arima",
+      "order": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "model": "arima",
+      "order": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "model": "arima",
+      "order": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "model": "arima",
+      "order": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "model": "arima",
+      "order": [
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "model": "arima",
+      "order": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "model": "arima",
+      "order": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "model": "arima",
+      "order": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "model": "arima",
+      "order": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "model": "arima",
+      "order": [
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "model": "arima",
+      "order": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "model": "arima",
+      "order": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "model": "baseline",
+      "kind": "train_mean"
+    },
+    {
+      "model": "baseline",
+      "kind": "train_median"
+    },
+    {
+      "model": "baseline",
+      "kind": "recent_mean",
+      "window": 168
+    },
+    {
+      "model": "baseline",
+      "kind": "recent_mean",
+      "window": 720
+    },
+    {
+      "model": "baseline",
+      "kind": "recent_mean",
+      "window": 1440
+    },
+    {
+      "model": "baseline",
+      "kind": "ema",
+      "window": 168
+    },
+    {
+      "model": "baseline",
+      "kind": "ema",
+      "window": 720
+    },
+    {
+      "model": "baseline",
+      "kind": "ema",
+      "window": 1440
+    },
+    {
+      "model": "baseline",
+      "kind": "calendar_ridge",
+      "alpha": 100000.0
+    },
+    {
+      "model": "baseline",
+      "kind": "weekday_hour_shrink",
+      "shrinkage": 0.5
+    }
+  ],
+  "validation_origins": [
+    "2025-02-15 00:00:00",
+    "2025-02-22 00:00:00",
+    "2025-02-25 00:00:00"
+  ],
+  "criterion": "Mean of three origin late505 MAE values, offsets240..744; full745 is ancillary.",
+  "overlap_limit": "The three validation target spans overlap;1515 scored pairs do not represent1515 independent targets or independent origins.",
+  "group_ablation": [
+    "H",
+    "HD",
+    "HDW",
+    "HDWM"
+  ],
+  "monthly_context_limit": "Only two complete months at each validation origin and four at Apr30; weak support, no monthly model learned.",
+  "future_period_policy": "No future D/W/M actuals. All resolution context is frozen at hourly origin.",
+  "prior_candidate": "Existing validation-selected long XGB exact history-only configuration included; no May-based choice.",
+  "source_policy": "Preserve all prior artifacts; new files only in this hourly folder."
+}

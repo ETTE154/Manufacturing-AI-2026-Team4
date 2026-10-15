@@ -1,0 +1,16 @@
+{
+  "retrieved_at_utc": "2026-10-12T17:09:55.943840+00:00",
+  "requested_url": "http://sahmyook-project.s3-website.ap-northeast-2.amazonaws.com/",
+  "final_url": "http://sahmyook-project.s3-website.ap-northeast-2.amazonaws.com/",
+  "http_status": 200,
+  "headers": {
+    "Content-Type": "text/html",
+    "Content-Length": "15585",
+    "ETag": "\"d7db9bee559f7a06e433eaf56b5e2acb\"",
+    "Last-Modified": "Fri, 09 Oct 2026 23:25:48 GMT"
+  },
+  "html_bytes": 15585,
+  "html_sha256": "d1052f838f58086bca0966fbe86ec759133ee651735e8493eaaee01689448058",
+  "links": [],
+  "script_sources": []
+}

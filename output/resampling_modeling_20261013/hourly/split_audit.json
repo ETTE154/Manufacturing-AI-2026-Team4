@@ -1,0 +1,21 @@
+{
+  "validation_origins": [
+    "2025-02-15 00:00:00",
+    "2025-02-22 00:00:00",
+    "2025-02-25 00:00:00"
+  ],
+  "validation_history_hours": [
+    1824,
+    1992,
+    2064
+  ],
+  "late505_scored_pairs": 1515,
+  "late505_unique_targets": 745,
+  "full745_pairs": 2235,
+  "full745_unique_targets": 985,
+  "late505_vs_internal_overlap": 0,
+  "full745_vs_internal_overlap": 0,
+  "last_validation_label": "2025-03-28 00:00:00",
+  "internal_origin": "2025-03-29 00:00:00",
+  "decision_available_before_internal_origin": true
+}

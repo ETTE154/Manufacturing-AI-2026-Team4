@@ -1,0 +1,34 @@
+{
+  "May_model_specific_plots": {
+    "baseline": {
+      "png": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\forecast\\figures\\may_baseline.png",
+      "svg": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\forecast\\figures\\may_baseline.svg"
+    },
+    "arima": {
+      "png": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\forecast\\figures\\may_arima.png",
+      "svg": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\forecast\\figures\\may_arima.svg"
+    },
+    "ridge": {
+      "png": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\forecast\\figures\\may_ridge.png",
+      "svg": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\forecast\\figures\\may_ridge.svg"
+    },
+    "xgboost": {
+      "png": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\forecast\\figures\\may_xgboost.png",
+      "svg": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\forecast\\figures\\may_xgboost.svg"
+    },
+    "patchtst": {
+      "png": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\forecast\\figures\\may_patchtst.png",
+      "svg": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\forecast\\figures\\may_patchtst.svg"
+    },
+    "itransformer": {
+      "png": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\forecast\\figures\\may_itransformer.png",
+      "svg": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\forecast\\figures\\may_itransformer.svg"
+    },
+    "chronos2": {
+      "png": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\forecast\\figures\\may_chronos2.png",
+      "svg": "E:\\AI work\\AWS_프로젝트\\demo_platform\\analytics\\forecast\\figures\\may_chronos2.svg"
+    }
+  },
+  "selected_model": "itransformer",
+  "May_used_for_tuning": false
+}

@@ -1,0 +1,408 @@
+{
+  "status": "pass",
+  "audited_at_utc": "2026-10-13T02:11:00.244380+00:00",
+  "scope": "Read-only code/log/artifact audit; no fit/epoch/model selection/threshold adjustment or previous file mutations. Only this new JSON is written.",
+  "feature_data_sha256": "1ad0a14f29f7ffad521918817315c95889f82adef7335709ce386fd057b1ba9b",
+  "future_feature_mutation_checks": [
+    {
+      "group": "target_fixed_calendar",
+      "points": 24,
+      "future_poison_diff": 0.0,
+      "full_vs_prefix_diff": 0.0
+    },
+    {
+      "group": "target_fixed_calendar",
+      "points": 745,
+      "future_poison_diff": 0.0,
+      "full_vs_prefix_diff": 0.0
+    },
+    {
+      "group": "target_aligned_calendar",
+      "points": 24,
+      "future_poison_diff": 0.0,
+      "full_vs_prefix_diff": 0.0
+    },
+    {
+      "group": "target_aligned_calendar",
+      "points": 745,
+      "future_poison_diff": 0.0,
+      "full_vs_prefix_diff": 0.0
+    },
+    {
+      "group": "module_aligned_calendar",
+      "points": 24,
+      "future_poison_diff": 0.0,
+      "full_vs_prefix_diff": 0.0
+    },
+    {
+      "group": "module_aligned_calendar",
+      "points": 745,
+      "future_poison_diff": 0.0,
+      "full_vs_prefix_diff": 0.0
+    },
+    {
+      "group": "selected_sensor_calendar",
+      "points": 24,
+      "future_poison_diff": 0.0,
+      "full_vs_prefix_diff": 0.0
+    },
+    {
+      "group": "selected_sensor_calendar",
+      "points": 745,
+      "future_poison_diff": 0.0,
+      "full_vs_prefix_diff": 0.0
+    },
+    {
+      "group": "all_sensor_calendar",
+      "points": 24,
+      "future_poison_diff": 0.0,
+      "full_vs_prefix_diff": 0.0
+    },
+    {
+      "group": "all_sensor_calendar",
+      "points": 745,
+      "future_poison_diff": 0.0,
+      "full_vs_prefix_diff": 0.0
+    }
+  ],
+  "arimax_future24_exog_checks": [
+    {
+      "exog": "calendar",
+      "forecast_points": 24,
+      "strictly_pre_origin_lag24_max_index": 959,
+      "strictly_pre_origin_lag168_max_index": 815
+    },
+    {
+      "exog": "target_history",
+      "forecast_points": 24,
+      "strictly_pre_origin_lag24_max_index": 959,
+      "strictly_pre_origin_lag168_max_index": 815
+    },
+    {
+      "exog": "selected",
+      "forecast_points": 24,
+      "strictly_pre_origin_lag24_max_index": 959,
+      "strictly_pre_origin_lag168_max_index": 815
+    }
+  ],
+  "classical_saved_model_checks": [
+    {
+      "family": "xgboost",
+      "points": 24,
+      "saved_scaler_independent_recompute": null,
+      "saved_context_reload_diff": 0.0,
+      "selected_sensors": []
+    },
+    {
+      "family": "ridge",
+      "points": 24,
+      "saved_scaler_independent_recompute": {
+        "mean_max_absdiff": 0.0,
+        "scale_max_absdiff": 0.0,
+        "training_samples": 13692
+      },
+      "saved_context_reload_diff": 0.0,
+      "selected_sensors": []
+    },
+    {
+      "family": "elasticnet",
+      "points": 24,
+      "saved_scaler_independent_recompute": {
+        "mean_max_absdiff": 0.0,
+        "scale_max_absdiff": 0.0,
+        "training_samples": 13692
+      },
+      "saved_context_reload_diff": 0.0,
+      "selected_sensors": []
+    },
+    {
+      "family": "arimax",
+      "points": 24,
+      "saved_scaler_independent_recompute": {
+        "mean_max_absdiff": 0.0,
+        "scale_max_absdiff": 0.0,
+        "training_samples": 3432
+      },
+      "saved_context_reload_diff": 0.0,
+      "selected_sensors": []
+    },
+    {
+      "family": "baseline",
+      "points": 24,
+      "saved_scaler_independent_recompute": null,
+      "saved_context_reload_diff": 0.0,
+      "selected_sensors": []
+    },
+    {
+      "family": "xgboost",
+      "points": 745,
+      "saved_scaler_independent_recompute": null,
+      "saved_context_reload_diff": 0.0,
+      "selected_sensors": []
+    },
+    {
+      "family": "ridge",
+      "points": 745,
+      "saved_scaler_independent_recompute": {
+        "mean_max_absdiff": 0.0,
+        "scale_max_absdiff": 0.0,
+        "training_samples": 29440
+      },
+      "saved_context_reload_diff": 0.0,
+      "selected_sensors": []
+    }
+  ],
+  "neural_inner_records_checked": 66,
+  "neural_refit_records_checked": 72,
+  "neural_normalizer_recompute_max_absdiff": 0.0,
+  "neural_saved_model_checks": [
+    {
+      "family": "itransformer",
+      "scenario": "dayahead24",
+      "input_feature_count": 14,
+      "target_index": 13,
+      "target_name": "target_energy_kwh",
+      "module_sum_after_channel_inverse_verified": false,
+      "pre_April_schema_end": "2025-03-31 23:00:00",
+      "test_frozen_epochs": 8,
+      "final_history_end": "2025-04-29 23:00:00",
+      "final_context_reload_max_absdiff": 0.0,
+      "owner_reload_evidence": {
+        "validation_origins": 70,
+        "validation_max_absdiff_kwh": 0.0,
+        "test_origins": 29,
+        "test_max_absdiff_kwh": 0.0,
+        "final_max_absdiff_kwh": 0.0,
+        "future_poison_max_absdiff_kwh": 0.0,
+        "tensor_checks": {
+          "output_shape": [
+            1,
+            24,
+            14
+          ],
+          "target_index": 13,
+          "target_name": "target_energy_kwh",
+          "aggregate_output_alignment_verified": true,
+          "global_scaler_inverse_max_error": 0.0,
+          "non_target_module_perturbation_aggregate_max_change_kwh": 2.335927483298292,
+          "other_output_channels_max_change_kwh": 2.335927483298292,
+          "patch_channel_independence_verified": false,
+          "input_only_instance_norm_enabled": false,
+          "per_channel_shift_inverse_max_error_kwh": null
+        }
+      }
+    },
+    {
+      "family": "patchtst",
+      "scenario": "dayahead24",
+      "input_feature_count": 14,
+      "target_index": 13,
+      "target_name": "target_energy_kwh",
+      "module_sum_after_channel_inverse_verified": true,
+      "pre_April_schema_end": "2025-03-31 23:00:00",
+      "test_frozen_epochs": 6,
+      "final_history_end": "2025-04-29 23:00:00",
+      "final_context_reload_max_absdiff": 0.0,
+      "owner_reload_evidence": {
+        "validation_origins": 70,
+        "validation_max_absdiff_kwh": 0.0,
+        "test_origins": 29,
+        "test_max_absdiff_kwh": 0.0,
+        "final_max_absdiff_kwh": 0.0,
+        "future_poison_max_absdiff_kwh": 0.0,
+        "tensor_checks": {
+          "output_shape": [
+            1,
+            24,
+            14
+          ],
+          "target_index": 13,
+          "target_name": "target_energy_kwh",
+          "aggregate_output_alignment_verified": true,
+          "global_scaler_inverse_max_error": 0.0,
+          "non_target_module_perturbation_aggregate_max_change_kwh": 11.02175763676496,
+          "other_output_channels_max_change_kwh": 0.0,
+          "patch_channel_independence_verified": true,
+          "input_only_instance_norm_enabled": false,
+          "per_channel_shift_inverse_max_error_kwh": null
+        }
+      }
+    },
+    {
+      "family": "itransformer",
+      "scenario": "long745",
+      "input_feature_count": 14,
+      "target_index": 13,
+      "target_name": "target_energy_kwh",
+      "module_sum_after_channel_inverse_verified": false,
+      "pre_April_schema_end": "2025-03-28 23:00:00",
+      "test_frozen_epochs": 16,
+      "final_history_end": "2025-04-29 23:00:00",
+      "final_context_reload_max_absdiff": 0.0,
+      "owner_reload_evidence": {
+        "validation_origins": 1,
+        "validation_max_absdiff_kwh": 0.0,
+        "test_origins": 1,
+        "test_max_absdiff_kwh": 0.0,
+        "final_max_absdiff_kwh": 0.0,
+        "future_poison_max_absdiff_kwh": 0.0,
+        "tensor_checks": {
+          "output_shape": [
+            1,
+            745,
+            14
+          ],
+          "target_index": 13,
+          "target_name": "target_energy_kwh",
+          "aggregate_output_alignment_verified": true,
+          "global_scaler_inverse_max_error": 0.0,
+          "non_target_module_perturbation_aggregate_max_change_kwh": 3.5730274055313203,
+          "other_output_channels_max_change_kwh": 3.5730274055313203,
+          "patch_channel_independence_verified": false,
+          "input_only_instance_norm_enabled": false,
+          "per_channel_shift_inverse_max_error_kwh": null
+        }
+      }
+    },
+    {
+      "family": "patchtst",
+      "scenario": "long745",
+      "input_feature_count": 14,
+      "target_index": 13,
+      "target_name": "target_energy_kwh",
+      "module_sum_after_channel_inverse_verified": true,
+      "pre_April_schema_end": "2025-03-28 23:00:00",
+      "test_frozen_epochs": 11,
+      "final_history_end": "2025-04-29 23:00:00",
+      "final_context_reload_max_absdiff": 0.0,
+      "owner_reload_evidence": {
+        "validation_origins": 1,
+        "validation_max_absdiff_kwh": 0.0,
+        "test_origins": 1,
+        "test_max_absdiff_kwh": 0.0,
+        "final_max_absdiff_kwh": 0.0,
+        "future_poison_max_absdiff_kwh": 0.0,
+        "tensor_checks": {
+          "output_shape": [
+            1,
+            745,
+            14
+          ],
+          "target_index": 13,
+          "target_name": "target_energy_kwh",
+          "aggregate_output_alignment_verified": true,
+          "global_scaler_inverse_max_error": 0.0,
+          "non_target_module_perturbation_aggregate_max_change_kwh": 29.123708991566673,
+          "other_output_channels_max_change_kwh": 0.0,
+          "patch_channel_independence_verified": true,
+          "input_only_instance_norm_enabled": false,
+          "per_channel_shift_inverse_max_error_kwh": null
+        }
+      }
+    }
+  ],
+  "instance_norm_False_and_True_independent_tensor_checks": [
+    {
+      "family": "itransformer",
+      "instance_norm": false,
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\itransformer\\checkpoints\\candidate1_fold1.pt",
+      "tensor_checks": {
+        "output_shape": [
+          1,
+          24,
+          14
+        ],
+        "target_index": 13,
+        "target_name": "target_energy_kwh",
+        "aggregate_output_alignment_verified": true,
+        "global_scaler_inverse_max_error": 0.0,
+        "non_target_module_perturbation_aggregate_max_change_kwh": 1.906281787676562,
+        "other_output_channels_max_change_kwh": 1.906281787676562,
+        "patch_channel_independence_verified": false,
+        "input_only_instance_norm_enabled": false,
+        "per_channel_shift_inverse_max_error_kwh": null
+      }
+    },
+    {
+      "family": "itransformer",
+      "instance_norm": true,
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\itransformer\\checkpoints\\candidate2_fold1.pt",
+      "tensor_checks": {
+        "output_shape": [
+          1,
+          24,
+          14
+        ],
+        "target_index": 13,
+        "target_name": "target_energy_kwh",
+        "aggregate_output_alignment_verified": true,
+        "global_scaler_inverse_max_error": 0.0,
+        "non_target_module_perturbation_aggregate_max_change_kwh": 2.472011140853283,
+        "other_output_channels_max_change_kwh": 2.472011140853283,
+        "patch_channel_independence_verified": false,
+        "input_only_instance_norm_enabled": true,
+        "per_channel_shift_inverse_max_error_kwh": 1.5918821119953463e-05
+      }
+    },
+    {
+      "family": "patchtst",
+      "instance_norm": false,
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\patchtst\\checkpoints\\candidate1_fold1.pt",
+      "tensor_checks": {
+        "output_shape": [
+          1,
+          24,
+          14
+        ],
+        "target_index": 13,
+        "target_name": "target_energy_kwh",
+        "aggregate_output_alignment_verified": true,
+        "global_scaler_inverse_max_error": 0.0,
+        "non_target_module_perturbation_aggregate_max_change_kwh": 13.199311596319603,
+        "other_output_channels_max_change_kwh": 0.0,
+        "patch_channel_independence_verified": true,
+        "input_only_instance_norm_enabled": false,
+        "per_channel_shift_inverse_max_error_kwh": null
+      }
+    },
+    {
+      "family": "patchtst",
+      "instance_norm": true,
+      "checkpoint": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\neural\\dayahead24\\patchtst\\checkpoints\\candidate2_fold1.pt",
+      "tensor_checks": {
+        "output_shape": [
+          1,
+          24,
+          14
+        ],
+        "target_index": 13,
+        "target_name": "target_energy_kwh",
+        "aggregate_output_alignment_verified": true,
+        "global_scaler_inverse_max_error": 0.0,
+        "non_target_module_perturbation_aggregate_max_change_kwh": 23.475322364603926,
+        "other_output_channels_max_change_kwh": 0.0,
+        "patch_channel_independence_verified": true,
+        "input_only_instance_norm_enabled": true,
+        "per_channel_shift_inverse_max_error_kwh": 1.87614722761964e-05
+      }
+    }
+  ],
+  "alignment": "Origin is first target hour, offsets0..23 or0..744; last observed hour is origin-1, leads1..24 or1..745. Lag1 feature is the completed prior hour. Classical training labels are filtered to prefix end and neural windows end inside the fitting prefix.",
+  "selection": "Each CV sensor schema uses its training prefix. Neural inner-tail feature selection/scaling uses the shorter inner-fit prefix excluding the holdout. April test choices are frozen in March; final weights/scalers can fit April history, feature schemas and epochs remain frozen.",
+  "arimax_scope": "Coefficients and exog normalization fit once at fold start; past observations update state only. Future24 exog derives from known calendar and target/sensor lag24/168 strictly before origin. No ARIMAX745 model is claimed.",
+  "long_feature_scope": "XGB/Ridge745 use explicit origin-fixed last-day/week phase analogues (mod24/168), not actual future sensor/target readings. Neural long uses fixed past context only.",
+  "architecture_claim": "Pinned official cores compact locally retrained. iTransformer cross-variate inputs supervise explicit aggregate target; PatchTST channel-independent current inference has no sensor-to-module mixing. Sensor channels can affect shared fitted weights as auxiliary training tasks, and13 module predictions are inverse-scaled then summed.",
+  "qualifications": [
+    "Neural day final schema was selected at March31; neural long final schema is conservatively reused from March28, not reselected at March31. Generic planner March31 wording is day-specific.",
+    "Small association or low model-specific importance does not prove intrinsic absence of predictive signal.",
+    "April/May were seen in earlier EDA; this controlled revision is not pristine prospective validation.",
+    "Unknown hierarchy/units and missing real fault labels remain provider-data limitations; no unit correction was made.",
+    "Classical CLI uses a stored fixed720-hour context and is not a general new-history operational pipeline."
+  ],
+  "code_sha256": {
+    "feature_common.py": "1235dd065cfa9b964984840f7e592320425ed1ffa77a012594571060aca8e95d",
+    "classical/retrain_classical.py": "f6b5c4ba9222d0d5cc5ff0bfb18a4b95d5050e965b27a42173efda0d25c8f8e7",
+    "classical/long_context_models.py": "91130390748140298f8af3269c23fe776b88cec63335f0371807f832bab75be2",
+    "neural/neural_revision.py": "f130fc34c335d41ec783ca3837e67fd2837be3899961fffce863f827334895f8"
+  }
+}

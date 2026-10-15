@@ -1,0 +1,55 @@
+발표에서 사용할 문제 정의
+========================
+
+산업 전력 수요 예측은 에너지관리와 다음날 운영 계획에 사용됩니다.
+Alasali 등의 2018년 연구는 산업용 전기 크레인의 시간별 전력 수요를
+1~24시간 앞까지 예측했습니다. 우리는 다음날 수요 계획을 지원하는 목적을
+선택하여, 과거에 관측한 전력량만으로 향후 24시간의 시간별 전력량과
+24시간 뒤 값을 예측하는 모델을 개발하고 시간 순서 검증으로 설정을 최적화했습니다.
+별도로 프로젝트 가이드의 5월 평가를 위해 최대 745시간의 예측 경로를 생성했습니다.
+두 실험은 예측 시점과 평가 목적이 다르므로 결과를 분리해 제시합니다.
+
+1 step은 1시간입니다. t는 마지막 관측 시각입니다.
+업무 예측은 t+1~t+24의 24개 값과 t+24의 단일 값 오차를 각각 보고합니다.
+하루 계획이라는 목적 때문에 24시간을 선택한 것이며, 다른 예측 길이가
+의미 없다는 보편적 주장이 아닙니다.
+
+원문 근거
+---------
+Alasali, F.; Haben, S.; Becerra, V.; Holderbaum, W. (2018).
+Day-ahead industrial load forecasting for electric RTG cranes.
+Journal of Modern Power Systems and Clean Energy 6, 223–234.
+DOI: 10.1007/s40565-018-0394-4
+https://link.springer.com/article/10.1007/s40565-018-0394-4
+Methodology 2에 t+n, n=1,...,24의 시간별 산업 부하 예측을 명시합니다.
+이 연구가 사용한 작업 횟수·컨테이너 중량은 현재 데이터에 없습니다.
+
+Hwang, J. S.; Kim, J.-S.; Song, H. (2022).
+Handling Load Uncertainty during On-Peak Time via Dual ESS and LSTM with Load Data Augmentation.
+Energies 15(9), 3001. DOI: 10.3390/en15093001
+https://pure.seoultech.ac.kr/en/publications/handling-load-uncertainty-during-on-peak-time-via-dual-ess-and-ls/
+day-ahead 예측을 사용한 ESS 일일 일정과 짧은 간격의 피크 대응을 구분한 사례입니다.
+우리 프로젝트에서는 배터리 운영 최적화나 실제 비용 절감까지 실증하지 않았습니다.
+
+Lauricella, M.; Cai, Z.; Fagiano, L. (2020).
+Day-Ahead Building Load Forecasting with a Small dataset.
+IFAC-PapersOnLine 53(2), 13076–13081. DOI: 10.1016/j.ifacol.2020.12.2257
+https://ifatwww.et.uni-magdeburg.de/ifac2020/media/pdfs/3238.pdf
+day-ahead 전력 소비 예측을 에너지 계획·최적화에 사용하는 사례입니다.
+
+발표할 때 구분할 평가
+------------------
+24시간 업무 예측: 연속 관측이 있는 4월에서 매일 과거 이력을 갱신하고,
+그 시점 이후 24시간을 예측합니다. 미래 실측을 입력하거나 모델 선택에 사용하지 않습니다.
+5월 과제 평가: 4월29일23시까지의 이력으로 한 번에 745개를 생성합니다.
+정답이 있는 5월10일00시~31일00시의 505개만 평가합니다.
+5월 원시 설비 관측과 4월30일~5월9일 이력이 없으므로 이 결과를
+매일 실측을 갱신하는 24시간 실증으로 부르지 않습니다.
+
+고장·이상치 설명
+---------------
+원본 삽입 정답은 제공되지 않았습니다. 전압·역률 규칙의 이상 후보와
+우리가 주입한 spike/dip/drift/level shift의 합성 정답은 서로 다릅니다.
+합성 데이터에 대한 탐지 성능은 학습한 이상 형태의 검출 능력을 보여주며
+실제 고장 유형이나 실제 고장 발생 시점의 성능을 입증하지 않습니다.
+이상 후보 기록은 보존하고, 평균이나 rolling median으로 단발 이상을 지우지 않습니다.

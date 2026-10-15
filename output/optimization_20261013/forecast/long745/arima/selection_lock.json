@@ -1,0 +1,411 @@
+{
+  "model": "arima",
+  "scenario": "long745",
+  "selected_config": {
+    "order": [
+      0,
+      0,
+      0
+    ]
+  },
+  "objective": 76.03288894159851,
+  "selected_candidate": 0,
+  "selection_uses_April_test": false,
+  "selection_uses_May_labels": false,
+  "selection_basis": "Single Feb25 P745 blocked validation MAE",
+  "search_records": [
+    {
+      "candidate": 0,
+      "config": {
+        "order": [
+          0,
+          0,
+          0
+        ]
+      },
+      "objective_mae_kwh": 76.03288894159851,
+      "validation": {
+        "path_P745": {
+          "count": 745,
+          "mae_kwh": 76.03288894159851,
+          "rmse_kwh": 96.70571032200458,
+          "mape_percent": 0.1943264757318577,
+          "bias_pred_minus_actual_kwh": -0.15495378961069775,
+          "r2": -2.5674457779789606e-06
+        },
+        "late_P505": {
+          "count": 505,
+          "mae_kwh": 77.42442948559966,
+          "rmse_kwh": 97.65170174952269,
+          "mape_percent": 0.1978560356234399,
+          "bias_pred_minus_actual_kwh": -1.0109087888353117,
+          "r2": -0.00010717928548231725
+        }
+      },
+      "fold_validation": []
+    },
+    {
+      "candidate": 1,
+      "config": {
+        "order": [
+          1,
+          0,
+          0
+        ]
+      },
+      "objective_mae_kwh": 76.03294099925566,
+      "validation": {
+        "path_P745": {
+          "count": 745,
+          "mae_kwh": 76.03294099925566,
+          "rmse_kwh": 96.70580747294497,
+          "mape_percent": 0.1943266094146245,
+          "bias_pred_minus_actual_kwh": -0.15489605535511256,
+          "r2": -4.576659883293033e-06
+        },
+        "late_P505": {
+          "count": 505,
+          "mae_kwh": 77.42442945212751,
+          "rmse_kwh": 97.65170169119365,
+          "mape_percent": 0.19785603556638875,
+          "bias_pred_minus_actual_kwh": -1.010903154355563,
+          "r2": -0.00010717809072002815
+        }
+      },
+      "fold_validation": []
+    },
+    {
+      "candidate": 2,
+      "config": {
+        "order": [
+          2,
+          0,
+          0
+        ]
+      },
+      "objective_mae_kwh": 76.03400670946077,
+      "validation": {
+        "path_P745": {
+          "count": 745,
+          "mae_kwh": 76.03400670946077,
+          "rmse_kwh": 96.7077662512923,
+          "mape_percent": 0.19432934531794183,
+          "bias_pred_minus_actual_kwh": -0.15384201335705286,
+          "r2": -4.508730140173611e-05
+        },
+        "late_P505": {
+          "count": 505,
+          "mae_kwh": 77.42442945238987,
+          "rmse_kwh": 97.65170169165087,
+          "mape_percent": 0.19785603556683595,
+          "bias_pred_minus_actual_kwh": -1.0109031985206258,
+          "r2": -0.00010717810008498141
+        }
+      },
+      "fold_validation": []
+    },
+    {
+      "candidate": 3,
+      "config": {
+        "order": [
+          0,
+          0,
+          1
+        ]
+      },
+      "objective_mae_kwh": 76.03295010071696,
+      "validation": {
+        "path_P745": {
+          "count": 745,
+          "mae_kwh": 76.03295010071696,
+          "rmse_kwh": 96.70582422371919,
+          "mape_percent": 0.19432663278023637,
+          "bias_pred_minus_actual_kwh": -0.15488701828244852,
+          "r2": -4.923088971153788e-06
+        },
+        "late_P505": {
+          "count": 505,
+          "mae_kwh": 77.42442945248207,
+          "rmse_kwh": 97.65170169181151,
+          "mape_percent": 0.19785603556699313,
+          "bias_pred_minus_actual_kwh": -1.0109032140402434,
+          "r2": -0.00010717810337568245
+        }
+      },
+      "fold_validation": []
+    },
+    {
+      "candidate": 4,
+      "config": {
+        "order": [
+          0,
+          0,
+          2
+        ]
+      },
+      "objective_mae_kwh": 76.03387040449157,
+      "validation": {
+        "path_P745": {
+          "count": 745,
+          "mae_kwh": 76.03387040449157,
+          "rmse_kwh": 96.70751819177099,
+          "mape_percent": 0.1943289954314196,
+          "bias_pred_minus_actual_kwh": -0.15396672553165414,
+          "r2": -3.995699186987167e-05
+        },
+        "late_P505": {
+          "count": 505,
+          "mae_kwh": 77.42442945254712,
+          "rmse_kwh": 97.65170169192487,
+          "mape_percent": 0.197856035567104,
+          "bias_pred_minus_actual_kwh": -1.0109032249905596,
+          "r2": -0.00010717810569760289
+        }
+      },
+      "fold_validation": []
+    },
+    {
+      "candidate": 5,
+      "config": {
+        "order": [
+          1,
+          0,
+          1
+        ]
+      },
+      "objective_mae_kwh": 76.03294550047049,
+      "validation": {
+        "path_P745": {
+          "count": 745,
+          "mae_kwh": 76.03294550047049,
+          "rmse_kwh": 96.70581576336596,
+          "mape_percent": 0.19432662097041695,
+          "bias_pred_minus_actual_kwh": -0.15489157331030584,
+          "r2": -4.748117203412505e-06
+        },
+        "late_P505": {
+          "count": 505,
+          "mae_kwh": 77.42442945222213,
+          "rmse_kwh": 97.65170169135853,
+          "mape_percent": 0.19785603556655004,
+          "bias_pred_minus_actual_kwh": -1.0109031702826343,
+          "r2": -0.00010717809409732659
+        }
+      },
+      "fold_validation": []
+    },
+    {
+      "candidate": 6,
+      "config": {
+        "order": [
+          2,
+          0,
+          1
+        ]
+      },
+      "objective_mae_kwh": 76.0339934382804,
+      "validation": {
+        "path_P745": {
+          "count": 745,
+          "mae_kwh": 76.0339934382804,
+          "rmse_kwh": 96.70774036896735,
+          "mape_percent": 0.1943293112394427,
+          "bias_pred_minus_actual_kwh": -0.1538547925032373,
+          "r2": -4.455200854058816e-05
+        },
+        "late_P505": {
+          "count": 505,
+          "mae_kwh": 77.42442945272066,
+          "rmse_kwh": 97.65170169222729,
+          "mape_percent": 0.19785603556739975,
+          "bias_pred_minus_actual_kwh": -1.0109032542035294,
+          "r2": -0.00010717811189198123
+        }
+      },
+      "fold_validation": []
+    },
+    {
+      "candidate": 7,
+      "config": {
+        "order": [
+          1,
+          0,
+          2
+        ]
+      },
+      "objective_mae_kwh": 76.0341934592178,
+      "validation": {
+        "path_P745": {
+          "count": 745,
+          "mae_kwh": 76.0341934592178,
+          "rmse_kwh": 96.70827314303949,
+          "mape_percent": 0.19432982588408812,
+          "bias_pred_minus_actual_kwh": -0.15359789997846318,
+          "r2": -5.5570759963874394e-05
+        },
+        "late_P505": {
+          "count": 505,
+          "mae_kwh": 77.42442945257673,
+          "rmse_kwh": 97.65170169197647,
+          "mape_percent": 0.19785603556715442,
+          "bias_pred_minus_actual_kwh": -1.0109032299745906,
+          "r2": -0.00010717810675453521
+        }
+      },
+      "fold_validation": []
+    },
+    {
+      "candidate": 8,
+      "config": {
+        "order": [
+          0,
+          1,
+          0
+        ]
+      },
+      "objective_mae_kwh": 76.20189435123034,
+      "validation": {
+        "path_P745": {
+          "count": 745,
+          "mae_kwh": 76.20189435123034,
+          "rmse_kwh": 96.9075320386503,
+          "mape_percent": 0.19472812340795378,
+          "bias_pred_minus_actual_kwh": -6.252948713646145,
+          "r2": -0.00418086947997498
+        },
+        "late_P505": {
+          "count": 505,
+          "mae_kwh": 77.56895360286015,
+          "rmse_kwh": 97.90489992843696,
+          "mape_percent": 0.1981945658879567,
+          "bias_pred_minus_actual_kwh": -7.108903712870759,
+          "r2": -0.005300199010668694
+        }
+      },
+      "fold_validation": []
+    },
+    {
+      "candidate": 9,
+      "config": {
+        "order": [
+          1,
+          1,
+          0
+        ]
+      },
+      "objective_mae_kwh": 88.34117516963177,
+      "validation": {
+        "path_P745": {
+          "count": 745,
+          "mae_kwh": 88.34117516963177,
+          "rmse_kwh": 110.08745718103441,
+          "mape_percent": 0.22553349952375706,
+          "bias_pred_minus_actual_kwh": -52.65491498098261,
+          "r2": -0.29590318537687277
+        },
+        "late_P505": {
+          "count": 505,
+          "mae_kwh": 88.91378199229842,
+          "rmse_kwh": 111.33751492448646,
+          "mape_percent": 0.2269652018410248,
+          "bias_pred_minus_actual_kwh": -53.49027305559264,
+          "r2": -0.30007964860725655
+        }
+      },
+      "fold_validation": []
+    },
+    {
+      "candidate": 10,
+      "config": {
+        "order": [
+          0,
+          1,
+          1
+        ]
+      },
+      "objective_mae_kwh": 76.03834849763581,
+      "validation": {
+        "path_P745": {
+          "count": 745,
+          "mae_kwh": 76.03834849763581,
+          "rmse_kwh": 96.72066689616138,
+          "mape_percent": 0.1943496790173927,
+          "bias_pred_minus_actual_kwh": 1.707924656318102,
+          "r2": -0.0003119135869185108
+        },
+        "late_P505": {
+          "count": 505,
+          "mae_kwh": 77.42948222353984,
+          "rmse_kwh": 97.65018571561959,
+          "mape_percent": 0.19787836738716938,
+          "bias_pred_minus_actual_kwh": 0.8519696570934883,
+          "r2": -7.612637818077417e-05
+        }
+      },
+      "fold_validation": []
+    },
+    {
+      "candidate": 11,
+      "config": {
+        "order": [
+          1,
+          1,
+          1
+        ]
+      },
+      "objective_mae_kwh": 76.03907892539014,
+      "validation": {
+        "path_P745": {
+          "count": 745,
+          "mae_kwh": 76.03907892539014,
+          "rmse_kwh": 96.72261664868392,
+          "mape_percent": 0.19435205954634868,
+          "bias_pred_minus_actual_kwh": 1.8113533918094007,
+          "r2": -0.00035224375414566467
+        },
+        "late_P505": {
+          "count": 505,
+          "mae_kwh": 77.43009643471434,
+          "rmse_kwh": 97.65114251407324,
+          "mape_percent": 0.19788045981481484,
+          "bias_pred_minus_actual_kwh": 0.9553618714695602,
+          "r2": -9.57244152366421e-05
+        }
+      },
+      "fold_validation": []
+    },
+    {
+      "candidate": 12,
+      "config": {
+        "order": [
+          2,
+          1,
+          0
+        ]
+      },
+      "objective_mae_kwh": 81.19975170366139,
+      "validation": {
+        "path_P745": {
+          "count": 745,
+          "mae_kwh": 81.19975170366139,
+          "rmse_kwh": 102.250323704552,
+          "mape_percent": 0.2073706233893094,
+          "bias_pred_minus_actual_kwh": -33.14209127920255,
+          "r2": -0.11795998623890847
+        },
+        "late_P505": {
+          "count": 505,
+          "mae_kwh": 82.19401659671723,
+          "rmse_kwh": 103.39853487293644,
+          "mape_percent": 0.20988179696238657,
+          "bias_pred_minus_actual_kwh": -34.006236132090066,
+          "r2": -0.12128414895331274
+        }
+      },
+      "fold_validation": []
+    }
+  ],
+  "seed": 20261013,
+  "configuration_count": 13,
+  "optimization_limit": "Budgeted search; no global optimum guarantee; post-EDA rather than pristine unseen test"
+}

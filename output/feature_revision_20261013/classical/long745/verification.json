@@ -1,0 +1,57 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "model": "xgboost",
+      "split": "validation",
+      "points": 745,
+      "metric_max_absdiff": 0
+    },
+    {
+      "model": "xgboost",
+      "split": "test",
+      "points": 745,
+      "metric_max_absdiff": 0
+    },
+    {
+      "model": "xgboost",
+      "saved_context_reload_max_absdiff": 0.0,
+      "future_points": 745,
+      "future_actual_all_nan": true
+    },
+    {
+      "model": "ridge",
+      "split": "validation",
+      "points": 745,
+      "metric_max_absdiff": 0
+    },
+    {
+      "model": "ridge",
+      "split": "test",
+      "points": 745,
+      "metric_max_absdiff": 0
+    },
+    {
+      "model": "ridge",
+      "saved_context_reload_max_absdiff": 0.0,
+      "future_points": 745,
+      "future_actual_all_nan": true
+    }
+  ],
+  "selection_lock_sha256": "d36206cb6b7c0a6a61e14d1a2fe4edb21f5f7e994a93e87f384961890f1bc745",
+  "May_labels_read": false,
+  "parent_shared_May_CSV_checks": [
+    {
+      "model": "xgboost",
+      "points": 505,
+      "metric_max_absdiff": 0,
+      "source": "Post-evaluation parent common CSV; original May file not reopened."
+    },
+    {
+      "model": "ridge",
+      "points": 505,
+      "metric_max_absdiff": 0,
+      "source": "Post-evaluation parent common CSV; original May file not reopened."
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "created_at": "2026-10-15T14:27:50.947978+00:00",
+  "repository": "ETTE154/Manufacturing-AI-2026-Team4",
+  "listed_artifacts": 1703,
+  "unchanged_source_copies": 1691,
+  "adapted_submission_copies": [
+    "demo_platform/README.txt",
+    "demo_platform/backend/config.py",
+    "demo_platform/launch.ps1"
+  ],
+  "generated_submission_files": 9,
+  "retained_existing_file_ids": 256,
+  "manifest_excludes_its_own_bytes_and_summary": [
+    "docs/backup_manifest.csv",
+    "docs/submission_verification.json"
+  ],
+  "copy_failures": 0,
+  "source_originals_modified": 0,
+  "security_status": "PASS",
+  "credential_pattern_findings": 0,
+  "compressed_artifacts_inspected": 202,
+  "runtime_checks_passed": 10,
+  "frontend_tests_passed": 25,
+  "python_syntax_files": 139,
+  "ignore_policy_cases_passed": 22,
+  "verification_limits": [
+    "Credential-pattern and structural exclusion checks are not a proof against every possible secret.",
+    "Runtime checks used the existing validated Python installation and read-only original CSV; clean-machine package installation was not rerun.",
+    "Original CSVs, guide PDF, private execution DB/logs, installed environments and downloaded model caches are excluded."
+  ],
+  "project_id": null
+}

@@ -1,0 +1,46 @@
+{
+  "repository": "https://github.com/thuml/iTransformer",
+  "revision": "c2426e68ca13f74aaec08045c5c724d8ad328124",
+  "files": [
+    {
+      "upstream_url": "https://raw.githubusercontent.com/thuml/iTransformer/c2426e68ca13f74aaec08045c5c724d8ad328124/model/iTransformer.py",
+      "path": "model/iTransformer.py",
+      "upstream_sha256": "6f34777a5a12c253a293f79e7e1fd5b6f79ac100b443951e051e269e7e2542db",
+      "local_sha256": "61aaa7d4caa71d1e1381b193fd012243c68b27c564af0a9e14cb474099507bfc"
+    },
+    {
+      "upstream_url": "https://raw.githubusercontent.com/thuml/iTransformer/c2426e68ca13f74aaec08045c5c724d8ad328124/layers/Embed.py",
+      "path": "layers/Embed.py",
+      "upstream_sha256": "2de7e5049a696d320a23a8bdb6e08e823cf7fa3f246a0a49555fcd729c5c8398",
+      "local_sha256": "cb1b8934d87659e656e6c92ba6290c4a76fbfb88389527ce43766c5b8cfd46ed"
+    },
+    {
+      "upstream_url": "https://raw.githubusercontent.com/thuml/iTransformer/c2426e68ca13f74aaec08045c5c724d8ad328124/layers/SelfAttention_Family.py",
+      "path": "layers/SelfAttention_Family.py",
+      "upstream_sha256": "38ac67428d528b8e145e4944ca059b40629a8446c891142602d5aaadc38dfd9e",
+      "local_sha256": "3d9f29c895a47335e670289f504ceaa95ded44047fba6bfbd96f01173ba88b6c"
+    },
+    {
+      "upstream_url": "https://raw.githubusercontent.com/thuml/iTransformer/c2426e68ca13f74aaec08045c5c724d8ad328124/layers/Transformer_EncDec.py",
+      "path": "layers/Transformer_EncDec.py",
+      "upstream_sha256": "985c31f4ae187b08afaa9663dc960a40544b2ec33ab55389ceab3930edc1ce02",
+      "local_sha256": "eed892a31468b1142777420f4b7ecb8cdbae020d835bbdd59a045c99bbe986df"
+    },
+    {
+      "upstream_url": "https://raw.githubusercontent.com/thuml/iTransformer/c2426e68ca13f74aaec08045c5c724d8ad328124/utils/masking.py",
+      "path": "utils/masking.py",
+      "upstream_sha256": "02f453e52cfaec65e34132923add80e7132f188706680fa86d7bd884976e09ef",
+      "local_sha256": "c22de70ad076f4eeecc857aba984741da05da54375333399ff2742b041544986"
+    },
+    {
+      "upstream_url": "https://raw.githubusercontent.com/thuml/iTransformer/c2426e68ca13f74aaec08045c5c724d8ad328124/LICENSE",
+      "path": "LICENSE",
+      "upstream_sha256": "29d2a4c09fa577780522219dc248466977f77cd420354c5e9a0e86550be2b849",
+      "local_sha256": "29d2a4c09fa577780522219dc248466977f77cd420354c5e9a0e86550be2b849"
+    }
+  ],
+  "changes": [
+    "Namespace-only import isolation",
+    "Reformer dependency moved into unused ReformerLayer constructor; selected FullAttention unchanged"
+  ]
+}

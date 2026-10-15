@@ -1,0 +1,89 @@
+{
+  "source": "E:\\AI work\\AWS_프로젝트\\traing-dataset\\rtu_data_full.csv",
+  "source_verification": {
+    "official_source_retrieval": true,
+    "compared_at_utc": "2026-10-12T17:14:56.045193+00:00",
+    "files": [
+      {
+        "source_key": "may-dataset/rtu_ground_truth_may.csv",
+        "original": {
+          "path": "E:\\AI work\\AWS_프로젝트\\may-dataset\\rtu_ground_truth_may.csv",
+          "bytes": 46000,
+          "sha256": "a0e44dc6481fba7d78a2c5b60f0f5e0c2bcc69a8f732c9229bbbdaa38dee04bf",
+          "mtime_ns": 1791713832569742300,
+          "elapsed_seconds": 0.0,
+          "source_key": "may-dataset/rtu_ground_truth_may.csv"
+        },
+        "downloaded": {
+          "source_key": "may-dataset/rtu_ground_truth_may.csv",
+          "download_url": "https://sahmyook-project.s3.ap-northeast-2.amazonaws.com/may-dataset/rtu_ground_truth_may.csv",
+          "downloaded_path": "E:\\AI work\\AWS_프로젝트\\output\\optimization_20261013\\source_audit\\downloads\\may-dataset\\rtu_ground_truth_may.csv",
+          "bytes": 46000,
+          "sha256": "a0e44dc6481fba7d78a2c5b60f0f5e0c2bcc69a8f732c9229bbbdaa38dee04bf",
+          "elapsed_seconds": 0.20300000009592623,
+          "response_history": [
+            {
+              "attempt": 1,
+              "status": 200,
+              "headers": {
+                "Content-Length": "46000",
+                "Content-Type": "text/csv",
+                "ETag": "\"4cde4ab38952c00f8a0f7292922d1b24\"",
+                "Last-Modified": "Thu, 26 Mar 2026 07:10:33 GMT"
+              },
+              "started_at_utc": "2026-10-12T17:13:34.094514+00:00"
+            }
+          ],
+          "completed_at_utc": "2026-10-12T17:13:34.106517+00:00",
+          "etag_note": "ETag records source object version evidence. It is not assumed to be a cryptographic content checksum or MD5; multipart and encryption behavior can change its meaning. Independently computed SHA-256 is used for byte identity."
+        },
+        "bytes_match": true,
+        "sha256_match": true
+      },
+      {
+        "source_key": "traing-dataset/rtu_data_full.csv",
+        "original": {
+          "path": "E:\\AI work\\AWS_프로젝트\\traing-dataset\\rtu_data_full.csv",
+          "bytes": 4909245995,
+          "sha256": "3b4e1ff2125ca64612837530a8612fa7f044f398e508e00026097fc788d0dce5",
+          "mtime_ns": 1791713915683441400,
+          "elapsed_seconds": 9.906000000075437,
+          "source_key": "traing-dataset/rtu_data_full.csv"
+        },
+        "downloaded": {
+          "source_key": "traing-dataset/rtu_data_full.csv",
+          "download_url": "https://sahmyook-project.s3.ap-northeast-2.amazonaws.com/traing-dataset/rtu_data_full.csv",
+          "downloaded_path": "E:\\AI work\\AWS_프로젝트\\output\\optimization_20261013\\source_audit\\downloads\\traing-dataset\\rtu_data_full.csv",
+          "bytes": 4909245995,
+          "sha256": "3b4e1ff2125ca64612837530a8612fa7f044f398e508e00026097fc788d0dce5",
+          "elapsed_seconds": 82.14000000001397,
+          "response_history": [
+            {
+              "attempt": 1,
+              "status": 200,
+              "headers": {
+                "Content-Length": "4909245995",
+                "Content-Type": "text/csv",
+                "ETag": "\"ef386800a9b2a3a71d34946888238539\"",
+                "Last-Modified": "Thu, 26 Mar 2026 07:10:34 GMT"
+              },
+              "started_at_utc": "2026-10-12T17:13:34.128997+00:00"
+            }
+          ],
+          "completed_at_utc": "2026-10-12T17:14:56.044188+00:00",
+          "etag_note": "ETag records source object version evidence. It is not assumed to be a cryptographic content checksum or MD5; multipart and encryption behavior can change its meaning. Independently computed SHA-256 is used for byte identity."
+        },
+        "bytes_match": true,
+        "sha256_match": true
+      }
+    ],
+    "all_byte_identical": true,
+    "read_original_source_only": true,
+    "max_parallel_workers": 3
+  },
+  "source_rows_read": 33696013,
+  "retained_continuous_window_rows": 114480,
+  "full_weak_candidate_rows": 63963,
+  "continuity_all_windows_passed": true,
+  "elapsed_seconds": 72.06299999996554
+}

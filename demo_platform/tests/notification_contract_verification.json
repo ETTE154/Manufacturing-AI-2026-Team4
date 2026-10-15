@@ -1,0 +1,62 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "old_snapshot_alarms_never_popup",
+      "passed": true
+    },
+    {
+      "name": "connection_and_state_are_quiet",
+      "passed": true
+    },
+    {
+      "name": "only_first_delivery_of_occurrence_is_new",
+      "passed": true
+    },
+    {
+      "name": "different_session_replay_not_silenced_by_saved_id",
+      "passed": true
+    },
+    {
+      "name": "later_onset_in_same_saved_bucket_remains_separate",
+      "passed": true
+    },
+    {
+      "name": "incomplete_detection_not_exposed_as_notice",
+      "passed": true
+    },
+    {
+      "name": "stored_history_hydrates_read_without_live_popup",
+      "passed": true
+    },
+    {
+      "name": "current_detection_replaces_its_archive_copy",
+      "passed": true
+    },
+    {
+      "name": "history_refresh_preserves_current_unread_flag",
+      "passed": true
+    },
+    {
+      "name": "multiple_occurrences_of_saved_alarm_are_kept",
+      "passed": true
+    },
+    {
+      "name": "notification_history_is_bounded",
+      "passed": true
+    },
+    {
+      "name": "equipment_and_fault_are_human_readable",
+      "passed": true
+    },
+    {
+      "name": "occurrence_clock_precedes_confirmation_clock",
+      "passed": true
+    },
+    {
+      "name": "synthetic_source_and_exact_detail_reference_preserved",
+      "passed": true
+    }
+  ],
+  "external_calls": 0
+}

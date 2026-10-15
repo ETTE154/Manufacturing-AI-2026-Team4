@@ -1,0 +1,152 @@
+{
+  "selected_config": {
+    "model": "baseline",
+    "kind": "ema720"
+  },
+  "selected_candidate": 24,
+  "trials_count": 3,
+  "validation_metrics": {
+    "path_24_values": {
+      "count": 1680,
+      "mae_kwh": 74.67748972584462,
+      "rmse_kwh": 94.91991549087025,
+      "mape_percent": 0.19084426689617548,
+      "bias_pred_minus_actual_kwh": 0.21463294090146431,
+      "r2": -0.0014684593763014675
+    },
+    "origin_count": 70,
+    "lead_1": {
+      "count": 70,
+      "mae_kwh": 73.58146318091126,
+      "rmse_kwh": 94.45328470685344,
+      "mape_percent": 0.18800900896239156,
+      "bias_pred_minus_actual_kwh": -8.460014959230778,
+      "r2": -0.0031900258948656113
+    },
+    "lead_6": {
+      "count": 70,
+      "mae_kwh": 70.90439635273174,
+      "rmse_kwh": 91.05542319308266,
+      "mape_percent": 0.18112389651802138,
+      "bias_pred_minus_actual_kwh": -5.352431824310043,
+      "r2": -0.010614118373420967
+    },
+    "lead_24": {
+      "count": 70,
+      "mae_kwh": 78.48336002482954,
+      "rmse_kwh": 96.6363975495167,
+      "mape_percent": 0.20064181558870084,
+      "bias_pred_minus_actual_kwh": 0.8675719455308614,
+      "r2": 0.0005328545958579456
+    }
+  },
+  "test_metrics": {
+    "path_24_values": {
+      "count": 696,
+      "mae_kwh": 79.46838365673166,
+      "rmse_kwh": 98.02720891910548,
+      "mape_percent": 0.2031041595138014,
+      "bias_pred_minus_actual_kwh": -0.5815133858220817,
+      "r2": -0.002038568032923793
+    },
+    "origin_count": 29,
+    "lead_1": {
+      "count": 29,
+      "mae_kwh": 85.90222640994912,
+      "rmse_kwh": 100.19083492837095,
+      "mape_percent": 0.2195405212946138,
+      "bias_pred_minus_actual_kwh": 2.812667648661239,
+      "r2": -0.01896035176895139
+    },
+    "lead_6": {
+      "count": 29,
+      "mae_kwh": 70.96260439589919,
+      "rmse_kwh": 91.88643124149412,
+      "mape_percent": 0.18165343541553314,
+      "bias_pred_minus_actual_kwh": 34.21080126935076,
+      "r2": -0.17258208689971122
+    },
+    "lead_24": {
+      "count": 29,
+      "mae_kwh": 75.86141631366702,
+      "rmse_kwh": 97.2525340094412,
+      "mape_percent": 0.1937752133035434,
+      "bias_pred_minus_actual_kwh": -13.173558883906136,
+      "r2": -0.013213401993988905
+    }
+  },
+  "feature_selection": {
+    "fold1": {
+      "columns": [],
+      "audit_path": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\classical\\feature_selection\\fold1.json",
+      "sha256": "51c5598de135d6e74858970c812a9da0815d45fadf68d01c7afc8441287a9ff8",
+      "fit_origin": "2025-01-10 00:00:00"
+    },
+    "fold2": {
+      "columns": [
+        "m12__voltageTR_mean",
+        "m12__voltageR_mean"
+      ],
+      "audit_path": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\classical\\feature_selection\\fold2.json",
+      "sha256": "ba9d84e92ba10107e821ecf876a81165ca40473cebb207718a2af7c946c0ad53",
+      "fit_origin": "2025-01-24 00:00:00"
+    },
+    "fold3": {
+      "columns": [],
+      "audit_path": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\classical\\feature_selection\\fold3.json",
+      "sha256": "5ca758cf35cd46c2ccbd22ce4dc0fc6e209eddcd734d2dbbdf6530800caed842",
+      "fit_origin": "2025-02-07 00:00:00"
+    },
+    "fold4": {
+      "columns": [
+        "m3__voltageRS_mean"
+      ],
+      "audit_path": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\classical\\feature_selection\\fold4.json",
+      "sha256": "3b07bf118653859d64a302d8cc8825e98d1b280ec468147d85828f29e63e10e2",
+      "fit_origin": "2025-02-21 00:00:00"
+    },
+    "fold5": {
+      "columns": [],
+      "audit_path": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\classical\\feature_selection\\fold5.json",
+      "sha256": "6678cfe789a372d50f58d6ac11748aa45b5b33312fa44c673a48cd5e28047788",
+      "fit_origin": "2025-03-07 00:00:00"
+    },
+    "pre_April": {
+      "columns": [],
+      "audit_path": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\classical\\feature_selection\\pre_April.json",
+      "sha256": "bc708edb8075d84661bac24331c9fc564fd3a8e7aedb2b6d61df23eab325410f",
+      "fit_origin": "2025-04-01 00:00:00"
+    }
+  },
+  "frozen_test_and_final_sensor_columns": [],
+  "final_feature_schema": null,
+  "saved_model": {
+    "model_path": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\classical\\baseline\\saved_model\\model.joblib",
+    "sha256": "acfabfaf239e797ef94bab71230894e73d7e5955f55764fdbecffc455abd8f37",
+    "config": {
+      "model": "baseline",
+      "kind": "ema720"
+    },
+    "selected_sensor_columns": [],
+    "feature_schema": null,
+    "history_end": "2025-04-29 23:00:00",
+    "history_count": 3600,
+    "target_center": null,
+    "forecast_points": 24,
+    "reload_max_absdiff_kwh": 0.0,
+    "native_reload_max_absdiff_kwh": null,
+    "scaler_fit": "Training prefix only for Ridge/ElasticNet and ARIMAX exog; no global scaling for XGB.",
+    "context_storage": "Last720 completed hourly rows saved for standalone fixed-origin prediction; operational new-history input is not implemented."
+  },
+  "paths": {
+    "validation_csv": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\classical\\baseline\\validation_predictions.csv",
+    "test_csv": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\classical\\baseline\\test_predictions.csv",
+    "future_csv": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\classical\\baseline\\future_path.csv"
+  },
+  "importance": null,
+  "input_scope": "Past aggregate, known calendar, optional module/sensor history according to selected group. Future sensor readings unavailable.",
+  "plots": {
+    "april_day_png": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\classical\\baseline\\figures\\april_day24.png",
+    "april_day_svg": "E:\\AI work\\AWS_프로젝트\\output\\feature_revision_20261013\\classical\\baseline\\figures\\april_day24.svg"
+  }
+}

@@ -1,0 +1,233 @@
+{
+  "status": "pass",
+  "CSV_checks": [
+    {
+      "scenario": "dayahead24",
+      "model": "arima",
+      "CSV_metric_max_difference": 1.7785772854495008e-13,
+      "status": "pass"
+    },
+    {
+      "scenario": "dayahead24",
+      "model": "xgboost",
+      "CSV_metric_max_difference": 7.275957614183426e-12,
+      "status": "pass"
+    },
+    {
+      "scenario": "dayahead24",
+      "model": "patchtst",
+      "CSV_metric_max_difference": 1.5916157281026244e-12,
+      "status": "pass"
+    },
+    {
+      "scenario": "dayahead24",
+      "model": "itransformer",
+      "CSV_metric_max_difference": 1.5063505998114124e-12,
+      "status": "pass"
+    },
+    {
+      "scenario": "dayahead24",
+      "model": "chronos2",
+      "CSV_metric_max_difference": 1.0089706847793423e-12,
+      "status": "pass"
+    },
+    {
+      "scenario": "dayahead24",
+      "model": "baseline",
+      "CSV_metric_max_difference": 5.027089855502709e-13,
+      "status": "pass"
+    },
+    {
+      "scenario": "long745",
+      "model": "arima",
+      "CSV_metric_max_difference": 1.2079226507921703e-13,
+      "status": "pass"
+    },
+    {
+      "scenario": "long745",
+      "model": "xgboost",
+      "CSV_metric_max_difference": 1.2079226507921703e-13,
+      "status": "pass"
+    },
+    {
+      "scenario": "long745",
+      "model": "patchtst",
+      "CSV_metric_max_difference": 4.884981308350689e-13,
+      "status": "pass"
+    },
+    {
+      "scenario": "long745",
+      "model": "itransformer",
+      "CSV_metric_max_difference": 3.419486915845482e-13,
+      "status": "pass"
+    },
+    {
+      "scenario": "long745",
+      "model": "chronos2",
+      "CSV_metric_max_difference": 1.1368683772161603e-13,
+      "status": "pass"
+    },
+    {
+      "scenario": "long745",
+      "model": "baseline",
+      "CSV_metric_max_difference": 1.2079226507921703e-13,
+      "status": "pass"
+    }
+  ],
+  "saved_model_reload_checks": [
+    {
+      "model": "arima",
+      "scenario": "dayahead24",
+      "path_rows": 24,
+      "reload_max_abs_diff_kwh": 0.0,
+      "forecast_origin": "2025-04-30 00:00:00",
+      "forecast_end": "2025-04-30 23:00:00",
+      "May_labels_read": false,
+      "new_optimized_models_only": true
+    },
+    {
+      "model": "xgboost",
+      "scenario": "dayahead24",
+      "path_rows": 24,
+      "reload_max_abs_diff_kwh": 0.0,
+      "forecast_origin": "2025-04-30 00:00:00",
+      "forecast_end": "2025-04-30 23:00:00",
+      "May_labels_read": false,
+      "new_optimized_models_only": true
+    },
+    {
+      "model": "patchtst",
+      "scenario": "dayahead24",
+      "path_rows": 24,
+      "reload_max_abs_diff_kwh": 7.275957614183426e-12,
+      "forecast_origin": "2025-04-30 00:00:00",
+      "forecast_end": "2025-04-30 23:00:00",
+      "May_labels_read": false,
+      "new_optimized_models_only": true
+    },
+    {
+      "model": "itransformer",
+      "scenario": "dayahead24",
+      "path_rows": 24,
+      "reload_max_abs_diff_kwh": 7.275957614183426e-12,
+      "forecast_origin": "2025-04-30 00:00:00",
+      "forecast_end": "2025-04-30 23:00:00",
+      "May_labels_read": false,
+      "new_optimized_models_only": true
+    },
+    {
+      "model": "chronos2",
+      "scenario": "dayahead24",
+      "path_rows": 24,
+      "reload_max_abs_diff_kwh": 0.0,
+      "forecast_origin": "2025-04-30 00:00:00",
+      "forecast_end": "2025-04-30 23:00:00",
+      "May_labels_read": false,
+      "new_optimized_models_only": true
+    },
+    {
+      "model": "baseline",
+      "scenario": "dayahead24",
+      "path_rows": 24,
+      "reload_max_abs_diff_kwh": 0.0,
+      "forecast_origin": "2025-04-30 00:00:00",
+      "forecast_end": "2025-04-30 23:00:00",
+      "May_labels_read": false,
+      "new_optimized_models_only": true
+    },
+    {
+      "model": "arima",
+      "scenario": "long745",
+      "path_rows": 745,
+      "reload_max_abs_diff_kwh": 0.0,
+      "forecast_origin": "2025-04-30 00:00:00",
+      "forecast_end": "2025-05-31 00:00:00",
+      "May_labels_read": false,
+      "new_optimized_models_only": true
+    },
+    {
+      "model": "xgboost",
+      "scenario": "long745",
+      "path_rows": 745,
+      "reload_max_abs_diff_kwh": 0.0,
+      "forecast_origin": "2025-04-30 00:00:00",
+      "forecast_end": "2025-05-31 00:00:00",
+      "May_labels_read": false,
+      "new_optimized_models_only": true
+    },
+    {
+      "model": "patchtst",
+      "scenario": "long745",
+      "path_rows": 745,
+      "reload_max_abs_diff_kwh": 7.275957614183426e-12,
+      "forecast_origin": "2025-04-30 00:00:00",
+      "forecast_end": "2025-05-31 00:00:00",
+      "May_labels_read": false,
+      "new_optimized_models_only": true
+    },
+    {
+      "model": "itransformer",
+      "scenario": "long745",
+      "path_rows": 745,
+      "reload_max_abs_diff_kwh": 7.275957614183426e-12,
+      "forecast_origin": "2025-04-30 00:00:00",
+      "forecast_end": "2025-05-31 00:00:00",
+      "May_labels_read": false,
+      "new_optimized_models_only": true
+    },
+    {
+      "model": "chronos2",
+      "scenario": "long745",
+      "path_rows": 745,
+      "reload_max_abs_diff_kwh": 0.0,
+      "forecast_origin": "2025-04-30 00:00:00",
+      "forecast_end": "2025-05-31 00:00:00",
+      "May_labels_read": false,
+      "new_optimized_models_only": true
+    },
+    {
+      "model": "baseline",
+      "scenario": "long745",
+      "path_rows": 745,
+      "reload_max_abs_diff_kwh": 0.0,
+      "forecast_origin": "2025-04-30 00:00:00",
+      "forecast_end": "2025-05-31 00:00:00",
+      "May_labels_read": false,
+      "new_optimized_models_only": true
+    }
+  ],
+  "expected_day_validation_origins": 70,
+  "expected_day_test_origins": 29,
+  "expected_long_rows": 745,
+  "expected_May_rows": 505,
+  "metrics_tolerance": 1e-07,
+  "reload_tolerance": 1e-08,
+  "all_original_data_and_old_modeling_outputs_untouched": true,
+  "May_model_selection_changed": false,
+  "comparison_lock_sha256": "38ac42f351443d690583ad4cd6d2237b2b48ad8322ba2044a82a17c4d121910a",
+  "selected_CLI_checks": [
+    {
+      "model": "chronos2",
+      "scenario": "dayahead24",
+      "path_rows": 24,
+      "reload_max_abs_diff_kwh": 0.0,
+      "forecast_origin": "2025-04-30 00:00:00",
+      "forecast_end": "2025-04-30 23:00:00",
+      "May_labels_read": false,
+      "new_optimized_models_only": true,
+      "output": "E:\\AI work\\AWS_프로젝트\\output\\optimization_20261013\\forecast\\cli_predictions\\dayahead24_chronos2.csv"
+    },
+    {
+      "model": "chronos2",
+      "scenario": "long745",
+      "path_rows": 745,
+      "reload_max_abs_diff_kwh": 0.0,
+      "forecast_origin": "2025-04-30 00:00:00",
+      "forecast_end": "2025-05-31 00:00:00",
+      "May_labels_read": false,
+      "new_optimized_models_only": true,
+      "output": "E:\\AI work\\AWS_프로젝트\\output\\optimization_20261013\\forecast\\cli_predictions\\long745_chronos2.csv"
+    }
+  ],
+  "selected_CLI_dispatch_status": "pass"
+}

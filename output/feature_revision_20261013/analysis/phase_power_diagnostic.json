@@ -1,0 +1,90 @@
+{
+  "sample_rows": 16849,
+  "sample_type": "Previous systematic descriptive sensor sample; not a full raw-row audit",
+  "assumptions": "Same circuit/time; phase voltage is line-to-neutral V, phase current A, PF percent",
+  "formula": "sum(V_phase * I_phase * PF_phase / 100) / 1000 => kW",
+  "reported_activePower_if_guide_kw_ratio_quantiles": {
+    "q01": 271.31453783266164,
+    "median": 288.2913559692898,
+    "q99": 307.33676789445445
+  },
+  "reported_activePower_if_w_ratio_quantiles": {
+    "q01": 0.27131453783266163,
+    "median": 0.2882913559692898,
+    "q99": 0.3073367678944544
+  },
+  "interpretation": "Recorded scale and conditional electrical identity need provider confirmation. Changing the guide unit from kW to W alone may not reconcile phase channels. No unit correction is applied.",
+  "reportedPower_vs_phase_formula_sample_Pearson_r": 0.9919721250269441,
+  "source_path": "output/optimization_20261013/research/forecastability_audit.json + preexisting systematic sensor sample",
+  "within_module_correlations": [
+    {
+      "module": "1(PM-3)",
+      "sample_rows": 1046,
+      "Pearson_r": 0.9928479333186662
+    },
+    {
+      "module": "11(우측분전반1)",
+      "sample_rows": 1045,
+      "Pearson_r": 0.9927051481797858
+    },
+    {
+      "module": "12(4호기)",
+      "sample_rows": 1045,
+      "Pearson_r": 0.9919174369462147
+    },
+    {
+      "module": "13(3호기)",
+      "sample_rows": 1045,
+      "Pearson_r": 0.9922235943756471
+    },
+    {
+      "module": "14(2호기)",
+      "sample_rows": 1045,
+      "Pearson_r": 0.9921410804374707
+    },
+    {
+      "module": "15(예비건조기)",
+      "sample_rows": 1045,
+      "Pearson_r": 0.9869742237967261
+    },
+    {
+      "module": "16(호이스트)",
+      "sample_rows": 1045,
+      "Pearson_r": 0.9920909814898422
+    },
+    {
+      "module": "17(6호기)",
+      "sample_rows": 1045,
+      "Pearson_r": 0.9914235947363317
+    },
+    {
+      "module": "18(우측분전반2)",
+      "sample_rows": 1045,
+      "Pearson_r": 0.9925981271634942
+    },
+    {
+      "module": "2(L-1전등)",
+      "sample_rows": 1045,
+      "Pearson_r": 0.9930175837518661
+    },
+    {
+      "module": "3(분쇄기(2))",
+      "sample_rows": 1045,
+      "Pearson_r": 0.9927004422659791
+    },
+    {
+      "module": "4(분쇄기(1))",
+      "sample_rows": 1045,
+      "Pearson_r": 0.9922875471133571
+    },
+    {
+      "module": "5(좌측분전반)",
+      "sample_rows": 1045,
+      "Pearson_r": 0.9928334954343175
+    }
+  ],
+  "pooled_correlation_limit": "Pooled correlation includes module level differences. Same-observation relationship does not give access to future voltage/current/PF, and high correlation does not certify compatible physical units.",
+  "correlation_sample_rows": 13586,
+  "correlation_analysis_period": "Dec-March only; April excluded",
+  "prior_ratio_sample_scope": "Previously recorded ratio quantiles use the full16849-point Dec-Apr systematic sample; carried as a unit diagnostic only, not feature selection"
+}

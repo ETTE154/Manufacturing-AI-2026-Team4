@@ -1,0 +1,322 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "existing_notification25_regression",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "original_default_inclusive27_abnormal_pattern_0091",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "all_points_have6rules_AE_IF_abnormal_pattern_0091",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "original_default_inclusive27_abnormal_pattern_0092",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "all_points_have6rules_AE_IF_abnormal_pattern_0092",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "original_default_inclusive27_abnormal_pattern_0093",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "all_points_have6rules_AE_IF_abnormal_pattern_0093",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "original_default_inclusive27_power_factor_drop_0061",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "all_points_have6rules_AE_IF_power_factor_drop_0061",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "private_scorer_did_not_initialize_ENGINE",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "zero_padding_retains_complete_fault_interval",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "asymmetric_padding_has_correct_inclusive_count",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "maximum1800each_has_all723_points",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "legacy_detail_still72points_exclusive_3min",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "source_bounds_clip_occ_start_fixture",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "end_exclusive_is_next5seconds_occ_start_fixture",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "source_bounds_clip_occ_end_fixture",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "end_exclusive_is_next5seconds_occ_end_fixture",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "occurrence_uses_current_first_time_not_old_saved_ID",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "synthetic_keeps_original_cause_and_anchor",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "synthetic_does_not_mutate_raw_sensor_values",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "invalid_padding400_negative",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "invalid_padding400_over1800",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "invalid_padding400_nonmultiple",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "invalid_padding400_fraction",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "invalid_padding400_decimal_float",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "invalid_padding400_boolean",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "unknown_event404",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "ENGINE_all_public_and_buffer_state_unchanged",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "no_DB_logs_alarms_outbox_writes",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "no_SSE_packet_or_alert_emitted",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "model_and_threshold_hashes_unchanged",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "source_size_mtime_preserved",
+      "passed": true,
+      "details": null
+    }
+  ],
+  "production_server_restart_or_POST": false,
+  "production_DB_used": false,
+  "external_transport_calls": 0,
+  "example_window": {
+    "start": "2025-02-26 06:46:00",
+    "end_inclusive": "2025-02-26 06:48:10",
+    "end_exclusive": "2025-02-26 06:48:15",
+    "event_start": "2025-02-26 06:47:00",
+    "event_end": "2025-02-26 06:47:10",
+    "requested_before_seconds": 60,
+    "requested_after_seconds": 60,
+    "actual_before_seconds": 60,
+    "actual_after_seconds": 60,
+    "sampling_seconds": 5,
+    "point_count": 27,
+    "clipped": false
+  },
+  "model_sha256": {
+    "models.joblib": "f7d29618d3eaafea049fa05fb644f96ff6e3970e1e1c0142140886e1b61e58f9",
+    "ae.pt": "81549dee053d0201e4485492dc2433370fcbf5a6143b9a0a085798678680a7fe",
+    "synthetic_xgb.json": "89281cbbc252435ea5713233cc6bb5de82987f5a51a7451a372507ad5a1e85a4",
+    "baseline.json": "8c1748f631636cd280aac9ebfddddf2c0f66bd746bb575e23ed616cca1a1c81e",
+    "thresholds.json": "93f85fc87d1f9818f07bf6afc1b33bf0f059cdeee16d5a78fa48635e5f4cb551"
+  },
+  "notification_regression_checks": [
+    {
+      "name": "preview_has_no_new_events_despite_old_alarms",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "normal_telemetry_does_not_republish_DB_history",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "first_two_positive_points_are_not_new_detection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "third_point_emits_once_with_onset_and_detected_time",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "sustained_fault_does_not_repeat_every_tick",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "event_has_resolvable_persistent_and_occurrence_IDs",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "no_new_events_in_snapshot",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "legacy_persistent_ID_hash_unchanged",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "different_onset_same_bucket_emits_current_occurrence",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "existing_ack_and_outbox_are_not_reset",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "current_detected_time_differs_from_stored_time",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "ASGI_GET_occurrence_detail_returns_current_interval",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "ASGI_GET_persistent_ID_still_returns_legacy_record",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "new_session_replay_notifies_even_when_DB_insert_is_duplicate",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "same_DB_replay_does_not_add_Slack_job",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "same_session_same_onset_revisit_is_suppressed",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "missing_5second_point_restarts_streak",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "AI_only_and_other_module_rule_notify_independently",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "AI_sustained_frame_is_not_repeated",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "seek_preview_does_not_log_or_notify",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "state_packet_explicitly_has_empty_new_events",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "SSE_reconnect_does_not_replay_last_alert",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "occurrence_lookup_bounded_to256",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "persistent_ID_lookup_survives_occurrence_eviction",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "unknown_detail_still_404",
+      "passed": true,
+      "details": null
+    }
+  ],
+  "range_contract": "both observation endpoints included; existing detail still exclusive upper3min"
+}

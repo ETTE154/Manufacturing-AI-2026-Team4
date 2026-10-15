@@ -1,0 +1,777 @@
+{
+  "status": "pass",
+  "audited_at_utc": "2026-10-13T03:35:11.095812+00:00",
+  "scope": "Independent read-only code, prefix, serialized model/scaler/profile and CSV audit. No fit/epoch/reselection or May CSV reads. Only this new audit JSON is written.",
+  "target_sha256": "729b149a3e3165dfb339f0386249bfbda0326657f9e722d86da8138db36117de",
+  "common_sha256": "643f2e3abf0cc62e306c2c5aa9578bd96090342af24328abafc73710c31fd9ad",
+  "protocol": {
+    "target_source": "E:\\AI work\\AWS_프로젝트\\output\\analysis\\baseline_audit\\complete_hour_module_sum.csv",
+    "target_sha256": "729b149a3e3165dfb339f0386249bfbda0326657f9e722d86da8138db36117de",
+    "hour_count": 3600,
+    "step_hours": 1,
+    "forecast_points": 745,
+    "offsets": "0..744",
+    "leads_from_last_observation": "1..745",
+    "selection_offsets": "240..744",
+    "selection_points_per_origin": 505,
+    "selection_objective": "Mean3-origin Late505 MAE; no internal-test/May tuning",
+    "validation_origins": [
+      "2025-02-15 00:00:00",
+      "2025-02-22 00:00:00",
+      "2025-02-25 00:00:00"
+    ],
+    "validation_target_end": "2025-03-28 00:00:00",
+    "validation_path_observations": 2235,
+    "validation_path_unique_hours": 985,
+    "validation_late_observations": 1515,
+    "validation_late_unique_hours": 745,
+    "validation_repeated_late_labels": 770,
+    "validation_independence_limit": "Three overlapping fixed-origin paths are not three independent samples; repeated future labels must not inflate reliability claims.",
+    "internal_origin": "2025-03-29 00:00:00",
+    "internal_end": "2025-04-29 00:00:00",
+    "validation_internal_label_overlap_hours": 0,
+    "all_selection_labels_available_before_internal_origin": true,
+    "final_origin": "2025-04-30 00:00:00",
+    "final_end": "2025-05-31 00:00:00",
+    "final_evaluation_start": "2025-05-10 00:00:00",
+    "final_label_read_policy": "No May CSV is read by common/data/model development; parent evaluates after locks",
+    "rejected_design_note": "Initial lastvalidationoriginFeb28 was rejected before scoring because its labels reachedMarch31 and overlappedMar29 internal test49hours; final lastoriginFeb25 fixes label overlap and selection-time availability.",
+    "period_training_filter": "Reaggregate actual prefix; complete and available_at<=origin. WeeklySunday label is not its availability, which is Monday00; monthlynextMonth00.",
+    "monthly_limit": "Only2 full monthly periods at each validation origin and4 at final; monthly methods are explicit statistical baselines, not trained high-capacity SOTA.",
+    "unit_limit": "13-meter provisional guide kWh sum; unknown hierarchy/unit/circuit scope. Rate normalization separates calendar length from load.",
+    "post_EDA_limit": "Earlier April/May EDA occurred; this is a controlled subsequent experiment, not a pristine prospective evaluation."
+  },
+  "data_verification": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\data\\data_verification.json",
+  "coarse_saved_models": [
+    {
+      "model": "daily_level",
+      "frequency": "D",
+      "final_training_periods": 150,
+      "last_available_at": "2025-04-30 00:00:00",
+      "profile_independent_diff": 7.771561172376096e-16,
+      "saved_reload_diff": 0.0,
+      "scaler": null
+    },
+    {
+      "model": "daily_arima",
+      "frequency": "D",
+      "final_training_periods": 150,
+      "last_available_at": "2025-04-30 00:00:00",
+      "profile_independent_diff": 7.771561172376096e-16,
+      "saved_reload_diff": 0.0,
+      "scaler": null
+    },
+    {
+      "model": "weekly_level",
+      "frequency": "W-SUN",
+      "final_training_periods": 21,
+      "last_available_at": "2025-04-28 00:00:00",
+      "profile_independent_diff": 7.771561172376096e-16,
+      "saved_reload_diff": 0.0,
+      "scaler": null
+    },
+    {
+      "model": "weekly_arima",
+      "frequency": "W-SUN",
+      "final_training_periods": 21,
+      "last_available_at": "2025-04-28 00:00:00",
+      "profile_independent_diff": 7.771561172376096e-16,
+      "saved_reload_diff": 0.0,
+      "scaler": null
+    },
+    {
+      "model": "monthly_level",
+      "frequency": "MS",
+      "final_training_periods": 4,
+      "last_available_at": "2025-04-01 00:00:00",
+      "profile_independent_diff": 7.771561172376096e-16,
+      "saved_reload_diff": 0.0,
+      "scaler": null
+    },
+    {
+      "model": "daily_xgboost",
+      "frequency": "D",
+      "final_training_periods": 150,
+      "last_available_at": "2025-04-30 00:00:00",
+      "profile_independent_diff": 7.771561172376096e-16,
+      "saved_reload_diff": 0.0,
+      "scaler": null
+    },
+    {
+      "model": "daily_ridge",
+      "frequency": "D",
+      "final_training_periods": 150,
+      "last_available_at": "2025-04-30 00:00:00",
+      "profile_independent_diff": 7.771561172376096e-16,
+      "saved_reload_diff": 0.0,
+      "scaler": {
+        "mean_diff": 0.0,
+        "scale_diff": 0.0,
+        "fit_examples": 3408
+      }
+    }
+  ],
+  "coarse_profile_full_period_conservation_checks": [
+    {
+      "family": "daily_level",
+      "period": "D",
+      "hour_count": 24,
+      "multiplier_sum_diff": 0.0
+    },
+    {
+      "family": "daily_level",
+      "period": "W-SUN",
+      "hour_count": 168,
+      "multiplier_sum_diff": 0.0
+    },
+    {
+      "family": "daily_level",
+      "period": "MS",
+      "hour_count": 744,
+      "multiplier_sum_diff": 0.0
+    },
+    {
+      "family": "daily_arima",
+      "period": "D",
+      "hour_count": 24,
+      "multiplier_sum_diff": 0.0
+    },
+    {
+      "family": "daily_arima",
+      "period": "W-SUN",
+      "hour_count": 168,
+      "multiplier_sum_diff": 0.0
+    },
+    {
+      "family": "daily_arima",
+      "period": "MS",
+      "hour_count": 744,
+      "multiplier_sum_diff": 0.0
+    },
+    {
+      "family": "weekly_level",
+      "period": "D",
+      "hour_count": 24,
+      "multiplier_sum_diff": 0.0
+    },
+    {
+      "family": "weekly_level",
+      "period": "W-SUN",
+      "hour_count": 168,
+      "multiplier_sum_diff": 0.0
+    },
+    {
+      "family": "weekly_level",
+      "period": "MS",
+      "hour_count": 744,
+      "multiplier_sum_diff": 0.0
+    },
+    {
+      "family": "weekly_arima",
+      "period": "D",
+      "hour_count": 24,
+      "multiplier_sum_diff": 0.0
+    },
+    {
+      "family": "weekly_arima",
+      "period": "W-SUN",
+      "hour_count": 168,
+      "multiplier_sum_diff": 0.0
+    },
+    {
+      "family": "weekly_arima",
+      "period": "MS",
+      "hour_count": 744,
+      "multiplier_sum_diff": 0.0
+    },
+    {
+      "family": "monthly_level",
+      "period": "D",
+      "hour_count": 24,
+      "multiplier_sum_diff": 0.0
+    },
+    {
+      "family": "monthly_level",
+      "period": "W-SUN",
+      "hour_count": 168,
+      "multiplier_sum_diff": 0.0
+    },
+    {
+      "family": "monthly_level",
+      "period": "MS",
+      "hour_count": 744,
+      "multiplier_sum_diff": 0.0
+    },
+    {
+      "family": "daily_xgboost",
+      "period": "D",
+      "hour_count": 24,
+      "multiplier_sum_diff": 0.0
+    },
+    {
+      "family": "daily_xgboost",
+      "period": "W-SUN",
+      "hour_count": 168,
+      "multiplier_sum_diff": 0.0
+    },
+    {
+      "family": "daily_xgboost",
+      "period": "MS",
+      "hour_count": 744,
+      "multiplier_sum_diff": 0.0
+    },
+    {
+      "family": "daily_ridge",
+      "period": "D",
+      "hour_count": 24,
+      "multiplier_sum_diff": 0.0
+    },
+    {
+      "family": "daily_ridge",
+      "period": "W-SUN",
+      "hour_count": 168,
+      "multiplier_sum_diff": 0.0
+    },
+    {
+      "family": "daily_ridge",
+      "period": "MS",
+      "hour_count": 744,
+      "multiplier_sum_diff": 0.0
+    }
+  ],
+  "hourly_saved_models": [
+    {
+      "model": "xgboost",
+      "group": "H_previous_history_only",
+      "stored_context_independent_match": true,
+      "saved_reload_diff": 0.0,
+      "scaler": null
+    },
+    {
+      "model": "ridge",
+      "group": "HD",
+      "stored_context_independent_match": true,
+      "saved_reload_diff": 0.0,
+      "scaler": {
+        "mean_diff": 0.0,
+        "scale_diff": 0.0,
+        "fit_examples": 29440
+      }
+    },
+    {
+      "model": "arima",
+      "group": null,
+      "stored_context_independent_match": true,
+      "saved_reload_diff": 0.0,
+      "scaler": null
+    },
+    {
+      "model": "baseline",
+      "group": null,
+      "stored_context_independent_match": true,
+      "saved_reload_diff": 0.0,
+      "scaler": null
+    }
+  ],
+  "hourly_context_future_poison_checks": [
+    {
+      "origin": "2025-02-15 00:00:00",
+      "group": "H",
+      "diff": 0.0
+    },
+    {
+      "origin": "2025-02-15 00:00:00",
+      "group": "HD",
+      "diff": 0.0
+    },
+    {
+      "origin": "2025-02-15 00:00:00",
+      "group": "HDW",
+      "diff": 0.0
+    },
+    {
+      "origin": "2025-02-15 00:00:00",
+      "group": "HDWM",
+      "diff": 0.0
+    },
+    {
+      "origin": "2025-02-15 00:00:00",
+      "group": "H_previous_history_only",
+      "diff": 0.0
+    },
+    {
+      "origin": "2025-02-22 00:00:00",
+      "group": "H",
+      "diff": 0.0
+    },
+    {
+      "origin": "2025-02-22 00:00:00",
+      "group": "HD",
+      "diff": 0.0
+    },
+    {
+      "origin": "2025-02-22 00:00:00",
+      "group": "HDW",
+      "diff": 0.0
+    },
+    {
+      "origin": "2025-02-22 00:00:00",
+      "group": "HDWM",
+      "diff": 0.0
+    },
+    {
+      "origin": "2025-02-22 00:00:00",
+      "group": "H_previous_history_only",
+      "diff": 0.0
+    },
+    {
+      "origin": "2025-02-25 00:00:00",
+      "group": "H",
+      "diff": 0.0
+    },
+    {
+      "origin": "2025-02-25 00:00:00",
+      "group": "HD",
+      "diff": 0.0
+    },
+    {
+      "origin": "2025-02-25 00:00:00",
+      "group": "HDW",
+      "diff": 0.0
+    },
+    {
+      "origin": "2025-02-25 00:00:00",
+      "group": "HDWM",
+      "diff": 0.0
+    },
+    {
+      "origin": "2025-02-25 00:00:00",
+      "group": "H_previous_history_only",
+      "diff": 0.0
+    }
+  ],
+  "neural_saved_models": [
+    {
+      "model": "hourly_patchtst",
+      "saved_replays": [
+        {
+          "split": "internal_test",
+          "saved_reload_diff": 0.0,
+          "target_index": 0,
+          "target_name": "target_rate"
+        },
+        {
+          "split": "future_unlabelled",
+          "saved_reload_diff": 0.0,
+          "target_index": 0,
+          "target_name": "target_rate"
+        }
+      ],
+      "frozen_final_epochs": 3,
+      "selected_CV_epochs": [
+        3,
+        5,
+        1
+      ],
+      "selected_CV_best_at_cap": [
+        false,
+        false,
+        false
+      ],
+      "daily_first_inner_fit_rows": null,
+      "daily_first_inner_windows": null
+    },
+    {
+      "model": "hourly_itransformer",
+      "saved_replays": [
+        {
+          "split": "internal_test",
+          "saved_reload_diff": 0.0,
+          "target_index": 6,
+          "target_name": "target_rate"
+        },
+        {
+          "split": "future_unlabelled",
+          "saved_reload_diff": 0.0,
+          "target_index": 6,
+          "target_name": "target_rate"
+        }
+      ],
+      "frozen_final_epochs": 24,
+      "selected_CV_epochs": [
+        24,
+        24,
+        24
+      ],
+      "selected_CV_best_at_cap": [
+        true,
+        true,
+        true
+      ],
+      "daily_first_inner_fit_rows": null,
+      "daily_first_inner_windows": null
+    },
+    {
+      "model": "daily_patchtst",
+      "saved_replays": [
+        {
+          "split": "internal_test",
+          "saved_reload_diff": 0.0,
+          "target_index": 0,
+          "target_name": "target_rate"
+        },
+        {
+          "split": "future_unlabelled",
+          "saved_reload_diff": 0.0,
+          "target_index": 0,
+          "target_name": "target_rate"
+        }
+      ],
+      "frozen_final_epochs": 3,
+      "selected_CV_epochs": [
+        3,
+        1,
+        6
+      ],
+      "selected_CV_best_at_cap": [
+        false,
+        false,
+        false
+      ],
+      "daily_first_inner_fit_rows": 44,
+      "daily_first_inner_windows": 6
+    },
+    {
+      "model": "daily_itransformer",
+      "saved_replays": [
+        {
+          "split": "internal_test",
+          "saved_reload_diff": 0.0,
+          "target_index": 0,
+          "target_name": "target_rate"
+        },
+        {
+          "split": "future_unlabelled",
+          "saved_reload_diff": 0.0,
+          "target_index": 0,
+          "target_name": "target_rate"
+        }
+      ],
+      "frozen_final_epochs": 20,
+      "selected_CV_epochs": [
+        24,
+        1,
+        20
+      ],
+      "selected_CV_best_at_cap": [
+        true,
+        false,
+        false
+      ],
+      "daily_first_inner_fit_rows": 44,
+      "daily_first_inner_windows": 6
+    }
+  ],
+  "neural_inner_normalizers_checked": 31,
+  "neural_outer_normalizers_checked": 35,
+  "neural_normalizer_raw_prefix_recompute_max_absdiff": 0.0,
+  "neural_Chronos_saved_models": [
+    {
+      "model": "hourly_chronos2",
+      "weight_fit_count": 0,
+      "alpha0_baseline_equivalent": true,
+      "selected_config": {
+        "context": "full",
+        "mean_blend_alpha": 0.0,
+        "mapping_profile": "uniform"
+      },
+      "replays": [
+        {
+          "split": "internal_test",
+          "cached_raw_locked_blend_saved_replay_diff": 0.0,
+          "native_history_exact_match": true,
+          "raw_csv_sha_verified": true
+        },
+        {
+          "split": "future_unlabelled",
+          "cached_raw_locked_blend_saved_replay_diff": 0.0,
+          "native_history_exact_match": true,
+          "raw_csv_sha_verified": true
+        }
+      ],
+      "actual_forward_replay_evidence": "Owner neural/verification.json separately records4 official raw forward replays; this audit independently verifies cached raw SHA, actual origin input history, locked calibration and complete745 CSV."
+    },
+    {
+      "model": "daily_chronos2",
+      "weight_fit_count": 0,
+      "alpha0_baseline_equivalent": false,
+      "selected_config": {
+        "context": 28,
+        "mean_blend_alpha": 0.25,
+        "mapping_profile": "uniform"
+      },
+      "replays": [
+        {
+          "split": "internal_test",
+          "cached_raw_locked_blend_saved_replay_diff": 0.0,
+          "native_history_exact_match": true,
+          "raw_csv_sha_verified": true
+        },
+        {
+          "split": "future_unlabelled",
+          "cached_raw_locked_blend_saved_replay_diff": 0.0,
+          "native_history_exact_match": true,
+          "raw_csv_sha_verified": true
+        }
+      ],
+      "actual_forward_replay_evidence": "Owner neural/verification.json separately records4 official raw forward replays; this audit independently verifies cached raw SHA, actual origin input history, locked calibration and complete745 CSV."
+    }
+  ],
+  "metric_csv_checks": [
+    {
+      "model": "daily_level",
+      "split": "validation",
+      "csv_recompute": "pass"
+    },
+    {
+      "model": "daily_level",
+      "split": "internal",
+      "csv_recompute": "pass"
+    },
+    {
+      "model": "daily_arima",
+      "split": "validation",
+      "csv_recompute": "pass"
+    },
+    {
+      "model": "daily_arima",
+      "split": "internal",
+      "csv_recompute": "pass"
+    },
+    {
+      "model": "weekly_level",
+      "split": "validation",
+      "csv_recompute": "pass"
+    },
+    {
+      "model": "weekly_level",
+      "split": "internal",
+      "csv_recompute": "pass"
+    },
+    {
+      "model": "weekly_arima",
+      "split": "validation",
+      "csv_recompute": "pass"
+    },
+    {
+      "model": "weekly_arima",
+      "split": "internal",
+      "csv_recompute": "pass"
+    },
+    {
+      "model": "monthly_level",
+      "split": "validation",
+      "csv_recompute": "pass"
+    },
+    {
+      "model": "monthly_level",
+      "split": "internal",
+      "csv_recompute": "pass"
+    },
+    {
+      "model": "daily_xgboost",
+      "split": "validation",
+      "csv_recompute": "pass"
+    },
+    {
+      "model": "daily_xgboost",
+      "split": "internal",
+      "csv_recompute": "pass"
+    },
+    {
+      "model": "daily_ridge",
+      "split": "validation",
+      "csv_recompute": "pass"
+    },
+    {
+      "model": "daily_ridge",
+      "split": "internal",
+      "csv_recompute": "pass"
+    },
+    {
+      "model": "hourly_xgboost",
+      "split": "validation",
+      "csv_recompute": "pass"
+    },
+    {
+      "model": "hourly_xgboost",
+      "split": "internal",
+      "csv_recompute": "pass"
+    },
+    {
+      "model": "hourly_ridge",
+      "split": "validation",
+      "csv_recompute": "pass"
+    },
+    {
+      "model": "hourly_ridge",
+      "split": "internal",
+      "csv_recompute": "pass"
+    },
+    {
+      "model": "hourly_arima",
+      "split": "validation",
+      "csv_recompute": "pass"
+    },
+    {
+      "model": "hourly_arima",
+      "split": "internal",
+      "csv_recompute": "pass"
+    },
+    {
+      "model": "hourly_baseline",
+      "split": "validation",
+      "csv_recompute": "pass"
+    },
+    {
+      "model": "hourly_baseline",
+      "split": "internal",
+      "csv_recompute": "pass"
+    },
+    {
+      "model": "hourly_patchtst",
+      "split": "validation",
+      "csv_recompute": "pass"
+    },
+    {
+      "model": "hourly_patchtst",
+      "split": "internal",
+      "csv_recompute": "pass"
+    },
+    {
+      "model": "hourly_itransformer",
+      "split": "validation",
+      "csv_recompute": "pass"
+    },
+    {
+      "model": "hourly_itransformer",
+      "split": "internal",
+      "csv_recompute": "pass"
+    },
+    {
+      "model": "daily_patchtst",
+      "split": "validation",
+      "csv_recompute": "pass"
+    },
+    {
+      "model": "daily_patchtst",
+      "split": "internal",
+      "csv_recompute": "pass"
+    },
+    {
+      "model": "daily_itransformer",
+      "split": "validation",
+      "csv_recompute": "pass"
+    },
+    {
+      "model": "daily_itransformer",
+      "split": "internal",
+      "csv_recompute": "pass"
+    },
+    {
+      "model": "hourly_chronos2",
+      "split": "validation",
+      "csv_recompute": "pass"
+    },
+    {
+      "model": "hourly_chronos2",
+      "split": "internal",
+      "csv_recompute": "pass"
+    },
+    {
+      "model": "daily_chronos2",
+      "split": "validation",
+      "csv_recompute": "pass"
+    },
+    {
+      "model": "daily_chronos2",
+      "split": "internal",
+      "csv_recompute": "pass"
+    }
+  ],
+  "model_count": 17,
+  "epoch_cap_notes": [
+    {
+      "model": "hourly_patchtst",
+      "selected_CV_epochs": [
+        3,
+        5,
+        1
+      ],
+      "selected_CV_best_at_cap": [
+        false,
+        false,
+        false
+      ],
+      "epoch_cap": 24
+    },
+    {
+      "model": "hourly_itransformer",
+      "selected_CV_epochs": [
+        24,
+        24,
+        24
+      ],
+      "selected_CV_best_at_cap": [
+        true,
+        true,
+        true
+      ],
+      "epoch_cap": 24
+    },
+    {
+      "model": "daily_patchtst",
+      "selected_CV_epochs": [
+        3,
+        1,
+        6
+      ],
+      "selected_CV_best_at_cap": [
+        false,
+        false,
+        false
+      ],
+      "epoch_cap": 24
+    },
+    {
+      "model": "daily_itransformer",
+      "selected_CV_epochs": [
+        24,
+        1,
+        20
+      ],
+      "selected_CV_best_at_cap": [
+        true,
+        false,
+        false
+      ],
+      "epoch_cap": 24
+    }
+  ],
+  "daily_tiny_sample_limit": "First daily inner prefix44complete days, context7+P32 leaves6 overlapping supervised windows, not6 independent series. Context14 was excluded before fitting because44<14+32.",
+  "epoch_cap_limit": "Some selected models reach the24epoch limit; the finite budget does not establish convergence or optimality. Final epochs are CV-frozen, not chosen using April/May targets.",
+  "availability": "H ends+1h,Dnextmidnight,W-SUNnextMonday00,MSnextMonth00. Full-prefix coarse data is never exposed before its period end; incomplete leading/trailing calendar periods are excluded. Profiles use completed past days/hours only.",
+  "mapping": "Daily native32 rates are uniformly repeated24 and cropped745 (31full forecast days plus1hour). Coarse profiles have sum24 percalendar day, preserving full D/W/MS rate*hours; partial-path outputs do not reconcile realized past partial-period sums.",
+  "Chronos_semantics": "Official point is median; frozen weights with train-prefix mean calibration. Selected H alpha0 is exactly historicalmean baseline and is no proof of foundation-model skill.",
+  "validation_reliability_limit": "Three Late505 paths have1515 scored observations but745 unique label hours;770 repeats. Internal labels and validation do not overlap, and all selection labels are available before Mar29.",
+  "post_EDA_limit": "Prior work saw April/May; this later locked comparison is not a pristine prospective test.",
+  "May_CSV_reads_in_this_audit": 0,
+  "raw_4_9GB_reads_in_this_audit": 0,
+  "source_code_sha256": {
+    "resample_common.py": "643f2e3abf0cc62e306c2c5aa9578bd96090342af24328abafc73710c31fd9ad",
+    "coarse/coarse_models.py": "535cb4c425ebb6ed1dfd03866ca3835d45bd5c61fa538aa0ae0cfec00eb29af0",
+    "hourly/train_hourly.py": "6b4fba75ae376601bafaaa1d366214c8f4d09de0b34f3ed3d1df8080766880c1",
+    "neural/neural_resampling.py": "75b90769c1329d696227daae20677239763f247543469673104d873203898606",
+    "neural/chronos_resampling.py": "7e63a7b385fd640a0d80da1d4729a664809bfa1df7f551863ebf60a27561d54f"
+  }
+}

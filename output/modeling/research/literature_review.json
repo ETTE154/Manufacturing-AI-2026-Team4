@@ -1,0 +1,684 @@
+{
+  "title": "전력 시계열 오픈 데이터·예측 연구 조사 및 평가 설계",
+  "reviewed_at": "2026-10-11",
+  "language": "ko",
+  "scope": "공식 데이터 기관, 저자 논문, 공식 저장소와 모델카드를 검토했다. 로컬 원본 CSV를 다시 읽지 않았다. 검토한 문헌의 성능을 이 프로젝트의 실험 결과로 간주하지 않는다.",
+  "conclusions": [
+    "설비별 3상 전력·전압·전류와 약 5초 계측이라는 데이터 구조는 HIPE가 가장 가깝다. 2026년 SPARK 확장 데이터도 매우 유사하지만 데이터 기술 논문이며 예측 모델의 공통 SOTA 순위를 제시하지 않는다.",
+    "확인한 HIPE 예측 실험은 10/30분 또는 1 step~15시간 앞의 단기 예측이다. 1개월 앞의 이번 평가에는 시간 해상도 ECL 장기 예측 연구의 평가 조건을 함께 참조한다.",
+    "CPU에서 로컬 학습하는 연구 계열 비교는 PatchTST와 iTransformer를 권한다. 2026년 절대 최고라는 뜻은 아니다. Chronos-2 사전학습 추론을 추가하면 최근 foundation model 계열 비교를 보완할 수 있다.",
+    "2026년 8월 TimesFM 3.0의 저자 보고 집계 벤치마크 우세도 확인했다. 이 결과는 HIPE/이 프로젝트/720시간 MAE에서의 우승을 증명하지 않는다.",
+    "실제 고장 라벨이 없으므로 지도 분류의 목표는 규칙 기반 이상 후보 구분이며 AE는 비지도 재구성 이상 점수이다. 실제 고장 진단 정확도·재현율을 산출할 근거가 없다."
+  ],
+  "sources": [
+    {
+      "id": "HIPE_DATA",
+      "title": "KIT 공식 HIPE 데이터",
+      "url": "https://www.energystatusdata.kit.edu/hipe.php",
+      "type": "data_institution"
+    },
+    {
+      "id": "HIPE_2018",
+      "title": "HIPE: An Energy-Status-Data Set from Industrial Production",
+      "authors": "Simon Bischof et al.",
+      "year": 2018,
+      "url": "https://dbis.ipd.kit.edu/download/eenergy18eda-final3.pdf",
+      "doi": "10.1145/3208903.3210278",
+      "type": "primary_paper"
+    },
+    {
+      "id": "HIPE_2021",
+      "title": "Short-term Industrial Load Forecasting for Battery Energy Storage System Simulation",
+      "authors": "Zhichao Wu, Thomas Blank, Simon Bischof, Marc Weber",
+      "year": 2021,
+      "url": "https://hybridpowersystems.org/virtual2021/wp-content/uploads/sites/19/2023/03/3B_4_HYB21_065_paper_Zhichao_Wu.pdf",
+      "type": "primary_paper"
+    },
+    {
+      "id": "HIPE_2025",
+      "title": "Spatiotemporal Framework for Forecasting Energy Consumption in Smart Manufacturing Systems",
+      "authors": "Abdulrazaq Sanni, Sonya Coleman, JP Quinn, Dermot Kerr",
+      "year": 2025,
+      "url": "https://pure.ulster.ac.uk/en/publications/spatiotemporal-framework-for-forecasting-energy-consumption-in-sm/",
+      "manuscript_url": "https://pure.ulster.ac.uk/files/219128015/Paper_-_Conference_Formatted_Final.pdf",
+      "type": "primary_paper",
+      "access_note": "공식 대학 연구 등록 페이지와 공식 원고의 검색 인덱스 추출문을 확인했다. 원고 직접 열기/다운로드는 오류 또는 403으로 실패하여 전체 입력길이·단위·분할 상세는 미확인이다."
+    },
+    {
+      "id": "SPARK_2026",
+      "title": "High-resolution energy data from a sustainable industrial production area in Karlsruhe",
+      "authors": "Jonas Sievers, Simon Bischof, Thomas Blank, Frank Simon",
+      "year": 2026,
+      "url": "https://www.nature.com/articles/s41597-026-06955-4",
+      "institution_pdf": "https://publikationen.bibliothek.kit.edu/1000191069/176128394",
+      "doi": "10.1038/s41597-026-06955-4",
+      "data_doi": "10.35097/bjdg3m3rg5jv3skk",
+      "type": "primary_data_descriptor"
+    },
+    {
+      "id": "UCI_ECL",
+      "title": "UCI ElectricityLoadDiagrams20112014",
+      "url": "https://archive.ics.uci.edu/dataset/321/electricityloaddiagrams20112014",
+      "type": "data_institution"
+    },
+    {
+      "id": "ETT_DATA",
+      "title": "저자 공식 ETDataset",
+      "url": "https://github.com/zhouhaoyi/ETDataset",
+      "type": "official_repository"
+    },
+    {
+      "id": "UCI_STEEL",
+      "title": "UCI Steel Industry Energy Consumption",
+      "url": "https://archive.ics.uci.edu/dataset/851/steel+industry+energy+consumption",
+      "type": "data_institution"
+    },
+    {
+      "id": "PATCH_PAPER",
+      "title": "A Time Series is Worth 64 Words: Long-term Forecasting with Transformers",
+      "authors": "Yuqi Nie et al.",
+      "year": 2023,
+      "venue": "ICLR 2023",
+      "url": "https://arxiv.org/html/2211.14730v2",
+      "type": "primary_paper"
+    },
+    {
+      "id": "PATCH_REPO",
+      "title": "PatchTST 공식 저장소",
+      "url": "https://github.com/yuqinie98/PatchTST",
+      "type": "official_repository",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "ITRANS_PAPER",
+      "title": "iTransformer: Inverted Transformers Are Effective for Time Series Forecasting",
+      "authors": "Yong Liu et al.",
+      "year": 2024,
+      "venue": "ICLR 2024",
+      "url": "https://arxiv.org/html/2310.06625v4",
+      "type": "primary_paper"
+    },
+    {
+      "id": "ITRANS_REPO",
+      "title": "iTransformer 공식 저장소",
+      "url": "https://github.com/thuml/iTransformer",
+      "type": "official_repository",
+      "license": "MIT"
+    },
+    {
+      "id": "TIMEXER_PAPER",
+      "title": "TimeXer: Empowering Transformers for Time Series Forecasting with Exogenous Variables",
+      "authors": "Yuxuan Wang et al.",
+      "year": 2024,
+      "venue": "NeurIPS 2024",
+      "url": "https://arxiv.org/html/2402.19072v4",
+      "type": "primary_paper"
+    },
+    {
+      "id": "TIMEXER_REPO",
+      "title": "TimeXer 공식 저장소",
+      "url": "https://github.com/thuml/TimeXer",
+      "type": "official_repository"
+    },
+    {
+      "id": "TIMESNET_REPO",
+      "title": "TimesNet 공식 저장소",
+      "url": "https://github.com/thuml/TimesNet",
+      "year": 2023,
+      "venue": "ICLR 2023",
+      "type": "official_repository"
+    },
+    {
+      "id": "CHRONOS_PAPER",
+      "title": "Chronos-2: From Univariate to Universal Forecasting",
+      "authors": "Abdul Fatir Ansari et al.",
+      "year": 2025,
+      "url": "https://arxiv.org/html/2510.15821v1",
+      "type": "primary_paper"
+    },
+    {
+      "id": "CHRONOS_REPO",
+      "title": "Amazon 공식 Chronos 저장소",
+      "url": "https://github.com/amazon-science/chronos-forecasting",
+      "type": "official_repository",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "CHRONOS_CARD",
+      "title": "amazon/chronos-2 공식 모델카드",
+      "url": "https://huggingface.co/amazon/chronos-2",
+      "type": "official_model_card",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "TIMESFM_REPO",
+      "title": "Google Research 공식 TimesFM 저장소",
+      "url": "https://github.com/google-research/timesfm",
+      "type": "official_repository",
+      "license": "코드와 <=2.5 가중치 Apache-2.0; 3.0 가중치 비상업·비운영 사용"
+    },
+    {
+      "id": "TIMESFM3_BLOG",
+      "title": "TimesFM-3: A zero-shot foundation model for multivariate forecasting",
+      "url": "https://www.research.google/blog/timesfm-3-a-zero-shot-foundation-model-for-multivariate-forecasting/",
+      "year": 2026,
+      "type": "primary_author_report"
+    },
+    {
+      "id": "NILM_2025",
+      "title": "Fostering non-intrusive load monitoring for smart energy management in industrial applications: an active machine learning approach",
+      "year": 2025,
+      "url": "https://link.springer.com/article/10.1186/s42162-025-00517-5",
+      "type": "primary_paper"
+    },
+    {
+      "id": "NILM_2021",
+      "title": "An Evaluation of NILM Approaches on Industrial Energy-Consumption Data",
+      "year": 2021,
+      "url": "https://github.com/FlopsKa/hipe-nilm",
+      "type": "official_author_repository"
+    },
+    {
+      "id": "INDUSTRIAL_ANOMALY",
+      "title": "Goals and measures for analyzing power consumption data in manufacturing enterprises",
+      "year": 2021,
+      "url": "https://link.springer.com/article/10.1007/s42488-021-00043-5",
+      "type": "primary_paper"
+    }
+  ],
+  "datasets": [
+    {
+      "name": "제공 데이터",
+      "resolution": "5초 원시 신호; 예측은 1시간 kWh",
+      "entities": "13개 모듈; 19개 센서 필드",
+      "target": "activePower 시간 적분 및 잠정 모듈 합계",
+      "coverage": "완전 시간 3,600개 (2024-12-01~2025-04-29)",
+      "similarity": "분석 대상",
+      "limits": "메인 미터/서브미터 계층과 5월 target 단위는 확인 필요; 실제 고장 라벨 없음",
+      "sources": []
+    },
+    {
+      "name": "HIPE",
+      "resolution": "약 5초, 불규칙 polling·결측 구간 존재",
+      "entities": "10개 산업 기계 + 1개 메인 미터",
+      "target": "유효·무효·피상 전력, 전압·전류·주파수 등",
+      "coverage": "2017년 10~12월 약 3개월",
+      "similarity": "설비 계측 구조가 가장 유사",
+      "limits": "메인 미터와 서브미터 합산 시 중복; 공통 장기 예측 horizon/실제 고장 라벨을 확인하지 못함",
+      "sources": [
+        "HIPE_DATA",
+        "HIPE_2018"
+      ]
+    },
+    {
+      "name": "SPARK (KIT 2026 확장)",
+      "resolution": "5초",
+      "entities": "산업 기계 22개 + PV 1개, 장치당 최대 190량",
+      "target": "전력·3상 전압/전류·고조파·THD 등",
+      "coverage": "최대 7년 (2018~2024)",
+      "similarity": "5초 산업 전력·품질 신호로 매우 유사",
+      "limits": "데이터 기술 논문; 확인된 공통 forecast/fault SOTA 순위 없음. 데이터 대량 다운로드는 이번 작업에서 수행하지 않음",
+      "sources": [
+        "SPARK_2026"
+      ]
+    },
+    {
+      "name": "UCI Electricity Load Diagrams",
+      "resolution": "15분 평균 kW; kWh는 값/4",
+      "entities": "원본 370 고객",
+      "target": "고객별 전력 사용",
+      "coverage": "2011~2014",
+      "similarity": "에너지 예측 target은 유사, 기계별 다센서 진단은 부족",
+      "limits": "포르투갈 시간·DST 처리; 원본 370열과 전처리된 ECL 321열을 구분",
+      "sources": [
+        "UCI_ECL"
+      ]
+    },
+    {
+      "name": "ECL 장기 예측 benchmark",
+      "resolution": "1시간",
+      "entities": "전처리 321 고객",
+      "target": "다변량 고객별 전력 시계열",
+      "coverage": "26,304 시간, 논문 설정",
+      "similarity": "96/192/336/720 시간 장기 예측 평가가 직접 참고됨",
+      "limits": "논문별 lookback/전처리/분할/정규화가 달라 출처 간 숫자 직접 순위비교 금지",
+      "sources": [
+        "PATCH_PAPER",
+        "ITRANS_PAPER",
+        "TIMEXER_PAPER"
+      ]
+    },
+    {
+      "name": "ETTh1/2, ETTm1/2",
+      "resolution": "ETTh 1시간; ETTm 15분",
+      "entities": "2개 변압기, 6개 부하 변수 + OT",
+      "target": "대표 단일 target은 변압기 오일 온도 OT; 다변량은 7개 변수",
+      "coverage": "2016년 7월~2018년 7월",
+      "similarity": "전력 기기 다변량 학습 방법 참고",
+      "limits": "OT 예측 정확도는 kWh 예측이나 고장 분류 정확도와 다름",
+      "sources": [
+        "ETT_DATA",
+        "ITRANS_PAPER"
+      ]
+    },
+    {
+      "name": "Steel Industry Energy Consumption",
+      "resolution": "15분 계열 (35,040개/년과 연구 맥락; UCI 페이지는 interval을 명시하지 않음)",
+      "entities": "한국 소규모 철강 공장 집계",
+      "target": "Usage_kWh, 무효 에너지·역률·달력·Load_Type",
+      "coverage": "35,040개 행",
+      "similarity": "한국 산업 에너지·역률 조건 유사",
+      "limits": "Load_Type=light/medium/maximum 부하 상태이며 실제 고장 class가 아님",
+      "sources": [
+        "UCI_STEEL"
+      ]
+    }
+  ],
+  "hipe_studies": [
+    {
+      "name": "HIPE 데이터 원 논문",
+      "year": 2018,
+      "task": "데이터 공개 및 예측/NILM/시뮬레이션 적용 가능성 소개",
+      "resolution": "약 5초",
+      "input_steps": null,
+      "horizon_steps": null,
+      "horizon_duration": "공통 평가 horizon을 제시하지 않음",
+      "result": "단기/중기 forecasting 사용 가능성을 제안하며 공통 SOTA 모델 우승 결과가 아님",
+      "sources": [
+        "HIPE_2018"
+      ]
+    },
+    {
+      "name": "Wu et al. 산업 부하/BESS",
+      "year": 2021,
+      "task": "공장 부하 예측 + peak shaving BESS 시뮬레이션",
+      "resolution": "15분·5분·1분 집계",
+      "input_steps": 6,
+      "horizon_steps_at_15min": [
+        1,
+        4,
+        20,
+        60
+      ],
+      "horizon_duration": [
+        "1 step",
+        "1시간",
+        "5시간",
+        "15시간"
+      ],
+      "models": [
+        "ARIMA/SARIMA",
+        "CNN-LSTM"
+      ],
+      "protocol": "112일 70/20/10 분할, 평일 중심, 각 예측값의 target 시각보다 지정 lead 이전까지 정보를 사용",
+      "result": "ARIMA의 MAE/RMSE가 비슷하거나 더 낮은 경우도 있으나 CNN-LSTM의 장시간 예측 일관성이 BESS 운영에서 유리",
+      "limits": "논문 train은 May~August 112일인데 공식 원 HIPE 배포는 October~December 2017이므로 동일 버전으로 단정하지 않음. 월 단일 origin과 다른 protocol",
+      "sources": [
+        "HIPE_2021"
+      ]
+    },
+    {
+      "name": "Sanni et al. spatiotemporal",
+      "year": 2025,
+      "task": "기계 관계 graph + 시간 모델의 총 에너지 단기 예측",
+      "resolution": "10분 집계",
+      "input_steps": null,
+      "horizon_steps": [
+        1,
+        3
+      ],
+      "horizon_duration": [
+        "10분",
+        "30분"
+      ],
+      "models": [
+        "Spatiotemporal neural network"
+      ],
+      "reported_metrics": [
+        {
+          "steps": 1,
+          "RMSE": 141.4182,
+          "MAE": 28.6888
+        },
+        {
+          "steps": 3,
+          "RMSE": 148.7788,
+          "MAE": 34.7736
+        }
+      ],
+      "units": "원고 전체 직접 접근 실패로 평가 수치 단위 확인 못함; 프로젝트 kWh MAE와 비교하지 않음",
+      "result": "자체 비교에서 일부 지표 최대 53% 개선을 저자 보고",
+      "limits": "공통 720시간 benchmark가 아님; 전체 lookback·분할·baseline 상세 미확인",
+      "sources": [
+        "HIPE_2025"
+      ]
+    },
+    {
+      "name": "HIPE NILM 연구",
+      "year": "2021/2025",
+      "task": "메인 미터에서 개별 기계 소비·가동 상태 분해",
+      "resolution": "5초 계열",
+      "input_steps": null,
+      "horizon_steps": null,
+      "horizon_duration": "미래 forecasting horizon이 아닌 disaggregation sequence",
+      "models": [
+        "CO",
+        "FHMM",
+        "Seq2Seq",
+        "active learning"
+      ],
+      "result": "개별 기계 소비/가동 state 정답으로 NILM 성능 평가",
+      "limits": "가동 state와 전력 분해 label은 실제 고장 label이 아님",
+      "sources": [
+        "NILM_2021",
+        "NILM_2025"
+      ]
+    },
+    {
+      "name": "산업 전력 이상 검토",
+      "year": 2021,
+      "task": "전력 요약·통계 이상 후보와 운영 활용",
+      "resolution": "시간/주 등 요약",
+      "input_steps": null,
+      "horizon_steps": null,
+      "horizon_duration": "고정 forecast horizon 확인 없음",
+      "result": "운영 context가 필요하며 생산 속도 변경도 전력 상승을 설명할 수 있음",
+      "limits": "HIPE 인용은 있으나 실제 pilot는 별도 제조 기업. HIPE 실제 고장 SOTA 분류 실험으로 부르면 안 됨",
+      "sources": [
+        "INDUSTRIAL_ANOMALY"
+      ]
+    }
+  ],
+  "ecl_benchmark": [
+    {
+      "model": "PatchTST/64",
+      "paper": "PATCH_PAPER",
+      "table": "Table 3",
+      "lookback": 512,
+      "horizons": [
+        96,
+        192,
+        336,
+        720
+      ],
+      "MSE": [
+        0.129,
+        0.147,
+        0.163,
+        0.197
+      ],
+      "MAE": [
+        0.222,
+        0.24,
+        0.259,
+        0.29
+      ],
+      "normalization": "논문 전처리 공간; 물리적 kWh MAE가 아님"
+    },
+    {
+      "model": "PatchTST/42",
+      "paper": "PATCH_PAPER",
+      "table": "Table 3",
+      "lookback": 336,
+      "horizons": [
+        96,
+        192,
+        336,
+        720
+      ],
+      "MSE": [
+        0.13,
+        0.148,
+        0.167,
+        0.202
+      ],
+      "MAE": [
+        0.222,
+        0.24,
+        0.261,
+        0.291
+      ],
+      "normalization": "논문 전처리 공간"
+    },
+    {
+      "model": "iTransformer",
+      "paper": "ITRANS_PAPER",
+      "table": "full results",
+      "lookback": 96,
+      "horizons": [
+        96,
+        192,
+        336,
+        720
+      ],
+      "MSE": [
+        0.148,
+        0.162,
+        0.178,
+        0.225
+      ],
+      "MAE": [
+        0.24,
+        0.253,
+        0.269,
+        0.317
+      ],
+      "normalization": "논문 전처리 공간"
+    },
+    {
+      "model": "TimeXer",
+      "paper": "TIMEXER_PAPER",
+      "table": "Table 12 (multivariate, exogenous single-target Table 11과 구분)",
+      "lookback": 96,
+      "horizons": [
+        96,
+        192,
+        336,
+        720
+      ],
+      "MSE": [
+        0.14,
+        0.157,
+        0.176,
+        0.211
+      ],
+      "MAE": [
+        0.242,
+        0.256,
+        0.275,
+        0.306
+      ],
+      "normalization": "논문 전처리 공간"
+    },
+    {
+      "model": "iTransformer (TimeXer 비교 표)",
+      "paper": "TIMEXER_PAPER",
+      "table": "Table 12",
+      "lookback": 96,
+      "horizons": [
+        96,
+        192,
+        336,
+        720
+      ],
+      "MSE": [
+        0.148,
+        0.162,
+        0.178,
+        0.225
+      ],
+      "MAE": [
+        0.24,
+        0.253,
+        0.269,
+        0.317
+      ],
+      "normalization": "논문 전처리 공간"
+    }
+  ],
+  "candidate_models": [
+    {
+      "name": "PatchTST",
+      "release": "ICLR 2023",
+      "method": "채널별 공유 Transformer + 시간 patch",
+      "role": "로컬 학습 비교 1",
+      "cpu_feasibility": "작은 architecture로 CPU 실행 가능하다는 설계 판단. patch가 attention token 수를 줄임; 이 PC latency는 실측 결과에 별도 기록",
+      "configuration": "L=168~336, patch=16,stride=8,d_model=32~64,1~2층을 출발점으로 validation 선택",
+      "evidence": "ECL 96~720 horizon 원문 결과 있음. 공식 전체 architecture와 compact 구현을 구분",
+      "sources": [
+        "PATCH_PAPER",
+        "PATCH_REPO"
+      ]
+    },
+    {
+      "name": "iTransformer",
+      "release": "ICLR 2024",
+      "method": "변수 token attention으로 설비간 관계 학습",
+      "role": "로컬 학습 비교 2",
+      "cpu_feasibility": "13개 변수의 attention 크기가 작아 CPU compact model 실현 가능하다는 설계 판단",
+      "configuration": "L=168~336,d_model=32~64,1~2층; 13개 모듈 출력 후 같은 target 정의로 비교",
+      "evidence": "동일 L=96 ECL 장기 결과 있음; 원문 모든 실험을 재현했다고 표현하지 않음",
+      "sources": [
+        "ITRANS_PAPER",
+        "ITRANS_REPO"
+      ]
+    },
+    {
+      "name": "TimeXer",
+      "release": "NeurIPS 2024",
+      "method": "endogenous patch/global token + exogenous variate cross-attention",
+      "role": "추가 대안",
+      "cpu_feasibility": "compact PyTorch 구현 가능; 과거 센서와 미래 확정 calendar 변수 availability 관리가 필요",
+      "configuration": "원문 L96/P16; future 실제 전압·전류·전력 입력 금지",
+      "evidence": "동일 L96 ECL H720 MAE .306은 iTransformer .317보다 작으나 짧은 horizon MAE는 iTransformer가 더 작음",
+      "sources": [
+        "TIMEXER_PAPER",
+        "TIMEXER_REPO"
+      ]
+    },
+    {
+      "name": "TimesNet",
+      "release": "ICLR 2023",
+      "method": "여러 주기 variation을 2차원 tensor로 처리",
+      "role": "범용 forecast/classification/anomaly architecture 참고",
+      "cpu_feasibility": "작은 2Dconv 구성 가능하나 새로운 실험에 우선 추가하지 않음",
+      "configuration": "원문/공식 구현의 task별 학습 및 label 필요",
+      "evidence": "다른 task 지원을 실제 고장 label 없이 고장 성능을 증명했다는 뜻으로 사용하지 않음",
+      "sources": [
+        "TIMESNET_REPO"
+      ]
+    },
+    {
+      "name": "Chronos-2",
+      "release": "2025-10",
+      "parameters": 120000000,
+      "method": "사전학습 encoder + group attention + quantile 출력",
+      "role": "최근 사전학습 추가 비교 권고",
+      "cpu_feasibility": "공식 CPU inference 지원. context8192, prediction1024로 H745 직접 가능. 속도/메모리 이 PC에서 실측",
+      "configuration": "amazon/chronos-2 exact revision 고정, device=cpu, context<=3600, prediction_length=745, point=0.5 quantile. 28M small을 사용할 경우 이름·checkpoint를 별도 표시",
+      "evidence": "발표 당시 fev-bench/GIFT/Chronos II의 강한 저자보고 결과. GIFT training 일부와 pretrain overlap 존재하지만 test 제외; 2026 전체모델 1위 주장 금지",
+      "sources": [
+        "CHRONOS_PAPER",
+        "CHRONOS_REPO",
+        "CHRONOS_CARD"
+      ]
+    },
+    {
+      "name": "TimesFM 2.5",
+      "release": "2025-09",
+      "parameters": 200000000,
+      "method": "사전학습 decoder-only",
+      "role": "Apache-2.0 가중치 대안",
+      "cpu_feasibility": "CPU 실행 가능 여부/745 inference는 사용 버전 실측 필요; 16k context, 선택적30M quantile head H1000",
+      "configuration": "2.5와3.0 패키지/가중치/출력구성을 명시적으로 구분",
+      "evidence": "2025 계열 foundation model; 최신3.0과 동일성능으로 표현 금지",
+      "sources": [
+        "TIMESFM_REPO"
+      ]
+    },
+    {
+      "name": "TimesFM 3.0",
+      "release": "2026-08",
+      "parameters": 330000000,
+      "method": "native multivariate + covariate 사전학습",
+      "role": "최신 문헌 대안 및 라이선스 검토",
+      "cpu_feasibility": "공식 example은 cuda, MLX는 Apple 대상. Windows CPU latency 미검증이며 Chronos보다 모델 큼",
+      "configuration": "다운로드/selfhost 가중치는 비상업·비운영 제한. 운영배포는 별도 권리 조건 확인",
+      "evidence": "Google 저자보고 fev/GIFT/TIME 집계 순위 우세. ECL H720 또는 HIPE의 동일조건 실험 결과와 구분",
+      "sources": [
+        "TIMESFM_REPO",
+        "TIMESFM3_BLOG"
+      ]
+    }
+  ],
+  "horizon_mapping": [
+    {
+      "resolution": "1시간",
+      "H96": "4일",
+      "H192": "8일",
+      "H336": "14일",
+      "H720": "30일"
+    },
+    {
+      "resolution": "15분",
+      "H96": "1일",
+      "H192": "2일",
+      "H336": "3.5일",
+      "H720": "7.5일"
+    },
+    {
+      "resolution": "5초",
+      "H96": "8분",
+      "H192": "16분",
+      "H336": "28분",
+      "H720": "60분"
+    }
+  ],
+  "proposed_protocol": {
+    "unit": "1시간 energy_kWh=Σ(activePower_kW×5/3600), 720개 레코드/설비/시간만 완전 시간",
+    "hierarchy": "13 모듈 합계는 5월 정답과 같은 측정 범위라는 잠정 가정. 메인+서브미터를 모두 더하면 중복될 수 있음",
+    "last_observed_hour": "2025-04-29 23:00:00",
+    "forecast_origin": "2025-04-30 00:00:00",
+    "forecast_length": 745,
+    "offsets_zero_based": "0..744 (첫 미관측 label=origin)",
+    "leads_from_last_observed_one_based": "1..745",
+    "scored_offsets_zero_based": "240..744",
+    "scored_leads_one_based": "241..745",
+    "scored_slice_python": "forecast[240:745]",
+    "scored_labels": 505,
+    "scoring_range_inclusive": "2025-05-10 00:00:00 ~ 2025-05-31 00:00:00",
+    "endpoint_rule": "4/30 00:00 원시 1개 레코드/설비는 1시간 값으로 포함하지 않음",
+    "primary_metric": "MAE; RMSE와 baseline 대비 skill을 보조 보고",
+    "validation": "시간순 fixed-origin. 96/192/336/720 보조 비교와 함께 최종 H745 및 240:745 점수 slice를 모사하는 April 내부 검증 권고. 예: origin2025-03-29 00, H745 ->2025-04-29 00, 평가4/8 00~4/29 00, 학습은3/28 23까지",
+    "lookback": "168~336 시간(1~2주)을 초기 비교; L96/512는 April validation 예산 내에서만 선택",
+    "leakage_rules": [
+      "scaler와 모델 fit은 해당 origin 직전 train에만 적용; training window의 출력 label이 train cutoff를 넘지 않아야 함",
+      "예측은 한 번의 origin에서 745개를 생성; 240개 비점수 bridge를 실제 5월 관측으로 채우지 않음",
+      "재귀 XGBoost/ARIMA 갱신은 자신의 예측으로만 수행하고 5월 ground truth를 lag에 사용하지 않음",
+      "확정 달력만 future covariate; 미래 실제 센서/날씨/생산량은 origin 당시 확보된 것만 사용",
+      "모델·hyperparameter·seed·quantile 선택은 April 검증으로 끝내고 May는 최종 1회 평가",
+      "모든 모델은 같은 origin/target/단위/slice 비교. 추가 multivariate 입력과 aggregate-only 입력의 차이를 함께 표시",
+      "벤치마크 정규화 MAE와 프로젝트 kWh MAE를 숫자로 직접 비교하지 않음"
+    ],
+    "project_inference": "신호 CV가 낮고 평균 기준선이 강하므로 복잡 모델은 MAE 감소와 실제 실행 시간으로 가치 판단; 모델 이름만으로 성능 향상을 가정하지 않음"
+  },
+  "diagnostic_protocol": {
+    "classification_target": "voltage/PF/unbalance 규칙 기반 이상 후보 state label. 실제 고장 class 아님",
+    "classification_metrics": "proxy label에 대한 precision/recall/F1만 가능; 고장 진단 F1로 명명하지 않음",
+    "autoencoder": "과거 screened apparently-normal 구간에 scaler/AE fit; validation 재구성 오차 quantile로 threshold 고정. 정상 정답이 검증된 것은 아님",
+    "evaluation": "시간순 분할, 설비별 calibration, 후보 이벤트/일·지속시간·점수·proxy rule 일치도 보고. 실제 fault recall/F1와 detection delay는 라벨 수집 전 계산 불가",
+    "cautions": [
+      "설비 ID와 voltage/PF 변수가 rule label을 거의 결정하면 분류는 규칙 복제 성능일 수 있음",
+      "운영 속도·부하 변화·센서 오류도 이상 점수를 높일 수 있으므로 원인 확인과 실제 유지보수 라벨 필요",
+      "합성 고장 주입 실험은 synthetic detection으로 구분하고 실제 진단 성능으로 전환하지 않음",
+      "NILM 기계 가동 label과 부하 class를 fault label로 해석하지 않음",
+      "대상 데이터를 보고 threshold를 반복 조정한 뒤 같은 데이터를 test로 재사용하지 않음"
+    ],
+    "sources": [
+      "HIPE_2018",
+      "NILM_2021",
+      "NILM_2025",
+      "INDUSTRIAL_ANOMALY"
+    ]
+  }
+}

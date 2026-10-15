@@ -1,0 +1,34 @@
+{
+  "xgb_rule_distillation": {
+    "xgb_rule_distillation.json": {
+      "source": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\diagnosis\\xgb_rule_distillation.json",
+      "sha256": "8aef1b6db83a80e01d04f3948d2204630b0c03632c8dca847b1ea4813dcc2612"
+    }
+  },
+  "xgb_rule_sensor_excluded_transfer": {
+    "xgb_rule_sensor_excluded_transfer.json": {
+      "source": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\diagnosis\\xgb_rule_sensor_excluded_transfer.json",
+      "sha256": "dbc31888022c8662dcd47ccb6ab1a61526eda6fa94d1a615e21a8c3a609bca38"
+    }
+  },
+  "ae_unsupervised_all_training": {
+    "ae_unsupervised_all_training.pt": {
+      "source": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\diagnosis\\ae_unsupervised_all_training.pt",
+      "sha256": "5d526216b420a2699198b569e8bf226423a8fb8c8c5ee6c6ececc2646af90d79"
+    },
+    "ae_unsupervised_all_training_scaler.pkl": {
+      "source": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\diagnosis\\ae_unsupervised_all_training_scaler.pkl",
+      "sha256": "db8c104011c098986436776aec53ee3f58c545e2a8277b80061db13e3a2db0ea"
+    }
+  },
+  "ae_weak_normal_proxy": {
+    "ae_weak_normal_proxy.pt": {
+      "source": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\diagnosis\\ae_weak_normal_proxy.pt",
+      "sha256": "dd95a56fde83ce36f397ef9fe2db3cb1c852a6622b8a9531027e34b00ed02764"
+    },
+    "ae_weak_normal_proxy_scaler.pkl": {
+      "source": "E:\\AI work\\AWS_프로젝트\\output\\modeling\\diagnosis\\ae_weak_normal_proxy_scaler.pkl",
+      "sha256": "580298535edf62d895bb9548c897bdbfc8ff176f093a99b0d978fc64cf571dd4"
+    }
+  }
+}

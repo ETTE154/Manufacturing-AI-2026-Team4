@@ -1,0 +1,158 @@
+{
+  "candidate": 7,
+  "config": {
+    "context": 168,
+    "d_model": 32,
+    "layers": 1,
+    "dropout": 0.1,
+    "loss": "L1"
+  },
+  "architecture": {
+    "enc_in": 1,
+    "seq_len": 168,
+    "pred_len": 745,
+    "d_model": 32,
+    "d_ff": 64,
+    "e_layers": 1,
+    "n_heads": 4,
+    "dropout": 0.1,
+    "fc_dropout": 0.1,
+    "head_dropout": 0.1,
+    "individual": false,
+    "patch_len": 16,
+    "stride": 8,
+    "padding_patch": "end",
+    "revin": true,
+    "affine": true,
+    "subtract_last": false,
+    "decomposition": false,
+    "kernel_size": 25,
+    "training_loss": "L1"
+  },
+  "validation": {
+    "P745": {
+      "count": 745,
+      "mae_kwh": 78.94337711048038,
+      "rmse_kwh": 99.42556174570893,
+      "mape_percent": 0.2017473272484846,
+      "bias_pred_minus_actual_kwh": -3.600366138674076,
+      "r2": -0.05704380013280819
+    },
+    "LateP505": {
+      "count": 505,
+      "mae_kwh": 79.68425607495396,
+      "rmse_kwh": 99.68930010184488,
+      "mape_percent": 0.20361224164539768,
+      "bias_pred_minus_actual_kwh": -4.549449871212767,
+      "r2": -0.04227904571210117
+    }
+  },
+  "fold_fits": [
+    {
+      "fold": 1,
+      "fit_origin": "2025-02-25 00:00:00",
+      "epochs": 3,
+      "inner": {
+        "inner_fitting_hours": 1319,
+        "inner_fitting_end": "2025-01-24 22:00:00",
+        "inner_tail_origin": "2025-01-24 23:00:00",
+        "inner_tail_end": "2025-02-24 23:00:00",
+        "inner_holdout_hours": 745,
+        "inner_origins": 1,
+        "training_windows": 407,
+        "training_tail_target_overlap": false,
+        "best_epoch": 3,
+        "best_mae_kwh": 82.15448261771878,
+        "epochs_run": 7,
+        "logs": [
+          {
+            "epoch": 1,
+            "training_loss_standardized": 0.9253999579157818,
+            "training_loss_name": "L1",
+            "inner_chronological_mae_kwh": 82.49941259345653
+          },
+          {
+            "epoch": 2,
+            "training_loss_standardized": 0.8277649066664956,
+            "training_loss_name": "L1",
+            "inner_chronological_mae_kwh": 83.04434322943065
+          },
+          {
+            "epoch": 3,
+            "training_loss_standardized": 0.7761127670508345,
+            "training_loss_name": "L1",
+            "inner_chronological_mae_kwh": 82.15448261771878
+          },
+          {
+            "epoch": 4,
+            "training_loss_standardized": 0.7458022642487098,
+            "training_loss_name": "L1",
+            "inner_chronological_mae_kwh": 82.44360827707303
+          },
+          {
+            "epoch": 5,
+            "training_loss_standardized": 0.7243048577988177,
+            "training_loss_name": "L1",
+            "inner_chronological_mae_kwh": 83.3831698482546
+          },
+          {
+            "epoch": 6,
+            "training_loss_standardized": 0.7097480415712117,
+            "training_loss_name": "L1",
+            "inner_chronological_mae_kwh": 83.60088222075626
+          },
+          {
+            "epoch": 7,
+            "training_loss_standardized": 0.6968103029218294,
+            "training_loss_name": "L1",
+            "inner_chronological_mae_kwh": 84.39893947320145
+          }
+        ],
+        "seconds": 0.8466497000772506
+      },
+      "refit": {
+        "path": "E:\\AI work\\AWS_프로젝트\\output\\optimization_20261013\\forecast\\long745\\patchtst\\checkpoints\\candidate7_fold1.pt",
+        "sha256": "08e70d351d5095281fa87cf91c0d89f077e579e39d05c942420058d8a4f2c8bc",
+        "parameter_count": 511148,
+        "epochs": 3,
+        "family": "patchtst",
+        "architecture": {
+          "enc_in": 1,
+          "seq_len": 168,
+          "pred_len": 745,
+          "d_model": 32,
+          "d_ff": 64,
+          "e_layers": 1,
+          "n_heads": 4,
+          "dropout": 0.1,
+          "fc_dropout": 0.1,
+          "head_dropout": 0.1,
+          "individual": false,
+          "patch_len": 16,
+          "stride": 8,
+          "padding_patch": "end",
+          "revin": true,
+          "affine": true,
+          "subtract_last": false,
+          "decomposition": false,
+          "kernel_size": 25,
+          "training_loss": "L1"
+        },
+        "normalization_mean": 39129.81282000295,
+        "normalization_scale": 94.45265436998334,
+        "forecast_context_in_checkpoint": true,
+        "history_hours": 2064,
+        "history_end": "2025-02-24 23:00:00",
+        "fit_seconds": 0.9759610000764951,
+        "training_windows": 1152,
+        "maximum_supervised_label": "2025-02-24 23:00:00",
+        "training_loss_logs": [
+          0.8869496600495445,
+          0.8037518809239069,
+          0.7833849903610017
+        ],
+        "training_loss_name": "L1"
+      }
+    }
+  ]
+}

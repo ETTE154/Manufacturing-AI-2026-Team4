@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "cases": [
+    {
+      "case": "hourly_stl24",
+      "rows": 3600,
+      "reconstruction_max_absdiff": 3.637978807091713e-12,
+      "strength_csv_recompute_diff": 0.0
+    },
+    {
+      "case": "hourly_stl168",
+      "rows": 3600,
+      "reconstruction_max_absdiff": 3.637978807091713e-12,
+      "strength_csv_recompute_diff": 0.0
+    },
+    {
+      "case": "daily_stl7",
+      "rows": 150,
+      "reconstruction_max_absdiff": 3.61666252501891e-12,
+      "strength_csv_recompute_diff": 0.0
+    },
+    {
+      "case": "hourly_mstl24_168",
+      "rows": 3600,
+      "reconstruction_max_absdiff": 7.176481631177012e-12,
+      "strength_csv_recompute_diff": 0.0
+    }
+  ],
+  "original_target_sha_unchanged": true
+}

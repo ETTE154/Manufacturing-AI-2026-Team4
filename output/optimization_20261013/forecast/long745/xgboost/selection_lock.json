@@ -1,0 +1,1085 @@
+{
+  "model": "xgboost",
+  "scenario": "long745",
+  "selected_config": {
+    "n_estimators": 50,
+    "max_depth": 2,
+    "learning_rate": 0.01,
+    "min_child_weight": 100,
+    "reg_lambda": 100.0,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "feature_set": "history",
+    "residual_shrinkage": 0.5,
+    "objective": "reg:absoluteerror"
+  },
+  "objective": 76.03238760222607,
+  "selected_candidate": 30,
+  "selection_uses_April_test": false,
+  "selection_uses_May_labels": false,
+  "selection_basis": "Single Feb25 P745 blocked validation MAE",
+  "search_records": [
+    {
+      "candidate": 0,
+      "config": {
+        "n_estimators": 50,
+        "max_depth": 1,
+        "learning_rate": 0.03,
+        "min_child_weight": 50,
+        "reg_lambda": 100.0,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "feature_set": "history_calendar",
+        "residual_shrinkage": 1.0
+      },
+      "objective_mae_kwh": 76.2524145056634,
+      "validation": {
+        "path_P745": {
+          "count": 745,
+          "mae_kwh": 76.2524145056634,
+          "rmse_kwh": 96.84212048144248,
+          "mape_percent": 0.1949009927671339,
+          "bias_pred_minus_actual_kwh": 2.353784628250287,
+          "r2": -0.0028257041041044317
+        },
+        "late_P505": {
+          "count": 505,
+          "mae_kwh": 77.5201169591432,
+          "rmse_kwh": 97.69559755502385,
+          "mape_percent": 0.19811566293542388,
+          "bias_pred_minus_actual_kwh": 1.7518144366277801,
+          "r2": -0.0010065056952053286
+        }
+      },
+      "fold_validation": []
+    },
+    {
+      "candidate": 1,
+      "config": {
+        "n_estimators": 150,
+        "max_depth": 3,
+        "learning_rate": 0.03,
+        "min_child_weight": 20,
+        "reg_lambda": 10.0,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "feature_set": "history_calendar",
+        "residual_shrinkage": 1.0
+      },
+      "objective_mae_kwh": 76.40075057459573,
+      "validation": {
+        "path_P745": {
+          "count": 745,
+          "mae_kwh": 76.40075057459573,
+          "rmse_kwh": 97.24047359171884,
+          "mape_percent": 0.19529167359523014,
+          "bias_pred_minus_actual_kwh": 5.090397273086894,
+          "r2": -0.01109277528884367
+        },
+        "late_P505": {
+          "count": 505,
+          "mae_kwh": 77.7218528546031,
+          "rmse_kwh": 98.10861625671443,
+          "mape_percent": 0.19863976968510078,
+          "bias_pred_minus_actual_kwh": 3.6038704178592833,
+          "r2": -0.009488122821543099
+        }
+      },
+      "fold_validation": []
+    },
+    {
+      "candidate": 2,
+      "config": {
+        "n_estimators": 100,
+        "max_depth": 2,
+        "learning_rate": 0.01,
+        "min_child_weight": 5,
+        "reg_lambda": 10.0,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "feature_set": "history",
+        "residual_shrinkage": 1.0
+      },
+      "objective_mae_kwh": 76.15155013269734,
+      "validation": {
+        "path_P745": {
+          "count": 745,
+          "mae_kwh": 76.15155013269734,
+          "rmse_kwh": 96.8485548114648,
+          "mape_percent": 0.19460438377196773,
+          "bias_pred_minus_actual_kwh": -5.260434474713218,
+          "r2": -0.0029589669005003483
+        },
+        "late_P505": {
+          "count": 505,
+          "mae_kwh": 77.52800301213243,
+          "rmse_kwh": 97.83784103400525,
+          "mape_percent": 0.198094924304519,
+          "bias_pred_minus_actual_kwh": -6.116389473937832,
+          "r2": -0.003923531803716962
+        }
+      },
+      "fold_validation": []
+    },
+    {
+      "candidate": 3,
+      "config": {
+        "n_estimators": 350,
+        "max_depth": 4,
+        "learning_rate": 0.03,
+        "min_child_weight": 5,
+        "reg_lambda": 1.0,
+        "subsample": 1.0,
+        "colsample_bytree": 0.8,
+        "feature_set": "history_calendar",
+        "residual_shrinkage": 0.25
+      },
+      "objective_mae_kwh": 76.12906732753166,
+      "validation": {
+        "path_P745": {
+          "count": 745,
+          "mae_kwh": 76.12906732753166,
+          "rmse_kwh": 96.82640502293538,
+          "mape_percent": 0.19457680107405428,
+          "bias_pred_minus_actual_kwh": 0.8205101112682167,
+          "r2": -0.002500255076027802
+        },
+        "late_P505": {
+          "count": 505,
+          "mae_kwh": 77.4869121125863,
+          "rmse_kwh": 97.7725651864572,
+          "mape_percent": 0.198017614102586,
+          "bias_pred_minus_actual_kwh": -0.6965993727371211,
+          "r2": -0.002584375138354078
+        }
+      },
+      "fold_validation": []
+    },
+    {
+      "candidate": 4,
+      "config": {
+        "n_estimators": 50,
+        "max_depth": 2,
+        "learning_rate": 0.07,
+        "min_child_weight": 5,
+        "reg_lambda": 1.0,
+        "subsample": 0.8,
+        "colsample_bytree": 1.0,
+        "feature_set": "history_calendar",
+        "residual_shrinkage": 0.25
+      },
+      "objective_mae_kwh": 76.1037893373765,
+      "validation": {
+        "path_P745": {
+          "count": 745,
+          "mae_kwh": 76.1037893373765,
+          "rmse_kwh": 96.75165290113608,
+          "mape_percent": 0.1945141390800205,
+          "bias_pred_minus_actual_kwh": 1.1379061661989016,
+          "r2": -0.000952947936734061
+        },
+        "late_P505": {
+          "count": 505,
+          "mae_kwh": 77.48885965586777,
+          "rmse_kwh": 97.67002657126022,
+          "mape_percent": 0.19802717217258994,
+          "bias_pred_minus_actual_kwh": 0.21940900429196905,
+          "r2": -0.000482564557959142
+        }
+      },
+      "fold_validation": []
+    },
+    {
+      "candidate": 5,
+      "config": {
+        "n_estimators": 50,
+        "max_depth": 4,
+        "learning_rate": 0.03,
+        "min_child_weight": 20,
+        "reg_lambda": 100.0,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "feature_set": "history",
+        "residual_shrinkage": 0.5
+      },
+      "objective_mae_kwh": 76.0614015977877,
+      "validation": {
+        "path_P745": {
+          "count": 745,
+          "mae_kwh": 76.0614015977877,
+          "rmse_kwh": 96.74820565896152,
+          "mape_percent": 0.19438816236429587,
+          "bias_pred_minus_actual_kwh": -2.4092222752908814,
+          "r2": -0.0008816216980060965
+        },
+        "late_P505": {
+          "count": 505,
+          "mae_kwh": 77.44089260439597,
+          "rmse_kwh": 97.71761079460722,
+          "mape_percent": 0.19788696804264425,
+          "bias_pred_minus_actual_kwh": -3.2102444517627324,
+          "r2": -0.0014576596703352873
+        }
+      },
+      "fold_validation": []
+    },
+    {
+      "candidate": 6,
+      "config": {
+        "n_estimators": 100,
+        "max_depth": 3,
+        "learning_rate": 0.03,
+        "min_child_weight": 100,
+        "reg_lambda": 100.0,
+        "subsample": 0.8,
+        "colsample_bytree": 1.0,
+        "feature_set": "history_calendar",
+        "residual_shrinkage": 1.0
+      },
+      "objective_mae_kwh": 76.19563544187247,
+      "validation": {
+        "path_P745": {
+          "count": 745,
+          "mae_kwh": 76.19563544187247,
+          "rmse_kwh": 97.00006024921731,
+          "mape_percent": 0.1947594642455404,
+          "bias_pred_minus_actual_kwh": 3.367157612438802,
+          "r2": -0.006099387371476528
+        },
+        "late_P505": {
+          "count": 505,
+          "mae_kwh": 77.50379845717697,
+          "rmse_kwh": 97.82060303494345,
+          "mape_percent": 0.19807386903413238,
+          "bias_pred_minus_actual_kwh": 1.8312794123648892,
+          "r2": -0.0035698014232998787
+        }
+      },
+      "fold_validation": []
+    },
+    {
+      "candidate": 7,
+      "config": {
+        "n_estimators": 100,
+        "max_depth": 3,
+        "learning_rate": 0.03,
+        "min_child_weight": 5,
+        "reg_lambda": 1.0,
+        "subsample": 0.8,
+        "colsample_bytree": 1.0,
+        "feature_set": "history_calendar",
+        "residual_shrinkage": 0.5
+      },
+      "objective_mae_kwh": 76.09303348035961,
+      "validation": {
+        "path_P745": {
+          "count": 745,
+          "mae_kwh": 76.09303348035961,
+          "rmse_kwh": 96.7959371523874,
+          "mape_percent": 0.19448941923678256,
+          "bias_pred_minus_actual_kwh": 1.7503201901365968,
+          "r2": -0.0018694510630334893
+        },
+        "late_P505": {
+          "count": 505,
+          "mae_kwh": 77.4433419891426,
+          "rmse_kwh": 97.68096013660411,
+          "mape_percent": 0.19791238742700593,
+          "bias_pred_minus_actual_kwh": 0.4930296600115656,
+          "r2": -0.0007065729696991152
+        }
+      },
+      "fold_validation": []
+    },
+    {
+      "candidate": 8,
+      "config": {
+        "n_estimators": 50,
+        "max_depth": 2,
+        "learning_rate": 0.01,
+        "min_child_weight": 20,
+        "reg_lambda": 10.0,
+        "subsample": 1.0,
+        "colsample_bytree": 0.8,
+        "feature_set": "history_calendar",
+        "residual_shrinkage": 0.25
+      },
+      "objective_mae_kwh": 76.05800484432577,
+      "validation": {
+        "path_P745": {
+          "count": 745,
+          "mae_kwh": 76.05800484432577,
+          "rmse_kwh": 96.70950236742546,
+          "mape_percent": 0.19439642690384848,
+          "bias_pred_minus_actual_kwh": 0.9768787580626843,
+          "r2": -8.099362126601228e-05
+        },
+        "late_P505": {
+          "count": 505,
+          "mae_kwh": 77.43136462734955,
+          "rmse_kwh": 97.6302529133531,
+          "mape_percent": 0.197879810532451,
+          "bias_pred_minus_actual_kwh": 0.15209255477725897,
+          "r2": 0.00033211217231898793
+        }
+      },
+      "fold_validation": []
+    },
+    {
+      "candidate": 9,
+      "config": {
+        "n_estimators": 200,
+        "max_depth": 2,
+        "learning_rate": 0.01,
+        "min_child_weight": 50,
+        "reg_lambda": 10.0,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "feature_set": "history_calendar",
+        "residual_shrinkage": 0.25
+      },
+      "objective_mae_kwh": 76.10001869650402,
+      "validation": {
+        "path_P745": {
+          "count": 745,
+          "mae_kwh": 76.10001869650402,
+          "rmse_kwh": 96.73878710115889,
+          "mape_percent": 0.19450571296617425,
+          "bias_pred_minus_actual_kwh": 1.3651283634667348,
+          "r2": -0.000686757049405573
+        },
+        "late_P505": {
+          "count": 505,
+          "mae_kwh": 77.48676203508224,
+          "rmse_kwh": 97.658699180768,
+          "mape_percent": 0.19802337273897766,
+          "bias_pred_minus_actual_kwh": 0.5170113659908161,
+          "r2": -0.00025051384768759455
+        }
+      },
+      "fold_validation": []
+    },
+    {
+      "candidate": 10,
+      "config": {
+        "n_estimators": 350,
+        "max_depth": 3,
+        "learning_rate": 0.03,
+        "min_child_weight": 100,
+        "reg_lambda": 10.0,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "feature_set": "history_calendar",
+        "residual_shrinkage": 0.5
+      },
+      "objective_mae_kwh": 76.30404980328419,
+      "validation": {
+        "path_P745": {
+          "count": 745,
+          "mae_kwh": 76.30404980328419,
+          "rmse_kwh": 97.04815864701983,
+          "mape_percent": 0.19502808023616564,
+          "bias_pred_minus_actual_kwh": 1.6655174184518893,
+          "r2": -0.007097402552013188
+        },
+        "late_P505": {
+          "count": 505,
+          "mae_kwh": 77.7073198341723,
+          "rmse_kwh": 97.98924575943254,
+          "mape_percent": 0.19858319915360081,
+          "bias_pred_minus_actual_kwh": -0.2835127114703865,
+          "r2": -0.007033092984513045
+        }
+      },
+      "fold_validation": []
+    },
+    {
+      "candidate": 11,
+      "config": {
+        "n_estimators": 100,
+        "max_depth": 3,
+        "learning_rate": 0.01,
+        "min_child_weight": 5,
+        "reg_lambda": 1.0,
+        "subsample": 1.0,
+        "colsample_bytree": 0.8,
+        "feature_set": "history",
+        "residual_shrinkage": 0.5
+      },
+      "objective_mae_kwh": 76.07064787415673,
+      "validation": {
+        "path_P745": {
+          "count": 745,
+          "mae_kwh": 76.07064787415673,
+          "rmse_kwh": 96.75225663604786,
+          "mape_percent": 0.19441022466399344,
+          "bias_pred_minus_actual_kwh": -2.7297736380645974,
+          "r2": -0.0009654399636307431
+        },
+        "late_P505": {
+          "count": 505,
+          "mae_kwh": 77.45718817246558,
+          "rmse_kwh": 97.7240636221861,
+          "mape_percent": 0.197926891571724,
+          "bias_pred_minus_actual_kwh": -3.563974598718468,
+          "r2": -0.0015899274759256787
+        }
+      },
+      "fold_validation": []
+    },
+    {
+      "candidate": 12,
+      "config": {
+        "n_estimators": 50,
+        "max_depth": 3,
+        "learning_rate": 0.07,
+        "min_child_weight": 5,
+        "reg_lambda": 100.0,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "feature_set": "history",
+        "residual_shrinkage": 0.5
+      },
+      "objective_mae_kwh": 76.16139431936739,
+      "validation": {
+        "path_P745": {
+          "count": 745,
+          "mae_kwh": 76.16139431936739,
+          "rmse_kwh": 96.86430970411826,
+          "mape_percent": 0.19462901473671673,
+          "bias_pred_minus_actual_kwh": -5.377821352810035,
+          "r2": -0.0032853072604552835
+        },
+        "late_P505": {
+          "count": 505,
+          "mae_kwh": 77.54326354712124,
+          "rmse_kwh": 97.86239882555537,
+          "mape_percent": 0.1981325883948184,
+          "bias_pred_minus_actual_kwh": -6.401445994154368,
+          "r2": -0.004427574794098943
+        }
+      },
+      "fold_validation": []
+    },
+    {
+      "candidate": 13,
+      "config": {
+        "n_estimators": 350,
+        "max_depth": 2,
+        "learning_rate": 0.01,
+        "min_child_weight": 20,
+        "reg_lambda": 1.0,
+        "subsample": 1.0,
+        "colsample_bytree": 0.8,
+        "feature_set": "history",
+        "residual_shrinkage": 0.5
+      },
+      "objective_mae_kwh": 76.10303415189952,
+      "validation": {
+        "path_P745": {
+          "count": 745,
+          "mae_kwh": 76.10303415189952,
+          "rmse_kwh": 96.7850170804396,
+          "mape_percent": 0.19448739336974413,
+          "bias_pred_minus_actual_kwh": -3.8531943444359302,
+          "r2": -0.001643411217103985
+        },
+        "late_P505": {
+          "count": 505,
+          "mae_kwh": 77.48302102129867,
+          "rmse_kwh": 97.75882051773176,
+          "mape_percent": 0.19798813951497893,
+          "bias_pred_minus_actual_kwh": -4.491665040492138,
+          "r2": -0.0023025123993796193
+        }
+      },
+      "fold_validation": []
+    },
+    {
+      "candidate": 14,
+      "config": {
+        "n_estimators": 350,
+        "max_depth": 3,
+        "learning_rate": 0.01,
+        "min_child_weight": 100,
+        "reg_lambda": 1.0,
+        "subsample": 1.0,
+        "colsample_bytree": 0.8,
+        "feature_set": "history",
+        "residual_shrinkage": 0.5
+      },
+      "objective_mae_kwh": 76.13468751969695,
+      "validation": {
+        "path_P745": {
+          "count": 745,
+          "mae_kwh": 76.13468751969695,
+          "rmse_kwh": 96.83799403447009,
+          "mape_percent": 0.19456389443411737,
+          "bias_pred_minus_actual_kwh": -4.7545141797659465,
+          "r2": -0.0027402450309756965
+        },
+        "late_P505": {
+          "count": 505,
+          "mae_kwh": 77.52027073506842,
+          "rmse_kwh": 97.83272902641,
+          "mape_percent": 0.19807742672715675,
+          "bias_pred_minus_actual_kwh": -5.6989546267009725,
+          "r2": -0.0038186249376062076
+        }
+      },
+      "fold_validation": []
+    },
+    {
+      "candidate": 15,
+      "config": {
+        "n_estimators": 100,
+        "max_depth": 3,
+        "learning_rate": 0.01,
+        "min_child_weight": 5,
+        "reg_lambda": 1.0,
+        "subsample": 0.8,
+        "colsample_bytree": 1.0,
+        "feature_set": "history",
+        "residual_shrinkage": 0.25
+      },
+      "objective_mae_kwh": 76.04022460795476,
+      "validation": {
+        "path_P745": {
+          "count": 745,
+          "mae_kwh": 76.04022460795476,
+          "rmse_kwh": 96.71464613138897,
+          "mape_percent": 0.19434081348263824,
+          "bias_pred_minus_actual_kwh": -1.0447434025244504,
+          "r2": -0.00018738063088652446
+        },
+        "late_P505": {
+          "count": 505,
+          "mae_kwh": 77.42786925132133,
+          "rmse_kwh": 97.66851333707899,
+          "mape_percent": 0.19786016899841313,
+          "bias_pred_minus_actual_kwh": -1.9351718093986083,
+          "r2": -0.00045156318037431475
+        }
+      },
+      "fold_validation": []
+    },
+    {
+      "candidate": 16,
+      "config": {
+        "n_estimators": 50,
+        "max_depth": 4,
+        "learning_rate": 0.07,
+        "min_child_weight": 5,
+        "reg_lambda": 1.0,
+        "subsample": 1.0,
+        "colsample_bytree": 0.8,
+        "feature_set": "history",
+        "residual_shrinkage": 0.25
+      },
+      "objective_mae_kwh": 76.06350714597879,
+      "validation": {
+        "path_P745": {
+          "count": 745,
+          "mae_kwh": 76.06350714597879,
+          "rmse_kwh": 96.76024947399792,
+          "mape_percent": 0.19439460717605267,
+          "bias_pred_minus_actual_kwh": -2.192397288020193,
+          "r2": -0.0011308290780942531
+        },
+        "late_P505": {
+          "count": 505,
+          "mae_kwh": 77.4527176083999,
+          "rmse_kwh": 97.73589811850597,
+          "mape_percent": 0.1979166121742729,
+          "bias_pred_minus_actual_kwh": -3.3334028216768723,
+          "r2": -0.001832529545390038
+        }
+      },
+      "fold_validation": []
+    },
+    {
+      "candidate": 17,
+      "config": {
+        "n_estimators": 100,
+        "max_depth": 1,
+        "learning_rate": 0.03,
+        "min_child_weight": 50,
+        "reg_lambda": 100.0,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "feature_set": "history",
+        "residual_shrinkage": 1.0
+      },
+      "objective_mae_kwh": 76.13887735635349,
+      "validation": {
+        "path_P745": {
+          "count": 745,
+          "mae_kwh": 76.13887735635349,
+          "rmse_kwh": 96.83231087592566,
+          "mape_percent": 0.19457356247360202,
+          "bias_pred_minus_actual_kwh": -4.9444710560214675,
+          "r2": -0.002622552288025659
+        },
+        "late_P505": {
+          "count": 505,
+          "mae_kwh": 77.51738918919541,
+          "rmse_kwh": 97.81824780482803,
+          "mape_percent": 0.19806953120260593,
+          "bias_pred_minus_actual_kwh": -5.7714901075401635,
+          "r2": -0.003521476033940152
+        }
+      },
+      "fold_validation": []
+    },
+    {
+      "candidate": 18,
+      "config": {
+        "n_estimators": 100,
+        "max_depth": 3,
+        "learning_rate": 0.03,
+        "min_child_weight": 5,
+        "reg_lambda": 100.0,
+        "subsample": 0.8,
+        "colsample_bytree": 1.0,
+        "feature_set": "history_calendar",
+        "residual_shrinkage": 0.25
+      },
+      "objective_mae_kwh": 76.05122835815415,
+      "validation": {
+        "path_P745": {
+          "count": 745,
+          "mae_kwh": 76.05122835815415,
+          "rmse_kwh": 96.73819238382103,
+          "mape_percent": 0.19438098823063657,
+          "bias_pred_minus_actual_kwh": 1.4022936571617775,
+          "r2": -0.0006744533198941305
+        },
+        "late_P505": {
+          "count": 505,
+          "mae_kwh": 77.41420802298275,
+          "rmse_kwh": 97.64650132988702,
+          "mape_percent": 0.19783722465130743,
+          "bias_pred_minus_actual_kwh": 0.40135379282332323,
+          "r2": -6.611515162013859e-07
+        }
+      },
+      "fold_validation": []
+    },
+    {
+      "candidate": 19,
+      "config": {
+        "n_estimators": 350,
+        "max_depth": 2,
+        "learning_rate": 0.07,
+        "min_child_weight": 50,
+        "reg_lambda": 1.0,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "feature_set": "history_calendar",
+        "residual_shrinkage": 0.25
+      },
+      "objective_mae_kwh": 76.15301532182573,
+      "validation": {
+        "path_P745": {
+          "count": 745,
+          "mae_kwh": 76.15301532182573,
+          "rmse_kwh": 96.83845718218777,
+          "mape_percent": 0.19463768862081723,
+          "bias_pred_minus_actual_kwh": 0.7732404407167115,
+          "r2": -0.002749836678781481
+        },
+        "late_P505": {
+          "count": 505,
+          "mae_kwh": 77.57404228572726,
+          "rmse_kwh": 97.79644125922691,
+          "mape_percent": 0.19823939797228743,
+          "bias_pred_minus_actual_kwh": -0.8172877818353516,
+          "r2": -0.003074097388293451
+        }
+      },
+      "fold_validation": []
+    },
+    {
+      "candidate": 20,
+      "config": {
+        "n_estimators": 100,
+        "max_depth": 2,
+        "learning_rate": 0.03,
+        "min_child_weight": 50,
+        "reg_lambda": 1.0,
+        "subsample": 0.8,
+        "colsample_bytree": 1.0,
+        "feature_set": "history",
+        "residual_shrinkage": 0.25
+      },
+      "objective_mae_kwh": 76.05026362157771,
+      "validation": {
+        "path_P745": {
+          "count": 745,
+          "mae_kwh": 76.05026362157771,
+          "rmse_kwh": 96.7227760105667,
+          "mape_percent": 0.19436302025270072,
+          "bias_pred_minus_actual_kwh": -1.7377160633892101,
+          "r2": -0.000355540152730649
+        },
+        "late_P505": {
+          "count": 505,
+          "mae_kwh": 77.43745408321591,
+          "rmse_kwh": 97.68351475780806,
+          "mape_percent": 0.19788162733153017,
+          "bias_pred_minus_actual_kwh": -2.529006763131618,
+          "r2": -0.0007589160190586419
+        }
+      },
+      "fold_validation": []
+    },
+    {
+      "candidate": 21,
+      "config": {
+        "n_estimators": 50,
+        "max_depth": 2,
+        "learning_rate": 0.07,
+        "min_child_weight": 20,
+        "reg_lambda": 100.0,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "feature_set": "history_calendar",
+        "residual_shrinkage": 0.5
+      },
+      "objective_mae_kwh": 76.21107421089067,
+      "validation": {
+        "path_P745": {
+          "count": 745,
+          "mae_kwh": 76.21107421089067,
+          "rmse_kwh": 96.80395984022252,
+          "mape_percent": 0.1947866444925968,
+          "bias_pred_minus_actual_kwh": 0.8267277513052713,
+          "r2": -0.002035532805420459
+        },
+        "late_P505": {
+          "count": 505,
+          "mae_kwh": 77.60066182887309,
+          "rmse_kwh": 97.74458779753977,
+          "mape_percent": 0.1983111739680393,
+          "bias_pred_minus_actual_kwh": -0.1436132131428527,
+          "r2": -0.0020106829220238875
+        }
+      },
+      "fold_validation": []
+    },
+    {
+      "candidate": 22,
+      "config": {
+        "n_estimators": 100,
+        "max_depth": 4,
+        "learning_rate": 0.03,
+        "min_child_weight": 100,
+        "reg_lambda": 100.0,
+        "subsample": 0.8,
+        "colsample_bytree": 1.0,
+        "feature_set": "history",
+        "residual_shrinkage": 1.0
+      },
+      "objective_mae_kwh": 76.53442987805377,
+      "validation": {
+        "path_P745": {
+          "count": 745,
+          "mae_kwh": 76.53442987805377,
+          "rmse_kwh": 97.27405577846264,
+          "mape_percent": 0.19556121306032398,
+          "bias_pred_minus_actual_kwh": -9.667007778627129,
+          "r2": -0.011791261594033875
+        },
+        "late_P505": {
+          "count": 505,
+          "mae_kwh": 77.93397734842836,
+          "rmse_kwh": 98.39168331368089,
+          "mape_percent": 0.1991049823057609,
+          "bias_pred_minus_actual_kwh": -11.610503946544227,
+          "r2": -0.015321760596928247
+        }
+      },
+      "fold_validation": []
+    },
+    {
+      "candidate": 23,
+      "config": {
+        "n_estimators": 50,
+        "max_depth": 4,
+        "learning_rate": 0.03,
+        "min_child_weight": 20,
+        "reg_lambda": 100.0,
+        "subsample": 1.0,
+        "colsample_bytree": 0.8,
+        "feature_set": "history_calendar",
+        "residual_shrinkage": 1.0
+      },
+      "objective_mae_kwh": 76.10969366446184,
+      "validation": {
+        "path_P745": {
+          "count": 745,
+          "mae_kwh": 76.10969366446184,
+          "rmse_kwh": 96.85164509329044,
+          "mape_percent": 0.1945345770971675,
+          "bias_pred_minus_actual_kwh": 2.220801468191363,
+          "r2": -0.003022973541016105
+        },
+        "late_P505": {
+          "count": 505,
+          "mae_kwh": 77.41169304115294,
+          "rmse_kwh": 97.72889825143213,
+          "mape_percent": 0.197834363564798,
+          "bias_pred_minus_actual_kwh": 0.9498551557072793,
+          "r2": -0.0016890317406594857
+        }
+      },
+      "fold_validation": []
+    },
+    {
+      "candidate": 24,
+      "config": {
+        "n_estimators": 50,
+        "max_depth": 2,
+        "learning_rate": 0.01,
+        "min_child_weight": 100,
+        "reg_lambda": 100.0,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "feature_set": "history",
+        "residual_shrinkage": 0.5
+      },
+      "objective_mae_kwh": 76.03914367364143,
+      "validation": {
+        "path_P745": {
+          "count": 745,
+          "mae_kwh": 76.03914367364143,
+          "rmse_kwh": 96.7101626725234,
+          "mape_percent": 0.1943388904694621,
+          "bias_pred_minus_actual_kwh": -0.8745269536893719,
+          "r2": -9.465020757115639e-05
+        },
+        "late_P505": {
+          "count": 505,
+          "mae_kwh": 77.42868738798033,
+          "rmse_kwh": 97.6630324639441,
+          "mape_percent": 0.19786345286069165,
+          "bias_pred_minus_actual_kwh": -1.6951474743211148,
+          "r2": -0.00033928146228001665
+        }
+      },
+      "fold_validation": []
+    },
+    {
+      "candidate": 25,
+      "config": {
+        "n_estimators": 50,
+        "max_depth": 1,
+        "learning_rate": 0.01,
+        "min_child_weight": 5,
+        "reg_lambda": 10.0,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "feature_set": "history_calendar",
+        "residual_shrinkage": 0.5
+      },
+      "objective_mae_kwh": 76.06700070733099,
+      "validation": {
+        "path_P745": {
+          "count": 745,
+          "mae_kwh": 76.06700070733099,
+          "rmse_kwh": 96.72269970727655,
+          "mape_percent": 0.19442031624730963,
+          "bias_pred_minus_actual_kwh": 1.140691313355393,
+          "r2": -0.00035396181943481153
+        },
+        "late_P505": {
+          "count": 505,
+          "mae_kwh": 77.43264091164352,
+          "rmse_kwh": 97.63604592778536,
+          "mape_percent": 0.19788410774724327,
+          "bias_pred_minus_actual_kwh": 0.3451386665751913,
+          "r2": 0.00021347553788120255
+        }
+      },
+      "fold_validation": []
+    },
+    {
+      "candidate": 26,
+      "config": {
+        "n_estimators": 50,
+        "max_depth": 4,
+        "learning_rate": 0.03,
+        "min_child_weight": 20,
+        "reg_lambda": 100.0,
+        "subsample": 1.0,
+        "colsample_bytree": 0.8,
+        "feature_set": "history",
+        "residual_shrinkage": 0.5
+      },
+      "objective_mae_kwh": 76.08996526154789,
+      "validation": {
+        "path_P745": {
+          "count": 745,
+          "mae_kwh": 76.08996526154789,
+          "rmse_kwh": 96.78530655883773,
+          "mape_percent": 0.19445688145644685,
+          "bias_pred_minus_actual_kwh": -3.280946781323428,
+          "r2": -0.0016494029412892353
+        },
+        "late_P505": {
+          "count": 505,
+          "mae_kwh": 77.46652147054346,
+          "rmse_kwh": 97.75870599678042,
+          "mape_percent": 0.1979456706249192,
+          "bias_pred_minus_actual_kwh": -4.574928901798961,
+          "r2": -0.002300164077879696
+        }
+      },
+      "fold_validation": []
+    },
+    {
+      "candidate": 27,
+      "config": {
+        "n_estimators": 200,
+        "max_depth": 4,
+        "learning_rate": 0.01,
+        "min_child_weight": 50,
+        "reg_lambda": 100.0,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "feature_set": "history_calendar",
+        "residual_shrinkage": 1.0
+      },
+      "objective_mae_kwh": 76.22512021273349,
+      "validation": {
+        "path_P745": {
+          "count": 745,
+          "mae_kwh": 76.22512021273349,
+          "rmse_kwh": 97.06666405353542,
+          "mape_percent": 0.19482863557252122,
+          "bias_pred_minus_actual_kwh": 2.1929754080666712,
+          "r2": -0.007481511306833832
+        },
+        "late_P505": {
+          "count": 505,
+          "mae_kwh": 77.55473822514892,
+          "rmse_kwh": 97.94211994963236,
+          "mape_percent": 0.19819869033824186,
+          "bias_pred_minus_actual_kwh": 0.8210143100167739,
+          "r2": -0.0060647043033790204
+        }
+      },
+      "fold_validation": []
+    },
+    {
+      "candidate": 28,
+      "config": {
+        "n_estimators": 200,
+        "max_depth": 3,
+        "learning_rate": 0.01,
+        "min_child_weight": 20,
+        "reg_lambda": 100.0,
+        "subsample": 0.8,
+        "colsample_bytree": 1.0,
+        "feature_set": "history",
+        "residual_shrinkage": 0.25
+      },
+      "objective_mae_kwh": 76.04522786440052,
+      "validation": {
+        "path_P745": {
+          "count": 745,
+          "mae_kwh": 76.04522786440052,
+          "rmse_kwh": 96.72147703896509,
+          "mape_percent": 0.19435090486407341,
+          "bias_pred_minus_actual_kwh": -1.5877111514864433,
+          "r2": -0.00032867109941836503
+        },
+        "late_P505": {
+          "count": 505,
+          "mae_kwh": 77.43055109161362,
+          "rmse_kwh": 97.68127049499697,
+          "mape_percent": 0.19786435619952597,
+          "bias_pred_minus_actual_kwh": -2.461511167548977,
+          "r2": -0.0007129320017287277
+        }
+      },
+      "fold_validation": []
+    },
+    {
+      "candidate": 29,
+      "config": {
+        "n_estimators": 50,
+        "max_depth": 1,
+        "learning_rate": 0.01,
+        "min_child_weight": 5,
+        "reg_lambda": 100.0,
+        "subsample": 0.8,
+        "colsample_bytree": 1.0,
+        "feature_set": "history",
+        "residual_shrinkage": 1.0
+      },
+      "objective_mae_kwh": 76.04073727494504,
+      "validation": {
+        "path_P745": {
+          "count": 745,
+          "mae_kwh": 76.04073727494504,
+          "rmse_kwh": 96.7116771863704,
+          "mape_percent": 0.19434191212611793,
+          "bias_pred_minus_actual_kwh": -1.085405912167442,
+          "r2": -0.00012597409358727774
+        },
+        "late_P505": {
+          "count": 505,
+          "mae_kwh": 77.4299569239515,
+          "rmse_kwh": 97.66576575334197,
+          "mape_percent": 0.19786545678445144,
+          "bias_pred_minus_actual_kwh": -1.9413609113920558,
+          "r2": -0.00039527511606030075
+        }
+      },
+      "fold_validation": []
+    },
+    {
+      "candidate": 30,
+      "config": {
+        "n_estimators": 50,
+        "max_depth": 2,
+        "learning_rate": 0.01,
+        "min_child_weight": 100,
+        "reg_lambda": 100.0,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "feature_set": "history",
+        "residual_shrinkage": 0.5,
+        "objective": "reg:absoluteerror"
+      },
+      "objective_mae_kwh": 76.03238760222607,
+      "validation": {
+        "path_P745": {
+          "count": 745,
+          "mae_kwh": 76.03238760222607,
+          "rmse_kwh": 96.70605714788836,
+          "mape_percent": 0.19432504066065417,
+          "bias_pred_minus_actual_kwh": -0.18640029709627962,
+          "r2": -9.740287899129285e-06
+        },
+        "late_P505": {
+          "count": 505,
+          "mae_kwh": 77.42317224845249,
+          "rmse_kwh": 97.65303954105444,
+          "mape_percent": 0.19785289795953187,
+          "bias_pred_minus_actual_kwh": -0.9941623900093179,
+          "r2": -0.00013458165647883824
+        }
+      },
+      "fold_validation": [],
+      "loss_alignment_extension": true
+    }
+  ],
+  "seed": 20261013,
+  "configuration_count": 31,
+  "optimization_limit": "Budgeted search; no global optimum guarantee; post-EDA rather than pristine unseen test",
+  "loss_extension_declaration": "E:\\AI work\\AWS_프로젝트\\output\\optimization_20261013\\forecast\\long745\\xgboost\\loss_extension_declaration.json",
+  "companion_won_validation": true,
+  "previous30_preserved": "E:\\AI work\\AWS_프로젝트\\output\\optimization_20261013\\forecast\\long745\\xgboost\\intermediate_30_trials"
+}

@@ -1,0 +1,883 @@
+{
+  "model": "iTransformer",
+  "candidates": [
+    {
+      "config": {
+        "seq_len": 168,
+        "pred_len": 745,
+        "d_model": 32,
+        "d_ff": 64,
+        "e_layers": 1,
+        "n_heads": 4,
+        "dropout": 0.1,
+        "output_attention": false,
+        "use_norm": true,
+        "embed": "timeF",
+        "freq": "h",
+        "class_strategy": "projection",
+        "factor": 5,
+        "activation": "gelu"
+      },
+      "epochs": 18,
+      "inner_fit": {
+        "epochs": 18,
+        "train_windows": 102,
+        "history_hours": 1319,
+        "latest_supervised_target_index": 1316,
+        "fit_seconds": 0.894961400073953,
+        "logs": [
+          {
+            "epoch": 1,
+            "train_mse_standardized": 1.3352773487567902,
+            "inner_tail_mae_kwh": 92.20720590907156
+          },
+          {
+            "epoch": 2,
+            "train_mse_standardized": 1.3029238879680634,
+            "inner_tail_mae_kwh": 91.17948867081151
+          },
+          {
+            "epoch": 3,
+            "train_mse_standardized": 1.2714892029762268,
+            "inner_tail_mae_kwh": 90.41840810590651
+          },
+          {
+            "epoch": 4,
+            "train_mse_standardized": 1.2430451214313507,
+            "inner_tail_mae_kwh": 89.67316440951613
+          },
+          {
+            "epoch": 5,
+            "train_mse_standardized": 1.2151741087436676,
+            "inner_tail_mae_kwh": 88.87090206914964
+          },
+          {
+            "epoch": 6,
+            "train_mse_standardized": 1.1892731487751007,
+            "inner_tail_mae_kwh": 87.9912011209803
+          },
+          {
+            "epoch": 7,
+            "train_mse_standardized": 1.1615726947784424,
+            "inner_tail_mae_kwh": 86.77787777759052
+          },
+          {
+            "epoch": 8,
+            "train_mse_standardized": 1.1333059072494507,
+            "inner_tail_mae_kwh": 85.10192196143964
+          },
+          {
+            "epoch": 9,
+            "train_mse_standardized": 1.1090745031833649,
+            "inner_tail_mae_kwh": 83.02629283271955
+          },
+          {
+            "epoch": 10,
+            "train_mse_standardized": 1.0813059210777283,
+            "inner_tail_mae_kwh": 81.01378247187085
+          },
+          {
+            "epoch": 11,
+            "train_mse_standardized": 1.0594477653503418,
+            "inner_tail_mae_kwh": 79.43482408197744
+          },
+          {
+            "epoch": 12,
+            "train_mse_standardized": 1.04703950881958,
+            "inner_tail_mae_kwh": 78.44262083686766
+          },
+          {
+            "epoch": 13,
+            "train_mse_standardized": 1.0353631675243378,
+            "inner_tail_mae_kwh": 77.87589650195771
+          },
+          {
+            "epoch": 14,
+            "train_mse_standardized": 1.0299626886844635,
+            "inner_tail_mae_kwh": 77.62351463348253
+          },
+          {
+            "epoch": 15,
+            "train_mse_standardized": 1.0277346074581146,
+            "inner_tail_mae_kwh": 77.6123978183298
+          },
+          {
+            "epoch": 16,
+            "train_mse_standardized": 1.0281680524349213,
+            "inner_tail_mae_kwh": 77.54223176059881
+          },
+          {
+            "epoch": 17,
+            "train_mse_standardized": 1.0254790484905243,
+            "inner_tail_mae_kwh": 77.31811876135674
+          },
+          {
+            "epoch": 18,
+            "train_mse_standardized": 1.0241898894309998,
+            "inner_tail_mae_kwh": 77.2462035121077
+          },
+          {
+            "epoch": 19,
+            "train_mse_standardized": 1.0234377682209015,
+            "inner_tail_mae_kwh": 77.25951645126571
+          },
+          {
+            "epoch": 20,
+            "train_mse_standardized": 1.0236062109470367,
+            "inner_tail_mae_kwh": 77.30714145005574
+          },
+          {
+            "epoch": 21,
+            "train_mse_standardized": 1.0230293273925781,
+            "inner_tail_mae_kwh": 77.43409054928821
+          },
+          {
+            "epoch": 22,
+            "train_mse_standardized": 1.021987646818161,
+            "inner_tail_mae_kwh": 77.49105349732791
+          },
+          {
+            "epoch": 23,
+            "train_mse_standardized": 1.0222528874874115,
+            "inner_tail_mae_kwh": 77.58212791968401
+          }
+        ],
+        "parameters": 38601
+      },
+      "outer_fit": {
+        "epochs": 18,
+        "train_windows": 288,
+        "history_hours": 2064,
+        "latest_supervised_target_index": 2060,
+        "fit_seconds": 1.6269842999754474,
+        "logs": [
+          {
+            "epoch": 1,
+            "train_mse_standardized": 1.3272530105378892
+          },
+          {
+            "epoch": 2,
+            "train_mse_standardized": 1.2571072313520644
+          },
+          {
+            "epoch": 3,
+            "train_mse_standardized": 1.1915381484561496
+          },
+          {
+            "epoch": 4,
+            "train_mse_standardized": 1.125340289539761
+          },
+          {
+            "epoch": 5,
+            "train_mse_standardized": 1.0686086151334975
+          },
+          {
+            "epoch": 6,
+            "train_mse_standardized": 1.040098203553094
+          },
+          {
+            "epoch": 7,
+            "train_mse_standardized": 1.032040211889479
+          },
+          {
+            "epoch": 8,
+            "train_mse_standardized": 1.0295516384972467
+          },
+          {
+            "epoch": 9,
+            "train_mse_standardized": 1.0285108884175618
+          },
+          {
+            "epoch": 10,
+            "train_mse_standardized": 1.0275250143475003
+          },
+          {
+            "epoch": 11,
+            "train_mse_standardized": 1.0272485547595553
+          },
+          {
+            "epoch": 12,
+            "train_mse_standardized": 1.0264653232362535
+          },
+          {
+            "epoch": 13,
+            "train_mse_standardized": 1.025843686527676
+          },
+          {
+            "epoch": 14,
+            "train_mse_standardized": 1.0255650281906128
+          },
+          {
+            "epoch": 15,
+            "train_mse_standardized": 1.0248096121682062
+          },
+          {
+            "epoch": 16,
+            "train_mse_standardized": 1.0248024331198797
+          },
+          {
+            "epoch": 17,
+            "train_mse_standardized": 1.0240312814712524
+          },
+          {
+            "epoch": 18,
+            "train_mse_standardized": 1.0237688885794745
+          }
+        ],
+        "parameters": 38601
+      },
+      "validation_metrics": {
+        "H96": {
+          "count": 96,
+          "mae_kwh": 75.52474726803568,
+          "rmse_kwh": 100.99907847348406,
+          "mape_percent": 0.1931404251549369,
+          "bias_pred_minus_actual_kwh": 1.0177360508283375
+        },
+        "H192": {
+          "count": 192,
+          "mae_kwh": 76.53994888524373,
+          "rmse_kwh": 99.64967449819663,
+          "mape_percent": 0.19567721007585273,
+          "bias_pred_minus_actual_kwh": 0.9080616471861352
+        },
+        "H336": {
+          "count": 336,
+          "mae_kwh": 77.19930437514651,
+          "rmse_kwh": 99.03340440239455,
+          "mape_percent": 0.19731043679614146,
+          "bias_pred_minus_actual_kwh": -4.098937003125619
+        },
+        "H720": {
+          "count": 720,
+          "mae_kwh": 75.77290836390573,
+          "rmse_kwh": 96.30482293355125,
+          "mape_percent": 0.19364669976524454,
+          "bias_pred_minus_actual_kwh": -2.2434763343071813
+        },
+        "P745": {
+          "count": 745,
+          "mae_kwh": 76.42929912844782,
+          "rmse_kwh": 97.13155234102913,
+          "mape_percent": 0.19533157060330364,
+          "bias_pred_minus_actual_kwh": -1.4953091299692314
+        }
+      }
+    },
+    {
+      "config": {
+        "seq_len": 336,
+        "pred_len": 745,
+        "d_model": 32,
+        "d_ff": 64,
+        "e_layers": 1,
+        "n_heads": 4,
+        "dropout": 0.1,
+        "output_attention": false,
+        "use_norm": true,
+        "embed": "timeF",
+        "freq": "h",
+        "class_strategy": "projection",
+        "factor": 5,
+        "activation": "gelu"
+      },
+      "epochs": 30,
+      "inner_fit": {
+        "epochs": 30,
+        "train_windows": 60,
+        "history_hours": 1319,
+        "latest_supervised_target_index": 1316,
+        "fit_seconds": 0.6531812000321224,
+        "logs": [
+          {
+            "epoch": 1,
+            "train_mse_standardized": 1.3444225192070007,
+            "inner_tail_mae_kwh": 97.72148244283845
+          },
+          {
+            "epoch": 2,
+            "train_mse_standardized": 1.3207342624664307,
+            "inner_tail_mae_kwh": 96.40239116681389
+          },
+          {
+            "epoch": 3,
+            "train_mse_standardized": 1.3003702759742737,
+            "inner_tail_mae_kwh": 95.4720283514788
+          },
+          {
+            "epoch": 4,
+            "train_mse_standardized": 1.2791670560836792,
+            "inner_tail_mae_kwh": 94.64753495237014
+          },
+          {
+            "epoch": 5,
+            "train_mse_standardized": 1.2613884210586548,
+            "inner_tail_mae_kwh": 93.8456954730427
+          },
+          {
+            "epoch": 6,
+            "train_mse_standardized": 1.242130160331726,
+            "inner_tail_mae_kwh": 93.07076804863625
+          },
+          {
+            "epoch": 7,
+            "train_mse_standardized": 1.2240764498710632,
+            "inner_tail_mae_kwh": 92.36575985950411
+          },
+          {
+            "epoch": 8,
+            "train_mse_standardized": 1.206980586051941,
+            "inner_tail_mae_kwh": 91.6363086629663
+          },
+          {
+            "epoch": 9,
+            "train_mse_standardized": 1.1906989216804504,
+            "inner_tail_mae_kwh": 90.89707344575623
+          },
+          {
+            "epoch": 10,
+            "train_mse_standardized": 1.1744350790977478,
+            "inner_tail_mae_kwh": 90.07438579713592
+          },
+          {
+            "epoch": 11,
+            "train_mse_standardized": 1.157882809638977,
+            "inner_tail_mae_kwh": 89.2116255803591
+          },
+          {
+            "epoch": 12,
+            "train_mse_standardized": 1.1431617140769958,
+            "inner_tail_mae_kwh": 88.28615642756192
+          },
+          {
+            "epoch": 13,
+            "train_mse_standardized": 1.1277452111244202,
+            "inner_tail_mae_kwh": 87.27506398839144
+          },
+          {
+            "epoch": 14,
+            "train_mse_standardized": 1.1124822497367859,
+            "inner_tail_mae_kwh": 86.17894308111427
+          },
+          {
+            "epoch": 15,
+            "train_mse_standardized": 1.0987809896469116,
+            "inner_tail_mae_kwh": 85.02498000168102
+          },
+          {
+            "epoch": 16,
+            "train_mse_standardized": 1.0847848057746887,
+            "inner_tail_mae_kwh": 83.848225367258
+          },
+          {
+            "epoch": 17,
+            "train_mse_standardized": 1.0713236927986145,
+            "inner_tail_mae_kwh": 82.75245777863141
+          },
+          {
+            "epoch": 18,
+            "train_mse_standardized": 1.0594342350959778,
+            "inner_tail_mae_kwh": 81.73172930748372
+          },
+          {
+            "epoch": 19,
+            "train_mse_standardized": 1.049401044845581,
+            "inner_tail_mae_kwh": 80.87688563306848
+          },
+          {
+            "epoch": 20,
+            "train_mse_standardized": 1.0404938459396362,
+            "inner_tail_mae_kwh": 80.14331730612605
+          },
+          {
+            "epoch": 21,
+            "train_mse_standardized": 1.0329691171646118,
+            "inner_tail_mae_kwh": 79.57933291737702
+          },
+          {
+            "epoch": 22,
+            "train_mse_standardized": 1.027597427368164,
+            "inner_tail_mae_kwh": 79.18775317755474
+          },
+          {
+            "epoch": 23,
+            "train_mse_standardized": 1.0233322381973267,
+            "inner_tail_mae_kwh": 78.95777364152772
+          },
+          {
+            "epoch": 24,
+            "train_mse_standardized": 1.0205085277557373,
+            "inner_tail_mae_kwh": 78.87565874655212
+          },
+          {
+            "epoch": 25,
+            "train_mse_standardized": 1.0186980366706848,
+            "inner_tail_mae_kwh": 78.89512575302717
+          },
+          {
+            "epoch": 26,
+            "train_mse_standardized": 1.0170186758041382,
+            "inner_tail_mae_kwh": 78.91231768623237
+          },
+          {
+            "epoch": 27,
+            "train_mse_standardized": 1.0158576369285583,
+            "inner_tail_mae_kwh": 78.91721726146338
+          },
+          {
+            "epoch": 28,
+            "train_mse_standardized": 1.0153785347938538,
+            "inner_tail_mae_kwh": 78.85263364208598
+          },
+          {
+            "epoch": 29,
+            "train_mse_standardized": 1.0147703886032104,
+            "inner_tail_mae_kwh": 78.85041486309835
+          },
+          {
+            "epoch": 30,
+            "train_mse_standardized": 1.014166235923767,
+            "inner_tail_mae_kwh": 78.7877698169831
+          }
+        ],
+        "parameters": 43977
+      },
+      "outer_fit": {
+        "epochs": 30,
+        "train_windows": 246,
+        "history_hours": 2064,
+        "latest_supervised_target_index": 2060,
+        "fit_seconds": 2.3472850000252947,
+        "logs": [
+          {
+            "epoch": 1,
+            "train_mse_standardized": 1.3327262550592422
+          },
+          {
+            "epoch": 2,
+            "train_mse_standardized": 1.2647090405225754
+          },
+          {
+            "epoch": 3,
+            "train_mse_standardized": 1.204724907875061
+          },
+          {
+            "epoch": 4,
+            "train_mse_standardized": 1.1463782787322998
+          },
+          {
+            "epoch": 5,
+            "train_mse_standardized": 1.0916845500469208
+          },
+          {
+            "epoch": 6,
+            "train_mse_standardized": 1.0519020557403564
+          },
+          {
+            "epoch": 7,
+            "train_mse_standardized": 1.033067137002945
+          },
+          {
+            "epoch": 8,
+            "train_mse_standardized": 1.0270242989063263
+          },
+          {
+            "epoch": 9,
+            "train_mse_standardized": 1.0254302471876144
+          },
+          {
+            "epoch": 10,
+            "train_mse_standardized": 1.0244087129831314
+          },
+          {
+            "epoch": 11,
+            "train_mse_standardized": 1.0239806771278381
+          },
+          {
+            "epoch": 12,
+            "train_mse_standardized": 1.02290540933609
+          },
+          {
+            "epoch": 13,
+            "train_mse_standardized": 1.0225765258073807
+          },
+          {
+            "epoch": 14,
+            "train_mse_standardized": 1.0220509320497513
+          },
+          {
+            "epoch": 15,
+            "train_mse_standardized": 1.0217307060956955
+          },
+          {
+            "epoch": 16,
+            "train_mse_standardized": 1.0208174288272858
+          },
+          {
+            "epoch": 17,
+            "train_mse_standardized": 1.0202530026435852
+          },
+          {
+            "epoch": 18,
+            "train_mse_standardized": 1.0200698226690292
+          },
+          {
+            "epoch": 19,
+            "train_mse_standardized": 1.0193061381578445
+          },
+          {
+            "epoch": 20,
+            "train_mse_standardized": 1.0191165059804916
+          },
+          {
+            "epoch": 21,
+            "train_mse_standardized": 1.0185594409704208
+          },
+          {
+            "epoch": 22,
+            "train_mse_standardized": 1.0181181281805038
+          },
+          {
+            "epoch": 23,
+            "train_mse_standardized": 1.0176408290863037
+          },
+          {
+            "epoch": 24,
+            "train_mse_standardized": 1.01734758913517
+          },
+          {
+            "epoch": 25,
+            "train_mse_standardized": 1.0170000940561295
+          },
+          {
+            "epoch": 26,
+            "train_mse_standardized": 1.0164011716842651
+          },
+          {
+            "epoch": 27,
+            "train_mse_standardized": 1.0160635113716125
+          },
+          {
+            "epoch": 28,
+            "train_mse_standardized": 1.0159016400575638
+          },
+          {
+            "epoch": 29,
+            "train_mse_standardized": 1.0153843015432358
+          },
+          {
+            "epoch": 30,
+            "train_mse_standardized": 1.0153313279151917
+          }
+        ],
+        "parameters": 43977
+      },
+      "validation_metrics": {
+        "H96": {
+          "count": 96,
+          "mae_kwh": 76.20842747168506,
+          "rmse_kwh": 102.40944995782111,
+          "mape_percent": 0.19495091139942303,
+          "bias_pred_minus_actual_kwh": 11.717963872190467
+        },
+        "H192": {
+          "count": 192,
+          "mae_kwh": 77.30592647740487,
+          "rmse_kwh": 100.46456024971144,
+          "mape_percent": 0.1977017471271754,
+          "bias_pred_minus_actual_kwh": 12.897115688392924
+        },
+        "H336": {
+          "count": 336,
+          "mae_kwh": 77.10234134610694,
+          "rmse_kwh": 99.11887622462709,
+          "mape_percent": 0.19712963409448808,
+          "bias_pred_minus_actual_kwh": 8.414487733033747
+        },
+        "H720": {
+          "count": 720,
+          "mae_kwh": 76.25365824703648,
+          "rmse_kwh": 96.90835076498479,
+          "mape_percent": 0.19494279628879804,
+          "bias_pred_minus_actual_kwh": 10.765254422881926
+        },
+        "P745": {
+          "count": 745,
+          "mae_kwh": 76.91858462508205,
+          "rmse_kwh": 97.77838516802753,
+          "mape_percent": 0.19664999114080017,
+          "bias_pred_minus_actual_kwh": 11.584180893622348
+        }
+      }
+    }
+  ],
+  "selected": {
+    "model": "iTransformer",
+    "config": {
+      "seq_len": 168,
+      "pred_len": 745,
+      "d_model": 32,
+      "d_ff": 64,
+      "e_layers": 1,
+      "n_heads": 4,
+      "dropout": 0.1,
+      "output_attention": false,
+      "use_norm": true,
+      "embed": "timeF",
+      "freq": "h",
+      "class_strategy": "projection",
+      "factor": 5,
+      "activation": "gelu"
+    },
+    "epochs": 18,
+    "selection_basis": "Lowest aggregate P745 MAE on blocked Feb25 outer validation only",
+    "seed": 2026,
+    "input": "Past 13 module hourly energy variates; output module forecasts summed; extra multivariate history compared with univariate competitors",
+    "status": "frozen_before_May_labels",
+    "method_note": "Official compact architecture, not published benchmark reproduction"
+  },
+  "splits": {
+    "validation": {
+      "metrics": {
+        "H96": {
+          "count": 96,
+          "mae_kwh": 75.52474726803568,
+          "rmse_kwh": 100.99907847348406,
+          "mape_percent": 0.1931404251549369,
+          "bias_pred_minus_actual_kwh": 1.0177360508283375
+        },
+        "H192": {
+          "count": 192,
+          "mae_kwh": 76.53994888524373,
+          "rmse_kwh": 99.64967449819663,
+          "mape_percent": 0.19567721007585273,
+          "bias_pred_minus_actual_kwh": 0.9080616471861352
+        },
+        "H336": {
+          "count": 336,
+          "mae_kwh": 77.19930437514651,
+          "rmse_kwh": 99.03340440239455,
+          "mape_percent": 0.19731043679614146,
+          "bias_pred_minus_actual_kwh": -4.098937003125619
+        },
+        "H720": {
+          "count": 720,
+          "mae_kwh": 75.77290836390573,
+          "rmse_kwh": 96.30482293355125,
+          "mape_percent": 0.19364669976524454,
+          "bias_pred_minus_actual_kwh": -2.2434763343071813
+        },
+        "P745": {
+          "count": 745,
+          "mae_kwh": 76.42929912844782,
+          "rmse_kwh": 97.13155234102913,
+          "mape_percent": 0.19533157060330364,
+          "bias_pred_minus_actual_kwh": -1.4953091299692314
+        }
+      },
+      "fit": {
+        "epochs": 18,
+        "train_windows": 288,
+        "history_hours": 2064,
+        "latest_supervised_target_index": 2060,
+        "fit_seconds": 1.5718351999530569,
+        "logs": [
+          {
+            "epoch": 1,
+            "train_mse_standardized": 1.3272530105378892
+          },
+          {
+            "epoch": 2,
+            "train_mse_standardized": 1.2571072313520644
+          },
+          {
+            "epoch": 3,
+            "train_mse_standardized": 1.1915381484561496
+          },
+          {
+            "epoch": 4,
+            "train_mse_standardized": 1.125340289539761
+          },
+          {
+            "epoch": 5,
+            "train_mse_standardized": 1.0686086151334975
+          },
+          {
+            "epoch": 6,
+            "train_mse_standardized": 1.040098203553094
+          },
+          {
+            "epoch": 7,
+            "train_mse_standardized": 1.032040211889479
+          },
+          {
+            "epoch": 8,
+            "train_mse_standardized": 1.0295516384972467
+          },
+          {
+            "epoch": 9,
+            "train_mse_standardized": 1.0285108884175618
+          },
+          {
+            "epoch": 10,
+            "train_mse_standardized": 1.0275250143475003
+          },
+          {
+            "epoch": 11,
+            "train_mse_standardized": 1.0272485547595553
+          },
+          {
+            "epoch": 12,
+            "train_mse_standardized": 1.0264653232362535
+          },
+          {
+            "epoch": 13,
+            "train_mse_standardized": 1.025843686527676
+          },
+          {
+            "epoch": 14,
+            "train_mse_standardized": 1.0255650281906128
+          },
+          {
+            "epoch": 15,
+            "train_mse_standardized": 1.0248096121682062
+          },
+          {
+            "epoch": 16,
+            "train_mse_standardized": 1.0248024331198797
+          },
+          {
+            "epoch": 17,
+            "train_mse_standardized": 1.0240312814712524
+          },
+          {
+            "epoch": 18,
+            "train_mse_standardized": 1.0237688885794745
+          }
+        ],
+        "parameters": 38601
+      }
+    },
+    "internal_test": {
+      "metrics": {
+        "H96": {
+          "count": 96,
+          "mae_kwh": 70.70504949909832,
+          "rmse_kwh": 92.45721809747681,
+          "mape_percent": 0.18083991491752419,
+          "bias_pred_minus_actual_kwh": 20.755088996976536
+        },
+        "H192": {
+          "count": 192,
+          "mae_kwh": 76.96565015613207,
+          "rmse_kwh": 97.11918242309355,
+          "mape_percent": 0.19682737771652953,
+          "bias_pred_minus_actual_kwh": 15.73351573536335
+        },
+        "H336": {
+          "count": 336,
+          "mae_kwh": 81.22633893835791,
+          "rmse_kwh": 99.56502045576627,
+          "mape_percent": 0.20767077387165328,
+          "bias_pred_minus_actual_kwh": 10.863214162087042
+        },
+        "H720": {
+          "count": 720,
+          "mae_kwh": 78.33137296272028,
+          "rmse_kwh": 97.29623370686838,
+          "mape_percent": 0.2002372791701725,
+          "bias_pred_minus_actual_kwh": 7.01170108733875
+        },
+        "P745": {
+          "count": 745,
+          "mae_kwh": 78.68854036578593,
+          "rmse_kwh": 97.43240951996309,
+          "mape_percent": 0.2011510457015103,
+          "bias_pred_minus_actual_kwh": 6.979019125444766
+        }
+      },
+      "fit": {
+        "epochs": 18,
+        "train_windows": 480,
+        "history_hours": 2832,
+        "latest_supervised_target_index": 2828,
+        "fit_seconds": 2.552470099995844,
+        "logs": [
+          {
+            "epoch": 1,
+            "train_mse_standardized": 1.2960734685262045
+          },
+          {
+            "epoch": 2,
+            "train_mse_standardized": 1.184977412223816
+          },
+          {
+            "epoch": 3,
+            "train_mse_standardized": 1.0807534535725911
+          },
+          {
+            "epoch": 4,
+            "train_mse_standardized": 1.0307316382726033
+          },
+          {
+            "epoch": 5,
+            "train_mse_standardized": 1.0227081378300984
+          },
+          {
+            "epoch": 6,
+            "train_mse_standardized": 1.020945143699646
+          },
+          {
+            "epoch": 7,
+            "train_mse_standardized": 1.0201290051142375
+          },
+          {
+            "epoch": 8,
+            "train_mse_standardized": 1.0191137393315632
+          },
+          {
+            "epoch": 9,
+            "train_mse_standardized": 1.0183998107910157
+          },
+          {
+            "epoch": 10,
+            "train_mse_standardized": 1.0177387237548827
+          },
+          {
+            "epoch": 11,
+            "train_mse_standardized": 1.0172049045562743
+          },
+          {
+            "epoch": 12,
+            "train_mse_standardized": 1.016609827677409
+          },
+          {
+            "epoch": 13,
+            "train_mse_standardized": 1.016025972366333
+          },
+          {
+            "epoch": 14,
+            "train_mse_standardized": 1.0153442700703939
+          },
+          {
+            "epoch": 15,
+            "train_mse_standardized": 1.0148216485977173
+          },
+          {
+            "epoch": 16,
+            "train_mse_standardized": 1.0143200397491454
+          },
+          {
+            "epoch": 17,
+            "train_mse_standardized": 1.0140222628911337
+          },
+          {
+            "epoch": 18,
+            "train_mse_standardized": 1.0136436859766642
+          }
+        ],
+        "parameters": 38601
+      }
+    }
+  }
+}

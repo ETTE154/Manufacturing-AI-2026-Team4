@@ -1,0 +1,83 @@
+{
+  "status": "pass",
+  "root_facts_vs_evidence_basic_checks": [
+    {
+      "dataset": "full",
+      "key": "rows",
+      "match": true
+    },
+    {
+      "dataset": "full",
+      "key": "first",
+      "match": true
+    },
+    {
+      "dataset": "full",
+      "key": "last",
+      "match": true
+    },
+    {
+      "dataset": "full",
+      "key": "sampling_seconds",
+      "match": true
+    },
+    {
+      "dataset": "full",
+      "key": "missing_total",
+      "match": true
+    },
+    {
+      "dataset": "full",
+      "key": "column_names_or_count",
+      "match": true
+    },
+    {
+      "dataset": "may",
+      "key": "rows",
+      "match": true
+    },
+    {
+      "dataset": "may",
+      "key": "first",
+      "match": true
+    },
+    {
+      "dataset": "may",
+      "key": "last",
+      "match": true
+    },
+    {
+      "dataset": "may",
+      "key": "sampling_seconds",
+      "match": true
+    },
+    {
+      "dataset": "may",
+      "key": "missing_total",
+      "match": true
+    },
+    {
+      "dataset": "may",
+      "key": "column_names_or_count",
+      "match": true
+    }
+  ],
+  "full15numeric_moments_max_absdiff": 0.0,
+  "time_offsets_and13module_key_checks_match": true,
+  "Unix_reverse_and_local_reverse_distinguished": {
+    "unix_reverse": 13,
+    "local_reverse": 0
+  },
+  "root_prefix17281_vs_evidence_prefix2000_dtype_match": true,
+  "localtime_numeric_source_format_and_explicit_string_format_parse_match": true,
+  "module_energy_scope": "46,800 complete module-hours only; no13 partial endpoint rows",
+  "module_energy_max_absdiff": 1.862645149230957e-09,
+  "May_mean_match": true,
+  "root_May_std_ddof": 1,
+  "dictionary_May_std_ddof": 0,
+  "May_std_convention_note": "Root ddof1 and dictionary ddof0 are separate conventions if they differ; both use all505rows",
+  "recorded_raw_training_end_to_May_start_gap_hours": 240,
+  "recorded_label_overlap": 0,
+  "originals_modified": false,
+  "report_facts_path": "E:\\AI work\\AWS_프로젝트\\output\\data_overview_20261013\\report_facts.json"
+}

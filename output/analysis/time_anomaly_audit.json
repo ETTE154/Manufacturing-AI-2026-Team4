@@ -1,0 +1,518 @@
+{
+  "rows": 33696013,
+  "offset_local_naive_minus_unix_ms": {
+    "-28800000": 22042800,
+    "-25200000": 11653213
+  },
+  "offset_transitions": [
+    {
+      "equipment": "1(PM-3)",
+      "localtime": "2025-03-09 03:00:00",
+      "offset_ms": -25200000
+    },
+    {
+      "equipment": "2(L-1전등)",
+      "localtime": "2025-03-09 03:00:00",
+      "offset_ms": -25200000
+    },
+    {
+      "equipment": "3(분쇄기(2))",
+      "localtime": "2025-03-09 03:00:00",
+      "offset_ms": -25200000
+    },
+    {
+      "equipment": "4(분쇄기(1))",
+      "localtime": "2025-03-09 03:00:00",
+      "offset_ms": -25200000
+    },
+    {
+      "equipment": "5(좌측분전반)",
+      "localtime": "2025-03-09 03:00:00",
+      "offset_ms": -25200000
+    },
+    {
+      "equipment": "11(우측분전반1)",
+      "localtime": "2025-03-09 03:00:00",
+      "offset_ms": -25200000
+    },
+    {
+      "equipment": "12(4호기)",
+      "localtime": "2025-03-09 03:00:00",
+      "offset_ms": -25200000
+    },
+    {
+      "equipment": "13(3호기)",
+      "localtime": "2025-03-09 03:00:00",
+      "offset_ms": -25200000
+    },
+    {
+      "equipment": "14(2호기)",
+      "localtime": "2025-03-09 03:00:00",
+      "offset_ms": -25200000
+    },
+    {
+      "equipment": "15(예비건조기)",
+      "localtime": "2025-03-09 03:00:00",
+      "offset_ms": -25200000
+    },
+    {
+      "equipment": "16(호이스트)",
+      "localtime": "2025-03-09 03:00:00",
+      "offset_ms": -25200000
+    },
+    {
+      "equipment": "17(6호기)",
+      "localtime": "2025-03-09 03:00:00",
+      "offset_ms": -25200000
+    },
+    {
+      "equipment": "18(우측분전반2)",
+      "localtime": "2025-03-09 03:00:00",
+      "offset_ms": -25200000
+    }
+  ],
+  "time_key_checks": {
+    "1(PM-3)": {
+      "local_origin": 1733011200000,
+      "unix_origin": 1733040000000,
+      "local_duplicate_rows": 0,
+      "unix_duplicate_rows": 720,
+      "local_negative_diffs": 0,
+      "local_non_5s_diffs": 0,
+      "local_last": 1745971200000,
+      "offset_last": -25200000
+    },
+    "2(L-1전등)": {
+      "local_origin": 1733011200000,
+      "unix_origin": 1733040000000,
+      "local_duplicate_rows": 0,
+      "unix_duplicate_rows": 720,
+      "local_negative_diffs": 0,
+      "local_non_5s_diffs": 0,
+      "local_last": 1745971200000,
+      "offset_last": -25200000
+    },
+    "3(분쇄기(2))": {
+      "local_origin": 1733011200000,
+      "unix_origin": 1733040000000,
+      "local_duplicate_rows": 0,
+      "unix_duplicate_rows": 720,
+      "local_negative_diffs": 0,
+      "local_non_5s_diffs": 0,
+      "local_last": 1745971200000,
+      "offset_last": -25200000
+    },
+    "4(분쇄기(1))": {
+      "local_origin": 1733011200000,
+      "unix_origin": 1733040000000,
+      "local_duplicate_rows": 0,
+      "unix_duplicate_rows": 720,
+      "local_negative_diffs": 0,
+      "local_non_5s_diffs": 0,
+      "local_last": 1745971200000,
+      "offset_last": -25200000
+    },
+    "5(좌측분전반)": {
+      "local_origin": 1733011200000,
+      "unix_origin": 1733040000000,
+      "local_duplicate_rows": 0,
+      "unix_duplicate_rows": 720,
+      "local_negative_diffs": 0,
+      "local_non_5s_diffs": 0,
+      "local_last": 1745971200000,
+      "offset_last": -25200000
+    },
+    "11(우측분전반1)": {
+      "local_origin": 1733011200000,
+      "unix_origin": 1733040000000,
+      "local_duplicate_rows": 0,
+      "unix_duplicate_rows": 720,
+      "local_negative_diffs": 0,
+      "local_non_5s_diffs": 0,
+      "local_last": 1745971200000,
+      "offset_last": -25200000
+    },
+    "12(4호기)": {
+      "local_origin": 1733011200000,
+      "unix_origin": 1733040000000,
+      "local_duplicate_rows": 0,
+      "unix_duplicate_rows": 720,
+      "local_negative_diffs": 0,
+      "local_non_5s_diffs": 0,
+      "local_last": 1745971200000,
+      "offset_last": -25200000
+    },
+    "13(3호기)": {
+      "local_origin": 1733011200000,
+      "unix_origin": 1733040000000,
+      "local_duplicate_rows": 0,
+      "unix_duplicate_rows": 720,
+      "local_negative_diffs": 0,
+      "local_non_5s_diffs": 0,
+      "local_last": 1745971200000,
+      "offset_last": -25200000
+    },
+    "14(2호기)": {
+      "local_origin": 1733011200000,
+      "unix_origin": 1733040000000,
+      "local_duplicate_rows": 0,
+      "unix_duplicate_rows": 720,
+      "local_negative_diffs": 0,
+      "local_non_5s_diffs": 0,
+      "local_last": 1745971200000,
+      "offset_last": -25200000
+    },
+    "15(예비건조기)": {
+      "local_origin": 1733011200000,
+      "unix_origin": 1733040000000,
+      "local_duplicate_rows": 0,
+      "unix_duplicate_rows": 720,
+      "local_negative_diffs": 0,
+      "local_non_5s_diffs": 0,
+      "local_last": 1745971200000,
+      "offset_last": -25200000
+    },
+    "16(호이스트)": {
+      "local_origin": 1733011200000,
+      "unix_origin": 1733040000000,
+      "local_duplicate_rows": 0,
+      "unix_duplicate_rows": 720,
+      "local_negative_diffs": 0,
+      "local_non_5s_diffs": 0,
+      "local_last": 1745971200000,
+      "offset_last": -25200000
+    },
+    "17(6호기)": {
+      "local_origin": 1733011200000,
+      "unix_origin": 1733040000000,
+      "local_duplicate_rows": 0,
+      "unix_duplicate_rows": 720,
+      "local_negative_diffs": 0,
+      "local_non_5s_diffs": 0,
+      "local_last": 1745971200000,
+      "offset_last": -25200000
+    },
+    "18(우측분전반2)": {
+      "local_origin": 1733011200000,
+      "unix_origin": 1733040000000,
+      "local_duplicate_rows": 0,
+      "unix_duplicate_rows": 720,
+      "local_negative_diffs": 0,
+      "local_non_5s_diffs": 0,
+      "local_last": 1745971200000,
+      "offset_last": -25200000
+    }
+  },
+  "rule_counts": {
+    "voltage_outside_205_225": 13027,
+    "phase_pf_outside_80_100": 50936,
+    "invalid_sign_or_operation": 0
+  },
+  "rules_note": "EDA screening: phase voltage outside [205,225] V; phase power factor outside [80,100] percent. Thresholds based on typical training ranges, not validated physical limits or anomaly labels.",
+  "elapsed_seconds": 117.3,
+  "candidate_rows_unique": 63963,
+  "event_count": 63416,
+  "longest_consecutive_candidate_runs": [
+    {
+      "equipment": "15(예비건조기)",
+      "start": "2025-02-28 04:38:20",
+      "last_sample": "2025-02-28 04:38:30",
+      "end_exclusive": "2025-02-28 04:38:35",
+      "records": 3,
+      "observed_duration_seconds": 15,
+      "voltage_candidate_rows": 0,
+      "pf_candidate_rows": 3,
+      "minimum_phase_voltage": 210.12,
+      "minimum_phase_pf": 62.11
+    },
+    {
+      "equipment": "17(6호기)",
+      "start": "2025-01-21 19:08:10",
+      "last_sample": "2025-01-21 19:08:20",
+      "end_exclusive": "2025-01-21 19:08:25",
+      "records": 3,
+      "observed_duration_seconds": 15,
+      "voltage_candidate_rows": 0,
+      "pf_candidate_rows": 3,
+      "minimum_phase_voltage": 210.15,
+      "minimum_phase_pf": 70.05
+    },
+    {
+      "equipment": "17(6호기)",
+      "start": "2025-02-19 03:04:00",
+      "last_sample": "2025-02-19 03:04:10",
+      "end_exclusive": "2025-02-19 03:04:15",
+      "records": 3,
+      "observed_duration_seconds": 15,
+      "voltage_candidate_rows": 0,
+      "pf_candidate_rows": 3,
+      "minimum_phase_voltage": 210.77,
+      "minimum_phase_pf": 70.3
+    },
+    {
+      "equipment": "17(6호기)",
+      "start": "2025-03-13 19:45:05",
+      "last_sample": "2025-03-13 19:45:15",
+      "end_exclusive": "2025-03-13 19:45:20",
+      "records": 3,
+      "observed_duration_seconds": 15,
+      "voltage_candidate_rows": 0,
+      "pf_candidate_rows": 3,
+      "minimum_phase_voltage": 210.09,
+      "minimum_phase_pf": 70.78
+    },
+    {
+      "equipment": "13(3호기)",
+      "start": "2024-12-01 15:22:10",
+      "last_sample": "2024-12-01 15:22:15",
+      "end_exclusive": "2024-12-01 15:22:20",
+      "records": 2,
+      "observed_duration_seconds": 10,
+      "voltage_candidate_rows": 2,
+      "pf_candidate_rows": 0,
+      "minimum_phase_voltage": 197.23,
+      "minimum_phase_pf": 88.38
+    },
+    {
+      "equipment": "13(3호기)",
+      "start": "2024-12-02 22:19:30",
+      "last_sample": "2024-12-02 22:19:35",
+      "end_exclusive": "2024-12-02 22:19:40",
+      "records": 2,
+      "observed_duration_seconds": 10,
+      "voltage_candidate_rows": 2,
+      "pf_candidate_rows": 0,
+      "minimum_phase_voltage": 194.8,
+      "minimum_phase_pf": 87.72
+    },
+    {
+      "equipment": "13(3호기)",
+      "start": "2024-12-08 00:38:00",
+      "last_sample": "2024-12-08 00:38:05",
+      "end_exclusive": "2024-12-08 00:38:10",
+      "records": 2,
+      "observed_duration_seconds": 10,
+      "voltage_candidate_rows": 2,
+      "pf_candidate_rows": 0,
+      "minimum_phase_voltage": 192.18,
+      "minimum_phase_pf": 90.28
+    },
+    {
+      "equipment": "13(3호기)",
+      "start": "2024-12-08 21:06:30",
+      "last_sample": "2024-12-08 21:06:35",
+      "end_exclusive": "2024-12-08 21:06:40",
+      "records": 2,
+      "observed_duration_seconds": 10,
+      "voltage_candidate_rows": 2,
+      "pf_candidate_rows": 0,
+      "minimum_phase_voltage": 196.71,
+      "minimum_phase_pf": 88.8
+    },
+    {
+      "equipment": "13(3호기)",
+      "start": "2024-12-14 07:21:35",
+      "last_sample": "2024-12-14 07:21:40",
+      "end_exclusive": "2024-12-14 07:21:45",
+      "records": 2,
+      "observed_duration_seconds": 10,
+      "voltage_candidate_rows": 2,
+      "pf_candidate_rows": 0,
+      "minimum_phase_voltage": 197.23,
+      "minimum_phase_pf": 85.27
+    },
+    {
+      "equipment": "13(3호기)",
+      "start": "2024-12-16 09:43:00",
+      "last_sample": "2024-12-16 09:43:05",
+      "end_exclusive": "2024-12-16 09:43:10",
+      "records": 2,
+      "observed_duration_seconds": 10,
+      "voltage_candidate_rows": 2,
+      "pf_candidate_rows": 0,
+      "minimum_phase_voltage": 195.31,
+      "minimum_phase_pf": 86.37
+    },
+    {
+      "equipment": "13(3호기)",
+      "start": "2024-12-21 08:07:55",
+      "last_sample": "2024-12-21 08:08:00",
+      "end_exclusive": "2024-12-21 08:08:05",
+      "records": 2,
+      "observed_duration_seconds": 10,
+      "voltage_candidate_rows": 2,
+      "pf_candidate_rows": 0,
+      "minimum_phase_voltage": 192.41,
+      "minimum_phase_pf": 85.84
+    },
+    {
+      "equipment": "13(3호기)",
+      "start": "2024-12-27 12:14:20",
+      "last_sample": "2024-12-27 12:14:25",
+      "end_exclusive": "2024-12-27 12:14:30",
+      "records": 2,
+      "observed_duration_seconds": 10,
+      "voltage_candidate_rows": 2,
+      "pf_candidate_rows": 0,
+      "minimum_phase_voltage": 195.18,
+      "minimum_phase_pf": 90.74
+    },
+    {
+      "equipment": "13(3호기)",
+      "start": "2024-12-30 04:51:10",
+      "last_sample": "2024-12-30 04:51:15",
+      "end_exclusive": "2024-12-30 04:51:20",
+      "records": 2,
+      "observed_duration_seconds": 10,
+      "voltage_candidate_rows": 2,
+      "pf_candidate_rows": 0,
+      "minimum_phase_voltage": 191.95,
+      "minimum_phase_pf": 87.84
+    },
+    {
+      "equipment": "13(3호기)",
+      "start": "2025-01-01 15:06:35",
+      "last_sample": "2025-01-01 15:06:40",
+      "end_exclusive": "2025-01-01 15:06:45",
+      "records": 2,
+      "observed_duration_seconds": 10,
+      "voltage_candidate_rows": 2,
+      "pf_candidate_rows": 0,
+      "minimum_phase_voltage": 196.75,
+      "minimum_phase_pf": 86.43
+    },
+    {
+      "equipment": "13(3호기)",
+      "start": "2025-01-01 15:19:15",
+      "last_sample": "2025-01-01 15:19:20",
+      "end_exclusive": "2025-01-01 15:19:25",
+      "records": 2,
+      "observed_duration_seconds": 10,
+      "voltage_candidate_rows": 2,
+      "pf_candidate_rows": 0,
+      "minimum_phase_voltage": 197.27,
+      "minimum_phase_pf": 90.38
+    },
+    {
+      "equipment": "13(3호기)",
+      "start": "2025-01-05 06:04:50",
+      "last_sample": "2025-01-05 06:04:55",
+      "end_exclusive": "2025-01-05 06:05:00",
+      "records": 2,
+      "observed_duration_seconds": 10,
+      "voltage_candidate_rows": 2,
+      "pf_candidate_rows": 0,
+      "minimum_phase_voltage": 195.69,
+      "minimum_phase_pf": 92.84
+    },
+    {
+      "equipment": "13(3호기)",
+      "start": "2025-01-08 20:51:10",
+      "last_sample": "2025-01-08 20:51:15",
+      "end_exclusive": "2025-01-08 20:51:20",
+      "records": 2,
+      "observed_duration_seconds": 10,
+      "voltage_candidate_rows": 2,
+      "pf_candidate_rows": 0,
+      "minimum_phase_voltage": 192.85,
+      "minimum_phase_pf": 86.47
+    },
+    {
+      "equipment": "13(3호기)",
+      "start": "2025-01-09 08:26:40",
+      "last_sample": "2025-01-09 08:26:45",
+      "end_exclusive": "2025-01-09 08:26:50",
+      "records": 2,
+      "observed_duration_seconds": 10,
+      "voltage_candidate_rows": 2,
+      "pf_candidate_rows": 0,
+      "minimum_phase_voltage": 190.86,
+      "minimum_phase_pf": 85.78
+    },
+    {
+      "equipment": "13(3호기)",
+      "start": "2025-01-15 06:59:25",
+      "last_sample": "2025-01-15 06:59:30",
+      "end_exclusive": "2025-01-15 06:59:35",
+      "records": 2,
+      "observed_duration_seconds": 10,
+      "voltage_candidate_rows": 2,
+      "pf_candidate_rows": 0,
+      "minimum_phase_voltage": 197.37,
+      "minimum_phase_pf": 87.57
+    },
+    {
+      "equipment": "13(3호기)",
+      "start": "2025-01-18 01:46:45",
+      "last_sample": "2025-01-18 01:46:50",
+      "end_exclusive": "2025-01-18 01:46:55",
+      "records": 2,
+      "observed_duration_seconds": 10,
+      "voltage_candidate_rows": 2,
+      "pf_candidate_rows": 0,
+      "minimum_phase_voltage": 198.37,
+      "minimum_phase_pf": 86.4
+    },
+    {
+      "equipment": "13(3호기)",
+      "start": "2025-01-19 15:42:00",
+      "last_sample": "2025-01-19 15:42:05",
+      "end_exclusive": "2025-01-19 15:42:10",
+      "records": 2,
+      "observed_duration_seconds": 10,
+      "voltage_candidate_rows": 2,
+      "pf_candidate_rows": 0,
+      "minimum_phase_voltage": 191.51,
+      "minimum_phase_pf": 88.76
+    },
+    {
+      "equipment": "13(3호기)",
+      "start": "2025-02-01 03:34:35",
+      "last_sample": "2025-02-01 03:34:40",
+      "end_exclusive": "2025-02-01 03:34:45",
+      "records": 2,
+      "observed_duration_seconds": 10,
+      "voltage_candidate_rows": 2,
+      "pf_candidate_rows": 0,
+      "minimum_phase_voltage": 192.05,
+      "minimum_phase_pf": 85.13
+    },
+    {
+      "equipment": "13(3호기)",
+      "start": "2025-02-03 05:00:25",
+      "last_sample": "2025-02-03 05:00:30",
+      "end_exclusive": "2025-02-03 05:00:35",
+      "records": 2,
+      "observed_duration_seconds": 10,
+      "voltage_candidate_rows": 2,
+      "pf_candidate_rows": 0,
+      "minimum_phase_voltage": 197.98,
+      "minimum_phase_pf": 90.37
+    },
+    {
+      "equipment": "13(3호기)",
+      "start": "2025-02-06 05:40:00",
+      "last_sample": "2025-02-06 05:40:05",
+      "end_exclusive": "2025-02-06 05:40:10",
+      "records": 2,
+      "observed_duration_seconds": 10,
+      "voltage_candidate_rows": 2,
+      "pf_candidate_rows": 0,
+      "minimum_phase_voltage": 194.75,
+      "minimum_phase_pf": 91.16
+    },
+    {
+      "equipment": "13(3호기)",
+      "start": "2025-02-08 03:50:25",
+      "last_sample": "2025-02-08 03:50:30",
+      "end_exclusive": "2025-02-08 03:50:35",
+      "records": 2,
+      "observed_duration_seconds": 10,
+      "voltage_candidate_rows": 2,
+      "pf_candidate_rows": 0,
+      "minimum_phase_voltage": 198.64,
+      "minimum_phase_pf": 87.72
+    }
+  ],
+  "full_event_detail_csv": "anomaly_events.csv"
+}

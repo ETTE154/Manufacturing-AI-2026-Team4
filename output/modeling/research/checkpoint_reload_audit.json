@@ -1,0 +1,34 @@
+[
+  {
+    "model": "iTransformer",
+    "split": "validation",
+    "reload_csv_max_absdiff": 7.275957614183426e-12,
+    "repeat_inference_max_absdiff": 0.0,
+    "seed": 2026,
+    "history_end": "2025-02-24 23:00:00"
+  },
+  {
+    "model": "PatchTST",
+    "split": "validation",
+    "reload_csv_max_absdiff": 7.275957614183426e-12,
+    "repeat_inference_max_absdiff": 0.0,
+    "seed": 2026,
+    "history_end": "2025-02-24 23:00:00"
+  },
+  {
+    "model": "iTransformer",
+    "split": "internal_test",
+    "reload_csv_max_absdiff": 7.275957614183426e-12,
+    "repeat_inference_max_absdiff": 0.0,
+    "seed": 2026,
+    "history_end": "2025-03-28 23:00:00"
+  },
+  {
+    "model": "PatchTST",
+    "split": "internal_test",
+    "reload_csv_max_absdiff": 7.275957614183426e-12,
+    "repeat_inference_max_absdiff": 0.0,
+    "seed": 2026,
+    "history_end": "2025-03-28 23:00:00"
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "candidate": 30,
+  "total_attempted_configs": 31,
+  "previous_selected_config": {
+    "n_estimators": 50,
+    "max_depth": 2,
+    "learning_rate": 0.01,
+    "min_child_weight": 100,
+    "reg_lambda": 100.0,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "feature_set": "history",
+    "residual_shrinkage": 0.5
+  },
+  "companion_config": {
+    "n_estimators": 50,
+    "max_depth": 2,
+    "learning_rate": 0.01,
+    "min_child_weight": 100,
+    "reg_lambda": 100.0,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "feature_set": "history",
+    "residual_shrinkage": 0.5,
+    "objective": "reg:absoluteerror"
+  },
+  "only_changed_parameter": "objective=reg:absoluteerror",
+  "previous_selection_lock_sha256": "0bc7b4fc29c52b216a58144231dadc923c964c6e5dc6afa76a7e6c22bf627ade",
+  "selection_uses_April_test": false,
+  "selection_uses_May_labels": false,
+  "reason": "Parent request to test loss-objective alignment with MAE; no other hyperparameter changes based on intermediate April metrics",
+  "disclosure": "Intermediate30-trial April results already existed; this is a declared goal-alignment extension with validation-only selection, not a pristine never-viewed test"
+}

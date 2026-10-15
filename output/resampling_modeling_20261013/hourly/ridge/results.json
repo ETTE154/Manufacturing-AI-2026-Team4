@@ -1,0 +1,176 @@
+{
+  "selected_config": {
+    "model": "ridge",
+    "group": "HD",
+    "alpha": 100000.0
+  },
+  "selected_candidate": 15,
+  "trials_count": 4,
+  "validation_late505": {
+    "mean_origin_mae_kwh": 76.29280679064968,
+    "by_origin": [
+      {
+        "origin": "2025-02-15 00:00:00",
+        "count": 505,
+        "mae_kwh": 76.59362808243472,
+        "rmse_kwh": 98.43315614931927,
+        "mape_percent": 0.19577026860041385,
+        "bias_pred_minus_actual_kwh": 1.1814954119477141,
+        "r2": -0.0006368871476682969
+      },
+      {
+        "origin": "2025-02-22 00:00:00",
+        "count": 505,
+        "mae_kwh": 74.80955601535493,
+        "rmse_kwh": 94.28057097344103,
+        "mape_percent": 0.19118148436888166,
+        "bias_pred_minus_actual_kwh": 0.09192298033084816,
+        "r2": -0.00040868505551916456
+      },
+      {
+        "origin": "2025-02-25 00:00:00",
+        "count": 505,
+        "mae_kwh": 77.47523627415939,
+        "rmse_kwh": 97.67770871545115,
+        "mape_percent": 0.197982622957178,
+        "bias_pred_minus_actual_kwh": -1.7596929034032476,
+        "r2": -0.0006399547799726957
+      }
+    ],
+    "count": 1515,
+    "mae_kwh": 76.29280679064968,
+    "rmse_kwh": 96.81399188219102,
+    "mape_percent": 0.1949781253088245,
+    "bias_pred_minus_actual_kwh": -0.1620915037082284,
+    "r2": -0.00046046132395449746,
+    "origin_count": 3,
+    "unique_label_hours": 745,
+    "repeated_label_observations": 770
+  },
+  "validation_full745": {
+    "mean_origin_mae_kwh": 76.60450587901558,
+    "by_origin": [
+      {
+        "origin": "2025-02-15 00:00:00",
+        "count": 745,
+        "mae_kwh": 77.3587086720687,
+        "rmse_kwh": 98.67925378385338,
+        "mape_percent": 0.1977218600969591,
+        "bias_pred_minus_actual_kwh": 2.1894625676640653,
+        "r2": -0.001055325169112109
+      },
+      {
+        "origin": "2025-02-22 00:00:00",
+        "count": 745,
+        "mae_kwh": 76.33008116074912,
+        "rmse_kwh": 97.02246095957639,
+        "mape_percent": 0.19510284495562005,
+        "bias_pred_minus_actual_kwh": 3.2595649192696663,
+        "r2": -0.0015316395207065625
+      },
+      {
+        "origin": "2025-02-25 00:00:00",
+        "count": 745,
+        "mae_kwh": 76.12472780422893,
+        "rmse_kwh": 96.75418267037247,
+        "mape_percent": 0.194556937154965,
+        "bias_pred_minus_actual_kwh": -1.086923731601066,
+        "r2": -0.001005292532474611
+      }
+    ],
+    "count": 2235,
+    "mae_kwh": 76.60450587901559,
+    "rmse_kwh": 97.48901634235943,
+    "mape_percent": 0.19579388073584805,
+    "bias_pred_minus_actual_kwh": 1.4540345851108885,
+    "r2": -0.001177327127266592,
+    "origin_count": 3,
+    "unique_label_hours": 985,
+    "repeated_label_observations": 1250
+  },
+  "internal_test": {
+    "late505": {
+      "count": 505,
+      "mae_kwh": 78.05606952482427,
+      "rmse_kwh": 96.62351935949305,
+      "mape_percent": 0.19949246600210474,
+      "bias_pred_minus_actual_kwh": -0.9025211173590212,
+      "r2": -0.0011603419488057654
+    },
+    "full745": {
+      "count": 745,
+      "mae_kwh": 78.32073539828797,
+      "rmse_kwh": 97.13236963027987,
+      "mape_percent": 0.20019271293281282,
+      "bias_pred_minus_actual_kwh": 3.411822941321403,
+      "r2": -0.0026132269841325773
+    }
+  },
+  "saved_model": {
+    "model_path": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\hourly\\ridge\\saved_model\\model.joblib",
+    "model_sha256": "f695fd8eefc405a6efdf340f23ab615536ddeb475a4a2b190aaa163b2b82f8aa",
+    "config": {
+      "model": "ridge",
+      "group": "HD",
+      "alpha": 100000.0
+    },
+    "history_end": "2025-04-29 23:00:00",
+    "history_count": 3600,
+    "forecast_points": 745,
+    "feature_names": [
+      "lag1",
+      "lag24",
+      "lag168",
+      "mean24",
+      "mean168",
+      "mean720",
+      "std24",
+      "std168",
+      "origin_hour_sin",
+      "origin_hour_cos",
+      "lead_days",
+      "target_hour_sin",
+      "target_hour_cos",
+      "target_weekday_sin",
+      "target_weekday_cos",
+      "target_month_sin",
+      "target_month_cos",
+      "target_weekend",
+      "D_mean7_rate",
+      "D_mean28_rate",
+      "D_last_minus_mean7_rate",
+      "D_support28_fraction",
+      "D_missing_flag"
+    ],
+    "target_center": 39128.433133238505,
+    "training_examples": 29440,
+    "forecast_context_audit": {
+      "origin": "2025-04-30 00:00:00",
+      "history_end": "2025-04-29 23:00:00",
+      "history_hours": 3600,
+      "D_complete_count": 150,
+      "W_complete_count": 21,
+      "M_complete_count": 4,
+      "monthly_fallback_used": false,
+      "monthly_latest_available_at": "2025-04-01 00:00:00",
+      "fallback": "Mean of this strict historical prefix; missing/support flags retained. No global/future imputation."
+    },
+    "reload_max_absdiff_kwh": 0.0,
+    "native_reload_max_absdiff_kwh": null,
+    "scaler": "Ridge StandardScaler fit on historical direct examples only; XGB/ARIMA none.",
+    "standalone_inference": "Saved feature context/state forecasts exactly the frozen Apr30 origin; no target file or May read is needed."
+  },
+  "paths": {
+    "validation_csv": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\hourly\\ridge\\validation_predictions.csv",
+    "test_csv": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\hourly\\ridge\\test_predictions.csv",
+    "future_csv": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\hourly\\ridge\\future_path.csv"
+  },
+  "input_scope": "Past hourly target, deterministic future calendar/horizon; optionally completed D/W/M rates. No physical sensor or future period actuals.",
+  "May_labels_read": false,
+  "monthly_small_sample_limit": "Only2 complete monthly observations per validation origin,4 before final origin; M features are contextual candidates, no monthly model fit.",
+  "training_importance_csv": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\hourly\\ridge\\final_feature_importance.csv",
+  "plots": {
+    "internal_png": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\hourly\\ridge\\figures\\internal_test.png",
+    "internal_svg": "E:\\AI work\\AWS_프로젝트\\output\\resampling_modeling_20261013\\hourly\\ridge\\figures\\internal_test.svg"
+  }
+}

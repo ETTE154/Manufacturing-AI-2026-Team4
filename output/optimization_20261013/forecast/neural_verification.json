@@ -1,0 +1,219 @@
+{
+  "status": "pass",
+  "all_four_jobs_complete": true,
+  "records": [
+    {
+      "scenario": "dayahead24",
+      "model": "patchtst",
+      "status": "pass",
+      "candidate_count": 7,
+      "MSE_candidates": 6,
+      "L1_candidates": 1,
+      "csv_checks": [
+        {
+          "split": "validation",
+          "csv_rows": 1680,
+          "metric_max_absdiff": 0.0
+        },
+        {
+          "split": "test",
+          "csv_rows": 696,
+          "metric_max_absdiff": 0.0
+        }
+      ],
+      "standalone_saved_future_max_absdiff_kwh": 0.0,
+      "validation_checkpoint_reload_max_absdiff": 0.0,
+      "test_checkpoint_reload_max_absdiff": 0.0,
+      "final_checkpoint_reload_max_absdiff": 0.0,
+      "final_history_hours": 3600,
+      "final_history_end": "2025-04-29 23:00:00",
+      "future_rows": 24,
+      "future_start": "2025-04-30 00:00:00",
+      "future_end": "2025-04-30 23:00:00",
+      "future_actual_all_missing": true,
+      "seed": 20261013,
+      "training_loss": "MSE",
+      "selected_config": {
+        "context": 72,
+        "d_model": 32,
+        "layers": 1,
+        "dropout": 0.1
+      },
+      "frozen_epochs": 8,
+      "runtime": {
+        "seconds_this_invocation": 34.587893399992026,
+        "unique_candidate_CV_training_seconds": 125.32321509998292,
+        "candidate_count": 7,
+        "validation_fit_count": 35,
+        "validation_origin_count_per_candidate": 70,
+        "test_origin_count": 29,
+        "inner_epochs_run_total": 234,
+        "refit_epochs_total": 94,
+        "reused_candidate_fits": 30,
+        "threads": 4
+      },
+      "results_sha256": "7c2ece614d260dea482981b3e99c8acfb72dff7dac6c880dacc0d7e9b81616a7"
+    },
+    {
+      "scenario": "dayahead24",
+      "model": "itransformer",
+      "status": "pass",
+      "candidate_count": 7,
+      "MSE_candidates": 6,
+      "L1_candidates": 1,
+      "csv_checks": [
+        {
+          "split": "validation",
+          "csv_rows": 1680,
+          "metric_max_absdiff": 0.0
+        },
+        {
+          "split": "test",
+          "csv_rows": 696,
+          "metric_max_absdiff": 0.0
+        }
+      ],
+      "standalone_saved_future_max_absdiff_kwh": 0.0,
+      "validation_checkpoint_reload_max_absdiff": 0.0,
+      "test_checkpoint_reload_max_absdiff": 0.0,
+      "final_checkpoint_reload_max_absdiff": 0.0,
+      "final_history_hours": 3600,
+      "final_history_end": "2025-04-29 23:00:00",
+      "future_rows": 24,
+      "future_start": "2025-04-30 00:00:00",
+      "future_end": "2025-04-30 23:00:00",
+      "future_actual_all_missing": true,
+      "seed": 20261013,
+      "training_loss": "MSE",
+      "selected_config": {
+        "context": 72,
+        "d_model": 32,
+        "layers": 1,
+        "dropout": 0.1
+      },
+      "frozen_epochs": 6,
+      "runtime": {
+        "seconds_this_invocation": 106.35000009997748,
+        "unique_candidate_CV_training_seconds": 94.19864769966807,
+        "candidate_count": 7,
+        "validation_fit_count": 35,
+        "validation_origin_count_per_candidate": 70,
+        "test_origin_count": 29,
+        "inner_epochs_run_total": 308,
+        "refit_epochs_total": 168,
+        "reused_candidate_fits": 0,
+        "threads": 4
+      },
+      "results_sha256": "7e4169aa41c154443feed61edbee2473e0abbed3b32ce46a1b2a1b67a927c8d3"
+    },
+    {
+      "scenario": "long745",
+      "model": "patchtst",
+      "status": "pass",
+      "candidate_count": 7,
+      "MSE_candidates": 6,
+      "L1_candidates": 1,
+      "csv_checks": [
+        {
+          "split": "validation",
+          "csv_rows": 745,
+          "metric_max_absdiff": 0.0
+        },
+        {
+          "split": "test",
+          "csv_rows": 745,
+          "metric_max_absdiff": 0.0
+        }
+      ],
+      "standalone_saved_future_max_absdiff_kwh": 0.0,
+      "validation_checkpoint_reload_max_absdiff": 0.0,
+      "test_checkpoint_reload_max_absdiff": 0.0,
+      "final_checkpoint_reload_max_absdiff": 0.0,
+      "final_history_hours": 3600,
+      "final_history_end": "2025-04-29 23:00:00",
+      "future_rows": 745,
+      "future_start": "2025-04-30 00:00:00",
+      "future_end": "2025-05-31 00:00:00",
+      "future_actual_all_missing": true,
+      "seed": 20261013,
+      "training_loss": "MSE",
+      "selected_config": {
+        "context": 72,
+        "d_model": 32,
+        "layers": 1,
+        "dropout": 0.1
+      },
+      "frozen_epochs": 6,
+      "runtime": {
+        "seconds_this_invocation": 18.958286500070244,
+        "unique_candidate_CV_training_seconds": 11.339694700203836,
+        "candidate_count": 7,
+        "validation_fit_count": 7,
+        "validation_origin_count_per_candidate": 1,
+        "test_origin_count": 1,
+        "inner_epochs_run_total": 47,
+        "refit_epochs_total": 19,
+        "reused_candidate_fits": 0,
+        "threads": 4
+      },
+      "results_sha256": "4347464ad46fcab50a794d996cb7adef54cb39a824a9f41774f46f9070056431"
+    },
+    {
+      "scenario": "long745",
+      "model": "itransformer",
+      "status": "pass",
+      "candidate_count": 7,
+      "MSE_candidates": 6,
+      "L1_candidates": 1,
+      "csv_checks": [
+        {
+          "split": "validation",
+          "csv_rows": 745,
+          "metric_max_absdiff": 0.0
+        },
+        {
+          "split": "test",
+          "csv_rows": 745,
+          "metric_max_absdiff": 0.0
+        }
+      ],
+      "standalone_saved_future_max_absdiff_kwh": 0.0,
+      "validation_checkpoint_reload_max_absdiff": 0.0,
+      "test_checkpoint_reload_max_absdiff": 0.0,
+      "final_checkpoint_reload_max_absdiff": 0.0,
+      "final_history_hours": 3600,
+      "final_history_end": "2025-04-29 23:00:00",
+      "future_rows": 745,
+      "future_start": "2025-04-30 00:00:00",
+      "future_end": "2025-05-31 00:00:00",
+      "future_actual_all_missing": true,
+      "seed": 20261013,
+      "training_loss": "MSE",
+      "selected_config": {
+        "context": 168,
+        "d_model": 32,
+        "layers": 1,
+        "dropout": 0.1
+      },
+      "frozen_epochs": 12,
+      "runtime": {
+        "seconds_this_invocation": 31.223966100020334,
+        "unique_candidate_CV_training_seconds": 21.352977900067344,
+        "candidate_count": 7,
+        "validation_fit_count": 7,
+        "validation_origin_count_per_candidate": 1,
+        "test_origin_count": 1,
+        "inner_epochs_run_total": 110,
+        "refit_epochs_total": 86,
+        "reused_candidate_fits": 0,
+        "threads": 4
+      },
+      "results_sha256": "860bd5c15b5e5f2b8c1bc0ee4c4cfdb2f5a1d8c7c65e5e1466187553019a51dd"
+    }
+  ],
+  "may_labels_read": false,
+  "all_candidates": 28,
+  "source_originals_and_old_modeling_unchanged": true,
+  "claim": "Budgeted local7-candidate search permodel/perscenario; global optimum not guaranteed",
+  "iTransformer_limit": "One aggregate variate token; no multivariate cross-channel advantage demonstrated"
+}

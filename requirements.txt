@@ -1,0 +1,13 @@
+# Core app: exact versions read from the working installation METADATA.
+# Validated source environment: Python 3.12.14, Windows x64, CPU models.
+# Package installation/remote availability was not re-tested for this copy.
+numpy==2.3.5
+pandas==3.0.1
+scipy==1.18.1
+scikit-learn==1.9.1
+torch==2.14.1
+xgboost==3.4.1
+joblib==1.6.0
+threadpoolctl==3.7.0
+fastapi==0.143.1
+uvicorn==0.54.0

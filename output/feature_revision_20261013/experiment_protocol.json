@@ -1,0 +1,53 @@
+{
+  "status": "feature_audit_and_retraining_in_progress",
+  "request": "Revalidate forecast features, correlations, importance and temporal relationships; reselect features, retrain and evaluate",
+  "previous_results": "output/optimization_20261013/forecast/comparison_results.json",
+  "source_policy": "Read verified original and derived data; preserve all previous source, analysis and modeling artifacts",
+  "target": "13-module complete-hour energy sum, provisional kWh under original guide units",
+  "feature_availability": "All sensor statistics are from completed hours strictly before the forecast origin; future calendar and forecast lead are known",
+  "excluded_features": [
+    "sensor readings or hourly energy from the target/future hour",
+    "May hourly_pow, total agg_pow, derived bill and carbon as inputs",
+    "absolute cumulative counter levels used as unchecked proxies for date",
+    "constant operation and erroneous Unix time key"
+  ],
+  "primary_task": {
+    "points": 24,
+    "output": "Hourly energy path for origin..origin+23h, lead1..24 relative to the preceding completed-hour key",
+    "validation_fit_origins": ["2025-01-10", "2025-01-24", "2025-02-07", "2025-02-21", "2025-03-07"],
+    "validation_daily_origins_per_fold": 14,
+    "validation_rows": 1680,
+    "test_fit_origin": "2025-04-01",
+    "test_daily_origins": 29,
+    "test_rows": 696,
+    "selection_criterion": "Validation path MAE; lead1/6/24 error reported separately",
+    "feature_selection": "Learned from each fold's historical fitting prefix only; test feature selection is fit on history ending March31",
+    "input_update": "Weights and feature names are fixed inside a validation fold or April test; input context updates with only observations prior to each daily origin"
+  },
+  "secondary_task": {
+    "points": 745,
+    "validation_origin": "2025-02-25",
+    "internal_test_origin": "2025-03-29",
+    "May_forecast_origin": "2025-04-30",
+    "May_scored_leads": "241..745 (505 values)",
+    "availability_limit": "May contains only aggregate labels; future sensor inputs and an April30-May9 rolling history are unavailable",
+    "feature_selection": "Fit with the long-validation fitting prefix, not its future labels; refit selection separately with the later fitting prefixes",
+    "selection": "Freeze configurations on long validation before internal test and May scoring"
+  },
+  "diagnostics": [
+    "Contemporaneous sensor/target correlations are descriptive and cannot be treated as future availability",
+    "Lagged Pearson/Spearman relationships, multiple-testing correction and stability by historical interval",
+    "Chronological validation permutation importance and feature-group ablation alongside training importance",
+    "Autocorrelation, calendar effects, feature redundancy and conditional aggregation-noise checks",
+    "Past context perturbation and target-index checks to detect accidental future leakage"
+  ],
+  "interpretation_limits": [
+    "April and May were examined in previous work; this is a post-EDA feature revision, not a pristine prospective blind test",
+    "Univariate old models and multivariate new models have different information scopes; the effect is not attributed solely to hyperparameters",
+    "More features do not guarantee lower test MAE or positive R2",
+    "No global optimum or current absolute SOTA claim",
+    "Meter hierarchy and units remain unresolved; no unsupported unit correction is applied"
+  ],
+  "seed": 20261013,
+  "cpu_threads_per_job": 4
+}

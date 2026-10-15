@@ -1,0 +1,17 @@
+{
+  "training_full_hours": 3600,
+  "training_full_days": 150,
+  "modules": 13,
+  "training_hourly_module_sum_mean_kwh": 39129.37842288966,
+  "training_hourly_module_sum_std_kwh": 95.76422049015692,
+  "training_hourly_module_sum_cv_pct": 0.2447373925933292,
+  "may_hourly_pow_mean": 39071.38393652529,
+  "may_hourly_pow_cv_pct": 0.23794222676864432,
+  "may_vs_training_mean_pct": -0.14821213293396696,
+  "equipment_mean_relative_min_pct": -0.042157863120773076,
+  "equipment_mean_relative_max_pct": 0.025834061359031324,
+  "weekday_hour_relative_min_pct": -0.12187298748013164,
+  "weekday_hour_relative_max_pct": 0.19533392183945786,
+  "sample_rows": 16849,
+  "complete_time_observed_energy_kwh_module_sum_unconfirmed_hierarchy": 140865762.32240278
+}

@@ -1,0 +1,73 @@
+# Local secrets and credentials; the empty example is documentation only.
+.env
+.env.*
+!.env.example
+.aws/
+.ssh/
+*.pem
+*.p12
+*.pfx
+
+# Private guide and derived credential material (not forecast guide CSVs).
+프로젝트가이드.pdf
+**/guide_pages/
+**/guide_images/
+**/guide_pics/
+**/guide_page*.png
+**/guide_page*.jpg
+**/guide_key_reader.ps1
+**/embedded_key_reader.py
+**/ocr_embedded_key.ps1
+/output/analysis/guide_summary.json
+/demo_platform/docs/credential_reader_verification.json
+
+# Source raw datasets are supplied separately; keep audited derived CSV/GZ files.
+/traing-dataset/
+/may-dataset/
+**/rtu_data_full.csv
+**/rtu_ground_truth_may.csv
+
+# Installed environments, downloaded model caches and temporary dependencies.
+**/.venv/
+**/venv/
+**/.deps/
+**/.plot_deps/
+**/runtime_packages/
+**/node_modules/
+**/runtime_cache/
+**/.cache/
+**/.model_cache/
+**/hf_cache/
+**/huggingface/
+**/models--*/
+**/downloads/
+**/download_cache/
+
+# Intermediate search models only; retain final checkpoints and unique outputs.
+**/cv_models/
+**/intermediate_30_trials/
+**/inner_best*
+
+# Private edit backups, local state, logs and machine-specific source indexes.
+**/revisions/
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+*.db-journal
+**/source_index.json
+**/raw_cache/
+**/logs/
+*.log
+*.pid
+**/tmp/
+**/.mplconfig/
+**/.pytest_cache/
+**/.mypy_cache/
+**/__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+
+# Source-build policy for the React frontend.
+/demo_platform/frontend/dist/

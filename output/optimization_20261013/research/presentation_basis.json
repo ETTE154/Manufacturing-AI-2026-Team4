@@ -1,0 +1,81 @@
+{
+  "review_date_kst": "2026-10-13",
+  "purpose": "산업 시설의 다음날 전력 수요 계획을 위한 시간별 전력량 예측",
+  "model_step": "1시간",
+  "primary_output": "예측 직전 관측을 t로 정의하여 t+1부터 t+24까지 시간 전력량 24개; t+24 단일 값 오차도 별도 평가",
+  "reason_for_horizon": "다음날의 시간대별 수요를 사전에 계획하는 목적에서 하루 전체의 수요 경로가 필요하다. 24시간보다 짧거나 긴 예측이 의미 없다는 보편적 주장이 아니다.",
+  "project_long_horizon": "가이드의 May10~31 평가를 위해 Apr29 23 이후 745개 값을 한 번에 생성하고 lead241~745의 505개 정답을 평가하는 별도 실험",
+  "may_limitation": "5월 파일은 합계 정답 505행뿐이고 13설비의 원시 미래 입력이나 Apr30~May9의 합계 관측이 없다. 24시간 day-ahead를 매일 실측 갱신하는 실험은 연속 원시 이력이 있는 4월에 수행한다. 5월의 단일 원점 장기 결과를 24시간 모델의 현장 실증이라고 부르지 않는다.",
+  "sources": [
+    {
+      "id": "INDUSTRIAL_DAY_AHEAD_2018",
+      "title": "Day-ahead industrial load forecasting for electric RTG cranes",
+      "authors": "Feras Alasali, Stephen Haben, Victor Becerra, William Holderbaum",
+      "year": 2018,
+      "doi": "10.1007/s40565-018-0394-4",
+      "url": "https://link.springer.com/article/10.1007/s40565-018-0394-4",
+      "verified_sections": "Introduction and Methodology 2: hourly t+n, n=1,...,24",
+      "supports": "산업용 전기 크레인의 1~24시간 수요 예측을 에너지관리·계획에 활용",
+      "transfer_limit": "크레인 연구의 작업 횟수·컨테이너 중량 등 외생변수는 현재 제공 데이터에 없다. 연구 성능이나 비용 절감 효과를 이 프로젝트에 그대로 적용하지 않는다."
+    },
+    {
+      "id": "ESS_DAY_AHEAD_2022",
+      "title": "Handling Load Uncertainty during On-Peak Time via Dual ESS and LSTM with Load Data Augmentation",
+      "authors": "Jin Sol Hwang, Jung-Su Kim, Hwachang Song",
+      "year": 2022,
+      "doi": "10.3390/en15093001",
+      "url": "https://pure.seoultech.ac.kr/en/publications/handling-load-uncertainty-during-on-peak-time-via-dual-ess-and-ls/",
+      "supports": "다음날 부하 예측으로 ESS를 일일 계획하고, 피크 시간에는 더 짧은 간격으로 조정하는 활용 사례",
+      "transfer_limit": "본 프로젝트에서는 ESS 배터리 사양·요금제·운영 최적화까지 구현하지 않았다."
+    },
+    {
+      "id": "BUILDING_DAY_AHEAD_2020",
+      "title": "Day-Ahead Building Load Forecasting with a Small dataset",
+      "authors": "Marco Lauricella, Zhongtian Cai, Lorenzo Fagiano",
+      "year": 2020,
+      "doi": "10.1016/j.ifacol.2020.12.2257",
+      "url": "https://ifatwww.et.uni-magdeburg.de/ifac2020/media/pdfs/3238.pdf",
+      "supports": "건물 전력 소비의 day-ahead 예측을 에너지 일정 계획·최적화에 활용",
+      "transfer_limit": "건물의 주기적 신호가 이 산업 데이터에서도 존재한다고 가정하지 않는다."
+    },
+    {
+      "id": "SYNTHETIC_ANOMALY_TAXONOMY_2021",
+      "title": "Revisiting Time Series Outlier Detection: Definitions and Benchmarks",
+      "year": 2021,
+      "url": "https://datasets-benchmarks-proceedings.neurips.cc/paper_files/paper/2021/hash/ec5decca5ed3d6b8079e2e7e7bacc9f2-Abstract-round1.html",
+      "supports": "점 이상과 패턴 이상을 구분한 합성 평가 설계",
+      "transfer_limit": "합성 spike·drift의 탐지 성공은 실제 설비 고장 진단 성능을 입증하지 않는다."
+    },
+    {
+      "id": "RIGOROUS_TSAD_EVALUATION_2022",
+      "title": "Towards a Rigorous Evaluation of Time-series Anomaly Detection",
+      "authors": "Siwon Kim, Kukjin Choi, Hyun-Soo Choi, Byunghan Lee, Sungroh Yoon",
+      "year": 2022,
+      "url": "https://arxiv.org/abs/2109.05257",
+      "supports": "Point adjustment가 F1과 모델 순위를 과대평가할 수 있으므로 원래 점별 경보와 사건별 탐지 결과를 구분",
+      "transfer_limit": "원본 약한 라벨 일치도와 합성 정답 평가를 혼합하지 않는다."
+    },
+    {
+      "id": "ISOLATION_FOREST_DOC",
+      "title": "IsolationForest official documentation",
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.IsolationForest.html",
+      "supports": "랜덤 분할 경로 길이 기반 이상 점수; contamination은 실제 이상 비율의 정답이 아니다. 검증 임계값을 별도 보정한다."
+    },
+    {
+      "id": "PHASE_POWER_FORMULA",
+      "title": "Schneider Electric total power calculation for accuracy verification",
+      "url": "https://www.productinfo.schneider-electric.com/pm2200/5afc2b5546e0fb00011e5e9d/PM2200%20series%20User%20Manual/English/BM_PM2200seriesUserManual_0000074170.ditamap.xml/%24/C_VerifyingAccuracy_PowerTotCalcuation_0000034437",
+      "supports": "동일 회로의 상전압 V·전류 A·역률을 사용한 전력 kW의 조건부 일관성 점검",
+      "transfer_limit": "센서의 동일 회로·배율·위상 정의가 확인되지 않았으므로 식 불일치는 공급자 확인 사항이다. 단위를 임의 보정하지 않는다."
+    }
+  ],
+  "presentation_script": "산업 전력 수요 예측은 에너지관리와 다음날 운영 계획에 사용됩니다. Alasali 등의 2018년 연구는 산업용 전기 크레인의 시간별 전력 수요를 1~24시간 앞까지 예측했습니다. 우리는 다음날 수요 계획을 지원하는 목적을 선택하여, 과거에 관측한 전력량만으로 향후 24시간의 시간별 전력량과 24시간 뒤 값을 예측하는 모델을 개발하고 시간 순서 검증으로 설정을 최적화했습니다. 별도로 프로젝트 가이드의 5월 평가를 위해 최대 745시간의 예측 경로를 생성했습니다. 두 실험은 예측 시점과 평가 목적이 다르므로 결과를 분리해 제시합니다.",
+  "claims_to_avoid": [
+    "24시간보다 짧은 예측은 의미 없다는 주장",
+    "May 단일 원점 장기 예측 성능을 매일 갱신하는 24시간 실증 성능이라고 주장",
+    "고정 탐색 예산 내 검증 최적 설정을 전역 최적해라고 주장",
+    "낮은 MAPE를 100-MAPE 정확도로 표현",
+    "단위를 확정하거나 계측기 합계를 공장 전체 전력량으로 확정",
+    "약한 센서 규칙 또는 합성 이상 검출 성능을 실제 고장 성능으로 표현"
+  ]
+}
